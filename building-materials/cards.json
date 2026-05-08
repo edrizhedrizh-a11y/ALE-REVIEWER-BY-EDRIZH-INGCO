@@ -101,6 +101,9 @@
     "questionImageQuery": "Atterberg limits test chart",
     "questionImageQueries": [
       "Atterberg limits test chart"
+    ],
+    "questionImageLayoutQueries": [
+      "Atterberg limits test chart"
     ]
   },
   {
@@ -196,6 +199,9 @@
     "questionImageQuery": "fill materials",
     "questionImageQueries": [
       "fill materials"
+    ],
+    "questionImageLayoutQueries": [
+      "fill materials"
     ]
   },
   {
@@ -242,10 +248,7 @@
     "answerImageQueries": [
       "construction aggregates sand gravel"
     ],
-    "questionImageQuery": "construction aggregates sand gravel",
-    "questionImageQueries": [
-      "construction aggregates sand gravel"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-006",
@@ -294,6 +297,9 @@
     "questionImageQuery": "Base Course Materials",
     "questionImageQueries": [
       "Base Course Materials"
+    ],
+    "questionImageLayoutQueries": [
+      "Base Course Materials"
     ]
   },
   {
@@ -341,10 +347,7 @@
       "USCS well graded gravel"
     ],
     "answerImageQuery": "well graded gravel",
-    "questionImageQuery": "well graded gravel",
-    "questionImageQueries": [
-      "well graded gravel"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-008",
@@ -392,6 +395,9 @@
     ],
     "questionImageQuery": "apitong timber wood Philippines",
     "questionImageQueries": [
+      "apitong timber wood Philippines"
+    ],
+    "questionImageLayoutQueries": [
       "apitong timber wood Philippines"
     ]
   },
@@ -441,6 +447,9 @@
     ],
     "questionImageQuery": "narra wood flooring cladding Philippines",
     "questionImageQueries": [
+      "narra wood flooring cladding Philippines"
+    ],
+    "questionImageLayoutQueries": [
       "narra wood flooring cladding Philippines"
     ]
   },
@@ -495,6 +504,9 @@
     "questionImageQuery": "gabion basket retaining wall",
     "questionImageQueries": [
       "gabion basket retaining wall"
+    ],
+    "questionImageLayoutQueries": [
+      "gabion basket retaining wall"
     ]
   },
   {
@@ -539,6 +551,13 @@
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQuery": "geomembrane liner canal pond construction",
     "answerImageQueries": [
+      "geomembrane liner canal pond construction"
+    ],
+    "questionImageQuery": "geomembrane liner canal pond construction",
+    "questionImageQueries": [
+      "geomembrane liner canal pond construction"
+    ],
+    "questionImageLayoutQueries": [
       "geomembrane liner canal pond construction"
     ]
   },
@@ -589,6 +608,9 @@
     "questionImageQuery": "riprap stone erosion control",
     "questionImageQueries": [
       "riprap stone erosion control"
+    ],
+    "questionImageLayoutQueries": [
+      "riprap stone erosion control"
     ]
   },
   {
@@ -637,6 +659,9 @@
     ],
     "questionImageQuery": "soil compaction",
     "questionImageQueries": [
+      "soil compaction"
+    ],
+    "questionImageLayoutQueries": [
       "soil compaction"
     ]
   },
@@ -687,6 +712,9 @@
     "questionImageQuery": "road bollards metal concrete posts",
     "questionImageQueries": [
       "road bollards metal concrete posts"
+    ],
+    "questionImageLayoutQueries": [
+      "road bollards metal concrete posts"
     ]
   },
   {
@@ -735,6 +763,13 @@
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQuery": "earth berm against building wall",
     "answerImageQueries": [
+      "earth berm against building wall"
+    ],
+    "questionImageQuery": "earth berm against building wall",
+    "questionImageQueries": [
+      "earth berm against building wall"
+    ],
+    "questionImageLayoutQueries": [
       "earth berm against building wall"
     ]
   },
@@ -785,6 +820,9 @@
     "questionImageQuery": "grading",
     "questionImageQueries": [
       "grading"
+    ],
+    "questionImageLayoutQueries": [
+      "grading"
     ]
   },
   {
@@ -830,7 +868,14 @@
     "answerImageQueries": [
       "coal tar pitch waterproofing material"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "coal tar pitch waterproofing material",
+    "questionImageQueries": [
+      "coal tar pitch waterproofing material"
+    ],
+    "questionImageLayoutQueries": [
+      "coal tar pitch waterproofing material"
+    ]
   },
   {
     "uid": "BM-018",
@@ -878,6 +923,9 @@
     ],
     "questionImageQuery": "grass paver turf pavement",
     "questionImageQueries": [
+      "grass paver turf pavement"
+    ],
+    "questionImageLayoutQueries": [
       "grass paver turf pavement"
     ]
   },
@@ -968,6 +1016,13 @@
     "answerImageQuery": "building lime mortar plaster",
     "answerImageQueries": [
       "building lime mortar plaster"
+    ],
+    "questionImageQuery": "building lime mortar plaster",
+    "questionImageQueries": [
+      "building lime mortar plaster"
+    ],
+    "questionImageLayoutQueries": [
+      "building lime mortar plaster"
     ]
   },
   {
@@ -1016,6 +1071,9 @@
     "answerImageAlt": "Answer visual reference",
     "questionImageQuery": "blended cement bag construction",
     "questionImageQueries": [
+      "blended cement bag construction"
+    ],
+    "questionImageLayoutQueries": [
       "blended cement bag construction"
     ]
   },
@@ -1066,6 +1124,9 @@
     "answerImageQuery": "Portland cement raw materials lime silica",
     "questionImageQuery": "Portland cement raw materials lime silica",
     "questionImageQueries": [
+      "Portland cement raw materials lime silica"
+    ],
+    "questionImageLayoutQueries": [
       "Portland cement raw materials lime silica"
     ]
   },
@@ -1347,6 +1408,9 @@
     "questionImageQuery": "construction aggregates sand gravel",
     "questionImageQueries": [
       "construction aggregates sand gravel"
+    ],
+    "questionImageLayoutQueries": [
+      "construction aggregates sand gravel"
     ]
   },
   {
@@ -1393,10 +1457,7 @@
     "answerImageQueries": [
       "construction aggregates sand gravel"
     ],
-    "questionImageQuery": "construction aggregates sand gravel",
-    "questionImageQueries": [
-      "construction aggregates sand gravel"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-030",
@@ -1536,6 +1597,9 @@
     "questionImageQuery": "lightweight aggregate concrete expanded clay",
     "questionImageQueries": [
       "lightweight aggregate concrete expanded clay"
+    ],
+    "questionImageLayoutQueries": [
+      "lightweight aggregate concrete expanded clay"
     ]
   },
   {
@@ -1584,6 +1648,9 @@
     ],
     "questionImageQuery": "vermiculite lightweight aggregate",
     "questionImageQueries": [
+      "vermiculite lightweight aggregate"
+    ],
+    "questionImageLayoutQueries": [
       "vermiculite lightweight aggregate"
     ]
   },
@@ -1634,6 +1701,9 @@
     "questionImageQuery": "perlite lightweight aggregate construction",
     "questionImageQueries": [
       "perlite lightweight aggregate construction"
+    ],
+    "questionImageLayoutQueries": [
+      "perlite lightweight aggregate construction"
     ]
   },
   {
@@ -1682,6 +1752,9 @@
     "answerImageAlt": "Answer visual reference",
     "questionImageQuery": "paste",
     "questionImageQueries": [
+      "paste"
+    ],
+    "questionImageLayoutQueries": [
       "paste"
     ]
   },
@@ -1778,6 +1851,9 @@
     "questionImageQuery": "cement mortar construction",
     "questionImageQueries": [
       "cement mortar construction"
+    ],
+    "questionImageLayoutQueries": [
+      "cement mortar construction"
     ]
   },
   {
@@ -1826,6 +1902,9 @@
     ],
     "questionImageQuery": "fresh concrete construction",
     "questionImageQueries": [
+      "fresh concrete construction"
+    ],
+    "questionImageLayoutQueries": [
       "fresh concrete construction"
     ]
   },
@@ -1876,6 +1955,9 @@
     "questionImageQuery": "fresh concrete construction",
     "questionImageQueries": [
       "fresh concrete construction"
+    ],
+    "questionImageLayoutQueries": [
+      "fresh concrete construction"
     ]
   },
   {
@@ -1924,6 +2006,9 @@
     ],
     "questionImageQuery": "reinforced concrete rebar embedded",
     "questionImageQueries": [
+      "reinforced concrete rebar embedded"
+    ],
+    "questionImageLayoutQueries": [
       "reinforced concrete rebar embedded"
     ]
   },
@@ -1974,6 +2059,9 @@
     "questionImageQuery": "plain mass concrete construction",
     "questionImageQueries": [
       "plain mass concrete construction"
+    ],
+    "questionImageLayoutQueries": [
+      "plain mass concrete construction"
     ]
   },
   {
@@ -2022,6 +2110,9 @@
     "answerImageAlt": "Answer visual reference",
     "questionImageQuery": "lean concrete blinding layer",
     "questionImageQueries": [
+      "lean concrete blinding layer"
+    ],
+    "questionImageLayoutQueries": [
       "lean concrete blinding layer"
     ]
   },
@@ -2076,6 +2167,9 @@
     "questionImageQuery": "stucco plaster wall finish",
     "questionImageQueries": [
       "stucco plaster wall finish"
+    ],
+    "questionImageLayoutQueries": [
+      "stucco plaster wall finish"
     ]
   },
   {
@@ -2125,6 +2219,9 @@
     "questionImageQuery": "white deposits concrete wall calcification",
     "questionImageQueries": [
       "white deposits concrete wall calcification"
+    ],
+    "questionImageLayoutQueries": [
+      "white deposits concrete wall calcification"
     ]
   },
   {
@@ -2173,6 +2270,9 @@
     "answerImageAlt": "Answer visual reference",
     "questionImageQuery": "efflorescence concrete wall white salts",
     "questionImageQueries": [
+      "efflorescence concrete wall white salts"
+    ],
+    "questionImageLayoutQueries": [
       "efflorescence concrete wall white salts"
     ]
   },
@@ -2228,10 +2328,7 @@
       "cement suppliers Philippines"
     ],
     "answerImageQuery": "cement brands Philippines",
-    "questionImageQuery": "cement brands Philippines",
-    "questionImageQueries": [
-      "cement brands Philippines"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-047",
@@ -2269,10 +2366,7 @@
       "high alumina cement"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "high alumina cement",
-    "questionImageQueries": [
-      "high alumina cement"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-048",
@@ -2321,6 +2415,9 @@
     "questionImageQuery": "gypsum plaster material",
     "questionImageQueries": [
       "gypsum plaster material"
+    ],
+    "questionImageLayoutQueries": [
+      "gypsum plaster material"
     ]
   },
   {
@@ -2367,10 +2464,7 @@
       "high alumina cement"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "high alumina cement",
-    "questionImageQueries": [
-      "high alumina cement"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-050",
@@ -2461,10 +2555,7 @@
       "rebar color code"
     ],
     "answerImageQuery": "deformed bar color code",
-    "questionImageQuery": "deformed bar color code",
-    "questionImageQueries": [
-      "deformed bar color code"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-052",
@@ -2510,10 +2601,7 @@
       "rebar color code"
     ],
     "answerImageQuery": "deformed bar color code",
-    "questionImageQuery": "deformed bar color code",
-    "questionImageQueries": [
-      "deformed bar color code"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-053",
@@ -2656,6 +2744,9 @@
     "questionImageQuery": "structural steel shop primer coat",
     "questionImageQueries": [
       "structural steel shop primer coat"
+    ],
+    "questionImageLayoutQueries": [
+      "structural steel shop primer coat"
     ]
   },
   {
@@ -2705,6 +2796,9 @@
     "questionImageQuery": "capillary action",
     "questionImageQueries": [
       "capillary action"
+    ],
+    "questionImageLayoutQueries": [
+      "capillary action"
     ]
   },
   {
@@ -2751,10 +2845,7 @@
       "concrete admixtures"
     ],
     "answerImageQuery": "concrete admixture",
-    "questionImageQuery": "concrete admixture",
-    "questionImageQueries": [
-      "concrete admixture"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-058",
@@ -2800,10 +2891,7 @@
       "concrete accelerator admixture"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "concrete accelerator admixture",
-    "questionImageQueries": [
-      "concrete accelerator admixture"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-059",
@@ -2849,10 +2937,7 @@
     "answerImageQueries": [
       "concrete retarder admixture"
     ],
-    "questionImageQuery": "concrete retarder admixture",
-    "questionImageQueries": [
-      "concrete retarder admixture"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-060",
@@ -2898,10 +2983,7 @@
       "integral application finishes"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "integral application finishes",
-    "questionImageQueries": [
-      "integral application finishes"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-061",
@@ -2977,10 +3059,7 @@
       "concrete admixtures"
     ],
     "answerImageQuery": "concrete admixture",
-    "questionImageQuery": "concrete admixture",
-    "questionImageQueries": [
-      "concrete admixture"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-063",
@@ -3026,10 +3105,7 @@
       "concrete hardener"
     ],
     "answerImageQuery": "concrete floor hardener",
-    "questionImageQuery": "concrete floor hardener",
-    "questionImageQueries": [
-      "concrete floor hardener"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-064",
@@ -3077,6 +3153,9 @@
     ],
     "questionImageQuery": "green lumber construction formwork",
     "questionImageQueries": [
+      "green lumber construction formwork"
+    ],
+    "questionImageLayoutQueries": [
       "green lumber construction formwork"
     ]
   },
@@ -3172,6 +3251,9 @@
     "questionImageQuery": "formwork release oil concrete",
     "questionImageQueries": [
       "formwork release oil concrete"
+    ],
+    "questionImageLayoutQueries": [
+      "formwork release oil concrete"
     ]
   },
   {
@@ -3220,6 +3302,9 @@
     ],
     "questionImageQuery": "gunite shotcrete application",
     "questionImageQueries": [
+      "gunite shotcrete application"
+    ],
+    "questionImageLayoutQueries": [
       "gunite shotcrete application"
     ]
   },
@@ -3270,6 +3355,9 @@
     "questionImageQuery": "aerated lightweight concrete block",
     "questionImageQueries": [
       "aerated lightweight concrete block"
+    ],
+    "questionImageLayoutQueries": [
+      "aerated lightweight concrete block"
     ]
   },
   {
@@ -3318,6 +3406,9 @@
     ],
     "questionImageQuery": "aerated lightweight concrete block",
     "questionImageQueries": [
+      "aerated lightweight concrete block"
+    ],
+    "questionImageLayoutQueries": [
       "aerated lightweight concrete block"
     ]
   },
@@ -3368,6 +3459,9 @@
     "questionImageQuery": "masonry wall brick block stone",
     "questionImageQueries": [
       "masonry wall brick block stone"
+    ],
+    "questionImageLayoutQueries": [
+      "masonry wall brick block stone"
     ]
   },
   {
@@ -3416,6 +3510,9 @@
     ],
     "questionImageQuery": "concrete hollow block CHB",
     "questionImageQueries": [
+      "concrete hollow block CHB"
+    ],
+    "questionImageLayoutQueries": [
       "concrete hollow block CHB"
     ]
   },
@@ -3466,6 +3563,9 @@
     "questionImageQuery": "concrete hollow block cells",
     "questionImageQueries": [
       "concrete hollow block cells"
+    ],
+    "questionImageLayoutQueries": [
+      "concrete hollow block cells"
     ]
   },
   {
@@ -3514,6 +3614,9 @@
     ],
     "questionImageQuery": "Durisol block cement bonded wood fiber block",
     "questionImageQueries": [
+      "Durisol block cement bonded wood fiber block"
+    ],
+    "questionImageLayoutQueries": [
       "Durisol block cement bonded wood fiber block"
     ]
   },
@@ -3568,6 +3671,9 @@
     "questionImageQuery": "plaster wall coating",
     "questionImageQueries": [
       "plaster wall coating"
+    ],
+    "questionImageLayoutQueries": [
+      "plaster wall coating"
     ]
   },
   {
@@ -3616,6 +3722,9 @@
     ],
     "questionImageQuery": "cement mortar mix",
     "questionImageQueries": [
+      "cement mortar mix"
+    ],
+    "questionImageLayoutQueries": [
       "cement mortar mix"
     ]
   },
@@ -3670,6 +3779,9 @@
     "questionImageQuery": "plaster wall coating",
     "questionImageQueries": [
       "plaster wall coating"
+    ],
+    "questionImageLayoutQueries": [
+      "plaster wall coating"
     ]
   },
   {
@@ -3719,6 +3831,9 @@
     "questionImageQuery": "glazed brick wall",
     "questionImageQueries": [
       "glazed brick wall"
+    ],
+    "questionImageLayoutQueries": [
+      "glazed brick wall"
     ]
   },
   {
@@ -3767,6 +3882,9 @@
     ],
     "questionImageQuery": "firebrick refractory brick",
     "questionImageQueries": [
+      "firebrick refractory brick"
+    ],
+    "questionImageLayoutQueries": [
       "firebrick refractory brick"
     ]
   },
@@ -3862,6 +3980,9 @@
     "questionImageQuery": "building stone material",
     "questionImageQueries": [
       "building stone material"
+    ],
+    "questionImageLayoutQueries": [
+      "building stone material"
     ]
   },
   {
@@ -3908,10 +4029,7 @@
       "Obsidian Rock"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "Obsidian Rock",
-    "questionImageQueries": [
-      "Obsidian Rock"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-082",
@@ -3957,10 +4075,7 @@
       "molten magma rock"
     ],
     "answerImageQuery": "igneous rock",
-    "questionImageQuery": "igneous rock",
-    "questionImageQueries": [
-      "igneous rock"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-083",
@@ -4004,6 +4119,13 @@
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQuery": "dimension stone block",
     "answerImageQueries": [
+      "dimension stone block"
+    ],
+    "questionImageQuery": "dimension stone block",
+    "questionImageQueries": [
+      "dimension stone block"
+    ],
+    "questionImageLayoutQueries": [
       "dimension stone block"
     ]
   },
@@ -4054,6 +4176,13 @@
     "answerImageQuery": "rubble stone wall construction",
     "answerImageQueries": [
       "rubble stone wall construction"
+    ],
+    "questionImageQuery": "rubble stone wall construction",
+    "questionImageQueries": [
+      "rubble stone wall construction"
+    ],
+    "questionImageLayoutQueries": [
+      "rubble stone wall construction"
     ]
   },
   {
@@ -4103,6 +4232,9 @@
     "questionImageQuery": "marble stone slab",
     "questionImageQueries": [
       "marble stone slab"
+    ],
+    "questionImageLayoutQueries": [
+      "marble stone slab"
     ]
   },
   {
@@ -4147,6 +4279,13 @@
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQuery": "granite stone slab",
     "answerImageQueries": [
+      "granite stone slab"
+    ],
+    "questionImageQuery": "granite stone slab",
+    "questionImageQueries": [
+      "granite stone slab"
+    ],
+    "questionImageLayoutQueries": [
       "granite stone slab"
     ]
   },
@@ -4197,6 +4336,9 @@
     "questionImageQuery": "gypsum plaster block partition",
     "questionImageQueries": [
       "gypsum plaster block partition"
+    ],
+    "questionImageLayoutQueries": [
+      "gypsum plaster block partition"
     ]
   },
   {
@@ -4245,6 +4387,9 @@
     ],
     "questionImageQuery": "deformed reinforcing steel bars",
     "questionImageQueries": [
+      "deformed reinforcing steel bars"
+    ],
+    "questionImageLayoutQueries": [
       "deformed reinforcing steel bars"
     ]
   },
@@ -4381,6 +4526,13 @@
     "answerImageQuery": "cast iron metal material",
     "answerImageQueries": [
       "cast iron metal material"
+    ],
+    "questionImageQuery": "cast iron metal material",
+    "questionImageQueries": [
+      "cast iron metal material"
+    ],
+    "questionImageLayoutQueries": [
+      "cast iron metal material"
     ]
   },
   {
@@ -4475,7 +4627,14 @@
       "metal insert shadow line",
       "shadow line metal trim"
     ],
-    "answerImageQuery": "metal insert shadow line"
+    "answerImageQuery": "metal insert shadow line",
+    "questionImageQuery": "metal insert shadow line",
+    "questionImageQueries": [
+      "metal insert shadow line"
+    ],
+    "questionImageLayoutQueries": [
+      "metal insert shadow line"
+    ]
   },
   {
     "uid": "BM-094",
@@ -4524,6 +4683,9 @@
     "questionImageQuery": "prestressing steel tendons concrete",
     "questionImageQueries": [
       "prestressing steel tendons concrete"
+    ],
+    "questionImageLayoutQueries": [
+      "prestressing steel tendons concrete"
     ]
   },
   {
@@ -4568,6 +4730,13 @@
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQuery": "wrought iron metal",
     "answerImageQueries": [
+      "wrought iron metal"
+    ],
+    "questionImageQuery": "wrought iron metal",
+    "questionImageQueries": [
+      "wrought iron metal"
+    ],
+    "questionImageLayoutQueries": [
       "wrought iron metal"
     ]
   },
@@ -4618,6 +4787,9 @@
     "questionImageQuery": "cast iron metal material",
     "questionImageQueries": [
       "cast iron metal material"
+    ],
+    "questionImageLayoutQueries": [
+      "cast iron metal material"
     ]
   },
   {
@@ -4662,6 +4834,13 @@
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQuery": "copper metal sheet patina",
     "answerImageQueries": [
+      "copper metal sheet patina"
+    ],
+    "questionImageQuery": "copper metal sheet patina",
+    "questionImageQueries": [
+      "copper metal sheet patina"
+    ],
+    "questionImageLayoutQueries": [
       "copper metal sheet patina"
     ]
   },
@@ -4712,6 +4891,9 @@
     "questionImageQuery": "stainless steel cladding panel",
     "questionImageQueries": [
       "stainless steel cladding panel"
+    ],
+    "questionImageLayoutQueries": [
+      "stainless steel cladding panel"
     ]
   },
   {
@@ -4761,6 +4943,9 @@
     "questionImageQuery": "manganese steel wear resistant",
     "questionImageQueries": [
       "manganese steel wear resistant"
+    ],
+    "questionImageLayoutQueries": [
+      "manganese steel wear resistant"
     ]
   },
   {
@@ -4805,6 +4990,13 @@
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQuery": "bronze patina oxidation",
     "answerImageQueries": [
+      "bronze patina oxidation"
+    ],
+    "questionImageQuery": "bronze patina oxidation",
+    "questionImageQueries": [
+      "bronze patina oxidation"
+    ],
+    "questionImageLayoutQueries": [
       "bronze patina oxidation"
     ]
   },
