@@ -3,22 +3,205 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<title>ALE Reviewer by Edrizh Ingco</title>
+<title>ALE Review Dashboard</title>
 <style>
-:root{--bg:#f5efe4;--surface:#fffaf1;--text:#1e293b;--muted:#667085;--accent:#8a5a24;--line:rgba(40,30,20,.15);--shadow:0 22px 55px rgba(54,35,10,.14)}
-*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}body{margin:0;min-height:100vh;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:radial-gradient(circle at top left,rgba(138,90,36,.18),transparent 32%),linear-gradient(135deg,#fffaf2,var(--bg));color:var(--text);padding:18px}.wrap{width:min(100%,1100px);margin:0 auto;display:grid;gap:18px}header{background:rgba(255,250,241,.86);border:1px solid var(--line);border-radius:30px;box-shadow:var(--shadow);padding:clamp(20px,5vw,42px)}h1{margin:0;font-size:clamp(1.8rem,6vw,3.4rem);line-height:1;letter-spacing:-.055em}p{margin:10px 0 0;color:var(--muted);line-height:1.5}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}.card{min-height:150px;border:1px solid var(--line);border-radius:26px;padding:18px;background:rgba(255,250,241,.88);box-shadow:var(--shadow);display:grid;gap:9px;text-decoration:none;color:inherit;position:relative;overflow:hidden}.card.active:hover{transform:translateY(-2px)}.card.disabled{opacity:.56;filter:saturate(.55);cursor:not-allowed}.num{width:38px;height:38px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;background:rgba(138,90,36,.13);color:var(--accent);font-weight:950}strong{font-size:1.25rem;line-height:1.18}em{font-style:normal;color:var(--muted);font-weight:800}.active em{color:var(--accent)}footer{color:var(--muted);font-size:.9rem;line-height:1.4;padding:0 6px 20px}
+:root{
+  --bg:#f5efe4;--surface:#fffaf1;--surface2:#fffdf8;--text:#1e293b;--muted:#667085;
+  --accent:#8a5a24;--accentDark:#5f3b13;--soft:#efe0c7;--line:rgba(40,30,20,.15);
+  --good:#157347;--warn:#9a6b00;--blue:#2563eb;--shadow:0 22px 55px rgba(54,35,10,.14)
+}
+body.dark{
+  --bg:#111827;--surface:#1f2937;--surface2:#273244;--text:#f9fafb;--muted:#cbd5e1;
+  --accent:#d6a05f;--accentDark:#ffd9a3;--soft:#374151;--line:rgba(255,255,255,.14);
+  --shadow:0 22px 55px rgba(0,0,0,.35)
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{
+  margin:0;min-height:100vh;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  background:radial-gradient(circle at top left,rgba(138,90,36,.16),transparent 34%),linear-gradient(135deg,#fffaf2,var(--bg));
+  color:var(--text);padding:18px
+}
+body.dark{background:radial-gradient(circle at top left,rgba(214,160,95,.16),transparent 34%),linear-gradient(135deg,#111827,#0b1020)}
+.app{width:min(100%,1160px);margin:0 auto;display:grid;gap:16px}
+header{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+h1{margin:0;font-size:clamp(1.75rem,5vw,3.2rem);line-height:1;letter-spacing:-.055em}
+.sub{margin:10px 0 0;color:var(--muted);font-size:1rem;line-height:1.45;max-width:740px}
+.topActions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.badge,.miniBtn{background:rgba(138,90,36,.12);color:var(--accentDark);border:1px solid var(--line);border-radius:999px;padding:9px 12px;font-weight:850;font-size:.82rem;white-space:nowrap;text-decoration:none}
+.miniBtn{cursor:pointer}
+.hero,.subjectCard,.summary,.note{background:rgba(255,250,241,.86);border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);backdrop-filter:blur(12px)}
+body.dark .hero,body.dark .subjectCard,body.dark .summary,body.dark .note{background:rgba(31,41,55,.88)}
+.hero{padding:clamp(22px,4vw,38px);display:grid;gap:18px}
+.heroGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.stat{border-radius:20px;background:rgba(255,255,255,.55);border:1px solid var(--line);padding:15px;text-align:center}
+body.dark .stat{background:rgba(255,255,255,.07)}
+.stat strong{display:block;font-size:1.35rem;line-height:1}.stat span{display:block;color:var(--muted);font-size:.78rem;margin-top:6px;font-weight:750}
+.toolbar{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+input{width:100%;border:1px solid var(--line);border-radius:18px;padding:14px 15px;background:var(--surface2);color:var(--text);outline:none;font:inherit}
+button{border:0;border-radius:17px;padding:13px 15px;background:var(--accent);color:white;font-weight:900;cursor:pointer;font:inherit;touch-action:manipulation}
+button.secondary{background:var(--soft);color:var(--accentDark)}
+.subjects{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.subjectCard{position:relative;overflow:hidden;padding:18px;display:grid;gap:14px;min-height:265px;text-decoration:none;color:inherit}
+.subjectCard:focus,.subjectCard:hover{outline:2px solid rgba(138,90,36,.35);transform:translateY(-1px)}
+.cardTop{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.kicker{font-size:.76rem;font-weight:950;letter-spacing:.08em;text-transform:uppercase;color:var(--accentDark)}
+.title{font-size:1.4rem;font-weight:950;letter-spacing:-.035em;line-height:1.05;margin-top:6px}
+.desc{color:var(--muted);line-height:1.42;font-size:.94rem}
+.pill{background:rgba(138,90,36,.12);border:1px solid var(--line);color:var(--accentDark);border-radius:999px;padding:8px 10px;font-size:.76rem;font-weight:950;white-space:nowrap}
+.meta{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:auto}
+.metaBox{background:rgba(255,255,255,.55);border:1px solid var(--line);border-radius:16px;padding:11px 10px}
+body.dark .metaBox{background:rgba(255,255,255,.07)}
+.metaBox strong{display:block;font-size:1.02rem}.metaBox span{display:block;font-size:.72rem;color:var(--muted);font-weight:800;margin-top:3px}
+.progressWrap{height:10px;background:rgba(138,90,36,.12);border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.progressBar{height:100%;width:0%;background:var(--accent);border-radius:999px;transition:width .25s ease}
+.openRow{display:flex;justify-content:space-between;align-items:center;color:var(--accentDark);font-weight:950;font-size:.9rem;padding-top:2px}
+.summary{padding:16px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.note{padding:16px;color:var(--muted);line-height:1.45;font-size:.92rem}
+.note strong{color:var(--text)}
+.hidden{display:none!important}
+@media(max-width:920px){.subjects{grid-template-columns:1fr 1fr}.heroGrid,.summary{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){body{padding:12px}header{display:grid}.topActions{justify-content:start}.subjects,.heroGrid,.summary,.toolbar{grid-template-columns:1fr}.subjectCard{min-height:230px}}
 </style>
 </head>
 <body>
-<main class="wrap">
+<main class="app">
 <header>
-<h1>ALE Reviewer by Edrizh Ingco</h1>
-<p>Subject folders are separated so finished subjects stay protected while other subjects are edited later.</p>
+  <div>
+    <h1>ALE Review Dashboard</h1>
+    <p class="sub">Main hub for independent subject folders. Each subject keeps its own progress on this device.</p>
+  </div>
+  <div class="topActions">
+    <button id="themeBtn" class="miniBtn" type="button">Dark Mode</button>
+    <div id="statusBadge" class="badge">Loading subjects...</div>
+  </div>
 </header>
-<section class="grid">
-<a class="card active" href="./history/"><span class="num">1</span><strong>History</strong><em>Open reviewer</em></a><div class="card disabled" aria-disabled="true"><span class="num">2</span><strong>Theory</strong><em>Coming soon</em></div><div class="card disabled" aria-disabled="true"><span class="num">3</span><strong>Theory 2</strong><em>Coming soon</em></div><div class="card disabled" aria-disabled="true"><span class="num">4</span><strong>Planning</strong><em>Coming soon</em></div><div class="card disabled" aria-disabled="true"><span class="num">5</span><strong>Tropical Design and Green Architecture</strong><em>Coming soon</em></div><div class="card disabled" aria-disabled="true"><span class="num">6</span><strong>Building Laws</strong><em>Coming soon</em></div><div class="card disabled" aria-disabled="true"><span class="num">7</span><strong>ADSP Rule 7 & 8</strong><em>Coming soon</em></div><a class="card active" href="./building-construction/"><span class="num">8</span><strong>Building Construction</strong><em>Open reviewer</em></a><div class="card disabled" aria-disabled="true"><span class="num">9</span><strong>Building Materials</strong><em>Coming soon</em></div><div class="card disabled" aria-disabled="true"><span class="num">10</span><strong>Building Utilities</strong><em>Coming soon</em></div><div class="card disabled" aria-disabled="true"><span class="num">11</span><strong>Structural Concepts</strong><em>Coming soon</em></div><div class="card disabled" aria-disabled="true"><span class="num">12</span><strong>Structural Concepts Add Notes</strong><em>Coming soon</em></div><div class="card disabled" aria-disabled="true"><span class="num">13</span><strong>Professional Practice</strong><em>Coming soon</em></div>
+
+<section class="hero">
+  <div class="toolbar">
+    <input id="searchInput" type="search" placeholder="Search subject..." />
+    <button id="refreshBtn" type="button" class="secondary">Refresh</button>
+  </div>
+  <div class="heroGrid">
+    <div class="stat"><strong id="subjectCount">0</strong><span>Subjects</span></div>
+    <div class="stat"><strong id="cardCount">0</strong><span>Total Cards</span></div>
+    <div class="stat"><strong id="answeredCount">0</strong><span>Answered</span></div>
+    <div class="stat"><strong id="overallCoverage">0%</strong><span>Overall Coverage</span></div>
+  </div>
 </section>
-<footer>Active subjects: History and Building Construction. Other subjects are disabled until final files are provided.</footer>
+
+<section id="subjects" class="subjects" aria-label="Subjects"></section>
+
+<section class="note">
+  <strong>Upload rule:</strong> keep every subject as its own folder with <code>index.html</code> and <code>cards.json</code>. Example: <code>building-materials/index.html</code> and <code>building-materials/cards.json</code>.
+</section>
 </main>
+
+<script>
+const SUBJECTS = [
+  {
+    title: "ALE Building Materials",
+    folder: "building-materials/",
+    code: "BM",
+    desc: "Materials-focused flashcards with online question visuals and Google Images fallback.",
+    expectedCards: 326,
+    visualNote: "Visual-ready"
+  },
+  {
+    title: "ALE Building Construction",
+    folder: "building-construction/",
+    code: "BC",
+    desc: "Construction systems and methods. Independent progress folder.",
+    expectedCards: null,
+    visualNote: "Subject folder"
+  },
+  {
+    title: "ALE History",
+    folder: "history/",
+    code: "HIST",
+    desc: "Architecture history reviewer with structure identification visuals.",
+    expectedCards: null,
+    visualNote: "Subject folder"
+  }
+];
+
+const $ = id => document.getElementById(id);
+function escapeHtml(value){return String(value ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[ch]));}
+function loadJson(key, fallback){try{return JSON.parse(localStorage.getItem(key)||"")||fallback}catch(e){return fallback}}
+function getSubjectPath(folder){return new URL(folder, location.href).pathname;}
+function getStoragePrefix(folder){return "aleSplit_" + getSubjectPath(folder).replace(/\W+/g, "_");}
+function getStats(folder){return loadJson(getStoragePrefix(folder)+"stats", {correct:0, wrong:0, answeredIds:[], masteredIds:[], missedIds:[]});}
+async function loadCardCount(folder, fallback){
+  try{
+    const res = await fetch(folder + "cards.json", {cache:"no-cache"});
+    if(!res.ok) throw new Error("HTTP "+res.status);
+    const cards = await res.json();
+    return Array.isArray(cards) ? cards.length : (fallback || 0);
+  }catch(e){
+    return fallback || 0;
+  }
+}
+function cardTemplate(subject, count, stats){
+  const answered = Array.isArray(stats.answeredIds) ? stats.answeredIds.length : 0;
+  const missed = Array.isArray(stats.missedIds) ? stats.missedIds.length : 0;
+  const coverage = count ? Math.min(100, Math.round(answered / count * 100)) : 0;
+  const attempts = (stats.correct || 0) + (stats.wrong || 0);
+  const accuracy = attempts ? Math.round((stats.correct || 0) / attempts * 100) : 0;
+  return `<a class="subjectCard" href="${escapeHtml(subject.folder)}" data-title="${escapeHtml(subject.title.toLowerCase())}">
+    <div class="cardTop">
+      <div><div class="kicker">${escapeHtml(subject.code)}</div><div class="title">${escapeHtml(subject.title)}</div></div>
+      <div class="pill">${escapeHtml(subject.visualNote)}</div>
+    </div>
+    <div class="desc">${escapeHtml(subject.desc)}</div>
+    <div class="progressWrap" title="${coverage}% coverage"><div class="progressBar" style="width:${coverage}%"></div></div>
+    <div class="meta">
+      <div class="metaBox"><strong>${count || "—"}</strong><span>Cards</span></div>
+      <div class="metaBox"><strong>${coverage}%</strong><span>Coverage</span></div>
+      <div class="metaBox"><strong>${accuracy}%</strong><span>Accuracy</span></div>
+      <div class="metaBox"><strong>${missed}</strong><span>Missed</span></div>
+    </div>
+    <div class="openRow"><span>Open subject</span><span>→</span></div>
+  </a>`;
+}
+async function renderDashboard(){
+  const host = $("subjects");
+  host.innerHTML = "";
+  let totalCards = 0;
+  let totalAnswered = 0;
+  let loaded = 0;
+  for(const subject of SUBJECTS){
+    const stats = getStats(subject.folder);
+    const count = await loadCardCount(subject.folder, subject.expectedCards);
+    totalCards += count;
+    totalAnswered += Array.isArray(stats.answeredIds) ? Math.min(stats.answeredIds.length, count || stats.answeredIds.length) : 0;
+    if(count) loaded++;
+    host.insertAdjacentHTML("beforeend", cardTemplate(subject, count, stats));
+  }
+  $("subjectCount").textContent = SUBJECTS.length;
+  $("cardCount").textContent = totalCards || "—";
+  $("answeredCount").textContent = totalAnswered;
+  $("overallCoverage").textContent = totalCards ? Math.round(totalAnswered / totalCards * 100) + "%" : "0%";
+  $("statusBadge").textContent = loaded + "/" + SUBJECTS.length + " folders found";
+  applySearch();
+}
+function applySearch(){
+  const q = $("searchInput").value.trim().toLowerCase();
+  for(const card of document.querySelectorAll(".subjectCard")){
+    card.classList.toggle("hidden", q && !card.dataset.title.includes(q));
+  }
+}
+function applyTheme(){
+  const dark = localStorage.getItem("aleDashboardTheme") === "dark";
+  document.body.classList.toggle("dark", dark);
+  $("themeBtn").textContent = dark ? "Light Mode" : "Dark Mode";
+}
+$("themeBtn").addEventListener("click", ()=>{
+  localStorage.setItem("aleDashboardTheme", document.body.classList.contains("dark") ? "light" : "dark");
+  applyTheme();
+});
+$("refreshBtn").addEventListener("click", renderDashboard);
+$("searchInput").addEventListener("input", applySearch);
+applyTheme();
+renderDashboard();
+</script>
 </body>
 </html>
