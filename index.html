@@ -5,48 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <title>ALE Reviewer by Edrizh Ingco</title>
 <style>
-:root{
-  --bg:#f5efe4;--surface:#fffaf1;--surface2:#fffdf8;--text:#10213f;--muted:#667085;
-  --accent:#8a5a24;--accentDark:#6f430f;--soft:#efe0c7;--line:rgba(40,30,20,.14);
-  --ok:#157347;--warn:#9a6b00;--shadow:0 22px 55px rgba(54,35,10,.12)
-}
-body.dark{
-  --bg:#111827;--surface:#1f2937;--surface2:#273244;--text:#f9fafb;--muted:#cbd5e1;
-  --accent:#d6a05f;--accentDark:#ffd9a3;--soft:#374151;--line:rgba(255,255,255,.14);
-  --shadow:0 22px 55px rgba(0,0,0,.35)
-}
+:root{--bg:#f5efe4;--surface:#fffaf1;--surface2:#fffdf8;--text:#10213f;--muted:#667085;--accent:#8a5a24;--accentDark:#6f430f;--soft:#efe0c7;--line:rgba(40,30,20,.14);--ok:#157347;--shadow:0 22px 55px rgba(54,35,10,.12)}
+body.dark{--bg:#111827;--surface:#1f2937;--surface2:#273244;--text:#f9fafb;--muted:#cbd5e1;--accent:#d6a05f;--accentDark:#ffd9a3;--soft:#374151;--line:rgba(255,255,255,.14);--shadow:0 22px 55px rgba(0,0,0,.35)}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-body{
-  margin:0;min-height:100vh;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-  background:radial-gradient(circle at top left,rgba(138,90,36,.16),transparent 34%),linear-gradient(135deg,#fffaf2,var(--bg));
-  color:var(--text);padding:16px
-}
+body{margin:0;min-height:100vh;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:radial-gradient(circle at top left,rgba(138,90,36,.16),transparent 34%),linear-gradient(135deg,#fffaf2,var(--bg));color:var(--text);padding:16px}
 body.dark{background:radial-gradient(circle at top left,rgba(214,160,95,.16),transparent 34%),linear-gradient(135deg,#111827,#0b1020)}
 .app{width:min(100%,880px);margin:0 auto;display:grid;gap:16px}
 .hero,.subjectCard,.note{background:rgba(255,250,241,.86);border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);backdrop-filter:blur(12px)}
 body.dark .hero,body.dark .subjectCard,body.dark .note{background:rgba(31,41,55,.88)}
-.hero{padding:clamp(22px,4vw,38px);display:grid;gap:12px}
-.heroTop{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
-h1{margin:0;font-size:clamp(2rem,5vw,2.8rem);line-height:1;letter-spacing:-.055em}
-.sub{margin:8px 0 0;color:#475569;font-size:.9rem;line-height:1.45}.dark .sub{color:var(--muted)}
-.topActions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
-.miniBtn,.badge{background:rgba(138,90,36,.12);color:var(--accentDark);border:1px solid var(--line);border-radius:999px;padding:9px 12px;font-weight:850;font-size:.78rem;white-space:nowrap;text-decoration:none}
-.miniBtn{cursor:pointer;border:1px solid var(--line);font:inherit}
-.subjects{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.subjectCard{position:relative;min-height:118px;padding:15px;text-decoration:none;color:inherit;display:grid;align-content:space-between;gap:12px;transition:transform .15s ease, outline-color .15s ease}
-.subjectCard:focus,.subjectCard:hover{outline:2px solid rgba(138,90,36,.35);transform:translateY(-1px)}
-.num{width:30px;height:30px;border-radius:999px;background:rgba(138,90,36,.09);display:inline-flex;align-items:center;justify-content:center;color:#9b8a73;font-weight:950;font-size:.8rem}
-.title{font-size:1rem;font-weight:950;letter-spacing:-.02em;line-height:1.1;min-height:2.2em;display:flex;align-items:end}
-.open{color:var(--accentDark);font-size:.84rem;font-weight:950;line-height:1.2}
-.status{color:#98a2b3;font-size:.78rem;font-weight:850;line-height:1.2}
-.subjectCard.ready .status{color:var(--ok)}
-.subjectCard.pending .status{color:var(--warn)}
-.meta{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:2px}
-.chip{border:1px solid var(--line);background:rgba(255,255,255,.52);border-radius:999px;padding:5px 7px;color:var(--muted);font-size:.7rem;font-weight:850}.dark .chip{background:rgba(255,255,255,.07)}
-.note{padding:14px 16px;color:#475569;font-size:.83rem;line-height:1.45}.dark .note{color:var(--muted)}
-.note strong{color:var(--text)}
-@media(max-width:760px){.subjects{grid-template-columns:repeat(2,1fr)}.heroTop{display:grid}.topActions{justify-content:flex-start}.app{max-width:620px}}
-@media(max-width:430px){body{padding:12px}.subjects{grid-template-columns:1fr}.subjectCard{min-height:105px}}
+.hero{padding:clamp(22px,4vw,38px);display:grid;gap:12px}.heroTop{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+h1{margin:0;font-size:clamp(2rem,5vw,2.8rem);line-height:1;letter-spacing:-.055em}.sub{margin:8px 0 0;color:#475569;font-size:.9rem;line-height:1.45}.dark .sub{color:var(--muted)}
+.topActions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.miniBtn,.badge{background:rgba(138,90,36,.12);color:var(--accentDark);border:1px solid var(--line);border-radius:999px;padding:9px 12px;font-weight:850;font-size:.78rem;white-space:nowrap;text-decoration:none}.miniBtn{cursor:pointer;font:inherit}
+.subjects{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.subjectCard{position:relative;min-height:118px;padding:15px;text-decoration:none;color:inherit;display:grid;align-content:space-between;gap:12px;transition:transform .15s ease, outline-color .15s ease}.subjectCard:focus,.subjectCard:hover{outline:2px solid rgba(138,90,36,.35);transform:translateY(-1px)}
+.num{width:30px;height:30px;border-radius:999px;background:rgba(138,90,36,.09);display:inline-flex;align-items:center;justify-content:center;color:#9b8a73;font-weight:950;font-size:.8rem}.title{font-size:1rem;font-weight:950;letter-spacing:-.02em;line-height:1.1;min-height:2.2em;display:flex;align-items:end}.open{color:var(--accentDark);font-size:.84rem;font-weight:950;line-height:1.2}.status{color:var(--ok);font-size:.78rem;font-weight:850;line-height:1.2}.meta{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:2px}.chip{border:1px solid var(--line);background:rgba(255,255,255,.52);border-radius:999px;padding:5px 7px;color:var(--muted);font-size:.7rem;font-weight:850}.dark .chip{background:rgba(255,255,255,.07)}
+.note{padding:14px 16px;color:#475569;font-size:.83rem;line-height:1.45}.dark .note{color:var(--muted)}.note strong{color:var(--text)}code{font-family:ui-monospace,Consolas,monospace;font-size:.9em}
+@media(max-width:760px){.subjects{grid-template-columns:repeat(2,1fr)}.heroTop{display:grid}.topActions{justify-content:flex-start}.app{max-width:620px}}@media(max-width:430px){body{padding:12px}.subjects{grid-template-columns:1fr}.subjectCard{min-height:105px}}
 </style>
 </head>
 <body>
@@ -55,104 +28,42 @@ h1{margin:0;font-size:clamp(2rem,5vw,2.8rem);line-height:1;letter-spacing:-.055e
     <div class="heroTop">
       <div>
         <h1>ALE Reviewer by Edrizh Ingco</h1>
-        <p class="sub">All subject cards are open links. Upload the matching folder anytime and the dashboard will access it automatically.</p>
+        <p class="sub">Dashboard v2 — all subject cards are active links. Upload the matching subject folder anytime, then the link will open automatically.</p>
       </div>
-      <div class="topActions">
-        <button id="themeBtn" class="miniBtn" type="button">Dark Mode</button>
-        <div id="statusBadge" class="badge">Checking folders...</div>
-      </div>
+      <div class="topActions"><button id="themeBtn" class="miniBtn" type="button">Dark Mode</button><div class="badge">All subjects open</div></div>
     </div>
   </section>
 
-  <section id="subjects" class="subjects" aria-label="Subjects"></section>
-
-  <section class="note">
-    <strong>GitHub rule:</strong> each subject folder must contain <code>index.html</code> and <code>cards.json</code>. Example: <code>building-materials/index.html</code> + <code>building-materials/cards.json</code>. Links stay clickable even before a folder is uploaded.
+  <section class="subjects" aria-label="Subjects">
+    <a class="subjectCard" href="history/"><div><div class="num">1</div><div class="title">History</div></div><div><div class="open">Open reviewer</div><div class="meta"><span class="chip" data-folder="history/">Checking cards...</span></div><div class="status">Active link</div></div></a>
+    <a class="subjectCard" href="theory/"><div><div class="num">2</div><div class="title">Theory</div></div><div><div class="open">Open reviewer</div><div class="meta"><span class="chip" data-folder="theory/">Upload folder anytime</span></div><div class="status">Active link</div></div></a>
+    <a class="subjectCard" href="theory-2/"><div><div class="num">3</div><div class="title">Theory 2</div></div><div><div class="open">Open reviewer</div><div class="meta"><span class="chip" data-folder="theory-2/">Upload folder anytime</span></div><div class="status">Active link</div></div></a>
+    <a class="subjectCard" href="planning/"><div><div class="num">4</div><div class="title">Planning</div></div><div><div class="open">Open reviewer</div><div class="meta"><span class="chip" data-folder="planning/">Upload folder anytime</span></div><div class="status">Active link</div></div></a>
+    <a class="subjectCard" href="tropical-design-and-green-architecture/"><div><div class="num">5</div><div class="title">Tropical Design and Green Architecture</div></div><div><div class="open">Open reviewer</div><div class="meta"><span class="chip" data-folder="tropical-design-and-green-architecture/">Upload folder anytime</span></div><div class="status">Active link</div></div></a>
+    <a class="subjectCard" href="building-laws/"><div><div class="num">6</div><div class="title">Building Laws</div></div><div><div class="open">Open reviewer</div><div class="meta"><span class="chip" data-folder="building-laws/">Upload folder anytime</span></div><div class="status">Active link</div></div></a>
+    <a class="subjectCard" href="adsp-rule-7-8/"><div><div class="num">7</div><div class="title">ADSP Rule 7 &amp; 8</div></div><div><div class="open">Open reviewer</div><div class="meta"><span class="chip" data-folder="adsp-rule-7-8/">Upload folder anytime</span></div><div class="status">Active link</div></div></a>
+    <a class="subjectCard" href="building-constructuion/"><div><div class="num">8</div><div class="title">Building Construction</div></div><div><div class="open">Open reviewer</div><div class="meta"><span class="chip" data-folder="building-constructuion/">Checking cards...</span></div><div class="status">Active link</div></div></a>
+    <a class="subjectCard" href="building-materials/"><div><div class="num">9</div><div class="title">Building Materials</div></div><div><div class="open">Open reviewer</div><div class="meta"><span class="chip" data-folder="building-materials/">Checking cards...</span></div><div class="status">Active link</div></div></a>
+    <a class="subjectCard" href="building-utilities/"><div><div class="num">10</div><div class="title">Building Utilities</div></div><div><div class="open">Open reviewer</div><div class="meta"><span class="chip" data-folder="building-utilities/">Upload folder anytime</span></div><div class="status">Active link</div></div></a>
+    <a class="subjectCard" href="structural-concepts/"><div><div class="num">11</div><div class="title">Structural Concepts</div></div><div><div class="open">Open reviewer</div><div class="meta"><span class="chip" data-folder="structural-concepts/">Upload folder anytime</span></div><div class="status">Active link</div></div></a>
+    <a class="subjectCard" href="structural-concepts-add-notes/"><div><div class="num">12</div><div class="title">Structural Concepts Add Notes</div></div><div><div class="open">Open reviewer</div><div class="meta"><span class="chip" data-folder="structural-concepts-add-notes/">Upload folder anytime</span></div><div class="status">Active link</div></div></a>
+    <a class="subjectCard" href="professional-practice/"><div><div class="num">13</div><div class="title">Professional Practice</div></div><div><div class="open">Open reviewer</div><div class="meta"><span class="chip" data-folder="professional-practice/">Upload folder anytime</span></div><div class="status">Active link</div></div></a>
   </section>
+
+  <section class="note"><strong>Upload rule:</strong> replace the ROOT <code>index.html</code> with this file. Do not put it inside another folder. Building Materials must be uploaded as <code>building-materials/index.html</code> and <code>building-materials/cards.json</code>.</section>
 </main>
-
 <script>
-const SUBJECTS = [
-  {n:1, title:"History", folders:["history/"]},
-  {n:2, title:"Theory", folders:["theory/"]},
-  {n:3, title:"Theory 2", folders:["theory-2/","theory2/"]},
-  {n:4, title:"Planning", folders:["planning/"]},
-  {n:5, title:"Tropical Design and Green Architecture", folders:["tropical-design-and-green-architecture/","tropical-design-green-architecture/"]},
-  {n:6, title:"Building Laws", folders:["building-laws/"]},
-  {n:7, title:"ADSP Rule 7 & 8", folders:["adsp-rule-7-8/","adsp-rule-7-and-8/","adsp-rules-7-8/"]},
-  {n:8, title:"Building Construction", folders:["building-constructuion/","building-construction/"]},
-  {n:9, title:"Building Materials", folders:["building-materials/"]},
-  {n:10, title:"Building Utilities", folders:["building-utilities/"]},
-  {n:11, title:"Structural Concepts", folders:["structural-concepts/"]},
-  {n:12, title:"Structural Concepts Add Notes", folders:["structural-concepts-add-notes/","structural-concepts-notes/"]},
-  {n:13, title:"Professional Practice", folders:["professional-practice/"]}
-];
-const $ = id => document.getElementById(id);
-function escapeHtml(value){return String(value ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[ch]));}
-function loadJson(key, fallback){try{return JSON.parse(localStorage.getItem(key)||"")||fallback}catch(e){return fallback}}
-function storagePrefix(folder){return "aleSplit_" + new URL(folder, location.href).pathname.replace(/\W+/g, "_");}
-function statsFor(folder){return loadJson(storagePrefix(folder)+"stats", {correct:0,wrong:0,answeredIds:[],masteredIds:[],missedIds:[]});}
-async function checkFolder(folder){
-  try{
-    const res = await fetch(folder + "cards.json", {cache:"no-cache"});
-    if(!res.ok) throw new Error("missing");
-    const data = await res.json();
-    return {ok:true, count:Array.isArray(data)?data.length:0};
-  }catch(e){return {ok:false, count:0};}
-}
-async function resolveSubject(subject){
-  let best = subject.folders[0];
-  let count = 0;
-  let ok = false;
-  for(const folder of subject.folders){
-    const result = await checkFolder(folder);
-    if(result.ok){best = folder; count = result.count; ok = true; break;}
-  }
-  return {...subject, folder:best, count, ok};
-}
-function renderCard(s){
-  const st = statsFor(s.folder);
-  const answered = Array.isArray(st.answeredIds) ? st.answeredIds.length : 0;
-  const coverage = s.count ? Math.min(100, Math.round(answered / s.count * 100)) : 0;
-  const readyClass = s.ok ? "ready" : "pending";
-  const cardCount = s.ok ? `${s.count} cards` : "folder pending";
-  const coverageText = s.ok ? `${coverage}% coverage` : "upload folder";
-  return `<a class="subjectCard ${readyClass}" href="${escapeHtml(s.folder)}" title="Open ${escapeHtml(s.title)}">
-    <div>
-      <div class="num">${s.n}</div>
-      <div class="title">${escapeHtml(s.title)}</div>
-    </div>
-    <div>
-      <div class="open">Open reviewer</div>
-      <div class="meta"><span class="chip">${escapeHtml(cardCount)}</span><span class="chip">${escapeHtml(coverageText)}</span></div>
-      <div class="status">${s.ok ? "Folder ready" : "Link active; upload folder"}</div>
-    </div>
-  </a>`;
-}
-async function render(){
-  const host = $("subjects");
-  host.innerHTML = SUBJECTS.map(s => renderCard({...s, folder:s.folders[0], count:0, ok:false})).join("");
-  let ready = 0;
-  const resolved = [];
-  for(const subject of SUBJECTS){
-    const s = await resolveSubject(subject);
-    if(s.ok) ready++;
-    resolved.push(s);
-    host.innerHTML = resolved.map(renderCard).join("") + SUBJECTS.slice(resolved.length).map(s => renderCard({...s, folder:s.folders[0], count:0, ok:false})).join("");
-    $("statusBadge").textContent = `${ready}/${SUBJECTS.length} folders ready`;
-  }
-}
-function applyTheme(){
-  const dark = localStorage.getItem("aleDashboardTheme") === "dark";
-  document.body.classList.toggle("dark", dark);
-  $("themeBtn").textContent = dark ? "Light Mode" : "Dark Mode";
-}
-$("themeBtn").addEventListener("click", ()=>{
-  localStorage.setItem("aleDashboardTheme", document.body.classList.contains("dark") ? "light" : "dark");
-  applyTheme();
-});
+const $=id=>document.getElementById(id);
+function applyTheme(){const dark=localStorage.getItem("aleDashboardTheme")==="dark";document.body.classList.toggle("dark",dark);$("themeBtn").textContent=dark?"Light Mode":"Dark Mode";}
+$("themeBtn").addEventListener("click",()=>{localStorage.setItem("aleDashboardTheme",document.body.classList.contains("dark")?"light":"dark");applyTheme();});
 applyTheme();
-render();
+async function countCards(){
+  document.querySelectorAll("[data-folder]").forEach(async chip=>{
+    const folder=chip.getAttribute("data-folder");
+    try{const r=await fetch(folder+"cards.json",{cache:"no-cache"});if(!r.ok)throw new Error();const data=await r.json();if(Array.isArray(data))chip.textContent=data.length+" cards";}catch(e){}
+  });
+}
+countCards();
 </script>
 </body>
 </html>
