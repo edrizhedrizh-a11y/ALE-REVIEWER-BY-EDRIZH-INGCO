@@ -1,69 +1,269 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<title>ALE Reviewer by Edrizh Ingco</title>
-<style>
-:root{--bg:#f5efe4;--surface:#fffaf1;--surface2:#fffdf8;--text:#10213f;--muted:#667085;--accent:#8a5a24;--accentDark:#6f430f;--soft:#efe0c7;--line:rgba(40,30,20,.14);--ok:#157347;--shadow:0 22px 55px rgba(54,35,10,.12)}
-body.dark{--bg:#111827;--surface:#1f2937;--surface2:#273244;--text:#f9fafb;--muted:#cbd5e1;--accent:#d6a05f;--accentDark:#ffd9a3;--soft:#374151;--line:rgba(255,255,255,.14);--shadow:0 22px 55px rgba(0,0,0,.35)}
-*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-body{margin:0;min-height:100vh;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:radial-gradient(circle at top left,rgba(138,90,36,.16),transparent 34%),linear-gradient(135deg,#fffaf2,var(--bg));color:var(--text);padding:16px}
-body.dark{background:radial-gradient(circle at top left,rgba(214,160,95,.16),transparent 34%),linear-gradient(135deg,#111827,#0b1020)}
-.app{width:min(100%,880px);margin:0 auto;display:grid;gap:16px}
-.hero,.subjectCard,.note{background:rgba(255,250,241,.86);border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);backdrop-filter:blur(12px)}
-body.dark .hero,body.dark .subjectCard,body.dark .note{background:rgba(31,41,55,.88)}
-.hero{padding:clamp(22px,4vw,38px);display:grid;gap:12px}.heroTop{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
-h1{margin:0;font-size:clamp(2rem,5vw,2.8rem);line-height:1;letter-spacing:-.055em}.sub{margin:8px 0 0;color:#475569;font-size:.9rem;line-height:1.45}.dark .sub{color:var(--muted)}
-.topActions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.miniBtn,.badge{background:rgba(138,90,36,.12);color:var(--accentDark);border:1px solid var(--line);border-radius:999px;padding:9px 12px;font-weight:850;font-size:.78rem;white-space:nowrap;text-decoration:none}.miniBtn{cursor:pointer;font:inherit}
-.subjects{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.subjectCard{position:relative;min-height:118px;padding:15px;text-decoration:none;color:inherit;display:grid;align-content:space-between;gap:12px;transition:transform .15s ease, outline-color .15s ease}.subjectCard:focus,.subjectCard:hover{outline:2px solid rgba(138,90,36,.35);transform:translateY(-1px)}
-.num{width:30px;height:30px;border-radius:999px;background:rgba(138,90,36,.09);display:inline-flex;align-items:center;justify-content:center;color:#9b8a73;font-weight:950;font-size:.8rem}.title{font-size:1rem;font-weight:950;letter-spacing:-.02em;line-height:1.1;min-height:2.2em;display:flex;align-items:end}.open{color:var(--accentDark);font-size:.84rem;font-weight:950;line-height:1.2}.status{color:var(--ok);font-size:.78rem;font-weight:850;line-height:1.2}.meta{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:2px}.chip{border:1px solid var(--line);background:rgba(255,255,255,.52);border-radius:999px;padding:5px 7px;color:var(--muted);font-size:.7rem;font-weight:850}.dark .chip{background:rgba(255,255,255,.07)}
-.note{padding:14px 16px;color:#475569;font-size:.83rem;line-height:1.45}.dark .note{color:var(--muted)}.note strong{color:var(--text)}code{font-family:ui-monospace,Consolas,monospace;font-size:.9em}
-@media(max-width:760px){.subjects{grid-template-columns:repeat(2,1fr)}.heroTop{display:grid}.topActions{justify-content:flex-start}.app{max-width:620px}}@media(max-width:430px){body{padding:12px}.subjects{grid-template-columns:1fr}.subjectCard{min-height:105px}}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ALE Reviewer by Edrizh Ingco</title>
+  <style>
+    :root{
+      --bg:#f1eee7;
+      --card:#fbfaf6;
+      --ink:#0d1f3a;
+      --muted:#71777f;
+      --line:#ded9cf;
+      --accent:#7a4b00;
+      --good:#157347;
+      --bad:#a03232;
+      --shadow:0 22px 60px rgba(30,28,22,.08);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      min-height:100vh;
+      background:
+        radial-gradient(circle at 10% 0%, rgba(255,255,255,.75), transparent 26rem),
+        radial-gradient(circle at 80% 20%, rgba(255,255,255,.42), transparent 28rem),
+        var(--bg);
+      color:var(--ink);
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+      padding:16px 36px 42px;
+    }
+    .hero{
+      max-width:880px;
+      background:rgba(255,253,248,.72);
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:30px 36px 32px;
+      box-shadow:var(--shadow);
+      margin-bottom:16px;
+    }
+    h1{
+      margin:0 0 4px;
+      font-size:40px;
+      letter-spacing:.01em;
+      line-height:1.1;
+      font-weight:800;
+    }
+    .subtitle{
+      color:#49566d;
+      margin:8px 0 0;
+      font-size:13px;
+      letter-spacing:.02em;
+    }
+    .grid{
+      max-width:880px;
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:12px;
+    }
+    .card{
+      position:relative;
+      display:block;
+      min-height:120px;
+      padding:16px;
+      border-radius:18px;
+      text-decoration:none;
+      color:var(--ink);
+      background:rgba(255,253,248,.62);
+      border:1px solid var(--line);
+      box-shadow:0 18px 40px rgba(30,28,22,.06);
+      transition:transform .16s ease,border-color .16s ease,background .16s ease;
+      cursor:pointer;
+    }
+    .card:hover{
+      transform:translateY(-2px);
+      border-color:#111827;
+      background:rgba(255,253,248,.9);
+    }
+    .num{
+      width:30px;height:30px;border-radius:50%;
+      display:flex;align-items:center;justify-content:center;
+      background:#eee8de;
+      color:#9a8870;
+      font-size:13px;
+      font-weight:800;
+      margin-bottom:12px;
+    }
+    .title{
+      font-weight:800;
+      line-height:1.12;
+      font-size:15.5px;
+      margin-bottom:10px;
+    }
+    .status{
+      color:var(--accent);
+      font-size:13px;
+      font-weight:800;
+    }
+    .status.checking{color:#8b929b}
+    .status.ok{color:var(--good)}
+    .status.missing{color:var(--bad)}
+    .note{
+      max-width:880px;
+      margin:14px 6px 0;
+      color:#42516c;
+      font-size:12px;
+    }
+    .toast{
+      position:fixed;
+      left:50%;
+      bottom:20px;
+      transform:translateX(-50%);
+      max-width:min(720px,calc(100vw - 24px));
+      background:#111827;
+      color:white;
+      border-radius:14px;
+      padding:12px 16px;
+      font-size:13px;
+      line-height:1.45;
+      box-shadow:0 20px 50px rgba(0,0,0,.18);
+      display:none;
+      z-index:20;
+    }
+    .toast.show{display:block}
+    code{background:rgba(255,255,255,.16);padding:1px 5px;border-radius:5px}
+    @media(max-width:820px){
+      body{padding:12px 16px 32px}
+      .hero{padding:24px 22px;border-radius:22px}
+      h1{font-size:32px}
+      .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+    @media(max-width:520px){
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
 </head>
 <body>
-<main class="app">
-  <section class="hero">
-    <div class="heroTop">
-      <div>
-        <h1>ALE Reviewer by Edrizh Ingco</h1>
-        <p class="sub">Dashboard v2 — all subject cards are active links. Upload the matching subject folder anytime, then the link will open automatically.</p>
-      </div>
-      <div class="topActions"><button id="themeBtn" class="miniBtn" type="button">Dark Mode</button><div class="badge">All subjects open</div></div>
-    </div>
-  </section>
+  <header class="hero">
+    <h1>ALE Reviewer by Edrizh Ingco</h1>
+    <p class="subtitle">Dashboard v3 — all cards are clickable; folder aliases are checked before opening to avoid wrong 404 links.</p>
+  </header>
 
-  <section class="subjects" aria-label="Subjects">
-    <a class="subjectCard" href="history/"><div><div class="num">1</div><div class="title">History</div></div><div><div class="open">Open reviewer</div><div class="meta"><span class="chip" data-folder="history/">Checking cards...</span></div><div class="status">Active link</div></div></a>
-    <a class="subjectCard" href="theory/"><div><div class="num">2</div><div class="title">Theory</div></div><div><div class="open">Open reviewer</div><div class="meta"><span class="chip" data-folder="theory/">Upload folder anytime</span></div><div class="status">Active link</div></div></a>
-    <a class="subjectCard" href="theory-2/"><div><div class="num">3</div><div class="title">Theory 2</div></div><div><div class="open">Open reviewer</div><div class="meta"><span class="chip" data-folder="theory-2/">Upload folder anytime</span></div><div class="status">Active link</div></div></a>
-    <a class="subjectCard" href="planning/"><div><div class="num">4</div><div class="title">Planning</div></div><div><div class="open">Open reviewer</div><div class="meta"><span class="chip" data-folder="planning/">Upload folder anytime</span></div><div class="status">Active link</div></div></a>
-    <a class="subjectCard" href="tropical-design-and-green-architecture/"><div><div class="num">5</div><div class="title">Tropical Design and Green Architecture</div></div><div><div class="open">Open reviewer</div><div class="meta"><span class="chip" data-folder="tropical-design-and-green-architecture/">Upload folder anytime</span></div><div class="status">Active link</div></div></a>
-    <a class="subjectCard" href="building-laws/"><div><div class="num">6</div><div class="title">Building Laws</div></div><div><div class="open">Open reviewer</div><div class="meta"><span class="chip" data-folder="building-laws/">Upload folder anytime</span></div><div class="status">Active link</div></div></a>
-    <a class="subjectCard" href="adsp-rule-7-8/"><div><div class="num">7</div><div class="title">ADSP Rule 7 &amp; 8</div></div><div><div class="open">Open reviewer</div><div class="meta"><span class="chip" data-folder="adsp-rule-7-8/">Upload folder anytime</span></div><div class="status">Active link</div></div></a>
-    <a class="subjectCard" href="building-constructuion/"><div><div class="num">8</div><div class="title">Building Construction</div></div><div><div class="open">Open reviewer</div><div class="meta"><span class="chip" data-folder="building-constructuion/">Checking cards...</span></div><div class="status">Active link</div></div></a>
-    <a class="subjectCard" href="building-materials/"><div><div class="num">9</div><div class="title">Building Materials</div></div><div><div class="open">Open reviewer</div><div class="meta"><span class="chip" data-folder="building-materials/">Checking cards...</span></div><div class="status">Active link</div></div></a>
-    <a class="subjectCard" href="building-utilities/"><div><div class="num">10</div><div class="title">Building Utilities</div></div><div><div class="open">Open reviewer</div><div class="meta"><span class="chip" data-folder="building-utilities/">Upload folder anytime</span></div><div class="status">Active link</div></div></a>
-    <a class="subjectCard" href="structural-concepts/"><div><div class="num">11</div><div class="title">Structural Concepts</div></div><div><div class="open">Open reviewer</div><div class="meta"><span class="chip" data-folder="structural-concepts/">Upload folder anytime</span></div><div class="status">Active link</div></div></a>
-    <a class="subjectCard" href="structural-concepts-add-notes/"><div><div class="num">12</div><div class="title">Structural Concepts Add Notes</div></div><div><div class="open">Open reviewer</div><div class="meta"><span class="chip" data-folder="structural-concepts-add-notes/">Upload folder anytime</span></div><div class="status">Active link</div></div></a>
-    <a class="subjectCard" href="professional-practice/"><div><div class="num">13</div><div class="title">Professional Practice</div></div><div><div class="open">Open reviewer</div><div class="meta"><span class="chip" data-folder="professional-practice/">Upload folder anytime</span></div><div class="status">Active link</div></div></a>
-  </section>
+  <main class="grid" id="grid"></main>
 
-  <section class="note"><strong>Upload rule:</strong> replace the ROOT <code>index.html</code> with this file. Do not put it inside another folder. Building Materials must be uploaded as <code>building-materials/index.html</code> and <code>building-materials/cards.json</code>.</section>
-</main>
+  <p class="note">
+    Tip: Folder names are case-sensitive on GitHub Pages. Each subject folder must contain an <strong>index.html</strong> file.
+  </p>
+
+  <div class="toast" id="toast"></div>
+
 <script>
-const $=id=>document.getElementById(id);
-function applyTheme(){const dark=localStorage.getItem("aleDashboardTheme")==="dark";document.body.classList.toggle("dark",dark);$("themeBtn").textContent=dark?"Light Mode":"Dark Mode";}
-$("themeBtn").addEventListener("click",()=>{localStorage.setItem("aleDashboardTheme",document.body.classList.contains("dark")?"light":"dark");applyTheme();});
-applyTheme();
-async function countCards(){
-  document.querySelectorAll("[data-folder]").forEach(async chip=>{
-    const folder=chip.getAttribute("data-folder");
-    try{const r=await fetch(folder+"cards.json",{cache:"no-cache"});if(!r.ok)throw new Error();const data=await r.json();if(Array.isArray(data))chip.textContent=data.length+" cards";}catch(e){}
-  });
+const subjects = [
+  { n:1, title:"History", paths:["history/"] },
+  { n:2, title:"Theory", paths:["theory/"] },
+  { n:3, title:"Theory 2", paths:["theory-2/","theory2/"] },
+  { n:4, title:"Planning", paths:["planning/"] },
+  { n:5, title:"Tropical Design and Green Architecture", paths:["tropical-design-green-architecture/","tropical-design-and-green-architecture/"] },
+  { n:6, title:"Building Laws", paths:["building-laws/"] },
+  { n:7, title:"ADSP Rule 7 & 8", paths:["adsp-rule-7-8/","adsp-rule-7-and-8/"] },
+  {
+    n:8,
+    title:"Building Construction",
+    paths:[
+      "building-construction/",
+      "building-constructuion/",
+      "Building Construction/",
+      "Building-Construction/",
+      "building_construction/"
+    ]
+  },
+  {
+    n:9,
+    title:"Building Materials",
+    paths:[
+      "building-materials/",
+      "Building Materials/",
+      "building_materials/"
+    ]
+  },
+  { n:10, title:"Building Utilities", paths:["building-utilities/","utilities/"] },
+  { n:11, title:"Structural Concepts", paths:["structural-concepts/"] },
+  { n:12, title:"Structural Concepts Add Notes", paths:["structural-concepts-add-notes/","structural-concepts-notes/"] },
+  { n:13, title:"Professional Practice", paths:["professional-practice/"] }
+];
+
+const grid = document.getElementById("grid");
+const toast = document.getElementById("toast");
+
+function showToast(message){
+  toast.innerHTML = message;
+  toast.classList.add("show");
+  clearTimeout(window.__toastTimer);
+  window.__toastTimer = setTimeout(()=>toast.classList.remove("show"), 6000);
 }
-countCards();
+
+function makeCard(subject){
+  const a = document.createElement("a");
+  a.className = "card";
+  a.href = subject.paths[0];
+  a.dataset.paths = JSON.stringify(subject.paths);
+  a.innerHTML = `
+    <div class="num">${subject.n}</div>
+    <div class="title">${subject.title}</div>
+    <div class="status checking">Checking folder...</div>
+  `;
+  a.addEventListener("click", async (e)=>{
+    e.preventDefault();
+    const status = a.querySelector(".status");
+    status.textContent = "Checking folder...";
+    status.className = "status checking";
+
+    const found = await findWorkingPath(subject.paths);
+    if(found){
+      status.textContent = "Opening reviewer";
+      status.className = "status ok";
+      window.location.href = found;
+    }else{
+      status.textContent = "Folder not found";
+      status.className = "status missing";
+      showToast(
+        `Cannot open <strong>${subject.title}</strong> yet. Upload a folder at root named ` +
+        subject.paths.map(p=>`<code>${p}</code>`).join(" or ") +
+        ` and make sure it has <code>index.html</code>.`
+      );
+    }
+  });
+  return a;
+}
+
+async function pathExists(path){
+  const clean = path.replace(/^\/+/,"");
+  const tests = [clean + "index.html", clean + "cards.json"];
+  for(const url of tests){
+    try{
+      const res = await fetch(url + "?v=" + Date.now(), { method:"GET", cache:"no-store" });
+      if(res.ok) return true;
+    }catch(e){}
+  }
+  return false;
+}
+
+async function findWorkingPath(paths){
+  for(const p of paths){
+    if(await pathExists(p)) return p;
+  }
+  return null;
+}
+
+async function markStatus(card, subject){
+  const status = card.querySelector(".status");
+  const found = await findWorkingPath(subject.paths);
+  if(found){
+    card.href = found;
+    status.textContent = "Open reviewer";
+    status.className = "status ok";
+  }else{
+    card.href = subject.paths[0];
+    status.textContent = "Open when folder exists";
+    status.className = "status checking";
+  }
+}
+
+subjects.forEach(subject=>{
+  const card = makeCard(subject);
+  grid.appendChild(card);
+  markStatus(card, subject);
+});
 </script>
 </body>
 </html>
