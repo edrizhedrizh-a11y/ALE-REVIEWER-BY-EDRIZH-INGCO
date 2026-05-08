@@ -29,7 +29,7 @@
     "explanation": "Correct answer: a. AASHTO\nUlitin natin: AASHTO.\nIto, importante ang clue sa wording ng tanong. Ang sabi niya: “for suitability as subgrade materials” at may mention pa ng drainage at bearing capacity. Iyan ang malakas na clue.\nAng AASHTO soil classification system ay ginagamit para i-classify ang soils ayon sa performance nila bilang highway subgrade. So kapag usapang road subgrade, bearing value, drainage behavior, at suitability for roadway support, AASHTO agad ang iisipin mo.\nBakit ito ang tama?\nKasi ang AASHTO ay talagang ginawa para sa transportation and highway engineering context. Hindi lang basta description ng lupa, kundi mas performance-oriented siya kung okay ba ito bilang subgrade material.\nBakit mali ang ibang choices?\n•\tb. USCS – ito ang common trap.\nAng USCS o Unified Soil Classification System ay nagka-classify din ng soils, pero mas general siya: based on grain size at plasticity characteristics.\nSo oo, valid soil classification system ito, pero ang clue sa tanong ay subgrade suitability, drainage, bearing capacity. Mas pasok iyon sa AASHTO.\n•\tc. ASTM – mali agad ito bilang sagot sa classification system na tinatanong dito.\nASTM ay standards organization. Gumagawa sila ng test methods and specifications, pero hindi ito ang sagot sa tanong na “anong system ang nagka-classify ng inorganic soils for subgrade suitability?”\n•\td. None of the above – automatic tanggal ito dahil may tamang sagot na malinaw, which is AASHTO.\nElimination method\nIto ang iniisip mo dapat habang nagsasagot:\n1.\tHanapin ang keyword:\nsubgrade, drainage, bearing capacity\n2.\tTanungin mo agad sarili mo:\n“Anong system ang mas highway/subgrade ang orientation?”\nSagot: AASHTO\n3.\tPag nakita mo ang USCS, huwag agad padala dahil kilalang soil classification din siya.\nTingnan mo muna kung ano ang purpose ng classification sa tanong.\n4.\tASTM pa lang, puwede mo nang i-eliminate kasi standards body iyan, hindi iyon ang hinihinging classification answer dito.\nCommon ALE trap\nAng trap dito ay pag nakita mo ang word na soil classification, baka diretsong USCS ang maisip mo. Pero sa ALE, kailangan hindi lang alam ang term — kailangan makita mo ang context.\nKapag subgrade performance ang usapan, AASHTO ang mas malakas.\nPhilippine basis / practice\nSa Philippine construction and civil-related materials topics, kahit local practice tayo, ginagamit pa rin ang AASHTO, ASTM, at USCS as technical references in materials and geotechnical discussions. Dito, ang ALE logic ay malinaw: subgrade suitability = AASHTO.\nAno ang dapat mong tandaan dito?\nKapag ang tanong ay tungkol sa soil suitability for subgrade, lalo na may drainage at bearing capacity, AASHTO ang unang titingnan mo.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Building materials",
       "main": "Materials used for constructing buildings and structures",
       "detail": "Generic category item—concept card is safer than a random stock image.",
@@ -48,8 +48,7 @@
         "label": "AISC — Steel Construction Resources",
         "url": "https://www.aisc.org/education/continuingeducation/education-archives/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-002",
@@ -86,8 +85,7 @@
         "label": "Portland Cement Association — Cement and Concrete",
         "url": "https://www.cement.org/cement-concrete/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-003",
@@ -119,7 +117,7 @@
     "explanation": "Correct answer: b. Plastic index\nUlitin natin: Plastic index.\nIto ay halos diretsong formula question.\nBakit ito ang tama?\nDahil ang formula na:\nPI = LL – PL\nay definition mismo ng Plasticity Index o sa choice dito, Plastic index.\nIto ang sukat ng range ng moisture content kung saan ang soil ay nasa plastic state.\nBakit mali ang ibang choices?\n•\ta. Plastic limit – mali.\nAng Plastic Limit ay isang specific moisture content lamang, hindi siya difference ng LL at PL.\n•\tc. Liquid limit – mali rin.\nLiquid limit is another single threshold moisture content, not the range.\n•\td. All of the above – hindi puwede kasi hindi naman lahat ng terms ay same meaning.\nElimination method\nIto ang iniisip mo dapat:\n1.\tMay formula bang binigay? Oo.\n2.\tKapag may exact formula sa tanong, hanapin mo ang term na eksaktong tumutugma sa formula.\n3.\tLL – PL equals PI.\nSo answer agad: Plastic index.\n4.\t‘Yung Plastic limit at Liquid limit, tanggal agad kasi hindi sila subtraction result. Mga boundary values lang sila.\nCommon trap\nMinsan sa board, kapag nakita ng examinee ang word na Plastic sa tanong, napipili agad ang Plastic limit.\nPero mali iyon. Basahin mo ang buong tanong.\nAng tanong dito ay hindi “what is the moisture content where…?”\nAng tanong dito ay “LL minus PL” — formula-based.\nImportant concept\n•\tLL = transition papuntang mas liquid behavior\n•\tPL = transition papuntang pag-crumbly / semi-solid boundary\n•\tPI = lawak ng plastic range\nAno ang dapat mong tandaan dito?\nKapag nakita mo ang LL – PL, huwag ka nang mag-isip pa nang malayo.\nPlastic index agad.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Portland cement",
       "main": "Most common hydraulic cement used in construction",
       "detail": "Use as definition cue; avoids confusing bag-brand images.",
@@ -130,8 +128,7 @@
         "label": "Portland Cement Association — Cement and Concrete",
         "url": "https://www.cement.org/cement-concrete/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-004",
@@ -163,7 +160,7 @@
     "explanation": "Correct answer: a. fill materials\nUlitin natin: fill materials.\nIto, ang clue ay yung tanong ay nagbibigay ng general definition. Hindi pa siya specific subtype.\nBakit ito ang tama?\nAng description ay very broad:\n•\tany soil\n•\tcrushed stone\n•\tsand\n•\tused to raise grade\n•\tman-made deposit\n•\tunder footings, pavers, slabs on grade\nIyan ang pinaka-general na konsepto ng fill materials.\nBakit hindi granular fill?\nKasi ang granular fill ay mas specific. Usually mas controlled ang gradation nito at mas particular ang application. Hindi lahat ng fill ay granular fill.\nBakit hindi borrow fill?\nAng borrow fill naman ay fill material na kinukuha sa borrow source o borrow pit, at may sarili ring suitability conditions. Ibig sabihin, isa rin itong specific type or source-based concept. Hindi ito ang pinaka-general definition.\nBakit mali ang “All of the above”?\nDahil hindi naman lahat ng fill materials ay automatic granular fill or borrow fill.\nAng tanong ay general definition, so dapat ang sagot ay general term, hindi halo-halong category.\nElimination method\nVery useful ito sa ALE:\n1.\tTingnan kung ang description ay broad o specific.\n2.\tKapag broad ang definition, hanapin mo ang broadest correct term.\n3.\tAng granular fill at borrow fill ay mas narrow kaysa fill materials.\n4.\tTherefore, ang natitira at pinakatama ay fill materials.\nCommon board trap\nAng trap dito ay kapag may mas technical pakinggan na choice, tulad ng granular fill, parang mukhang mas “engineer-sounding,” kaya iyon ang pinipili.\nPero sa board exam, hindi dahil mas technical ang tunog, iyon na ang tama.\nAng tama ay iyong sakto sa lawak ng definition.\nPhilippine practice\nSa local construction practice, “fill” is a broad working term. Pero kapag may specifications na, doon mo na idi-distinguish kung selected fill, granular fill, borrow fill, at iba pa.\nAno ang dapat mong tandaan dito?\nKapag general definition ang tanong, piliin ang general term.\nDito, iyon ay fill materials.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Pozzolan",
       "main": "Siliceous/aluminous material that reacts with lime",
       "detail": "Explanation-grounded: the key idea is the pozzolanic reaction, not a random ash photo.",
@@ -174,8 +171,7 @@
         "label": "Portland Cement Association — Cement and Concrete",
         "url": "https://www.cement.org/cement-concrete/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-005",
@@ -207,7 +203,7 @@
     "explanation": "Correct answer: b. Aggregates\nUlitin natin: Aggregates.\nMas precise pa diyan: ASTM C33 is the standard specification for concrete aggregates.\nBakit ito ang tama?\nDahil ASTM C33 talaga ang common reference for aggregates used in concrete.\nBakit mali ang ibang choices?\n•\ta. Cement – may sariling ASTM references ang cement, so hindi ito.\n•\tc. Water – may sarili ring standards para sa water quality in concrete and construction use.\n•\td. Concrete – tempting ito kasi may letter C sa ASTM C33 at aggregates are used in concrete. Pero tandaan: hindi ibig sabihin na “for concrete” ay “concrete na mismo” ang tinutukoy.\nAng standard ay para sa aggregates used in concrete.\nElimination method\nIto ang iniisip mo:\n1.\tKilala mo ba ang ASTM C33?\nKung oo, diretso ka na sa aggregates.\n2.\tKung hindi ka sure, i-eliminate mo ang mga masyadong broad o mali ang category:\no\twater? hindi\no\tcement? ibang standard iyon\no\tconcrete? masyadong broad\n3.\tNatitira: aggregates\nCommon trap\nMinsan ang examinee napipili ang concrete dahil naririnig nila “ASTM C33 for concrete aggregates.”\nNapuputol sa isip nila ang phrase, at “concrete” na lang ang naaalala.\nPero tandaan: ang standard is for the aggregates, not the whole concrete mix.\nPhilippine basis\nSa Philippine construction specifications, madalas ginagamit pa rin ang ASTM references sa materials. Kaya ALE-ready ka dapat sa ganitong numbering.\nAno ang dapat mong tandaan dito?\nASTM C33 = concrete aggregates.\nPag narinig mo C33, isipin mo agad: aggregates.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Pozzolanic material",
       "main": "Material that reacts with calcium hydroxide in the presence of water",
       "detail": "Use the reaction idea as the cue.",
@@ -218,8 +214,7 @@
         "label": "Portland Cement Association — Cement and Concrete",
         "url": "https://www.cement.org/cement-concrete/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-006",
@@ -251,7 +246,7 @@
     "explanation": "Correct answer: a. Base Course Materials\nUlitin natin: Base Course Materials.\nIto, medyo mahaba ang definition, pero kapag sinipat mo nang maayos, may lumalabas na pattern:\nhard durable fragments of stone, may filler, may grading requirements, at may AASHTO reference. Iyan ang tunog ng base course aggregates/materials, hindi ordinaryong borrow fill.\nBakit ito ang tama?\nAng base course materials ay controlled material para sa base layer, kaya:\n•\thard and durable\n•\tgraded properly\n•\tfree from deleterious matter like vegetable matter and clay lumps\nIyan ang expectation sa base course dahil structural support layer iyan.\nBakit mali ang ibang choices?\n•\tb. Borrow Fill Materials – mali dahil borrow fill is generally less specific and not necessarily defined by this kind of strict aggregate grading description. Mas general fill/subgrade use iyan.\n•\tc. Grading Materials – ito ang mukhang technical pero malabo. Hindi ito ang pinaka-standard na material category na tumutugma sa definition.\n•\td. All of the above – mali dahil hindi pare-pareho ang ibig sabihin ng tatlong choices.\nElimination method\nGanito dapat:\n1.\tHanapin ang material description:\no\thard durable fragments\no\tmay filler\no\tmay grading requirements\n2.\tTanungin: aling choice ang pinaka-structural at pinaka-controlled ang composition?\nBase Course Materials\n3.\tBorrow fill? mas loose ang category niyan. Tanggal.\n4.\tGrading materials? masyadong vague. Tanggal.\n5.\tSo ang natitira: Base Course Materials\nTrap word\nAng trap dito ay “grading requirements”.\nBaka isipin mo dahil may word na grading, ang sagot ay grading materials.\nPero hindi ganoon. Hindi dapat sa isang salitang familiar lang ka kakapit. Dapat sa buong definition.\nPhilippine practice\nSa road and site works references used locally, lalo na civil/materials side, ang concept ng base course ay talagang controlled graded aggregate material. Kaya ito ang pasok.\nAno ang dapat mong tandaan dito?\nKapag ang description ay hard, durable, graded stone fragments with filler, isipin mo agad base course materials — hindi borrow fill.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Cement kiln stage",
       "main": "Burning of raw materials is done in the kiln",
       "detail": "Cement manufacturing step.",
@@ -262,8 +257,7 @@
         "label": "Portland Cement Association — Cement and Concrete",
         "url": "https://www.cement.org/cement-concrete/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-007",
@@ -300,8 +294,7 @@
         "label": "Portland Cement Association — Cement and Concrete",
         "url": "https://www.cement.org/cement-concrete/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-008",
@@ -338,8 +331,7 @@
         "label": "Masonry Institute — Technical Resources",
         "url": "https://masonryinstitute.org/technical/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-009",
@@ -376,8 +368,7 @@
         "label": "Gypsum Association — Technical Resources",
         "url": "https://gypsum.org/technical/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-010",
@@ -409,7 +400,7 @@
     "explanation": "Correct answer: c. Gabions\nUlitin natin: Gabions.\nIto, direct identification item ito.\nBakit ito ang tama?\nAng gabions ay wire mesh baskets o cages na pinupuno ng bato para sa:\n•\terosion control\n•\tslope stabilization\n•\tretaining action\n•\tchannel protection\nBakit mali ang ibang choices?\n•\ta. Geo synthetics – sobrang broad. Umbrella term ito para sa geotextiles, geomembranes, geonets, geogrids, etc.\n•\tb. Geonets – polymer network type material ito, hindi stone-filled wire baskets.\n•\td. Geomembranes – impermeable sheets ito, hindi baskets na puno ng bato.\nElimination method\n1.\tHanapin ang pinaka-visual clue:\nstone-filled wire baskets\n2.\tKapag kaya mong i-picture sa isip mo ang material, mas madali.\nWire cage + bato = gabion\n3.\tTanggal agad ang mga polymer sheet/network materials.\n4.\tAng broad term na geosynthetics, hindi puwede kung may mas exact answer.\nCommon trap\nAng trap dito ay geosynthetics dahil parang modern technical term.\nPero tandaan mo:\nKapag may specific object description, huwag pipili ng umbrella term kung may exact term naman.\nAno ang dapat mong tandaan dito?\nStone-filled wire baskets = gabions.\nVery visual memory item ito.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Gypsum in cement",
       "main": "Added to control and retard setting time",
       "detail": "Explanation-grounded role of gypsum in Portland cement.",
@@ -424,8 +415,7 @@
         "label": "Gypsum Association — Technical Resources",
         "url": "https://gypsum.org/technical/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-011",
@@ -457,7 +447,7 @@
     "explanation": "Correct answer: d. Geomembranes\nUlitin natin: Geomembranes.\nIto, sobrang importanteng keyword dito ay continuous polymeric sheets at impermeable.\nBakit ito ang tama?\nAng geomembranes ay synthetic sheets na ginagamit kapag kailangan ng barrier against liquid migration. Kaya sila ginagamit sa:\n•\tponds\n•\tlagoons\n•\tcanals\n•\treservoirs\n•\tcontainment systems\nBakit mali ang ibang choices?\n•\ta. Geocomposites – composite products ito, combination ng dalawa o higit pang geosynthetic materials. Hindi ito ang pinaka-direct answer sa impermeable lining sheet.\n•\tb. Geonets – drainage-oriented structure ito, not impermeable sheet lining.\n•\tc. Geotextiles – permeable fabric ito usually for separation, filtration, reinforcement, protection; hindi ito ang sagot sa impermeable lining.\nElimination method\nIto ang thinking:\n1.\tHanapin ang clue word: impermeable\n2.\tPag impermeable ang hinahanap, tanggal agad ang geotextiles dahil karaniwan permeable iyan.\n3.\tGeonets? pang-drainage network, tanggal.\n4.\tGeocomposites? too broad or mixed type.\n5.\tNatitira: geomembranes\nCommon ALE trap\nAng trap dito ay pag nalilito ang examinee sa geotextile at geomembrane.\nTandaan mo ito:\n•\tGeotextile = usually permeable\n•\tGeomembrane = impermeable\nIyan ang pinakamabilis na pang-eliminate.\nPhilippine practice\nSa local engineering and environmental containment applications, ganyan din ang gamit ng term.\nAno ang dapat mong tandaan dito?\nKapag impermeable sheet lining ang usapan, ang sagot ay geomembrane.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Ordinary Portland cement",
       "main": "General-purpose cement for normal construction",
       "detail": "Use concept cue to avoid brand-driven images.",
@@ -468,8 +458,7 @@
         "label": "Portland Cement Association — Cement and Concrete",
         "url": "https://www.cement.org/cement-concrete/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-012",
@@ -501,7 +490,7 @@
     "explanation": "Correct answer: a. riprap\nUlitin natin: riprap.\nIto, ngayon mas malinaw na dahil lumabas na ang choices. At tama ang unang analysis natin: riprap talaga.\nBakit ito ang tama?\nAng riprap ay layer ng bato o rock fragments na inilalagay sa slope, embankment, edge ng kanal, riverbank, o ibang exposed surface para labanan ang erosion.\nKapag sinabi ng tanong:\n•\trock lining\n•\tconstructed layer of stone\n•\tprevent erosion\nhalos signature words na iyan ng riprap.\nBakit mali ang ibang choices?\n•\tb. gabion system – malapit ito, pero iba pa rin.\nAng gabion ay bato rin, pero nasa loob ng wire basket o wire cage.\nDito sa tanong, ang emphasis ay rock lining or layer of stone, hindi wire baskets.\n•\tc. retaining wall – mas malawak at mas structural system ito.\nHindi lahat ng retaining wall ay rock lining, at hindi ito ang direct term para sa erosion-protection stone layer.\n•\td. rock wall – masyadong generic at hindi standard technical answer sa tanong.\nElimination method\nIto ang iniisip mo:\n1.\tMay nakitang stone layer + erosion control\n2.\tHahanapin mo ang pinaka-exact technical term\n3.\tKung may riprap, iyon agad ang strongest answer\n4.\tKung wire basket ang description, saka ka pupunta sa gabion\nCommon trap\nPinagpapalit ang riprap at gabion.\nTandaan mo ito:\n•\tRiprap = bato na nakalatag\n•\tGabion = bato na nakakulong sa wire basket\nAno ang dapat mong tandaan dito?\nKapag rock lining o stone layer against erosion, ang sagot ay riprap.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Chief cement ingredient",
       "main": "Lime / calcium oxide",
       "detail": "Main ingredient cue from the explanation.",
@@ -512,8 +501,7 @@
         "label": "Portland Cement Association — Cement and Concrete",
         "url": "https://www.cement.org/cement-concrete/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-013",
@@ -550,8 +538,7 @@
         "label": "Masonry Institute — Technical Resources",
         "url": "https://masonryinstitute.org/technical/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-014",
@@ -588,8 +575,7 @@
         "label": "Masonry Institute — Technical Resources",
         "url": "https://masonryinstitute.org/technical/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-015",
@@ -630,8 +616,7 @@
         "label": "Natural Stone Institute — Stone Resources",
         "url": "https://www.naturalstoneinstitute.org/default/assets/File/consumers/stone_types.pdf"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-016",
@@ -668,8 +653,7 @@
         "label": "Masonry Institute — Technical Resources",
         "url": "https://masonryinstitute.org/technical/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-017",
@@ -701,7 +685,7 @@
     "explanation": "Correct answer: b. pitch\nUlitin natin: pitch.\nIto, medyo terminological item ito, kaya dapat kabisado mo ang distinctions.\nBakit ito ang tama?\nAng pitch ang generic term para sa dark, viscous to semi-solid residue or mixture of hydrocarbons na maaaring manggaling sa coal tar o petroleum sources.\nAng clue ay:\n•\tgeneric name\n•\tsemi-solid mixture\n•\tderived from coal or petroleum\nIyan ang mas tumatama sa pitch.\nBakit mali ang ibang choices?\n•\ta. tar – ang tar ay mas specific product of destructive distillation, often more liquid or viscous form; hindi ito ang best answer sa wording na generic name\n•\tc. asphalt – common paving term ito, pero mas specific material identity ito sa construction use. Hindi ito ang pinakamainam na sagot sa generic-definition wording\n•\td. none of the above – mali dahil may tamang term\nElimination method\nGanito ang diskarte:\n1.\tWatch the phrase “generic name”\nNapakahalagang clue niyan.\n2.\tHanapin ang broad technical term, hindi iyong mas application-specific lang\n3.\tKapag coal or petroleum residue/mixture ang dating, at generic ang tanong, pitch ang natitira\nCommon trap\nMarami ang pipili ng asphalt dahil iyon ang pinakakilala sa building materials at paving.\nPero ang tanong ay hindi “material used in paving.”\nAng tanong ay generic semi-solid hydrocarbon mixture. Doon pumapasok si pitch.\nALE reasoning\nIto ang iniisip mo habang sumasagot:\n“Hindi ko hahanapin ang pinaka-familiar. Hahanapin ko ang pinaka-swak sa exact wording.”\nAno ang dapat mong tandaan dito?\nKapag ang clue ay generic semi-solid hydrocarbon mixture from coal or petroleum, tandaan mo: pitch.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Cement fineness",
       "main": "Finer cement reacts faster and gains strength earlier",
       "detail": "Explanation-grounded property cue.",
@@ -712,8 +696,7 @@
         "label": "Portland Cement Association — Cement and Concrete",
         "url": "https://www.cement.org/cement-concrete/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-018",
@@ -745,7 +728,7 @@
     "explanation": "Correct answer: a. Turf pavements\nUlitin natin: Turf pavements.\nIto, very descriptive item ito.\nBakit ito ang tama?\nAng turf pavement ay paving system na may openings or spacing para makalusot o tumubo ang grass/ground cover, usually with soil infill. Ginagamit ito kung gusto mo ng partially paved yet greener surface.\nBakit mali ang ibang choices?\n•\tb. Rigid pavements – concrete pavement classification ito, not the exact system described\n•\tc. Flexible pavements – asphalt-type or layered flexible system classification ito, hindi exact answer\n•\td. All of the above – mali dahil hindi naman lahat ng rigid o flexible pavement ay grass-accommodating unit pavers\nElimination method\nIto ang clue spotting:\n1.\tunit pavers\n2.\tspacing in between\n3.\taccommodate grass or ground covers\nKapag ganyan ang description, hindi ka dapat sumagot ng general pavement category.\nDapat ang sagot mo ay specific pavement type, which is turf pavements.\nCommon trap\nAng trap dito ay “pavement” word pa lang, baka rigid/flexible kaagad ang iniisip.\nPero huwag kang titigil sa word na pavement. Basahin mo ang buong descriptive phrase.\nPhilippine context\nMakikita ito sa overflow parking, landscape-compatible parking areas, at eco-sensitive site treatments.\nAno ang dapat mong tandaan dito?\nKapag may grass sa pagitan ng unit pavers, ang sagot ay turf pavement.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Hydration",
       "main": "Chemical reaction between cement and water",
       "detail": "The explanation is about the process, not the appearance of wet cement.",
@@ -756,8 +739,7 @@
         "label": "Portland Cement Association — Cement and Concrete",
         "url": "https://www.cement.org/cement-concrete/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-019",
@@ -789,7 +771,7 @@
     "explanation": "Correct answer: d. None of the above\nUlitin natin: None of the above.\nIto, dapat marunong kang magbantay sa tanong na negative form:\n“not applicable”\nBakit ito ang tama?\nDahil ang:\n•\tPortland cement\n•\tlime\n•\tgypsum\nay lahat may gamit bilang cementing or binding material sa tamang context.\nSo kung ang tanong ay alin ang hindi applicable, ang sagot ay:\nwala sa mga iyan. Kaya None of the above.\nBakit mali ang ibang choices?\n•\ta. Portland Cement – obvious cementing material\n•\tb. Lime – classic cementing/binding material\n•\tc. Gypsum – ginagamit din bilang cementitious/binding material sa building products and plaster systems\nElimination method\nIto ang iniisip mo:\n1.\tNegative ba ang tanong? Oo\n2.\tI-check isa-isa:\no\tPortland cement — applicable? oo\no\tlime — applicable? oo\no\tgypsum — applicable? oo\n3.\tKung lahat applicable, ang sagot ay None of the above\nCommon trap\nIto ang classic trap:\nHindi sa knowledge ka lang tinetest, pati careful reading.\nMaraming examinee ang napipili ang gypsum dahil less common siyang naiisip kaysa cement or lime. Pero hindi ibig sabihin noon ay hindi na siya cementing material.\nALE strategy\nKapag may not, except, least, incorrect, mag-preno ka muna.\nIyan ang paboritong panghuli sa board exam.\nAno ang dapat mong tandaan dito?\nBasahin ang tanong nang buo. Dito, lahat ng nasa choices ay cementing materials, kaya sagot ay None of the above.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Concrete ingredients",
       "main": "Cement + aggregates + water",
       "detail": "Definition cue.",
@@ -800,8 +782,7 @@
         "label": "Portland Cement Association — Applications of Cement",
         "url": "https://www.cement.org/cement-concrete/applications-of-cement/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-020",
@@ -833,7 +814,7 @@
     "explanation": "Correct answer: b. Lime\nUlitin natin: Lime.\nIto, may historical clue ang tanong.\nBakit ito ang tama?\nAng lime ay isa sa pinakamatandang manufactured building materials at ginamit nang matagal sa:\n•\tmortar\n•\tplaster\n•\trendering\n•\tmasonry work\nAng supporting note pa nga sa page ay tumutulong sa logic na ito.\nBakit mali ang ibang choices?\n•\ta. Cement – ang “real cement” in the stronger historical sense came later kaysa traditional lime use\n•\tc. Gypsum – old material din ito, pero sa wording ng item at historical context ng mortar-and-plaster use by early civilizations, lime ang strongest answer\n•\td. Plaster – hindi ito material family in the same way; mas product/application term ito\nElimination method\nGanito ang isipin mo:\n1.\tKey phrase: oldest manufactured building materials\n2.\tAnother clue: used both as mortar and plaster\n3.\tAmong the choices, the classic historical binder is lime\n4.\tCement is later, plaster is too generic as application term\nCommon trap\nMay pipili ng gypsum dahil old material din siya.\nPero sa board-type logic, kapag ang tanong ay traditional mortar and plaster binder, lime ang mas classic answer.\nPhilippine context\nSa heritage structures at traditional masonry discussions sa Pilipinas, lime mortar at lime plaster ay napakahalagang concepts.\nAno ang dapat mong tandaan dito?\nKapag historical binder for mortar and plaster, isipin mo agad: lime.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Aggregate",
       "main": "Inert granular material used with cement paste",
       "detail": "Better as a definition cue than a random gravel photo.",
@@ -844,8 +825,7 @@
         "label": "Portland Cement Association — Applications of Cement",
         "url": "https://www.cement.org/cement-concrete/applications-of-cement/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-021",
@@ -877,7 +857,7 @@
     "explanation": "Correct answer: a. Blended cement\nUlitin natin: Blended cement.\nIto, gusto ko itong himayin kasi may Philippine context ito, at sinabi mo nga: Philippine standard first.\nBakit ito ang tama?\nSa Philippine market practice, ang bagged cement na karaniwang binebenta sa hardware at retail market ay blended cement.\nHindi ito pure ordinary portland cement in the strict old sense. Madalas may supplementary materials ito and designed for general local market distribution.\nAng note sa page mismo tumutulong sa logic:\nBlended cement daw ang commercially bagged cement sa Pilipinas, while pure portland cement is often distributed in bulk.\nBakit mali ang ibang choices?\n•\tb. Portland cement – ito ang common trap, lalo na sa foreign/generalized textbooks.\nPero sa Philippine ALE logic, ang retail bagged cement commonly sold is blended cement.\n•\tc. Pozzolan cement – mas specific type ito, hindi ito ang broad commercial bagged-market answer na gusto ng tanong\n•\td. White cement – specialty cement ito, hindi general market bagged cement answer\nElimination method\nIto ang iniisip mo:\n1.\tTanong ba ay technical chemistry? Hindi.\n2.\tTanong ba ay commercial market practice? Oo.\n3.\tSince Philippine setting ang priority, hanapin ang usual bagged cement sold in hardware\n4.\tAnswer: blended cement\nCommon trap\nPinakatrabaho dito ang Portland cement.\nKasi sa ordinary conversation, maraming tao ang “cement” = “Portland cement.”\nPero sa ALE, kapag may local-practice wording tulad ng sold commercially in bags, maging attentive ka.\nPhilippine basis\nIto mismo ang type ng tanong na kailangang local market awareness ang gamit, hindi pure foreign textbook reflex.\nAno ang dapat mong tandaan dito?\nSa Philippine ALE context, ang commonly bagged cement sold commercially is blended cement.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Fine aggregate",
       "main": "Sand",
       "detail": "Explanation-grounded classification cue.",
@@ -888,8 +868,7 @@
         "label": "Portland Cement Association — Applications of Cement",
         "url": "https://www.cement.org/cement-concrete/applications-of-cement/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-022",
@@ -921,7 +900,7 @@
     "explanation": "Correct answer: a. lime and silica\nUlitin natin: lime and silica.\nIto, among the choices, ito ang best and most foundational answer.\nBakit ito ang tama?\nAng Portland cement ay ginagawa mula sa raw materials na ang pangunahing constituents ay:\n•\tlime\n•\tsilica\nKasama rin sa mas kumpletong chemistry ang alumina and iron oxide, pero sa choices na ibinigay, ang pinaka-basic and correct pair ay lime and silica.\nBakit mali ang ibang choices?\n•\tb. calcium & sand – malapit ang tunog pero hindi ito ang standard/formal pair na ibinibigay sa ganitong tanong\n•\tc. grey powder – description lang ito ng appearance, hindi composition\n•\td. tetracalcium aluminoferrite – isang compound/clinker constituent ito sa advanced cement chemistry, pero hindi ito ang “basic components” answer na hinihingi dito\nElimination method\nGanito ang step-by-step:\n1.\tTanong ba ay tungkol sa appearance? Hindi. Tanggal si grey powder.\n2.\tTanong ba ay about one advanced compound only? Hindi. Tanggal si tetracalcium aluminoferrite.\n3.\tNatira ang two-material pairs.\n4.\tSa dalawang pairs, ang mas standard at fundamental answer ay lime and silica.\nCommon trap\nMay examinee na naa-attract sa mas technical-sounding answer tulad ng tetracalcium aluminoferrite.\nPero tandaan:\nHindi dahil mas komplikado ang tunog, iyon na ang tama.\nTingnan mo kung sakto ba sa wording na basic components.\nAno ang dapat mong tandaan dito?\nSa basic Portland cement composition, ang unang tandaan mo ay lime and silica.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Coarse aggregate",
       "main": "Crushed stone or gravel retained on larger sieve",
       "detail": "Classification cue.",
@@ -932,8 +911,7 @@
         "label": "Portland Cement Association — Applications of Cement",
         "url": "https://www.cement.org/cement-concrete/applications-of-cement/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-023",
@@ -970,8 +948,7 @@
         "label": "Portland Cement Association — Applications of Cement",
         "url": "https://www.cement.org/cement-concrete/applications-of-cement/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-024",
@@ -1012,8 +989,7 @@
         "label": "Portland Cement Association — Applications of Cement",
         "url": "https://www.cement.org/cement-concrete/applications-of-cement/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-025",
@@ -1045,7 +1021,7 @@
     "explanation": "Correct answer: b. 1 cubic foot\nUlitin natin: 1 cubic foot.\nIto naman, ibang angle na ito. Hindi na weight ang tanong.\nIto ay proportioning convention.\nBakit ito ang tama?\nSa volumetric proportioning of concrete, ang isang bag of cement ay karaniwang tinatayang katumbas ng 1 cubic foot.\nIyan ang ginagamit sa old and practical construction proportioning methods:\n•\t1 bag cement\n•\tplus certain number of cubic feet of sand\n•\tplus gravel\nBakit mali ang ibang choices?\n•\ta. 1 cubic meter – sobrang laki, mali agad\n•\tc. 1 cubic yard – mali rin, sobrang laki\n•\td. 46 kg – weight ito, hindi volumetric proportioning answer\nElimination method\nIto ang pinakamahalagang mental step:\n1.\tPrevious question asked weight\n2.\tThis question asks in proportioning\n3.\tSo huwag mong ibalik ang weight answer\n4.\tSince proportioning ito, hanapin mo ang volume equivalent\n5.\tSagot: 1 cubic foot\nCommon trap\nIto ang sobrang paboritong trap pair:\n•\tQ24 = 40 kg\n•\tQ25 = 1 cubic foot\nKapag hindi ka kalmado, madali mong mapagpapalit iyan.\nImportant clarification\nMay mga reviewer notes na minsan magulo ang pag-uugnay ng 40 kg, 94 lb, at 1 cu ft.\nAng tamang exam strategy mo ay ito:\n•\tkapag weight ang tanong → 40 kg sa local practice\n•\tkapag volumetric proportioning ang tanong → 1 cubic foot\nIyan ang practical ALE way to separate the two.\nAno ang dapat mong tandaan dito?\nHuwag mong paghaluin ang bag weight at proportioning volume equivalent.\nDito, dahil proportioning ang usapan, sagot ay 1 cubic foot.\n\nSige, tuloy tayo sa Page 3, at continue lang ang numbering.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Well-graded aggregate",
       "main": "Mix of varied particle sizes",
       "detail": "Explanation-grounded: good grading reduces voids.",
@@ -1056,8 +1032,7 @@
         "label": "Portland Cement Association — Applications of Cement",
         "url": "https://www.cement.org/cement-concrete/applications-of-cement/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-026",
@@ -1089,7 +1064,7 @@
     "explanation": "Correct answer: a. Type I\nUlitin natin: Type I.\nIto, gusto ko itong sagutin nang maingat dahil may reviewer logic at may real-world Philippine market nuance.\nBakit ito ang tamang sagot sa reviewer/ALE logic?\nSa classic cement type classification:\n•\tType I = general-purpose cement\n•\tType II = moderate sulfate resistance\n•\tType III = high early strength\n•\tType IV = low heat of hydration\nSo kapag ang tanong ay “most common type”, ang default answer sa traditional board-review framework ay Type I, kasi ito ang general-purpose at pinaka-normal na gamit sa ordinary construction.\nPero eto ang importanteng Philippine nuance\nSa actual present Philippine retail market, madalas ang bagged cement na mabibili ay blended cement, hindi necessarily pure ASTM Type I Portland cement.\nSo kung strict current market reality ang usapan, puwede mong sabihin na maraming commercially sold cement ngayon ay blended.\nPero dahil ang choices ay Type I to Type IV, at wala namang “blended cement” sa options, ang expected ALE/reviewer answer dito ay Type I.\nBakit mali ang ibang choices?\n•\tb. Type II – specific use ito for moderate sulfate conditions; hindi ito ang pinaka-common default answer.\n•\tc. Type III – high early strength ito; special need, hindi general-use default.\n•\td. Type IV – low heat cement; special application ito, hindi ordinaryong pinakakaraniwan.\nElimination method\nIto ang iniisip mo:\n1.\tHanapin ang phrase na “most common type”\n2.\tKapag type classification ang choices, hanapin ang general-purpose\n3.\tGeneral-purpose = Type I\n4.\tYung Type II, III, IV ay special-purpose na\nCommon trap\nAng trap dito ay kung iisipin mo ang current bagged cement market at maalala mong blended cement ang common. Tama naman ang concern mo.\nPero again, wala iyon sa choices.\nSo sa exam strategy:\nAnswer within the framework of the given choices.\nPhilippine basis / practice\nSa Philippine practice ngayon, maraming bagged cements ay blended types. Pero sa traditional Portland cement type question, Type I pa rin ang expected answer kapag ito lang ang choices.\nAno ang dapat mong tandaan dito?\nKapag Type I to Type IV lang ang pagpipilian at tinanong ang most common/general-use cement, sagot mo ay Type I.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Water-cement ratio",
       "main": "Weight of water divided by weight of cement",
       "detail": "Key formula from the explanation.",
@@ -1100,8 +1075,7 @@
         "label": "Portland Cement Association — Cement and Concrete",
         "url": "https://www.cement.org/cement-concrete/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-027",
@@ -1133,7 +1107,7 @@
     "explanation": "Correct answer: b. Type IIA\nUlitin natin: Type IIA.\nIto, kailangan lang maayos ang decoding mo ng cement designation.\nBakit ito ang tama?\nSa Portland cement types:\n•\tType II = moderate sulfate resistance\n•\tKapag may A sa dulo, ibig sabihin air-entraining\nSo:\n•\tType II + air entrainment = Type IIA\nDiretso lang.\nBakit mali ang ibang choices?\n•\ta. Type II – moderate sulfate attack yes, pero walang air-entraining agent sa designation.\n•\tc. Type IV – low heat ito, hindi moderate sulfate resistance ang main identity.\n•\td. Type IVA – low heat with air-entrainment, pero hindi ito ang sulfate-resistance answer.\nElimination method\nIto ang pinakaimportanteng thinking:\n1.\tHanapin ang dalawang requirements sa tanong:\no\tmoderate sulfate attack\no\twith air-entraining agent\n2.\tModerate sulfate = Type II\n3.\tAir-entrained version of that = Type IIA\n4.\tKaya natitira si Type IIA\nCommon trap\nMay mga examinee na pag nakita ang “moderate sulfate attack,” diretso nang Type II at nakakalimutan ang second half ng tanong na with air-entraining agent.\nIyan ang board exam trap:\nHuwag tumigil sa first clue. Basahin hanggang dulo.\nAno ang dapat mong tandaan dito?\nKapag Type II plus air entrainment, ang sagot ay Type IIA.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Concrete strength control",
       "main": "Water-cement ratio is the main strength factor",
       "detail": "Lower proper w/c ratio usually increases strength.",
@@ -1144,8 +1118,7 @@
         "label": "Portland Cement Association — Cement and Concrete",
         "url": "https://www.cement.org/cement-concrete/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-028",
@@ -1177,7 +1150,7 @@
     "explanation": "Correct answer: b. Aggregates\nUlitin natin: Aggregates.\nIto, very foundational concrete concept ito.\nBakit ito ang tama?\nAng concrete ay basically binubuo ng:\n•\tcement\n•\twater\n•\tfine and coarse aggregates\nAng aggregates ang inert mineral materials na hinahalo para bumuo ng bulk ng concrete. Sila ang sand, gravel, crushed stone, at iba pang mineral fillers.\nBakit mali ang ibang choices?\n•\ta. Pumice – isang specific lightweight aggregate ito, hindi generic term na hinahanap ng tanong.\n•\tc. Lime – binder-related material ito, hindi ito ang inert filler answer dito.\n•\td. Fly ash – supplementary cementitious material ito; hindi ito ang general inert mineral filler term sa tanong.\nElimination method\nGanito ang isipin mo:\n1.\tAng tanong ba ay humihingi ng general term o specific material?\nGeneral term.\n2.\tKapag general term para sa mineral fillers in concrete, hanapin ang broad category.\n3.\tPumice is specific, lime is binder-type, fly ash is admixture/SCM.\n4.\tKaya ang natitirang tamang sagot ay aggregates.\nCommon trap\nMinsan pag narinig ang “mineral filler,” may mapupunta sa fly ash kasi powder siya at ginagamit sa concrete.\nPero tandaan: ang fly ash ay not the main inert aggregate fraction being described here.\nAno ang dapat mong tandaan dito?\nSa concrete, ang inert mineral fillers ay tinatawag na aggregates.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Workability indicator",
       "main": "Slump indicates consistency/workability",
       "detail": "Explanation-grounded test/property cue.",
@@ -1188,8 +1161,7 @@
         "label": "FHWA — Portland Cement Concrete Testing Manual",
         "url": "https://www.fhwa.dot.gov/pavement/pubs/013716.pdf"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-029",
@@ -1226,8 +1198,7 @@
         "label": "FHWA — Portland Cement Concrete Testing Manual",
         "url": "https://www.fhwa.dot.gov/pavement/pubs/013716.pdf"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-030",
@@ -1264,8 +1235,7 @@
         "label": "FHWA — Portland Cement Concrete Testing Manual",
         "url": "https://www.fhwa.dot.gov/pavement/pubs/013716.pdf"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-031",
@@ -1302,8 +1272,7 @@
         "label": "FHWA — Portland Cement Concrete Testing Manual",
         "url": "https://www.fhwa.dot.gov/pavement/pubs/013716.pdf"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-032",
@@ -1340,8 +1309,7 @@
         "label": "FHWA — Portland Cement Concrete Testing Manual",
         "url": "https://www.fhwa.dot.gov/pavement/pubs/013716.pdf"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-033",
@@ -1378,8 +1346,7 @@
         "label": "Portland Cement Association — Applications of Cement",
         "url": "https://www.cement.org/cement-concrete/applications-of-cement/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-034",
@@ -1416,8 +1383,7 @@
         "label": "ACI — Concrete Materials / Admixtures",
         "url": "https://www.concrete.org/topicsinconcrete/topicdetail/admixtures"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-035",
@@ -1449,7 +1415,7 @@
     "explanation": "Correct answer: a. paste\nUlitin natin: paste.\nIto, medyo subtle ang tanong, kasi may mga salitang puwedeng maka-confuse. Pero ang pinakaimportanteng clue ay ito:\n“combining water and cement”\nIyan mismo ang cement paste.\nBakit ito ang tama?\nAng paste ay simpleng mixture ng:\n•\tcement\n•\twater\nIyan ang dumidikit at bumabalot sa aggregate particles, tapos pag tumigas, siya ang nagbi-bind sa buong mass.\nSo kahit nabanggit ang aggregates sa sentence, hindi ibig sabihin nun na ang sagot ay concrete agad. Ang sinasabi lang ay itong water + cement mixture ang coating and binding medium sa paligid ng aggregates. At iyan nga ang paste.\nBakit mali ang ibang choices?\n•\tb. concrete – mas malawak ito. Concrete is cement paste plus aggregates. Hindi ito ang exact thing na tinutukoy ng phrase na “combining water and cement.”\n•\tc. mortar – mortar is usually cement + water + fine aggregate like sand. May sand na ito, so hindi na ito ang pinaka-basic binder mixture.\n•\td. screed – screed is more of a topping/finishing layer or leveling material/application term, not the exact binder mixture being defined here.\nElimination method\nIto ang iniisip mo:\n1.\tHanapin ang pinaka-basic composition sa tanong.\n2.\tKapag nakita mong water + cement lang ang core definition, isipin mo agad paste.\n3.\tKapag may fine aggregate, saka pa lang mag-iisip ng mortar.\n4.\tKapag may fine and coarse aggregates, saka pa lang concrete.\nCommon trap\nAng common trap dito ay dahil may word na aggregates sa sentence, mapipili ng examinee ang concrete.\nPero ang tanong ay hindi “whole finished mixture with aggregates.”\nAng tanong ay iyong binder portion na bumabalot sa aggregates.\nAno ang dapat mong tandaan dito?\nWater + cement = paste.\nIyan ang unang basic building block bago pa maging mortar o concrete.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Admixture purpose",
       "main": "Modifies concrete properties",
       "detail": "Workability, setting, durability, and other behaviors can be adjusted.",
@@ -1460,8 +1426,7 @@
         "label": "ACI — Concrete Materials / Admixtures",
         "url": "https://www.concrete.org/topicsinconcrete/topicdetail/admixtures"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-036",
@@ -1493,7 +1458,7 @@
     "explanation": "Correct answer: a. 28\nUlitin natin: 28 days.\nIto, reviewer-type question ito, at kailangan maging maingat sa wording.\nBakit ito ang tama?\nSa construction at materials review, ang pinaka-common benchmark ng concrete strength development ay 28 days.\nKapag sinabing:\n•\tfull design strength\n•\tstandard compressive strength age\n•\tmaximum expected normal strength basis in reviewer logic\nang sagot ay kadalasan 28 days.\nImportanteng linaw\nSa totoong site practice, may minimum curing periods depende sa:\n•\turi ng cement\n•\tenvironmental conditions\n•\tspecifications\n•\tadmixtures\n•\tstructural needs\nPero dahil ang wording ng reviewer ay “for maximum strength”, ang expected ALE/reviewer answer ay 28 days.\nBakit mali ang ibang choices?\n•\tb. 21 – hindi ito ang standard benchmark answer sa ganitong tanong.\n•\tc. 14 – may improvement na sa strength by 14 days, pero hindi ito ang classic design-age answer.\n•\td. 7 – common early strength check ito, pero hindi maximum or full standard strength basis.\nElimination method\nIto ang iniisip mo:\n1.\tAng tanong ba ay tungkol sa standard strength age? Oo.\n2.\tKapag concrete strength benchmark ang usapan, pinaka-classic answer ay 28 days.\n3.\tAng 7 at 14 days ay intermediate ages lang.\n4.\tKaya natitira ang 28 days.\nCommon trap\nAng trap dito ay yung word na minimum curing.\nSa totoong life, baka maisip mo 7 days or 14 days.\nPero tingnan mo ang kasunod: for maximum strength.\nDoon ka dadalhin pabalik sa 28-day concrete strength benchmark.\nPhilippine/ALE reasoning\nSa ALE reviewer logic, kapag walang masyadong qualification at strength-age ang tanong, 28 days ang standard memory answer.\nAno ang dapat mong tandaan dito?\nSa reviewer/ALE logic, 28 days ang standard answer kapag concrete strength development ang usapan.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Air-entraining admixture",
       "main": "Creates tiny air bubbles to improve durability/workability",
       "detail": "Use the function as the cue.",
@@ -1504,8 +1469,7 @@
         "label": "ACI — Concrete Materials / Admixtures",
         "url": "https://www.concrete.org/topicsinconcrete/topicdetail/admixtures"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-037",
@@ -1537,7 +1501,7 @@
     "explanation": "Correct answer: a. mortar\nUlitin natin: mortar.\nIto, classic definition item ito.\nBakit ito ang tama?\nAng mortar ay mixture ng:\n•\tcement\n•\twater\n•\tfine aggregate only, usually sand\nWala pang coarse aggregate dito. Kaya mortar ang tamang sagot.\nBakit mali ang ibang choices?\n•\tb. cement plaster – related siya sa finishing application, pero hindi ito ang general mixture term na hinahanap ng tanong.\n•\tc. concrete – concrete requires coarse aggregate in the usual definition.\n•\td. light concrete – special concrete type ito, hindi ito ang direct answer sa fine aggregate-only mixture.\nElimination method\nGanito ang isipin mo:\n1.\tFine aggregate lang ba ang binanggit? Oo\n2.\tMay coarse aggregate ba? Wala\n3.\tFine aggregate only + cement + water = mortar\n4.\tKung may coarse aggregate na, saka magiging concrete\nCommon trap\nMinsan kapag may cement at water, pinipili agad ang concrete.\nPero huwag.\nAng pinakaimportanteng tanong mo sa sarili mo ay:\n“May coarse aggregate ba?”\nKung wala, malaking chance na mortar ang sagot.\nAno ang dapat mong tandaan dito?\nCement + water + fine aggregate only = mortar.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Accelerating admixture",
       "main": "Speeds up setting and early strength gain",
       "detail": "Explanation-grounded function cue.",
@@ -1548,8 +1512,7 @@
         "label": "ACI — Concrete Materials / Admixtures",
         "url": "https://www.concrete.org/topicsinconcrete/topicdetail/admixtures"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-038",
@@ -1581,7 +1544,7 @@
     "explanation": "Correct answer: a. concrete\nUlitin natin: concrete.\nIto ay direct continuation ng previous item.\nBakit ito ang tama?\nKapag meron ka nang:\n•\tcement\n•\twater\n•\tfine aggregate\n•\tplus coarse aggregate\nang mixture ay concrete na.\nBakit mali ang ibang choices?\n•\tb. reinforced concrete – reinforced concrete is concrete with steel reinforcement. Hindi binanggit ang bakal.\n•\tc. lightweight concrete – special type ito. Hindi naman sinabing lightweight ang aggregate.\n•\td. lean concrete – special mix condition ito, usually low cement content. Hindi iyon ang definition sa tanong.\nElimination method\nIto ang iniisip mo:\n1.\tFrom mortar, ano ang nadagdag?\nLarge/coarse aggregate\n2.\tKapag coarse aggregate ang nadagdag, ang product ay concrete\n3.\tKung may steel na binanggit, saka pa lang reinforced concrete\n4.\tKung may specific lightweight or low-cement clue, saka mo iisipin ang ibang options\nCommon trap\nAng trap dito ay reinforced concrete dahil mas tunog structural.\nPero tandaan:\nHindi lahat ng concrete ay reinforced.\nMemory pairing\n•\tQuestion 37: fine aggregate only → mortar\n•\tQuestion 38: with coarse aggregate added → concrete\nAno ang dapat mong tandaan dito?\nKapag may coarse aggregate, lumilipat ka na mula mortar papuntang concrete.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Retarding admixture",
       "main": "Delays setting time",
       "detail": "Explanation-grounded function cue.",
@@ -1592,8 +1555,7 @@
         "label": "ACI — Concrete Materials / Admixtures",
         "url": "https://www.concrete.org/topicsinconcrete/topicdetail/admixtures"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-039",
@@ -1625,7 +1587,7 @@
     "explanation": "Correct answer: b. Concrete\nUlitin natin: Concrete.\nIto, very standard definition na ito ng concrete.\nBakit ito ang tama?\nAng concrete ay proportioned mixture ng:\n•\tcement\n•\taggregates\n•\twater\nat ito ay plastic or workable bago tumigas, kaya puwedeng:\n•\ti-cast\n•\ti-mold\n•\ti-place into forms\nBakit mali ang ibang choices?\n•\ta. Mortar – fine aggregate only, mas limited ang composition kaysa concrete\n•\tc. Concrete plaster – finishing/application term ito, hindi general structural material definition\n•\td. Cast-in-place concrete – mas specific method ito ng paggamit ng concrete.\nAng tanong ay general definition muna, hindi specific construction method.\nElimination method\nGanito ang diskarte:\n1.\tHanapin kung general material definition ba ito o specific method.\nGeneral definition.\n2.\tKapag general ang tanong, piliin ang general answer.\nKaya concrete, hindi cast-in-place concrete.\n3.\tMortar? kulang sa aggregate concept as full concrete mass.\nCommon trap\nAng trap dito ay cast-in-place concrete dahil may word na “casted or molded.”\nPero tandaan:\n•\tConcrete = material\n•\tCast-in-place concrete = method of placing that material\nALE reasoning\nKapag general definition ang tanong, huwag kang kumuha ng mas makitid na special type kung may mas exact na broad answer.\nAno ang dapat mong tandaan dito?\nConcrete ang general castable mixture ng cement, aggregate, at water.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Water-reducing admixture",
       "main": "Reduces water demand while maintaining workability",
       "detail": "Function cue.",
@@ -1636,8 +1598,7 @@
         "label": "ACI — Concrete Materials / Admixtures",
         "url": "https://www.concrete.org/topicsinconcrete/topicdetail/admixtures"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-040",
@@ -1669,7 +1630,7 @@
     "explanation": "Correct answer: a. reinforced concrete\nUlitin natin: reinforced concrete.\nIto, diretso lang ito.\nBakit ito ang tama?\nKapag ang concrete ay may steel embedded in it para dagdagan ang tensile resistance at structural capacity, ang tawag ay reinforced concrete.\nBakit mali ang ibang choices?\n•\tb. concrete – masyadong broad. Hindi lahat ng concrete ay may bakal.\n•\tc. mass concrete – tumutukoy ito sa large concrete placement, hindi sa presence ng reinforcement.\n•\td. lean concrete – low cement-content mix concept ito, hindi steel-reinforced material.\nElimination method\n1.\tHanapin ang clue: steel embedded\n2.\tKapag may bakal sa concrete, reinforced agad ang keyword\n3.\tTanggal ang generic at unrelated special types\nCommon trap\nWalang gaanong trap dito, maliban na lang kung nagmamadali at napili ang plain “concrete.”\nPero ang word na strengthened by steel ang dapat kapitan mo.\nAno ang dapat mong tandaan dito?\nConcrete + steel reinforcement = reinforced concrete.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Superplasticizer",
       "main": "High-range water reducer",
       "detail": "Explanation-grounded function cue.",
@@ -1680,8 +1641,7 @@
         "label": "ACI — Concrete Materials / Admixtures",
         "url": "https://www.concrete.org/topicsinconcrete/topicdetail/admixtures"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-041",
@@ -1713,7 +1673,7 @@
     "explanation": "Correct answer: b. plain or mass concrete\nUlitin natin: plain or mass concrete.\nIto, opposite siya ng previous question.\nBakit ito ang tama?\nKapag walang reinforcement, ang concrete ay plain concrete.\nSa choice, pinagsama nila as plain or mass concrete, kaya iyon ang best answer.\nBakit mali ang ibang choices?\n•\ta. lean concrete – hindi ibig sabihin na walang steel ay lean na agad. Lean refers more to low cement proportion.\n•\tc. lightweight concrete – density/type ito, hindi reinforcement classification\n•\td. concrete mix – masyadong vague\nElimination method\nIto ang tanong mo:\n1.\tAng classification ba ay ayon sa presence or absence of reinforcement? Oo.\n2.\tSo ang tamang opposite ng reinforced concrete ay plain concrete\n3.\tSa choices, iyon ay nasa plain or mass concrete\nCommon trap\nMay chance na piliin ang lean concrete dahil iniisip ng examinee na “simpler concrete” siya.\nPero mali iyon.\nLean is about richness of mix, not presence of steel.\nAno ang dapat mong tandaan dito?\nKapag walang bakal, ang sagot ay plain concrete.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "General-purpose cement",
       "main": "Ordinary Portland cement",
       "detail": "Safer than a generic bag image.",
@@ -1724,8 +1684,7 @@
         "label": "Portland Cement Association — Cement and Concrete",
         "url": "https://www.cement.org/cement-concrete/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-042",
@@ -1757,7 +1716,7 @@
     "explanation": "Correct answer: c. Lean concrete\nUlitin natin: Lean concrete.\nNote lang: medyo awkward ang wording ng item, pero among the choices, lean concrete ang best answer.\nBakit ito ang tama?\nAng lean concrete ay concrete na mababa ang cement content relative sa aggregate, ginagamit sa:\n•\tblinding\n•\tsub-bases\n•\tbase courses\n•\tnon-structural supporting layers\n•\tcertain mass/roller-compacted applications in reviewer logic\nKaya kapag ang use ay hindi main structural high-strength member kundi support/base-type application, lean concrete ang malakas na sagot.\nBakit mali ang ibang choices?\n•\ta. Lightweight concrete – ang focus nito ay reduced density, hindi blinding/base course function\n•\tb. Aerated concrete – cellular/lightweight product ito, hindi iyon ang base course/blinding answer\n•\td. Air-entrained concrete – ginagamit para sa freeze-thaw durability, hindi ito ang best match sa use described\nElimination method\nGanito ang iniisip mo:\n1.\tTingnan mo ang application clue, hindi lang ang mix clue:\no\tblinding\no\tbase courses\no\trolled compacted concrete\n2.\tIyan ay hindi tipikal na lightweight or aerated use\n3.\tAng pinakamalapit at standard reviewer answer ay lean concrete\nCommon trap\nMinsan nalilito rito dahil sa phrase na low water-cement ratio.\nSa totoong engineering language, puwedeng gusto mo pang himayin ito nang mas technically.\nPero sa reviewer choices, ang best answer pa rin ay lean concrete dahil sa intended application clues.\nAno ang dapat mong tandaan dito?\nKapag blinding at base-course type support concrete ang usapan, malakas ang sagot na lean concrete.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Early strength cement",
       "main": "High early strength cement",
       "detail": "Used when early strength gain is needed.",
@@ -1768,8 +1727,7 @@
         "label": "Portland Cement Association — Cement and Concrete",
         "url": "https://www.cement.org/cement-concrete/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-043",
@@ -1805,7 +1763,7 @@
     "explanation": "Correct answer: c. Stucco\nUlitin natin: Stucco.\nIto, medyo loose ang wording, pero malinaw pa rin ang tamang sagot sa choices.\nBakit ito ang tama?\nAng stucco ay finishing material na commonly composed of:\n•\tcement\n•\tsand\n•\twater\n•\toften lime or related modifiers\nSo sa choices, si stucco lang ang tunay na mixture/product system na tumutugma sa construction use na tinutukoy.\nBakit mali ang ibang choices?\n•\ta. Lime – isang material lang, hindi defined mixture dito\n•\tb. Gypsum – material family din, hindi itong exact cement-sand mixture product\n•\td. Pozzolan – supplementary cementitious material, hindi finished mixture name\n•\te. Silica – constituent/material lang, not the named mixture\nElimination method\nIto ang dapat mong makita:\n1.\tAng tanong ay humihingi ng mixture/product name\n2.\tAlin sa choices ang hindi lang raw material, kundi actual finishing mixture?\nStucco\n3.\tTanggal ang mga single materials or components\nCommon trap\nWala masyadong trap dito, pero may examinee na nalilito sa gypsum dahil ginagamit din sa plastering context.\nPero ang tamang product name among the choices ay stucco.\nAno ang dapat mong tandaan dito?\nKapag ang choices ay halo ng raw materials at isang actual finish mixture, piliin mo ang actual mixture — dito, stucco.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Sulfate attack resistance",
       "main": "Sulfate-resisting cement",
       "detail": "Use the performance need as the cue.",
@@ -1816,8 +1774,7 @@
         "label": "Portland Cement Association — Cement and Concrete",
         "url": "https://www.cement.org/cement-concrete/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-044",
@@ -1849,7 +1806,7 @@
     "explanation": "Correct answer: b. Calcification\nUlitin natin: Calcification.\nIto, paboritong pair ito ng reviewers dahil kasunod agad ang surface version.\nBakit ito ang tama?\nSa reviewer logic:\n•\tinside the wall or within the body of the concrete/masonry = calcification\n•\ton the surface = efflorescence\nKaya dahil ang tanong ay inside concrete walls, ang expected answer ay calcification.\nBakit mali ang ibang choices?\n•\ta. Efflorescence – ito ang white salt deposits usually nakikita sa surface\n•\tc. Capillary – mechanism ito ng movement ng moisture, hindi iyon mismo ang deposit\n•\td. Percolation – movement or seepage concept din ito, hindi white salt deposit term\nElimination method\nGanito:\n1.\tHanapin ang key distinction: inside ba o surface\n2.\tKapag inside, sa reviewer pairing ay calcification\n3.\tKapag surface, efflorescence\nCommon trap\nThe trap is obvious: mapipili mo agad ang efflorescence kasi iyon ang pinaka-familiar.\nPero basahin ang isang mahalagang word: inside.\nAno ang dapat mong tandaan dito?\nSa reviewer pairing:\ninside = calcification\nsurface = efflorescence",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Mass concrete cement",
       "main": "Low-heat cement",
       "detail": "Chosen to limit heat of hydration.",
@@ -1860,8 +1817,7 @@
         "label": "Portland Cement Association — Cement and Concrete",
         "url": "https://www.cement.org/cement-concrete/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-045",
@@ -1893,7 +1849,7 @@
     "explanation": "Correct answer: a. Efflorescence\nUlitin natin: Efflorescence.\nIto ang pair ng previous question.\nBakit ito ang tama?\nAng efflorescence ay white powdery or salt-like deposit na lumalabas sa surface ng masonry or concrete kapag may dissolved salts na dinadala ng moisture, then nag-evaporate ang water at naiiwan ang salts.\nBakit mali ang ibang choices?\n•\tb. Calcification – reviewer logic uses this for internal deposit/formation\n•\tc. Capillary – moisture transport mechanism ito\n•\td. Percolation – seepage movement term ito, hindi actual surface deposit name\nElimination method\nIto ang pinakamabilis:\n1.\tWhite salt-like deposit ba?\n2.\tSurface ba ang clue?\n3.\tSagot: efflorescence\nCommon trap\nKung hindi mo napansin ang difference ng Question 44 at 45, mapagpapalit mo sila.\nKaya tandaan mo:\n•\tEfflorescence = nakikita sa surface\n•\tCalcification = reviewer’s internal occurrence pairing\nAno ang dapat mong tandaan dito?\nKapag white deposit sa surface, ang sagot ay efflorescence.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Architectural white finish",
       "main": "White cement",
       "detail": "Decorative/architectural finish cue.",
@@ -1904,8 +1860,7 @@
         "label": "Portland Cement Association — Cement and Concrete",
         "url": "https://www.cement.org/cement-concrete/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-046",
@@ -1941,7 +1896,7 @@
     "explanation": "Correct answer: e. Pacifica\nUlitin natin: Pacifica.\nIto, Philippine market familiarity item ito.\nBakit ito ang tama?\nSa listahan:\n•\tRepublic\n•\tHolcim\n•\tCemex\n•\tLafarge\n•\tNorthern Cement\n•\tUnion\nlahat iyan ay kilalang names na associated sa cement supply/industry context.\nAng Pacifica ang outlier dito.\nBakit mali ang ibang choices?\nDahil iyong iba, recognizable silang brands/companies in cement context.\nAng hinahanap dito ay iyong hindi kabilang.\nElimination method\nIto ang exam strategy:\n1.\tSince “EXCEPT” ang tanong, hanapin ang odd one out\n2.\tAlin ang pinakahindi familiar sa cement supplier list?\n3.\tDito, iyon ay Pacifica\nCommon trap\nAng trap dito ay kung hindi ka familiar sa local market names, baka random ka lang pumili.\nKapag ganitong items, magandang tandaan ang major cement industry names sa Philippine context.\nPhilippine basis\nIto mismo ay local practice / local market awareness type of item. Kaya magandang tandaan ang common Philippine cement brands and suppliers.\nAno ang dapat mong tandaan dito?\nSa choices na iyan, ang hindi cement supplier na expected answer ay Pacifica.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Water-resistant cement idea",
       "main": "Hydrophobic / waterproofing-type cement logic",
       "detail": "Reviewer item is conceptual; a random cement image may mislead.",
@@ -1956,8 +1911,7 @@
         "label": "WBDG — Moisture Management / Materials",
         "url": "https://www.wbdg.org/resources/moisture-management"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-047",
@@ -1981,7 +1935,7 @@
     "explanation": "Correct answer: b. Hi-Alumina Cement\nUlitin natin: Hi-Alumina Cement.\nIto, two-choice item pero kailangan pa rin ng tamang logic.\nBakit ito ang tama?\nAng high-alumina cement ay kilala sa:\n•\tmabilis na strength gain\n•\thigher heat evolution during setting\n•\tuseful behavior in colder conditions where additional heat during setting can help\nKaya sa choices, ito ang mas tamang sagot.\nBakit mali ang Portland Cement?\nAng ordinary Portland cement ay nagha-hydrate din at nagre-release din ng init, oo.\nPero ang tanong ay alin ang evolves great heat when setting at best for colder temperatures.\nMas malakas ang association na iyan sa Hi-Alumina Cement.\nElimination method\nIto ang iniisip mo:\n1.\tClue: great heat when setting\n2.\tClue: best in colder temperatures\n3.\tSa dalawang options, alin ang mas special-purpose at mas known for high heat behavior?\nHi-Alumina Cement\nCommon trap\nMay pipili ng Portland cement dahil iyon ang mas common at pamilyar.\nPero tandaan: kapag may clue na special thermal behavior, madalas ang sagot ay ang special cement, hindi ang ordinary general-purpose one.\nAno ang dapat mong tandaan dito?\nKapag ang cement ay kilala sa mas malaking init habang nagseset, lalo na useful sa malamig na lugar, isipin mo Hi-Alumina Cement.\n\nSige, tuloy tayo sa Page 5.\nContinue lang ang numbering, so dito tayo magsisimula sa Question 48.\nMay napuputol na choices sa pinaka-itaas ng page galing sa previous question, pero dahil hindi visible ang full question stem, hindi natin iyon rereview nang pilit. Ang sisimulan natin ay ang unang kumpletong tanong na kita sa page.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "High-alumina cement",
       "main": "Rapid strength gain and high heat evolution",
       "detail": "Explanation-grounded performance cue.",
@@ -1992,8 +1946,7 @@
         "label": "Portland Cement Association — Cement and Concrete",
         "url": "https://www.cement.org/cement-concrete/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-048",
@@ -2030,8 +1983,7 @@
         "label": "Gypsum Association — Technical Resources",
         "url": "https://gypsum.org/technical/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-049",
@@ -2063,7 +2015,7 @@
     "explanation": "Correct answer: c. Hi-Alumina\nUlitin natin: Hi-Alumina.\nIto ay halos inuulit lang ang logic sa previous page.\nBakit ito ang tama?\nAng Hi-Alumina Cement ay kilala sa:\n•\tmabilis na strength development\n•\tmas mataas na heat evolution habang nagseset\nAt dahil doon, mas okay siya sa cold places, kasi nakakatulong ang init sa setting and early strength development.\nBakit mali ang iba?\n•\tPortland – general-purpose, pero hindi ito ang special answer for colder conditions\n•\tWhite cement – color-based/special finish cement ito\n•\tNatural cement – old material category ito, hindi ito ang best answer for this use\nElimination method\n1.\tHanapin ang clue: cold places\n2.\tAnong cement ang may mas malaking init habang nagseset?\nHi-Alumina\n3.\tKapag may special thermal behavior ang tanong, huwag pipili ng ordinary Portland agad.\nCommon trap\nMinsan pipiliin ang Portland dahil iyon ang pinaka-familiar.\nPero ang tanong ay hindi pinaka-common. Ang tanong ay pinaka-angkop sa malamig na lugar.\nAno ang dapat mong tandaan dito?\nKapag cold places, ang reviewer answer ay Hi-Alumina Cement.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Cold-weather cement choice",
       "main": "High-alumina cement",
       "detail": "Fast strength gain and higher heat output help in cold weather.",
@@ -2074,8 +2026,7 @@
         "label": "Portland Cement Association — Cement and Concrete",
         "url": "https://www.cement.org/cement-concrete/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-050",
@@ -2107,7 +2058,7 @@
     "explanation": "Correct answer: d. 10.0m\nUlitin natin: 10.0 meters.\nIto, memory item ito sa local commercial bar lengths.\nBakit ito ang tama?\nSa usual commercial stock lengths, mas common ang:\n•\t6.0 m\n•\t7.5 m\n•\t9.0 m\nAng 10.0 m ang odd one out dito. Sa practice, mas makikita mo pa nga ang 10.5 m or other standard stock lengths kaysa eksaktong 10.0 m.\nBakit mali ang iba?\nKasi iyong 6.0, 7.5, at 9.0 ay recognized commercial lengths sa reviewer logic.\nElimination method\nIto ang diskarte:\n1.\tHanapin ang pinaka-kakaiba sa sequence.\n2.\t6, 7.5, 9 — parang regular stepped stock lengths.\n3.\t10.0 ang mukhang hindi sumasabay sa expected stock pattern.\n4.\tKaya 10.0 m ang hindi commercial length sa item.\nCommon trap\nKung hindi mo kabisado, puwede kang malito sa 9.0 vs 10.0.\nPero sa ganitong tanong, malaking tulong ang paghanap ng odd one out.\nPhilippine context\nIto ay local-practice / market-familiarity type question. Hindi ito code-heavy; mas practical memory item ito.\nAno ang dapat mong tandaan dito?\nSa choices na ito, ang hindi commercial length ay 10.0 m.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Commercial rebar length",
       "main": "10.0 m is not a standard commercial length",
       "detail": "Explanation-grounded odd-one-out cue.",
@@ -2118,8 +2069,7 @@
         "label": "CRSI — Reinforcing Steel Basics",
         "url": "https://www.crsi.org/reinforcing-basics/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-051",
@@ -2151,7 +2101,7 @@
     "explanation": "Correct answer: c. Yellow\nUlitin natin: Yellow.\nNakatulong ang note sa page mismo.\nBakit ito ang tama?\nAyon sa nakasulat sa reviewer:\n•\tGrade 33 = White\n•\tGrade 40 = Yellow\n•\tGrade 60 = Green\nAt sinasabi rin sa note na:\nGrade 40 (Intermediate Grade) is PS Grade 275/276.\nSo kapag PS Grade 275, equivalent reviewer answer niya ay Yellow.\nBakit mali ang iba?\n•\tGreen – para ito sa Grade 60\n•\tRed – wala sa note na ito ang red\n•\tAny color – mali, dahil may standard color code nga\nElimination method\n1.\tI-convert muna sa equivalent grade kung kailangan.\n2.\tPS Grade 275 → Grade 40\n3.\tGrade 40 → Yellow\n4.\tKaya iyon ang tamang sagot.\nCommon trap\nAng trap dito ay kapag hindi mo nakita ang equivalence ng PS Grade 275 at Grade 40.\nAno ang dapat mong tandaan dito?\nPS Grade 275 = Grade 40 = Yellow.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Rebar color code",
       "main": "Grade 275 / Grade 40 = Yellow",
       "detail": "Memory cue from explanation.",
@@ -2162,8 +2112,7 @@
         "label": "CRSI — Reinforcing Steel Basics",
         "url": "https://www.crsi.org/reinforcing-basics/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-052",
@@ -2195,7 +2144,7 @@
     "explanation": "Correct answer: d. White\nUlitin natin: White.\nIto, diretso na ito base sa note sa page.\nBakit ito ang tama?\nAyon sa reviewer note:\n•\tGrade 33 = White\nBakit mali ang iba?\n•\tYellow – Grade 40\n•\tGreen – Grade 60\n•\tRed – hindi iyon ang code sa given note\nElimination method\nSimple memory map:\n•\t33 = White\n•\t40 = Yellow\n•\t60 = Green\nCommon trap\nKapag pinagsama mo sa isip ang 33 at 40, puwedeng mapagpalit mo ang white at yellow.\nKaya magandang i-mnemonic:\n•\t33 = White\n•\t40 = Yellow\n•\t60 = Green\nAno ang dapat mong tandaan dito?\nGrade 33 = White.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Rebar color code",
       "main": "Grade 33 = White",
       "detail": "Memory cue from explanation.",
@@ -2206,8 +2155,7 @@
         "label": "CRSI — Reinforcing Steel Basics",
         "url": "https://www.crsi.org/reinforcing-basics/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-053",
@@ -2239,7 +2187,7 @@
     "explanation": "Correct answer: a. 16 mm\nUlitin natin: 16 mm.\nIto, may note pa nga sa baba kung paano i-compute.\nBakit ito ang tama?\nSa imperial bar numbering:\n•\t#5 means 5/8 inch\nThen convert:\n•\t5/8 inch = 0.625 inch\n•\t0.625 × 25.4 = 15.875 mm\nI-round off mo, magiging 16 mm.\nBakit mali ang iba?\n•\t20 mm – masyadong malaki para sa #5\n•\t10 mm – masyadong maliit\n•\t6 mm – sobrang liit\nElimination method\nIto ang mabilis:\n1.\tNumber 5 → 5/8 inch\n2.\t5/8 inch is close to 16 mm\n3.\tKaya answer ay 16 mm\nCommon trap\nMinsan iniisip ng examinee na ang #5 ay 5 mm.\nHuwag.\nImperial bar number ito, hindi millimeter value.\nAno ang dapat mong tandaan dito?\n#5 bar = 5/8 inch ≈ 16 mm.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Imperial-to-metric bar size",
       "main": "#5 bar = 16 mm",
       "detail": "5/8 inch ≈ 16 mm.",
@@ -2250,8 +2198,7 @@
         "label": "CRSI — Reinforcing Steel Basics",
         "url": "https://www.crsi.org/reinforcing-basics/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-054",
@@ -2283,7 +2230,7 @@
     "explanation": "Correct answer: b. 5.52 kg\nUlitin natin: 5.52 kilograms.\nIto, magandang may formula ka rito.\nBakit ito ang tama?\nAng common formula ng steel bar weight per meter ay:\nWeight per meter = d² / 162\nKung 16 mm:\n•\t16² = 256\n•\t256 / 162 = about 1.58 kg/m\nThen multiply by 3.5 m:\n•\t1.58 × 3.5 = about 5.53 kg\nClosest choice: 5.52 kg\nBakit mali ang iba?\n•\t7.30 kg – masyadong mabigat for 16 mm × 3.5 m\n•\t3.50 kg – mukhang ginaya lang ang length, hindi real weight\n•\t7.77 kg – sobra rin\nElimination method\nIto ang iniisip mo:\n1.\tAlam mo ba ang formula? d² / 162\n2.\tIf not exact, estimate:\no\t16 mm bar is around 1.6 kg/m\no\ttimes 3.5 m ≈ 5.6 kg\n3.\tSo ang pinakamalapit ay 5.52 kg\nCommon trap\nAng trap dito ay pagpili ng 3.50 kg dahil pareho sa length.\nClassic exam trap iyan: kinopya lang ang number na nakita sa tanong.\nAno ang dapat mong tandaan dito?\nSa bar weight, tandaan ang quick formula:\nkg/m = d² / 162",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Rebar weight",
       "main": "16 mm × 3.5 m = 5.52 kg",
       "detail": "Use d²/162 for kg/m.",
@@ -2294,8 +2241,7 @@
         "label": "CRSI — Reinforcing Steel Basics",
         "url": "https://www.crsi.org/reinforcing-basics/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-055",
@@ -2327,7 +2273,7 @@
     "explanation": "Correct answer: c. Shop coat\nUlitin natin: Shop coat.\nIto, practical steel-work terminology ito.\nBakit ito ang tama?\nAng shop coat ay initial protective coating applied sa steel sa fabrication shop or factory bago ito i-deliver or i-ship.\nUsually temporary protection ito against early rusting before final coating system.\nBakit mali ang iba?\n•\tInhibiting primer – puwedeng uri ng coating/primer, pero hindi ito ang pinaka-standard term na tinatanong dito\n•\tTop coat – final exposed finish coat ito, hindi initial factory-applied coat\n•\tRed paint – masyadong generic at informal\nElimination method\n1.\tHanapin ang clue: from the factory prior to shipment\n2.\tIyan ang keyword para sa shop\n3.\tSo answer: shop coat\nCommon trap\nAng trap dito ay primer, kasi parang initial coat din iyon.\nPero ang tanong ay hindi “type of coating.”\nAng tanong ay term used for the initial coat from the factory — and that term is shop coat.\nAno ang dapat mong tandaan dito?\nFactory-applied initial protective steel coating = shop coat.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Shop coat",
       "main": "Protective first coat applied in the fabrication shop",
       "detail": "Explanation-grounded coating role cue.",
@@ -2342,8 +2288,7 @@
         "label": "MPI — Architectural Painting Manual Resources",
         "url": "https://mpi.net/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-056",
@@ -2375,7 +2320,7 @@
     "explanation": "Correct answer: a. capillary action\nUlitin natin: capillary action.\nIto, basic moisture movement concept ito.\nBakit ito ang tama?\nAng waterproofing compounds sa concrete or mortar ay tumutulong para mabawasan ang:\n•\twater penetration\n•\tpore connectivity\n•\tmovement of moisture through tiny capillary spaces\nSo ang nire-reduce nila ay capillary action.\nBakit mali ang iba?\n•\tretarding action – setting behavior ito, hindi moisture movement\n•\taccelerating action – same, setting behavior pa rin\n•\tnone of the above – mali dahil may tamang sagot\nElimination method\n1.\tWaterproofing ba ang tanong? Oo.\n2.\tSo hanapin mo iyong related sa movement of water\n3.\tSa choices, iyon ay capillary action\nCommon trap\nMinsan napupunta ang sagot sa retarding or accelerating dahil nasa section tayo ng admixtures.\nPero huwag mong kalimutan ang specific keyword: waterproofing.\nAno ang dapat mong tandaan dito?\nWaterproofing compounds help reduce capillary action.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Waterproofing compound effect",
       "main": "Reduces capillary action",
       "detail": "Key explanation cue.",
@@ -2386,8 +2331,7 @@
         "label": "WBDG — Moisture Management / Materials",
         "url": "https://www.wbdg.org/resources/moisture-management"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-057",
@@ -2419,7 +2363,7 @@
     "explanation": "Correct answer: c. fireproofing\nUlitin natin: fireproofing.\nIto, kailangan ihiwalay ang normal admixture functions versus ibang protective systems.\nBakit ito ang tama?\nAdmixtures can be used to:\n•\tchange setting time\n•\tmodify workability\n•\tsometimes impart color\n•\timprove certain durability properties\nPero fireproofing is not the usual direct function na iniisip sa concrete admixture classification. Mas madalas itong ginagawa by:\n•\tfire-resistant assemblies\n•\tprotective coatings\n•\tencasement\n•\tspecific fire-resistive systems\nBakit mali ang iba?\n•\timpart color – puwedeng pigment admixtures\n•\tretard setting – classic function ng retarder admixture\n•\timprove wear resistance – possible through hardeners or surface-improving admixture-related systems\nElimination method\n1.\tTanong: alin ang not a function?\n2.\tHanapin ang out-of-category choice.\n3.\tSetting, color, wear resistance — all plausible admixture effects\n4.\tFireproofing ang pinakamalayo sa normal admixture function\nCommon trap\nAng trap dito ay kung iisipin mong “baka may special admixture for everything.”\nSa board exam, kapag may isang choice na masyadong system-level or assembly-level kaysa mix-property-level, iyon ang madalas mali.\nAno ang dapat mong tandaan dito?\nAdmixtures modify mix properties, but fireproofing is usually not the direct answer in this kind of item.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Admixture function exception",
       "main": "Fireproofing is not a normal admixture function",
       "detail": "Odd-one-out cue.",
@@ -2430,8 +2374,7 @@
         "label": "ACI — Concrete Materials / Admixtures",
         "url": "https://www.concrete.org/topicsinconcrete/topicdetail/admixtures"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-058",
@@ -2463,7 +2406,7 @@
     "explanation": "Correct answer: c. Hydrite\nUlitin natin: Hydrite.\nIto, reviewer trade-name / product-memory type item ito.\nBakit ito ang tama?\nAng tanong ay naghahanap ng material used to speed up the initial set — in other words, accelerator-type admixture.\nSa choices na ibinigay, ang kilalang reviewer answer ay Hydrite.\nBakit mali ang iba?\n•\tAdmixture – masyadong broad; umbrella term lang ito\n•\tRetarder – kabaligtaran pa nga ito; pinapabagal nito ang setting\n•\tSahara – mas kilala itong waterproofing-related trade name sa reviewer memory items, hindi accelerator\nElimination method\n1.\tSpeed up initial set = accelerator\n2.\tTanggal agad si retarder\n3.\tTanggal si admixture kasi too broad\n4.\tBetween Hydrite and Sahara, ang reviewer answer for accelerator is Hydrite\nCommon trap\nAng trap dito ay kung hindi ka familiar sa trade names.\nKapag ganitong tanong, gawin mo ang elimination:\n•\tgeneral term? alisin\n•\topposite function? alisin\n•\tthen identify the most likely product name\nImportant note\nIto ay more on reviewer/product familiarity than code-based theory. Kaya tandaan mo siya as a memory item.\nAno ang dapat mong tandaan dito?\nSa reviewer logic, Hydrite ang answer for speeding up initial set of concrete.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Accelerator trade-name item",
       "main": "Hydrite speeds up initial set",
       "detail": "Brand/function memory cue.",
@@ -2474,8 +2417,7 @@
         "label": "ACI — Concrete Materials / Admixtures",
         "url": "https://www.concrete.org/topicsinconcrete/topicdetail/admixtures"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-059",
@@ -2507,7 +2449,7 @@
     "explanation": "Correct answer: b. Retarder\nUlitin natin: Retarder.\nIto, opposite siya ng previous item.\nBakit ito ang tama?\nAng retarder ay admixture na ginagamit para:\n•\tpabagalin ang setting\n•\tpabagalin ang hydration rate\n•\tbigyan ng mas mahabang working time ang concrete\nLalo itong useful sa hot weather, kasi sa init, mas mabilis ang setting.\nBakit mali ang iba?\n•\tAdmixture – masyadong broad\n•\tAccelerators – kabaligtaran\n•\tConcrete hardener – ginagamit para tumaas ang surface hardness, hindi para pabagalin ang hydration\nElimination method\n1.\tClue: slow down\n2.\tClue: hot weather\n3.\tOpposite of accelerator = retarder\n4.\tKaya iyon ang sagot\nCommon trap\nMinsan napipili ang admixture dahil technically retarder is an admixture.\nPero tandaan: kapag may specific answer, huwag piliin ang general category.\nAno ang dapat mong tandaan dito?\nHot weather + need to slow setting = retarder.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Retarder",
       "main": "Admixture that delays setting time",
       "detail": "Use the function cue instead of a random chemical bottle.",
@@ -2518,8 +2460,7 @@
         "label": "ACI — Concrete Materials / Admixtures",
         "url": "https://www.concrete.org/topicsinconcrete/topicdetail/admixtures"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-060",
@@ -2551,7 +2492,7 @@
     "explanation": "Best answer: b. integral application finishes\nUlitin natin: integral application finishes.\nIto, aaminin ko: medyo sablay ang wording ng item. Hindi siya malinis pakinggan technically.\nPero kailangan pa rin natin piliin ang best answer among the choices.\nBakit ito ang best answer?\nAng word na admixture usually means material mixed into the concrete or mortar — in other words, integral siya, hindi surface-applied.\nKaya sa options, ang pinaka-malapit at pinaka-defensible ay integral application finishes.\nBakit hindi surface application finishes?\nKasi ang surface-applied material is generally not an admixture in the strict sense. Admixture is incorporated in the mix.\nBakit hindi all of the above?\nKung strict technical reading ang gamit natin, hindi puwedeng isama ang surface application finishes as admixtures. Kaya mahina si all of the above.\nBakit hindi none?\nMay choice na mas malapit sa tamang concept, which is integral.\nElimination method\nIto ang iniisip mo:\n1.\tAno ang essence ng admixture?\nHinahalo sa loob ng mix\n2.\tAlin ang mas tugma roon — surface or integral?\nIntegral\n3.\tKaya kahit awkward ang wording, doon ka pupunta\nCommon trap\nAng trap dito ay ang pang-akit ng all of the above kapag magulo ang question.\nPero huwag agad kukuha ng all of the above unless talagang malinaw na lahat ay tama.\nImportant note\nKung mas technical ang usapan, sasabihin natin na poorly worded ang item. Pero for reviewer-answering, integral application finishes ang pinaka-best fit.\nAno ang dapat mong tandaan dito?\nSa true admixture concept, ang mahalaga ay integral siya sa mix, hindi surface-applied.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Admixture category item",
       "main": "Integral application finish / integral treatment logic",
       "detail": "Reviewer wording is tricky, so keep a concept cue instead of a random product image.",
@@ -2562,8 +2503,7 @@
         "label": "ACI — Concrete Materials / Admixtures",
         "url": "https://www.concrete.org/topicsinconcrete/topicdetail/admixtures"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-061",
@@ -2595,7 +2535,7 @@
     "explanation": "Correct answer: b. water-reducing agents\nUlitin natin: water-reducing agents.\nIto, standard terminology ito.\nBakit ito ang tama?\nAng plasticizer ay admixture na nagpapaganda ng workability ng concrete or mortar without requiring more water, or helps reduce the water needed.\nKaya ang tamang term ay water-reducing agent.\nBakit mali ang iba?\n•\twater-proofing agents – ibang function ito\n•\twater-integrating agents – hindi standard term\n•\twater-borne agents – hindi ito ang term sa admixture classification\nElimination method\n1.\tPlasticizer improves workability\n2.\tHow? By reducing water demand\n3.\tTherefore: water-reducing agent\nCommon trap\nAng trap dito ay pagkapit sa salitang may “water” lang.\nPero ang kilalang technical pair ay:\nplasticizer = water-reducer\nAno ang dapat mong tandaan dito?\nPlasticizing agent = water-reducing agent.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Plasticizer",
       "main": "Water-reducing admixture",
       "detail": "Function cue.",
@@ -2606,8 +2546,7 @@
         "label": "ACI — Concrete Materials / Admixtures",
         "url": "https://www.concrete.org/topicsinconcrete/topicdetail/admixtures"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-062",
@@ -2622,7 +2561,7 @@
     "explanation": "Correct answer: Admixtures\nUlitin natin: Admixtures.\nWala nang visible choices dito sa upload, pero based sa stem alone, ang tamang technical term ay admixtures.\nBakit ito ang tama?\nAng admixtures ay substances added to:\n•\tcement mixes\n•\tmortar\n•\tconcrete\npara baguhin o pagandahin ang specific properties tulad ng:\n•\tworkability\n•\tsetting time\n•\twater resistance\n•\tcolor\n•\tdurability\nElimination method kahit walang choices\nKapag ang tanong ay:\n•\t“substances added”\n•\t“to improve or impart properties”\nang term na hahanapin mo ay admixtures.\nCommon trap\nMinsan nalilito ito sa additives sa casual use.\nPero sa standard construction materials language, ang term ay admixtures.\nAno ang dapat mong tandaan dito?\nAnything added to concrete or mortar to modify properties is generally called admixture.\n\nSige, tuloy tayo sa Page 6.\nContinue lang ang numbering, so dito tayo magsisimula sa Question 63.\nMay putol na choices sa pinakataas ng page na mukhang continuation ng previous item, pero dahil wala ang full question stem, hindi natin iyon pipilitin. Ang rereview natin ay ang lahat ng kumpletong visible questions sa page na ito, in order.",
     "type": "identification",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Chemical admixture",
       "main": "Material added to modify concrete performance",
       "detail": "General concept cue.",
@@ -2633,8 +2572,7 @@
         "label": "ACI — Concrete Materials / Admixtures",
         "url": "https://www.concrete.org/topicsinconcrete/topicdetail/admixtures"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-063",
@@ -2666,7 +2604,7 @@
     "explanation": "Correct answer: d. CELITE\nUlitin natin: CELITE.\nIto, reviewer-memory item ito, medyo trade-name based. Hindi ito yung tipong pure code question, so ang strategy dito ay brand association at odd-one-out elimination.\nBakit ito ang tama?\nSa choices, ang CELITE ang pinaka-hindi tugma bilang concrete hardener brand.\nAng ibang names ay tunog hardener/product trade names used in floor or concrete surface treatment context.\nAng Celite is more commonly associated with siliceous/filter/diatomaceous material identity, hindi iyong typical hardener brand na gusto ng reviewer.\nBakit mali ang ibang choices?\n•\tFLORHAND – tunog at gamit nito ay aligned sa floor/concrete hardener type products\n•\tARITROC – same, reviewer-type trade name association\n•\tMETALICRON – very suggestive pa nga ng metallic hardener/floor hardener concept\n•\tCELITE – ito ang outlier\nElimination method\nIto ang iniisip mo:\n1.\tTanong ba ay product chemistry? Hindi.\n2.\tTanong ba ay brand familiarity / odd-one-out? Oo.\n3.\tAlin sa apat ang pinaka-hindi tunog hardener o floor treatment product?\nCELITE\n4.\tKaya iyon ang iiwan mo as answer.\nCommon trap\nAng trap dito ay kung hindi ka familiar sa trade names, mapapapili ka lang sa random.\nAng pinakamagandang gawin sa board kapag ganito ay:\n•\thanapin ang may pinakahinang association sa mismong use\n•\thuwag magpa-impress sa tunog ng pangalan\nImportant note\nIto ay reviewer-memory item, hindi high-code item. Kaya ang best move ay tandaan siya as an exception question.\nAno ang dapat mong tandaan dito?\nSa choices na ito, ang hindi hardener na expected reviewer answer ay CELITE.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Trade-name odd-one-out",
       "main": "CELITE is not a hardener",
       "detail": "Trade-name memory item—concept is safer than a wrong product image.",
@@ -2677,8 +2615,7 @@
         "label": "WBDG — Moisture Management / Materials",
         "url": "https://www.wbdg.org/resources/moisture-management"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-064",
@@ -2715,8 +2652,7 @@
         "label": "USDA Forest Products Laboratory — Wood Handbook",
         "url": "https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-065",
@@ -2748,7 +2684,7 @@
     "explanation": "Correct answer: b. 1/2 inch\nUlitin natin: 1/2 inch.\nIto, practical formwork memory item ito. At sa choices, ang pinaka-reasonable minimum ay 1/2 inch, which is about 12 mm.\nBakit ito ang tama?\nPara sa columns or beams, ang formwork ay kailangang may sapat na rigidity para hindi basta mag-warp o mag-deform sa pressure ng fresh concrete.\nAng 1/2-inch plywood ang pinaka-common minimum practical answer sa ganitong reviewer question.\nBakit mali ang ibang choices?\n•\ta. 6 mm – masyadong manipis para sa normal column/beam form use\n•\tc. 1/4 inch – mas lalong manipis, madaling mag-deflect\n•\td. 16 mm – puwedeng gamitin sa ibang mas demanding situations, pero hindi ito ang minimum na tinatanong\nElimination method\nIto ang iniisip mo:\n1.\tAng tanong ay minimum, hindi typical heavy-duty size\n2.\t6 mm at 1/4 inch — obvious na manipis masyado\n3.\tBetween 1/2 inch and 16 mm, alin ang mas logical na minimum?\n1/2 inch\n4.\t16 mm mas mabigat na choice na iyon, hindi na minimum\nCommon trap\nAng trap dito ay 16 mm, kasi mukhang mas “structurally safe.”\nPero ulitin ko: ang tanong ay minimum, hindi best possible.\nImportant note\nSa actual formwork design, thickness depends on:\n•\tstud/waler spacing\n•\tconcrete pressure\n•\treuse condition\n•\tproprietary form system\nPero sa reviewer framing, 1/2 inch ang best answer.\nAno ang dapat mong tandaan dito?\nSa reviewer/formwork memory item, minimum plywood thickness for columns or beams = 1/2 inch.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Plywood form thickness",
       "main": "Minimum = 1/2 inch",
       "detail": "Explanation-grounded dimension cue.",
@@ -2759,8 +2695,7 @@
         "label": "USDA Forest Products Laboratory — Wood Handbook",
         "url": "https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-066",
@@ -2792,7 +2727,7 @@
     "explanation": "Correct answer: a. crude oil\nUlitin natin: crude oil.\nIto, reviewer answer ito, though gusto kong linawin ang practical nuance.\nBakit ito ang tama?\nSa old reviewer logic, ang hinahanap dito ay iyong ginagamit bilang release coating para hindi dumikit ang concrete sa wood form. Sa choices, ang pinaka-fit na sagot ay crude oil.\nBakit mali ang ibang choices?\n•\tb. lacquer paint – finish coating ito, hindi form-release agent\n•\tc. latex paint – wall paint type use, hindi para sa release function\n•\td. weatherproofing paint – protective paint ito, hindi form-release answer\nElimination method\nIto ang iniisip mo:\n1.\tAng kailangan ba ay paint finish o release coat?\nRelease coat.\n2.\tKaya tanggal agad ang mga normal paint options\n3.\tAng natitirang pinaka-fit sa reviewer choices ay crude oil\nCommon trap\nMay examinee na mapapaisip na “parang hindi maganda gamitin ang crude oil.”\nAt tama ka — sa modern practice, mas okay ang proper form oil o proprietary release agent kaysa crude oil.\nPero dahil choices-based reviewer item ito, crude oil ang expected answer.\nPhilippine practice note\nSa actual good practice today, mas tama sabihin na form release agents or form oil ang ginagamit, hindi basta crude oil.\nPero sa reviewer/ALE old-school item, crude oil ang best-fit answer sa choices.\nAno ang dapat mong tandaan dito?\nSa reviewer logic, ang coating para hindi dumikit ang concrete sa wood form ay crude oil — pero sa modern practice, mas proper ang dedicated release agent.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Form-release coating",
       "main": "Crude oil / form release logic",
       "detail": "Old reviewer answer; concept cue avoids endorsing obsolete practice visually.",
@@ -2803,8 +2738,7 @@
         "label": "Portland Cement Association — Applications of Cement",
         "url": "https://www.cement.org/cement-concrete/applications-of-cement/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-067",
@@ -2841,8 +2775,7 @@
         "label": "Portland Cement Association — Applications of Cement",
         "url": "https://www.cement.org/cement-concrete/applications-of-cement/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-068",
@@ -2879,8 +2812,7 @@
         "label": "Portland Cement Association — Applications of Cement",
         "url": "https://www.cement.org/cement-concrete/applications-of-cement/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-069",
@@ -2912,7 +2844,7 @@
     "explanation": "Best answer: d. Aerocrete\nUlitin natin: Aerocrete.\nIto rin, medyo hindi super linis ang wording, kaya kailangan nating hanapin ang best-fit answer.\nBakit ito ang best answer?\nSa choices:\n•\tGunite = spray-applied sand-cement mix, not lightweight aggregate-type processed concrete\n•\tHaydite = lightweight aggregate itself, not really the processed concrete name\n•\tPorete = more associated with chemical foam / porous lightweight product\n•\tAerocrete = lightweight expanded structural concrete, kaya siya ang best-fit answer sa phrase na processed concrete with lightweight character\nSo kung ang hanap ay processed concrete at hindi lang mismong aggregate, Aerocrete ang pinaka-buo at pinaka-defensible na sagot.\nBakit hindi Haydite?\nIto ang common trap.\nOo, ang Haydite ay lightweight aggregate. Pero ang tanong ay processed concrete, hindi lang “anong lightweight aggregate.”\nKaya hindi sapat si Haydite bilang sagot.\nBakit hindi Porete?\nMalapit sana, kasi lightweight processed concrete din ang dating niya.\nPero sa wording na “added with lightweight aggregate,” mas tumatama ang Aerocrete as the best available processed-concrete answer among choices.\nElimination method\nIto ang iniisip mo:\n1.\tTanong ba ay aggregate lang o processed concrete?\nProcessed concrete.\n2.\tKaya tanggal si Haydite kasi aggregate name lang siya\n3.\tTanggal si Gunite kasi pneumatic mix iyon\n4.\tBetween Porete and Aerocrete, alin ang mas kilalang lightweight processed concrete answer sa page notes?\nAerocrete\nCommon trap\nPinaka-trap dito si Haydite dahil nakita mo ang phrase na lightweight aggregate.\nPero huwag mong kalimutan ang mas mahalagang word:\nprocessed concrete.\nImportant note\nPoorly worded ang item, oo. Pero sa best-fit reviewer answering, Aerocrete ang pinakamalakas na choice.\nAno ang dapat mong tandaan dito?\nKapag ang tanong ay naghahanap ng processed concrete, huwag kang sasagot ng aggregate name lang kung may mas buo at mas tamang concrete-type answer.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Lightweight concrete",
       "main": "Concrete with reduced density",
       "detail": "Use property cue rather than potentially ambiguous product photo.",
@@ -2923,8 +2855,7 @@
         "label": "Portland Cement Association — Applications of Cement",
         "url": "https://www.cement.org/cement-concrete/applications-of-cement/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-070",
@@ -2956,7 +2887,7 @@
     "explanation": "Correct answer: a. Masonry\nUlitin natin: Masonry.\nIto, very direct definition item ito.\nBakit ito ang tama?\nAng masonry ay built-up construction using units like:\n•\tstone\n•\tbrick\n•\tconcrete block\n•\tclay products\nna pinagbubuklod gamit ang mortar o minsan plain concrete, depende sa system.\nSo eksaktong tugma ang definition sa masonry.\nBakit mali ang ibang choices?\n•\tb. Wall – masyadong general. Ang wall ay maaaring iba’t iba ang construction type.\n•\tc. Riprap – stone lining ito for erosion control, hindi built-up wall construction term\n•\td. Fence – enclosure element ito, hindi material/construction-system definition\nElimination method\nIto ang iniisip mo:\n1.\tTanong ba ay construction system/material method? Oo.\n2.\tHanapin ang broad technical term para sa built-up units in mortar\n3.\tSagot: masonry\n4.\tAng wall at fence ay functional objects, hindi exact construction category\n5.\tAng riprap ay erosion-control stone work\nCommon trap\nMinsan pipiliin ng examinee ang wall dahil built-up construction nga naman iyon.\nPero ang tanong ay hindi “anong object ito?”\nAng tanong ay anong tawag sa ganitong uri ng construction.\nAt iyon ay masonry.\nPhilippine context\nVery important ito sa ALE dahil malaking parte ng local construction practice ang CHB walls, brick, stone, mortar-bonded units — lahat iyan pumapasok sa masonry discussion.\nAno ang dapat mong tandaan dito?\nKapag ang clue ay units bonded with mortar like clay, stone, or concrete units, ang sagot ay masonry.\n\nSige, tuloy tayo sa Page 7.\nContinue lang ang numbering, so dito tayo magsisimula sa Question 71.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Masonry",
       "main": "Construction using units like brick, stone, or concrete blocks",
       "detail": "Definition cue.",
@@ -2967,8 +2898,7 @@
         "label": "Masonry Institute — Technical Resources",
         "url": "https://masonryinstitute.org/technical/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-071",
@@ -3005,8 +2935,7 @@
         "label": "CMHA / NCMA — Concrete Masonry Technical References",
         "url": "https://www.masonryandhardscapes.org/resource-type/technical-publications/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-072",
@@ -3038,7 +2967,7 @@
     "explanation": "Correct answer: a. To make it lightweight\nUlitin natin: to make it lightweight.\nIto, gusto ko itong i-clear nang mabuti, kasi may ibang choices na parang puwede ring secondary effects. Pero ang tanong ay purpose sa pinaka-basic sense.\nBakit ito ang tama?\nAng pangunahing dahilan kung bakit may cells or cores ang CHB ay para:\n•\tmabawasan ang dami ng concrete material\n•\tbumaba ang bigat\n•\tmaging mas practical ang handling at installation\nSo ang pinakaunang at pinaka-basic answer ay to make it lightweight.\nBakit hindi “to make it stronger”?\nHindi primary purpose ang paglalagay ng cells para palakasin siya.\nSa totoo lang, kung solid lahat iyan, mas mabigat siya at puwedeng mas solid ang mass, pero hindi iyon ang practical masonry unit design.\nBakit hindi “to make it cheaper”?\nPuwedeng secondary result ito dahil mas kaunting material ang gamit. Pero hindi ito ang pinakamahusay na technical answer sa tanong na purpose.\nBakit hindi “to allow heat insulation”?\nMay thermal benefit din ang voids, oo. Pero again, secondary effect ito. Ang primary at pinaka-obvious design reason ay weight reduction.\nElimination method\nIto ang iniisip mo:\n1.\tTanungin mo sarili mo: “Ano ang pinakaunang effect ng may hollow cores?”\nBumababa ang bigat.\n2.\t‘Yung cheaper at heat insulation, puwedeng kasunod na benefits lang.\n3.\tKapag may primary and secondary effects sa choices, piliin mo ang primary technical reason.\nCommon trap\nAng trap dito ay heat insulation, kasi may air space nga naman. Tama naman as added benefit.\nPero sa ALE, kapag may mas basic engineering answer, iyon ang dapat piliin.\nAno ang dapat mong tandaan dito?\nAng pangunahing dahilan ng CHB cells ay para gumaan ang block.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Purpose of CHB cells",
       "main": "To make the block lighter",
       "detail": "Explanation-grounded function cue.",
@@ -3049,8 +2978,7 @@
         "label": "CMHA / NCMA — Concrete Masonry Technical References",
         "url": "https://www.masonryandhardscapes.org/resource-type/technical-publications/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-073",
@@ -3087,8 +3015,7 @@
         "label": "CMHA / NCMA — Concrete Masonry Technical References",
         "url": "https://www.masonryandhardscapes.org/resource-type/technical-publications/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-074",
@@ -3120,7 +3047,7 @@
     "explanation": "Correct answer: c. Plaster\nUlitin natin: Plaster.\nIto, ang keyword dito ay generic term at applied to a surface in paste form.\nBakit ito ang tama?\nAng plaster ay general term para sa material na:\n•\tina-apply sa surface habang paste-like or workable pa\n•\tpagkatapos ay tumitigas\n•\tginagamit bilang finish or coating sa walls and ceilings\nBakit mali ang ibang choices?\n•\ta. Gypsum – material/component ito, pero hindi generic term para sa whole applied finish system\n•\tb. Concrete – hindi ito surface-applied paste finish sa context ng tanong\n•\td. Mortar – bonding/bedding material ito more than general surface finish term\nElimination method\nGanito ang isipin mo:\n1.\tSurface application ba ang usapan? Oo.\n2.\tPaste form na titigas? Oo.\n3.\tGeneric term ba ang hinahanap, hindi specific ingredient? Oo.\n4.\tKaya plaster, hindi gypsum.\nCommon trap\nAng trap dito ay gypsum, kasi plastering-related material nga siya.\nPero tandaan:\nGypsum is one material. Plaster is the generic surface-applied finish term.\nAno ang dapat mong tandaan dito?\nKapag generic surface-applied cementitious paste finish ang tanong, ang sagot ay plaster.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Plaster",
       "main": "Protective/finish coating applied to walls or ceilings",
       "detail": "Definition cue.",
@@ -3135,8 +3062,7 @@
         "label": "Gypsum Association — Technical Resources",
         "url": "https://gypsum.org/technical/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-075",
@@ -3173,8 +3099,7 @@
         "label": "Masonry Institute — Technical Resources",
         "url": "https://masonryinstitute.org/technical/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-076",
@@ -3206,7 +3131,7 @@
     "explanation": "Correct answer: b. Plaster\nUlitin natin: Plaster.\nIto, mas detailed definition ito ng plaster.\nBakit ito ang tama?\nAng plaster ay:\n•\tgawa sa cementitious material tulad ng lime, gypsum, or cement\n•\tmay sand at water\n•\tina-apply in coats or layers\n•\tpara magbigay ng hard finished surface sa walls and ceilings\nEksaktong eksakto ang description.\nBakit mali ang ibang choices?\n•\ta. Plasterette – hindi ito ang general standard term na hinihingi ng stem\n•\tc. Cement Mortar – mas general mixture definition ito, pero kulang sa specific finish-application meaning ng item\n•\td. Scratchcoat – first coat lang ito ng plaster system, hindi buong material/process name\nElimination method\nIto ang iniisip mo:\n1.\tMay clue bang applied in coats/layers to walls and ceilings? Oo.\n2.\tHindi lang mixture ang tanong, kundi finish application system\n3.\tKaya mas tama ang plaster kaysa plain cement mortar\n4.\tScratchcoat? part lang iyon, hindi whole answer\nCommon trap\nPinaka-trap dito ang cement mortar.\nBakit? Kasi tama naman na may cementitious material, sand, and water.\nPero ang hinahanap dito ay iyong surface finish material applied in coats, at iyon ay plaster.\nAno ang dapat mong tandaan dito?\nKapag walls/ceilings finish applied in coats, ang tamang term ay plaster.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Plastering",
       "main": "Application of plaster coat to wall/ceiling surface",
       "detail": "Process cue.",
@@ -3221,8 +3146,7 @@
         "label": "Gypsum Association — Technical Resources",
         "url": "https://gypsum.org/technical/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-077",
@@ -3259,8 +3183,7 @@
         "label": "Masonry Institute — Technical Resources",
         "url": "https://masonryinstitute.org/technical/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-078",
@@ -3297,8 +3220,7 @@
         "label": "Masonry Institute — Technical Resources",
         "url": "https://masonryinstitute.org/technical/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-079",
@@ -3330,7 +3252,7 @@
     "explanation": "Best answer: a. 3 ¾ x 2 1/2 x 8\"\nUlitin natin: 3 ¾ x 2 1/2 x 8 inches.\nIto, aaminin ko, medyo magulo ang item dahil may iba't ibang standard brick dimensions depende sa system, country, at actual vs nominal sizing. Pero sa reviewer logic at sa choices na ibinigay, ang best answer ay 3 ¾ x 2 1/2 x 8 inches.\nBakit ito ang best answer?\nSa old reviewer/building materials memory items, iyan ang karaniwang lumalabas na common brick size.\nAt sa mga choices, ito rin ang pinaka-plausible at pinaka-klasikong dimension set.\nBakit kailangan maging maingat dito?\nKasi sa actual practice at references, may variation sa:\n•\tactual size\n•\tnominal size\n•\tmodular vs non-modular brick\n•\tcountry standard\nSo ito iyong tanong na hindi ko sasabihing universally fixed sa lahat ng context. Pero for ALE reviewer answering, letter a ang strongest answer.\nBakit mali ang ibang choices?\n•\tb. 3 ¼ x 2 ¼ x 8\" – possible-looking pero hindi ito ang classic reviewer memory answer\n•\tc. 3 x 2 ½ x 8\" – masyadong manipis/odd proportion\n•\td. 3 1/8 x 2 ½ x 8\" – less standard-looking in this reviewer context\nElimination method\nGanito ang diskarte kapag hindi ka sure:\n1.\tHanapin ang pinaka-classic proportion ng common brick\n2.\tIwasan ang sobrang awkward or less common-looking dimensions\n3.\tSa choices, ang pinaka-“standard reviewer” feel ay 3 ¾ x 2 1/2 x 8\"\nCommon trap\nAng trap dito ay pag-a-assume na iisa lang ang brick size sa lahat ng bansa at systems.\nSa board review, ang mahalaga ay kung ano ang accepted reviewer answer sa item.\nPhilippine/ALE note\nBrick questions sa ALE madalas galing sa reviewer conventions rather than live market inventory. Kaya tandaan mo ito as reviewer memory answer.\nAno ang dapat mong tandaan dito?\nSa reviewer item na ito, ang standard size of common brick ay 3 ¾ x 2 1/2 x 8 inches.\n\nSige, tuloy tayo sa Page 8.\nContinue lang ang numbering, so magsisimula tayo sa Question 80.\nMay mga text sa itaas na continuation ng explanation from previous page, pero ang rereview natin ngayon ay ang lahat ng kumpletong visible questions sa page na ito, in order.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Common brick size",
       "main": "3¾ × 2½ × 8 inches",
       "detail": "Reviewer memory item.",
@@ -3341,8 +3263,7 @@
         "label": "Masonry Institute — Technical Resources",
         "url": "https://masonryinstitute.org/technical/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-080",
@@ -3374,7 +3295,7 @@
     "explanation": "Correct answer: a. Stone\nUlitin natin: Stone.\nIto, medyo historical at fundamental materials question ito.\nAng clue dito ay “basic building materials of man.”\nBakit ito ang tama?\nKung iisipin mo ang pinakaunang construction materials na ginamit ng tao, ang pinaka-basic at pinaka-ancient ay:\n•\twood\n•\tclay\n•\tstone\nKaya sa choices, ang pinaka-natural na partner ng wood at clay ay stone.\nBakit mali ang ibang choices?\n•\tb. Soil – malapit ito sa clay at earth construction, pero ang usual classic trio sa building materials history ay wood, clay, and stone. Hindi “wood, clay, and soil.”\n•\tc. Brick – ginawa lang ang brick mula sa clay; hindi ito kasing-basic or primitive as raw stone in the historical sense.\n•\td. Cement – malinaw na mas modern processed material ito, hindi ancient basic material.\nElimination method\nGanito ang iniisip mo:\n1.\tAng tanong ba ay historical/basic materials? Oo.\n2.\tAlin sa choices ang pinaka-primitive at pinakamatagal nang gamit?\nStone\n3.\tBrick and cement are processed materials, so puwede mong alisin.\n4.\tSoil is too broad; stone is the classic construction-material answer.\nCommon trap\nAng trap dito ay soil, kasi parang basic din siya.\nPero tandaan mo: kapag reviewer wording na “with wood and clay”, ang usual accepted trio ay stone.\nAno ang dapat mong tandaan dito?\nSa mga basic ancient building materials, tandaan mo ang trio na: wood, clay, and stone.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Building stone",
       "main": "Natural stone used as construction material",
       "detail": "Generic category item is safer as a concept cue.",
@@ -3385,8 +3306,7 @@
         "label": "Natural Stone Institute — Stone Resources",
         "url": "https://www.naturalstoneinstitute.org/default/assets/File/consumers/stone_types.pdf"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-081",
@@ -3418,7 +3338,7 @@
     "explanation": "Correct answer: b. Obsidian Rock\nUlitin natin: Obsidian Rock.\nIto, very important ang distinction between classification and example.\nBakit ito ang tama?\nAng three major classifications of rocks/stones are:\n•\tIgneous\n•\tSedimentary\n•\tMetamorphic\nAng obsidian ay hindi classification. Isa itong specific type of igneous volcanic glass, not one of the three main categories.\nBakit mali ang ibang choices?\n•\ta. Igneous Rock – classification ito\n•\tc. Metamorphic Rock – classification ito\n•\td. Sedimentary Rock – classification ito\nElimination method\nIto ang iniisip mo:\n1.\tHanapin ang main rock classes na natutunan mo sa basic geology/building materials.\n2.\tUsually tatlo lang ang core:\no\tigneous\no\tsedimentary\no\tmetamorphic\n3.\tKapag may isang specific rock name sa choices, malamang iyon ang hindi classification.\n4.\tKaya Obsidian Rock ang outlier.\nCommon trap\nAng trap dito ay dahil may “rock” din sa dulo ng obsidian, baka isipin mong kapantay lang siya ng ibang tatlo.\nPero huwag kang magpapadala sa tunog.\nAng tanong ay classification, hindi example.\nALE reasoning\nIto ang iniisip mo dapat habang nagsasagot:\n“Category ba ito, o member lang ng category?”\nDito, obsidian is a member/example, not a category.\nAno ang dapat mong tandaan dito?\nIgneous, sedimentary, metamorphic ang tatlong pangunahing classification.\nObsidian is just one specific rock type.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Stone classification exception",
       "main": "Obsidian is not a classification",
       "detail": "Igneous, sedimentary, and metamorphic are classifications.",
@@ -3429,8 +3349,7 @@
         "label": "Natural Stone Institute — Stone Resources",
         "url": "https://www.naturalstoneinstitute.org/default/assets/File/consumers/stone_types.pdf"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-082",
@@ -3462,7 +3381,7 @@
     "explanation": "Correct answer: b. molten magma\nUlitin natin: molten magma.\nIto, basic geology foundation ito, pero napaka-high yield sa building materials.\nBakit ito ang tama?\nAng igneous rocks ay nabubuo sa paglamig at pag-crystallize ng molten rock material, which is magma kapag nasa loob ng earth, or lava kapag nasa surface.\nSo kapag tinanong ka:\n“formed by crystallization of?”\nautomatic dapat: molten magma.\nBakit mali ang ibang choices?\n•\ta. shale – sedimentary rock na ito, hindi source ng igneous rock\n•\tc. sediments – ito ang source process ng sedimentary rocks\n•\td. volcanic ash – puwedeng maging part ng pyroclastic deposits, pero hindi ito ang pinakabasic at tamang answer sa general formation question\nElimination method\nGanito ang thought process:\n1.\tIf igneous, isipin mo agad fire / molten / cooled rock\n2.\tTanggal ang anything related to sediments\n3.\tBetween volcanic ash and molten magma, alin ang mas general at mas textbook definition?\nMolten magma\nCommon trap\nAng trap dito ay volcanic ash dahil volcanic din naman siya.\nPero tandaan:\n•\tang tanong ay general formation of igneous rock\n•\tang textbook answer is crystallization of molten magma\nAno ang dapat mong tandaan dito?\nIgneous = galing sa cooling/crystallization ng molten magma.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Igneous rock origin",
       "main": "Formed by cooling and crystallization of magma",
       "detail": "Explanation-grounded geology cue.",
@@ -3473,8 +3392,7 @@
         "label": "Natural Stone Institute — Stone Resources",
         "url": "https://www.naturalstoneinstitute.org/default/assets/File/consumers/stone_types.pdf"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-083",
@@ -3511,8 +3429,7 @@
         "label": "Natural Stone Institute — Stone Resources",
         "url": "https://www.naturalstoneinstitute.org/default/assets/File/consumers/stone_types.pdf"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-084",
@@ -3553,8 +3470,7 @@
         "label": "Masonry Institute — Technical Resources",
         "url": "https://masonryinstitute.org/technical/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-085",
@@ -3591,8 +3507,7 @@
         "label": "Natural Stone Institute — Stone Resources",
         "url": "https://www.naturalstoneinstitute.org/default/assets/File/consumers/stone_types.pdf"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-086",
@@ -3629,8 +3544,7 @@
         "label": "Natural Stone Institute — Stone Resources",
         "url": "https://www.naturalstoneinstitute.org/default/assets/File/consumers/stone_types.pdf"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-087",
@@ -3667,8 +3581,7 @@
         "label": "Gypsum Association — Technical Resources",
         "url": "https://gypsum.org/technical/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-088",
@@ -3705,8 +3618,7 @@
         "label": "CRSI — Reinforcing Steel Basics",
         "url": "https://www.crsi.org/reinforcing-basics/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-089",
@@ -3738,7 +3650,7 @@
     "explanation": "Correct answer: b. 3.853 kilos\nUlitin natin: 3.853 kilos per meter.\nIto, puwede mo itong sagutin kahit hindi mo kabisado ang table, basta alam mo ang quick formula.\nBakit ito ang tama?\nAng standard estimate ng weight per meter ng steel bar ay:\nWeight per meter = d² / 162\nKung 25 mm:\n•\t25² = 625\n•\t625 / 162 = about 3.86 kg/m\nAng pinakamalapit na choice ay 3.853 kilos.\nBakit mali ang ibang choices?\n•\ta. 343 kilos – obvious na absurdly mataas; halatang mali ang unit sense\n•\tc. 4.833 kilos – masyadong mabigat para sa 25 mm per meter\n•\td. 2.466 kilos – masyadong magaan; ito mas malapit sa mas maliit na bar size\nElimination method\nIto ang iniisip mo:\n1.\tGamitin ang formula: d² / 162\n2.\tEstimate:\no\t25 mm bar should be around 4 kg/m, but slightly below\n3.\tKaya ang sagot ay iyong nasa 3.8+ range\n4.\tSo 3.853 kg ang natitira\nCommon trap\nMinsan natatakot ang examinee sa computation. Pero simple lang ito.\nAt kahit di mo ma-compute nang exact, puwede kang mag-estimate.\nALE tip\nMagandang kabisaduhin mo ang formula na ito:\nkg/m = d² / 162\nAno ang dapat mong tandaan dito?\nPara sa 25 mm bar, ang weight ay about 3.85 kg/m.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Rebar unit weight",
       "main": "25 mm bar = 3.853 kg/m",
       "detail": "Use the standard formula d²/162.",
@@ -3749,8 +3661,7 @@
         "label": "CRSI — Reinforcing Steel Basics",
         "url": "https://www.crsi.org/reinforcing-basics/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-090",
@@ -3782,7 +3693,7 @@
     "explanation": "Correct answer: a. 1.578 kilos\nUlitin natin: 1.578 kilos per meter.\nIto, same method lang sa previous item.\nBakit ito ang tama?\nUsing the same formula:\nWeight per meter = d² / 162\nFor 16 mm:\n•\t16² = 256\n•\t256 / 162 = about 1.58 kg/m\nSo ang tamang choice ay 1.578 kilos.\nBakit mali ang ibang choices?\n•\tb. 0.888 kilos – masyadong magaan; mas bagay ito sa mas maliit na bar\n•\tc. 1.872 kilos – medyo mataas para sa 16 mm\n•\td. 2.466 kilos – masyadong mabigat; pang mas malaking diameter ito\nElimination method\nIto ang iniisip mo:\n1.\t16 mm bar is not tiny, not huge\n2.\tSo weight per meter should be around 1.5 to 1.6 kg\n3.\tKaya ang pinakamalapit ay 1.578 kg\nCommon trap\nPinagpapalit minsan ang 16 mm at 20 mm values.\nKaya maganda may rough sense ka:\n•\t16 mm ≈ 1.58 kg/m\n•\t20 mm ≈ 2.47 kg/m\n•\t25 mm ≈ 3.85 kg/m\nAno ang dapat mong tandaan dito?\n16 mm bar ≈ 1.58 kg/m.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Rebar unit weight",
       "main": "16 mm bar = 1.578 kg/m",
       "detail": "Use the standard formula d²/162.",
@@ -3793,8 +3704,7 @@
         "label": "CRSI — Reinforcing Steel Basics",
         "url": "https://www.crsi.org/reinforcing-basics/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-091",
@@ -3831,8 +3741,7 @@
         "label": "AISC — Steel Construction Resources",
         "url": "https://www.aisc.org/education/continuingeducation/education-archives/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-092",
@@ -3864,7 +3773,7 @@
     "explanation": "Correct answer: c. HYRIB\nUlitin natin: HYRIB.\nIto, reviewer trade-name item ito, at sinagot na rin tayo ng note sa right side ng page.\nBakit ito ang tama?\nSa explanatory text:\n•\tExpanded mesh examples include STEELCRETE\n•\tLaths examples include RIBPLEX and HYRIB\nSo among the visible choices, ang brand name for lath ay HYRIB.\nBakit mali ang ibang choices?\n•\ta. Z-RIB – tunog possible product, pero hindi ito ang explicitly supported example sa page\n•\tb. STEELCRETE – ito ay example ng expanded mesh, hindi lath\n•\td. PORETE – processed concrete/lightweight concrete term ito, hindi lath brand\nElimination method\nIto ang iniisip mo:\n1.\tTingnan ang reviewer note kung meron\n2.\tI-match ang product family:\no\tSTEELCRETE = expanded mesh\no\tHYRIB = lath\n3.\tKaya malinaw ang sagot\nCommon trap\nAng trap dito ay STEELCRETE dahil metal-related din ang tunog.\nPero kailangan mong bantayan ang category matching.\nAno ang dapat mong tandaan dito?\nSa item na ito, HYRIB ang brand name for lath.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Trade-name item",
       "main": "HYRIB = lath",
       "detail": "Trade-name memory cue; concept card avoids showing a wrong mesh type.",
@@ -3875,8 +3784,7 @@
         "label": "AISC — Steel Construction Resources",
         "url": "https://www.aisc.org/education/continuingeducation/education-archives/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-093",
@@ -3908,7 +3816,7 @@
     "explanation": "Best answer: a. Metal inserts\nUlitin natin: Metal inserts.\nAaminin ko, medyo awkward ang wording ng item. Pero among the choices, ang best-fit answer ay metal inserts.\nBakit ito ang best answer?\nKapag ang usapan ay shadow line sa plaster or finishing detail, ang idea ay magkaroon ng intentional reveal or groove line.\nSa ganitong reviewer context, ang pinaka-generic at pinaka-defensible answer ay metal inserts, dahil sila ang ginagamit para ma-form o ma-maintain ang reveal/shadow line.\nBakit hindi U-channel?\nIto ang malakas na trap.\nOo, sa ibang modern detailing, puwedeng gumamit ng channel profiles. Pero ang item ay hindi malinaw na gypsum-board edge trim detail ang context.\nSa mas generic plaster/reveal wording, metal inserts ang mas safe at mas broad-correct answer.\nBakit mali ang ibang choices?\n•\tb. Tubular Section – hindi ito ang normal reveal/shadow line forming answer\n•\tc. Flat Bar – puwedeng formwork/fabrication accessory lang ang dating, hindi ideal standard answer\n•\td. U-channel – possible in some systems, but not the strongest general answer here\nElimination method\nIto ang iniisip mo:\n1.\tAng tanong ba ay generic reveal/shadow line treatment? Oo\n2.\tHanapin ang pinaka-general at pinaka-purpose-fit material\n3.\tMetal inserts is the best fit\n4.\tHuwag pumili ng mas system-specific choice kung hindi naman malinaw ang context\nCommon trap\nPinaka-trap dito ang U-channel dahil mukhang technical at architectural detail-like.\nPero sa magulong question, piliin mo ang broadest defensible correct answer.\nAno ang dapat mong tandaan dito?\nSa poorly worded item na ito, ang best answer ay metal inserts for shadow line introduction.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "conceptCue": {
+    "answerConceptVisual": {
       "title": "Shadow line support",
       "main": "Metal inserts",
       "detail": "Explanation-grounded construction-detail cue.",
@@ -3923,8 +3831,7 @@
         "label": "Gypsum Association — Technical Resources",
         "url": "https://gypsum.org/technical/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-094",
@@ -3961,8 +3868,7 @@
         "label": "CRSI — Reinforcing Steel Basics",
         "url": "https://www.crsi.org/reinforcing-basics/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-095",
@@ -3999,8 +3905,7 @@
         "label": "AISC — Steel Construction Resources",
         "url": "https://www.aisc.org/education/continuingeducation/education-archives/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-096",
@@ -4037,8 +3942,7 @@
         "label": "AISC — Steel Construction Resources",
         "url": "https://www.aisc.org/education/continuingeducation/education-archives/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-097",
@@ -4075,8 +3979,7 @@
         "label": "AISC — Steel Construction Resources",
         "url": "https://www.aisc.org/education/continuingeducation/education-archives/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-098",
@@ -4113,8 +4016,7 @@
         "label": "AISC — Steel Construction Resources",
         "url": "https://www.aisc.org/education/continuingeducation/education-archives/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-099",
@@ -4151,8 +4053,7 @@
         "label": "AISC — Steel Construction Resources",
         "url": "https://www.aisc.org/education/continuingeducation/education-archives/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-100",
@@ -4189,8 +4090,7 @@
         "label": "AISC — Steel Construction Resources",
         "url": "https://www.aisc.org/education/continuingeducation/education-archives/"
       }
-    ],
-    "reviewNote": "Building Materials 1–100 refined v2: explanation-grounded visuals, safer concept fallback for ambiguous items, and varied non-Wikipedia reference sources."
+    ]
   },
   {
     "uid": "BM-101",
