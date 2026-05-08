@@ -46,7 +46,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "AASHTO soil classification chart",
+      "soil classification chart"
+    ],
+    "answerImageQuery": "AASHTO soil classification chart"
   },
   {
     "uid": "BM-002",
@@ -87,7 +92,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Atterberg limits test chart",
+      "Atterberg limits"
+    ],
+    "answerImageQuery": "Atterberg limits test chart"
   },
   {
     "uid": "BM-003",
@@ -128,7 +138,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "plasticity index soil chart",
+      "Plasticity index"
+    ],
+    "answerImageQuery": "plasticity index soil chart"
   },
   {
     "uid": "BM-004",
@@ -170,9 +185,9 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "fill materials building material construction",
+    "answerImageQuery": "fill materials",
     "answerImageQueries": [
-      "fill materials building material construction"
+      "fill materials"
     ]
   },
   {
@@ -259,9 +274,9 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "Base Course Materials building material construction",
+    "answerImageQuery": "Base Course Materials",
     "answerImageQueries": [
-      "Base Course Materials building material construction"
+      "Base Course Materials"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -304,7 +319,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "well graded gravel",
+      "USCS well graded gravel"
+    ],
+    "answerImageQuery": "well graded gravel"
   },
   {
     "uid": "BM-008",
@@ -575,9 +595,9 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "soil compaction building material construction",
+    "answerImageQuery": "soil compaction",
     "answerImageQueries": [
-      "soil compaction building material construction"
+      "soil compaction"
     ]
   },
   {
@@ -714,9 +734,9 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "grading building material construction",
+    "answerImageQuery": "grading",
     "answerImageQueries": [
-      "grading building material construction"
+      "grading"
     ]
   },
   {
@@ -847,7 +867,11 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Portland cement"
+    ],
+    "answerImageQuery": "Portland cement"
   },
   {
     "uid": "BM-020",
@@ -978,7 +1002,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Portland cement raw materials lime silica",
+      "cement raw materials"
+    ],
+    "answerImageQuery": "Portland cement raw materials lime silica"
   },
   {
     "uid": "BM-023",
@@ -1019,7 +1048,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "ASTM C150 cement types chart",
+      "Portland cement ASTM C150"
+    ],
+    "answerImageQuery": "ASTM C150 cement types chart"
   },
   {
     "uid": "BM-024",
@@ -1064,7 +1098,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Portland cement bag Philippines",
+      "40 kg cement bag"
+    ],
+    "answerImageQuery": "Portland cement bag Philippines"
   },
   {
     "uid": "BM-025",
@@ -1104,7 +1143,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "cement bag volume 1 cubic foot",
+      "Portland cement bag"
+    ],
+    "answerImageQuery": "cement bag volume 1 cubic foot"
   },
   {
     "uid": "BM-026",
@@ -1144,7 +1188,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Portland cement Type I",
+      "Portland cement type chart"
+    ],
+    "answerImageQuery": "Portland cement Type I"
   },
   {
     "uid": "BM-027",
@@ -1184,7 +1233,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Portland cement Type IIA",
+      "Portland cement type chart"
+    ],
+    "answerImageQuery": "Portland cement Type IIA"
   },
   {
     "uid": "BM-028",
@@ -1316,9 +1370,9 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "3/4\" crushed gravel building material construction",
+    "answerImageQuery": "3/4\" crushed gravel",
     "answerImageQueries": [
-      "3/4\" crushed gravel building material construction"
+      "3/4\" crushed gravel"
     ]
   },
   {
@@ -1360,7 +1414,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "coarse aggregate gravel concrete",
+      "concrete aggregate sizes"
+    ],
+    "answerImageQuery": "coarse aggregate gravel concrete"
   },
   {
     "uid": "BM-032",
@@ -1536,9 +1595,9 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "paste building material construction",
+    "answerImageQuery": "paste",
     "answerImageQueries": [
-      "paste building material construction"
+      "paste"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -1581,7 +1640,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "concrete curing",
+      "concrete curing 28 days"
+    ],
+    "answerImageQuery": "concrete curing"
   },
   {
     "uid": "BM-037",
@@ -2038,7 +2102,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "cement brands Philippines",
+      "cement suppliers Philippines"
+    ],
+    "answerImageQuery": "cement brands Philippines"
   },
   {
     "uid": "BM-047",
@@ -2205,7 +2274,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "steel reinforcing bar lengths",
+      "rebar standard lengths"
+    ],
+    "answerImageQuery": "steel reinforcing bar lengths"
   },
   {
     "uid": "BM-051",
@@ -2245,7 +2319,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "deformed bar color code",
+      "rebar color code"
+    ],
+    "answerImageQuery": "deformed bar color code"
   },
   {
     "uid": "BM-052",
@@ -2285,7 +2364,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "deformed bar color code",
+      "rebar color code"
+    ],
+    "answerImageQuery": "deformed bar color code"
   },
   {
     "uid": "BM-053",
@@ -2325,7 +2409,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "rebar size chart",
+      "deformed bar size chart"
+    ],
+    "answerImageQuery": "rebar size chart"
   },
   {
     "uid": "BM-054",
@@ -2365,7 +2454,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "16mm deformed bar",
+      "rebar weight chart"
+    ],
+    "answerImageQuery": "16mm deformed bar"
   },
   {
     "uid": "BM-055",
@@ -2455,9 +2549,9 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "capillary action building material construction",
+    "answerImageQuery": "capillary action",
     "answerImageQueries": [
-      "capillary action building material construction"
+      "capillary action"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -2499,7 +2593,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "concrete admixture",
+      "concrete admixtures"
+    ],
+    "answerImageQuery": "concrete admixture"
   },
   {
     "uid": "BM-058",
@@ -2630,9 +2729,9 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "integral application finishes building material construction",
+    "answerImageQuery": "integral application finishes",
     "answerImageQueries": [
-      "integral application finishes building material construction"
+      "integral application finishes"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -2675,7 +2774,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "water reducing admixture",
+      "plasticizer concrete admixture"
+    ],
+    "answerImageQuery": "water reducing admixture"
   },
   {
     "uid": "BM-062",
@@ -2699,7 +2803,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "concrete admixture",
+      "concrete admixtures"
+    ],
+    "answerImageQuery": "concrete admixture"
   },
   {
     "uid": "BM-063",
@@ -2739,7 +2848,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "concrete floor hardener",
+      "concrete hardener"
+    ],
+    "answerImageQuery": "concrete floor hardener"
   },
   {
     "uid": "BM-064",
@@ -2825,9 +2939,9 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "1/2 inch building material construction",
+    "answerImageQuery": "1/2 inch",
     "answerImageQueries": [
-      "1/2 inch building material construction"
+      "1/2 inch"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -3139,7 +3253,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "concrete hollow block cells",
+      "concrete hollow block"
+    ],
+    "answerImageQuery": "concrete hollow block cells"
   },
   {
     "uid": "BM-073",
@@ -3457,7 +3576,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "common brick",
+      "brick dimensions"
+    ],
+    "answerImageQuery": "common brick"
   },
   {
     "uid": "BM-080",
@@ -3543,9 +3667,9 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "Obsidian Rock building material construction",
+    "answerImageQuery": "Obsidian Rock",
     "answerImageQueries": [
-      "Obsidian Rock building material construction"
+      "Obsidian Rock"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -3587,7 +3711,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "igneous rock",
+      "molten magma rock"
+    ],
+    "answerImageQuery": "igneous rock"
   },
   {
     "uid": "BM-083",
@@ -3901,7 +4030,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "16mm deformed bar",
+      "rebar weight chart"
+    ],
+    "answerImageQuery": "16mm deformed bar"
   },
   {
     "uid": "BM-090",
@@ -3941,7 +4075,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "16mm deformed bar",
+      "rebar weight chart"
+    ],
+    "answerImageQuery": "16mm deformed bar"
   },
   {
     "uid": "BM-091",
@@ -4075,7 +4214,12 @@
     ],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "aiImage": false,
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "metal insert shadow line",
+      "shadow line metal trim"
+    ],
+    "answerImageQuery": "metal insert shadow line"
   },
   {
     "uid": "BM-094",
@@ -4537,7 +4681,12 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "tie wire roll",
+      "rebar tie wire"
+    ],
+    "answerImageQuery": "tie wire roll"
   },
   {
     "uid": "BM-105",
@@ -4570,7 +4719,12 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "tie wire roll",
+      "rebar tie wire"
+    ],
+    "answerImageQuery": "tie wire roll"
   },
   {
     "uid": "BM-106",
@@ -4603,7 +4757,12 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "metal alloy",
+      "alloy metals"
+    ],
+    "answerImageQuery": "metal alloy"
   },
   {
     "uid": "BM-107",
@@ -4756,7 +4915,12 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "tree xylem diagram",
+      "xylem wood structure"
+    ],
+    "answerImageQuery": "tree xylem diagram"
   },
   {
     "uid": "BM-111",
@@ -4865,7 +5029,12 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "endogenous stem",
+      "endogenous plant"
+    ],
+    "answerImageQuery": "endogenous stem"
   },
   {
     "uid": "BM-114",
@@ -4899,9 +5068,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "lumber that still contains moisture or sap building material construction",
+    "answerImageQuery": "lumber that still contains moisture or sap",
     "answerImageQueries": [
-      "lumber that still contains moisture or sap building material construction"
+      "lumber that still contains moisture or sap"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -4936,7 +5105,12 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "wood cellulose diagram",
+      "cellulose wood"
+    ],
+    "answerImageQuery": "wood cellulose diagram"
   },
   {
     "uid": "BM-116",
@@ -4969,7 +5143,12 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "lumbering timber harvesting",
+      "logging lumber"
+    ],
+    "answerImageQuery": "lumbering timber harvesting"
   },
   {
     "uid": "BM-117",
@@ -4986,9 +5165,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "Shop lumber building material construction",
+    "answerImageQuery": "Shop lumber",
     "answerImageQueries": [
-      "Shop lumber building material construction"
+      "Shop lumber"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -5024,9 +5203,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "S4S building material construction",
+    "answerImageQuery": "S4S",
     "answerImageQueries": [
-      "S4S building material construction"
+      "S4S"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -5062,9 +5241,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "Millwork building material construction",
+    "answerImageQuery": "Millwork",
     "answerImageQueries": [
-      "Millwork building material construction"
+      "Millwork"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -5100,9 +5279,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "Moulding building material construction",
+    "answerImageQuery": "Moulding",
     "answerImageQueries": [
-      "Moulding building material construction"
+      "Moulding"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -5138,9 +5317,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "Tanguile building material construction",
+    "answerImageQuery": "Tanguile",
     "answerImageQueries": [
-      "Tanguile building material construction"
+      "Tanguile"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -5176,9 +5355,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "Kamagong building material construction",
+    "answerImageQuery": "Kamagong",
     "answerImageQueries": [
-      "Kamagong building material construction"
+      "Kamagong"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -5214,9 +5393,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "Flat grain building material construction",
+    "answerImageQuery": "Flat grain",
     "answerImageQueries": [
-      "Flat grain building material construction"
+      "Flat grain"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -5289,7 +5468,12 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "kiln drying timber",
+      "timber seasoning kiln drying"
+    ],
+    "answerImageQuery": "kiln drying timber"
   },
   {
     "uid": "BM-126",
@@ -5323,9 +5507,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "dry rot building material construction",
+    "answerImageQuery": "dry rot",
     "answerImageQueries": [
-      "dry rot building material construction"
+      "dry rot"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -5361,9 +5545,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "board feet building material construction",
+    "answerImageQuery": "board feet",
     "answerImageQueries": [
-      "board feet building material construction"
+      "board feet"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -5436,7 +5620,12 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "rejected lumber cull",
+      "lumber defects"
+    ],
+    "answerImageQuery": "rejected lumber cull"
   },
   {
     "uid": "BM-130",
@@ -5469,7 +5658,12 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "resin filler",
+      "filler material resin"
+    ],
+    "answerImageQuery": "resin filler"
   },
   {
     "uid": "BM-131",
@@ -5578,7 +5772,12 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "gypsum board interior wall",
+      "gypsum wall compound"
+    ],
+    "answerImageQuery": "gypsum board interior wall"
   },
   {
     "uid": "BM-134",
@@ -5649,7 +5848,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Masonite"
+    ],
+    "answerImageQuery": "Masonite"
   },
   {
     "uid": "BM-136",
@@ -5682,7 +5885,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Boral"
+    ],
+    "answerImageQuery": "Boral"
   },
   {
     "uid": "BM-137",
@@ -5791,7 +5998,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "envelope paper"
+    ],
+    "answerImageQuery": "envelope paper"
   },
   {
     "uid": "BM-140",
@@ -5824,7 +6035,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "glossy surfaced asphalt saturated paper, 50 lbs or more"
+    ],
+    "answerImageQuery": "glossy surfaced asphalt saturated paper, 50 lbs or more"
   },
   {
     "uid": "BM-141",
@@ -5971,7 +6186,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "building material"
+    ],
+    "answerImageQuery": "building material"
   },
   {
     "uid": "BM-145",
@@ -6004,7 +6223,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "building material"
+    ],
+    "answerImageQuery": "building material"
   },
   {
     "uid": "BM-146",
@@ -6417,7 +6640,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Structural sealant"
+    ],
+    "answerImageQuery": "Structural sealant"
   },
   {
     "uid": "BM-157",
@@ -6488,7 +6715,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "building material"
+    ],
+    "answerImageQuery": "building material"
   },
   {
     "uid": "BM-159",
@@ -6597,7 +6828,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Steeltech"
+    ],
+    "answerImageQuery": "Steeltech"
   },
   {
     "uid": "BM-162",
@@ -6630,7 +6865,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Ga. 24"
+    ],
+    "answerImageQuery": "Ga. 24"
   },
   {
     "uid": "BM-163",
@@ -6663,7 +6902,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "building material"
+    ],
+    "answerImageQuery": "building material"
   },
   {
     "uid": "BM-164",
@@ -6811,9 +7054,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "terra cotta building material construction",
+    "answerImageQuery": "terra cotta",
     "answerImageQueries": [
-      "terra cotta building material construction"
+      "terra cotta"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -6852,7 +7095,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Metalink"
+    ],
+    "answerImageQuery": "Metalink"
   },
   {
     "uid": "BM-169",
@@ -6889,7 +7136,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Best reviewer answer, Colorsteel"
+    ],
+    "answerImageQuery": "Best reviewer answer, Colorsteel"
   },
   {
     "uid": "BM-170",
@@ -7112,7 +7363,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "building material"
+    ],
+    "answerImageQuery": "building material"
   },
   {
     "uid": "BM-176",
@@ -7183,7 +7438,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Impermeable"
+    ],
+    "answerImageQuery": "Impermeable"
   },
   {
     "uid": "BM-178",
@@ -7254,7 +7513,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Liquid and Powder"
+    ],
+    "answerImageQuery": "Liquid and Powder"
   },
   {
     "uid": "BM-180",
@@ -7288,9 +7551,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "FLINT-COTE building material construction",
+    "answerImageQuery": "FLINT-COTE",
     "answerImageQueries": [
-      "FLINT-COTE building material construction"
+      "FLINT-COTE"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -7326,9 +7589,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "4.5mm Polybond building material construction",
+    "answerImageQuery": "4.5mm Polybond",
     "answerImageQueries": [
-      "4.5mm Polybond building material construction"
+      "4.5mm Polybond"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -7443,7 +7706,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Floor and wall"
+    ],
+    "answerImageQuery": "Floor and wall"
   },
   {
     "uid": "BM-185",
@@ -7557,9 +7824,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "Thoroseal building material construction",
+    "answerImageQuery": "Thoroseal",
     "answerImageQueries": [
-      "Thoroseal building material construction"
+      "Thoroseal"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -8127,9 +8394,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "Handling building material construction",
+    "answerImageQuery": "Handling",
     "answerImageQueries": [
-      "Handling building material construction"
+      "Handling"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -8165,9 +8432,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "screw with expansion plug building material construction",
+    "answerImageQuery": "screw with expansion plug",
     "answerImageQueries": [
-      "screw with expansion plug building material construction"
+      "screw with expansion plug"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -8203,9 +8470,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "Supplier installer building material construction",
+    "answerImageQuery": "Supplier installer",
     "answerImageQueries": [
-      "Supplier installer building material construction"
+      "Supplier installer"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -8240,7 +8507,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "modular system"
+    ],
+    "answerImageQuery": "modular system"
   },
   {
     "uid": "BM-206",
@@ -8273,7 +8544,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "building material"
+    ],
+    "answerImageQuery": "building material"
   },
   {
     "uid": "BM-207",
@@ -8572,7 +8847,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Operators"
+    ],
+    "answerImageQuery": "Operators"
   },
   {
     "uid": "BM-215",
@@ -8605,7 +8884,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "building material"
+    ],
+    "answerImageQuery": "building material"
   },
   {
     "uid": "BM-216",
@@ -8676,7 +8959,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "best reviewer answer, Electrical Grade"
+    ],
+    "answerImageQuery": "best reviewer answer, Electrical Grade"
   },
   {
     "uid": "BM-218",
@@ -9000,9 +9287,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "RHR building material construction",
+    "answerImageQuery": "RHR",
     "answerImageQueries": [
-      "RHR building material construction"
+      "RHR"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -9151,7 +9438,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Bayer"
+    ],
+    "answerImageQuery": "Bayer"
   },
   {
     "uid": "BM-230",
@@ -9185,9 +9476,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "Staple wire nail building material construction",
+    "answerImageQuery": "Staple wire nail",
     "answerImageQueries": [
-      "Staple wire nail building material construction"
+      "Staple wire nail"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -9266,7 +9557,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Shelves"
+    ],
+    "answerImageQuery": "Shelves"
   },
   {
     "uid": "BM-233",
@@ -9609,7 +9904,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "silica"
+    ],
+    "answerImageQuery": "silica"
   },
   {
     "uid": "BM-242",
@@ -9681,9 +9980,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "Midset building material construction",
+    "answerImageQuery": "Midset",
     "answerImageQueries": [
-      "Midset building material construction"
+      "Midset"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -9718,7 +10017,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "building material"
+    ],
+    "answerImageQuery": "building material"
   },
   {
     "uid": "BM-245",
@@ -10035,7 +10338,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "building material"
+    ],
+    "answerImageQuery": "building material"
   },
   {
     "uid": "BM-253",
@@ -10378,7 +10685,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "best reviewer answer, FD100"
+    ],
+    "answerImageQuery": "best reviewer answer, FD100"
   },
   {
     "uid": "BM-262",
@@ -10494,9 +10805,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "Lacquer putty building material construction",
+    "answerImageQuery": "Lacquer putty",
     "answerImageQueries": [
-      "Lacquer putty building material construction"
+      "Lacquer putty"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -10531,7 +10842,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Lacquer putty"
+    ],
+    "answerImageQuery": "Lacquer putty"
   },
   {
     "uid": "BM-266",
@@ -10678,7 +10993,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "building material"
+    ],
+    "answerImageQuery": "building material"
   },
   {
     "uid": "BM-270",
@@ -10825,7 +11144,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Davies"
+    ],
+    "answerImageQuery": "Davies"
   },
   {
     "uid": "BM-274",
@@ -11010,7 +11333,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Jardine Davies"
+    ],
+    "answerImageQuery": "Jardine Davies"
   },
   {
     "uid": "BM-279",
@@ -11043,7 +11370,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Matwood"
+    ],
+    "answerImageQuery": "Matwood"
   },
   {
     "uid": "BM-280",
@@ -11077,9 +11408,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "Flexseal building material construction",
+    "answerImageQuery": "Flexseal",
     "answerImageQueries": [
-      "Flexseal building material construction"
+      "Flexseal"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -11114,7 +11445,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Davies"
+    ],
+    "answerImageQuery": "Davies"
   },
   {
     "uid": "BM-282",
@@ -11148,9 +11483,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "Permatex building material construction",
+    "answerImageQuery": "Permatex",
     "answerImageQueries": [
-      "Permatex building material construction"
+      "Permatex"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -11261,7 +11596,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Acrytex"
+    ],
+    "answerImageQuery": "Acrytex"
   },
   {
     "uid": "BM-286",
@@ -11294,7 +11633,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Casein"
+    ],
+    "answerImageQuery": "Casein"
   },
   {
     "uid": "BM-287",
@@ -11403,7 +11746,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Davies"
+    ],
+    "answerImageQuery": "Davies"
   },
   {
     "uid": "BM-290",
@@ -11436,7 +11783,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Acrytex"
+    ],
+    "answerImageQuery": "Acrytex"
   },
   {
     "uid": "BM-291",
@@ -11545,7 +11896,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "No"
+    ],
+    "answerImageQuery": "No"
   },
   {
     "uid": "BM-294",
@@ -11655,9 +12010,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "Lacquer spot putty building material construction",
+    "answerImageQuery": "Lacquer spot putty",
     "answerImageQueries": [
-      "Lacquer spot putty building material construction"
+      "Lacquer spot putty"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -11730,7 +12085,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "white"
+    ],
+    "answerImageQuery": "white"
   },
   {
     "uid": "BM-299",
@@ -11763,7 +12122,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "chroma scale"
+    ],
+    "answerImageQuery": "chroma scale"
   },
   {
     "uid": "BM-300",
@@ -11796,7 +12159,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "building material"
+    ],
+    "answerImageQuery": "building material"
   },
   {
     "uid": "BM-301",
@@ -12171,7 +12538,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "building material"
+    ],
+    "answerImageQuery": "building material"
   },
   {
     "uid": "BM-311",
@@ -12204,7 +12575,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "ALPOLIC"
+    ],
+    "answerImageQuery": "ALPOLIC"
   },
   {
     "uid": "BM-312",
@@ -12390,9 +12765,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "Vitreous building material construction",
+    "answerImageQuery": "Vitreous",
     "answerImageQueries": [
-      "Vitreous building material construction"
+      "Vitreous"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -12579,7 +12954,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Piedra"
+    ],
+    "answerImageQuery": "Piedra"
   },
   {
     "uid": "BM-319B",
@@ -12612,7 +12991,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Rocersa"
+    ],
+    "answerImageQuery": "Rocersa"
   },
   {
     "uid": "BM-320",
@@ -12645,7 +13028,11 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
-    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering."
+    "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
+    "answerImageQueries": [
+      "Tile bond"
+    ],
+    "answerImageQuery": "Tile bond"
   },
   {
     "uid": "BM-321",

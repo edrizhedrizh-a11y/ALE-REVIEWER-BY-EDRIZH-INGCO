@@ -22,5 +22,12 @@
   "history_unchanged_from_previous_package": true,
   "building_construction_unchanged_from_previous_package": true,
   "building_materials_mode": "review-coach: question visuals only for visual-identification cards; answer visuals after reveal for physical materials/components; abstract/numeric/code items have no image",
-  "github_pages_ready": true
+  "github_pages_ready": true,
+  "building_materials_total": 326,
+  "building_materials_answerImageQuery_count": 326,
+  "building_materials_questionImageQuery_count": 12,
+  "building_materials_queries_filled": 87,
+  "building_materials_queries_cleaned": 35,
+  "building_materials_remote_fallback_text_suppressed": true,
+  "note_building_materials": "Building Materials updated to image-priority mode: all cards have answer image queries; remote fallback text suppressed; Open Image Search button remains available after answering."
 }
