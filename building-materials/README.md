@@ -1,15 +1,13 @@
-# ALE Building Materials
+# ALE Building Materials — Refined V2
 
-Refined Building Materials reviewer package.
+This version fixes wandering/irrelevant question links.
 
-## Visual logic
-- Physical materials / objects / construction items show question visuals inside the flashcard.
-- Primary source is Wikipedia / Wikimedia Commons.
-- Google Images is only the fallback/search target.
-- Abstract standards, formulas, and code-heavy items use concept visuals instead of random photos.
+## V2 visual rules
+- Image links are based on exact correct-answer visual targets only.
+- No broad keyword scan from the whole question.
+- Standards, formulas, values, and trick questions use concept visuals or no visual.
+- Physical materials/objects show visuals in the question card.
+- Wikipedia/Wikimedia Commons is tried first.
+- Google Images remains fallback only.
 
-## Files
-- `index.html`
-- `cards.json`
-
-Upload this folder to GitHub Pages as `building-materials/`.
+Upload folder name: `building-materials/`.
