@@ -1,13 +1,11 @@
-# ALE Building Materials — Refined V2
+# ALE Building Materials — Identify Fix
 
-This version fixes wandering/irrelevant question links.
+This version adjusts identification-style visuals.
 
-## V2 visual rules
-- Image links are based on exact correct-answer visual targets only.
-- No broad keyword scan from the whole question.
-- Standards, formulas, values, and trick questions use concept visuals or no visual.
-- Physical materials/objects show visuals in the question card.
-- Wikipedia/Wikimedia Commons is tried first.
-- Google Images remains fallback only.
+## Changes
+- Question visuals stay unlabeled, even after answering.
+- For material identification cards, the same visual target is reused in the explanation area.
+- Explanation can still show the answer-linked visual/source reinforcement.
+- Strict visual matching from the previous fixed-links pass is preserved.
 
 Upload folder name: `building-materials/`.
