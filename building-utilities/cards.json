@@ -133,13 +133,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. Water Main",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-005",
@@ -218,13 +218,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. Water Outlet",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-007",
@@ -901,13 +901,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. Volt",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-024",
@@ -941,13 +941,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "D. Voltage regulator",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-025",
@@ -1015,13 +1015,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "D. 1.90m",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-027",
@@ -1055,13 +1055,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. service equipment",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-028",
@@ -1489,13 +1489,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "D. variable air volume system",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-037",
@@ -1653,13 +1653,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "D. 600 mm",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-041",
@@ -1727,13 +1727,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "B. 30 mm",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-043",
@@ -1767,13 +1767,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "B. 30°",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-044",
@@ -1807,13 +1807,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. 90–120 fpm",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-045",
@@ -1847,13 +1847,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "B. 38 Meters/Min",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-046",
@@ -1887,13 +1887,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "B. 558 mm",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-047",
@@ -2063,13 +2063,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "D. All of the above",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-052",
@@ -2171,13 +2171,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "B. Sound absorption",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-055",
@@ -2211,13 +2211,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. Architectural acoustics",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-056",
@@ -2251,13 +2251,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. Nadir",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-057",
@@ -2289,15 +2289,35 @@
     "explanation": "Ulit: ang tamang sagot ay private automatic branch exchange.\nIto, acronym identification lang siya, pero classic reviewer trap ito dahil tatlo sa choices mukhang technical pakinggan pero gawa-gawa lang ang dating.\nBakit ito ang tama?\nSa telephony context, ang PABX/PBX ay private branch exchange system used within an enterprise or private organization. Cisco uses the phrase private automatic branch exchange in its voice documentation, so sa choices, si private automatic branch exchange ang tumatama. (Cisco)\nBakit mali ang ibang choices?\nb. public announcement box exchange — halatang maling construction ng term.\nc. public automatic box exchange — may \"automatic\" at \"exchange,\" pero mali ang \"public\" at \"box.\"\nd. public announcement branch exchange — pinagsama lang ang words para magmukhang technical.\nElimination method\nIto ang iniisip mo dapat habang nagsasagot:\n• Ang P sa PABX, sa telecom, halos siguradong private, hindi public.\n• Ang BX usually points to branch exchange.\n• So tanggal agad ang may public.\n• Then sa natitira, piliin ang mukhang tunay na telecom term.\nCommon trap sa board exam\nAng trap dito ay ‘yung choices na maraming technical-sounding words.\nPero tandaan: sa abbreviations, kadalasan isang choice lang ang existing industry term.\nAno ang dapat mong tandaan dito?\nPABX = Private Automatic Branch Exchange.\n________________________________________",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "none",
-    "visualIntent": "concept_visual",
-    "questionConceptVisual": {
-      "title": "Key concept / value",
-      "main": "A. private automatic branch exchange",
-      "detail": "Memorize the exact ALE/reviewer value or term.",
-      "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    "visualMode": "question",
+    "visualIntent": "image_identification",
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImageQuery": "PABX telephone system",
+    "questionImageQueries": [
+      "PABX telephone system",
+      "PBX office telephone system",
+      "private branch exchange equipment"
+    ],
+    "questionImageLayoutQueries": [
+      "PABX telephone system",
+      "PBX office telephone system",
+      "private branch exchange equipment"
+    ],
+    "questionImageAlt": "Question visual reference",
+    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "answerImageQuery": "PABX telephone system",
+    "answerImageQueries": [
+      "PABX telephone system",
+      "PBX office telephone system",
+      "private branch exchange equipment"
+    ],
+    "answerImageLayoutQueries": [
+      "PABX telephone system",
+      "PBX office telephone system",
+      "private branch exchange equipment"
+    ],
+    "answerImageAlt": "Explanation visual reference: PABX telephone system",
+    "answerImageCredit": "Same visual target reused after answering for reinforcement."
   },
   {
     "uid": "UTIL-058",
@@ -2329,15 +2349,35 @@
     "explanation": "Ulit: ang tamang sagot ay building management system.\nIto, very important ito sa smart buildings at building utilities integration.\nBakit ito ang tama?\nAng BMS stands for Building Management System. IBM describes BMS as control systems that centralize building management functions like lighting, air-conditioning, maintenance, and safety into one platform. Iyan mismo ang gamit sa building projects. (IBM)\nBakit mali ang ibang choices?\nb. broadcast microwave services — communications term ang tunog, hindi building utilities control platform.\nc. bachelor of management services — obviously hindi project/system term.\nd. building management services — malapit pakinggan, pero ang accepted standard expansion ng BMS ay system, hindi services. (IBM)\nElimination method\nGanito ang bilis ng isip mo dapat:\n• Project/building context ba? Oo.\n• Control/integration platform ba ang hinahanap? Oo.\n• Hanapin ang may salitang system, hindi services.\nCommon trap sa board exam\nMadalas dito nadadale ang examinee sa building management services dahil mukhang mas natural pakinggan.\nPero sa actual industry acronym, BMS = system.\nAno ang dapat mong tandaan dito?\nSa smart buildings at utilities coordination, BMS = Building Management System.\n________________________________________",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "none",
-    "visualIntent": "concept_visual",
-    "questionConceptVisual": {
-      "title": "Key concept / value",
-      "main": "A. building management system",
-      "detail": "Memorize the exact ALE/reviewer value or term.",
-      "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    "visualMode": "question",
+    "visualIntent": "image_identification",
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImageQuery": "building management system dashboard",
+    "questionImageQueries": [
+      "building management system dashboard",
+      "BMS control room",
+      "building automation system interface"
+    ],
+    "questionImageLayoutQueries": [
+      "building management system dashboard",
+      "BMS control room",
+      "building automation system interface"
+    ],
+    "questionImageAlt": "Question visual reference",
+    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "answerImageQuery": "building management system dashboard",
+    "answerImageQueries": [
+      "building management system dashboard",
+      "BMS control room",
+      "building automation system interface"
+    ],
+    "answerImageLayoutQueries": [
+      "building management system dashboard",
+      "BMS control room",
+      "building automation system interface"
+    ],
+    "answerImageAlt": "Explanation visual reference: Building management system",
+    "answerImageCredit": "Same visual target reused after answering for reinforcement."
   },
   {
     "uid": "UTIL-059",
@@ -2371,13 +2411,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. devices will only operate at a limited distance from an access point",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-060",
@@ -2411,13 +2451,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. 1.2 meters",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-061",
@@ -2496,13 +2536,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. Cassette type - Split type",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-063",
@@ -2604,13 +2644,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. Window type air conditioning system does not have condensing unit.",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-066",
@@ -2791,13 +2831,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. Hydraulic Elevator",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-071",
@@ -2831,13 +2871,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. Geared Elevator",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-072",
@@ -2871,13 +2911,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. Hydraulic Elevator",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-073",
@@ -2911,13 +2951,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "B. Gear-less Elevator",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-074",
@@ -2955,13 +2995,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "D. Hydraulic Elevator",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-075",
@@ -3063,13 +3103,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "D. With 15 meters distance",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-078",
@@ -3107,13 +3147,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. Split type",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-079",
@@ -3185,13 +3225,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. 20°C – 24°C",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-081",
@@ -3267,13 +3307,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "E. Multi-Split",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-083",
@@ -3522,13 +3562,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. Wire",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-089",
@@ -3660,13 +3700,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "E. Light Emitting Diode",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-092",
@@ -3780,13 +3820,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. Low Pressure Sodium",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-095",
@@ -3824,13 +3864,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "D. Halogen",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-096",
@@ -3944,13 +3984,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. Ability of a lamp to either enhance or ruin the true color of an object",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-099",
@@ -4022,13 +4062,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "E. Window Type Air-Conditioning System",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-101",
@@ -4066,13 +4106,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. Near the Service Entrance with separate room outside the main building and separate foundation pad",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-102",
@@ -4110,13 +4150,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "E. There is no air chamber installed.",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-103",
@@ -4154,13 +4194,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. Ideally NOT along drywall partition",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-104",
@@ -4277,13 +4317,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "B. Outside Diameter",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-107",
@@ -4317,13 +4357,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. 25 mm",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-108",
@@ -4391,13 +4431,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. Battery of fixtures",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-110",
@@ -4431,13 +4471,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. Beyond 15 meters",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-111",
@@ -4509,13 +4549,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "D. Water Closet",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-113",
@@ -4617,13 +4657,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "B. 600 mm",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-116",
@@ -4736,13 +4776,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "D. 15 meters",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-119",
@@ -5013,13 +5053,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "B. PBX",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-126",
@@ -5053,13 +5093,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. LAN",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-127",
@@ -5229,13 +5269,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. Reverse Trap",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-132",
@@ -5618,13 +5658,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "D. 3.785 liters",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-140",
@@ -5925,13 +5965,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. buck hoist",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-146",
@@ -6168,13 +6208,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "D. Window Type Air-Conditioning System",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-152",
@@ -6389,13 +6429,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. 5.5 mm.sq.",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-158",
@@ -6557,13 +6597,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. 8 mm sqm",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-162",
@@ -7577,13 +7617,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. Water Closet Cubicle",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-180",
@@ -7651,13 +7691,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "D. 400 mm",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-182",
@@ -7827,13 +7867,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. Eyeball Light with Halogen Bulb",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-186",
@@ -7901,13 +7941,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "D. GFRC",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-188",
@@ -7941,13 +7981,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. Waste Disposal Unit",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-189",
@@ -7981,13 +8021,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. 3.5 mm.sq.",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-190",
@@ -8021,13 +8061,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. Dimmer Switch",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-191",
@@ -8129,13 +8169,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "D. Suspended Industrial light with fluorescent lamp",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-194",
@@ -8203,13 +8243,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. Flush Meter Valve",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-196",
@@ -8504,13 +8544,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. IMC",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-204",
@@ -8544,13 +8584,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. RSC",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-205",
@@ -8720,13 +8760,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "D. Cast Iron",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-210",
@@ -8760,13 +8800,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. 150 mm",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-211",
@@ -8868,13 +8908,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. PVC",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-214",
@@ -9006,13 +9046,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. Loop Vent",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-217",
@@ -9084,13 +9124,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. Fossil Fuel Power Plant",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-219",
@@ -9162,13 +9202,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. Ability of a lamp to either enhance or ruin the true color of an object",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-221",
@@ -9240,13 +9280,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "D. At the back of the house",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-223",
@@ -9520,13 +9560,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. LPS",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-228",
@@ -9564,13 +9604,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "E. A and B",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-229",
@@ -9604,13 +9644,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "D. All of the given choices",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-230",
@@ -9644,13 +9684,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "D. All of the given choices",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-231",
@@ -10492,13 +10532,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. Globe Valve",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-249",
@@ -10570,13 +10610,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "D. .5%",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-251",
@@ -10614,13 +10654,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. 2%",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-252",
@@ -10654,13 +10694,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. Aiphone",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-253",
@@ -10728,13 +10768,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "B. Fiber glass",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-255",
@@ -10768,13 +10808,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "B. Fiber glass",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-256",
@@ -10808,13 +10848,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. PVC",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-257",
@@ -10848,13 +10888,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "B. EMT",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-258",
@@ -11006,13 +11046,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. 300 mm",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-262",
@@ -11205,15 +11245,35 @@
     "explanation": "Ulit: ang tamang sagot ay Fire Detection and Alarm System.\nFDAS is widely used in the Philippines and industry training materials as Fire Detection and Alarm System. (Scribd)\nBakit ito ang tama?\nExact acronym recall lang ito.\nBakit mali ang ibang choices?\nThe other choices are either invented-sounding or not recognized fire-safety system acronyms.\nElimination method\nKapag acronym item ito, hanapin ang only phrase that sounds like a real fire-protection system name.\nThat is Fire Detection and Alarm System.\nAno ang dapat mong tandaan dito?\nFDAS = Fire Detection and Alarm System.\n________________________________________",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "none",
-    "visualIntent": "concept_visual",
-    "questionConceptVisual": {
-      "title": "Key concept / value",
-      "main": "C. Fire Detection and Alarm System",
-      "detail": "Memorize the exact ALE/reviewer value or term.",
-      "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    "visualMode": "question",
+    "visualIntent": "image_identification",
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImageQuery": "fire detection and alarm system control panel",
+    "questionImageQueries": [
+      "fire detection and alarm system control panel",
+      "FDAS fire alarm control panel",
+      "building fire alarm system"
+    ],
+    "questionImageLayoutQueries": [
+      "fire detection and alarm system control panel",
+      "FDAS fire alarm control panel",
+      "building fire alarm system"
+    ],
+    "questionImageAlt": "Question visual reference",
+    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "answerImageQuery": "fire detection and alarm system control panel",
+    "answerImageQueries": [
+      "fire detection and alarm system control panel",
+      "FDAS fire alarm control panel",
+      "building fire alarm system"
+    ],
+    "answerImageLayoutQueries": [
+      "fire detection and alarm system control panel",
+      "FDAS fire alarm control panel",
+      "building fire alarm system"
+    ],
+    "answerImageAlt": "Explanation visual reference: Fire detection and alarm system",
+    "answerImageCredit": "Same visual target reused after answering for reinforcement."
   },
   {
     "uid": "UTIL-267",
@@ -11247,13 +11307,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. Dry Type",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-268",
@@ -11355,13 +11415,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. Cabin",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-271",
@@ -11395,13 +11455,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "B. Fire Alarm",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-272",
@@ -11435,13 +11495,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "D. Emerald",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-273",
@@ -11475,13 +11535,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. Wall-Hung",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-274",
@@ -11515,13 +11575,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. Basin Type",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-275",
@@ -11775,13 +11835,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. Intercom",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-281",
@@ -11849,13 +11909,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. Ceramic",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-283",
@@ -11889,13 +11949,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. 100 ampere",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-284",
@@ -12001,13 +12061,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "A. Concrete",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-287",
@@ -12121,13 +12181,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "E. Chiller",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-290",
@@ -12170,13 +12230,13 @@
     "reviewFlag": "flawed_or_ambiguous_original_item",
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "F. Control Panel (correct concept; missing in printed choices)",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-291",
@@ -12214,13 +12274,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "D. 230 Volts, 60 Hertz",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-292",
@@ -12345,13 +12405,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. HDPE",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-295",
@@ -12389,13 +12449,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "B. 500–1500",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-296",
@@ -12471,13 +12531,13 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "C. Multi Point Water Heater",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   },
   {
     "uid": "UTIL-298",
@@ -12515,12 +12575,12 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "concept_visual",
-    "questionConceptVisual": {
+    "visualReviewNote": "Concept visual only; no remote image needed.",
+    "answerConceptVisual": {
       "title": "Key concept / value",
       "main": "E. 10 watts",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "visualReviewNote": "Concept visual only; no remote image needed."
+    }
   }
 ]
