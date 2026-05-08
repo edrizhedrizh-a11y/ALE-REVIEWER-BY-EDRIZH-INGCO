@@ -1,38 +1,15 @@
 # ALE Building Materials
 
-GitHub Pages-ready subject folder.
+Refined Building Materials reviewer package.
+
+## Visual logic
+- Physical materials / objects / construction items show question visuals inside the flashcard.
+- Primary source is Wikipedia / Wikimedia Commons.
+- Google Images is only the fallback/search target.
+- Abstract standards, formulas, and code-heavy items use concept visuals instead of random photos.
 
 ## Files
-- `index.html` — standalone flashcard reviewer app
-- `cards.json` — ALE Building Materials card bank
+- `index.html`
+- `cards.json`
 
-## Visual source rule
-Images are loaded online inside the flashcard.
-
-Priority:
-1. Wikipedia / Wikimedia Commons preview
-2. Google Images fallback button only if no preview loads
-
-No image is embedded as base64, so the folder stays lightweight.
-
-## Current card status
-- Total cards: 326
-- Cards with visual target or concept visual: 313
-
-## Upload path
-Place this folder in your GitHub repo root:
-
-```txt
-your-repo/
-  index.html
-  building-materials/
-    index.html
-    cards.json
-    README.md
-```
-
-Then open:
-
-```txt
-https://USERNAME.github.io/REPO-NAME/building-materials/
-```
+Upload this folder to GitHub Pages as `building-materials/`.
