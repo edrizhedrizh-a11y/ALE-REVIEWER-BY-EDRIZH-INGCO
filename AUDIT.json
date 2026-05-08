@@ -1,28 +1,26 @@
 {
-  "package_root": "/mnt/data/ALE-REVIEWER-BY-EDRIZH-INGCO",
   "root_index_exists": true,
   "history_index_exists": true,
-  "history_cards_json_exists": true,
+  "history_cards_exists": true,
   "building_construction_index_exists": true,
-  "building_construction_cards_json_exists": true,
+  "building_construction_cards_exists": true,
+  "building_materials_index_exists": true,
+  "building_materials_cards_exists": true,
   "history_cards_count": 600,
   "building_construction_cards_count": 401,
-  "active_dashboard_links": {
-    "./history/": true,
-    "./building-construction/": true
-  },
-  "disabled_coming_soon_count": 11,
-  "other_subjects_disabled_coming_soon": true,
-  "js_syntax_checks": {
-    "history/index.html": {
-      "ok": true,
-      "stderr": ""
-    },
-    "building-construction/index.html": {
-      "ok": true,
-      "stderr": ""
-    }
-  },
-  "github_pages_ready": true,
-  "notes": "History and Building Construction only. Other subjects are root-dashboard disabled/coming soon. Subject index.html files load their own cards.json using relative paths."
+  "building_materials_cards_count": 326,
+  "building_materials_question_visuals": 12,
+  "building_materials_answer_visuals": 239,
+  "building_materials_no_visuals": 87,
+  "active_dashboard_links": [
+    "./history/",
+    "./building-construction/",
+    "./building-materials/"
+  ],
+  "coming_soon_disabled_count": 10,
+  "js_syntax_passed": true,
+  "history_unchanged_from_previous_package": true,
+  "building_construction_unchanged_from_previous_package": true,
+  "building_materials_mode": "review-coach: question visuals only for visual-identification cards; answer visuals after reveal for physical materials/components; abstract/numeric/code items have no image",
+  "github_pages_ready": true
 }
