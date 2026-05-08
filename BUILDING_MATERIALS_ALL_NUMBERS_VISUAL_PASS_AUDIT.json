@@ -1,0 +1,15 @@
+{
+  "building_materials_total": 326,
+  "q1_q100_questionImageQuery_count": 64,
+  "q1_q100_answerImageQuery_count": 100,
+  "q101_q200_questionImageQuery_count": 48,
+  "q101_q200_answerImageQuery_count": 100,
+  "q201_q326_questionImageQuery_count": 113,
+  "q201_q326_answerImageQuery_count": 126,
+  "all_cards_answerImageQuery_count": 326,
+  "all_cards_questionImageQuery_count": 225,
+  "inline_fallback_enabled": true,
+  "history_untouched": true,
+  "building_construction_untouched": true,
+  "note": "Applied visual pass to all Building Materials card numbers Q1-Q326. Q1-Q200 retained prior review-coach logic; Q201-Q326 received review-coach visual classification. Direct remote photos still depend on online source availability; inline fallback prevents blank image areas."
+}

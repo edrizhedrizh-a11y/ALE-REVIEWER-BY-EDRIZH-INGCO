@@ -9174,6 +9174,9 @@
     "questionImageQuery": "kalamein metal clad wood door",
     "questionImageQueries": [
       "kalamein metal clad wood door"
+    ],
+    "questionImageLayoutQueries": [
+      "kalamein metal clad wood door"
     ]
   },
   {
@@ -9254,6 +9257,9 @@
     "questionImageQuery": "screw with expansion plug",
     "questionImageQueries": [
       "screw with expansion plug"
+    ],
+    "questionImageLayoutQueries": [
+      "screw with expansion plug"
     ]
   },
   {
@@ -9293,10 +9299,7 @@
       "Supplier installer"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "Supplier installer",
-    "questionImageQueries": [
-      "Supplier installer"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-205",
@@ -9333,7 +9336,14 @@
     "answerImageQueries": [
       "modular system"
     ],
-    "answerImageQuery": "modular system"
+    "answerImageQuery": "modular system",
+    "questionImageQuery": "modular system",
+    "questionImageQueries": [
+      "modular system"
+    ],
+    "questionImageLayoutQueries": [
+      "modular system"
+    ]
   },
   {
     "uid": "BM-206",
@@ -9370,7 +9380,14 @@
     "answerImageQueries": [
       "building material"
     ],
-    "answerImageQuery": "building material"
+    "answerImageQuery": "building material",
+    "questionImageQuery": "building material",
+    "questionImageQueries": [
+      "building material"
+    ],
+    "questionImageLayoutQueries": [
+      "building material"
+    ]
   },
   {
     "uid": "BM-207",
@@ -9408,7 +9425,14 @@
     "answerImageQueries": [
       "oriel window projection"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "oriel window projection",
+    "questionImageQueries": [
+      "oriel window projection"
+    ],
+    "questionImageLayoutQueries": [
+      "oriel window projection"
+    ]
   },
   {
     "uid": "BM-208",
@@ -9446,7 +9470,14 @@
     "answerImageQueries": [
       "awning window tropical rain"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "awning window tropical rain",
+    "questionImageQueries": [
+      "awning window tropical rain"
+    ],
+    "questionImageLayoutQueries": [
+      "awning window tropical rain"
+    ]
   },
   {
     "uid": "BM-209",
@@ -9484,7 +9515,14 @@
     "answerImageQueries": [
       "bay window exterior"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "bay window exterior",
+    "questionImageQueries": [
+      "bay window exterior"
+    ],
+    "questionImageLayoutQueries": [
+      "bay window exterior"
+    ]
   },
   {
     "uid": "BM-210",
@@ -9522,7 +9560,14 @@
     "answerImageQueries": [
       "sliding window"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "sliding window",
+    "questionImageQueries": [
+      "sliding window"
+    ],
+    "questionImageLayoutQueries": [
+      "sliding window"
+    ]
   },
   {
     "uid": "BM-211",
@@ -9560,7 +9605,14 @@
     "answerImageQueries": [
       "window sash glazing"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "window sash glazing",
+    "questionImageQueries": [
+      "window sash glazing"
+    ],
+    "questionImageLayoutQueries": [
+      "window sash glazing"
+    ]
   },
   {
     "uid": "BM-212",
@@ -9602,6 +9654,9 @@
     "questionImageQuery": "steel T bar window muntin",
     "questionImageQueries": [
       "steel T bar window muntin"
+    ],
+    "questionImageLayoutQueries": [
+      "steel T bar window muntin"
     ]
   },
   {
@@ -9640,7 +9695,14 @@
     "answerImageQueries": [
       "window unit frame sash glazing"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "window unit frame sash glazing",
+    "questionImageQueries": [
+      "window unit frame sash glazing"
+    ],
+    "questionImageLayoutQueries": [
+      "window unit frame sash glazing"
+    ]
   },
   {
     "uid": "BM-214",
@@ -9677,7 +9739,14 @@
     "answerImageQueries": [
       "Operators"
     ],
-    "answerImageQuery": "Operators"
+    "answerImageQuery": "Operators",
+    "questionImageQuery": "Operators",
+    "questionImageQueries": [
+      "Operators"
+    ],
+    "questionImageLayoutQueries": [
+      "Operators"
+    ]
   },
   {
     "uid": "BM-215",
@@ -9714,7 +9783,14 @@
     "answerImageQueries": [
       "building material"
     ],
-    "answerImageQuery": "building material"
+    "answerImageQuery": "building material",
+    "questionImageQuery": "building material",
+    "questionImageQueries": [
+      "building material"
+    ],
+    "questionImageLayoutQueries": [
+      "building material"
+    ]
   },
   {
     "uid": "BM-216",
@@ -9752,7 +9828,14 @@
     "answerImageQueries": [
       "roof skylight daylight opening"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "roof skylight daylight opening",
+    "questionImageQueries": [
+      "roof skylight daylight opening"
+    ],
+    "questionImageLayoutQueries": [
+      "roof skylight daylight opening"
+    ]
   },
   {
     "uid": "BM-217",
@@ -9787,9 +9870,9 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "best reviewer answer, Electrical Grade"
+      "Silicone sealants are available in grades, except?"
     ],
-    "answerImageQuery": "best reviewer answer, Electrical Grade"
+    "answerImageQuery": "Silicone sealants are available in grades, except?"
   },
   {
     "uid": "BM-218",
@@ -9833,7 +9916,10 @@
       "casement window lock hardware"
     ],
     "questionImageAlt": "Question visual reference",
-    "visualMode": "question"
+    "visualMode": "question",
+    "questionImageLayoutQueries": [
+      "casement window lock hardware"
+    ]
   },
   {
     "uid": "BM-219",
@@ -9877,7 +9963,10 @@
       "sliding door lock hardware"
     ],
     "questionImageAlt": "Question visual reference",
-    "visualMode": "question"
+    "visualMode": "question",
+    "questionImageLayoutQueries": [
+      "sliding door lock hardware"
+    ]
   },
   {
     "uid": "BM-220",
@@ -9921,7 +10010,10 @@
       "flush bolt door hardware"
     ],
     "questionImageAlt": "Question visual reference",
-    "visualMode": "question"
+    "visualMode": "question",
+    "questionImageLayoutQueries": [
+      "flush bolt door hardware"
+    ]
   },
   {
     "uid": "BM-221",
@@ -9959,7 +10051,14 @@
     "answerImageQueries": [
       "Soss concealed hinge"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "Soss concealed hinge",
+    "questionImageQueries": [
+      "Soss concealed hinge"
+    ],
+    "questionImageLayoutQueries": [
+      "Soss concealed hinge"
+    ]
   },
   {
     "uid": "BM-222",
@@ -9997,7 +10096,14 @@
     "answerImageQueries": [
       "olive knuckle hinge paumelle"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "olive knuckle hinge paumelle",
+    "questionImageQueries": [
+      "olive knuckle hinge paumelle"
+    ],
+    "questionImageLayoutQueries": [
+      "olive knuckle hinge paumelle"
+    ]
   },
   {
     "uid": "BM-223",
@@ -10035,7 +10141,14 @@
     "answerImageQueries": [
       "full mortise butt hinge"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "full mortise butt hinge",
+    "questionImageQueries": [
+      "full mortise butt hinge"
+    ],
+    "questionImageLayoutQueries": [
+      "full mortise butt hinge"
+    ]
   },
   {
     "uid": "BM-224",
@@ -10079,7 +10192,10 @@
       "butterfly hinge hardware"
     ],
     "questionImageAlt": "Question visual reference",
-    "visualMode": "question"
+    "visualMode": "question",
+    "questionImageLayoutQueries": [
+      "butterfly hinge hardware"
+    ]
   },
   {
     "uid": "BM-225",
@@ -10117,7 +10233,14 @@
     "answerImageQueries": [
       "RHR"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "RHR",
+    "questionImageQueries": [
+      "RHR"
+    ],
+    "questionImageLayoutQueries": [
+      "RHR"
+    ]
   },
   {
     "uid": "BM-226",
@@ -10155,7 +10278,14 @@
     "answerImageQueries": [
       "door stop rubber bumper"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "door stop rubber bumper",
+    "questionImageQueries": [
+      "door stop rubber bumper"
+    ],
+    "questionImageLayoutQueries": [
+      "door stop rubber bumper"
+    ]
   },
   {
     "uid": "BM-227",
@@ -10193,7 +10323,14 @@
     "answerImageQueries": [
       "surface mounted door closer"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "surface mounted door closer",
+    "questionImageQueries": [
+      "surface mounted door closer"
+    ],
+    "questionImageLayoutQueries": [
+      "surface mounted door closer"
+    ]
   },
   {
     "uid": "BM-228",
@@ -10231,7 +10368,14 @@
     "answerImageQueries": [
       "panic exit device door hardware"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "panic exit device door hardware",
+    "questionImageQueries": [
+      "panic exit device door hardware"
+    ],
+    "questionImageLayoutQueries": [
+      "panic exit device door hardware"
+    ]
   },
   {
     "uid": "BM-229",
@@ -10268,7 +10412,14 @@
     "answerImageQueries": [
       "Bayer"
     ],
-    "answerImageQuery": "Bayer"
+    "answerImageQuery": "Bayer",
+    "questionImageQuery": "Bayer",
+    "questionImageQueries": [
+      "Bayer"
+    ],
+    "questionImageLayoutQueries": [
+      "Bayer"
+    ]
   },
   {
     "uid": "BM-230",
@@ -10309,6 +10460,9 @@
     "answerImageAlt": "Answer visual reference",
     "questionImageQuery": "Staple wire nail",
     "questionImageQueries": [
+      "Staple wire nail"
+    ],
+    "questionImageLayoutQueries": [
       "Staple wire nail"
     ]
   },
@@ -10354,7 +10508,10 @@
       "rebar safety cap"
     ],
     "questionImageAlt": "Question visual reference",
-    "visualMode": "question"
+    "visualMode": "question",
+    "questionImageLayoutQueries": [
+      "rebar safety cap"
+    ]
   },
   {
     "uid": "BM-232",
@@ -10391,7 +10548,14 @@
     "answerImageQueries": [
       "Shelves"
     ],
-    "answerImageQuery": "Shelves"
+    "answerImageQuery": "Shelves",
+    "questionImageQuery": "Shelves",
+    "questionImageQueries": [
+      "Shelves"
+    ],
+    "questionImageLayoutQueries": [
+      "Shelves"
+    ]
   },
   {
     "uid": "BM-233",
@@ -10429,7 +10593,14 @@
     "answerImageQueries": [
       "deadbolt lockset door"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "deadbolt lockset door",
+    "questionImageQueries": [
+      "deadbolt lockset door"
+    ],
+    "questionImageLayoutQueries": [
+      "deadbolt lockset door"
+    ]
   },
   {
     "uid": "BM-234",
@@ -10467,7 +10638,14 @@
     "answerImageQueries": [
       "deadbolt lock door"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "deadbolt lock door",
+    "questionImageQueries": [
+      "deadbolt lock door"
+    ],
+    "questionImageLayoutQueries": [
+      "deadbolt lock door"
+    ]
   },
   {
     "uid": "BM-235",
@@ -10505,7 +10683,14 @@
     "answerImageQueries": [
       "rim latch door hardware"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "rim latch door hardware",
+    "questionImageQueries": [
+      "rim latch door hardware"
+    ],
+    "questionImageLayoutQueries": [
+      "rim latch door hardware"
+    ]
   },
   {
     "uid": "BM-236",
@@ -10543,7 +10728,14 @@
     "answerImageQueries": [
       "door lock escutcheon plate"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "door lock escutcheon plate",
+    "questionImageQueries": [
+      "door lock escutcheon plate"
+    ],
+    "questionImageLayoutQueries": [
+      "door lock escutcheon plate"
+    ]
   },
   {
     "uid": "BM-237",
@@ -10581,7 +10773,14 @@
     "answerImageQueries": [
       "automatic door bottom seal"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "automatic door bottom seal",
+    "questionImageQueries": [
+      "automatic door bottom seal"
+    ],
+    "questionImageLayoutQueries": [
+      "automatic door bottom seal"
+    ]
   },
   {
     "uid": "BM-238",
@@ -10619,7 +10818,14 @@
     "answerImageQueries": [
       "full mortise butt hinge"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "full mortise butt hinge",
+    "questionImageQueries": [
+      "full mortise butt hinge"
+    ],
+    "questionImageLayoutQueries": [
+      "full mortise butt hinge"
+    ]
   },
   {
     "uid": "BM-239",
@@ -10657,7 +10863,14 @@
     "answerImageQueries": [
       "continuous piano hinge"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "continuous piano hinge",
+    "questionImageQueries": [
+      "continuous piano hinge"
+    ],
+    "questionImageLayoutQueries": [
+      "continuous piano hinge"
+    ]
   },
   {
     "uid": "BM-240",
@@ -10701,7 +10914,10 @@
       "rim lock door hardware"
     ],
     "questionImageAlt": "Question visual reference",
-    "visualMode": "question"
+    "visualMode": "question",
+    "questionImageLayoutQueries": [
+      "rim lock door hardware"
+    ]
   },
   {
     "uid": "BM-241",
@@ -10738,7 +10954,14 @@
     "answerImageQueries": [
       "silica"
     ],
-    "answerImageQuery": "silica"
+    "answerImageQuery": "silica",
+    "questionImageQuery": "silica",
+    "questionImageQueries": [
+      "silica"
+    ],
+    "questionImageLayoutQueries": [
+      "silica"
+    ]
   },
   {
     "uid": "BM-242",
@@ -10776,7 +10999,14 @@
     "answerImageQueries": [
       "glass sheet construction"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "glass sheet construction",
+    "questionImageQueries": [
+      "glass sheet construction"
+    ],
+    "questionImageLayoutQueries": [
+      "glass sheet construction"
+    ]
   },
   {
     "uid": "BM-243",
@@ -10814,7 +11044,14 @@
     "answerImageQueries": [
       "Midset"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "Midset",
+    "questionImageQueries": [
+      "Midset"
+    ],
+    "questionImageLayoutQueries": [
+      "Midset"
+    ]
   },
   {
     "uid": "BM-244",
@@ -10851,7 +11088,14 @@
     "answerImageQueries": [
       "building material"
     ],
-    "answerImageQuery": "building material"
+    "answerImageQuery": "building material",
+    "questionImageQuery": "building material",
+    "questionImageQueries": [
+      "building material"
+    ],
+    "questionImageLayoutQueries": [
+      "building material"
+    ]
   },
   {
     "uid": "BM-245",
@@ -10889,7 +11133,14 @@
     "answerImageQueries": [
       "float glass sheet"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "float glass sheet",
+    "questionImageQueries": [
+      "float glass sheet"
+    ],
+    "questionImageLayoutQueries": [
+      "float glass sheet"
+    ]
   },
   {
     "uid": "BM-246",
@@ -10933,7 +11184,10 @@
       "hasp and staple hardware"
     ],
     "questionImageAlt": "Question visual reference",
-    "visualMode": "question"
+    "visualMode": "question",
+    "questionImageLayoutQueries": [
+      "hasp and staple hardware"
+    ]
   },
   {
     "uid": "BM-247",
@@ -10977,7 +11231,10 @@
       "lever lock door hardware"
     ],
     "questionImageAlt": "Question visual reference",
-    "visualMode": "question"
+    "visualMode": "question",
+    "questionImageLayoutQueries": [
+      "lever lock door hardware"
+    ]
   },
   {
     "uid": "BM-248",
@@ -11021,7 +11278,10 @@
       "lid stay cabinet hardware"
     ],
     "questionImageAlt": "Question visual reference",
-    "visualMode": "question"
+    "visualMode": "question",
+    "questionImageLayoutQueries": [
+      "lid stay cabinet hardware"
+    ]
   },
   {
     "uid": "BM-249",
@@ -11059,7 +11319,14 @@
     "answerImageQueries": [
       "tempered glass break pattern"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "tempered glass break pattern",
+    "questionImageQueries": [
+      "tempered glass break pattern"
+    ],
+    "questionImageLayoutQueries": [
+      "tempered glass break pattern"
+    ]
   },
   {
     "uid": "BM-250",
@@ -11097,7 +11364,14 @@
     "answerImageQueries": [
       "sheet glass mirror"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "sheet glass mirror",
+    "questionImageQueries": [
+      "sheet glass mirror"
+    ],
+    "questionImageLayoutQueries": [
+      "sheet glass mirror"
+    ]
   },
   {
     "uid": "BM-251",
@@ -11135,7 +11409,14 @@
     "answerImageQueries": [
       "laminated glass stair tread"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "laminated glass stair tread",
+    "questionImageQueries": [
+      "laminated glass stair tread"
+    ],
+    "questionImageLayoutQueries": [
+      "laminated glass stair tread"
+    ]
   },
   {
     "uid": "BM-252",
@@ -11172,7 +11453,14 @@
     "answerImageQueries": [
       "building material"
     ],
-    "answerImageQuery": "building material"
+    "answerImageQuery": "building material",
+    "questionImageQuery": "building material",
+    "questionImageQueries": [
+      "building material"
+    ],
+    "questionImageLayoutQueries": [
+      "building material"
+    ]
   },
   {
     "uid": "BM-253",
@@ -11210,7 +11498,14 @@
     "answerImageQueries": [
       "tempered glass break pattern"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "tempered glass break pattern",
+    "questionImageQueries": [
+      "tempered glass break pattern"
+    ],
+    "questionImageLayoutQueries": [
+      "tempered glass break pattern"
+    ]
   },
   {
     "uid": "BM-254",
@@ -11248,7 +11543,14 @@
     "answerImageQueries": [
       "laminated glass stair tread"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "laminated glass stair tread",
+    "questionImageQueries": [
+      "laminated glass stair tread"
+    ],
+    "questionImageLayoutQueries": [
+      "laminated glass stair tread"
+    ]
   },
   {
     "uid": "BM-255",
@@ -11289,6 +11591,9 @@
     "answerImageAlt": "Answer visual reference",
     "questionImageQuery": "masonry wall brick block stone",
     "questionImageQueries": [
+      "masonry wall brick block stone"
+    ],
+    "questionImageLayoutQueries": [
       "masonry wall brick block stone"
     ]
   },
@@ -11332,6 +11637,9 @@
     "questionImageQuery": "glass setting block window",
     "questionImageQueries": [
       "glass setting block window"
+    ],
+    "questionImageLayoutQueries": [
+      "glass setting block window"
     ]
   },
   {
@@ -11370,7 +11678,14 @@
     "answerImageQueries": [
       "heat strengthened glass"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "heat strengthened glass",
+    "questionImageQueries": [
+      "heat strengthened glass"
+    ],
+    "questionImageLayoutQueries": [
+      "heat strengthened glass"
+    ]
   },
   {
     "uid": "BM-258",
@@ -11408,7 +11723,14 @@
     "answerImageQueries": [
       "annealed glass broken sharp shards"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "annealed glass broken sharp shards",
+    "questionImageQueries": [
+      "annealed glass broken sharp shards"
+    ],
+    "questionImageLayoutQueries": [
+      "annealed glass broken sharp shards"
+    ]
   },
   {
     "uid": "BM-259",
@@ -11446,7 +11768,14 @@
     "answerImageQueries": [
       "carborundum stone glass edge polishing"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "carborundum stone glass edge polishing",
+    "questionImageQueries": [
+      "carborundum stone glass edge polishing"
+    ],
+    "questionImageLayoutQueries": [
+      "carborundum stone glass edge polishing"
+    ]
   },
   {
     "uid": "BM-260",
@@ -11490,7 +11819,10 @@
       "glass spider fitting"
     ],
     "questionImageAlt": "Question visual reference",
-    "visualMode": "question"
+    "visualMode": "question",
+    "questionImageLayoutQueries": [
+      "glass spider fitting"
+    ]
   },
   {
     "uid": "BM-261",
@@ -11525,9 +11857,16 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "best reviewer answer, FD100"
+      "Aluminum section used to hold glass door."
     ],
-    "answerImageQuery": "best reviewer answer, FD100"
+    "answerImageQuery": "Aluminum section used to hold glass door.",
+    "questionImageQuery": "Aluminum section used to hold glass door.",
+    "questionImageQueries": [
+      "Aluminum section used to hold glass door."
+    ],
+    "questionImageLayoutQueries": [
+      "Aluminum section used to hold glass door."
+    ]
   },
   {
     "uid": "BM-262",
@@ -11565,7 +11904,14 @@
     "answerImageQueries": [
       "frameless glass door patch fittings"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "frameless glass door patch fittings",
+    "questionImageQueries": [
+      "frameless glass door patch fittings"
+    ],
+    "questionImageLayoutQueries": [
+      "frameless glass door patch fittings"
+    ]
   },
   {
     "uid": "BM-263",
@@ -11609,7 +11955,10 @@
       "glass railing spigot fitting"
     ],
     "questionImageAlt": "Question visual reference",
-    "visualMode": "question"
+    "visualMode": "question",
+    "questionImageLayoutQueries": [
+      "glass railing spigot fitting"
+    ]
   },
   {
     "uid": "BM-264",
@@ -11648,10 +11997,7 @@
       "Lacquer putty"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "Lacquer putty",
-    "questionImageQueries": [
-      "Lacquer putty"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-265",
@@ -11692,6 +12038,9 @@
     "questionImageQuery": "Lacquer putty",
     "questionImageQueries": [
       "Lacquer putty"
+    ],
+    "questionImageLayoutQueries": [
+      "Lacquer putty"
     ]
   },
   {
@@ -11730,7 +12079,14 @@
     "answerImageQueries": [
       "paint can coating"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "paint can coating",
+    "questionImageQueries": [
+      "paint can coating"
+    ],
+    "questionImageLayoutQueries": [
+      "paint can coating"
+    ]
   },
   {
     "uid": "BM-267",
@@ -11771,6 +12127,9 @@
     "answerImageAlt": "Answer visual reference",
     "questionImageQuery": "oil wood stain on wood",
     "questionImageQueries": [
+      "oil wood stain on wood"
+    ],
+    "questionImageLayoutQueries": [
       "oil wood stain on wood"
     ]
   },
@@ -11814,6 +12173,9 @@
     "questionImageQuery": "clear varnish wood finish",
     "questionImageQueries": [
       "clear varnish wood finish"
+    ],
+    "questionImageLayoutQueries": [
+      "clear varnish wood finish"
     ]
   },
   {
@@ -11851,7 +12213,14 @@
     "answerImageQueries": [
       "building material"
     ],
-    "answerImageQuery": "building material"
+    "answerImageQuery": "building material",
+    "questionImageQuery": "building material",
+    "questionImageQueries": [
+      "building material"
+    ],
+    "questionImageLayoutQueries": [
+      "building material"
+    ]
   },
   {
     "uid": "BM-270",
@@ -11889,7 +12258,14 @@
     "answerImageQueries": [
       "paint vehicle binder solvent"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "paint vehicle binder solvent",
+    "questionImageQueries": [
+      "paint vehicle binder solvent"
+    ],
+    "questionImageLayoutQueries": [
+      "paint vehicle binder solvent"
+    ]
   },
   {
     "uid": "BM-271",
@@ -11931,6 +12307,9 @@
     "questionImageQuery": "oil paint exterior wood",
     "questionImageQueries": [
       "oil paint exterior wood"
+    ],
+    "questionImageLayoutQueries": [
+      "oil paint exterior wood"
     ]
   },
   {
@@ -11969,7 +12348,14 @@
     "answerImageQueries": [
       "oil stain wood finish"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "oil stain wood finish",
+    "questionImageQueries": [
+      "oil stain wood finish"
+    ],
+    "questionImageLayoutQueries": [
+      "oil stain wood finish"
+    ]
   },
   {
     "uid": "BM-273",
@@ -12006,7 +12392,14 @@
     "answerImageQueries": [
       "Davies"
     ],
-    "answerImageQuery": "Davies"
+    "answerImageQuery": "Davies",
+    "questionImageQuery": "Davies",
+    "questionImageQueries": [
+      "Davies"
+    ],
+    "questionImageLayoutQueries": [
+      "Davies"
+    ]
   },
   {
     "uid": "BM-274",
@@ -12044,7 +12437,14 @@
     "answerImageQueries": [
       "concrete water reducing admixture plasticizer"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "concrete water reducing admixture plasticizer",
+    "questionImageQueries": [
+      "concrete water reducing admixture plasticizer"
+    ],
+    "questionImageLayoutQueries": [
+      "concrete water reducing admixture plasticizer"
+    ]
   },
   {
     "uid": "BM-275",
@@ -12086,6 +12486,9 @@
     "questionImageQuery": "paint primer coating",
     "questionImageQueries": [
       "paint primer coating"
+    ],
+    "questionImageLayoutQueries": [
+      "paint primer coating"
     ]
   },
   {
@@ -12124,7 +12527,14 @@
     "answerImageQueries": [
       "enamel paint coating"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "enamel paint coating",
+    "questionImageQueries": [
+      "enamel paint coating"
+    ],
+    "questionImageLayoutQueries": [
+      "enamel paint coating"
+    ]
   },
   {
     "uid": "BM-277",
@@ -12199,7 +12609,14 @@
     "answerImageQueries": [
       "Jardine Davies"
     ],
-    "answerImageQuery": "Jardine Davies"
+    "answerImageQuery": "Jardine Davies",
+    "questionImageQuery": "Jardine Davies",
+    "questionImageQueries": [
+      "Jardine Davies"
+    ],
+    "questionImageLayoutQueries": [
+      "Jardine Davies"
+    ]
   },
   {
     "uid": "BM-279",
@@ -12237,10 +12654,7 @@
       "Matwood"
     ],
     "answerImageQuery": "Matwood",
-    "questionImageQuery": "Matwood",
-    "questionImageQueries": [
-      "Matwood"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-280",
@@ -12281,6 +12695,9 @@
     "answerImageAlt": "Answer visual reference",
     "questionImageQuery": "Flexseal",
     "questionImageQueries": [
+      "Flexseal"
+    ],
+    "questionImageLayoutQueries": [
       "Flexseal"
     ]
   },
@@ -12357,7 +12774,14 @@
     "answerImageQueries": [
       "Permatex"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "Permatex",
+    "questionImageQueries": [
+      "Permatex"
+    ],
+    "questionImageLayoutQueries": [
+      "Permatex"
+    ]
   },
   {
     "uid": "BM-283",
@@ -12398,6 +12822,9 @@
     "answerImageAlt": "Answer visual reference",
     "questionImageQuery": "wood finishing oil",
     "questionImageQueries": [
+      "wood finishing oil"
+    ],
+    "questionImageLayoutQueries": [
       "wood finishing oil"
     ]
   },
@@ -12441,6 +12868,9 @@
     "questionImageQuery": "oil wood stain on wood",
     "questionImageQueries": [
       "oil wood stain on wood"
+    ],
+    "questionImageLayoutQueries": [
+      "oil wood stain on wood"
     ]
   },
   {
@@ -12478,7 +12908,14 @@
     "answerImageQueries": [
       "Acrytex"
     ],
-    "answerImageQuery": "Acrytex"
+    "answerImageQuery": "Acrytex",
+    "questionImageQuery": "Acrytex",
+    "questionImageQueries": [
+      "Acrytex"
+    ],
+    "questionImageLayoutQueries": [
+      "Acrytex"
+    ]
   },
   {
     "uid": "BM-286",
@@ -12515,7 +12952,14 @@
     "answerImageQueries": [
       "Casein"
     ],
-    "answerImageQuery": "Casein"
+    "answerImageQuery": "Casein",
+    "questionImageQuery": "Casein",
+    "questionImageQueries": [
+      "Casein"
+    ],
+    "questionImageLayoutQueries": [
+      "Casein"
+    ]
   },
   {
     "uid": "BM-287",
@@ -12556,6 +13000,9 @@
     "answerImageAlt": "Answer visual reference",
     "questionImageQuery": "silicone water repellent masonry",
     "questionImageQueries": [
+      "silicone water repellent masonry"
+    ],
+    "questionImageLayoutQueries": [
       "silicone water repellent masonry"
     ]
   },
@@ -12599,6 +13046,9 @@
     "questionImageQuery": "paint can coating",
     "questionImageQueries": [
       "paint can coating"
+    ],
+    "questionImageLayoutQueries": [
+      "paint can coating"
     ]
   },
   {
@@ -12636,7 +13086,14 @@
     "answerImageQueries": [
       "Davies"
     ],
-    "answerImageQuery": "Davies"
+    "answerImageQuery": "Davies",
+    "questionImageQuery": "Davies",
+    "questionImageQueries": [
+      "Davies"
+    ],
+    "questionImageLayoutQueries": [
+      "Davies"
+    ]
   },
   {
     "uid": "BM-290",
@@ -12673,7 +13130,14 @@
     "answerImageQueries": [
       "Acrytex"
     ],
-    "answerImageQuery": "Acrytex"
+    "answerImageQuery": "Acrytex",
+    "questionImageQuery": "Acrytex",
+    "questionImageQueries": [
+      "Acrytex"
+    ],
+    "questionImageLayoutQueries": [
+      "Acrytex"
+    ]
   },
   {
     "uid": "BM-291",
@@ -12714,6 +13178,9 @@
     "answerImageAlt": "Answer visual reference",
     "questionImageQuery": "epoxy enamel steel paint",
     "questionImageQueries": [
+      "epoxy enamel steel paint"
+    ],
+    "questionImageLayoutQueries": [
       "epoxy enamel steel paint"
     ]
   },
@@ -12757,6 +13224,9 @@
     "questionImageQuery": "polyurethane coating wood concrete",
     "questionImageQueries": [
       "polyurethane coating wood concrete"
+    ],
+    "questionImageLayoutQueries": [
+      "polyurethane coating wood concrete"
     ]
   },
   {
@@ -12794,7 +13264,14 @@
     "answerImageQueries": [
       "No"
     ],
-    "answerImageQuery": "No"
+    "answerImageQuery": "No",
+    "questionImageQuery": "No",
+    "questionImageQueries": [
+      "No"
+    ],
+    "questionImageLayoutQueries": [
+      "No"
+    ]
   },
   {
     "uid": "BM-294",
@@ -12832,7 +13309,14 @@
     "answerImageQueries": [
       "acrylic sheet clear"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "acrylic sheet clear",
+    "questionImageQueries": [
+      "acrylic sheet clear"
+    ],
+    "questionImageLayoutQueries": [
+      "acrylic sheet clear"
+    ]
   },
   {
     "uid": "BM-295",
@@ -12870,7 +13354,14 @@
     "answerImageQueries": [
       "elastomeric paint waterproof coating"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "elastomeric paint waterproof coating",
+    "questionImageQueries": [
+      "elastomeric paint waterproof coating"
+    ],
+    "questionImageLayoutQueries": [
+      "elastomeric paint waterproof coating"
+    ]
   },
   {
     "uid": "BM-296",
@@ -12912,6 +13403,9 @@
     "questionImageQuery": "Lacquer spot putty",
     "questionImageQueries": [
       "Lacquer spot putty"
+    ],
+    "questionImageLayoutQueries": [
+      "Lacquer spot putty"
     ]
   },
   {
@@ -12950,7 +13444,14 @@
     "answerImageQueries": [
       "paint can coating"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "paint can coating",
+    "questionImageQueries": [
+      "paint can coating"
+    ],
+    "questionImageLayoutQueries": [
+      "paint can coating"
+    ]
   },
   {
     "uid": "BM-298",
@@ -12987,7 +13488,14 @@
     "answerImageQueries": [
       "white"
     ],
-    "answerImageQuery": "white"
+    "answerImageQuery": "white",
+    "questionImageQuery": "white",
+    "questionImageQueries": [
+      "white"
+    ],
+    "questionImageLayoutQueries": [
+      "white"
+    ]
   },
   {
     "uid": "BM-299",
@@ -13024,7 +13532,14 @@
     "answerImageQueries": [
       "chroma scale"
     ],
-    "answerImageQuery": "chroma scale"
+    "answerImageQuery": "chroma scale",
+    "questionImageQuery": "chroma scale",
+    "questionImageQueries": [
+      "chroma scale"
+    ],
+    "questionImageLayoutQueries": [
+      "chroma scale"
+    ]
   },
   {
     "uid": "BM-300",
@@ -13103,6 +13618,9 @@
     "questionImageQuery": "cement textured wall finish",
     "questionImageQueries": [
       "cement textured wall finish"
+    ],
+    "questionImageLayoutQueries": [
+      "cement textured wall finish"
     ]
   },
   {
@@ -13145,6 +13663,9 @@
     "questionImageQuery": "chisel finish concrete wall",
     "questionImageQueries": [
       "chisel finish concrete wall"
+    ],
+    "questionImageLayoutQueries": [
+      "chisel finish concrete wall"
     ]
   },
   {
@@ -13184,10 +13705,7 @@
       "gypsum plaster material"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "gypsum plaster material",
-    "questionImageQueries": [
-      "gypsum plaster material"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-304",
@@ -13226,10 +13744,7 @@
       "spraytex wall finish texture"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "spraytex wall finish texture",
-    "questionImageQueries": [
-      "spraytex wall finish texture"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-305",
@@ -13270,6 +13785,9 @@
     "answerImageAlt": "Answer visual reference",
     "questionImageQuery": "anay cement textured finish wall",
     "questionImageQueries": [
+      "anay cement textured finish wall"
+    ],
+    "questionImageLayoutQueries": [
       "anay cement textured finish wall"
     ]
   },
@@ -13313,6 +13831,9 @@
     "questionImageQuery": "tyrolean plaster finish wall",
     "questionImageQueries": [
       "tyrolean plaster finish wall"
+    ],
+    "questionImageLayoutQueries": [
+      "tyrolean plaster finish wall"
     ]
   },
   {
@@ -13354,6 +13875,9 @@
     "answerImageAlt": "Answer visual reference",
     "questionImageQuery": "skim coat wall plaster",
     "questionImageQueries": [
+      "skim coat wall plaster"
+    ],
+    "questionImageLayoutQueries": [
       "skim coat wall plaster"
     ]
   },
@@ -13397,6 +13921,9 @@
     "questionImageQuery": "metal furring wall board",
     "questionImageQueries": [
       "metal furring wall board"
+    ],
+    "questionImageLayoutQueries": [
+      "metal furring wall board"
     ]
   },
   {
@@ -13438,6 +13965,9 @@
     "answerImageAlt": "Answer visual reference",
     "questionImageQuery": "steel channel framing",
     "questionImageQueries": [
+      "steel channel framing"
+    ],
+    "questionImageLayoutQueries": [
       "steel channel framing"
     ]
   },
@@ -13552,10 +14082,7 @@
       "construction plywood sheet"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "construction plywood sheet",
-    "questionImageQueries": [
-      "construction plywood sheet"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-313",
@@ -13596,6 +14123,9 @@
     "answerImageAlt": "Answer visual reference",
     "questionImageQuery": "plain cement concrete floor finish",
     "questionImageQueries": [
+      "plain cement concrete floor finish"
+    ],
+    "questionImageLayoutQueries": [
       "plain cement concrete floor finish"
     ]
   },
@@ -13639,6 +14169,9 @@
     "questionImageQuery": "steel trowel concrete floor finish",
     "questionImageQueries": [
       "steel trowel concrete floor finish"
+    ],
+    "questionImageLayoutQueries": [
+      "steel trowel concrete floor finish"
     ]
   },
   {
@@ -13681,6 +14214,9 @@
     "questionImageQuery": "brick tile floor wall",
     "questionImageQueries": [
       "brick tile floor wall"
+    ],
+    "questionImageLayoutQueries": [
+      "brick tile floor wall"
     ]
   },
   {
@@ -13719,7 +14255,14 @@
     "answerImageQueries": [
       "Vitreous"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "Vitreous",
+    "questionImageQueries": [
+      "Vitreous"
+    ],
+    "questionImageLayoutQueries": [
+      "Vitreous"
+    ]
   },
   {
     "uid": "BM-317A",
@@ -13760,6 +14303,9 @@
     "answerImageAlt": "Answer visual reference",
     "questionImageQuery": "asphalt floor tile sheet",
     "questionImageQueries": [
+      "asphalt floor tile sheet"
+    ],
+    "questionImageLayoutQueries": [
       "asphalt floor tile sheet"
     ]
   },
@@ -13803,6 +14349,9 @@
     "questionImageQuery": "linoleum flooring sheet",
     "questionImageQueries": [
       "linoleum flooring sheet"
+    ],
+    "questionImageLayoutQueries": [
+      "linoleum flooring sheet"
     ]
   },
   {
@@ -13845,6 +14394,9 @@
     "questionImageQuery": "parquet block flooring",
     "questionImageQueries": [
       "parquet block flooring"
+    ],
+    "questionImageLayoutQueries": [
+      "parquet block flooring"
     ]
   },
   {
@@ -13883,7 +14435,14 @@
     "answerImageQueries": [
       "quarry tile unglazed clay floor"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "quarry tile unglazed clay floor",
+    "questionImageQueries": [
+      "quarry tile unglazed clay floor"
+    ],
+    "questionImageLayoutQueries": [
+      "quarry tile unglazed clay floor"
+    ]
   },
   {
     "uid": "BM-318B",
@@ -13920,7 +14479,14 @@
     "answerImageQueries": [
       "Piedra"
     ],
-    "answerImageQuery": "Piedra"
+    "answerImageQuery": "Piedra",
+    "questionImageQuery": "Piedra",
+    "questionImageQueries": [
+      "Piedra"
+    ],
+    "questionImageLayoutQueries": [
+      "Piedra"
+    ]
   },
   {
     "uid": "BM-319B",
@@ -13957,7 +14523,14 @@
     "answerImageQueries": [
       "Rocersa"
     ],
-    "answerImageQuery": "Rocersa"
+    "answerImageQuery": "Rocersa",
+    "questionImageQuery": "Rocersa",
+    "questionImageQueries": [
+      "Rocersa"
+    ],
+    "questionImageLayoutQueries": [
+      "Rocersa"
+    ]
   },
   {
     "uid": "BM-320",
@@ -13994,7 +14567,14 @@
     "answerImageQueries": [
       "Tile bond"
     ],
-    "answerImageQuery": "Tile bond"
+    "answerImageQuery": "Tile bond",
+    "questionImageQuery": "Tile bond",
+    "questionImageQueries": [
+      "Tile bond"
+    ],
+    "questionImageLayoutQueries": [
+      "Tile bond"
+    ]
   },
   {
     "uid": "BM-321",
@@ -14036,6 +14616,9 @@
     "questionImageQuery": "cementitious tile adhesive mortar",
     "questionImageQueries": [
       "cementitious tile adhesive mortar"
+    ],
+    "questionImageLayoutQueries": [
+      "cementitious tile adhesive mortar"
     ]
   },
   {
@@ -14074,7 +14657,14 @@
     "answerImageQueries": [
       "marble floor crystallizer polishing"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "marble floor crystallizer polishing",
+    "questionImageQueries": [
+      "marble floor crystallizer polishing"
+    ],
+    "questionImageLayoutQueries": [
+      "marble floor crystallizer polishing"
+    ]
   },
   {
     "uid": "BM-323",
@@ -14115,6 +14705,9 @@
     "answerImageAlt": "Answer visual reference",
     "questionImageQuery": "ceramic floor tile",
     "questionImageQueries": [
+      "ceramic floor tile"
+    ],
+    "questionImageLayoutQueries": [
       "ceramic floor tile"
     ]
   }
