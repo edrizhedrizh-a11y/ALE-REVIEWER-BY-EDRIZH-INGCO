@@ -29,7 +29,7 @@
     "explanation": "Correct answer: a. AASHTO\nUlitin natin: AASHTO.\nIto, importante ang clue sa wording ng tanong. Ang sabi niya: “for suitability as subgrade materials” at may mention pa ng drainage at bearing capacity. Iyan ang malakas na clue.\nAng AASHTO soil classification system ay ginagamit para i-classify ang soils ayon sa performance nila bilang highway subgrade. So kapag usapang road subgrade, bearing value, drainage behavior, at suitability for roadway support, AASHTO agad ang iisipin mo.\nBakit ito ang tama?\nKasi ang AASHTO ay talagang ginawa para sa transportation and highway engineering context. Hindi lang basta description ng lupa, kundi mas performance-oriented siya kung okay ba ito bilang subgrade material.\nBakit mali ang ibang choices?\n•\tb. USCS – ito ang common trap.\nAng USCS o Unified Soil Classification System ay nagka-classify din ng soils, pero mas general siya: based on grain size at plasticity characteristics.\nSo oo, valid soil classification system ito, pero ang clue sa tanong ay subgrade suitability, drainage, bearing capacity. Mas pasok iyon sa AASHTO.\n•\tc. ASTM – mali agad ito bilang sagot sa classification system na tinatanong dito.\nASTM ay standards organization. Gumagawa sila ng test methods and specifications, pero hindi ito ang sagot sa tanong na “anong system ang nagka-classify ng inorganic soils for subgrade suitability?”\n•\td. None of the above – automatic tanggal ito dahil may tamang sagot na malinaw, which is AASHTO.\nElimination method\nIto ang iniisip mo dapat habang nagsasagot:\n1.\tHanapin ang keyword:\nsubgrade, drainage, bearing capacity\n2.\tTanungin mo agad sarili mo:\n“Anong system ang mas highway/subgrade ang orientation?”\nSagot: AASHTO\n3.\tPag nakita mo ang USCS, huwag agad padala dahil kilalang soil classification din siya.\nTingnan mo muna kung ano ang purpose ng classification sa tanong.\n4.\tASTM pa lang, puwede mo nang i-eliminate kasi standards body iyan, hindi iyon ang hinihinging classification answer dito.\nCommon ALE trap\nAng trap dito ay pag nakita mo ang word na soil classification, baka diretsong USCS ang maisip mo. Pero sa ALE, kailangan hindi lang alam ang term — kailangan makita mo ang context.\nKapag subgrade performance ang usapan, AASHTO ang mas malakas.\nPhilippine basis / practice\nSa Philippine construction and civil-related materials topics, kahit local practice tayo, ginagamit pa rin ang AASHTO, ASTM, at USCS as technical references in materials and geotechnical discussions. Dito, ang ALE logic ay malinaw: subgrade suitability = AASHTO.\nAno ang dapat mong tandaan dito?\nKapag ang tanong ay tungkol sa soil suitability for subgrade, lalo na may drainage at bearing capacity, AASHTO ang unang titingnan mo.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "",
+    "answerImageAlt": "AASHTO soil classification",
     "visualSourceRefs": [
       {
         "label": "Portland Cement Association — Applications of Cement",
@@ -52,7 +52,9 @@
       "soil classification chart",
       "AASHTO soil classification chart"
     ],
-    "answerImageQuery": "AASHTO soil classification"
+    "answerImageQuery": "AASHTO soil classification",
+    "answerImage": "https://www.aboutcivil.org/sites/default/files/2019-10/AASHTO-soil-classification-chart.jpg",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-002",
@@ -84,7 +86,7 @@
     "explanation": "Correct answer: a. Atterberg Limits\nUlitin natin: Atterberg Limits.\nIto, very classic board question ito. Ang Atterberg Limits ang tawag sa set of tests na tumitingin sa consistency behavior ng fine-grained soil depende sa water content.\nBakit ito ang tama?\nKasi ang Atterberg Limits ay umbrella term. Kasama rito ang:\n•\tLiquid Limit\n•\tPlastic Limit\n•\tat derived value na Plasticity Index\nSo kung ang tanong ay “tests” plural, at soils passing the No. 40 sieve, ang tamang mas malaking category ay Atterberg Limits.\nBakit mali ang ibang choices?\n•\tb. Liquid Limits – mali kasi isang part lang ito ng Atterberg limits.\n•\tc. Plastic Limits – same problem, one part lang din.\n•\td. Soil Limits – masyadong vague, hindi standard technical term dito.\nElimination method\nGanito ka dapat mag-isip:\n1.\tNapansin mo ba na “tests” ang wording? Plural.\n2.\tKapag plural at may grouping ng LL at PL type tests, hanapin mo ang general term.\n3.\tSa choices, ang broad and proper technical term ay Atterberg Limits.\n4.\tAng Liquid Limit at Plastic Limit ay specific components lang, so tanggal sila.\nTrap word\nAng trap dito ay yung mga examinee na pumipili ng familiar na part tulad ng Liquid Limit.\nPero tandaan:\nKung category ang tanong, category ang sagot.\nKung specific value ang tanong, specific term ang sagot.\nPhilippine practice\nSa local engineering and construction materials practice, ginagamit pa rin ang Atterberg limits for soil identification and suitability discussions, lalo na sa geotechnical and fill/subgrade concerns.\nAno ang dapat mong tandaan dito?\nAtterberg Limits ang collective name.\nLiquid Limit at Plastic Limit ay parts lang nito.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "",
+    "answerImageAlt": "Atterberg limits",
     "visualSourceRefs": [
       {
         "label": "Portland Cement Association — Cement and Concrete",
@@ -110,7 +112,10 @@
       "Atterberg limits",
       "Atterberg limits test",
       "Atterberg limits test chart"
-    ]
+    ],
+    "answerImage": "https://www.sabeder.com/sites/default/files/2017-10/atterberg-limits-graph.jpg",
+    "questionImage": "https://www.sabeder.com/sites/default/files/2017-10/atterberg-limits-graph.jpg",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-003",
@@ -142,7 +147,7 @@
     "explanation": "Correct answer: b. Plastic index\nUlitin natin: Plastic index.\nIto ay halos diretsong formula question.\nBakit ito ang tama?\nDahil ang formula na:\nPI = LL – PL\nay definition mismo ng Plasticity Index o sa choice dito, Plastic index.\nIto ang sukat ng range ng moisture content kung saan ang soil ay nasa plastic state.\nBakit mali ang ibang choices?\n•\ta. Plastic limit – mali.\nAng Plastic Limit ay isang specific moisture content lamang, hindi siya difference ng LL at PL.\n•\tc. Liquid limit – mali rin.\nLiquid limit is another single threshold moisture content, not the range.\n•\td. All of the above – hindi puwede kasi hindi naman lahat ng terms ay same meaning.\nElimination method\nIto ang iniisip mo dapat:\n1.\tMay formula bang binigay? Oo.\n2.\tKapag may exact formula sa tanong, hanapin mo ang term na eksaktong tumutugma sa formula.\n3.\tLL – PL equals PI.\nSo answer agad: Plastic index.\n4.\t‘Yung Plastic limit at Liquid limit, tanggal agad kasi hindi sila subtraction result. Mga boundary values lang sila.\nCommon trap\nMinsan sa board, kapag nakita ng examinee ang word na Plastic sa tanong, napipili agad ang Plastic limit.\nPero mali iyon. Basahin mo ang buong tanong.\nAng tanong dito ay hindi “what is the moisture content where…?”\nAng tanong dito ay “LL minus PL” — formula-based.\nImportant concept\n•\tLL = transition papuntang mas liquid behavior\n•\tPL = transition papuntang pag-crumbly / semi-solid boundary\n•\tPI = lawak ng plastic range\nAno ang dapat mong tandaan dito?\nKapag nakita mo ang LL – PL, huwag ka nang mag-isip pa nang malayo.\nPlastic index agad.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "",
+    "answerImageAlt": "Plasticity index",
     "visualSourceRefs": [
       {
         "label": "Portland Cement Association — Cement and Concrete",
@@ -157,7 +162,9 @@
       "Atterberg limits",
       "plasticity index soil chart"
     ],
-    "answerImageQuery": "Plasticity index"
+    "answerImageQuery": "Plasticity index",
+    "answerImage": "https://cementconcrete.org/wp-content/uploads/2023/10/Plasticity-chart-USCS.jpg",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-004",
@@ -189,7 +196,7 @@
     "explanation": "Correct answer: a. fill materials\nUlitin natin: fill materials.\nIto, ang clue ay yung tanong ay nagbibigay ng general definition. Hindi pa siya specific subtype.\nBakit ito ang tama?\nAng description ay very broad:\n•\tany soil\n•\tcrushed stone\n•\tsand\n•\tused to raise grade\n•\tman-made deposit\n•\tunder footings, pavers, slabs on grade\nIyan ang pinaka-general na konsepto ng fill materials.\nBakit hindi granular fill?\nKasi ang granular fill ay mas specific. Usually mas controlled ang gradation nito at mas particular ang application. Hindi lahat ng fill ay granular fill.\nBakit hindi borrow fill?\nAng borrow fill naman ay fill material na kinukuha sa borrow source o borrow pit, at may sarili ring suitability conditions. Ibig sabihin, isa rin itong specific type or source-based concept. Hindi ito ang pinaka-general definition.\nBakit mali ang “All of the above”?\nDahil hindi naman lahat ng fill materials ay automatic granular fill or borrow fill.\nAng tanong ay general definition, so dapat ang sagot ay general term, hindi halo-halong category.\nElimination method\nVery useful ito sa ALE:\n1.\tTingnan kung ang description ay broad o specific.\n2.\tKapag broad ang definition, hanapin mo ang broadest correct term.\n3.\tAng granular fill at borrow fill ay mas narrow kaysa fill materials.\n4.\tTherefore, ang natitira at pinakatama ay fill materials.\nCommon board trap\nAng trap dito ay kapag may mas technical pakinggan na choice, tulad ng granular fill, parang mukhang mas “engineer-sounding,” kaya iyon ang pinipili.\nPero sa board exam, hindi dahil mas technical ang tunog, iyon na ang tama.\nAng tama ay iyong sakto sa lawak ng definition.\nPhilippine practice\nSa local construction practice, “fill” is a broad working term. Pero kapag may specifications na, doon mo na idi-distinguish kung selected fill, granular fill, borrow fill, at iba pa.\nAno ang dapat mong tandaan dito?\nKapag general definition ang tanong, piliin ang general term.\nDito, iyon ay fill materials.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "construction fill material",
     "visualSourceRefs": [
       {
         "label": "Portland Cement Association — Cement and Concrete",
@@ -215,7 +222,10 @@
       "construction fill material",
       "earth fill construction",
       "fill materials"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?construction%20fill%20dirt%20soil&sig=4",
+    "questionImage": "https://source.unsplash.com/1200x800/?construction%20fill%20dirt%20soil&sig=4",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-005",
@@ -247,7 +257,7 @@
     "explanation": "Correct answer: b. Aggregates\nUlitin natin: Aggregates.\nMas precise pa diyan: ASTM C33 is the standard specification for concrete aggregates.\nBakit ito ang tama?\nDahil ASTM C33 talaga ang common reference for aggregates used in concrete.\nBakit mali ang ibang choices?\n•\ta. Cement – may sariling ASTM references ang cement, so hindi ito.\n•\tc. Water – may sarili ring standards para sa water quality in concrete and construction use.\n•\td. Concrete – tempting ito kasi may letter C sa ASTM C33 at aggregates are used in concrete. Pero tandaan: hindi ibig sabihin na “for concrete” ay “concrete na mismo” ang tinutukoy.\nAng standard ay para sa aggregates used in concrete.\nElimination method\nIto ang iniisip mo:\n1.\tKilala mo ba ang ASTM C33?\nKung oo, diretso ka na sa aggregates.\n2.\tKung hindi ka sure, i-eliminate mo ang mga masyadong broad o mali ang category:\no\twater? hindi\no\tcement? ibang standard iyon\no\tconcrete? masyadong broad\n3.\tNatitira: aggregates\nCommon trap\nMinsan ang examinee napipili ang concrete dahil naririnig nila “ASTM C33 for concrete aggregates.”\nNapuputol sa isip nila ang phrase, at “concrete” na lang ang naaalala.\nPero tandaan: ang standard is for the aggregates, not the whole concrete mix.\nPhilippine basis\nSa Philippine construction specifications, madalas ginagamit pa rin ang ASTM references sa materials. Kaya ALE-ready ka dapat sa ganitong numbering.\nAno ang dapat mong tandaan dito?\nASTM C33 = concrete aggregates.\nPag narinig mo C33, isipin mo agad: aggregates.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Construction aggregate",
     "visualSourceRefs": [
       {
         "label": "Portland Cement Association — Cement and Concrete",
@@ -263,7 +273,9 @@
       "sand and gravel aggregate",
       "construction aggregates sand gravel"
     ],
-    "questionImageQueries": []
+    "questionImageQueries": [],
+    "answerImage": "https://source.unsplash.com/1200x800/?construction%20aggregate%20sand%20gravel&sig=5",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-006",
@@ -310,7 +322,7 @@
       "road base gravel",
       "Base Course Materials"
     ],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "base course aggregate",
     "questionImageQuery": "base course aggregate",
     "questionImageQueries": [
       "base course aggregate",
@@ -321,7 +333,10 @@
       "base course aggregate",
       "road base gravel",
       "Base Course Materials"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?road%20base%20aggregate%20gravel&sig=6",
+    "questionImage": "https://source.unsplash.com/1200x800/?road%20base%20aggregate%20gravel&sig=6",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-007",
@@ -353,7 +368,7 @@
     "explanation": "Correct answer: a. Gravel well-graded\nUlitin natin: Gravel well-graded.\nIto naman, memory type ito pero puwedeng i-eliminate kahit medyo limot mo.\nBakit ito ang tama?\nSa USCS:\n•\tG = Gravel\n•\tW = Well-graded\nKaya GW = well-graded gravel\nBakit mali ang ibang choices?\n•\tb. Gravel well sifted – hindi standard USCS term\n•\tc. gravel well suited – imbento / non-technical phrasing\n•\td. Gravel weir – halatang maling pairing; ang “weir” ay hydraulic structure term, hindi soil classification descriptor\nElimination method\n1.\tTandaan ang USCS letters:\no\tG = gravel\no\tS = sand\no\tW = well-graded\no\tP = poorly graded\no\tC = clay\no\tM = silt\n2.\tKapag may choices na mukhang informal English lang at hindi standard technical word, tanggalin agad.\n3.\tDito, ang tanging standard phrase ay Gravel well-graded.\nCommon trap\nWalang gaanong deep trap dito. Ang trap lang ay kapag hindi kabisado ang letters. Pero kahit hindi kabisado:\n•\twell sifted\n•\twell suited\n•\tweir\nlahat iyan hindi tunog USCS terminology.\nPhilippine context\nKahit local practice tayo, ginagamit pa rin ang USCS notation sa geotechnical discussions. Kaya kailangan familiar ka sa letter combinations.\nAno ang dapat mong tandaan dito?\nGW = well-graded gravel.\nSimple, direct, high-yield memory item ito.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "",
+    "answerImageAlt": "well graded gravel",
     "visualSourceRefs": [
       {
         "label": "Portland Cement Association — Cement and Concrete",
@@ -368,7 +383,9 @@
       "gravel"
     ],
     "answerImageQuery": "well graded gravel",
-    "questionImageQueries": []
+    "questionImageQueries": [],
+    "answerImage": "https://source.unsplash.com/1200x800/?gravel%20aggregate&sig=7",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-008",
@@ -400,7 +417,7 @@
     "explanation": "Correct answer: c. apitong\nUlitin natin: apitong.\nIto, ginagamit ang word na piles, so structural, heavy-duty, load-bearing, and exposed-use mindset agad ang iisipin mo.\nBakit ito ang tama?\nAng apitong ay kilala sa mas heavy construction applications. Sa timber use associations sa Philippine setting, ito ang mas malapit sa piles, structural members, at more robust applications.\nBakit mali ang ibang choices?\n•\ta. kamagong – sobrang dense at premium/exotic, hindi ito ang “usual” practical answer for piles.\n•\tb. lauan – mas associated ito sa lighter construction uses, plywood, paneling, interior applications, not the best answer for piles.\n•\td. narra – premium finish wood, mas associated sa flooring, furniture, paneling, decorative and high-quality finish use kaysa piles.\nElimination method\nIto ang iniisip mo:\n1.\tAng piles ba ay finish material o structural/heavy-use material?\nStructural/heavy-use.\n2.\tTanggal agad ang mga mas kilala sa finish and decorative uses:\no\tnarra\no\tkamagong\n3.\tNatitira: lauan at apitong\n4.\tSa dalawa, alin ang mas structurally appropriate for piles?\nApitong\nCommon trap\nAng trap dito ay kapag ang examinee ay masyadong naka-focus lang sa “hardwood” tapos pipili ng narra or kamagong dahil mahal at matigas.\nPero sa board exam, tanungin mo:\n“Ito ba ang usual construction answer?”\nHindi “pinakamahal,” hindi “pinakasikat,” kundi usual practical use.\nPhilippine basis\nIto ay very Philippine-context type of item dahil local timber species ang choices. Sa ALE, mahalaga ang association ng species sa common application.\nAno ang dapat mong tandaan dito?\nKapag piles, isipin mo apitong — structural, practical, heavy-use association.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Dipterocarpus grandiflorus",
     "visualSourceRefs": [
       {
         "label": "Masonry Institute — Technical Resources",
@@ -426,7 +443,10 @@
       "Dipterocarpus grandiflorus",
       "Apitong wood",
       "apitong timber wood Philippines"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?timber%20piles%20hardwood&sig=8",
+    "questionImage": "https://source.unsplash.com/1200x800/?timber%20piles%20hardwood&sig=8",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-009",
@@ -458,7 +478,7 @@
     "explanation": "Correct answer: d. narra\nUlitin natin: narra.\nIto, pakinggan mo ang wording: wall cladding finishes and floorings.\nIyan ay language ng finish wood, hindi ng structural timber.\nBakit ito ang tama?\nAng narra ay strongly associated sa:\n•\tfine flooring\n•\tpaneling\n•\tfinish work\n•\thigh-quality interior wood applications\nSo kapag ang tanong ay finish-oriented at flooring/wall cladding ang context, narra ang pinaka-akmang sagot.\nBakit mali ang ibang choices?\n•\ta. kamagong – very hard, very dense, very premium, pero hindi ito ang usual construction answer for wall cladding and flooring in the ordinary ALE sense.\n•\tb. lauan – ito ang common trap. Ginagamit ang lauan sa paneling at plywood-related applications, oo. Pero pag pinagsama mo ang wall cladding finishes and floorings, mas classic finish-wood answer ang narra.\n•\tc. apitong – mas structural ang association nito, not the best finish-wood answer here.\nElimination method\nGanito dapat:\n1.\tHanapin ang use category:\nfinish ba o structural?\n2.\tSince wall cladding finishes and flooring ito, tanggal ang apitong.\n3.\tSa natitirang lauan, narra, kamagong:\no\tkamagong = too specialty / not usual\no\tlauan = common paneling/plywood association but not the strongest flooring-finish answer\no\tnarra = classic premium finish/flooring/paneling use\n4.\tKaya narra ang natitira.\nCommon trap\nAng biggest trap dito ay lauan.\nBakit? Kasi kapag narinig ang wall cladding, naiisip agad ng marami ang plywood or panel boards.\nPero ang tanong ay hindi lang wall cladding — may kasama pang finishes and floorings.\nAt doon lumalakas ang narra.\nPhilippine context\nSa Philippine materials and traditional timber-use memory items, narra is a very strong association for high-quality interior finishes and flooring.\nAno ang dapat mong tandaan dito?\nKapag finish flooring + wall cladding/paneling ang dating ng tanong, narra ang strong ALE answer.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Pterocarpus indicus",
     "visualSourceRefs": [
       {
         "label": "Gypsum Association — Technical Resources",
@@ -484,7 +504,10 @@
       "Pterocarpus indicus",
       "Narra wood",
       "narra wood flooring cladding Philippines"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?hardwood%20flooring%20wall%20cladding&sig=9",
+    "questionImage": "https://source.unsplash.com/1200x800/?hardwood%20flooring%20wall%20cladding&sig=9",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-010",
@@ -534,7 +557,7 @@
       "Gabion",
       "gabion basket retaining wall"
     ],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Gabion",
     "questionImageQuery": "Gabion",
     "questionImageQueries": [
       "Gabion",
@@ -543,7 +566,10 @@
     "questionImageLayoutQueries": [
       "Gabion",
       "gabion basket retaining wall"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?gabion%20wall%20stone%20basket&sig=10",
+    "questionImage": "https://source.unsplash.com/1200x800/?gabion%20wall%20stone%20basket&sig=10",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-011",
@@ -575,7 +601,7 @@
     "explanation": "Correct answer: d. Geomembranes\nUlitin natin: Geomembranes.\nIto, sobrang importanteng keyword dito ay continuous polymeric sheets at impermeable.\nBakit ito ang tama?\nAng geomembranes ay synthetic sheets na ginagamit kapag kailangan ng barrier against liquid migration. Kaya sila ginagamit sa:\n•\tponds\n•\tlagoons\n•\tcanals\n•\treservoirs\n•\tcontainment systems\nBakit mali ang ibang choices?\n•\ta. Geocomposites – composite products ito, combination ng dalawa o higit pang geosynthetic materials. Hindi ito ang pinaka-direct answer sa impermeable lining sheet.\n•\tb. Geonets – drainage-oriented structure ito, not impermeable sheet lining.\n•\tc. Geotextiles – permeable fabric ito usually for separation, filtration, reinforcement, protection; hindi ito ang sagot sa impermeable lining.\nElimination method\nIto ang thinking:\n1.\tHanapin ang clue word: impermeable\n2.\tPag impermeable ang hinahanap, tanggal agad ang geotextiles dahil karaniwan permeable iyan.\n3.\tGeonets? pang-drainage network, tanggal.\n4.\tGeocomposites? too broad or mixed type.\n5.\tNatitira: geomembranes\nCommon ALE trap\nAng trap dito ay pag nalilito ang examinee sa geotextile at geomembrane.\nTandaan mo ito:\n•\tGeotextile = usually permeable\n•\tGeomembrane = impermeable\nIyan ang pinakamabilis na pang-eliminate.\nPhilippine practice\nSa local engineering and environmental containment applications, ganyan din ang gamit ng term.\nAno ang dapat mong tandaan dito?\nKapag impermeable sheet lining ang usapan, ang sagot ay geomembrane.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Geomembrane",
     "visualSourceRefs": [
       {
         "label": "Portland Cement Association — Cement and Concrete",
@@ -598,7 +624,10 @@
     "questionImageLayoutQueries": [
       "Geomembrane",
       "geomembrane liner canal pond construction"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?geomembrane%20liner%20pond&sig=11",
+    "questionImage": "https://source.unsplash.com/1200x800/?geomembrane%20liner%20pond&sig=11",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-012",
@@ -644,7 +673,7 @@
       "Riprap",
       "riprap stone erosion control"
     ],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Riprap",
     "questionImageQuery": "Riprap",
     "questionImageQueries": [
       "Riprap",
@@ -653,7 +682,10 @@
     "questionImageLayoutQueries": [
       "Riprap",
       "riprap stone erosion control"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?riprap%20rock%20erosion%20control&sig=12",
+    "questionImage": "https://source.unsplash.com/1200x800/?riprap%20rock%20erosion%20control&sig=12",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-013",
@@ -685,7 +717,7 @@
     "explanation": "Correct answer: a. soil compaction\nUlitin natin: soil compaction.\nIto, very direct soil mechanics concept ito.\nBakit ito ang tama?\nAng compaction ay proseso ng pagsisiksik ng lupa para mabawasan ang air voids at tumaas ang density.\nIbig sabihin, pinapaganda mo ang stability, bearing capacity, at settlement performance ng soil.\nAng pinakamalaking clue dito ay:\n“increasing soil density by reducing the volume of air”\nIyan na mismo ang textbook definition ng compaction.\nBakit mali ang ibang choices?\n•\tb. soil screeding – screeding is more on leveling or striking off surface, madalas sa concrete o finish surface control. Hindi ito soil densification term.\n•\tc. soil tempering – ang “tempering” mas madalas sa pag-adjust ng moisture or workable condition ng material, hindi ito ang standard answer sa soil density increase.\n•\td. soil contracting – hindi standard geotechnical term ito para sa process na tinatanong.\nElimination method\nGanito ka dapat mag-isip:\n1.\tTingnan ang clue: increase density\n2.\tTingnan pa ang next clue: reduce air volume\n3.\tTanungin: “Anong process ang purposely ginagawa para mas siksik ang lupa?”\nSagot: compaction\n4.\tYung ibang terms, either finishing term o non-standard wording\nCommon trap\nMinsan nalilito ang examinee sa compaction at consolidation.\nTandaan:\n•\tCompaction = usually mechanical process, mostly air ang nababawasan\n•\tConsolidation = time-dependent settlement, usually water ang lumalabas sa saturated soil\nWala ang consolidation sa choices, pero magandang distinction iyan.\nPhilippine practice\nSa local site development, roadworks, at slab-on-fill preparation, proper compaction ay basic requirement bago ka magtuloy sa footing, pavement, or floor slab works.\nAno ang dapat mong tandaan dito?\nKapag ang tanong ay reduce air voids to increase soil density, sagot lagi: soil compaction.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Soil compaction",
     "visualSourceRefs": [
       {
         "label": "Masonry Institute — Technical Resources",
@@ -708,7 +740,10 @@
     "questionImageLayoutQueries": [
       "Soil compaction",
       "soil compaction"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?soil%20compaction%20construction%20roller&sig=13",
+    "questionImage": "https://source.unsplash.com/1200x800/?soil%20compaction%20construction%20roller&sig=13",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-014",
@@ -740,7 +775,7 @@
     "explanation": "Correct answer: c. bollards\nUlitin natin: bollards.\nIto, visual item ito. Kailangan ma-picture mo sa isip mo.\nBakit ito ang tama?\nAng bollards ay rigid short posts, usually steel or concrete, ginagamit para:\n•\tpigilan ang sasakyan\n•\ti-control ang access\n•\tihiwalay ang pedestrian zone sa vehicle path\n•\tprotektahan ang entries, sidewalks, storefronts\nEksaktong-eksakto sa description.\nBakit mali ang ibang choices?\n•\ta. fence – tuloy-tuloy na barrier ito, hindi individual rigid posts arranged in a line in the same sense as bollards.\n•\tb. railings – usually hand support or edge protection ito, hindi access-control posts for vehicles.\n•\td. none of the above – mali dahil may exact answer na.\nElimination method\nIto ang iniisip mo:\n1.\tKey phrase: metal or concrete rigid posts\n2.\tAnother clue: close off road/path to vehicles\n3.\tAnother clue: separate traffic from pedestrians\n4.\tSa choices, ang pinaka-exact object name ay bollards\nCommon trap\nMay mga examinee na napipili ang railings dahil pareho silang barrier-like.\nPero tandaan:\n•\tRailings = usually continuous handrail or protective railing\n•\tBollards = individual posts for control/protection\nPhilippine context\nMakikita mo ito sa malls, sidewalks, transport terminals, frontage protection, at urban design details. Practical na practical ito sa local setting.\nAno ang dapat mong tandaan dito?\nKapag rigid posts na pangharang sa sasakyan at pang-separate ng pedestrians, bollards iyan.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Bollard",
     "visualSourceRefs": [
       {
         "label": "Masonry Institute — Technical Resources",
@@ -763,7 +798,10 @@
     "questionImageLayoutQueries": [
       "Bollard",
       "road bollards metal concrete posts"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?concrete%20bollards%20metal%20bollards&sig=14",
+    "questionImage": "https://source.unsplash.com/1200x800/?concrete%20bollards%20metal%20bollards&sig=14",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-015",
@@ -795,7 +833,7 @@
     "explanation": "Correct answer: c. berm\nUlitin natin: berm.\nIto, ang pinakamahalagang clue ay bank of earth placed against exterior wall.\nBakit ito ang tama?\nAng berm ay embankment o bank of earth. Sa architecture and passive design context, puwede itong ilagay sa tabi ng exterior wall para makatulong sa thermal protection o insulation effect laban sa temperature extremes.\nBakit mali ang ibang choices?\n•\ta. drum wall – hindi ito ang kilalang standard term sa ganitong description.\n•\tb. trombe wall – very common trap ito.\nAng Trombe wall ay thermal mass wall, usually masonry wall with glazing and air space, ginagamit for solar heat gain and passive heating.\nHindi ito bank of earth.\n•\td. sun control – masyadong broad. Strategy ito, hindi specific earth bank term.\nElimination method\nGanito ang ALE logic:\n1.\tHanapin ang literal object sa tanong: bank of earth\n2.\tKung earth ang material, tanggal si trombe wall, kasi wall system iyon\n3.\tTanggal din ang broad term na sun control\n4.\tNatitira ang specific earth-form term: berm\nCommon trap\nAng pinaka-trap dito ay Trombe wall kasi thermal protection din ang association niya.\nPero huwag kang masilaw sa pareho nilang thermal function.\nBasahin mo ang material description:\n•\tearth bank ba?\n•\to masonry solar wall?\nDito, earth bank ang tanong. Kaya berm.\nPhilippine context\nSa passive design, earth berming is a recognized strategy, though mas common ito sa certain climate-responsive designs kaysa sa ordinary urban buildings.\nAno ang dapat mong tandaan dito?\nKapag ang clue ay bank of earth against exterior wall, ang sagot ay berm, hindi trombe wall.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Berm",
     "visualSourceRefs": [
       {
         "label": "Portland Cement Association — Cement and Concrete",
@@ -822,7 +860,10 @@
     "questionImageLayoutQueries": [
       "Berm",
       "earth berm against building wall"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?earth%20berm%20landscape&sig=15",
+    "questionImage": "https://source.unsplash.com/1200x800/?earth%20berm%20landscape&sig=15",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-016",
@@ -854,7 +895,7 @@
     "explanation": "Correct answer: b. grading\nUlitin natin: grading.\nIto, kailangan makita mo ang difference ng general process versus partial operation.\nBakit ito ang tama?\nAng grading ay general process ng pag-shape, pag-level, pag-cut, at pag-fill ng lupa para ma-achieve ang tamang elevation and surface condition bago ang final finish tulad ng paving.\nBakit hindi cut and fill?\nKasi ang cut and fill ay bahagi o method within earthwork operations, pero ang tanong ay mas general:\n“excavation or filling ... in preparation for a finishing course”\nMas sakto diyan ang grading.\nBakit mali ang ibang choices?\n•\ta. cut and fill – related, pero mas narrow ito kaysa grading\n•\tc. site preparation – masyadong broad, kasi kasama rito clearing, demolition, utilities prep, etc.\n•\td. benching – step-like cutting ito sa slopes or embankments, hindi general answer\nElimination method\nIto ang iniisip mo:\n1.\tTanong: general earth shaping ba ito bago paving?\nOo.\n2.\tHanapin ang broad but exact construction term.\nIyan ang grading.\n3.\tSite preparation masyadong broad\n4.\tCut and fill masyadong specific\n5.\tBenching slope technique lang\nCommon trap\nAng common trap dito ay cut and fill dahil iyon ang pinaka-familiar na earthwork term sa marami.\nPero tandaan mo:\nKapag ang tanong ay tumutukoy sa overall preparation of levels and surface, grading ang sagot.\nPhilippine practice\nSa local plans at specs, “grading plan” at “grading works” ang standard language kapag site level adjustments na ang usapan.\nAno ang dapat mong tandaan dito?\nGrading ang overall earth shaping and leveling process bago ang final surface like paving.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Earthworks engineering",
     "visualSourceRefs": [
       {
         "label": "Masonry Institute — Technical Resources",
@@ -880,7 +921,10 @@
       "Earthworks engineering",
       "Land grading",
       "grading"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?land%20grading%20construction&sig=16",
+    "questionImage": "https://source.unsplash.com/1200x800/?land%20grading%20construction&sig=16",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-017",
@@ -927,7 +971,7 @@
       "Bitumen",
       "coal tar pitch waterproofing material"
     ],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Coal tar pitch",
     "questionImageQuery": "Coal tar pitch",
     "questionImageQueries": [
       "Coal tar pitch",
@@ -938,7 +982,10 @@
       "Coal tar pitch",
       "Bitumen",
       "coal tar pitch waterproofing material"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?bitumen%20asphalt%20pitch&sig=17",
+    "questionImage": "https://source.unsplash.com/1200x800/?bitumen%20asphalt%20pitch&sig=17",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-018",
@@ -970,7 +1017,7 @@
     "explanation": "Correct answer: a. Turf pavements\nUlitin natin: Turf pavements.\nIto, very descriptive item ito.\nBakit ito ang tama?\nAng turf pavement ay paving system na may openings or spacing para makalusot o tumubo ang grass/ground cover, usually with soil infill. Ginagamit ito kung gusto mo ng partially paved yet greener surface.\nBakit mali ang ibang choices?\n•\tb. Rigid pavements – concrete pavement classification ito, not the exact system described\n•\tc. Flexible pavements – asphalt-type or layered flexible system classification ito, hindi exact answer\n•\td. All of the above – mali dahil hindi naman lahat ng rigid o flexible pavement ay grass-accommodating unit pavers\nElimination method\nIto ang clue spotting:\n1.\tunit pavers\n2.\tspacing in between\n3.\taccommodate grass or ground covers\nKapag ganyan ang description, hindi ka dapat sumagot ng general pavement category.\nDapat ang sagot mo ay specific pavement type, which is turf pavements.\nCommon trap\nAng trap dito ay “pavement” word pa lang, baka rigid/flexible kaagad ang iniisip.\nPero huwag kang titigil sa word na pavement. Basahin mo ang buong descriptive phrase.\nPhilippine context\nMakikita ito sa overflow parking, landscape-compatible parking areas, at eco-sensitive site treatments.\nAno ang dapat mong tandaan dito?\nKapag may grass sa pagitan ng unit pavers, ang sagot ay turf pavement.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Grass pavers",
     "visualSourceRefs": [
       {
         "label": "Portland Cement Association — Cement and Concrete",
@@ -996,7 +1043,10 @@
       "Grass pavers",
       "permeable paving grass",
       "grass paver turf pavement"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?grass%20pavers%20permeable%20pavement&sig=18",
+    "questionImage": "https://source.unsplash.com/1200x800/?grass%20pavers%20permeable%20pavement&sig=18",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-019",
@@ -1041,7 +1091,10 @@
       "None of the above",
       "Portland cement"
     ],
-    "answerImageQuery": "None of the above"
+    "answerImageQuery": "None of the above",
+    "answerImage": "https://source.unsplash.com/1200x800/?cement%20powder%20construction&sig=19",
+    "answerImageCredit": "Direct image link",
+    "answerImageAlt": "None of the above"
   },
   {
     "uid": "BM-020",
@@ -1073,7 +1126,7 @@
     "explanation": "Correct answer: b. Lime\nUlitin natin: Lime.\nIto, may historical clue ang tanong.\nBakit ito ang tama?\nAng lime ay isa sa pinakamatandang manufactured building materials at ginamit nang matagal sa:\n•\tmortar\n•\tplaster\n•\trendering\n•\tmasonry work\nAng supporting note pa nga sa page ay tumutulong sa logic na ito.\nBakit mali ang ibang choices?\n•\ta. Cement – ang “real cement” in the stronger historical sense came later kaysa traditional lime use\n•\tc. Gypsum – old material din ito, pero sa wording ng item at historical context ng mortar-and-plaster use by early civilizations, lime ang strongest answer\n•\td. Plaster – hindi ito material family in the same way; mas product/application term ito\nElimination method\nGanito ang isipin mo:\n1.\tKey phrase: oldest manufactured building materials\n2.\tAnother clue: used both as mortar and plaster\n3.\tAmong the choices, the classic historical binder is lime\n4.\tCement is later, plaster is too generic as application term\nCommon trap\nMay pipili ng gypsum dahil old material din siya.\nPero sa board-type logic, kapag ang tanong ay traditional mortar and plaster binder, lime ang mas classic answer.\nPhilippine context\nSa heritage structures at traditional masonry discussions sa Pilipinas, lime mortar at lime plaster ay napakahalagang concepts.\nAno ang dapat mong tandaan dito?\nKapag historical binder for mortar and plaster, isipin mo agad: lime.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Lime mortar",
     "visualSourceRefs": [
       {
         "label": "Portland Cement Association — Applications of Cement",
@@ -1102,7 +1155,10 @@
       "Calcium oxide",
       "Lime plaster",
       "building lime mortar plaster"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?lime%20mortar%20plaster%20masonry&sig=20",
+    "questionImage": "https://source.unsplash.com/1200x800/?lime%20mortar%20plaster%20masonry&sig=20",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-021",
@@ -1149,7 +1205,7 @@
       "Blended cement",
       "blended cement bag construction"
     ],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Portland cement bag",
     "questionImageQuery": "Portland cement bag",
     "questionImageQueries": [
       "Portland cement bag",
@@ -1160,7 +1216,10 @@
       "Portland cement bag",
       "Blended cement",
       "blended cement bag construction"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?cement%20bag%20construction&sig=21",
+    "questionImage": "https://source.unsplash.com/1200x800/?cement%20bag%20construction&sig=21",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-022",
@@ -1192,7 +1251,7 @@
     "explanation": "Correct answer: a. lime and silica\nUlitin natin: lime and silica.\nIto, among the choices, ito ang best and most foundational answer.\nBakit ito ang tama?\nAng Portland cement ay ginagawa mula sa raw materials na ang pangunahing constituents ay:\n•\tlime\n•\tsilica\nKasama rin sa mas kumpletong chemistry ang alumina and iron oxide, pero sa choices na ibinigay, ang pinaka-basic and correct pair ay lime and silica.\nBakit mali ang ibang choices?\n•\tb. calcium & sand – malapit ang tunog pero hindi ito ang standard/formal pair na ibinibigay sa ganitong tanong\n•\tc. grey powder – description lang ito ng appearance, hindi composition\n•\td. tetracalcium aluminoferrite – isang compound/clinker constituent ito sa advanced cement chemistry, pero hindi ito ang “basic components” answer na hinihingi dito\nElimination method\nGanito ang step-by-step:\n1.\tTanong ba ay tungkol sa appearance? Hindi. Tanggal si grey powder.\n2.\tTanong ba ay about one advanced compound only? Hindi. Tanggal si tetracalcium aluminoferrite.\n3.\tNatira ang two-material pairs.\n4.\tSa dalawang pairs, ang mas standard at fundamental answer ay lime and silica.\nCommon trap\nMay examinee na naa-attract sa mas technical-sounding answer tulad ng tetracalcium aluminoferrite.\nPero tandaan:\nHindi dahil mas komplikado ang tunog, iyon na ang tama.\nTingnan mo kung sakto ba sa wording na basic components.\nAno ang dapat mong tandaan dito?\nSa basic Portland cement composition, ang unang tandaan mo ay lime and silica.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "",
+    "answerImageAlt": "Portland cement clinker",
     "visualSourceRefs": [
       {
         "label": "Portland Cement Association — Applications of Cement",
@@ -1218,7 +1277,10 @@
       "Portland cement clinker",
       "cement raw materials limestone clay",
       "Portland cement raw materials lime silica"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?cement%20clinker%20limestone%20clay&sig=22",
+    "questionImage": "https://source.unsplash.com/1200x800/?cement%20clinker%20limestone%20clay&sig=22",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-023",
@@ -1250,7 +1312,7 @@
     "explanation": "Correct answer: a. ASTM C150\nUlitin natin: ASTM C150.\nIto ay high-yield memory item.\nBakit ito ang tama?\nASTM C150 ang standard specification for Portland Cement.\nBakit mali ang ibang choices?\n•\tb. ASTM C94 – ito ay para sa ready-mixed concrete\n•\tc. ASTM C33 – para sa aggregates\n•\td. ASTM 615 – steel bars/reinforcing-related designation, hindi Portland cement\nElimination method\nIto ang mabilis na memory map:\n•\tC150 = Portland cement\n•\tC94 = ready-mix concrete\n•\tC33 = aggregates\n•\tA615 / 615 = reinforcing steel bars\nKahit medyo malito ka, puwede mo silang alisin by category.\nCommon trap\nMinsan nalilito sa C33 kasi naaalala lang na ASTM at concrete-related ito.\nPero tandaan:\n•\tconcrete-related standards are many\n•\tdapat alam mo yung specific material na tinutukoy\nAno ang dapat mong tandaan dito?\nASTM C150 = Portland Cement.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "",
+    "answerImageAlt": "Portland cement",
     "visualSourceRefs": [
       {
         "label": "Portland Cement Association — Applications of Cement",
@@ -1265,7 +1327,9 @@
       "Portland cement types",
       "ASTM C150 cement types chart"
     ],
-    "answerImageQuery": "Portland cement"
+    "answerImageQuery": "Portland cement",
+    "answerImage": "https://source.unsplash.com/1200x800/?portland%20cement%20bag&sig=23",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-024",
@@ -1297,7 +1361,7 @@
     "explanation": "Correct answer: a. 40 kilograms\nUlitin natin: 40 kilograms.\nDito, very important ang Philippine context mo.\nBakit ito ang tama?\nSa Philippine commercial practice, ang karaniwang bagged cement ay 40 kg per bag.\nBakit mali ang ibang choices?\n•\tb. One cubic volume – mali agad. Hindi ito weight.\n•\tc. 46 kilograms – hindi ito ang standard commercial bag weight sa Philippine market\n•\td. All of the above – impossible, dahil may mali nang choice at magkaibang unit/idea pa\nElimination method\nGanito ang mabilis na diskarte:\n1.\tTanong = weight\n2.\tKaya tanggal agad ang anything na hindi weight unit\n3.\t“One cubic volume” tanggal agad\n4.\tBetween 40 and 46 kg, gamitin mo ang local practice: 40 kg\nImportant note\nMay mga lumang foreign references na gumagamit ng 94-lb bag at in proportioning sometimes associated with 1 cubic foot equivalent.\nPero huwag mo iyang ipaghalo sa tanong na ito.\nDito ang tanong ay weight of one bag in practical Philippine market use.\nSo sagot: 40 kilograms.\nCommon trap\nTrap dito ang paghalo-halo ng:\n•\tweight\n•\tvolume equivalent\n•\tforeign old bag standard\nBasahin ang mismong tanong:\nweight ang hinahanap.\nAno ang dapat mong tandaan dito?\nSa Philippine ALE/practice, 1 bag cement = 40 kg.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "",
+    "answerImageAlt": "cement bag",
     "visualSourceRefs": [
       {
         "label": "Natural Stone Institute — Stone Resources",
@@ -1316,7 +1380,9 @@
       "Portland cement bag",
       "Portland cement bag Philippines"
     ],
-    "answerImageQuery": "cement bag"
+    "answerImageQuery": "cement bag",
+    "answerImage": "https://source.unsplash.com/1200x800/?cement%20bag&sig=24",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-025",
@@ -1362,7 +1428,10 @@
       "Portland cement bag",
       "cement bag volume 1 cubic foot"
     ],
-    "answerImageQuery": "cement bag"
+    "answerImageQuery": "cement bag",
+    "answerImage": "https://source.unsplash.com/1200x800/?cement%20bag%20concrete&sig=25",
+    "answerImageCredit": "Direct image link",
+    "answerImageAlt": "cement bag"
   },
   {
     "uid": "BM-026",
@@ -1407,7 +1476,10 @@
       "Portland cement",
       "Portland cement Type I"
     ],
-    "answerImageQuery": "Portland cement"
+    "answerImageQuery": "Portland cement",
+    "answerImage": "https://source.unsplash.com/1200x800/?portland%20cement&sig=26",
+    "answerImageCredit": "Direct image link",
+    "answerImageAlt": "Portland cement"
   },
   {
     "uid": "BM-027",
@@ -1452,7 +1524,10 @@
       "Portland cement",
       "Portland cement Type IIA"
     ],
-    "answerImageQuery": "Portland cement"
+    "answerImageQuery": "Portland cement",
+    "answerImage": "https://source.unsplash.com/1200x800/?portland%20cement%20bag&sig=27",
+    "answerImageCredit": "Direct image link",
+    "answerImageAlt": "Portland cement"
   },
   {
     "uid": "BM-028",
@@ -1499,7 +1574,7 @@
       "sand and gravel aggregate",
       "construction aggregates sand gravel"
     ],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Construction aggregate",
     "questionImageQuery": "Construction aggregate",
     "questionImageQueries": [
       "Construction aggregate",
@@ -1510,7 +1585,10 @@
       "Construction aggregate",
       "sand and gravel aggregate",
       "construction aggregates sand gravel"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?concrete%20aggregate%20gravel%20sand&sig=28",
+    "questionImage": "https://source.unsplash.com/1200x800/?concrete%20aggregate%20gravel%20sand&sig=28",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-029",
@@ -1542,7 +1620,7 @@
     "explanation": "Correct answer: a. Aggregates\nUlitin natin: Aggregates.\nIto, inulit lang ng reviewer ang high-yield memory item.\nBakit ito ang tama?\nASTM C33 is the standard specification for concrete aggregates.\nBakit hindi sand?\nIto ang magandang usapan dito.\nTotoo, ang sand ay fine aggregate. Pero ang standard na ito ay hindi lang para sa sand. Kasama rin ang aggregate requirements broadly for concrete use.\nSo kung may choice na Aggregates at may choice na Sand, piliin mo ang mas complete at mas tamang category.\nBakit mali ang ibang choices?\n•\tb. Plastic – obvious na out of category\n•\tc. Sand – too narrow\n•\td. Cement – maling material category\nElimination method\n1.\tNaalala mo ba ang C33? Kung oo, diretso na.\n2.\tKung hindi, alisin mo ang obvious na hindi materials standard dito:\no\tplastic\no\tcement\n3.\tBetween sand and aggregates, piliin ang broader correct term\n4.\tKaya Aggregates\nCommon trap\nAng trap dito ay sand dahil kasali nga naman ang sand sa aggregate group.\nPero ALE strategy:\nKapag may specific at may broader correct category, piliin mo ang mas sakto sa title ng standard.\nAno ang dapat mong tandaan dito?\nASTM C33 = Aggregates, hindi lang sand.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Construction aggregate",
     "visualSourceRefs": [
       {
         "label": "FHWA — Portland Cement Concrete Testing Manual",
@@ -1558,7 +1636,9 @@
       "sand and gravel aggregate",
       "construction aggregates sand gravel"
     ],
-    "questionImageQueries": []
+    "questionImageQueries": [],
+    "answerImage": "https://source.unsplash.com/1200x800/?construction%20aggregate&sig=29",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-030",
@@ -1590,7 +1670,7 @@
     "explanation": "Correct answer: c. 3/4\" crushed gravel\nUlitin natin: 3/4-inch crushed gravel.\nIto, mahalagang maintindihan ang logic, hindi lang basta tandaan.\nBakit ito ang tama?\nAng reinforced concrete columns ay kadalasang may:\n•\tmas siksik na reinforcement\n•\tmas limited na clear spacing sa bakal\n•\tmas delikadong magka-honeycomb kapag sobrang laki ng aggregates\nKaya safer at mas appropriate ang smaller coarse aggregate, tulad ng 3/4-inch crushed gravel, para makadaan nang maayos sa pagitan ng rebars at ma-compacted nang mas mabuti.\nBakit hindi G-1?\nSa reviewer logic, ang G-1 ay mas bagay sa mas massive or less congested placements tulad ng certain slabs on fill at footings.\nSa columns, mas controlled at smaller nominal size ang gusto mo.\nBakit mali ang ibang choices?\n•\ta. G-1 – too large or less suitable as default for columns\n•\tb. G-1 or 3/4\" crushed gravel – board exam usually wants the best specific answer, hindi “puwede na rin” answer\n•\td. None of the choices – mali dahil may tamang specific choice\nElimination method\nIto ang iniisip mo:\n1.\tAnong klaseng member ang column?\nVertical, reinforced, usually mas dense ang rebars\n2.\tSa siksik na reinforcement, mas bagay ba ang mas malaking aggregate?\nHindi.\n3.\tSo alisin mo ang mas malaking or vague choices.\n4.\tMatitira ang 3/4\" crushed gravel\nCommon trap\nAng trap dito ay G-1 or 3/4\" dahil parang safe pakinggan.\nPero tandaan: kapag board exam gusto ng pinaka-angkop, hanapin mo ang mas precise at mas structurally sensible choice.\nPhilippine practice\nSa actual design and concrete practice, ang max aggregate size ay dapat laging compatible sa:\n•\tbar spacing\n•\tmember thickness\n•\tclear cover\n•\tplacement method\nPero sa reviewer item na ito, ang tamang review answer ay 3/4-inch crushed gravel para sa columns.\nAno ang dapat mong tandaan dito?\nKapag RC columns, isipin mo smaller aggregate size dahil sa reinforcement congestion — kaya 3/4-inch crushed gravel.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "crushed stone aggregate",
     "visualSourceRefs": [
       {
         "label": "FHWA — Portland Cement Concrete Testing Manual",
@@ -1605,7 +1685,9 @@
       "crushed stone aggregate",
       "gravel aggregate",
       "3/4\" crushed gravel"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?crushed%20gravel%20aggregate&sig=30",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-031",
@@ -1637,7 +1719,7 @@
     "explanation": "Correct answer: a. G-1\nUlitin natin: G-1.\nIto, reviewer-specific construction memory item ito.\nBakit ito ang tama?\nSa page mismo, may note sa ilalim na nagsasabi ng reviewer logic:\n•\tUse 3/4\" crushed for slabs, beams, RC walls, and columns\n•\tUse G-1 crushed for slabs on fill/on grade and footings\nSo sa framing ng reviewer, para sa slab on fill at footings, ang expected answer ay G-1.\nBakit kailangang bantayan ito?\nKasi sa actual practice, ang aggregate size puwedeng mag-vary depende sa:\n•\tstructural design\n•\tspacing ng bakal\n•\tthickness ng member\n•\tcover\n•\tmix design requirements\nPero dahil reviewer item ito at malinaw ang intended pairing, G-1 ang sagot.\nBakit mali ang ibang choices?\n•\tb. 3/4\" crushed gravel – ito ang common trap kasi familiar siya at ginagamit din sa maraming members, pero hindi ito ang pairing na gusto ng reviewer para sa slab on fill and footings.\n•\tc. 4 inches – obviously oversized and unrealistic for normal concrete mix here\n•\td. Either of the above – board exam usually avoids vague “pwede rin pareho” if may specific intended answer\nElimination method\nIto ang dapat mong iniisip:\n1.\tIhiwalay mo ang columns/beams/walls versus slab on fill/footings\n2.\tMas congested members usually use smaller aggregate\n3.\tMore massive/base-type placements can accept G-1 in reviewer logic\n4.\tKaya para sa slab on fill and footings → G-1\nCommon trap\nIto ang trap pair:\n•\tColumns → 3/4\"\n•\tSlab on fill and footings → G-1\nMadaling magpalit iyan kapag nagmamadali ka.\nKaya ang gawin mo:\ncolumns = mas maliit\nfootings/on-fill = G-1\nAno ang dapat mong tandaan dito?\nSa reviewer logic, slab on fill and footings = G-1.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "",
+    "answerImageAlt": "coarse aggregate gravel",
     "visualSourceRefs": [
       {
         "label": "FHWA — Portland Cement Concrete Testing Manual",
@@ -1652,7 +1734,9 @@
       "concrete aggregate",
       "coarse aggregate gravel concrete"
     ],
-    "answerImageQuery": "coarse aggregate gravel"
+    "answerImageQuery": "coarse aggregate gravel",
+    "answerImage": "https://source.unsplash.com/1200x800/?coarse%20aggregate%20gravel&sig=31",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-032",
@@ -1684,7 +1768,7 @@
     "explanation": "Correct answer: b. lightweight aggregates\nUlitin natin: lightweight aggregates.\nIto, straightforward pero magandang i-analyze.\nBakit ito ang tama?\nKapag ang aggregate ay lightweight, natural na:\n•\tbumababa ang dead load\n•\tmas maganda ang thermal insulation\n•\tmadalas mas okay din sa acoustical performance kaysa ordinary dense aggregate concrete\nIyan ang classic function ng lightweight aggregate concrete.\nBakit mali ang ibang choices?\n•\ta. fine aggregates – classification lang ito by size, hindi by density/performance\n•\tc. coarse aggregates – same problem, size classification lang\n•\td. banda y banda bulik – obvious na hindi technical construction term; tanggal agad\nElimination method\n1.\tHanapin ang property clues:\no\treduce dead load\no\thigh insulating value\no\tgood acoustical properties\n2.\tIyan ay density/performance clues, hindi size clues\n3.\tSo alisin ang fine at coarse\n4.\tNatitira ang lightweight aggregates\nCommon trap\nWalang masyadong trap dito maliban sa pagkapit sa familiar words like fine or coarse.\nPero tandaan:\nAng tanong ay hindi tungkol sa size, kundi tungkol sa performance.\nAno ang dapat mong tandaan dito?\nKapag ang clue ay magaan, insulating, acoustical, sagot mo ay lightweight aggregates.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Lightweight concrete aggregate",
     "visualSourceRefs": [
       {
         "label": "FHWA — Portland Cement Concrete Testing Manual",
@@ -1710,7 +1794,10 @@
       "Lightweight concrete aggregate",
       "expanded clay aggregate",
       "lightweight aggregate concrete expanded clay"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?lightweight%20aggregate%20expanded%20clay&sig=32",
+    "questionImage": "https://source.unsplash.com/1200x800/?lightweight%20aggregate%20expanded%20clay&sig=32",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-033",
@@ -1742,7 +1829,7 @@
     "explanation": "Correct answer: b. Vermiculite\nUlitin natin: Vermiculite.\nIto, halos sinagot na rin ng reviewer note sa baba.\nBakit ito ang tama?\nAng vermiculite ay isang micaceous mineral.\nKapag ininitan, nag-e-expand ito nang malaki, kaya nagiging lightweight material suitable for:\n•\tlightweight concrete\n•\tfireproofing\n•\tplaster\n•\tinsulation-related uses\nBakit mali ang ibang choices?\n•\ta. Perlite – lightweight din ito, pero hindi ito ang micaceous mineral na hinahanap\n•\tc. Pumice – volcanic lightweight aggregate ito, pero hindi micaceous\n•\td. Diatomite – siliceous material ito from diatoms, not micaceous\nElimination method\nIto ang clue:\n1.\tHindi lang lightweight aggregate ang tanong\n2.\tSpecific clue: micaceous mineral\n3.\tSa choices, ang pinaka-kilalang micaceous expanding mineral ay vermiculite\nCommon trap\nAng trap dito ay perlite, kasi lightweight at insulation-related din siya.\nPero tandaan:\n•\tVermiculite = micaceous\n•\tPerlite = expanded volcanic glass-type material\nAno ang dapat mong tandaan dito?\nKapag may word na micaceous sa lightweight aggregates, vermiculite agad.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Vermiculite",
     "visualSourceRefs": [
       {
         "label": "Portland Cement Association — Applications of Cement",
@@ -1765,7 +1852,10 @@
     "questionImageLayoutQueries": [
       "Vermiculite",
       "vermiculite lightweight aggregate"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?vermiculite&sig=33",
+    "questionImage": "https://source.unsplash.com/1200x800/?vermiculite&sig=33",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-034",
@@ -1797,7 +1887,7 @@
     "explanation": "Correct answer: a. Perlite\nUlitin natin: Perlite.\nIto, kailangan mo lang ihiwalay ang personalities ng apat na materials.\nBakit ito ang tama?\nAng perlite ay lightweight, inert, at ginagamit sa insulation applications.\nSa reviewer logic, siya ang tumutugma sa description na stable silicates na insulating aggregate.\nBakit mali ang ibang choices?\n•\tb. Vermiculite – magaan at insulating din, oo, pero sa previous item siya ang micaceous mineral. Iba ang clue roon.\n•\tc. Pumice – lightweight volcanic material din, pero hindi ito ang best match sa wording na stable silicates insulating aggregate sa item na ito.\n•\td. Diatomite – siliceous material ito, pero hindi ito ang pinaka-expected answer sa reviewer framing.\nElimination method\nGanito ang diskarte:\n1.\tI-match mo ang special identity ng bawat option:\no\tVermiculite = micaceous\no\tPerlite = inert insulating aggregate\no\tPumice = porous volcanic lightweight aggregate\no\tDiatomite = siliceous deposit from diatoms\n2.\tDahil ang clue ay inert aggregate used for insulation at stable silicates, pinakamalakas si Perlite\nCommon trap\nAng trap dito ay pag pinaghalo mo ang perlite at vermiculite dahil pareho silang lightweight at insulation-related.\nKaya ang mnemonic mo:\n•\tVermiculite = micaceous, exfoliating\n•\tPerlite = inert, insulation aggregate\nPhilippine / ALE reasoning\nSa ganitong reviewer item, minsan hindi sobrang modern-spec precise ang wording, kaya ang best move mo ay match the most classically associated material sa description.\nAno ang dapat mong tandaan dito?\nKapag ang clue ay inert insulating aggregate composed of stable silicates, isipin mo Perlite.\n\nSige, tuloy tayo sa Page 4.\nContinue lang ang numbering, so ang start natin dito ay Question 35.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Perlite",
     "visualSourceRefs": [
       {
         "label": "ACI — Concrete Materials / Admixtures",
@@ -1820,7 +1910,10 @@
     "questionImageLayoutQueries": [
       "Perlite",
       "perlite lightweight aggregate construction"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?perlite&sig=34",
+    "questionImage": "https://source.unsplash.com/1200x800/?perlite&sig=34",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-035",
@@ -1867,7 +1960,7 @@
       "Portland cement paste",
       "paste"
     ],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "cement paste",
     "questionImageQuery": "cement paste",
     "questionImageQueries": [
       "cement paste",
@@ -1878,7 +1971,10 @@
       "cement paste",
       "Portland cement paste",
       "paste"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?cement%20paste&sig=35",
+    "questionImage": "https://source.unsplash.com/1200x800/?cement%20paste&sig=35",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-036",
@@ -1910,7 +2006,7 @@
     "explanation": "Correct answer: a. 28\nUlitin natin: 28 days.\nIto, reviewer-type question ito, at kailangan maging maingat sa wording.\nBakit ito ang tama?\nSa construction at materials review, ang pinaka-common benchmark ng concrete strength development ay 28 days.\nKapag sinabing:\n•\tfull design strength\n•\tstandard compressive strength age\n•\tmaximum expected normal strength basis in reviewer logic\nang sagot ay kadalasan 28 days.\nImportanteng linaw\nSa totoong site practice, may minimum curing periods depende sa:\n•\turi ng cement\n•\tenvironmental conditions\n•\tspecifications\n•\tadmixtures\n•\tstructural needs\nPero dahil ang wording ng reviewer ay “for maximum strength”, ang expected ALE/reviewer answer ay 28 days.\nBakit mali ang ibang choices?\n•\tb. 21 – hindi ito ang standard benchmark answer sa ganitong tanong.\n•\tc. 14 – may improvement na sa strength by 14 days, pero hindi ito ang classic design-age answer.\n•\td. 7 – common early strength check ito, pero hindi maximum or full standard strength basis.\nElimination method\nIto ang iniisip mo:\n1.\tAng tanong ba ay tungkol sa standard strength age? Oo.\n2.\tKapag concrete strength benchmark ang usapan, pinaka-classic answer ay 28 days.\n3.\tAng 7 at 14 days ay intermediate ages lang.\n4.\tKaya natitira ang 28 days.\nCommon trap\nAng trap dito ay yung word na minimum curing.\nSa totoong life, baka maisip mo 7 days or 14 days.\nPero tingnan mo ang kasunod: for maximum strength.\nDoon ka dadalhin pabalik sa 28-day concrete strength benchmark.\nPhilippine/ALE reasoning\nSa ALE reviewer logic, kapag walang masyadong qualification at strength-age ang tanong, 28 days ang standard memory answer.\nAno ang dapat mong tandaan dito?\nSa reviewer/ALE logic, 28 days ang standard answer kapag concrete strength development ang usapan.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "",
+    "answerImageAlt": "28",
     "visualSourceRefs": [
       {
         "label": "ACI — Concrete Materials / Admixtures",
@@ -1924,7 +2020,9 @@
       "28",
       "concrete curing"
     ],
-    "answerImageQuery": "28"
+    "answerImageQuery": "28",
+    "answerImage": "https://source.unsplash.com/1200x800/?cement%20water%20paste&sig=36",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-037",
@@ -1956,7 +2054,7 @@
     "explanation": "Correct answer: a. mortar\nUlitin natin: mortar.\nIto, classic definition item ito.\nBakit ito ang tama?\nAng mortar ay mixture ng:\n•\tcement\n•\twater\n•\tfine aggregate only, usually sand\nWala pang coarse aggregate dito. Kaya mortar ang tamang sagot.\nBakit mali ang ibang choices?\n•\tb. cement plaster – related siya sa finishing application, pero hindi ito ang general mixture term na hinahanap ng tanong.\n•\tc. concrete – concrete requires coarse aggregate in the usual definition.\n•\td. light concrete – special concrete type ito, hindi ito ang direct answer sa fine aggregate-only mixture.\nElimination method\nGanito ang isipin mo:\n1.\tFine aggregate lang ba ang binanggit? Oo\n2.\tMay coarse aggregate ba? Wala\n3.\tFine aggregate only + cement + water = mortar\n4.\tKung may coarse aggregate na, saka magiging concrete\nCommon trap\nMinsan kapag may cement at water, pinipili agad ang concrete.\nPero huwag.\nAng pinakaimportanteng tanong mo sa sarili mo ay:\n“May coarse aggregate ba?”\nKung wala, malaking chance na mortar ang sagot.\nAno ang dapat mong tandaan dito?\nCement + water + fine aggregate only = mortar.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Mortar masonry",
     "visualSourceRefs": [
       {
         "label": "ACI — Concrete Materials / Admixtures",
@@ -1979,7 +2077,10 @@
     "questionImageLayoutQueries": [
       "Mortar masonry",
       "cement mortar construction"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?mortar%20masonry&sig=37",
+    "questionImage": "https://source.unsplash.com/1200x800/?mortar%20masonry&sig=37",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-038",
@@ -2011,7 +2112,7 @@
     "explanation": "Correct answer: a. concrete\nUlitin natin: concrete.\nIto ay direct continuation ng previous item.\nBakit ito ang tama?\nKapag meron ka nang:\n•\tcement\n•\twater\n•\tfine aggregate\n•\tplus coarse aggregate\nang mixture ay concrete na.\nBakit mali ang ibang choices?\n•\tb. reinforced concrete – reinforced concrete is concrete with steel reinforcement. Hindi binanggit ang bakal.\n•\tc. lightweight concrete – special type ito. Hindi naman sinabing lightweight ang aggregate.\n•\td. lean concrete – special mix condition ito, usually low cement content. Hindi iyon ang definition sa tanong.\nElimination method\nIto ang iniisip mo:\n1.\tFrom mortar, ano ang nadagdag?\nLarge/coarse aggregate\n2.\tKapag coarse aggregate ang nadagdag, ang product ay concrete\n3.\tKung may steel na binanggit, saka pa lang reinforced concrete\n4.\tKung may specific lightweight or low-cement clue, saka mo iisipin ang ibang options\nCommon trap\nAng trap dito ay reinforced concrete dahil mas tunog structural.\nPero tandaan:\nHindi lahat ng concrete ay reinforced.\nMemory pairing\n•\tQuestion 37: fine aggregate only → mortar\n•\tQuestion 38: with coarse aggregate added → concrete\nAno ang dapat mong tandaan dito?\nKapag may coarse aggregate, lumilipat ka na mula mortar papuntang concrete.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Concrete",
     "visualSourceRefs": [
       {
         "label": "ACI — Concrete Materials / Admixtures",
@@ -2034,7 +2135,10 @@
     "questionImageLayoutQueries": [
       "Concrete",
       "fresh concrete construction"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?concrete%20material&sig=38",
+    "questionImage": "https://source.unsplash.com/1200x800/?concrete%20material&sig=38",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-039",
@@ -2066,7 +2170,7 @@
     "explanation": "Correct answer: b. Concrete\nUlitin natin: Concrete.\nIto, very standard definition na ito ng concrete.\nBakit ito ang tama?\nAng concrete ay proportioned mixture ng:\n•\tcement\n•\taggregates\n•\twater\nat ito ay plastic or workable bago tumigas, kaya puwedeng:\n•\ti-cast\n•\ti-mold\n•\ti-place into forms\nBakit mali ang ibang choices?\n•\ta. Mortar – fine aggregate only, mas limited ang composition kaysa concrete\n•\tc. Concrete plaster – finishing/application term ito, hindi general structural material definition\n•\td. Cast-in-place concrete – mas specific method ito ng paggamit ng concrete.\nAng tanong ay general definition muna, hindi specific construction method.\nElimination method\nGanito ang diskarte:\n1.\tHanapin kung general material definition ba ito o specific method.\nGeneral definition.\n2.\tKapag general ang tanong, piliin ang general answer.\nKaya concrete, hindi cast-in-place concrete.\n3.\tMortar? kulang sa aggregate concept as full concrete mass.\nCommon trap\nAng trap dito ay cast-in-place concrete dahil may word na “casted or molded.”\nPero tandaan:\n•\tConcrete = material\n•\tCast-in-place concrete = method of placing that material\nALE reasoning\nKapag general definition ang tanong, huwag kang kumuha ng mas makitid na special type kung may mas exact na broad answer.\nAno ang dapat mong tandaan dito?\nConcrete ang general castable mixture ng cement, aggregate, at water.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Concrete",
     "visualSourceRefs": [
       {
         "label": "ACI — Concrete Materials / Admixtures",
@@ -2089,7 +2193,10 @@
     "questionImageLayoutQueries": [
       "Concrete",
       "fresh concrete construction"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?concrete%20mix&sig=39",
+    "questionImage": "https://source.unsplash.com/1200x800/?concrete%20mix&sig=39",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-040",
@@ -2121,7 +2228,7 @@
     "explanation": "Correct answer: a. reinforced concrete\nUlitin natin: reinforced concrete.\nIto, diretso lang ito.\nBakit ito ang tama?\nKapag ang concrete ay may steel embedded in it para dagdagan ang tensile resistance at structural capacity, ang tawag ay reinforced concrete.\nBakit mali ang ibang choices?\n•\tb. concrete – masyadong broad. Hindi lahat ng concrete ay may bakal.\n•\tc. mass concrete – tumutukoy ito sa large concrete placement, hindi sa presence ng reinforcement.\n•\td. lean concrete – low cement-content mix concept ito, hindi steel-reinforced material.\nElimination method\n1.\tHanapin ang clue: steel embedded\n2.\tKapag may bakal sa concrete, reinforced agad ang keyword\n3.\tTanggal ang generic at unrelated special types\nCommon trap\nWalang gaanong trap dito, maliban na lang kung nagmamadali at napili ang plain “concrete.”\nPero ang word na strengthened by steel ang dapat kapitan mo.\nAno ang dapat mong tandaan dito?\nConcrete + steel reinforcement = reinforced concrete.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Reinforced concrete",
     "visualSourceRefs": [
       {
         "label": "ACI — Concrete Materials / Admixtures",
@@ -2144,7 +2251,10 @@
     "questionImageLayoutQueries": [
       "Reinforced concrete",
       "reinforced concrete rebar embedded"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?reinforced%20concrete%20rebar&sig=40",
+    "questionImage": "https://source.unsplash.com/1200x800/?reinforced%20concrete%20rebar&sig=40",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-041",
@@ -2191,7 +2301,7 @@
       "Plain concrete",
       "plain mass concrete construction"
     ],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Mass concrete",
     "questionImageQuery": "Mass concrete",
     "questionImageQueries": [
       "Mass concrete",
@@ -2202,7 +2312,10 @@
       "Mass concrete",
       "Plain concrete",
       "plain mass concrete construction"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?mass%20concrete%20foundation&sig=41",
+    "questionImage": "https://source.unsplash.com/1200x800/?mass%20concrete%20foundation&sig=41",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-042",
@@ -2249,7 +2362,7 @@
       "concrete blinding",
       "lean concrete blinding layer"
     ],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "lean concrete",
     "questionImageQuery": "lean concrete",
     "questionImageQueries": [
       "lean concrete",
@@ -2260,7 +2373,10 @@
       "lean concrete",
       "concrete blinding",
       "lean concrete blinding layer"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?lean%20concrete%20blinding&sig=42",
+    "questionImage": "https://source.unsplash.com/1200x800/?lean%20concrete%20blinding&sig=42",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-043",
@@ -2310,7 +2426,7 @@
       "Stucco",
       "stucco plaster wall finish"
     ],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Stucco",
     "questionImageQuery": "Stucco",
     "questionImageQueries": [
       "Stucco",
@@ -2319,7 +2435,10 @@
     "questionImageLayoutQueries": [
       "Stucco",
       "stucco plaster wall finish"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?stucco%20wall%20plaster&sig=43",
+    "questionImage": "https://source.unsplash.com/1200x800/?stucco%20wall%20plaster&sig=43",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-044",
@@ -2366,7 +2485,7 @@
       "concrete white deposit",
       "white deposits concrete wall calcification"
     ],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Calcium carbonate deposit concrete",
     "questionImageQuery": "Calcium carbonate deposit concrete",
     "questionImageQueries": [
       "Calcium carbonate deposit concrete",
@@ -2377,7 +2496,10 @@
       "Calcium carbonate deposit concrete",
       "concrete white deposit",
       "white deposits concrete wall calcification"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?white%20calcium%20deposit%20concrete&sig=44",
+    "questionImage": "https://source.unsplash.com/1200x800/?white%20calcium%20deposit%20concrete&sig=44",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-045",
@@ -2423,7 +2545,7 @@
       "Efflorescence",
       "efflorescence concrete wall white salts"
     ],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Efflorescence",
     "questionImageQuery": "Efflorescence",
     "questionImageQueries": [
       "Efflorescence",
@@ -2432,7 +2554,10 @@
     "questionImageLayoutQueries": [
       "Efflorescence",
       "efflorescence concrete wall white salts"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?efflorescence%20brick%20wall&sig=45",
+    "questionImage": "https://source.unsplash.com/1200x800/?efflorescence%20brick%20wall&sig=45",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-046",
@@ -2486,7 +2611,10 @@
       "cement brands Philippines"
     ],
     "answerImageQuery": "Pacifica",
-    "questionImageQueries": []
+    "questionImageQueries": [],
+    "answerImage": "https://source.unsplash.com/1200x800/?concrete%20surface&sig=46",
+    "answerImageCredit": "Direct image link",
+    "answerImageAlt": "Pacifica"
   },
   {
     "uid": "BM-047",
@@ -2524,8 +2652,10 @@
       "calcium aluminate cement",
       "high alumina cement"
     ],
-    "answerImageAlt": "Answer visual reference",
-    "questionImageQueries": []
+    "answerImageAlt": "calcium aluminate cement",
+    "questionImageQueries": [],
+    "answerImage": "https://source.unsplash.com/1200x800/?calcium%20aluminate%20cement&sig=47",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-048",
@@ -2557,7 +2687,7 @@
     "explanation": "Correct answer: b. Gypsum\nUlitin natin: Gypsum.\nIto, ang clue dito ay “most ideal to be used for plastering.”\nHindi lang “material related to plaster,” kundi iyong pinaka-akma sa plastering use.\nBakit ito ang tama?\nAng gypsum ang pinaka-strong association sa plastering dahil dito galing ang plaster products gaya ng gypsum plaster at related finishing materials.\nMaganda ang workability nito, smooth ang finish, at kilala talaga siya bilang plaster material.\nBakit hindi lime?\nLime puwede rin sa plastering, lalo na sa traditional or old construction, pero kung hahanapin mo ang pinaka-direct at pinaka-ideal na plastering material sa choices, gypsum ang mas swak.\nBakit hindi stucco?\nIto ang common trap.\nKasi ang stucco ay plaster-like finish system, oo. Pero ito ay product/application type, not the most basic material identity na karaniwang hinahanap sa ganitong reviewer item.\nParang ang tanong ay material-oriented, at doon lumalakas si gypsum.\nBakit hindi pozzolan?\nAng pozzolan ay supplementary cementitious material, hindi ito ang direct plastering answer.\nElimination method\nIto ang iniisip mo:\n1.\tAng tanong ba ay tungkol sa plastering material? Oo.\n2.\tSa choices, alin ang pinakakilalang plaster material?\nGypsum\n3.\tStucco looks tempting, pero mas finish system/app term iyan.\n4.\tPozzolan out agad.\n5.\tLime possible historically, pero not the best answer here.\nCommon trap\nAng trap dito ay stucco dahil plaster finish nga ang dating.\nPero tandaan:\nKapag ganitong reviewer item, madalas gusto nila ang base material most associated with plaster — at iyon ay gypsum.\nAno ang dapat mong tandaan dito?\nKapag ang tanong ay most ideal for plastering, ang strongest answer sa ganitong choices ay gypsum.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "answerImageAlt": "Answer visual reference",
+    "answerImageAlt": "Gypsum plaster",
     "visualSourceRefs": [
       {
         "label": "Gypsum Association — Technical Resources",
@@ -2583,7 +2713,10 @@
       "Gypsum plaster",
       "Gypsum board",
       "gypsum plaster material"
-    ]
+    ],
+    "answerImage": "https://source.unsplash.com/1200x800/?gypsum%20plaster%20wall&sig=48",
+    "questionImage": "https://source.unsplash.com/1200x800/?gypsum%20plaster%20wall&sig=48",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-049",
@@ -2629,8 +2762,10 @@
       "Hi-Alumina",
       "high alumina cement"
     ],
-    "answerImageAlt": "Answer visual reference",
-    "questionImageQueries": []
+    "answerImageAlt": "Hi-Alumina",
+    "questionImageQueries": [],
+    "answerImage": "https://source.unsplash.com/1200x800/?high%20alumina%20cement&sig=49",
+    "answerImageCredit": "Direct image link"
   },
   {
     "uid": "BM-050",
@@ -2675,7 +2810,10 @@
       "10.0m",
       "steel reinforcing bar lengths"
     ],
-    "answerImageQuery": "10.0m"
+    "answerImageQuery": "10.0m",
+    "answerImage": "https://source.unsplash.com/1200x800/?cement%20construction%20material&sig=50",
+    "answerImageCredit": "Direct image link",
+    "answerImageAlt": "10.0m"
   },
   {
     "uid": "BM-051",
