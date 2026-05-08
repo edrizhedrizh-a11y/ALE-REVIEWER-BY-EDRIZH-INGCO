@@ -5040,6 +5040,9 @@
     "questionImageQuery": "Corten weathering steel facade",
     "questionImageQueries": [
       "Corten weathering steel facade"
+    ],
+    "questionImageLayoutQueries": [
+      "Corten weathering steel facade"
     ]
   },
   {
@@ -5082,6 +5085,9 @@
     "questionImageQuery": "corner guard concrete column protection",
     "questionImageQueries": [
       "corner guard concrete column protection"
+    ],
+    "questionImageLayoutQueries": [
+      "corner guard concrete column protection"
     ]
   },
   {
@@ -5120,7 +5126,14 @@
     "answerImageQueries": [
       "copper metal sheet patina"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "copper metal sheet patina",
+    "questionImageQueries": [
+      "copper metal sheet patina"
+    ],
+    "questionImageLayoutQueries": [
+      "copper metal sheet patina"
+    ]
   },
   {
     "uid": "BM-104",
@@ -5155,8 +5168,7 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "tie wire roll",
-      "rebar tie wire"
+      "tie wire roll"
     ],
     "answerImageQuery": "tie wire roll"
   },
@@ -5193,8 +5205,7 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "tie wire roll",
-      "rebar tie wire"
+      "tie wire roll"
     ],
     "answerImageQuery": "tie wire roll"
   },
@@ -5231,14 +5242,10 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "metal alloy",
-      "alloy metals"
+      "metal alloy"
     ],
     "answerImageQuery": "metal alloy",
-    "questionImageQuery": "metal alloy",
-    "questionImageQueries": [
-      "metal alloy"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-107",
@@ -5282,7 +5289,10 @@
       "turnbuckle hardware"
     ],
     "questionImageAlt": "Question visual reference",
-    "visualMode": "question"
+    "visualMode": "question",
+    "questionImageLayoutQueries": [
+      "turnbuckle hardware"
+    ]
   },
   {
     "uid": "BM-108",
@@ -5324,6 +5334,9 @@
     "questionImageQuery": "wood construction material",
     "questionImageQueries": [
       "wood construction material"
+    ],
+    "questionImageLayoutQueries": [
+      "wood construction material"
     ]
   },
   {
@@ -5363,10 +5376,7 @@
       "wood construction material"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "wood construction material",
-    "questionImageQueries": [
-      "wood construction material"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-110",
@@ -5401,14 +5411,10 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "tree xylem diagram",
-      "xylem wood structure"
+      "tree xylem diagram"
     ],
     "answerImageQuery": "tree xylem diagram",
-    "questionImageQuery": "tree xylem diagram",
-    "questionImageQueries": [
-      "tree xylem diagram"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-111",
@@ -5449,6 +5455,9 @@
     "answerImageAlt": "Answer visual reference",
     "questionImageQuery": "softwood conifer lumber",
     "questionImageQueries": [
+      "softwood conifer lumber"
+    ],
+    "questionImageLayoutQueries": [
       "softwood conifer lumber"
     ]
   },
@@ -5492,6 +5501,9 @@
     "questionImageQuery": "wood scab splice joint",
     "questionImageQueries": [
       "wood scab splice joint"
+    ],
+    "questionImageLayoutQueries": [
+      "wood scab splice joint"
     ]
   },
   {
@@ -5527,8 +5539,7 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "endogenous stem",
-      "endogenous plant"
+      "endogenous stem"
     ],
     "answerImageQuery": "endogenous stem"
   },
@@ -5564,14 +5575,17 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "lumber that still contains moisture or sap",
+    "answerImageQuery": "green lumber",
     "answerImageQueries": [
-      "lumber that still contains moisture or sap"
+      "green lumber"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "lumber that still contains moisture or sap",
+    "questionImageQuery": "green lumber",
     "questionImageQueries": [
-      "lumber that still contains moisture or sap"
+      "green lumber"
+    ],
+    "questionImageLayoutQueries": [
+      "green lumber"
     ]
   },
   {
@@ -5607,14 +5621,10 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "wood cellulose diagram",
-      "cellulose wood"
+      "wood cellulose diagram"
     ],
     "answerImageQuery": "wood cellulose diagram",
-    "questionImageQuery": "wood cellulose diagram",
-    "questionImageQueries": [
-      "wood cellulose diagram"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-116",
@@ -5649,12 +5659,14 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "lumbering timber harvesting",
-      "logging lumber"
+      "lumbering timber harvesting"
     ],
     "answerImageQuery": "lumbering timber harvesting",
     "questionImageQuery": "lumbering timber harvesting",
     "questionImageQueries": [
+      "lumbering timber harvesting"
+    ],
+    "questionImageLayoutQueries": [
       "lumbering timber harvesting"
     ]
   },
@@ -5673,15 +5685,12 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "Shop lumber",
+    "answerImageQuery": "shop lumber",
     "answerImageQueries": [
-      "Shop lumber"
+      "shop lumber"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "Shop lumber",
-    "questionImageQueries": [
-      "Shop lumber"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-118",
@@ -5715,15 +5724,12 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "S4S",
+    "answerImageQuery": "surfaced four sides lumber S4S",
     "answerImageQueries": [
-      "S4S"
+      "surfaced four sides lumber S4S"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "S4S",
-    "questionImageQueries": [
-      "S4S"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-119",
@@ -5757,14 +5763,17 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "Millwork",
+    "answerImageQuery": "millwork doors trim woodwork",
     "answerImageQueries": [
-      "Millwork"
+      "millwork doors trim woodwork"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "Millwork",
+    "questionImageQuery": "millwork doors trim woodwork",
     "questionImageQueries": [
-      "Millwork"
+      "millwork doors trim woodwork"
+    ],
+    "questionImageLayoutQueries": [
+      "millwork doors trim woodwork"
     ]
   },
   {
@@ -5799,14 +5808,17 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "Moulding",
+    "answerImageQuery": "moulding trim profiles",
     "answerImageQueries": [
-      "Moulding"
+      "moulding trim profiles"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "Moulding",
+    "questionImageQuery": "moulding trim profiles",
     "questionImageQueries": [
-      "Moulding"
+      "moulding trim profiles"
+    ],
+    "questionImageLayoutQueries": [
+      "moulding trim profiles"
     ]
   },
   {
@@ -5841,15 +5853,12 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "Tanguile",
+    "answerImageQuery": "tanguile wood",
     "answerImageQueries": [
-      "Tanguile"
+      "tanguile wood"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "Tanguile",
-    "questionImageQueries": [
-      "Tanguile"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-122",
@@ -5883,9 +5892,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "Kamagong",
+    "answerImageQuery": "kamagong wood Philippine ebony",
     "answerImageQueries": [
-      "Kamagong"
+      "kamagong wood Philippine ebony"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -5921,14 +5930,17 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "Flat grain",
+    "answerImageQuery": "flat grain wood board",
     "answerImageQueries": [
-      "Flat grain"
+      "flat grain wood board"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "Flat grain",
+    "questionImageQuery": "flat grain wood board",
     "questionImageQueries": [
-      "Flat grain"
+      "flat grain wood board"
+    ],
+    "questionImageLayoutQueries": [
+      "flat grain wood board"
     ]
   },
   {
@@ -5971,6 +5983,9 @@
     "questionImageQuery": "pressure treated lumber",
     "questionImageQueries": [
       "pressure treated lumber"
+    ],
+    "questionImageLayoutQueries": [
+      "pressure treated lumber"
     ]
   },
   {
@@ -6006,8 +6021,7 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "kiln drying timber",
-      "timber seasoning kiln drying"
+      "kiln drying timber"
     ],
     "answerImageQuery": "kiln drying timber"
   },
@@ -6043,15 +6057,12 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "dry rot",
+    "answerImageQuery": "dry rot wood decay",
     "answerImageQueries": [
-      "dry rot"
+      "dry rot wood decay"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "dry rot",
-    "questionImageQueries": [
-      "dry rot"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-127",
@@ -6085,15 +6096,12 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "board feet",
+    "answerImageQuery": "board foot lumber measurement chart",
     "answerImageQueries": [
-      "board feet"
+      "board foot lumber measurement chart"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "board feet",
-    "questionImageQueries": [
-      "board feet"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-128",
@@ -6132,10 +6140,7 @@
       "solid wood tongue and groove board"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "solid wood tongue and groove board",
-    "questionImageQueries": [
-      "solid wood tongue and groove board"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-129",
@@ -6170,8 +6175,7 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "rejected lumber cull",
-      "lumber defects"
+      "rejected lumber cull"
     ],
     "answerImageQuery": "rejected lumber cull"
   },
@@ -6208,14 +6212,10 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "resin filler",
-      "filler material resin"
+      "resin filler"
     ],
     "answerImageQuery": "resin filler",
-    "questionImageQuery": "resin filler",
-    "questionImageQueries": [
-      "resin filler"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-131",
@@ -6257,6 +6257,9 @@
     "questionImageQuery": "fiber cement board exterior wall",
     "questionImageQueries": [
       "fiber cement board exterior wall"
+    ],
+    "questionImageLayoutQueries": [
+      "fiber cement board exterior wall"
     ]
   },
   {
@@ -6296,10 +6299,7 @@
       "construction plywood sheet"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "construction plywood sheet",
-    "questionImageQueries": [
-      "construction plywood sheet"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-133",
@@ -6334,14 +6334,10 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "gypsum board interior wall",
-      "gypsum wall compound"
+      "gypsum board interior wall"
     ],
     "answerImageQuery": "gypsum board interior wall",
-    "questionImageQuery": "gypsum board interior wall",
-    "questionImageQueries": [
-      "gypsum board interior wall"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-134",
@@ -6383,6 +6379,9 @@
     "questionImageQuery": "asbestos cement board",
     "questionImageQueries": [
       "asbestos cement board"
+    ],
+    "questionImageLayoutQueries": [
+      "asbestos cement board"
     ]
   },
   {
@@ -6418,9 +6417,9 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "Masonite"
+      "MDF board brands"
     ],
-    "answerImageQuery": "Masonite"
+    "answerImageQuery": "MDF board brands"
   },
   {
     "uid": "BM-136",
@@ -6455,9 +6454,9 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "Boral"
+      "fiberboard brands"
     ],
-    "answerImageQuery": "Boral"
+    "answerImageQuery": "fiberboard brands"
   },
   {
     "uid": "BM-137",
@@ -6499,6 +6498,9 @@
     "questionImageQuery": "phenolic toilet partition board HPL",
     "questionImageQueries": [
       "phenolic toilet partition board HPL"
+    ],
+    "questionImageLayoutQueries": [
+      "phenolic toilet partition board HPL"
     ]
   },
   {
@@ -6538,10 +6540,7 @@
       "mechanical wood pulp"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "mechanical wood pulp",
-    "questionImageQueries": [
-      "mechanical wood pulp"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-139",
@@ -6576,13 +6575,10 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "envelope paper"
+      "envelope paper gypsum board"
     ],
-    "answerImageQuery": "envelope paper",
-    "questionImageQuery": "envelope paper",
-    "questionImageQueries": [
-      "envelope paper"
-    ]
+    "answerImageQuery": "envelope paper gypsum board",
+    "questionImageQueries": []
   },
   {
     "uid": "BM-140",
@@ -6617,9 +6613,9 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "glossy surfaced asphalt saturated paper, 50 lbs or more"
+      "asphalt saturated paper vapor barrier"
     ],
-    "answerImageQuery": "glossy surfaced asphalt saturated paper, 50 lbs or more"
+    "answerImageQuery": "asphalt saturated paper vapor barrier"
   },
   {
     "uid": "BM-141",
@@ -6661,6 +6657,9 @@
     "questionImageQuery": "common wire nails",
     "questionImageQueries": [
       "common wire nails"
+    ],
+    "questionImageLayoutQueries": [
+      "common wire nails"
     ]
   },
   {
@@ -6699,7 +6698,14 @@
     "answerImageQueries": [
       "large spike nail"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "large spike nail",
+    "questionImageQueries": [
+      "large spike nail"
+    ],
+    "questionImageLayoutQueries": [
+      "large spike nail"
+    ]
   },
   {
     "uid": "BM-143",
@@ -6737,7 +6743,14 @@
     "answerImageQueries": [
       "roofing shingle nails"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "roofing shingle nails",
+    "questionImageQueries": [
+      "roofing shingle nails"
+    ],
+    "questionImageLayoutQueries": [
+      "roofing shingle nails"
+    ]
   },
   {
     "uid": "BM-144",
@@ -6772,9 +6785,9 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "building material"
+      "keg of nails 50 kg"
     ],
-    "answerImageQuery": "building material"
+    "answerImageQuery": "keg of nails 50 kg"
   },
   {
     "uid": "BM-145",
@@ -6809,9 +6822,9 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "building material"
+      "keg of nails 50 kg"
     ],
-    "answerImageQuery": "building material"
+    "answerImageQuery": "keg of nails 50 kg"
   },
   {
     "uid": "BM-146",
@@ -6852,6 +6865,9 @@
     "answerImageAlt": "Answer visual reference",
     "questionImageQuery": "brad nail",
     "questionImageQueries": [
+      "brad nail"
+    ],
+    "questionImageLayoutQueries": [
       "brad nail"
     ]
   },
@@ -6895,6 +6911,9 @@
     "questionImageQuery": "concrete nails",
     "questionImageQueries": [
       "concrete nails"
+    ],
+    "questionImageLayoutQueries": [
+      "concrete nails"
     ]
   },
   {
@@ -6937,6 +6956,9 @@
     "questionImageQuery": "drywall screw wood stud",
     "questionImageQueries": [
       "drywall screw wood stud"
+    ],
+    "questionImageLayoutQueries": [
+      "drywall screw wood stud"
     ]
   },
   {
@@ -6975,7 +6997,14 @@
     "answerImageQueries": [
       "tek screw metal roofing"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "tek screw metal roofing",
+    "questionImageQueries": [
+      "tek screw metal roofing"
+    ],
+    "questionImageLayoutQueries": [
+      "tek screw metal roofing"
+    ]
   },
   {
     "uid": "BM-150",
@@ -7055,6 +7084,9 @@
     "questionImageQuery": "construction bolts nut",
     "questionImageQueries": [
       "construction bolts nut"
+    ],
+    "questionImageLayoutQueries": [
+      "construction bolts nut"
     ]
   },
   {
@@ -7096,6 +7128,9 @@
     "answerImageAlt": "Answer visual reference",
     "questionImageQuery": "anchor bolt embedded concrete",
     "questionImageQueries": [
+      "anchor bolt embedded concrete"
+    ],
+    "questionImageLayoutQueries": [
       "anchor bolt embedded concrete"
     ]
   },
@@ -7139,6 +7174,9 @@
     "questionImageQuery": "anchor bolt embedded concrete",
     "questionImageQueries": [
       "anchor bolt embedded concrete"
+    ],
+    "questionImageLayoutQueries": [
+      "anchor bolt embedded concrete"
     ]
   },
   {
@@ -7177,7 +7215,14 @@
     "answerImageQueries": [
       "metal washers bolt"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "metal washers bolt",
+    "questionImageQueries": [
+      "metal washers bolt"
+    ],
+    "questionImageLayoutQueries": [
+      "metal washers bolt"
+    ]
   },
   {
     "uid": "BM-155",
@@ -7215,7 +7260,14 @@
     "answerImageQueries": [
       "aluminum blind rivet"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "aluminum blind rivet",
+    "questionImageQueries": [
+      "aluminum blind rivet"
+    ],
+    "questionImageLayoutQueries": [
+      "aluminum blind rivet"
+    ]
   },
   {
     "uid": "BM-156",
@@ -7250,9 +7302,9 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "Structural sealant"
+      "structural sealant gutter joint"
     ],
-    "answerImageQuery": "Structural sealant"
+    "answerImageQuery": "structural sealant gutter joint"
   },
   {
     "uid": "BM-157",
@@ -7286,11 +7338,18 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "pointed metal stud screw",
+    "answerImageQuery": "pointed screw metal stud",
     "answerImageQueries": [
-      "pointed metal stud screw"
+      "pointed screw metal stud"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "pointed screw metal stud",
+    "questionImageQueries": [
+      "pointed screw metal stud"
+    ],
+    "questionImageLayoutQueries": [
+      "pointed screw metal stud"
+    ]
   },
   {
     "uid": "BM-158",
@@ -7325,9 +7384,9 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "building material"
+      "blind rivet diameter chart"
     ],
-    "answerImageQuery": "building material"
+    "answerImageQuery": "blind rivet diameter chart"
   },
   {
     "uid": "BM-159",
@@ -7369,6 +7428,9 @@
     "questionImageQuery": "brad nail",
     "questionImageQueries": [
       "brad nail"
+    ],
+    "questionImageLayoutQueries": [
+      "brad nail"
     ]
   },
   {
@@ -7407,7 +7469,14 @@
     "answerImageQueries": [
       "carriage bolt round head square neck"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "carriage bolt round head square neck",
+    "questionImageQueries": [
+      "carriage bolt round head square neck"
+    ],
+    "questionImageLayoutQueries": [
+      "carriage bolt round head square neck"
+    ]
   },
   {
     "uid": "BM-161",
@@ -7442,13 +7511,10 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "Steeltech"
+      "Steeltech metal roofing"
     ],
-    "answerImageQuery": "Steeltech",
-    "questionImageQuery": "Steeltech",
-    "questionImageQueries": [
-      "Steeltech"
-    ]
+    "answerImageQuery": "Steeltech metal roofing",
+    "questionImageQueries": []
   },
   {
     "uid": "BM-162",
@@ -7483,9 +7549,9 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "Ga. 24"
+      "metal roofing gauge chart"
     ],
-    "answerImageQuery": "Ga. 24"
+    "answerImageQuery": "metal roofing gauge chart"
   },
   {
     "uid": "BM-163",
@@ -7520,9 +7586,9 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "building material"
+      "gauge 26 roofing thickness chart"
     ],
-    "answerImageQuery": "building material"
+    "answerImageQuery": "gauge 26 roofing thickness chart"
   },
   {
     "uid": "BM-164",
@@ -7560,7 +7626,14 @@
     "answerImageQueries": [
       "pantile S shaped clay roofing tile"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "pantile S shaped clay roofing tile",
+    "questionImageQueries": [
+      "pantile S shaped clay roofing tile"
+    ],
+    "questionImageLayoutQueries": [
+      "pantile S shaped clay roofing tile"
+    ]
   },
   {
     "uid": "BM-165",
@@ -7598,7 +7671,14 @@
     "answerImageQueries": [
       "mission barrel clay roof tile"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "mission barrel clay roof tile",
+    "questionImageQueries": [
+      "mission barrel clay roof tile"
+    ],
+    "questionImageLayoutQueries": [
+      "mission barrel clay roof tile"
+    ]
   },
   {
     "uid": "BM-166",
@@ -7636,7 +7716,14 @@
     "answerImageQueries": [
       "roof skylight daylight opening"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "roof skylight daylight opening",
+    "questionImageQueries": [
+      "roof skylight daylight opening"
+    ],
+    "questionImageLayoutQueries": [
+      "roof skylight daylight opening"
+    ]
   },
   {
     "uid": "BM-167",
@@ -7670,9 +7757,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "terra cotta",
+    "answerImageQuery": "roofing materials examples",
     "answerImageQueries": [
-      "terra cotta"
+      "roofing materials examples"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -7713,9 +7800,9 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "Metalink"
+      "Metalink stone coated roofing"
     ],
-    "answerImageQuery": "Metalink"
+    "answerImageQuery": "Metalink stone coated roofing"
   },
   {
     "uid": "BM-169",
@@ -7754,13 +7841,10 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "Best reviewer answer, Colorsteel"
+      "stone coated metal roof brands"
     ],
-    "answerImageQuery": "Best reviewer answer, Colorsteel",
-    "questionImageQuery": "Best reviewer answer, Colorsteel",
-    "questionImageQueries": [
-      "Best reviewer answer, Colorsteel"
-    ]
+    "answerImageQuery": "stone coated metal roof brands",
+    "questionImageQueries": []
   },
   {
     "uid": "BM-170",
@@ -7832,9 +7916,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "clay roof tile",
+    "answerImageQuery": "Riviera Filipina clay roof tile",
     "answerImageQueries": [
-      "clay roof tile"
+      "Riviera Filipina clay roof tile"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -7870,9 +7954,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "copper metal sheet patina",
+    "answerImageQuery": "copper roofing sheet patina",
     "answerImageQueries": [
-      "copper metal sheet patina"
+      "copper roofing sheet patina"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -7912,7 +7996,14 @@
     "answerImageQueries": [
       "polycarbonate sheet roofing"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "polycarbonate sheet roofing",
+    "questionImageQueries": [
+      "polycarbonate sheet roofing"
+    ],
+    "questionImageLayoutQueries": [
+      "polycarbonate sheet roofing"
+    ]
   },
   {
     "uid": "BM-174",
@@ -7950,7 +8041,14 @@
     "answerImageQueries": [
       "acrylic sheet clear"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "acrylic sheet clear",
+    "questionImageQueries": [
+      "acrylic sheet clear"
+    ],
+    "questionImageLayoutQueries": [
+      "acrylic sheet clear"
+    ]
   },
   {
     "uid": "BM-175",
@@ -7985,9 +8083,9 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "building material"
+      "acrylic sheet thickness chart"
     ],
-    "answerImageQuery": "building material"
+    "answerImageQuery": "acrylic sheet thickness chart"
   },
   {
     "uid": "BM-176",
@@ -8025,7 +8123,14 @@
     "answerImageQueries": [
       "door weatherstripping seal"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "door weatherstripping seal",
+    "questionImageQueries": [
+      "door weatherstripping seal"
+    ],
+    "questionImageLayoutQueries": [
+      "door weatherstripping seal"
+    ]
   },
   {
     "uid": "BM-177",
@@ -8060,13 +8165,10 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "Impermeable"
+      "waterproof impermeable concrete"
     ],
-    "answerImageQuery": "Impermeable",
-    "questionImageQuery": "Impermeable",
-    "questionImageQueries": [
-      "Impermeable"
-    ]
+    "answerImageQuery": "waterproof impermeable concrete",
+    "questionImageQueries": []
   },
   {
     "uid": "BM-178",
@@ -8108,6 +8210,9 @@
     "questionImageQuery": "cementitious waterproofing coating",
     "questionImageQueries": [
       "cementitious waterproofing coating"
+    ],
+    "questionImageLayoutQueries": [
+      "cementitious waterproofing coating"
     ]
   },
   {
@@ -8143,13 +8248,10 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "Liquid and Powder"
+      "cementitious waterproofing liquid powder"
     ],
-    "answerImageQuery": "Liquid and Powder",
-    "questionImageQuery": "Liquid and Powder",
-    "questionImageQueries": [
-      "Liquid and Powder"
-    ]
+    "answerImageQuery": "cementitious waterproofing liquid powder",
+    "questionImageQueries": []
   },
   {
     "uid": "BM-180",
@@ -8183,15 +8285,12 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "FLINT-COTE",
+    "answerImageQuery": "integral waterproofing compound brands",
     "answerImageQueries": [
-      "FLINT-COTE"
+      "integral waterproofing compound brands"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "FLINT-COTE",
-    "questionImageQueries": [
-      "FLINT-COTE"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-181",
@@ -8225,9 +8324,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "4.5mm Polybond",
+    "answerImageQuery": "4.5mm Polybond waterproofing membrane",
     "answerImageQueries": [
-      "4.5mm Polybond"
+      "4.5mm Polybond waterproofing membrane"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -8271,6 +8370,9 @@
     "questionImageQuery": "waterproofing membrane bathroom floor",
     "questionImageQueries": [
       "waterproofing membrane bathroom floor"
+    ],
+    "questionImageLayoutQueries": [
+      "waterproofing membrane bathroom floor"
     ]
   },
   {
@@ -8305,15 +8407,12 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "cementitious waterproofing coating",
+    "answerImageQuery": "Thoroseal cementitious waterproofing",
     "answerImageQueries": [
-      "cementitious waterproofing coating"
+      "Thoroseal cementitious waterproofing"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "cementitious waterproofing coating",
-    "questionImageQueries": [
-      "cementitious waterproofing coating"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-184",
@@ -8352,13 +8451,10 @@
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
     "answerImageQueries": [
-      "Floor and wall"
+      "basement waterproofing floor and wall"
     ],
-    "answerImageQuery": "Floor and wall",
-    "questionImageQuery": "Floor and wall",
-    "questionImageQueries": [
-      "Floor and wall"
-    ]
+    "answerImageQuery": "basement waterproofing floor and wall",
+    "questionImageQueries": []
   },
   {
     "uid": "BM-185",
@@ -8396,9 +8492,9 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "clay roof tile",
+    "answerImageQuery": "geosynthetic clay liner bentonite waterproofing",
     "answerImageQueries": [
-      "clay roof tile"
+      "geosynthetic clay liner bentonite waterproofing"
     ],
     "answerImageAlt": "Answer visual reference"
   },
@@ -8472,15 +8568,12 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "Thoroseal",
+    "answerImageQuery": "Thoroseal cementitious waterproofing",
     "answerImageQueries": [
-      "Thoroseal"
+      "Thoroseal cementitious waterproofing"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "Thoroseal",
-    "questionImageQueries": [
-      "Thoroseal"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-188",
@@ -8514,14 +8607,17 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "gypsum plaster material",
+    "answerImageQuery": "gypsum board partition wall",
     "answerImageQueries": [
-      "gypsum plaster material"
+      "gypsum board partition wall"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "gypsum plaster material",
+    "questionImageQuery": "gypsum board partition wall",
     "questionImageQueries": [
-      "gypsum plaster material"
+      "gypsum board partition wall"
+    ],
+    "questionImageLayoutQueries": [
+      "gypsum board partition wall"
     ]
   },
   {
@@ -8556,11 +8652,18 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "polyurethane coating wood concrete",
+    "answerImageQuery": "polyurethane spray foam insulation",
     "answerImageQueries": [
-      "polyurethane coating wood concrete"
+      "polyurethane spray foam insulation"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "polyurethane spray foam insulation",
+    "questionImageQueries": [
+      "polyurethane spray foam insulation"
+    ],
+    "questionImageLayoutQueries": [
+      "polyurethane spray foam insulation"
+    ]
   },
   {
     "uid": "BM-190",
@@ -8640,6 +8743,9 @@
     "questionImageQuery": "rockwool insulation batts",
     "questionImageQueries": [
       "rockwool insulation batts"
+    ],
+    "questionImageLayoutQueries": [
+      "rockwool insulation batts"
     ]
   },
   {
@@ -8678,7 +8784,14 @@
     "answerImageQueries": [
       "sealant bead building joint"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "sealant bead building joint",
+    "questionImageQueries": [
+      "sealant bead building joint"
+    ],
+    "questionImageLayoutQueries": [
+      "sealant bead building joint"
+    ]
   },
   {
     "uid": "BM-193",
@@ -8720,6 +8833,9 @@
     "questionImageQuery": "cork board insulation panel",
     "questionImageQueries": [
       "cork board insulation panel"
+    ],
+    "questionImageLayoutQueries": [
+      "cork board insulation panel"
     ]
   },
   {
@@ -8754,15 +8870,12 @@
     "acceptedAnswers": [],
     "visualSourceType": "remote_image_link_mode_review_coach",
     "visualReviewNote": "Building Materials review-coach mode: question visual appears only when it is useful for visual identification; answer visuals reveal only after answering.",
-    "answerImageQuery": "fresh concrete construction",
+    "answerImageQuery": "building insulation materials glass fiber quilt",
     "answerImageQueries": [
-      "fresh concrete construction"
+      "building insulation materials glass fiber quilt"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "fresh concrete construction",
-    "questionImageQueries": [
-      "fresh concrete construction"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-195",
@@ -8803,6 +8916,9 @@
     "answerImageAlt": "Answer visual reference",
     "questionImageQuery": "aluminum foil vapor barrier roof insulation",
     "questionImageQueries": [
+      "aluminum foil vapor barrier roof insulation"
+    ],
+    "questionImageLayoutQueries": [
       "aluminum foil vapor barrier roof insulation"
     ]
   },
@@ -8880,7 +8996,14 @@
     "answerImageQueries": [
       "batten door ledge brace"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "batten door ledge brace",
+    "questionImageQueries": [
+      "batten door ledge brace"
+    ],
+    "questionImageLayoutQueries": [
+      "batten door ledge brace"
+    ]
   },
   {
     "uid": "BM-198",
@@ -8918,7 +9041,14 @@
     "answerImageQueries": [
       "vision panel door kitchen dining"
     ],
-    "answerImageAlt": "Answer visual reference"
+    "answerImageAlt": "Answer visual reference",
+    "questionImageQuery": "vision panel door kitchen dining",
+    "questionImageQueries": [
+      "vision panel door kitchen dining"
+    ],
+    "questionImageLayoutQueries": [
+      "vision panel door kitchen dining"
+    ]
   },
   {
     "uid": "BM-199",
@@ -8957,10 +9087,7 @@
       "gypsum plaster material"
     ],
     "answerImageAlt": "Answer visual reference",
-    "questionImageQuery": "gypsum plaster material",
-    "questionImageQueries": [
-      "gypsum plaster material"
-    ]
+    "questionImageQueries": []
   },
   {
     "uid": "BM-200",
@@ -9001,6 +9128,9 @@
     "answerImageAlt": "Answer visual reference",
     "questionImageQuery": "hollow core flush door section",
     "questionImageQueries": [
+      "hollow core flush door section"
+    ],
+    "questionImageLayoutQueries": [
       "hollow core flush door section"
     ]
   },

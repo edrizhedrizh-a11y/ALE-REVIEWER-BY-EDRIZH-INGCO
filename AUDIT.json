@@ -44,5 +44,11 @@
   "first100_no_image_count": 8,
   "first100_questionImageQuery_count_after_apply": 64,
   "first100_answerImageQuery_count_after_apply": 100,
-  "note": "Applied exact Q1-Q100 review-coach decision logic to Building Materials only. History and Building Construction were not modified."
+  "note": "Applied exact Q101-Q200 review-coach decision logic to Building Materials only. Also cleaned several answer-image queries in Q101-Q200 for better visual matching.",
+  "building_materials_q101_q200_total": 100,
+  "q101_q200_question_plus_explanation_count": 48,
+  "q101_q200_explanation_only_count": 44,
+  "q101_q200_no_image_count": 8,
+  "q101_q200_questionImageQuery_count_after_apply": 48,
+  "q101_q200_answerImageQuery_count_after_apply": 100
 }
