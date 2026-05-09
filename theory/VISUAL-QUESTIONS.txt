@@ -1,0 +1,259 @@
+Q16: question=golden ratio rectangle architecture | answer=golden ratio architecture diagram
+Q19: question=golden section angle diagram | answer=golden section architecture diagram
+Q20: question=cast shadow architecture drawing | answer=cast shadow drawing
+Q21: question=cavalier projection drawing | answer=cavalier projection architecture
+Q27: question=cold-pressed watercolor paper | answer=cold-pressed watercolor paper
+Q29: question=Chamfering | answer=Chamfering
+Q30: question=Rule of Thirds | answer=Rule of Thirds
+Q31: question=Balsa wood | answer=Balsa wood
+Q32: question=Interior model / Cutaway interior model | answer=Interior model / Cutaway interior model
+Q40: question=Lunette | answer=Lunette
+Q42: question=tessellation pattern architecture | answer=tessellation pattern
+Q43: question=cathedra bishop seat | answer=cathedra
+Q45: question=Annulet | answer=Annulet
+Q47: question=gothic rib vault formeret | answer=formeret rib vault
+Q51: question=oculus architecture | answer=oculus
+Q55: question=Chevron | answer=Chevron
+Q64: question=Icosahedron | answer=Icosahedron
+Q71: question=Grid | answer=Grid
+Q72: question=Cylinder | answer=Cylinder
+Q73: question=Cone | answer=Cone
+Q75: question=Dome / Spherical surface | answer=Dome / Spherical surface
+Q76: question=Dome | answer=Dome
+Q77: question=barrel vault architecture | answer=barrel vault
+Q78: question=Barrel vault / Cylindrical shell | answer=Barrel vault / Cylindrical shell
+Q79: question=synclastic surface architecture | answer=synclastic surface
+Q80: question=The edge is beveled or truncated | answer=The edge is beveled or truncated
+Q81: question=Corbel arch | answer=Corbel arch
+Q83: question=Asymptote | answer=Asymptote
+Q85: question=Circle | answer=Circle
+Q86: question=Cube / Hexahedron | answer=Cube / Hexahedron
+Q87: question=Cube | answer=Cube
+Q88: question=Barrel vault | answer=Barrel vault
+Q92: question=ken traditional japanese measure | answer=ken japanese architecture
+Q93: question=schwedler dome | answer=schwedler dome
+Q95: question=north south building orientation sun path | answer=building orientation
+Q96: question=Reveal | answer=Reveal
+Q97: question=split complementary color scheme | answer=split complementary color harmony
+Q103: question=triadic color harmony color wheel | answer=triadic color harmony
+Q106: question=Yellow | answer=Yellow
+Q108: question=Mannerism architecture | answer=Mannerism architecture
+Q109: question=Baroque architecture | answer=Baroque architecture
+Q110: question=Cinquecento architecture | answer=Cinquecento architecture
+Q111: question=Louis XVI style architecture | answer=Louis XVI style
+Q112: question=porthole window architecture | answer=porthole window
+Q113: question=Modularism / Modular architecture architecture | answer=Modularism / Modular architecture
+Q114: question=Decadence architecture | answer=Decadence
+Q115: question=High-tech architecture | answer=High-tech architecture
+Q116: question=Mozarabic architecture | answer=Mozarabic architecture
+Q117: question=vomitorium ancient Rome | answer=vomitorium amphitheater
+Q118: question=velarium roman amphitheatre | answer=velarium colosseum
+Q119: question=Flamboyant Gothic architecture | answer=Flamboyant Gothic
+Q120: question=Corinthian capital cauliculus | answer=cauliculus Corinthian capital
+Q121: question=Loggia architecture | answer=Loggia
+Q122: question=Motte architecture | answer=Motte
+Q123: question=Flèche architecture | answer=Flèche
+Q124: question=Robert Venturi | answer=Robert Venturi architecture
+Q125: question=Renzo Piano architecture | answer=Renzo Piano building
+Q126: question=Kansai International Airport | answer=Kansai International Airport terminal
+Q127: question=Rem Koolhaas architecture | answer=Rem Koolhaas building
+Q128: question=Benjamin Henry Latrobe | answer=Benjamin Henry Latrobe architecture
+Q129: question=Buckminster Fuller geodesic dome | answer=Buckminster Fuller
+Q130: question=Menara Mesiniaga | answer=Menara Mesiniaga
+Q131: question=Ken Yeang architecture | answer=Ken Yeang building
+Q132: question=Louis Kahn architecture | answer=Louis Kahn building
+Q133: question=Norman Foster architecture | answer=Norman Foster building
+Q134: question=Charles Correa architecture | answer=Charles Correa building
+Q135: question=Jorge Y. Ramos architect Philippines | answer=Jorge Y. Ramos
+Q136: question=Carlos A. Santos-Viola | answer=Carlos Santos-Viola architecture
+Q138: question=Richard Neutra architecture | answer=Richard Neutra building
+Q139: question=Charles Jencks | answer=Charles Jencks
+Q140: question=entresuelo bahay na bato | answer=entresuelo Philippines
+Q141: question=banwas house Philippines | answer=banwas house
+Q142: question=balsan house Philippines | answer=balsan house
+Q143: question=binuron house Philippines | answer=binuron house
+Q144: question=bay sinug house | answer=bay sinug house
+Q145: question=Sagada house Philippines | answer=Sagada house
+Q146: question=Tausug house bay sinug | answer=Tausug house Philippines
+Q147: question=tajuk pasung vernacular architecture | answer=tajuk pasung
+Q148: question=Isneg house binuron | answer=Isneg house Philippines
+Q149: question=horizontal force factor structural diagram | answer=horizontal force factor
+Q150: question=segmental arch | answer=segmental arch architecture
+Q151: question=geodesic dome | answer=geodesic dome
+Q152: question=Belfast truss | answer=Belfast roof truss
+Q153: question=gong kung chinese bracket | answer=dougong
+Q154: question=impost arch | answer=impost architecture
+Q155: question=guy cable structure | answer=guy cable
+Q156: question=Prehistoric Architecture architecture | answer=Prehistoric Architecture
+Q157: question=Ancient Civilizations / Ancient Architecture architecture | answer=Ancient Civilizations / Ancient Architecture
+Q158: question=Classical Architecture architecture | answer=Classical Architecture
+Q159: question=Vitruvius architecture | answer=Vitruvius
+Q160: question=Early Christian and Medieval Architecture architecture | answer=Early Christian and Medieval Architecture
+Q161: question=Romanesque Architecture architecture | answer=Romanesque Architecture
+Q162: question=Gothic Architecture architecture | answer=Gothic Architecture
+Q163: question=Renaissance Architecture architecture | answer=Renaissance Architecture
+Q164: question=Baroque Architecture architecture | answer=Baroque Architecture
+Q165: question=Rococo Architecture architecture | answer=Rococo Architecture
+Q166: question=American Colonial Architecture architecture | answer=American Colonial Architecture
+Q167: question=Georgian Architecture architecture | answer=Georgian Architecture
+Q168: question=Neoclassical / Federalist Architecture architecture | answer=Neoclassical / Federalist Architecture
+Q169: question=Greek Revival Architecture architecture | answer=Greek Revival Architecture
+Q170: question=Victorian Architecture architecture | answer=Victorian Architecture
+Q171: question=Arts and Crafts Movement architecture | answer=Arts and Crafts Movement
+Q172: question=Modern Architecture architecture | answer=Modern Architecture
+Q173: question=modern architecture early modern representative building | answer=Modern architecture
+Q174: question=Art Nouveau architecture | answer=Art Nouveau architecture
+Q175: question=Eugène Viollet-le-Duc | answer=Viollet-le-Duc
+Q176: question=Beaux-Arts architecture | answer=Beaux-Arts architecture
+Q177: question=Gothic Revival architecture | answer=Gothic Revival architecture
+Q178: question=Art Deco architecture | answer=Art Deco architecture
+Q179: question=20th Century Architectural Trends architecture | answer=20th Century Architectural Trends
+Q180: question=Functionalism architecture | answer=Functionalism architecture
+Q181: question=prefabricated building system architecture | answer=systems building architecture
+Q182: question=ecological architecture green building | answer=ecological architecture
+Q183: question=Symbolic Architecture architecture | answer=Symbolic Architecture
+Q184: question=Postmodern architecture | answer=Postmodern architecture
+Q185: question=Deconstructivism architecture | answer=Deconstructivism architecture
+Q186: question=Fusion / Global Architecture architecture | answer=Fusion / Global Architecture
+Q196: question=architectural form massing | answer=architectural form
+Q197: question=mass and volume architecture diagram | answer=mass and volume architecture
+Q198: question=direction in architecture composition diagram | answer=architectural direction
+Q199: question=shape in architecture form diagram | answer=architectural shape
+Q200: question=surface architecture facade | answer=architectural surface
+Q201: question=texture architecture materials | answer=architectural texture
+Q202: question=tone in architecture light and shade | answer=architectural tone
+Q203: question=color in architecture materials | answer=architectural color
+Q219: question=horizontal base architecture diagram | answer=horizontal base architecture
+Q220: question=vertical surfaces architecture diagram | answer=vertical surfaces architecture
+Q221: question=top covering architecture diagram | answer=top covering architecture
+Q222: question=horizontal disposition architecture plan diagram | answer=horizontal disposition architecture
+Q225: question=vertical growth architecture massing | answer=vertical growth architecture
+Q231: question=circulation elements architecture diagram | answer=circulation architecture
+Q237: question=functional design architecture diagram | answer=functional design architecture
+Q242: question=aesthetic design architecture | answer=aesthetic design architecture
+Q253: question=architectural design process diagram | answer=architectural design process
+Q254: question=Arcadio Arellano architect Philippines | answer=Arcadio Arellano
+Q255: question=Gota de Leche | answer=Arcadio de Guzman Arellano architect Philippines
+Q256: question=Ariston Bautista House | answer=Arcadio de Guzman Arellano architect Philippines
+Q257: question=Gota de Leche Manila | answer=Gota de Leche Manila
+Q258: question=Antonio Toledo architect Philippines | answer=Antonio Toledo architect
+Q259: question=Antonio Mañalac Toledo architect Philippines | answer=Antonio Mañalac Toledo
+Q260: question=Manila City Hall | answer=Antonio Toledo Manila City Hall
+Q261: question=Manila City Hall | answer=Antonio Toledo Manila City Hall
+Q262: question=Old government buildings later used as National Museum facilities | answer=Antonio Mañalac Toledo architect Philippines
+Q263: question=Tomás Mapúa architect Philippines | answer=Tomas Mapua
+Q264: question=Mapúa University Intramuros | answer=Mapua Institute of Technology
+Q265: question=DLSU Main Building | answer=Tomás Bautista Mapúa architect Philippines
+Q266: question=Tomás Bautista Mapúa architect Philippines | answer=Tomás Bautista Mapúa
+Q267: question=De La Salle University Main Building Manila | answer=DLSU Main Building
+Q268: question=Tomás Fernández Argüelles architect | answer=Tomas Fernandez Arguelles
+Q269: question=Surveyor / land surveyor architect Philippines | answer=Surveyor / land surveyor
+Q270: question=Tomás Fernández Argüelles architect Philippines | answer=Tomás Fernández Argüelles
+Q271: question=Tomás Fernández Argüelles architect Philippines | answer=Tomás Fernández Argüelles
+Q272: question=Tomás Fernández Argüelles architect Philippines | answer=Tomás Fernández Argüelles
+Q273: question=Tomás Fernández Argüelles architect Philippines | answer=Tomás Fernández Argüelles
+Q274: question=Elizalde Building and Heacock Building | answer=Tomás Fernández Argüelles architect Philippines
+Q275: question=Manila Metropolitan Theater | answer=Juan Arellano Metropolitan Theater
+Q276: question=Juan Marcos Arellano architect Philippines | answer=Juan Marcos Arellano
+Q277: question=Juan Marcos Arellano architect Philippines | answer=Juan Marcos Arellano
+Q278: question=Juan Marcos Arellano architect Philippines | answer=Juan Marcos Arellano
+Q279: question=Manila Metropolitan Theater | answer=Manila Metropolitan Theater
+Q280: question=United States High Commission building Manila | answer=US Embassy Manila old building
+Q281: question=Manila Metropolitan Theater | answer=Juan Marcos Arellano architect Philippines
+Q282: question=Manila Metropolitan Theater | answer=Juan Arellano Metropolitan Theater
+Q283: question=Benitez Hall | answer=Juan Marcos Arellano architect Philippines
+Q284: question=Andrés Luna de San Pedro | answer=Andres Luna de San Pedro
+Q285: question=Andrés Luna de San Pedro architect Philippines | answer=Andrés Luna de San Pedro
+Q286: question=Crystal Arcade Escolta | answer=Crystal Arcade Manila
+Q287: question=Crystal Arcade Escolta | answer=Crystal Arcade Manila
+Q288: question=Perez-Samanillo Building Manila | answer=Perez-Samanillo Building
+Q289: question=Andrés Luna de San Pedro architect Philippines | answer=Andrés Luna de San Pedro
+Q290: question=Andrés Luna de San Pedro architect Philippines | answer=Andrés Luna de San Pedro
+Q291: question=Crystal Arcade | answer=Andrés Luna de San Pedro architect Philippines
+Q292: question=Crystal Arcade | answer=Andrés Luna de San Pedro architect Philippines
+Q293: question=Crystal Arcade | answer=Andrés Luna de San Pedro architect Philippines
+Q294: question=Juan Nakpil architect Philippines | answer=Juan Nakpil
+Q295: question=Juan Felipe de Jesus Nakpil architect Philippines | answer=Juan Felipe de Jesus Nakpil
+Q296: question=Juan Felipe de Jesus Nakpil architect Philippines | answer=Juan Felipe de Jesus Nakpil
+Q297: question=Juan Felipe de Jesus Nakpil architect Philippines | answer=Juan Felipe de Jesus Nakpil
+Q298: question=Juan Felipe de Jesus Nakpil architect Philippines | answer=Juan Felipe de Jesus Nakpil
+Q299: question=Quiapo Church Manila | answer=Juan Nakpil Quiapo Church
+Q300: question=Quiapo Church Manila | answer=Quiapo Church Manila
+Q301: question=Manila Cathedral | answer=Manila Cathedral restoration
+Q302: question=Fernando Ocampo architect Philippines | answer=Fernando Ocampo
+Q303: question=UST-related buildings and Manila Cathedral restoration | answer=Fernando Hizon Ocampo architect Philippines
+Q304: question=Fernando Hizon Ocampo architect Philippines | answer=Fernando Hizon Ocampo
+Q305: question=Manila Cathedral | answer=Fernando Hizon Ocampo architect Philippines
+Q306: question=UST works and Manila Cathedral restoration architect Philippines | answer=UST works and Manila Cathedral restoration
+Q307: question=Pablo Antonio architect Philippines | answer=Pablo Antonio
+Q308: question=Pablo Sebero Antonio architect Philippines | answer=Pablo Sebero Antonio
+Q309: question=Pablo Sebero Antonio architect Philippines | answer=Pablo Sebero Antonio
+Q310: question=Pablo Sebero Antonio architect Philippines | answer=Pablo Sebero Antonio
+Q311: question=Far Eastern University campus Manila | answer=Pablo Antonio FEU
+Q312: question=Carlos Antonio Santos-Viola | answer=Carlos Santos-Viola
+Q313: question=Carlos Antonio Santos-Viola architect Philippines | answer=Carlos Antonio Santos-Viola
+Q314: question=Carlos Antonio Santos-Viola architect Philippines | answer=Carlos Antonio Santos-Viola
+Q315: question=Carlos Antonio Santos-Viola architect Philippines | answer=Carlos Antonio Santos-Viola
+Q316: question=Carlos Antonio Santos-Viola architect Philippines | answer=Carlos Antonio Santos-Viola
+Q317: question=Iglesia ni Cristo Central Office Quezon City | answer=INC Central Office Quezon City
+Q318: question=Carlos Antonio Santos-Viola architect Philippines | answer=Carlos Antonio Santos-Viola
+Q319: question=PBCOM Tower Makati | answer=Gabriel Formoso PBCOM Tower
+Q320: question=PBCOM Tower Makati | answer=AIM campus Makati
+Q321: question=Felipe Mendoza architect Philippines | answer=Felipe S Mendoza
+Q322: question=Felipe Mendoza architect Philippines | answer=Felipe S Mendoza
+Q323: question=Leandro Locsin architect Philippines | answer=Leandro Locsin
+Q324: question=Cultural Center of the Philippines | answer=Leandro Locsin CCP
+Q325: question=Cultural Center of the Philippines | answer=Leandro Locsin CCP
+Q326: question=Church of the Holy Sacrifice | answer=Church of the Holy Sacrifice
+Q327: question=Church of the Holy Sacrifice | answer=Leandro Locsin Holy Sacrifice
+Q328: question=Coconut Palace Manila | answer=Coconut Palace
+Q329: question=Ateneo de Manila University campus architecture | answer=Leandro Locsin Ateneo
+Q330: question=Francisco Mañosa architect Philippines | answer=Francisco Manosa
+Q331: question=Coconut Palace Manila | answer=Francisco Manosa Coconut Palace
+Q332: question=Golden Mosque Quiapo | answer=Golden Mosque Manila
+Q333: question=San Miguel Corporation Headquarters Mandaluyong | answer=San Miguel Corporation Headquarters
+Q334: question=Amanpulo resort architecture | answer=Francisco Manosa Amanpulo
+Q335: question=Cultural Center of the Philippines | answer=National Artist architecture Philippines
+Q336: question=Batasang Pambansa Complex | answer=Felipe Mendoza Batasang Pambansa
+Q426: question=Anteroom | answer=Anteroom
+Q427: question=Atelier | answer=Atelier
+Q428: question=Baffle | answer=Baffle
+Q429: question=Bay | answer=Bay
+Q430: question=Canopy | answer=Canopy
+Q431: question=Carport | answer=Carport
+Q432: question=Chateau | answer=Chateau
+Q433: question=Circulatory elements | answer=Circulatory elements
+Q434: question=Concourse | answer=Concourse
+Q435: question=Elements | answer=Elements
+Q436: question=Fenestration | answer=Fenestration
+Q437: question=Foyer | answer=Foyer
+Q438: question=Fully column | answer=Fully column
+Q439: question=Lanai | answer=Lanai
+Q440: question=Lobby | answer=Lobby
+Q441: question=Loggia | answer=Loggia
+Q442: question=Lounge | answer=Lounge
+Q443: question=Mezzanine | answer=Mezzanine
+Q444: question=Picture window | answer=Picture window
+Q445: question=Pilotis / Stilts | answer=Pilotis / Stilts
+Q446: question=Plan | answer=Plan
+Q447: question=Portal | answer=Portal
+Q448: question=Portico | answer=Portico
+Q449: question=Rumpus room | answer=Rumpus room
+Q450: question=Stilts | answer=Stilts
+Q451: question=Sun breaker / Brise-soleil | answer=Sun breaker / Brise-soleil
+Q452: question=Vestibule | answer=Vestibule
+Q453: question=Windbreaker / Windbreak | answer=Windbreaker / Windbreak
+Q454: question=Axial planning | answer=Axial planning
+Q455: question=Axis | answer=Axis
+Q456: question=Bilateral planning | answer=Bilateral planning
+Q457: question=Cul-de-sac | answer=Cul-de-sac
+Q458: question=Dead space | answer=Dead space
+Q459: question=Entourage | answer=Entourage
+Q460: question=Gridiron planning | answer=Gridiron planning
+Q461: question=Landscape | answer=Landscape
+Q462: question=Master plan | answer=Master plan
+Q464: question=Radial planning | answer=Radial planning
+Q465: question=Regional planning | answer=Regional planning
+Q466: question=Site planning | answer=Site planning
+Q467: question=Unilateral planning | answer=Unilateral planning
+Q468: question=Zoning | answer=Zoning

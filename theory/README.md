@@ -1,18 +1,14 @@
-# ALE Theory v3 — Complete Folder
+# ALE Theory v5 — Visual Version
 
 Total cards: 468
+Cards with visuals: 259
+No missing numbers. No duplicates.
 
-Included:
-- Q1–Q468 complete
-- Q173–Q321 merged from the uploaded missing Theory pages
-- No duplicate card numbers
-- All cards have A–D choices
-- Audio-ready Taglish explanations
-- Text-only, no images
-- iPad-safe UI with embedded fallback data
+Visual rules:
+- Remote image link mode only
+- Wikipedia/Wikimedia Commons first
+- Google Images fallback only if no preview loads
+- Labels are hidden before answering
+- No generated images
 
-Upload/replace only this folder in your GitHub repo root:
-
-/theory/index.html
-/theory/cards.json
-/theory/README.md
+Upload/replace this /theory/ folder in your repo root.
