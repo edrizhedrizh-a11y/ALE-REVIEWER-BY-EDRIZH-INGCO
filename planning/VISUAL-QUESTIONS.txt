@@ -1,0 +1,72 @@
+Q2: sustainable site planning landscape drainage shade
+Q4: urban microclimate wind heat island diagram
+Q5: pergola trellis shading landscape architecture
+Q6: topographic contour map
+Q9: playground grading drainage slope
+Q10: windbreak landscape architecture
+Q12: contour area method earthwork
+Q13: average end area method road earthwork
+Q15: sieve mapping land suitability overlay
+Q16: building parallel to contours slope
+Q18: Kevin Lynch nodes paths edges landmarks districts
+Q19: gridiron street pattern
+Q20: arterial collector local road hierarchy
+Q21: cul de sac subdivision pattern
+Q22: loop street subdivision pattern
+Q23: meandering street pattern subdivision
+Q24: meandering road lots
+Q26: collector street diagram
+Q28: urban legibility Kevin Lynch
+Q29: urban permeability street network
+Q30: genius loci place character
+Q31: townscape analysis
+Q33: urban form city blocks
+Q34: urban morphology map
+Q35: urban public space
+Q36: urban design public realm
+Q37: Kevin Lynch edges
+Q38: Kevin Lynch districts
+Q39: Kevin Lynch landmarks
+Q40: Kevin Lynch paths
+Q41: New Urbanism neighborhood
+Q42: cluster development site plan
+Q43: ribbon development road
+Q44: axial planning diagram
+Q45: radial street plan
+Q46: gridiron planning
+Q47: cul-de-sac street
+Q49: windbreak trees diagram
+Q50: Kevin Lynch nodes
+Q51: Kevin Lynch paths
+Q52: Kevin Lynch districts
+Q53: Kevin Lynch edge
+Q54: urban landmark
+Q56: Industrial Revolution urbanization
+Q57: Brasilia pilot plan Lucio Costa
+Q58: linear city Soria y Mata
+Q59: Garden City Ebenezer Howard diagram
+Q60: Broadacre City Frank Lloyd Wright
+Q61: Ville Radieuse Le Corbusier
+Q62: Burnham Plan Manila
+Q63: Burnham Plan Manila civic center
+Q64: Clarence Perry neighborhood unit
+Q65: Clarence Perry neighborhood unit
+Q67: landscape buffer zoning
+Q68: central business district
+Q69: planned unit development site plan
+Q70: zoning map land use districts
+Q71: comprehensive land use plan map Philippines
+Q78: road right of way cross section
+Q80: skew junction road intersection
+Q83: master plan site development
+Q84: site plan architecture
+Q85: land suitability analysis map
+Q86: carrying capacity planning
+Q89: mixed use development
+Q90: cluster development
+Q91: New Urbanism street
+Q96: Laws of the Indies plaza
+Q97: riparian easement diagram
+Q99: protected area Philippines map
+Q100: environmental compliance certificate Philippines
+Q101: environmental impact statement diagram

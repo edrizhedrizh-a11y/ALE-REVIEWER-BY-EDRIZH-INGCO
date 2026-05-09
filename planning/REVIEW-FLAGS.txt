@@ -1,0 +1,6 @@
+Q12: Which earthwork computation method is commonly used for large uncomplicated grading plans and irregular areas? [snippet_reconstructed]
+Q13: Which earthwork computation method is best suited to linear construction such as roads, trenches, or long channels? [snippet_reconstructed]
+Q14: Which of the following can be a disadvantage or concern when grading by fill? [snippet_reconstructed]
+Q17: In circulation planning, linear elements primarily used for movement are called what? [snippet_reconstructed]
+Q22: A street pattern characterized by houses fronting along a continuous loop road is called what? [reconstructed_review_item]
+Q27: In the relationship between nature and architecture, when a building yields to or respects the landscape, the concept is called what? [snippet_reconstructed]
