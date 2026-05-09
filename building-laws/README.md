@@ -1,25 +1,20 @@
-# ALE Building Laws — Final from Uploaded Text
+# ALE Building Laws — Source-Backed V2
 
-This folder was generated from the Building Laws raw text uploaded in this conversation.
+This version removes generated/schematic diagrams because they can be visually misleading for standards-based Building Laws.
 
-## Contents
-- `index.html` — Building Laws reviewer app
-- `cards.json` — 126 parsed ALE Building Laws cards
-- `visual-plan.json` — visual classification plan
-- `README.md`
+## What changed
+- Removed generated SVG/CSS diagrams.
+- Removed question-side generated figures.
+- Added official/source-reference buttons after answering.
+- Kept the 126 parsed cards from the uploaded Building Laws text.
+- Kept BP 344/NBCP/Fire Code current-standard notes.
 
-## Philippine basis priority
-1. PD 1096 / National Building Code of the Philippines
-2. Revised IRR of PD 1096
-3. BP 344, with current/revised values prioritized where the notes flag old-reviewer conflicts
-4. Fire Code of the Philippines / RA 9514 and IRR
-5. Referral codes under Philippine practice
-6. UAP/local professional practice
-7. ALE-accepted Philippine context
+## Visual rule
+Use an image only when the image/plate/figure is verified from a legitimate source:
+- NCDA / DPWH for BP 344
+- DPWH for PD 1096 / NBCP
+- LawPhil / DHSUD for BP 220 and PD 957
+- LawPhil / BFP-source documents for Fire Code context
 
-## Visual behavior
-- Question-side generated diagrams are used only for figure-identification cards.
-- Question-side visuals do not show answer labels.
-- Answer-side standard diagrams show after answering.
-- BP 344 old-reviewer conflicts are flagged in the card explanation.
-- Cards with legal dates, agencies, definitions, and pure memory values stay concept/text-first.
+## Next refinement
+For cards like Q47, Q48, Q89 and BP 344 details, add only official plates or exact source-cropped diagrams. Do not use generated approximations or random photos.

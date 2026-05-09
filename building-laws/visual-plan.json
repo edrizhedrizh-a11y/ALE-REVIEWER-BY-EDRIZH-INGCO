@@ -42,5 +42,134 @@
     "Q110-Q123 agencies/CLUP/zoning/LGU/legal responsibility",
     "Q125-Q126 ECC/Antique definitions"
   ],
-  "rule": "Figure identification = question-side generated diagram; dimensions/layouts = answer-side standard diagram; legal dates/agencies/definitions = concept only."
+  "rule": "Do not show generated diagrams. Use only official/source-backed visuals or show a source-reference card.",
+  "mode": "source-backed-v2-no-generated-diagrams",
+  "official_sources": [
+    {
+      "label": "NCDA — 2024 Revised IRR of BP 344",
+      "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+    },
+    {
+      "label": "DPWH — BP 344 references",
+      "url": "https://www.dpwh.gov.ph/dpwh/references/laws_codes_orders/bpb344"
+    },
+    {
+      "label": "DPWH — BP 344 IRR PDF",
+      "url": "https://www.dpwh.gov.ph/dpwh/sites/default/files/laws_codes_orders/BP_344_IRR_0.pdf"
+    },
+    {
+      "label": "DPWH — PD 1096 / NBCP references",
+      "url": "https://www.dpwh.gov.ph/dpwh/references/laws_codes_orders/PD1096"
+    },
+    {
+      "label": "DPWH — National Building Code PDF",
+      "url": "https://www.dpwh.gov.ph/DPWH/files/nbc/PD.pdf"
+    },
+    {
+      "label": "LawPhil — Revised Rules for BP 220",
+      "url": "https://lawphil.net/statutes/repacts/ra2008/irr_bp220_2008.html"
+    },
+    {
+      "label": "DHSUD — Revised IRR BP 220 PDF",
+      "url": "https://dhsud.gov.ph/wp-content/uploads/Laws_Issuances/02_IRR/Revised_IRR_BP220_2008.pdf"
+    },
+    {
+      "label": "LawPhil — PD 957",
+      "url": "https://lawphil.net/statutes/presdecs/pd1976/pd_957_1976.html"
+    },
+    {
+      "label": "DHSUD — Revised IRR PD 957 PDF",
+      "url": "https://dhsud.gov.ph/wp-content/uploads/Laws_Issuances/02_IRR/IRRPD957.pdf"
+    },
+    {
+      "label": "LawPhil — RA 9514 Fire Code",
+      "url": "https://lawphil.net/statutes/repacts/ra2008/ra_9514_2008.html"
+    }
+  ],
+  "visuals_removed_pending_verified_source": [
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18",
+    "Q19",
+    "Q20",
+    "Q21",
+    "Q22",
+    "Q23",
+    "Q24",
+    "Q25",
+    "Q26",
+    "Q27",
+    "Q28",
+    "Q29",
+    "Q33",
+    "Q34",
+    "Q35",
+    "Q36",
+    "Q37",
+    "Q38",
+    "Q41",
+    "Q42",
+    "Q43",
+    "Q44",
+    "Q45",
+    "Q46",
+    "Q47",
+    "Q48",
+    "Q49",
+    "Q50",
+    "Q51",
+    "Q52",
+    "Q53",
+    "Q54",
+    "Q55",
+    "Q56",
+    "Q57",
+    "Q58",
+    "Q59",
+    "Q60",
+    "Q61",
+    "Q62",
+    "Q63",
+    "Q64",
+    "Q65",
+    "Q66",
+    "Q67",
+    "Q68",
+    "Q69",
+    "Q72",
+    "Q73",
+    "Q74",
+    "Q78",
+    "Q79",
+    "Q80",
+    "Q81",
+    "Q82",
+    "Q83",
+    "Q84",
+    "Q85",
+    "Q86",
+    "Q87",
+    "Q88",
+    "Q89",
+    "Q90",
+    "Q91",
+    "Q92",
+    "Q93",
+    "Q94",
+    "Q95",
+    "Q96",
+    "Q97",
+    "Q98",
+    "Q99",
+    "Q100",
+    "Q103",
+    "Q104",
+    "Q105",
+    "Q106",
+    "Q107",
+    "Q108",
+    "Q109"
+  ]
 }
