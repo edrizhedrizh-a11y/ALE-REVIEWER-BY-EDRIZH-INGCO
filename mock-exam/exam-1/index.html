@@ -43,10 +43,30 @@ body.markupFullscreen .sheet,body.markupFullscreen .hero,body.markupFullscreen #
 .reviewCanvasBox{margin:10px 0;border:1px solid var(--line);background:#fff;border-radius:16px;padding:10px}
 .reviewCanvasBox canvas{width:100%;max-height:360px;border-radius:12px;border:1px solid var(--line);background:#fffdf8}
 .reviewNoteText{white-space:pre-wrap;background:#fffaf0;border:1px solid var(--line);border-radius:12px;padding:10px;margin-top:8px;color:#263853}
+
+.paceBox{font-size:13px;color:#40506a;background:#fffaf0;border:1px solid var(--line);border-radius:14px;padding:9px 12px;margin-top:8px}
+.paceBox.behind{color:#9b1c1c;background:#fff5f5;border-color:#e0b0b0}
+.paceBox.ahead{color:#006b35;background:#f0fff7;border-color:#b7dfc8}
+.resumeBox{display:none;margin-top:12px;background:#f0fff7;border:1px solid #b7dfc8;border-radius:14px;padding:12px;color:#0c3924}
+.dataTools{margin-top:12px;border-top:1px dashed var(--line);padding-top:12px}
+.fileInput{max-width:260px}
+.bankList{display:grid;gap:10px;margin-top:10px}
+.bankCard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px}
+
 @media(max-width:860px){
   .markupToolbar{display:block}
   .toolRow .toolBtn{min-height:42px;padding:9px 10px}
 }
+
+
+.paceBox{font-size:13px;color:#40506a;background:#fffaf0;border:1px solid var(--line);border-radius:14px;padding:9px 12px;margin-top:8px}
+.paceBox.behind{color:#9b1c1c;background:#fff5f5;border-color:#e0b0b0}
+.paceBox.ahead{color:#006b35;background:#f0fff7;border-color:#b7dfc8}
+.resumeBox{display:none;margin-top:12px;background:#f0fff7;border:1px solid #b7dfc8;border-radius:14px;padding:12px;color:#0c3924}
+.dataTools{margin-top:12px;border-top:1px dashed var(--line);padding-top:12px}
+.fileInput{max-width:260px}
+.bankList{display:grid;gap:10px;margin-top:10px}
+.bankCard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px}
 
 @media(max-width:860px){body{padding:14px}.hero{padding:20px}h1{font-size:24px}.setupGrid,.scoreBox{grid-template-columns:1fr}.question{font-size:17px}}
 </style>
@@ -64,14 +84,14 @@ body.markupFullscreen .sheet,body.markupFullscreen .hero,body.markupFullscreen #
     <div><label for="modeSelect">Timer mode</label><select id="modeSelect"><option value="board">Board Mode — official pace</option><option value="pressure">Pressure Mode — 20% faster</option><option value="sprint">Sprint Mode — 50% faster</option><option value="none">No Timer Mode</option></select></div>
     <div><label for="layoutSelect">Layout</label><select id="layoutSelect"><option value="auto">Auto layout</option><option value="split">PRC Split View</option><option value="compact">Compact Mobile</option></select></div>
   </div>
-  <div class="topActions"><button class="btn primary" id="startBtn">Start New Random Exam</button><button class="btn" id="historyBtn">View Exam History</button></div>
+  <div class="topActions"><button class="btn primary" id="startBtn">Start New Random Exam</button><button class="btn" id="historyBtn">View Exam History</button><button class="btn" onclick="showMistakeBank()">Mistake Bank</button></div><div class="resumeBox" id="resumeBox"></div><div class="dataTools"><strong>Backup / Data</strong><div class="topActions"><button class="btn" onclick="exportAllExamData()">Export Backup JSON</button><label class="btn">Import Backup JSON <input class="fileInput" type="file" accept="application/json" style="display:none" onchange="importExamBackup(this)"></label><button class="btn danger" onclick="clearAllExamData()">Clear All Exam Data</button></div></div>
   <p class="mini">Default: new random set every Start Exam. Fixed set only when you choose Retake Same Exam after submit.</p>
   <div class="warning" id="warning"></div>
   
   <div id="historyBox"></div>
 </section>
 <section class="examShell" id="examShell">
-  <div class="examTop"><div><strong id="progressText"></strong><div class="mini" id="sourceText"></div></div><div class="timer" id="timer">--:--</div></div>
+  <div class="examTop"><div><strong id="progressText"></strong><div class="mini" id="sourceText"></div><div class="paceBox" id="paceBox">Pacing: waiting to start.</div></div><div class="timer" id="timer">--:--</div></div>
   <div class="examLayout">
     <main class="booklet">
       <div class="markupArea" id="markupArea"><div class="qMeta"><span class="pill" id="qid"></span><span class="pill" id="qcat"></span><span class="pill" id="markPill">No mark</span></div>
@@ -80,7 +100,7 @@ body.markupFullscreen .sheet,body.markupFullscreen .hero,body.markupFullscreen #
       <div class="choices" id="choicesBox"></div><canvas class="markupCanvas" id="markupCanvas"></canvas></div>
       <div class="markupToolbar"><strong>Test Booklet Markup Mode</strong><div class="toolRow"><button class="toolBtn active" data-tool="navigate" onclick="setMarkupTool(\'navigate\')">Navigate</button><button class="toolBtn" data-tool="pencil" onclick="setMarkupTool(\'pencil\')">Pencil</button><button class="toolBtn" data-tool="highlighter" onclick="setMarkupTool(\'highlighter\')">Highlighter</button><button class="toolBtn" data-tool="eraser" onclick="setMarkupTool(\'eraser\')">Eraser</button><button class="toolBtn" onclick="undoLastStroke()">Undo Last Stroke</button><button class="toolBtn" onclick="clearQuestionNotes()">Clear Notes for This Question</button><button class="toolBtn" id="hideShowNotesBtn" onclick="toggleNotesVisible()">Hide Notes</button><button class="toolBtn" id="fullscreenBtn" onclick="toggleFullscreenBooklet()">Fullscreen Question</button><button class="toolBtn" onclick="toggleScratchPad()">Open Scratch Pad</button></div><div class="toolHint" id="markupStatus">Navigate Mode: scroll/tap normally.</div><div class="scratchBox" id="scratchBox"><textarea id="scratchText" placeholder="Typed scratch notes fallback for phone or keyboard use..." oninput="saveTypedScratch()"></textarea></div></div>
       <div class="markPanel"><strong>Confidence mark — separate from your A/B/C/D answer</strong><div class="markBtns" id="markBtns"></div></div>
-      <div class="navBtns"><button class="btn" id="prevBtn">Previous</button><button class="btn" id="nextBtn">Next</button><button class="btn" id="prevMatchBtn" style="display:none">Previous Matching</button><button class="btn" id="nextMatchBtn" style="display:none">Next Matching</button><button class="btn danger" id="submitBtn">Submit Exam</button></div>
+      <div class="navBtns"><button class="btn" id="prevBtn">Previous</button><button class="btn" id="nextBtn">Next</button><button class="btn" id="prevMatchBtn" style="display:none">Previous Matching</button><button class="btn" id="nextMatchBtn" style="display:none">Next Matching</button><button class="btn danger" id="submitBtn">Submit Exam</button></div><div class="navBtns" id="secondPassBtns"></div>
     </main>
     <aside class="sheet" id="answerSheet"></aside>
   </div>
@@ -159,6 +179,235 @@ async function loadCards(){loadedWarnings=[];const chunks=await Promise.all(CONF
 function setupOptions(){$('countSelect').innerHTML=CONFIG.options.map(o=>`<option value="${o.items}">${o.items} items — ${o.label}</option>`).join('')} function calcLimit(items,mode){if(mode==='none')return 0;let s=items*CONFIG.paceMinutes*60;if(mode==='pressure')s*=.8;if(mode==='sprint')s*=.5;return Math.round(s)}
 function prepQuestion(c){const choices=c.choices.map(ch=>({text:ch.text,correct:ch.text.trim()===c.correctText.trim()}));if(!choices.some(ch=>ch.correct))choices.push({text:c.correctText,correct:true});const randomized=shuffle(choices);return{...c,randomizedChoices:randomized,correctIndex:randomized.findIndex(ch=>ch.correct)}}
 function directImageCandidate(value){if(!value)return'';const s=String(value).trim();if(/^(https?:\/\/|data:image\/|assets\/|\.\/assets\/|\.\.\/)/i.test(s)&&/\.(png|jpe?g|webp|gif|svg)(\?.*)?$/i.test(s))return s;return''} function getArrayField(card,name){const v=card[name];if(Array.isArray(v))return v.filter(Boolean).map(String);if(typeof v==='string'&&v.trim())return[v.trim()];return[]} function safeVisualQueries(card){const q=[];['questionImageQuery','imageQuery','questionImageQueries','questionImageLayoutQueries','visualQuery'].forEach(k=>q.push(...getArrayField(card,k)));if(card.visual&&typeof card.visual==='string')q.push(card.visual);return[...new Set(q.filter(x=>x&&!/answer|correct/i.test(x)))]} function getQuestionVisual(card){for(const v of [card.questionImage,card.image,card.visualUrl,card.visual]){const hit=directImageCandidate(v);if(hit)return{type:'image',url:hit,note:'Question visual shown for identification. Answer labels are hidden until submit.'}}const q=safeVisualQueries(card)[0];return q?{type:'query',query:q,note:'No direct image stored. Use source-backed visual buttons; answer remains hidden.'}:null} function imageSearchUrl(q){return'https://www.google.com/search?tbm=isch&q='+encodeURIComponent(q)} function wikiSearchUrl(q){return'https://commons.wikimedia.org/w/index.php?search='+encodeURIComponent(q)+'&title=Special:MediaSearch&type=image'} function renderSafeVisual(card){const box=$('visualBox');const v=getQuestionVisual(card);if(!v){box.className='visualBox';box.innerHTML='';return}box.className='visualBox show';if(v.type==='image')box.innerHTML=`<img src="${escapeHtml(v.url)}" alt="Question visual"><p class="visualNote">${escapeHtml(v.note)}</p>`;else box.innerHTML=`<p class="visualNote"><strong>Visual item:</strong> This card needs an identification/reference image. No answer is revealed here.</p><div class="visualBtns"><a class="visualLink" href="${imageSearchUrl(v.query)}" target="_blank" rel="noopener">Open image search</a><a class="visualLink" href="${wikiSearchUrl(v.query)}" target="_blank" rel="noopener">Open Wikimedia Commons</a></div><p class="visualNote">Search cue: ${escapeHtml(v.query)}</p>`} function answerVisualHtml(card){for(const v of [card.answerImage,card.questionImage,card.image,card.visualUrl,card.visual]){const hit=directImageCandidate(v);if(hit)return`<div class="visualBox show"><img src="${escapeHtml(hit)}" alt="Review visual"><p class="visualNote">Review visual shown after submit.</p></div>`}const q=safeVisualQueries(card)[0];return q?`<div class="visualBox show"><p class="visualNote"><strong>Review visual reference:</strong> ${escapeHtml(q)}</p><div class="visualBtns"><a class="visualLink" href="${imageSearchUrl(q)}" target="_blank" rel="noopener">Open image search</a><a class="visualLink" href="${wikiSearchUrl(q)}" target="_blank" rel="noopener">Open Wikimedia Commons</a></div></div>`:''}
+
+
+// ===== v6 autosave / resume / mistake bank / backup =====
+const PROGRESS_KEY = 'aleMockActiveProgress_' + String(CONFIG.shortTitle||'exam').replace(/\W+/g,'_');
+const MISTAKE_BANK_KEY = 'aleMockMistakeBankV1';
+let autosaveInt = null;
+let originalAnswers = [];
+
+function answerKeyAt(index){
+  return answers[index] == null ? null : String(exam[index].randomizedChoices[answers[index]]?.text || '');
+}
+function saveActiveProgress(){
+  if(!exam.length || submitted) return;
+  const elapsed = Math.floor((Date.now()-startedAt)/1000);
+  const data = {
+    attemptId: currentAttemptId,
+    examType: CONFIG.shortTitle,
+    savedAt: Date.now(),
+    date: new Date().toLocaleString(),
+    questionIds: exam.map(cardKey),
+    answers,
+    originalAnswers,
+    marks,
+    current,
+    elapsedSeconds: elapsed,
+    timeLimit,
+    timerMode: $('modeSelect') ? $('modeSelect').value : '',
+    itemCount: exam.length,
+    layout: $('layoutSelect') ? $('layoutSelect').value : 'auto'
+  };
+  try{ localStorage.setItem(PROGRESS_KEY, JSON.stringify(data)); }catch(e){}
+}
+function readActiveProgress(){
+  try{ return JSON.parse(localStorage.getItem(PROGRESS_KEY)||'null'); }catch(e){ return null; }
+}
+function clearActiveProgress(){
+  localStorage.removeItem(PROGRESS_KEY);
+  renderResumeBox();
+}
+function renderResumeBox(){
+  const box = document.getElementById('resumeBox');
+  if(!box) return;
+  const p = readActiveProgress();
+  if(!p || !p.questionIds || !p.questionIds.length){
+    box.style.display = 'none';
+    box.innerHTML = '';
+    return;
+  }
+  box.style.display = 'block';
+  box.innerHTML = `<strong>Saved exam found:</strong> ${escapeHtml(p.examType||CONFIG.shortTitle)} · ${p.itemCount||p.questionIds.length} items · saved ${escapeHtml(p.date||'')}<div class="topActions"><button class="btn primary" onclick="resumeLastExam()">Resume Last Exam</button><button class="btn danger" onclick="discardLastExam()">Discard Last Exam</button></div>`;
+}
+async function resumeLastExam(){
+  const saved = readActiveProgress();
+  if(!saved){ alert('No saved exam to resume.'); return; }
+  await loadCards();
+  const rebuilt = buildExamFromIds(saved.questionIds, saved.itemCount || saved.questionIds.length);
+  if(!rebuilt || !rebuilt.length){ alert('Saved questions are no longer available.'); return; }
+  currentAttemptId = saved.attemptId || newAttemptId();
+  exam = rebuilt;
+  answers = Array(exam.length).fill(null);
+  (saved.answers||[]).forEach((v,i)=>{ if(i<answers.length) answers[i]=v; });
+  originalAnswers = Array(exam.length).fill(null);
+  (saved.originalAnswers||[]).forEach((v,i)=>{ if(i<originalAnswers.length) originalAnswers[i]=v; });
+  marks = Array(exam.length).fill('');
+  (saved.marks||[]).forEach((v,i)=>{ if(i<marks.length) marks[i]=v||''; });
+  current = Math.min(saved.current||0, exam.length-1);
+  submitted = false;
+  activeFilter = 'all';
+  timeLimit = saved.timeLimit || calcLimit(exam.length, saved.timerMode || 'board');
+  const elapsedThen = saved.elapsedSeconds || 0;
+  const extraElapsed = Math.floor((Date.now()-(saved.savedAt||Date.now()))/1000);
+  const totalElapsed = timeLimit ? elapsedThen + extraElapsed : elapsedThen;
+  startedAt = Date.now() - totalElapsed*1000;
+  if($('layoutSelect') && saved.layout) $('layoutSelect').value = saved.layout;
+  applyLayout();
+  $('setup').style.display='none'; $('results').style.display='none'; $('examShell').style.display='block';
+  renderQuestion(); tick(); clearInterval(timerInt); if(timeLimit) timerInt=setInterval(tick,1000); else $('timer').textContent='No timer';
+  clearInterval(autosaveInt); autosaveInt=setInterval(saveActiveProgress,5000);
+}
+function discardLastExam(){
+  if(!confirm('Discard the saved active exam? This will not delete submitted history.')) return;
+  clearActiveProgress();
+}
+function beginAutosave(){
+  clearInterval(autosaveInt);
+  autosaveInt = setInterval(saveActiveProgress, 5000);
+}
+function stopAutosave(){
+  clearInterval(autosaveInt);
+  autosaveInt = null;
+}
+function updatePacing(){
+  const box = document.getElementById('paceBox');
+  if(!box || !exam.length) return;
+  if(!timeLimit){
+    box.className = 'paceBox';
+    box.textContent = 'Pacing: No timer mode.';
+    return;
+  }
+  const elapsed = Math.max(0, Math.floor((Date.now()-startedAt)/1000));
+  const expected = Math.min(exam.length, Math.floor(elapsed / (CONFIG.paceMinutes*60)) + 1);
+  const answered = answers.filter(a=>a!=null).length;
+  const diff = answered - expected;
+  box.className = 'paceBox ' + (diff < -2 ? 'behind' : diff > 2 ? 'ahead' : '');
+  const label = diff < -2 ? 'Behind pace' : diff > 2 ? 'Ahead of pace' : 'On pace';
+  box.textContent = `Pacing: ${label}. Answered ${answered}/${exam.length}. Expected around item ${expected}.`;
+}
+function goNextStatus(filter){
+  activeFilter = filter;
+  const v = visibleIndexes();
+  if(!v.length){ alert('No matching questions.'); return; }
+  const after = v.find(i => i > current);
+  current = after !== undefined ? after : v[0];
+  renderQuestion();
+}
+function addSecondPassButtons(){
+  const host = document.getElementById('secondPassBtns');
+  if(!host) return;
+  host.innerHTML = `<button class="btn" onclick="goNextStatus('unanswered')">Go to Next Unanswered</button><button class="btn" onclick="goNextStatus('notSure')">Go to Next Not Sure</button><button class="btn" onclick="goNextStatus('guess')">Go to Next Guess</button><button class="btn" onclick="goNextStatus('noIdea')">Go to Next No Idea</button><button class="btn" onclick="goNextStatus('marked')">Review All Marked</button>`;
+}
+function readMistakeBank(){
+  try{ return JSON.parse(localStorage.getItem(MISTAKE_BANK_KEY)||'[]'); }catch(e){ return []; }
+}
+function writeMistakeBank(items){
+  try{ localStorage.setItem(MISTAKE_BANK_KEY, JSON.stringify(items.slice(-600))); }catch(e){}
+}
+function saveMistakesToBank(){
+  const bank = readMistakeBank();
+  exam.forEach((q,i)=>{
+    const ok = answers[i]!=null && q.randomizedChoices[answers[i]]?.correct;
+    if(!ok){
+      bank.push({
+        date:new Date().toLocaleString(),
+        examType:CONFIG.shortTitle,
+        questionId:cardKey(q),
+        uid:q.uid, displayId:q.displayId, category:q.category, sourceName:q.sourceName,
+        question:q.question,
+        choices:q.randomizedChoices.map(ch=>ch.text),
+        correctText:q.randomizedChoices[q.correctIndex]?.text || q.correctText,
+        userAnswer: answers[i]==null ? 'Unanswered' : q.randomizedChoices[answers[i]]?.text,
+        mark: marks[i] || '',
+        keyMemory:q.keyMemory || '',
+        explanation:q.explanation || ''
+      });
+    }
+  });
+  writeMistakeBank(bank);
+}
+function showMistakeBank(){
+  const bank = readMistakeBank().reverse();
+  const box = document.getElementById('historyBox');
+  if(!box) return;
+  if(!bank.length){ box.innerHTML='<p class="mini">Mistake Bank is empty.</p>'; return; }
+  box.innerHTML = `<h3>Mistake Bank</h3><div class="topActions"><button class="btn primary" onclick="startMistakeBankExam()">Retake Wrong Answers</button><button class="btn" onclick="startWeakTopicExam()">Weak Topic Exam</button></div><div class="bankList">${bank.slice(0,80).map(item=>`<div class="bankCard"><strong>${escapeHtml(item.category||'Unknown')}</strong><p>${escapeHtml(item.question)}</p><p class="mini">Your answer: ${escapeHtml(item.userAnswer)} · Correct: ${escapeHtml(item.correctText)}</p></div>`).join('')}</div>`;
+}
+function startMistakeBankExam(){
+  const bank = readMistakeBank();
+  if(!bank.length){ alert('Mistake Bank is empty.'); return; }
+  const sample = bank.slice(-Math.min(50, bank.length));
+  startFromBank(sample, 'Mistake Bank Retake');
+}
+function startWeakTopicExam(){
+  const bank = readMistakeBank();
+  if(!bank.length){ alert('Mistake Bank is empty.'); return; }
+  const counts = {};
+  bank.forEach(x=>counts[x.category||'Unknown']=(counts[x.category||'Unknown']||0)+1);
+  const weakest = Object.entries(counts).sort((a,b)=>b[1]-a[1])[0][0];
+  const sample = bank.filter(x=>(x.category||'Unknown')===weakest).slice(-50);
+  startFromBank(sample, 'Weak Topic Exam: '+weakest);
+}
+function startFromBank(items, label){
+  exam = items.map((x,idx)=>{
+    const choices = shuffle((x.choices&&x.choices.length?x.choices:[x.correctText]).map(t=>({text:t, correct:String(t).trim()===String(x.correctText).trim()})));
+    if(!choices.some(c=>c.correct)) choices.push({text:x.correctText, correct:true});
+    return {uid:x.uid||('bank-'+idx),displayId:x.displayId||('B'+(idx+1)),category:x.category||'Mistake Bank',sourceName:x.sourceName||label,question:x.question,choices:choices.map((c,i)=>({letter:String.fromCharCode(97+i),text:c.text})),randomizedChoices:choices,correctIndex:choices.findIndex(c=>c.correct),correctText:x.correctText,answer:x.correctText,keyMemory:x.keyMemory||'',explanation:x.explanation||''};
+  });
+  currentAttemptId = newAttemptId();
+  answers=Array(exam.length).fill(null); originalAnswers=Array(exam.length).fill(null); marks=Array(exam.length).fill(''); current=0; submitted=false; activeFilter='all';
+  timeLimit=0; startedAt=Date.now();
+  $('setup').style.display='none'; $('results').style.display='none'; $('examShell').style.display='block';
+  renderQuestion(); tick(); beginAutosave();
+}
+function answerChangeStats(){
+  let improved=0,hurt=0,neutral=0,total=0;
+  exam.forEach((q,i)=>{
+    if(originalAnswers[i] == null || answers[i] == null || originalAnswers[i] === answers[i]) return;
+    total++;
+    const oldOk = q.randomizedChoices[originalAnswers[i]]?.correct;
+    const newOk = q.randomizedChoices[answers[i]]?.correct;
+    if(!oldOk && newOk) improved++;
+    else if(oldOk && !newOk) hurt++;
+    else neutral++;
+  });
+  return {total, improved, hurt, neutral};
+}
+function exportAllExamData(){
+  const keys = Object.keys(localStorage).filter(k => k.startsWith('aleMock') || k.startsWith('aleFullAle'));
+  const data = {};
+  keys.forEach(k=>data[k]=localStorage.getItem(k));
+  const blob = new Blob([JSON.stringify({exportedAt:new Date().toISOString(),data}, null, 2)], {type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'ale-mock-exam-backup.json'; a.click();
+  setTimeout(()=>URL.revokeObjectURL(url), 1000);
+}
+function importExamBackup(input){
+  const file = input.files && input.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    try{
+      const parsed = JSON.parse(reader.result);
+      const data = parsed.data || parsed;
+      Object.entries(data).forEach(([k,v])=>{
+        if(k.startsWith('aleMock') || k.startsWith('aleFullAle')) localStorage.setItem(k, String(v));
+      });
+      alert('Backup imported. Refresh or open history/mistake bank to view.');
+      renderResumeBox();
+    }catch(e){ alert('Invalid backup JSON.'); }
+  };
+  reader.readAsText(file);
+}
+function clearAllExamData(){
+  if(!confirm('Clear ALL mock exam data: history, active exams, annotations, and mistake bank?')) return;
+  if(!confirm('This cannot be undone. Clear all exam data now?')) return;
+  Object.keys(localStorage).filter(k=>k.startsWith('aleMock') || k.startsWith('aleFullAle')).forEach(k=>localStorage.removeItem(k));
+  alert('All mock exam data cleared.');
+  renderResumeBox();
+}
 
 // ===== Test Booklet Markup Mode =====
 const ANNOTATION_KEY = 'aleMockExamAnnotationsV1';
@@ -421,26 +670,26 @@ function clearAttemptNotes(){
 }
 window.addEventListener('resize', ()=> setTimeout(resizeMarkupCanvas, 100));
 
-async function startExam(){applyLayout();$('startBtn').disabled=true;$('warning').style.display='none';await loadCards();if(!allCards.length){$('warning').style.display='block';$('warning').textContent='No cards available yet. Check folders and cards.json.';$('startBtn').disabled=false;return}const count=Number($('countSelect').value);exam=[];if(pendingRetakeIds?.length){exam=buildExamFromIds(pendingRetakeIds,count)||[];if(!exam.length){alert('Saved IDs unavailable. Starting new random exam.');pendingRetakeIds=null}}if(!exam.length)exam=shuffle(allCards).slice(0,Math.min(count,allCards.length)).map(prepQuestion);answers=Array(exam.length).fill(null);marks=Array(exam.length).fill('');current=0;submitted=false;activeFilter='all';currentAttemptId=newAttemptId();timeLimit=calcLimit(exam.length,$('modeSelect').value);startedAt=Date.now();saveCurrentAttempt(pendingRetakeIds?'retake_started':'started',{retake:!!pendingRetakeIds});$('setup').style.display='none';$('results').style.display='none';$('examShell').style.display='block';renderQuestion();tick();clearInterval(timerInt);if(timeLimit)timerInt=setInterval(tick,1000);else $('timer').textContent='No timer';$('startBtn').disabled=false}
-function tick(){if(!timeLimit){$('timer').textContent='No timer';return}const left=timeLimit-Math.floor((Date.now()-startedAt)/1000);$('timer').textContent=fmtTime(left);if(left<=0&&!submitted)submitExam(true)}
+async function startExam(){applyLayout();$('startBtn').disabled=true;$('warning').style.display='none';await loadCards();if(!allCards.length){$('warning').style.display='block';$('warning').textContent='No cards available yet. Check folders and cards.json.';$('startBtn').disabled=false;return}const count=Number($('countSelect').value);exam=[];if(pendingRetakeIds?.length){exam=buildExamFromIds(pendingRetakeIds,count)||[];if(!exam.length){alert('Saved IDs unavailable. Starting new random exam.');pendingRetakeIds=null}}if(!exam.length)exam=shuffle(allCards).slice(0,Math.min(count,allCards.length)).map(prepQuestion);answers=Array(exam.length).fill(null);originalAnswers=Array(exam.length).fill(null);marks=Array(exam.length).fill('');current=0;submitted=false;activeFilter='all';currentAttemptId=newAttemptId();timeLimit=calcLimit(exam.length,$('modeSelect').value);startedAt=Date.now();saveCurrentAttempt(pendingRetakeIds?'retake_started':'started',{retake:!!pendingRetakeIds});$('setup').style.display='none';$('results').style.display='none';$('examShell').style.display='block';renderQuestion();tick();clearInterval(timerInt);if(timeLimit)timerInt=setInterval(tick,1000);else $('timer').textContent='No timer';beginAutosave();$('startBtn').disabled=false}
+function tick(){if(!timeLimit){$('timer').textContent='No timer';return}const left=timeLimit-Math.floor((Date.now()-startedAt)/1000);$('timer').textContent=fmtTime(left);updatePacing(); if(left<=0&&!submitted)submitExam(true)}
 function counts(){const c={answered:0,unanswered:0,sure:0,notSure:0,guess:0,noIdea:0,marked:0};for(let i=0;i<exam.length;i++){if(answers[i]==null)c.unanswered++;else c.answered++;if(marks[i]){c.marked++;c[marks[i]]++}}return c}
 function markLabel(m){return m?MARKS[m].sym+' '+MARKS[m].label:'No mark'} function statusFor(i){return {answered:answers[i]!=null,mark:marks[i]||'',current:i===current}}
-function setMark(m){marks[current]=m;renderQuestion()}
-function renderQuestion(){const q=exam[current];if(!q)return;$('progressText').textContent=`Question ${current+1} of ${exam.length}`;$('sourceText').textContent=`Source: ${q.sourceName}`;$('qid').textContent=q.displayId;$('qcat').textContent=q.category;$('markPill').textContent=markLabel(marks[current]);$('questionText').textContent=q.question;renderSafeVisual(q);setTimeout(setupMarkupCanvas, 0);$('choicesBox').innerHTML=q.randomizedChoices.map((ch,i)=>`<label class="choice ${answers[current]===i?'selected':''}"><input type="radio" name="choice" ${answers[current]===i?'checked':''} data-index="${i}"><span><strong>${String.fromCharCode(65+i)}.</strong> ${escapeHtml(ch.text)}</span></label>`).join('');document.querySelectorAll('input[name=choice]').forEach(inp=>inp.onchange=()=>{answers[current]=Number(inp.dataset.index);renderQuestion()});$('markBtns').innerHTML=Object.entries(MARKS).map(([k,v])=>`<button class="markBtn ${marks[current]===k?'active':''}" onclick="setMark('${k}')">${v.sym} ${v.label}</button>`).join('')+`<button class="markBtn ${!marks[current]?'active':''}" onclick="setMark('')">Clear Mark</button>`;$('prevBtn').disabled=current===0;$('nextBtn').disabled=current===exam.length-1;renderSheet()}
+function setMark(m){marks[current]=m;saveActiveProgress();renderQuestion()}
+function renderQuestion(){const q=exam[current];if(!q)return;$('progressText').textContent=`Question ${current+1} of ${exam.length}`;$('sourceText').textContent=`Source: ${q.sourceName}`;$('qid').textContent=q.displayId;$('qcat').textContent=q.category;$('markPill').textContent=markLabel(marks[current]);$('questionText').textContent=q.question;renderSafeVisual(q);setTimeout(setupMarkupCanvas, 0);$('choicesBox').innerHTML=q.randomizedChoices.map((ch,i)=>`<label class="choice ${answers[current]===i?'selected':''}"><input type="radio" name="choice" ${answers[current]===i?'checked':''} data-index="${i}"><span><strong>${String.fromCharCode(65+i)}.</strong> ${escapeHtml(ch.text)}</span></label>`).join('');document.querySelectorAll('input[name=choice]').forEach(inp=>inp.onchange=()=>{if(originalAnswers[current]===null) originalAnswers[current]=Number(inp.dataset.index); answers[current]=Number(inp.dataset.index); saveActiveProgress(); renderQuestion()});$('markBtns').innerHTML=Object.entries(MARKS).map(([k,v])=>`<button class="markBtn ${marks[current]===k?'active':''}" onclick="setMark('${k}')">${v.sym} ${v.label}</button>`).join('')+`<button class="markBtn ${!marks[current]?'active':''}" onclick="setMark('')">Clear Mark</button>`;$('prevBtn').disabled=current===0;$('nextBtn').disabled=current===exam.length-1;renderSheet();updatePacing();addSecondPassButtons()}
 function matchesFilter(i,filter=activeFilter){if(filter==='all')return true;if(filter==='unanswered')return answers[i]==null;if(filter==='answered')return answers[i]!=null;if(filter==='marked')return !!marks[i];return marks[i]===filter}
 function visibleIndexes(){return exam.map((_,i)=>i).filter(i=>matchesFilter(i))} function jumpToFirst(filter){activeFilter=filter;const v=visibleIndexes();if(v.length)current=v[0];renderQuestion();if(document.body.classList.contains('layout-compact'))$('answerSheet').classList.add('open')} function nextMatching(dir){const v=visibleIndexes();if(!v.length)return;let pos=v.indexOf(current);if(pos<0)pos=dir>0?-1:0;pos=(pos+dir+v.length)%v.length;current=v[pos];renderQuestion()}
-function renderSheet(){const c=counts();const visible=visibleIndexes();$('prevMatchBtn').style.display=activeFilter==='all'?'none':'inline-block';$('nextMatchBtn').style.display=activeFilter==='all'?'none':'inline-block';$('answerSheet').innerHTML=`<div class="sheetHead"><h2>Answer Sheet</h2><button class="btn" onclick="$('answerSheet').classList.remove('open')">Close</button></div><div class="mini">Answered: ${c.answered} · Blank: ${c.unanswered} · Marked: ${c.marked}</div><div class="sheetControls"><select onchange="activeFilter=this.value;renderSheet()"><option value="all" ${activeFilter==='all'?'selected':''}>All</option><option value="unanswered" ${activeFilter==='unanswered'?'selected':''}>Unanswered</option><option value="answered" ${activeFilter==='answered'?'selected':''}>Answered</option><option value="marked" ${activeFilter==='marked'?'selected':''}>Marked</option><option value="sure" ${activeFilter==='sure'?'selected':''}>Sure</option><option value="notSure" ${activeFilter==='notSure'?'selected':''}>Not Sure</option><option value="guess" ${activeFilter==='guess'?'selected':''}>Guess</option><option value="noIdea" ${activeFilter==='noIdea'?'selected':''}>No Idea</option></select><div class="quickBtns"><button class="btn" onclick="jumpToFirst('unanswered')">Review Unanswered</button><button class="btn" onclick="jumpToFirst('notSure')">Review Not Sure</button><button class="btn" onclick="jumpToFirst('guess')">Review Guess</button><button class="btn" onclick="jumpToFirst('noIdea')">Review No Idea</button><button class="btn" onclick="jumpToFirst('marked')">Review All Marked</button><button class="btn" onclick="activeFilter='all';renderSheet()">All</button></div></div><div class="itemGrid">${visible.map(i=>rowHtml(i)).join('')||'<p class="mini">No matching questions.</p>'}</div>`}
+function renderSheet(){const c=counts();const visible=visibleIndexes();$('prevMatchBtn').style.display=activeFilter==='all'?'none':'inline-block';$('nextMatchBtn').style.display=activeFilter==='all'?'none':'inline-block';$('answerSheet').innerHTML=`<div class="sheetHead"><h2>Answer Sheet</h2><button class="btn" onclick="$('answerSheet').classList.remove('open')">Close</button></div><div class="mini">Answered: ${c.answered} · Blank: ${c.unanswered} · Marked: ${c.marked}</div><div class="sheetControls"><select onchange="activeFilter=this.value;renderSheet();updatePacing();addSecondPassButtons()"><option value="all" ${activeFilter==='all'?'selected':''}>All</option><option value="unanswered" ${activeFilter==='unanswered'?'selected':''}>Unanswered</option><option value="answered" ${activeFilter==='answered'?'selected':''}>Answered</option><option value="marked" ${activeFilter==='marked'?'selected':''}>Marked</option><option value="sure" ${activeFilter==='sure'?'selected':''}>Sure</option><option value="notSure" ${activeFilter==='notSure'?'selected':''}>Not Sure</option><option value="guess" ${activeFilter==='guess'?'selected':''}>Guess</option><option value="noIdea" ${activeFilter==='noIdea'?'selected':''}>No Idea</option></select><div class="quickBtns"><button class="btn" onclick="jumpToFirst('unanswered')">Review Unanswered</button><button class="btn" onclick="jumpToFirst('notSure')">Review Not Sure</button><button class="btn" onclick="jumpToFirst('guess')">Review Guess</button><button class="btn" onclick="jumpToFirst('noIdea')">Review No Idea</button><button class="btn" onclick="jumpToFirst('marked')">Review All Marked</button><button class="btn" onclick="activeFilter='all';renderSheet();updatePacing();addSecondPassButtons()">All</button></div></div><div class="itemGrid">${visible.map(i=>rowHtml(i)).join('')||'<p class="mini">No matching questions.</p>'}</div>`}
 function rowHtml(i){const a=answers[i];const m=marks[i];return`<div class="ansRow ${i===current?'current':''} ${a==null?'blank':'answered'} ${m?'marked':''}" onclick="current=${i};renderQuestion()"><div class="num">${i+1}</div><div class="bubbles">${[0,1,2,3].map(j=>`<span class="bubble ${a===j?'sel':''}">${String.fromCharCode(65+j)}</span>`).join('')}</div><div class="markSym">${m?MARKS[m].sym:''}</div></div>`}
 $('prevBtn').onclick=()=>{if(current>0){current--;renderQuestion()}};$('nextBtn').onclick=()=>{if(current<exam.length-1){current++;renderQuestion()}};$('prevMatchBtn').onclick=()=>nextMatching(-1);$('nextMatchBtn').onclick=()=>nextMatching(1);$('submitBtn').onclick=()=>submitExam(false);$('floatSheet').onclick=()=>{$('answerSheet').classList.toggle('open')};$('floatMarks').onclick=()=>{jumpToFirst('marked')};$('layoutSelect').onchange=applyLayout;
 function breakdown(){const map={};exam.forEach((q,i)=>{const k=q.category||q.sourceName||'Unknown';if(!map[k])map[k]={total:0,correct:0};map[k].total++;if(answers[i]!=null&&q.randomizedChoices[answers[i]]?.correct)map[k].correct++});return map}
 function confidenceBreakdown(){const out={sure:{total:0,correct:0},notSure:{total:0,correct:0},guess:{total:0,correct:0},noIdea:{total:0,correct:0},unmarked:{total:0,correct:0}};exam.forEach((q,i)=>{const k=marks[i]||'unmarked';out[k].total++;if(answers[i]!=null&&q.randomizedChoices[answers[i]]?.correct)out[k].correct++});return out}
 function confirmSummary(){const c=counts();const remain=timeLimit?fmtTime(timeLimit-Math.floor((Date.now()-startedAt)/1000)):'No timer';return `Submit final exam?\n\nAnswered: ${c.answered}\nUnanswered: ${c.unanswered}\nSure: ${c.sure}\nNot Sure: ${c.notSure}\nGuess: ${c.guess}\nNo Idea: ${c.noIdea}\nTime remaining: ${remain}`}
-function submitExam(auto){if(submitted)return;if(!auto&&!confirm(confirmSummary()))return;submitted=true;clearInterval(timerInt);const used=Math.floor((Date.now()-startedAt)/1000);const correct=exam.reduce((n,q,i)=>n+(answers[i]!=null&&q.randomizedChoices[answers[i]]?.correct?1:0),0);const pct=exam.length?correct/exam.length*100:0,pass=pct>=75;const c=counts(),bd=breakdown(),cb=confidenceBreakdown();const weakest=Object.entries(bd).sort((a,b)=>(a[1].correct/a[1].total)-(b[1].correct/b[1].total))[0];saveCurrentAttempt('submitted',{score:`${correct}/${exam.length}`,percentage:pct,passFail:pass?'PASS':'FAIL',timeUsedSeconds:used,subjectBreakdown:bd,confidenceBreakdown:cb,marks,answers,unanswered:c.unanswered,marked:c.marked});saveHistory({date:new Date().toLocaleString(),examType:CONFIG.shortTitle,itemCount:exam.length,score:`${correct}/${exam.length}`,percentage:pct,passFail:pass?'PASS':'FAIL',timeUsedSeconds:used,subjectBreakdown:bd,confidenceBreakdown:cb,questionIds:exam.map(cardKey),unanswered:c.unanswered,marked:c.marked});$('examShell').style.display='none';const wrongs=exam.map((q,i)=>({q,i})).filter(x=>answers[x.i]===null||!x.q.randomizedChoices[answers[x.i]]?.correct);const marked=exam.map((q,i)=>({q,i})).filter(x=>marks[x.i]);$('results').style.display='block';$('results').innerHTML=`<h2>Results — ${CONFIG.shortTitle}</h2><div class="scoreBox"><div class="stat">Raw score<b>${correct}/${exam.length}</b></div><div class="stat">Percentage<b>${pct.toFixed(1)}%</b></div><div class="stat">Status<b class="${pass?'pass':'fail'}">${pass?'PASS':'FAIL'}</b></div><div class="stat">Time used<b>${fmtTime(used)}</b></div><div class="stat">Unanswered<b>${c.unanswered}</b></div><div class="stat">Marked<b>${c.marked}</b></div><div class="stat">Weakest subject<b>${weakest?escapeHtml(weakest[0]):'—'}</b></div><div class="stat">Passing mark<b>75%</b></div></div><div class="topActions"><button class="btn primary" onclick="startNewRandomExam()">Start New Random Exam</button><button class="btn" onclick="retakeSameExam()">Retake Same Exam</button><button class="btn" onclick="document.getElementById('wrongReview').scrollIntoView({behavior:'smooth'})">Review Wrong Answers</button><button class="btn danger" onclick="clearAttemptNotes()">Clear Notes After Review</button><a class="btn" href="../">Mock Exam Dashboard</a></div><h3>Performance by Confidence Mark</h3>${confTable(cb)}<h3>Subject Breakdown</h3>${subjectTable(bd)}<h3>Marked Questions</h3>${marked.length?marked.map(({q,i})=>smallReview(q,i,false)).join(''):'<p>No marked questions.</p>'}<h3 id="wrongReview">Wrong and Unanswered Review</h3>${wrongs.length?wrongs.map(({q,i})=>smallReview(q,i,true)).join(''):'<p>No wrong answers.</p>'}`;setTimeout(drawReviewCanvases, 120);window.scrollTo(0,0)}
+function submitExam(auto){if(submitted)return;if(!auto&&!confirm(confirmSummary()))return;submitted=true;clearInterval(timerInt);const used=Math.floor((Date.now()-startedAt)/1000);const correct=exam.reduce((n,q,i)=>n+(answers[i]!=null&&q.randomizedChoices[answers[i]]?.correct?1:0),0);const pct=exam.length?correct/exam.length*100:0,pass=pct>=75;const c=counts(),bd=breakdown(),cb=confidenceBreakdown(),ac=answerChangeStats();const weakest=Object.entries(bd).sort((a,b)=>(a[1].correct/a[1].total)-(b[1].correct/b[1].total))[0];stopAutosave();saveMistakesToBank();clearActiveProgress();saveCurrentAttempt('submitted',{score:`${correct}/${exam.length}`,percentage:pct,passFail:pass?'PASS':'FAIL',timeUsedSeconds:used,subjectBreakdown:bd,confidenceBreakdown:cb,marks,answers,unanswered:c.unanswered,marked:c.marked});saveHistory({date:new Date().toLocaleString(),examType:CONFIG.shortTitle,itemCount:exam.length,score:`${correct}/${exam.length}`,percentage:pct,passFail:pass?'PASS':'FAIL',timeUsedSeconds:used,subjectBreakdown:bd,confidenceBreakdown:cb,questionIds:exam.map(cardKey),unanswered:c.unanswered,marked:c.marked});$('examShell').style.display='none';const wrongs=exam.map((q,i)=>({q,i})).filter(x=>answers[x.i]===null||!x.q.randomizedChoices[answers[x.i]]?.correct);const marked=exam.map((q,i)=>({q,i})).filter(x=>marks[x.i]);$('results').style.display='block';$('results').innerHTML=`<h2>Results — ${CONFIG.shortTitle}</h2><div class="scoreBox"><div class="stat">Raw score<b>${correct}/${exam.length}</b></div><div class="stat">Percentage<b>${pct.toFixed(1)}%</b></div><div class="stat">Status<b class="${pass?'pass':'fail'}">${pass?'PASS':'FAIL'}</b></div><div class="stat">Time used<b>${fmtTime(used)}</b></div><div class="stat">Unanswered<b>${c.unanswered}</b></div><div class="stat">Marked<b>${c.marked}</b></div><div class="stat">Weakest subject<b>${weakest?escapeHtml(weakest[0]):'—'}</b></div><div class="stat">Passing mark<b>75%</b></div><div class="stat">Answer changes<b>${ac.total}</b><span class="mini">Improved ${ac.improved} · Hurt ${ac.hurt} · Neutral ${ac.neutral}</span></div></div><div class="topActions"><button class="btn primary" onclick="startNewRandomExam()">Start New Random Exam</button><button class="btn" onclick="retakeSameExam()">Retake Same Exam</button><button class="btn" onclick="document.getElementById('wrongReview').scrollIntoView({behavior:'smooth'})">Review Wrong Answers</button><button class="btn danger" onclick="clearAttemptNotes()">Clear Notes After Review</button><a class="btn" href="../">Mock Exam Dashboard</a></div><h3>Performance by Confidence Mark</h3>${confTable(cb)}<h3>Subject Breakdown</h3>${subjectTable(bd)}<h3>Marked Questions</h3>${marked.length?marked.map(({q,i})=>smallReview(q,i,false)).join(''):'<p>No marked questions.</p>'}<h3 id="wrongReview">Wrong and Unanswered Review</h3>${wrongs.length?wrongs.map(({q,i})=>smallReview(q,i,true)).join(''):'<p>No wrong answers.</p>'}`;setTimeout(drawReviewCanvases, 120);window.scrollTo(0,0)}
 function confTable(cb){return`<table><thead><tr><th>Mark</th><th>Correct</th><th>Total</th><th>%</th></tr></thead><tbody>${Object.entries(cb).map(([k,v])=>`<tr><td>${k==='unmarked'?'Unmarked':MARKS[k].sym+' '+MARKS[k].label}</td><td>${v.correct}</td><td>${v.total}</td><td>${v.total?(v.correct/v.total*100).toFixed(1):'0.0'}%</td></tr>`).join('')}</tbody></table>`}
 function subjectTable(bd){return`<table><thead><tr><th>Subject</th><th>Correct</th><th>Total</th><th>%</th></tr></thead><tbody>${Object.entries(bd).map(([k,v])=>`<tr><td>${escapeHtml(k)}</td><td>${v.correct}</td><td>${v.total}</td><td>${(v.correct/v.total*100).toFixed(1)}%</td></tr>`).join('')}</tbody></table>`}
 function smallReview(q,i,showExplain){const ua=answers[i]===null?'Unanswered':q.randomizedChoices[answers[i]]?.text;const ca=q.randomizedChoices[q.correctIndex]?.text||q.correctText;return`<div class="reviewItem"><h3>Q${i+1} · ${escapeHtml(q.category)} · ${escapeHtml(markLabel(marks[i]))}</h3><p><strong>Question:</strong> ${escapeHtml(q.question)}</p>${answerVisualHtml(q)}${annotationReviewHtml(q)}<p><strong>Your answer:</strong> ${escapeHtml(ua)}</p><p><strong>Correct answer:</strong> ${escapeHtml(ca)}</p><p><strong>Key memory:</strong> ${escapeHtml(q.keyMemory||'—')}</p><div class="explain"><strong>Explanation:</strong>\n${escapeHtml(q.explanation||'—')}</div></div>`}
 function renderHistory(){const rows=readHistory().filter(r=>r.examType===CONFIG.shortTitle).reverse();$('historyBox').innerHTML=rows.length?`<table><thead><tr><th>Date</th><th>Items</th><th>Score</th><th>%</th><th>Status</th><th>Time</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${r.date}</td><td>${r.itemCount}</td><td>${r.score}</td><td>${Number(r.percentage).toFixed(1)}%</td><td>${r.passFail}</td><td>${fmtTime(r.timeUsedSeconds)}</td></tr>`).join('')}</tbody></table>`:'<p class="mini">No history for this exam yet.</p>'}
-$('startBtn').onclick=startExam;$('historyBtn').onclick=renderHistory;setupOptions();applyLayout();
+$('startBtn').onclick=startExam;$('historyBtn').onclick=renderHistory;setupOptions();applyLayout();renderResumeBox();
 </script>
 </body>
 </html>

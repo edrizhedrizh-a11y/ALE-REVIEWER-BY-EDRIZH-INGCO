@@ -70,3 +70,15 @@ v5 Test Booklet Markup Mode:
 - Notes persist when leaving and returning to a question.
 - Notes remain visible after submit in review mode.
 - Added Clear Notes After Review option.
+
+
+v6 autosave / review / analytics update:
+- Autosaves active exam progress every 5 seconds.
+- Saves answers, original answers, current question, timer elapsed, confidence marks, and annotation attempt ID.
+- Added Resume Last Exam and Discard Last Exam.
+- Added second-pass shortcuts: Next Unanswered, Next Not Sure, Next Guess, Next No Idea, Review All Marked.
+- Added pacing tracker: ahead / on pace / behind pace.
+- Added Mistake Bank, Retake Wrong Answers, Weak Topic Exam.
+- Added answer change tracking: improved / hurt / neutral.
+- Added backup tools: export JSON, import JSON, clear all exam data.
+- Still no hints, explanations, key memory, correct answer, or answer-related labels before submit.
