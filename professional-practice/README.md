@@ -68,3 +68,14 @@ This version was checked for:
 - 212 cards loaded from `professional-practice/cards.json`
 - No image fields
 - Same Building Laws-style UI controls
+
+
+## V6 Fixed Load
+
+Fixed the stuck "Loading cards..." issue by replacing the copied image-aware render function with a text-only render function.
+
+Checked:
+- 212 cards
+- Professional Practice title
+- No Building Laws text
+- No image/visual dependencies
