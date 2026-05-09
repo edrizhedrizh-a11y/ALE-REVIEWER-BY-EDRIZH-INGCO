@@ -1,0 +1,7 @@
+Q151 <- Original Theory Q149: A coefficient used in calculating the lateral seismic force or stress on structural elements, non-structural components, or their connections according to their weight and functions. -> A. Horizontal Force Factor
+Q152 <- Original Theory Q150: An arch struck from one or more centers below the springing line. -> A. Segmental Arch
+Q153 <- Original Theory Q151: A steel dome having members which follow three principal sets of great circles intersecting at 60 degrees, subdividing the dome surface into a series of equilateral spherical triangles. -> A. Geodesic Dome
+Q154 <- Original Theory Q152: It is known as a timber bowstring truss. -> A. Belfast Truss
+Q155 <- Original Theory Q153: A cantilevered bracket in traditional Chinese construction. -> A. Gong / Kung
+Q156 <- Original Theory Q154: The springing line of an arch. -> A. Impost
+Q157 <- Original Theory Q155: In tensile tent, it is the cable for absorbing the horizontal component of a thrust in a suspension or cable-stayed structure and transferring the force to a ground foundation. -> A. Guy Cable

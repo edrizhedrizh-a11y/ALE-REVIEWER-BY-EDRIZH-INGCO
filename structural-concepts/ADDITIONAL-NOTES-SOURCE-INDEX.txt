@@ -1,0 +1,169 @@
+Q158: Additional Notes Page 1 / Coarse Aggregate
+Q159: Additional Notes Page 1 / Deformed Bar Standards
+Q160: Additional Notes Page 1 / Curing Period
+Q161: Additional Notes Page 1 / Embedded Conduits in Concrete
+Q162: Additional Notes Page 1 / Pipes as Compression Replacement
+Q163: Additional Notes Page 1 / Reviewer Concrete Cover Memory
+Q164: Additional Notes Page 1 / Construction Joints
+Q165: Additional Notes Page 1 / Standard Hooks
+Q166: Additional Notes Page 1 / Minimum Bend Diameters
+Q167: Additional Notes Page 2 / Minimum Spacing Between Bars
+Q168: Additional Notes Page 2 / Wall and Slab Flexural Spacing
+Q169: Additional Notes Page 2 / Bundled Bars
+Q170: Additional Notes Page 2 / Prestressing Tendons
+Q171: Additional Notes Page 2 / Cast-in-Place Cover: Cast Against Earth
+Q172: Additional Notes Page 2 / Cast-in-Place Cover: Exposed
+Q173: Additional Notes Page 2 / Protected Cast-in-Place Cover
+Q174: Additional Notes Page 2 / Precast Concrete Cover
+Q175: Additional Notes Page 2 / Offset Bars
+Q176: Additional Notes Page 2 / Spiral Reinforcement
+Q177: Additional Notes Page 3 / Column Ties
+Q178: Additional Notes Page 3 / Tie Spacing
+Q179: Additional Notes Page 3 / Shrinkage-Temperature Reinforcement
+Q180: Additional Notes Page 3 / T-Beam Integral Action
+Q181: Additional Notes Page 3 / T-Beam Effective Flange Width
+Q182: Additional Notes Page 3 / Joist Construction Rib Limits
+Q183: Additional Notes Page 3 / Joist Slab Topping
+Q184: Additional Notes Page 3 / Required Strength Load Combination
+Q185: Additional Notes Page 3 / Strength Reduction Factor
+Q186: Additional Notes Page 3 / Minimum Thickness: Slabs
+Q187: Additional Notes Page 3 / Minimum Thickness: Beams
+Q188: Additional Notes Page 4 / Flexural Member Lateral Support
+Q189: Additional Notes Page 4 / Minimum Longitudinal Bars in Columns
+Q190: Additional Notes Page 4 / Shear Reinforcement Spacing
+Q191: Additional Notes Page 4 / Lap Splices for Large Bars
+Q192: Additional Notes Page 4 / Bundled Bar Splices
+Q193: Additional Notes Page 4 / Non-Contact Lap Splices
+Q194: Additional Notes Page 4 / Wall Vertical Reinforcement Ratio
+Q195: Additional Notes Page 4 / Wall Horizontal Reinforcement Ratio
+Q196: Additional Notes Page 4 / Opening Reinforcement
+Q197: Additional Notes Page 4 / Non-Bearing Wall Thickness
+Q198: Additional Notes Page 4 / Footing Depth
+Q199: Additional Notes Page 4 / Hoop First Location
+Q200: Additional Notes Page 4 / Hoop Spacing
+Q201: Additional Notes Page 4 / Slenderness Ratio
+Q202: Additional Notes Page 4 / ASD Steel Tension Gross Area
+Q203: Additional Notes Page 4 / ASD Steel Tension Net Area
+Q204: Additional Notes Page 4 / ASD Compact Flexure
+Q205: Additional Notes Page 5 / Non-Compact Flexural Stress
+Q206: Additional Notes Page 5 / Pin-Connected Net Area
+Q207: Additional Notes Page 5 / Eyebar Proportion
+Q208: Additional Notes Page 5 / Pinhole Clearance
+Q209: Additional Notes Page 5 / Shear Connector Cover
+Q210: Additional Notes Page 5 / Shear Stud Diameter
+Q211: Additional Notes Page 5 / Shear Stud Spacing
+Q212: Additional Notes Page 5 / Weld Access Holes
+Q213: Additional Notes Page 5 / Groove Weld Effective Area
+Q214: Additional Notes Page 5 / Complete Penetration Groove Weld
+Q215: Additional Notes Page 5 / Flare Groove Welds
+Q216: Additional Notes Page 5 / Fillet Weld Effective Area
+Q217: Additional Notes Page 5 / Minimum Fillet Weld Length
+Q218: Additional Notes Page 5 / Intermittent Fillet Weld
+Q219: Additional Notes Page 5 / Lap Joint Minimum
+Q220: Additional Notes Page 5 / Plug Weld Hole Size
+Q221: Additional Notes Page 5 / Slot Weld Spacing
+Q222: Additional Notes Page 5 / Plug/Slot Weld Thickness
+Q223: Additional Notes Page 6 / Fastener Hole Spacing
+Q224: Additional Notes Page 6 / Maximum Fastener Edge Distance
+Q225: Additional Notes Page 6 / Long-Span Truss Camber
+Q226: Additional Notes Page 6 / Crane Girder Camber
+Q227: Additional Notes Page 6 / Structural Design Factors
+Q228: Additional Notes Page 6 / Recording Accelerographs
+Q229: Additional Notes Page 6 / Owner/Occupant Load Responsibility
+Q230: Additional Notes Page 6 / Load Duration
+Q231: Additional Notes Page 6 / Live Load Reduction Area
+Q232: Additional Notes Page 6 / Collector / Drag Strut
+Q233: Additional Notes Page 6 / Wall Height Structural Design
+Q234: Additional Notes Page 6 / Wall Deflection Brittle Finish
+Q235: Additional Notes Page 6 / Low-Cost Housing Area
+Q236: Additional Notes Page 6 / Base in Seismic Design
+Q237: Additional Notes Page 6 / Diaphragm
+Q238: Additional Notes Page 6 / Base Shear V
+Q239: Additional Notes Page 6 / Boundary Element
+Q240: Additional Notes Page 6 / Braced Frame
+Q241: Additional Notes Page 6 / Building Frame System
+Q242: Additional Notes Page 6 / Dual System
+Q243: Additional Notes Page 6 / Eccentric Braced Frame
+Q244: Additional Notes Page 6 / Previous Board Topics
+Q245: Additional Notes Page 6 / Slump Cone Dimensions
+Q246: Additional Notes Page 7 / Slump Test Meaning
+Q247: Additional Notes Page 7 / Typical Slump Table
+Q248: Additional Notes Page 7 / Concrete Cylinder Test
+Q249: Additional Notes Page 7 / Cylinder Proportion
+Q250: Additional Notes Page 7 / Beam Definition
+Q251: Additional Notes Page 7 / Span
+Q252: Additional Notes Page 7 / Clear Span
+Q253: Additional Notes Page 7 / Effective Span
+Q254: Additional Notes Page 7 / Bending Moment
+Q255: Additional Notes Page 7 / Resisting Moment
+Q256: Additional Notes Page 8 / Deflection
+Q257: Additional Notes Page 8 / Camber Definition
+Q258: Additional Notes Page 8 / Transverse Shear
+Q259: Additional Notes Page 8 / Horizontal Shearing Stress
+Q260: Additional Notes Page 8 / Vertical Shear Stress
+Q261: Additional Notes Page 8 / Shear Diagram
+Q262: Additional Notes Page 8 / Moment Diagram
+Q263: Additional Notes Page 8 / Simple Beam
+Q264: Additional Notes Page 9 / Simple Beam Continuation
+Q265: Additional Notes Page 9 / Cantilever Beam
+Q266: Additional Notes Page 9 / Overhanging Beam
+Q267: Additional Notes Page 9 / Double Overhanging Beam
+Q268: Additional Notes Page 9 / Fixed-End Beam
+Q269: Additional Notes Page 9 / Positive Shear
+Q270: Additional Notes Page 9 / Negative Shear
+Q271: Additional Notes Page 9 / Cantilever Alternate Concept
+Q272: Additional Notes Page 9 / Positive Moment
+Q273: Additional Notes Page 9 / Inflection Point
+Q274: Additional Notes Page 9 / Negative Moment
+Q275: Additional Notes Page 9 / Haunch
+Q276: Additional Notes Page 10 / Suspended Span / Hung Span
+Q277: Additional Notes Page 10 / Effective Length in Beam
+Q278: Additional Notes Page 10 / Load Definition
+Q279: Additional Notes Page 10 / Concentrated Load
+Q280: Additional Notes Page 10 / Distributed Load
+Q281: Additional Notes Page 10 / Uniformly Distributed Load
+Q282: Additional Notes Page 10 / Dead Load
+Q283: Additional Notes Page 10 / Live Load
+Q284: Additional Notes Page 10 / Working Stress / ASD
+Q285: Additional Notes Page 10 / LRFD Basic Idea
+Q286: Additional Notes Page 10 / Alteration
+Q287: Additional Notes Page 11 / LRFD
+Q288: Additional Notes Page 11 / Strength Design
+Q289: Additional Notes Page 11 / Structure
+Q290: Additional Notes Page 11 / Prefabricated Assembly
+Q291: Additional Notes Page 11 / Access Floor System
+Q292: Additional Notes Page 11 / Bearing Wall System
+Q293: Additional Notes Page 11 / Moment-Resisting Frame
+Q294: Additional Notes Page 11 / Ordinary Moment Frame
+Q295: Additional Notes Page 11 / Special Moment Frame
+Q296: Additional Notes Page 11 / Intermediate Moment Frame
+Q297: Additional Notes Page 11 / Open Building
+Q298: Additional Notes Page 11 / Enclosed Building
+Q299: Additional Notes Page 11 / Partially Enclosed Building
+Q300: Additional Notes Page 12 / Low-Rise Building
+Q301: Additional Notes Page 12 / Components and Cladding
+Q302: Additional Notes Page 12 / Design Force F
+Q303: Additional Notes Page 12 / Design Pressure P
+Q304: Additional Notes Page 12 / Flexible Building
+Q305: Additional Notes Page 12 / Rigid Building
+Q306: Additional Notes Page 12 / Fundamental Period
+Q307: Additional Notes Page 12 / Windward
+Q308: Additional Notes Page 12 / Leeward
+Q309: Additional Notes Page 12 / Ductility
+Q310: Additional Notes Page 12 / Plastic Hinge
+Q311: Additional Notes Page 12 / Shoring
+Q312: Additional Notes Page 12 / Shores
+Q313: Additional Notes Page 12 / Stirrup
+Q314: Additional Notes Page 12 / Nominal Strength
+Q315: Additional Notes Page 13 / Plane Frame
+Q316: Additional Notes Page 13 / Plastic Analysis
+Q317: Additional Notes Page 13 / Plastic-Limit Load
+Q318: Additional Notes Page 13 / Mass Concrete Slump
+Q319: Additional Notes Page 13 / Pavement Slump
+Q320: Additional Notes Page 13 / Proportional Limit
+Q321: Additional Notes Page 13 / Hooke’s Law
+Q322: Additional Notes Page 13 / Elastic Limit
+Q323: Additional Notes Page 13 / Yield Point
+Q324: Additional Notes Page 13 / Stress-Strain Sequence
+Q325: Additional Notes Page 14 / Yield Point Diagram Review
+Q326: Additional Notes Page 14 / Fracture

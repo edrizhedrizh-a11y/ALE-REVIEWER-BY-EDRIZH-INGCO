@@ -1,0 +1,603 @@
+Q22 (Page 2 Q11): Board trap item. Mat and combined foundation can sound tempting, but the uploaded reviewer explanation uses the glossary term continuous foundation for this exact wording.
+Question: A foundation which supports a number of independent loads.
+Answer: B. Continuous foundation
+
+Q74 (Page 6 Q6): Old reviewer terminology. Treat this as old ALE/reviewer memory: Structural Grade ≈ 33 ksi / about 230 MPa. For current actual specifications, verify current PNS/NSCP grade designation and project specs.
+Question: PSI of Structural Grade Deformed Steel Bar according to PNS Standard?
+Answer: A. 33,000 psi
+
+Q76 (Page 6 Q8): Wording issue. The choices use db spacing language, so this is likely a lateral tie/spacing rule, not actual concrete cover thickness. Concrete cover is normally in millimeters, not 16db.
+Question: Steel reinforcement in concrete covering.
+Answer: A. Not more than 16db of main bar
+
+Q84 (Page 7 Q2): Corrected concept. The uploaded transcript notes that the printed choices may show load terms, but the correct concept for maximum permitted unit stress is Allowable Stress.
+Question: In the design of structures, the maximum unit stress permitted under working loads by codes and specifications.
+Answer: D. Allowable stress
+
+Q103 (Page 8 Q7): Corrected concept. The uploaded transcript notes that the printed choice may say 'buckling load,' but the behavior described is buckling or instability.
+Question: A deformation which increases much more rapidly than the increase in imposed load.
+Answer: C. Buckling / instability
+
+Q158 (Additional Notes Page 1 / Coarse Aggregate): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Coarse Aggregate”?
+Answer: A. Nominal maximum coarse aggregate size: 1/5 narrowest form dimension, 1/3 slab depth, and 3/4 minimum clear rebar spacing.
+
+Q159 (Additional Notes Page 1 / Deformed Bar Standards): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Deformed Bar Standards”?
+Answer: B. A615 = ordinary deformed bars; A706 = weldable low-alloy; A767 = galvanized; A775 = epoxy-coated; A497 = welded wire fabric.
+
+Q160 (Additional Notes Page 1 / Curing Period): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Curing Period”?
+Answer: C. Ordinary concrete: moist cure at least 7 days; high-early-strength concrete: at least 3 days; curing supports hydration, not drying.
+
+Q161 (Additional Notes Page 1 / Embedded Conduits in Concrete): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Embedded Conduits in Concrete”?
+Answer: D. Conduits in columns must not displace over 4%; embedded conduits must not exceed 1/3 member thickness and must be spaced at least 3 diameters on center.
+
+Q162 (Additional Notes Page 1 / Pipes as Compression Replacement): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Pipes as Compression Replacement”?
+Answer: A. Only strong steel/iron pipes, Schedule 40, max 50 mm inside diameter, spaced at least 3 diameters, may replace displaced concrete in compression.
+
+Q163 (Additional Notes Page 1 / Reviewer Concrete Cover Memory): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Reviewer Concrete Cover Memory”?
+Answer: B. Reviewer quick memory: 40 mm cover when exposed to earth/weather; 20 mm when not exposed or not in contact with ground.
+
+Q164 (Additional Notes Page 1 / Construction Joints): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Construction Joints”?
+Answer: C. Construction joints in floors are placed within the middle third of spans; girder joints are offset at least 2 times the width of intersecting beams.
+
+Q165 (Additional Notes Page 1 / Standard Hooks): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Standard Hooks”?
+Answer: D. 180° hook = 4db extension but not less than 60 mm; 90° and 135° stirrup/tie hooks use 6db or 12db depending on bar size.
+
+Q166 (Additional Notes Page 1 / Minimum Bend Diameters): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Minimum Bend Diameters”?
+Answer: A. Small stirrups/ties = 4db; main bars 10–25 mm = 6db; larger bars 28–36 mm = 8db.
+
+Q167 (Additional Notes Page 2 / Minimum Spacing Between Bars): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Minimum Spacing Between Bars”?
+Answer: B. Bars in one layer: at least db but not less than 25 mm; layers: 25 mm minimum; columns: 1.5db or 40 mm.
+
+Q168 (Additional Notes Page 2 / Wall and Slab Flexural Spacing): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Wall and Slab Flexural Spacing”?
+Answer: C. Primary flexural reinforcement in walls/slabs must not be spaced farther than 3 times thickness or 450 mm.
+
+Q169 (Additional Notes Page 2 / Bundled Bars): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Bundled Bars”?
+Answer: D. Bundled bars: maximum 4 bars; enclosed by ties/stirrups; no bars larger than 36 mm bundled in beams; stagger terminations by at least 40db.
+
+Q170 (Additional Notes Page 2 / Prestressing Tendons): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Prestressing Tendons”?
+Answer: A. Pretensioning tendon spacing at member ends: 5db minimum for wire and 4db minimum for strands.
+
+Q171 (Additional Notes Page 2 / Cast-in-Place Cover: Cast Against Earth): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Cast-in-Place Cover: Cast Against Earth”?
+Answer: B. Cast-in-place concrete cast against and permanently exposed to earth requires 75 mm cover.
+
+Q172 (Additional Notes Page 2 / Cast-in-Place Cover: Exposed): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Cast-in-Place Cover: Exposed”?
+Answer: C. Concrete exposed to earth/weather: 50 mm for 20–36 mm bars; 40 mm for 16 mm and smaller bars.
+
+Q173 (Additional Notes Page 2 / Protected Cast-in-Place Cover): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Protected Cast-in-Place Cover”?
+Answer: D. Protected slabs/walls/joists often use 20 mm cover for 36 mm and smaller bars; beams/columns use larger cover around main bars/ties.
+
+Q174 (Additional Notes Page 2 / Precast Concrete Cover): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Precast Concrete Cover”?
+Answer: A. Precast cover depends on exposure and member type; exposed precast generally needs more cover than protected precast.
+
+Q175 (Additional Notes Page 2 / Offset Bars): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Offset Bars”?
+Answer: B. Offset bars: slope not more than 1 in 6; ties within 150 mm of bend; bend before placement; use separate dowels if offset is 75 mm or more.
+
+Q176 (Additional Notes Page 2 / Spiral Reinforcement): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Spiral Reinforcement”?
+Answer: C. Spiral lap splice = 48db but not less than 300 mm; spirals confine columns and prevent bar buckling.
+
+Q177 (Additional Notes Page 3 / Column Ties): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Column Ties”?
+Answer: D. Column ties: 10 mm for longitudinal bars 32 mm and smaller; 12 mm for 36 mm and bundled bars.
+
+Q178 (Additional Notes Page 3 / Tie Spacing): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Tie Spacing”?
+Answer: A. Tie spacing maximum is the least of 16db longitudinal bar, 48db tie bar, or least dimension of compression member.
+
+Q179 (Additional Notes Page 3 / Shrinkage-Temperature Reinforcement): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Shrinkage-Temperature Reinforcement”?
+Answer: B. Shrinkage-temperature reinforcement spacing: not farther than 5 times slab thickness or 450 mm, whichever is smaller.
+
+Q180 (Additional Notes Page 3 / T-Beam Integral Action): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “T-Beam Integral Action”?
+Answer: C. T-beam flange and web must be built integrally or effectively bonded together.
+
+Q181 (Additional Notes Page 3 / T-Beam Effective Flange Width): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “T-Beam Effective Flange Width”?
+Answer: D. T-beam flange width is limited by span, slab thickness, and distance to next web; not the entire slab automatically counts.
+
+Q182 (Additional Notes Page 3 / Joist Construction Rib Limits): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Joist Construction Rib Limits”?
+Answer: A. Concrete joist ribs: minimum 100 mm width; depth not more than 3.5 times rib width; clear spacing not over 750 mm.
+
+Q183 (Additional Notes Page 3 / Joist Slab Topping): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Joist Slab Topping”?
+Answer: B. Joist slab topping: permanent fillers = 1/12 clear rib spacing or 40 mm min; removable fillers = 1/12 or 50 mm min.
+
+Q184 (Additional Notes Page 3 / Required Strength Load Combination): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Required Strength Load Combination”?
+Answer: C. Old reviewer load combo memory: D+L uses U = 1.4D + 1.7L; wind/earthquake combos include reduced dead load like 0.9D.
+
+Q185 (Additional Notes Page 3 / Strength Reduction Factor): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Strength Reduction Factor”?
+Answer: D. Phi factor reduces nominal strength; higher for ductile flexure/tension, lower for compression and bearing.
+
+Q186 (Additional Notes Page 3 / Minimum Thickness: Slabs): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Minimum Thickness: Slabs”?
+Answer: A. Nonprestressed one-way slab thickness: simply supported L/20, one end continuous L/24, both ends continuous L/28, cantilever L/10.
+
+Q187 (Additional Notes Page 3 / Minimum Thickness: Beams): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Minimum Thickness: Beams”?
+Answer: B. Nonprestressed beams/ribbed slabs: simply supported L/16, one end continuous L/18.5, both ends continuous L/21, cantilever L/8.
+
+Q188 (Additional Notes Page 4 / Flexural Member Lateral Support): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Flexural Member Lateral Support”?
+Answer: C. Spacing of lateral supports for a beam must not exceed 50 times the least width of the compression flange or face.
+
+Q189 (Additional Notes Page 4 / Minimum Longitudinal Bars in Columns): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Minimum Longitudinal Bars in Columns”?
+Answer: D. Minimum longitudinal bars: 3 within triangular ties, 4 within rectangular/circular ties, 6 when enclosed by spirals.
+
+Q190 (Additional Notes Page 4 / Shear Reinforcement Spacing): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Shear Reinforcement Spacing”?
+Answer: A. Shear reinforcement spacing: nonprestressed d/2, prestressed 3/4h, and not more than 600 mm.
+
+Q191 (Additional Notes Page 4 / Lap Splices for Large Bars): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Lap Splices for Large Bars”?
+Answer: B. Lap splices shall not be used for bars larger than 36 mm diameter.
+
+Q192 (Additional Notes Page 4 / Bundled Bar Splices): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Bundled Bar Splices”?
+Answer: C. Bundled bar splices must be based on individual bars; individual splices must not overlap; entire bundles must not be lap spliced.
+
+Q193 (Additional Notes Page 4 / Non-Contact Lap Splices): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Non-Contact Lap Splices”?
+Answer: D. Non-contact lap splices in flexural members must not be spaced farther than 1/5 lap length or 150 mm; splices stagger at least 600 mm.
+
+Q194 (Additional Notes Page 4 / Wall Vertical Reinforcement Ratio): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Wall Vertical Reinforcement Ratio”?
+Answer: A. Minimum vertical wall reinforcement ratio commonly starts at 0.0012 for small high-yield bars/welded wire, and 0.0015 for other deformed bars.
+
+Q195 (Additional Notes Page 4 / Wall Horizontal Reinforcement Ratio): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Wall Horizontal Reinforcement Ratio”?
+Answer: B. Minimum horizontal wall reinforcement ratio commonly starts at 0.0020 for small high-yield bars/welded wire, and 0.0025 for other bars.
+
+Q196 (Additional Notes Page 4 / Opening Reinforcement): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Opening Reinforcement”?
+Answer: C. Wall openings require at least two 16 mm bars around doors/windows, extended beyond corners by at least 600 mm.
+
+Q197 (Additional Notes Page 4 / Non-Bearing Wall Thickness): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Non-Bearing Wall Thickness”?
+Answer: D. Non-bearing wall thickness must not be less than 100 mm nor less than 1/30 of lateral support distance.
+
+Q198 (Additional Notes Page 4 / Footing Depth): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Footing Depth”?
+Answer: A. Minimum footing depth above bottom reinforcement: 150 mm for footing on soil and 300 mm for footing on piles.
+
+Q199 (Additional Notes Page 4 / Hoop First Location): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Hoop First Location”?
+Answer: B. First hoop must be located not more than 50 mm from the face of support.
+
+Q200 (Additional Notes Page 4 / Hoop Spacing): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Hoop Spacing”?
+Answer: C. Hoop spacing maximum is least of d/4, 3 times smallest longitudinal bar diameter, 24 times hoop diameter, or 300 mm.
+
+Q201 (Additional Notes Page 4 / Slenderness Ratio): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Slenderness Ratio”?
+Answer: D. Preferred slenderness limit: compression members 200; tension members 300.
+
+Q206 (Additional Notes Page 5 / Pin-Connected Net Area): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Pin-Connected Net Area”?
+Answer: A. For pin-connected members, net area beyond pinhole parallel to member axis must be at least 2/3 of net area across pinhole.
+
+Q207 (Additional Notes Page 5 / Eyebar Proportion): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Eyebar Proportion”?
+Answer: B. Eyebar body width must not exceed 8 times its thickness.
+
+Q208 (Additional Notes Page 5 / Pinhole Clearance): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Pinhole Clearance”?
+Answer: C. Pinhole diameter must be no more than 0.8 mm greater than the pin diameter.
+
+Q209 (Additional Notes Page 5 / Shear Connector Cover): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Shear Connector Cover”?
+Answer: D. Shear connectors must have at least 25 mm lateral concrete cover.
+
+Q210 (Additional Notes Page 5 / Shear Stud Diameter): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Shear Stud Diameter”?
+Answer: A. Stud diameter must not be greater than 2.5 times the thickness of the flange to which it is welded.
+
+Q211 (Additional Notes Page 5 / Shear Stud Spacing): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Shear Stud Spacing”?
+Answer: B. Stud connector spacing: minimum 6d longitudinal and 4d transverse; maximum 8 times total slab thickness.
+
+Q212 (Additional Notes Page 5 / Weld Access Holes): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Weld Access Holes”?
+Answer: C. Weld access hole length from toe of weld preparation must be at least 1.5 times material thickness.
+
+Q213 (Additional Notes Page 5 / Groove Weld Effective Area): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Groove Weld Effective Area”?
+Answer: D. Groove weld effective area = effective weld length × effective throat thickness.
+
+Q214 (Additional Notes Page 5 / Complete Penetration Groove Weld): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Complete Penetration Groove Weld”?
+Answer: A. CJP groove weld effective throat thickness equals the thickness of the thinner part joined.
+
+Q215 (Additional Notes Page 5 / Flare Groove Welds): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Flare Groove Welds”?
+Answer: B. Flare bevel groove effective throat = 5/16R; flare V-groove = 1/2R.
+
+Q216 (Additional Notes Page 5 / Fillet Weld Effective Area): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Fillet Weld Effective Area”?
+Answer: C. Fillet weld effective area = effective length × effective throat thickness.
+
+Q217 (Additional Notes Page 5 / Minimum Fillet Weld Length): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Minimum Fillet Weld Length”?
+Answer: D. Minimum effective length of fillet weld designed by strength = at least 4 times nominal weld size.
+
+Q218 (Additional Notes Page 5 / Intermittent Fillet Weld): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Intermittent Fillet Weld”?
+Answer: A. Intermittent fillet weld segment length must be at least 4w and not less than 38 mm.
+
+Q219 (Additional Notes Page 5 / Lap Joint Minimum): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Lap Joint Minimum”?
+Answer: B. Lap joint minimum lap = 5 times thinner part thickness but not less than 25 mm.
+
+Q220 (Additional Notes Page 5 / Plug Weld Hole Size): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Plug Weld Hole Size”?
+Answer: C. Plug weld hole diameter must be controlled: at least material thickness + 8 mm but not excessive.
+
+Q221 (Additional Notes Page 5 / Slot Weld Spacing): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Slot Weld Spacing”?
+Answer: D. Slot weld transverse spacing = 4 times slot width; longitudinal spacing = 2 times slot length.
+
+Q222 (Additional Notes Page 5 / Plug/Slot Weld Thickness): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Plug/Slot Weld Thickness”?
+Answer: A. If material is over 16 mm, plug/slot weld thickness = half material thickness but not less than 16 mm.
+
+Q223 (Additional Notes Page 6 / Fastener Hole Spacing): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Fastener Hole Spacing”?
+Answer: B. Fastener hole center spacing must be at least 2 2/3 times nominal fastener diameter.
+
+Q224 (Additional Notes Page 6 / Maximum Fastener Edge Distance): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Maximum Fastener Edge Distance”?
+Answer: C. Maximum distance from bolt/rivet center to nearest edge must not exceed 12t and must not exceed 150 mm.
+
+Q225 (Additional Notes Page 6 / Long-Span Truss Camber): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Long-Span Truss Camber”?
+Answer: D. Trusses 24.4 m or greater are generally cambered for approximately dead-load deflection.
+
+Q226 (Additional Notes Page 6 / Crane Girder Camber): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Crane Girder Camber”?
+Answer: A. Crane girders 22.9 m or greater are cambered for dead-load deflection plus one-half live-load deflection.
+
+Q228 (Additional Notes Page 6 / Recording Accelerographs): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Recording Accelerographs”?
+Answer: C. Buildings where required/recommended may be provided with at least three approved recording accelerographs.
+
+Q232 (Additional Notes Page 6 / Collector / Drag Strut): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Collector / Drag Strut”?
+Answer: C. A collector transfers diaphragm lateral forces to vertical elements of the lateral-force-resisting system.
+
+Q233 (Additional Notes Page 6 / Wall Height Structural Design): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Wall Height Structural Design”?
+Answer: D. Reviewer note: walls around 1.50 m or higher may require structural design for loads.
+
+Q234 (Additional Notes Page 6 / Wall Deflection Brittle Finish): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Wall Deflection Brittle Finish”?
+Answer: A. Brittle finished wall deflection limit memory: L/240 under perpendicular load; more flexible finishes may allow L/120.
+
+Q236 (Additional Notes Page 6 / Base in Seismic Design): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Base in Seismic Design”?
+Answer: C. Base is the level where earthquake motion is considered imparted to the structure.
+
+Q237 (Additional Notes Page 6 / Diaphragm): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Diaphragm”?
+Answer: D. A diaphragm is a horizontal or nearly horizontal system that transmits lateral forces to vertical resisting elements.
+
+Q238 (Additional Notes Page 6 / Base Shear V): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Base Shear V”?
+Answer: A. Base shear V is the total design lateral force or shear at the base of a structure.
+
+Q239 (Additional Notes Page 6 / Boundary Element): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Boundary Element”?
+Answer: B. Boundary elements strengthen/confine the edge of an opening, shear wall, or diaphragm where stresses concentrate.
+
+Q240 (Additional Notes Page 6 / Braced Frame): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Braced Frame”?
+Answer: C. A braced frame is a vertical truss-like system, concentric or eccentric, used to resist lateral forces.
+
+Q241 (Additional Notes Page 6 / Building Frame System): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Building Frame System”?
+Answer: D. A building frame system is a complete space frame supporting gravity loads; lateral resistance may come from walls/braces.
+
+Q242 (Additional Notes Page 6 / Dual System): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Dual System”?
+Answer: A. Dual system = moment-resisting frame combined with shear walls or braced frames.
+
+Q243 (Additional Notes Page 6 / Eccentric Braced Frame): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Eccentric Braced Frame”?
+Answer: B. EBF has braces connecting away from beam-column joint, forming a link beam for seismic energy dissipation.
+
+Q245 (Additional Notes Page 6 / Slump Cone Dimensions): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Slump Cone Dimensions”?
+Answer: D. Standard slump cone memory: 12 in high, 8 in bottom diameter, 4 in top diameter; open both ends.
+
+Q246 (Additional Notes Page 7 / Slump Test Meaning): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Slump Test Meaning”?
+Answer: A. Slump test measures consistency/workability of fresh concrete, not compressive strength.
+
+Q248 (Additional Notes Page 7 / Concrete Cylinder Test): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Concrete Cylinder Test”?
+Answer: C. Concrete strength is commonly verified by cylindrical specimens at 7 and 28 days.
+
+Q249 (Additional Notes Page 7 / Cylinder Proportion): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Cylinder Proportion”?
+Answer: D. Standard cylinder proportion: height is twice the diameter; classic size is 12 in high by 6 in diameter.
+
+Q250 (Additional Notes Page 7 / Beam Definition): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Beam Definition”?
+Answer: A. Beam = rigid structural member carrying transverse loads across space to supporting elements.
+
+Q251 (Additional Notes Page 7 / Span): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Span”?
+Answer: B. Span = extent of space between two supports, or the structure so supported.
+
+Q252 (Additional Notes Page 7 / Clear Span): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Clear Span”?
+Answer: C. Clear span = distance between the inner faces of supports.
+
+Q253 (Additional Notes Page 7 / Effective Span): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Effective Span”?
+Answer: D. Effective span = center-to-center distance between supports.
+
+Q254 (Additional Notes Page 7 / Bending Moment): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Bending Moment”?
+Answer: A. Bending moment is the moment tending to bend or rotate part of a structure.
+
+Q255 (Additional Notes Page 7 / Resisting Moment): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Resisting Moment”?
+Answer: B. Resisting moment is the internal moment equal and opposite to the applied bending moment.
+
+Q256 (Additional Notes Page 8 / Deflection): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Deflection”?
+Answer: C. Deflection = displacement/paglundo of a member under load; increases with load/span and decreases with stiffness.
+
+Q257 (Additional Notes Page 8 / Camber Definition): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Camber Definition”?
+Answer: D. Camber = intentional upward curvature built into a beam/girder/truss to offset expected downward deflection.
+
+Q258 (Additional Notes Page 8 / Transverse Shear): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Transverse Shear”?
+Answer: A. Transverse shear = internal cutting force across a beam section due to transverse loads.
+
+Q259 (Additional Notes Page 8 / Horizontal Shearing Stress): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Horizontal Shearing Stress”?
+Answer: B. Horizontal shearing stress prevents beam layers from sliding longitudinally under transverse loading.
+
+Q260 (Additional Notes Page 8 / Vertical Shear Stress): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Vertical Shear Stress”?
+Answer: C. Vertical shear stress is maximum at the neutral axis; bending stress is maximum at outer fibers.
+
+Q261 (Additional Notes Page 8 / Shear Diagram): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Shear Diagram”?
+Answer: D. Shear diagram shows variation of shear force along a structural member.
+
+Q262 (Additional Notes Page 8 / Moment Diagram): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Moment Diagram”?
+Answer: A. Moment diagram shows variation of bending moment along a member and helps infer deflected shape.
+
+Q263 (Additional Notes Page 8 / Simple Beam): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Simple Beam”?
+Answer: B. Simple beam rests on simple supports at both ends and is free to rotate at supports.
+
+Q264 (Additional Notes Page 9 / Simple Beam Continuation): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Simple Beam Continuation”?
+Answer: C. Simple beam has no moment resistance at supports; reactions/shears/moments are found by statics.
+
+Q265 (Additional Notes Page 9 / Cantilever Beam): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Cantilever Beam”?
+Answer: D. Cantilever beam is fixed at one end and free at the other; maximum moment is usually at the fixed support.
+
+Q266 (Additional Notes Page 9 / Overhanging Beam): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Overhanging Beam”?
+Answer: A. Overhanging beam is a simple beam extending beyond one support.
+
+Q267 (Additional Notes Page 9 / Double Overhanging Beam): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Double Overhanging Beam”?
+Answer: B. Double overhanging beam extends beyond both supports.
+
+Q268 (Additional Notes Page 9 / Fixed-End Beam): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Fixed-End Beam”?
+Answer: C. Fixed-end beam has both ends restrained against rotation and develops end moments.
+
+Q269 (Additional Notes Page 9 / Positive Shear): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Positive Shear”?
+Answer: D. Positive shear acts upward on the left segment of a cut section.
+
+Q270 (Additional Notes Page 9 / Negative Shear): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Negative Shear”?
+Answer: A. Negative shear acts downward on the left segment of a cut section.
+
+Q271 (Additional Notes Page 9 / Cantilever Alternate Concept): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Cantilever Alternate Concept”?
+Answer: B. Cantilever projects beyond a fulcrum and needs backspan, anchorage, or fixity to resist overturning.
+
+Q272 (Additional Notes Page 9 / Positive Moment): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Positive Moment”?
+Answer: C. Positive moment usually means sagging: compression at top and tension at bottom.
+
+Q273 (Additional Notes Page 9 / Inflection Point): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Inflection Point”?
+Answer: D. Inflection point = zero bending moment and change in curvature.
+
+Q274 (Additional Notes Page 9 / Negative Moment): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Negative Moment”?
+Answer: A. Negative moment usually means hogging: tension at top, common over supports.
+
+Q275 (Additional Notes Page 9 / Haunch): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Haunch”?
+Answer: B. Haunch = thickened/deepened part of a beam used to increase moment or shear resistance.
+
+Q276 (Additional Notes Page 10 / Suspended Span / Hung Span): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Suspended Span / Hung Span”?
+Answer: C. Suspended span = simple beam segment supported by cantilever arms, usually at points of zero moment.
+
+Q277 (Additional Notes Page 10 / Effective Length in Beam): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Effective Length in Beam”?
+Answer: D. For fixed/continuous beams, effective length can mean distance between inflection points.
+
+Q279 (Additional Notes Page 10 / Concentrated Load): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Concentrated Load”?
+Answer: B. Concentrated load = point load acting over a very small area.
+
+Q280 (Additional Notes Page 10 / Distributed Load): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Distributed Load”?
+Answer: C. Distributed load = load spread over a length or area.
+
+Q281 (Additional Notes Page 10 / Uniformly Distributed Load): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Uniformly Distributed Load”?
+Answer: D. Uniformly distributed load = distributed load with constant magnitude throughout.
+
+Q289 (Additional Notes Page 11 / Structure): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Structure”?
+Answer: D. Structure = assemblage of parts designed to support or resist loads.
+
+Q290 (Additional Notes Page 11 / Prefabricated Assembly): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Prefabricated Assembly”?
+Answer: A. Prefabricated assembly = structural or construction assembly manufactured before installation.
+
+Q291 (Additional Notes Page 11 / Access Floor System): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Access Floor System”?
+Answer: B. Access floor system = elevated floor system allowing space for services below removable panels.
+
+Q292 (Additional Notes Page 11 / Bearing Wall System): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Bearing Wall System”?
+Answer: C. Bearing wall system uses walls to support gravity loads and often resist lateral loads.
+
+Q293 (Additional Notes Page 11 / Moment-Resisting Frame): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Moment-Resisting Frame”?
+Answer: D. Moment-resisting frame resists lateral force by flexure in beams, columns, and joints.
+
+Q294 (Additional Notes Page 11 / Ordinary Moment Frame): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Ordinary Moment Frame”?
+Answer: A. Ordinary moment frame has less special seismic detailing than intermediate/special systems.
+
+Q295 (Additional Notes Page 11 / Special Moment Frame): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Special Moment Frame”?
+Answer: B. Special moment frame has ductile seismic detailing for high earthquake performance.
+
+Q296 (Additional Notes Page 11 / Intermediate Moment Frame): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Intermediate Moment Frame”?
+Answer: C. Intermediate moment frame has detailing between ordinary and special moment frames.
+
+Q297 (Additional Notes Page 11 / Open Building): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Open Building”?
+Answer: D. Open building allows wind to pass through because each wall is mostly open.
+
+Q298 (Additional Notes Page 11 / Enclosed Building): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Enclosed Building”?
+Answer: A. Enclosed building has openings small enough that wind pressures are mostly external plus limited internal pressure.
+
+Q299 (Additional Notes Page 11 / Partially Enclosed Building): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Partially Enclosed Building”?
+Answer: B. Partially enclosed building has dominant openings causing significant internal pressure under wind.
+
+Q300 (Additional Notes Page 12 / Low-Rise Building): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Low-Rise Building”?
+Answer: C. Low-rise building is a building with height within low-rise limits under wind provisions.
+
+Q301 (Additional Notes Page 12 / Components and Cladding): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Components and Cladding”?
+Answer: D. Components and cladding are building envelope elements such as wall panels, roof elements, windows, and attachments.
+
+Q303 (Additional Notes Page 12 / Design Pressure P): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Design Pressure P”?
+Answer: B. Design pressure P is the design wind pressure applied over an area or component.
+
+Q304 (Additional Notes Page 12 / Flexible Building): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Flexible Building”?
+Answer: C. Flexible buildings have dynamic response and longer fundamental period; wind/seismic response may be amplified.
+
+Q305 (Additional Notes Page 12 / Rigid Building): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Rigid Building”?
+Answer: D. Rigid buildings have low dynamic amplification under wind; they respond more like stiff bodies.
+
+Q306 (Additional Notes Page 12 / Fundamental Period): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Fundamental Period”?
+Answer: A. Fundamental period = time required for one complete cycle of vibration in the fundamental mode.
+
+Q307 (Additional Notes Page 12 / Windward): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Windward”?
+Answer: B. Windward side = side facing the incoming wind and usually experiencing positive pressure.
+
+Q308 (Additional Notes Page 12 / Leeward): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Leeward”?
+Answer: C. Leeward side = side away from incoming wind, often experiencing suction/negative pressure.
+
+Q309 (Additional Notes Page 12 / Ductility): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Ductility”?
+Answer: D. Ductility = ability to deform inelastically without sudden fracture, important in seismic design.
+
+Q310 (Additional Notes Page 12 / Plastic Hinge): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Plastic Hinge”?
+Answer: A. Plastic hinge = yielded zone where rotation can occur after plastic moment capacity is reached.
+
+Q311 (Additional Notes Page 12 / Shoring): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Shoring”?
+Answer: B. Shoring = temporary vertical or inclined support used during construction or repair.
+
+Q312 (Additional Notes Page 12 / Shores): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Shores”?
+Answer: C. Shores are individual temporary supports used in shoring systems.
+
+Q313 (Additional Notes Page 12 / Stirrup): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Stirrup”?
+Answer: D. Stirrup = closed or U-shaped reinforcement used to resist shear and hold longitudinal bars.
+
+Q315 (Additional Notes Page 13 / Plane Frame): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Plane Frame”?
+Answer: B. Plane frame = two-dimensional frame system analyzed in one plane.
+
+Q316 (Additional Notes Page 13 / Plastic Analysis): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Plastic Analysis”?
+Answer: C. Plastic analysis considers post-yield redistribution and formation of plastic hinges.
+
+Q317 (Additional Notes Page 13 / Plastic-Limit Load): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Plastic-Limit Load”?
+Answer: D. Plastic-limit load is the load at which enough plastic hinges form to create a collapse mechanism.
+
+Q320 (Additional Notes Page 13 / Proportional Limit): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Proportional Limit”?
+Answer: C. Proportional limit = end of linear stress-strain relationship.
+
+Q321 (Additional Notes Page 13 / Hooke’s Law): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Hooke’s Law”?
+Answer: D. Hooke’s Law applies within elastic linear range: stress is proportional to strain.
+
+Q322 (Additional Notes Page 13 / Elastic Limit): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Elastic Limit”?
+Answer: A. Elastic limit = maximum stress without permanent deformation after unloading.
+
+Q323 (Additional Notes Page 13 / Yield Point): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Yield Point”?
+Answer: B. Yield point = where plastic deformation begins; strain increases without added stress.
+
+Q324 (Additional Notes Page 13 / Stress-Strain Sequence): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Stress-Strain Sequence”?
+Answer: C. Stress-strain sequence: proportional behavior, elastic recoverability, yield, ultimate strength, then fracture.
+
+Q325 (Additional Notes Page 14 / Yield Point Diagram Review): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Yield Point Diagram Review”?
+Answer: D. Yield point marks the start of permanent plastic deformation, not the maximum stress and not fracture.
+
+Q326 (Additional Notes Page 14 / Fracture): Reviewer/table/code-memory item. Use for ALE recall; verify current NSCP/project specs for actual design.
+Question: According to the Structural Concepts additional notes, which statement best matches “Fracture”?
+Answer: A. Fracture is the actual breaking or rupture of material after ultimate and post-ultimate deformation.

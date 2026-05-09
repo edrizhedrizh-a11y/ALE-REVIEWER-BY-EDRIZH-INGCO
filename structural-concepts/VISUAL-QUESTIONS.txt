@@ -1,0 +1,265 @@
+Q1 (Page 1 Q1): retaining wall lateral earth pressure saturated silt
+Q3 (Page 1 Q3): soil liquefaction lateral spreading diagram
+Q4 (Page 1 Q4): soil compaction test field density test
+Q6 (Page 1 Q6): belled caisson drilled pier foundation
+Q7 (Page 1 Q7): active earth pressure retaining wall
+Q10 (Page 1 Q10): buoyancy uplift foundation basement slab
+Q14 (Page 2 Q3): bracket pile underpinning
+Q15 (Page 2 Q4): cast in place tube pile
+Q16 (Page 2 Q5): cased concrete pile
+Q17 (Page 2 Q6): cast in place concrete pile
+Q18 (Page 2 Q7): compaction pile ground improvement
+Q19 (Page 2 Q8): buoyant foundation compensated foundation
+Q20 (Page 2 Q9): strap footing cantilever footing
+Q21 (Page 2 Q10): continuous footing columns in row
+Q27 (Page 3 Q1): column tributary area grid
+Q28 (Page 3 Q2): composite column steel encased concrete
+Q29 (Page 3 Q3): Lally column concrete filled steel pipe
+Q30 (Page 3 Q4): shear wall lateral load parallel to plane
+Q31 (Page 3 Q5): curtain wall supported by building frame
+Q32 (Page 3 Q6): load bearing wall
+Q33 (Page 3 Q7): cantilever retaining wall heel toe footing
+Q34 (Page 3 Q8): continuous wall footing strip footing
+Q35 (Page 3 Q9): Fallingwater cantilever terraces
+Q36 (Page 3 Q10): beam transverse load bending
+Q37 (Page 3 Q11): floor slab diaphragm lateral load
+Q38 (Page 3 Q12): beam column axial load bending
+Q39 (Page 3 Q13): footing tie beam
+Q40 (Page 3 Q14): cantilever beam fixed free end
+Q41 (Page 3 Q15): fixed beam both ends
+Q42 (Page 4 Q1): cantilever beam balcony
+Q43 (Page 4 Q2): box beam hollow rectangular section
+Q44 (Page 4 Q3): built-up steel beam plates angles
+Q45 (Page 4 Q4): girder carrying beams structural framing
+Q46 (Page 4 Q5): concrete joist cross ribs
+Q47 (Page 4 Q6): one way slab parking garage
+Q48 (Page 4 Q7): suspended concrete slab between beams
+Q49 (Page 4 Q8): continuous slab over multiple supports
+Q50 (Page 4 Q9): folded plate concrete roof
+Q51 (Page 4 Q10): rigid connection beam column moment
+Q52 (Page 4 Q11): rigid frame beam column
+Q53 (Page 4 Q12): semi rigid frame connection
+Q54 (Page 4 Q13): post and beam lateral bracing truss shear panel
+Q55 (Page 4 Q14): rigid joint structural connection
+Q56 (Page 4 Q15): diagrid structural system
+Q57 (Page 5 Q1): curtain wall steel frame building
+Q58 (Page 5 Q2): curtain wall supported by frame
+Q59 (Page 5 Q3): shear wall braced frame moment frame
+Q60 (Page 5 Q4): stiffened compression element buckling
+Q61 (Page 5 Q5): welded steel truss
+Q62 (Page 5 Q6): dome tension ring outward thrust
+Q63 (Page 5 Q7): thin shell concrete roof formwork
+Q66 (Page 5 Q10): Abrams law water cement ratio concrete strength
+Q67 (Page 5 Q11): concrete slump test cone
+Q70 (Page 6 Q2): concrete slump cone test
+Q71 (Page 6 Q3): concrete curing moisture hydration
+Q73 (Page 6 Q5): concrete core drilling coring test
+Q78 (Page 6 Q10): bundled reinforcing bars
+Q79 (Page 6 Q11): stirrups shear reinforcement beam
+Q80 (Page 6 Q12): rebar bend diameter hook detail
+Q81 (Page 6 Q13): crack control reinforcement concrete
+Q82 (Page 6 Q14): prestressed concrete beam compression tension
+Q91 (Page 7 Q9): stiffness force displacement spring
+Q94 (Page 7 Q12): fatigue failure repeated loading
+Q96 (Page 7 Q14): column buckling load
+Q97 (Page 8 Q1): column buckling bracing effective length
+Q100 (Page 8 Q4): concrete creep sustained load
+Q101 (Page 8 Q5): shear strain angular deformation
+Q105 (Page 8 Q9): torsion twisting shaft
+Q106 (Page 8 Q10): bending moment beam diagram
+Q107 (Page 8 Q11): point of inflection bending moment zero
+Q113 (Page 9 Q3): rebar bond stress concrete
+Q114 (Page 9 Q4): P delta effect column lateral displacement
+Q118 (Page 9 Q8): wind load building pressure
+Q122 (Page 9 Q12): axial load through centroid
+Q123 (Page 9 Q13): concentrated load point load beam
+Q128 (Page 10 Q2): uniformly distributed load beam
+Q129 (Page 10 Q3): beam deflection under load
+Q131 (Page 10 Q5): beam camber upward
+Q132 (Page 10 Q6): steel joist camber
+Q140 (Page 10 Q14): aluminum thermal expansion joint
+Q141 (Page 10 Q15): earthquake intensity Mercalli scale
+Q142 (Page 10 Q16): Modified Mercalli intensity scale
+Q143 (Page 10 Q17): damping vibration structure
+Q144 (Page 11 Q1): seismic building plan regularity square plan
+Q145 (Page 11 Q2): eccentrically braced frame link beam
+Q147 (Page 11 Q4): base isolation seismic building isolator
+Q148 (Page 11 Q5): base isolated building low rise
+Q149 (Page 11 Q6): reinforced concrete masonry wall vertical reinforcement
+Q150 (Page 11 Q7): windward leeward pressure building
+Q151 (Original Theory Q149): horizontal force factor seismic coefficient
+Q152 (Original Theory Q150): segmental arch springing line
+Q153 (Original Theory Q151): geodesic dome triangular great circles
+Q154 (Original Theory Q152): Belfast truss timber bowstring truss
+Q155 (Original Theory Q153): Chinese gong kung cantilevered bracket dougong
+Q156 (Original Theory Q154): impost arch springing line
+Q157 (Original Theory Q155): guy cable tensile tent anchored to ground
+Q158 (Additional Notes Page 1 / Coarse Aggregate): nominal maximum aggregate size concrete reinforcement spacing
+Q159 (Additional Notes Page 1 / Deformed Bar Standards): reinforcing steel bar ASTM A615 A706 A775
+Q160 (Additional Notes Page 1 / Curing Period): concrete curing hydration moist curing
+Q161 (Additional Notes Page 1 / Embedded Conduits in Concrete): embedded conduit in concrete slab beam column
+Q162 (Additional Notes Page 1 / Pipes as Compression Replacement): schedule 40 pipe embedded in concrete column
+Q163 (Additional Notes Page 1 / Reviewer Concrete Cover Memory): concrete cover reinforcement diagram
+Q164 (Additional Notes Page 1 / Construction Joints): construction joint concrete beam slab middle third
+Q165 (Additional Notes Page 1 / Standard Hooks): standard rebar hook 180 90 135 degrees
+Q166 (Additional Notes Page 1 / Minimum Bend Diameters): minimum bend diameter rebar diagram
+Q167 (Additional Notes Page 2 / Minimum Spacing Between Bars): reinforcement bar clear spacing concrete
+Q168 (Additional Notes Page 2 / Wall and Slab Flexural Spacing): slab reinforcement spacing 3h 450 mm
+Q169 (Additional Notes Page 2 / Bundled Bars): bundled reinforcing bars concrete beam
+Q170 (Additional Notes Page 2 / Prestressing Tendons): prestressing tendons spacing wire strand
+Q171 (Additional Notes Page 2 / Cast-in-Place Cover: Cast Against Earth): concrete cast against earth cover 75 mm
+Q172 (Additional Notes Page 2 / Cast-in-Place Cover: Exposed): concrete cover exposed to weather reinforcement
+Q173 (Additional Notes Page 2 / Protected Cast-in-Place Cover): interior concrete cover reinforcement
+Q174 (Additional Notes Page 2 / Precast Concrete Cover): precast concrete cover reinforcement
+Q175 (Additional Notes Page 2 / Offset Bars): offset column reinforcing bars slope 1 in 6
+Q176 (Additional Notes Page 2 / Spiral Reinforcement): spiral reinforcement column lap splice
+Q177 (Additional Notes Page 3 / Column Ties): reinforced concrete column lateral ties
+Q178 (Additional Notes Page 3 / Tie Spacing): column tie spacing 16db 48db
+Q179 (Additional Notes Page 3 / Shrinkage-Temperature Reinforcement): shrinkage temperature reinforcement slab spacing
+Q180 (Additional Notes Page 3 / T-Beam Integral Action): reinforced concrete T beam flange web
+Q181 (Additional Notes Page 3 / T-Beam Effective Flange Width): T beam effective flange width
+Q182 (Additional Notes Page 3 / Joist Construction Rib Limits): concrete joist ribbed slab spacing
+Q183 (Additional Notes Page 3 / Joist Slab Topping): concrete joist slab topping filler
+Q184 (Additional Notes Page 3 / Required Strength Load Combination): load combination structural design D L W E
+Q185 (Additional Notes Page 3 / Strength Reduction Factor): strength reduction factor phi reinforced concrete
+Q186 (Additional Notes Page 3 / Minimum Thickness: Slabs): one way slab minimum thickness L over 20
+Q187 (Additional Notes Page 3 / Minimum Thickness: Beams): beam minimum thickness L over 16 L over 8
+Q188 (Additional Notes Page 4 / Flexural Member Lateral Support): beam lateral support compression flange
+Q189 (Additional Notes Page 4 / Minimum Longitudinal Bars in Columns): minimum longitudinal bars column ties spirals
+Q190 (Additional Notes Page 4 / Shear Reinforcement Spacing): stirrup spacing d over 2 600 mm
+Q191 (Additional Notes Page 4 / Lap Splices for Large Bars): rebar lap splice large bars mechanical coupler
+Q192 (Additional Notes Page 4 / Bundled Bar Splices): bundled bars lap splice staggered
+Q193 (Additional Notes Page 4 / Non-Contact Lap Splices): non contact lap splice rebar 150 mm
+Q194 (Additional Notes Page 4 / Wall Vertical Reinforcement Ratio): reinforced concrete wall vertical reinforcement ratio
+Q195 (Additional Notes Page 4 / Wall Horizontal Reinforcement Ratio): reinforced concrete wall horizontal reinforcement ratio
+Q196 (Additional Notes Page 4 / Opening Reinforcement): reinforcement around wall openings door window
+Q197 (Additional Notes Page 4 / Non-Bearing Wall Thickness): non bearing wall thickness L over 30
+Q198 (Additional Notes Page 4 / Footing Depth): footing depth above bottom reinforcement pile cap
+Q199 (Additional Notes Page 4 / Hoop First Location): hoop reinforcement first hoop from support
+Q200 (Additional Notes Page 4 / Hoop Spacing): hoop spacing d over 4 300 mm
+Q201 (Additional Notes Page 4 / Slenderness Ratio): slenderness ratio compression 200 tension 300
+Q202 (Additional Notes Page 4 / ASD Steel Tension Gross Area): allowable stress steel tension gross area 0.60Fy
+Q203 (Additional Notes Page 4 / ASD Steel Tension Net Area): allowable stress steel effective net area 0.50Fu
+Q204 (Additional Notes Page 4 / ASD Compact Flexure): compact flexural member allowable stress 0.66Fy
+Q205 (Additional Notes Page 5 / Non-Compact Flexural Stress): non compact flexural steel allowable stress 0.60Fy
+Q206 (Additional Notes Page 5 / Pin-Connected Net Area): pin connected member net area beyond pinhole
+Q207 (Additional Notes Page 5 / Eyebar Proportion): eyebar pin connected member
+Q208 (Additional Notes Page 5 / Pinhole Clearance): pinhole clearance pin connected member
+Q209 (Additional Notes Page 5 / Shear Connector Cover): shear studs lateral concrete cover
+Q210 (Additional Notes Page 5 / Shear Stud Diameter): shear stud diameter flange thickness
+Q211 (Additional Notes Page 5 / Shear Stud Spacing): shear stud spacing composite beam
+Q212 (Additional Notes Page 5 / Weld Access Holes): weld access hole detail
+Q213 (Additional Notes Page 5 / Groove Weld Effective Area): groove weld effective throat area
+Q214 (Additional Notes Page 5 / Complete Penetration Groove Weld): complete joint penetration groove weld thinner part
+Q215 (Additional Notes Page 5 / Flare Groove Welds): flare groove weld effective throat radius
+Q216 (Additional Notes Page 5 / Fillet Weld Effective Area): fillet weld effective throat diagram
+Q217 (Additional Notes Page 5 / Minimum Fillet Weld Length): fillet weld minimum effective length
+Q218 (Additional Notes Page 5 / Intermittent Fillet Weld): intermittent fillet weld segment length
+Q219 (Additional Notes Page 5 / Lap Joint Minimum): lap joint fillet weld minimum lap
+Q220 (Additional Notes Page 5 / Plug Weld Hole Size): plug weld hole diameter detail
+Q221 (Additional Notes Page 5 / Slot Weld Spacing): slot weld spacing detail
+Q222 (Additional Notes Page 5 / Plug/Slot Weld Thickness): plug slot weld thickness
+Q223 (Additional Notes Page 6 / Fastener Hole Spacing): bolt hole spacing 2 2/3 diameter
+Q224 (Additional Notes Page 6 / Maximum Fastener Edge Distance): bolt edge distance 12t 150 mm
+Q225 (Additional Notes Page 6 / Long-Span Truss Camber): truss camber dead load deflection
+Q226 (Additional Notes Page 6 / Crane Girder Camber): crane girder camber
+Q227 (Additional Notes Page 6 / Structural Design Factors): structural design factors zoning site occupancy height
+Q228 (Additional Notes Page 6 / Recording Accelerographs): recording accelerograph building seismic
+Q229 (Additional Notes Page 6 / Owner/Occupant Load Responsibility): building live load occupancy overloading
+Q230 (Additional Notes Page 6 / Load Duration): load duration structural engineering
+Q231 (Additional Notes Page 6 / Live Load Reduction Area): live load reduction tributary area
+Q232 (Additional Notes Page 6 / Collector / Drag Strut): collector drag strut diaphragm shear wall
+Q233 (Additional Notes Page 6 / Wall Height Structural Design): masonry wall structural design height
+Q234 (Additional Notes Page 6 / Wall Deflection Brittle Finish): wall deflection limit L over 240
+Q235 (Additional Notes Page 6 / Low-Cost Housing Area): low cost housing unit floor area 60 sqm
+Q236 (Additional Notes Page 6 / Base in Seismic Design): seismic base level building
+Q237 (Additional Notes Page 6 / Diaphragm): floor diaphragm lateral force transfer
+Q238 (Additional Notes Page 6 / Base Shear V): seismic base shear diagram
+Q239 (Additional Notes Page 6 / Boundary Element): shear wall boundary element
+Q240 (Additional Notes Page 6 / Braced Frame): braced frame lateral force resisting system
+Q241 (Additional Notes Page 6 / Building Frame System): building frame system gravity load seismic
+Q242 (Additional Notes Page 6 / Dual System): dual system moment frame shear wall braced frame
+Q243 (Additional Notes Page 6 / Eccentric Braced Frame): eccentrically braced frame link beam
+Q244 (Additional Notes Page 6 / Previous Board Topics): structural concepts board exam reinforcement slump
+Q245 (Additional Notes Page 6 / Slump Cone Dimensions): slump cone 12 8 4 inches
+Q246 (Additional Notes Page 7 / Slump Test Meaning): concrete slump test workability
+Q247 (Additional Notes Page 7 / Typical Slump Table): concrete slump values beams slabs mass concrete
+Q248 (Additional Notes Page 7 / Concrete Cylinder Test): concrete cylinder compression test 28 days
+Q249 (Additional Notes Page 7 / Cylinder Proportion): concrete cylinder 6 by 12 inches
+Q250 (Additional Notes Page 7 / Beam Definition): beam transverse load supports
+Q251 (Additional Notes Page 7 / Span): beam span between supports
+Q252 (Additional Notes Page 7 / Clear Span): clear span beam face to face supports
+Q253 (Additional Notes Page 7 / Effective Span): effective span center to center supports
+Q254 (Additional Notes Page 7 / Bending Moment): bending moment beam diagram
+Q255 (Additional Notes Page 7 / Resisting Moment): resisting moment reinforced concrete beam
+Q256 (Additional Notes Page 8 / Deflection): beam deflection under load
+Q257 (Additional Notes Page 8 / Camber Definition): beam camber deflection diagram
+Q258 (Additional Notes Page 8 / Transverse Shear): beam transverse shear force diagram
+Q259 (Additional Notes Page 8 / Horizontal Shearing Stress): horizontal shear stress beam
+Q260 (Additional Notes Page 8 / Vertical Shear Stress): vertical shear stress neutral axis beam
+Q261 (Additional Notes Page 8 / Shear Diagram): shear force diagram beam
+Q262 (Additional Notes Page 8 / Moment Diagram): bending moment diagram beam
+Q263 (Additional Notes Page 8 / Simple Beam): simply supported beam pin roller
+Q264 (Additional Notes Page 9 / Simple Beam Continuation): simply supported beam reactions shear moment
+Q265 (Additional Notes Page 9 / Cantilever Beam): cantilever beam fixed support
+Q266 (Additional Notes Page 9 / Overhanging Beam): overhanging beam diagram
+Q267 (Additional Notes Page 9 / Double Overhanging Beam): double overhanging beam diagram
+Q268 (Additional Notes Page 9 / Fixed-End Beam): fixed end beam end moments
+Q269 (Additional Notes Page 9 / Positive Shear): positive shear sign convention beam
+Q270 (Additional Notes Page 9 / Negative Shear): negative shear sign convention beam
+Q271 (Additional Notes Page 9 / Cantilever Alternate Concept): cantilever backspan anchorage
+Q272 (Additional Notes Page 9 / Positive Moment): positive sagging moment beam
+Q273 (Additional Notes Page 9 / Inflection Point): point of inflection zero moment beam
+Q274 (Additional Notes Page 9 / Negative Moment): negative hogging moment beam
+Q275 (Additional Notes Page 9 / Haunch): haunched beam diagram
+Q276 (Additional Notes Page 10 / Suspended Span / Hung Span): suspended span Gerber beam
+Q277 (Additional Notes Page 10 / Effective Length in Beam): beam effective length inflection points
+Q278 (Additional Notes Page 10 / Load Definition): structural load definition
+Q279 (Additional Notes Page 10 / Concentrated Load): concentrated point load beam
+Q280 (Additional Notes Page 10 / Distributed Load): distributed load beam
+Q281 (Additional Notes Page 10 / Uniformly Distributed Load): uniformly distributed load beam
+Q282 (Additional Notes Page 10 / Dead Load): dead load structure self weight
+Q283 (Additional Notes Page 10 / Live Load): live load floor occupancy
+Q284 (Additional Notes Page 10 / Working Stress / ASD): allowable stress design ASD
+Q285 (Additional Notes Page 10 / LRFD Basic Idea): load resistance factor design LRFD
+Q286 (Additional Notes Page 10 / Alteration): building alteration structural modification
+Q287 (Additional Notes Page 11 / LRFD): LRFD load resistance factor design
+Q288 (Additional Notes Page 11 / Strength Design): strength design reinforced concrete
+Q289 (Additional Notes Page 11 / Structure): building structure load resisting system
+Q290 (Additional Notes Page 11 / Prefabricated Assembly): prefabricated structural assembly
+Q291 (Additional Notes Page 11 / Access Floor System): access floor system raised floor
+Q292 (Additional Notes Page 11 / Bearing Wall System): bearing wall structural system
+Q293 (Additional Notes Page 11 / Moment-Resisting Frame): moment resisting frame lateral force
+Q294 (Additional Notes Page 11 / Ordinary Moment Frame): ordinary moment resisting frame
+Q295 (Additional Notes Page 11 / Special Moment Frame): special moment frame seismic detailing
+Q296 (Additional Notes Page 11 / Intermediate Moment Frame): intermediate moment frame seismic
+Q297 (Additional Notes Page 11 / Open Building): open building wind pressure
+Q298 (Additional Notes Page 11 / Enclosed Building): enclosed building wind pressure
+Q299 (Additional Notes Page 11 / Partially Enclosed Building): partially enclosed building wind pressure
+Q300 (Additional Notes Page 12 / Low-Rise Building): low rise building wind design
+Q301 (Additional Notes Page 12 / Components and Cladding): components and cladding wind load
+Q302 (Additional Notes Page 12 / Design Force F): design force F wind structural
+Q303 (Additional Notes Page 12 / Design Pressure P): design wind pressure building envelope
+Q304 (Additional Notes Page 12 / Flexible Building): flexible building dynamic response
+Q305 (Additional Notes Page 12 / Rigid Building): rigid building wind response
+Q306 (Additional Notes Page 12 / Fundamental Period): fundamental period building vibration
+Q307 (Additional Notes Page 12 / Windward): windward leeward pressure building
+Q308 (Additional Notes Page 12 / Leeward): leeward pressure suction building
+Q309 (Additional Notes Page 12 / Ductility): ductility stress strain steel
+Q310 (Additional Notes Page 12 / Plastic Hinge): plastic hinge beam frame
+Q311 (Additional Notes Page 12 / Shoring): shoring construction support
+Q312 (Additional Notes Page 12 / Shores): construction shores formwork support
+Q313 (Additional Notes Page 12 / Stirrup): beam stirrup shear reinforcement
+Q314 (Additional Notes Page 12 / Nominal Strength): nominal strength design strength phi
+Q315 (Additional Notes Page 13 / Plane Frame): plane frame structural analysis
+Q316 (Additional Notes Page 13 / Plastic Analysis): plastic analysis steel frame
+Q317 (Additional Notes Page 13 / Plastic-Limit Load): plastic limit load collapse mechanism
+Q318 (Additional Notes Page 13 / Mass Concrete Slump): mass concrete slump 5 cm
+Q319 (Additional Notes Page 13 / Pavement Slump): concrete pavement slump
+Q320 (Additional Notes Page 13 / Proportional Limit): proportional limit stress strain curve
+Q321 (Additional Notes Page 13 / Hooke’s Law): Hooke's law stress strain elastic
+Q322 (Additional Notes Page 13 / Elastic Limit): elastic limit stress strain curve
+Q323 (Additional Notes Page 13 / Yield Point): yield point stress strain curve
+Q324 (Additional Notes Page 13 / Stress-Strain Sequence): stress strain curve yield ultimate fracture
+Q325 (Additional Notes Page 14 / Yield Point Diagram Review): yield point stress strain diagram
+Q326 (Additional Notes Page 14 / Fracture): fracture point stress strain curve
