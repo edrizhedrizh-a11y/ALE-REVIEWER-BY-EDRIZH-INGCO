@@ -11,13 +11,14 @@ body.dark{--bg:#111827;--surface:#1f2937;--surface2:#273244;--text:#f9fafb;--mut
 </style>
 </head>
 <body>
+<!-- VERIFIED PROFESSIONAL PRACTICE UI: 212 CARDS, NO IMAGES -->
 <main class="app">
-<header><div><h1>ALE Professional Practice</h1><p class="sub">Philippine Professional Practice reviewer. Text-only, audio-ready Taglish explanations. No images needed.</p></div><div class="topActions"><a class="miniBtn" href="../">Dashboard</a><button id="themeBtn" class="miniBtn" type="button">Dark Mode</button><div id="cardBadge" class="badge">Loading...</div></div></header>
+<header><div><h1>ALE Professional Practice</h1><p class="sub">Philippine Professional Practice reviewer. Same UI as other subjects. Text-only, no images.</p></div><div class="topActions"><a class="miniBtn" href="../">Dashboard</a><button id="themeBtn" class="miniBtn" type="button">Dark Mode</button><div id="cardBadge" class="badge">Loading...</div></div></header>
 <section class="panel"><div class="grid2"><input id="searchInput" type="search" placeholder="Search within this subject..." /><button id="startBtn" type="button">Start / Restart Take</button></div><div class="jump"><input id="jumpInput" type="text" placeholder="Jump to Q no. e.g. 24" /><button id="jumpBtn" class="secondary" type="button">Go</button></div><div class="grid3"><button id="shuffleBtn" type="button">Shuffle</button><button id="missedOnlyBtn" class="secondary" type="button">Review Missed</button><button id="resetStatsBtn" class="ghost" type="button">Reset Subject Stats</button></div></section>
 <section class="stats"><div class="stat"><strong id="totalCards">0</strong><span>Cards</span></div><div class="stat"><strong id="currentNumber">0</strong><span>Current</span></div><div class="stat"><strong id="sessionScore">0%</strong><span>This Take</span></div><div class="stat"><strong id="coverageStat">0%</strong><span>Coverage</span></div><div class="stat"><strong id="correctCount">0</strong><span>Correct</span></div><div class="stat"><strong id="wrongCount">0</strong><span>Wrong</span></div></section>
 <section id="quizArea"><div class="empty">Loading cards...</div></section>
 <section class="grid3"><button id="prevBtn" class="secondary" type="button">← Previous</button><button id="finishBtn" class="good" type="button">Finish Take</button><button id="nextBtn" type="button">Next →</button></section>
-<p class="footerNote">Professional Practice v4: 212 cards. Same UI as other subjects. Images disabled for this subject.</p>
+<p class="footerNote">Professional Practice v5 verified: 212 cards. Same Professional Practice-style UI. Images disabled.</p>
 </main>
 <script>
 const SUBJECT_TITLE = "ALE Professional Practice";

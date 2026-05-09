@@ -58,3 +58,13 @@ What changed:
 - Same Previous / Next / Finish Take controls
 - Text-only mode retained
 - No images added
+
+
+## V5 Verified Same UI
+
+This version was checked for:
+- `<title>ALE Professional Practice</title>`
+- `<h1>ALE Professional Practice</h1>`
+- 212 cards loaded from `professional-practice/cards.json`
+- No image fields
+- Same Building Laws-style UI controls
