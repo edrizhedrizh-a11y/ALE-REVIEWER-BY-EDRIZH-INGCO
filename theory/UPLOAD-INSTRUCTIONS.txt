@@ -1,0 +1,18 @@
+ALE Theory v3 complete folder
+
+Use this if you only want to replace the ALE Theory subject folder.
+
+Steps:
+1. Extract this ZIP.
+2. Upload/replace the folder named: theory
+3. It should be at repo root: /theory/index.html and /theory/cards.json
+4. Do not upload the ZIP itself to GitHub Pages.
+5. Commit changes.
+6. Open /theory/?v=3 and hard refresh.
+
+Current content:
+- Q1–Q468 complete
+- 468 cards total
+- No images
+- A–D choices
+- iPad-safe UI
