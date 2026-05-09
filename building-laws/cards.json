@@ -1,0 +1,50 @@
+[
+  {
+    "uid": "BL-SETUP-001",
+    "id": "BL-SETUP-001",
+    "displayId": "Setup",
+    "category": "ALE Building Laws",
+    "question": "Building Laws reviewer shell is installed. Replace this cards.json with the real Building Laws cards.json to load all cards.",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Shell installed; replace cards.json"
+      },
+      {
+        "letter": "b",
+        "text": "Use foreign standards first"
+      },
+      {
+        "letter": "c",
+        "text": "Show labels before answering"
+      },
+      {
+        "letter": "d",
+        "text": "Use random photos"
+      }
+    ],
+    "correctLetter": "a",
+    "answer": "a. Shell installed; replace cards.json",
+    "keyMemory": "Use Philippine context first: PD 1096, BP 344, Fire Code, referral codes, UAP/local practice, ALE context.",
+    "explanation": "This starter folder contains the Building Laws app shell and visual plan. The final cards.json should be the real ALE Building Laws card bank. BP 344/NBCP/Fire Code diagrams should appear after answering, except figure-identification items where question-side diagrams are unlabeled.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "answerConceptVisual": {
+      "title": "Building Laws visual rule",
+      "main": "Philippine code standard diagrams, not random photos",
+      "detail": "Question-side visuals hide labels; answer-side visuals may show dimensions and notes.",
+      "formula": ""
+    },
+    "standardVisual": {
+      "type": "code-concept",
+      "title": "Philippine-code-first reviewer",
+      "basis": "PD 1096 • BP 344 • Fire Code • BP 220/PD 957 • UAP/local practice",
+      "dimensions": [
+        "no answer leak",
+        "BP 344 standard diagrams",
+        "answer-side labels only"
+      ],
+      "note": "Replace placeholder cards.json with the real Building Laws cards."
+    }
+  }
+]
