@@ -43,7 +43,7 @@
     "Q125-Q126 ECC/Antique definitions"
   ],
   "rule": "Use official/source figures only. BP 344 items are mapped to official NCDA 2024 Revised IRR figure names. No generated diagrams.",
-  "mode": "building-laws-v4-expanded-additions",
+  "mode": "building-laws-v5-audio-explanations",
   "official_sources": [
     {
       "label": "NCDA — 2024 Revised IRR of BP 344",
@@ -225,5 +225,7 @@
     "BP 220 vs PD 957 comparison questions",
     "UAP / RA 9266 professional-practice responsibility questions",
     "Figure-based source-required questions"
-  ]
+  ],
+  "v5_updated_explanations": "Q127-Q196",
+  "v5_teaching_style": "audio-ready Taglish mentor/coaching explanation with why-correct, why-wrong, elimination method, trap words, and Philippine basis"
 }

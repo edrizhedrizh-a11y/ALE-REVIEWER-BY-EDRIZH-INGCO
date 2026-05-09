@@ -40,3 +40,18 @@ Visual rule remains strict:
 - No random images
 - BP 344 visuals are mapped to NCDA official figure/source names
 - Lot/RROW/setback/firewall figures are marked as source-image-needed until the verified figure crop is uploaded
+
+
+## V5 Audio-Ready Explanation Update
+
+Updated Q127-Q196 only.
+
+What changed:
+- Explanations rewritten into slow, clear, Taglish guided-review format.
+- Each new card now reads the question and choices first.
+- Each new card repeats the correct answer.
+- Each new card explains why the answer is correct.
+- Each new card explains why the other choices are wrong.
+- Each new card includes elimination method, keywords, trap words, common ALE trap, and Philippine basis.
+- No generated diagrams were added.
+- Source-backed visual policy remains unchanged.
