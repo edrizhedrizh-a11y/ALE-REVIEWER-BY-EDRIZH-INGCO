@@ -42,3 +42,19 @@ Changes:
 - Adds step-by-step elimination method
 - Adds keyword/trap word and ALE section-map reasoning
 - No images added
+
+
+## V4 Same UI Update
+
+Updated the Professional Practice subject page to use the same reviewer UI template as the other subjects.
+
+Total cards: 212
+
+What changed:
+- Same card layout as Building Laws / other subjects
+- Same controls: Start / Restart Take, Shuffle, Review Missed, Reset Subject Stats
+- Same stats bar
+- Same dark mode
+- Same Previous / Next / Finish Take controls
+- Text-only mode retained
+- No images added
