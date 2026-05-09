@@ -812,10 +812,20 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 curb / dropped sidewalk / curb ramp reference",
+      "figures": [
+        "Fig. B.2.1 — Plan of Curb Ramp",
+        "Fig. B.2.2 — Cross Section of Curb Ramp"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use this for curb/dropped sidewalk/curb cut-out questions. The official 2024 text treats dropped sidewalks and curb ramps separately; no generated substitute is used.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -869,10 +879,20 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 curb / dropped sidewalk / curb ramp reference",
+      "figures": [
+        "Fig. B.2.1 — Plan of Curb Ramp",
+        "Fig. B.2.2 — Cross Section of Curb Ramp"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use this for curb/dropped sidewalk/curb cut-out questions. The official 2024 text treats dropped sidewalks and curb ramps separately; no generated substitute is used.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -920,10 +940,20 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 curb / dropped sidewalk / curb ramp reference",
+      "figures": [
+        "Fig. B.2.1 — Plan of Curb Ramp",
+        "Fig. B.2.2 — Cross Section of Curb Ramp"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use this for curb/dropped sidewalk/curb cut-out questions. The official 2024 text treats dropped sidewalks and curb ramps separately; no generated substitute is used.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -977,10 +1007,19 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 wheelchair turning / turnabout reference",
+      "figures": [
+        "Fig. C.5.1 — Turnabout Spaces at Corridors"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for turning/turnabout and passing-space concepts. Exact values remain from the official text/explanation.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -1028,10 +1067,19 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 wheelchair turning / turnabout reference",
+      "figures": [
+        "Fig. C.5.1 — Turnabout Spaces at Corridors"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for turning/turnabout and passing-space concepts. Exact values remain from the official text/explanation.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -1130,10 +1178,20 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 walkways / tactile / gradient / headroom reference",
+      "figures": [
+        "Tactile Floor Surfaces section",
+        "Walkways / crossings text in 2024 Revised IRR"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Source-backed text reference only unless the exact official plate is supplied. No random or generated diagram is shown.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -1181,10 +1239,19 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 wheelchair turning / turnabout reference",
+      "figures": [
+        "Fig. C.5.1 — Turnabout Spaces at Corridors"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for turning/turnabout and passing-space concepts. Exact values remain from the official text/explanation.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -1232,10 +1299,20 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 walkways / tactile / gradient / headroom reference",
+      "figures": [
+        "Tactile Floor Surfaces section",
+        "Walkways / crossings text in 2024 Revised IRR"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Source-backed text reference only unless the exact official plate is supplied. No random or generated diagram is shown.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -1283,10 +1360,20 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 walkways / tactile / gradient / headroom reference",
+      "figures": [
+        "Tactile Floor Surfaces section",
+        "Walkways / crossings text in 2024 Revised IRR"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Source-backed text reference only unless the exact official plate is supplied. No random or generated diagram is shown.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -1334,10 +1421,20 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 walkways / tactile / gradient / headroom reference",
+      "figures": [
+        "Tactile Floor Surfaces section",
+        "Walkways / crossings text in 2024 Revised IRR"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Source-backed text reference only unless the exact official plate is supplied. No random or generated diagram is shown.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -2164,10 +2261,19 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "Source image needed",
+      "main": "This identify-the-lot card needs the actual figure.",
+      "detail": "No generated image will be shown. Upload the original page/figure crop to embed it question-side without labels."
+    },
+    "sourceFigure": {
+      "title": "Original lot-identification figure required",
+      "figures": [
+        "Reviewer/source figure needed — Corner Lot"
+      ],
+      "sourceLabel": "User source page / verified lot-type diagram required",
+      "sourceUrl": "",
+      "note": "This is not a BP 344 figure. Upload the actual reviewer image/page crop so the card can show the correct unlabeled question-side figure.",
+      "mode": "needs-user-source-image"
     }
   },
   {
@@ -2211,10 +2317,19 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "Source image needed",
+      "main": "This identify-the-lot card needs the actual figure.",
+      "detail": "No generated image will be shown. Upload the original page/figure crop to embed it question-side without labels."
+    },
+    "sourceFigure": {
+      "title": "Original lot-identification figure required",
+      "figures": [
+        "Reviewer/source figure needed — End Through Lot / Lot 1"
+      ],
+      "sourceLabel": "User source page / verified lot-type diagram required",
+      "sourceUrl": "",
+      "note": "This is not a BP 344 figure. Upload the actual reviewer image/page crop so the card can show the correct unlabeled question-side figure.",
+      "mode": "needs-user-source-image"
     }
   },
   {
@@ -2476,10 +2591,23 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 accessible toilet / grab bar / lavatory reference",
+      "figures": [
+        "Section C.6 — Toilets and Baths",
+        "Accessible toilet cubicle 1800 mm x 1800 mm",
+        "L-type and flip-up grab bars",
+        "WC seat 450 mm",
+        "Lavatory clearance provisions"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for toilet cubicle, grab bar, WC seat, and lavatory questions. Official figure image not embedded unless supplied as a verified crop.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -2541,10 +2669,23 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 accessible toilet / grab bar / lavatory reference",
+      "figures": [
+        "Section C.6 — Toilets and Baths",
+        "Accessible toilet cubicle 1800 mm x 1800 mm",
+        "L-type and flip-up grab bars",
+        "WC seat 450 mm",
+        "Lavatory clearance provisions"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for toilet cubicle, grab bar, WC seat, and lavatory questions. Official figure image not embedded unless supplied as a verified crop.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -2600,10 +2741,23 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 accessible toilet / grab bar / lavatory reference",
+      "figures": [
+        "Section C.6 — Toilets and Baths",
+        "Accessible toilet cubicle 1800 mm x 1800 mm",
+        "L-type and flip-up grab bars",
+        "WC seat 450 mm",
+        "Lavatory clearance provisions"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for toilet cubicle, grab bar, WC seat, and lavatory questions. Official figure image not embedded unless supplied as a verified crop.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -2659,10 +2813,23 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 accessible toilet / grab bar / lavatory reference",
+      "figures": [
+        "Section C.6 — Toilets and Baths",
+        "Accessible toilet cubicle 1800 mm x 1800 mm",
+        "L-type and flip-up grab bars",
+        "WC seat 450 mm",
+        "Lavatory clearance provisions"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for toilet cubicle, grab bar, WC seat, and lavatory questions. Official figure image not embedded unless supplied as a verified crop.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -2718,10 +2885,19 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 assembly wheelchair seating reference",
+      "figures": [
+        "Wheelchair seating space table / assembly seating provisions"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for assembly-area wheelchair accommodations; source reference after answer.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -3331,7 +3507,22 @@
         "label": "DPWH — BP 344 IRR PDF",
         "url": "https://www.dpwh.gov.ph/dpwh/sites/default/files/laws_codes_orders/BP_344_IRR_0.pdf"
       }
-    ]
+    ],
+    "sourceFigure": {
+      "title": "BP 344 public transportation seating reference",
+      "figures": [
+        "Rule IV — Public Transportation designated seats"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for PWD seats in aircraft and buses; source-backed text reference only.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    }
   },
   {
     "uid": "BL-071",
@@ -3376,7 +3567,22 @@
         "label": "DPWH — BP 344 IRR PDF",
         "url": "https://www.dpwh.gov.ph/dpwh/sites/default/files/laws_codes_orders/BP_344_IRR_0.pdf"
       }
-    ]
+    ],
+    "sourceFigure": {
+      "title": "BP 344 public transportation seating reference",
+      "figures": [
+        "Rule IV — Public Transportation designated seats"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for PWD seats in aircraft and buses; source-backed text reference only.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    }
   },
   {
     "uid": "BL-072",
@@ -3429,10 +3635,20 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 elevator accessibility reference",
+      "figures": [
+        "Fig. C.8.1 — Distance from Main Entrance to Elevator Lobby",
+        "Fig. C.8.2 — Plan of Accessible Elevator"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for elevator distance and car-size questions. Do not invent shaft diagrams.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -3490,10 +3706,20 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 elevator accessibility reference",
+      "figures": [
+        "Fig. C.8.1 — Distance from Main Entrance to Elevator Lobby",
+        "Fig. C.8.2 — Plan of Accessible Elevator"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for elevator distance and car-size questions. Do not invent shaft diagrams.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -3541,10 +3767,20 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 elevator accessibility reference",
+      "figures": [
+        "Fig. C.8.1 — Distance from Main Entrance to Elevator Lobby",
+        "Fig. C.8.2 — Plan of Accessible Elevator"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for elevator distance and car-size questions. Do not invent shaft diagrams.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -3737,10 +3973,22 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "Door/accessibility/fire-door source references",
+      "figures": [
+        "Fig. C.2.1 — Plan of Sliding Door",
+        "Fig. C.2.2 — Plan of Swing Door",
+        "Door Accessories",
+        "Door with Dual Peepholes"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for BP 344 door-width and door-hardware questions when relevant; Fire Code/NBCP cards remain source-linked separately.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -3796,10 +4044,22 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "Door/accessibility/fire-door source references",
+      "figures": [
+        "Fig. C.2.1 — Plan of Sliding Door",
+        "Fig. C.2.2 — Plan of Swing Door",
+        "Door Accessories",
+        "Door with Dual Peepholes"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for BP 344 door-width and door-hardware questions when relevant; Fire Code/NBCP cards remain source-linked separately.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -3859,10 +4119,22 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "Door/accessibility/fire-door source references",
+      "figures": [
+        "Fig. C.2.1 — Plan of Sliding Door",
+        "Fig. C.2.2 — Plan of Swing Door",
+        "Door Accessories",
+        "Door with Dual Peepholes"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for BP 344 door-width and door-hardware questions when relevant; Fire Code/NBCP cards remain source-linked separately.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -3922,10 +4194,22 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "Door/accessibility/fire-door source references",
+      "figures": [
+        "Fig. C.2.1 — Plan of Sliding Door",
+        "Fig. C.2.2 — Plan of Swing Door",
+        "Door Accessories",
+        "Door with Dual Peepholes"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for BP 344 door-width and door-hardware questions when relevant; Fire Code/NBCP cards remain source-linked separately.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -3985,10 +4269,22 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "Door/accessibility/fire-door source references",
+      "figures": [
+        "Fig. C.2.1 — Plan of Sliding Door",
+        "Fig. C.2.2 — Plan of Swing Door",
+        "Door Accessories",
+        "Door with Dual Peepholes"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for BP 344 door-width and door-hardware questions when relevant; Fire Code/NBCP cards remain source-linked separately.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -4044,10 +4340,22 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "Door/accessibility/fire-door source references",
+      "figures": [
+        "Fig. C.2.1 — Plan of Sliding Door",
+        "Fig. C.2.2 — Plan of Swing Door",
+        "Door Accessories",
+        "Door with Dual Peepholes"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for BP 344 door-width and door-hardware questions when relevant; Fire Code/NBCP cards remain source-linked separately.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -4113,10 +4421,19 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 switch/control height reference",
+      "figures": [
+        "Fig. C.4.1 — Location of Switches"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for switch/control height questions. Current range in notes: 900 mm to 1200 mm.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -4348,10 +4665,20 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 stair/tactile/nosing reference",
+      "figures": [
+        "Fig. A.10.1 — Location of Warning Tactile Blocks and Non-Skid Nosing Materials at Stairs",
+        "Fig. A.10.2 — Stair Nosing"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for preferred stair nosing, tactile warning blocks, and stair-safety questions. For Q89, this must be question-side only after a verified crop/image is supplied.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -4409,10 +4736,20 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 stair/tactile/nosing reference",
+      "figures": [
+        "Fig. A.10.1 — Location of Warning Tactile Blocks and Non-Skid Nosing Materials at Stairs",
+        "Fig. A.10.2 — Stair Nosing"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for preferred stair nosing, tactile warning blocks, and stair-safety questions. For Q89, this must be question-side only after a verified crop/image is supplied.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -4468,10 +4805,20 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 stair/tactile/nosing reference",
+      "figures": [
+        "Fig. A.10.1 — Location of Warning Tactile Blocks and Non-Skid Nosing Materials at Stairs",
+        "Fig. A.10.2 — Stair Nosing"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for preferred stair nosing, tactile warning blocks, and stair-safety questions. For Q89, this must be question-side only after a verified crop/image is supplied.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -4527,10 +4874,20 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 stair/tactile/nosing reference",
+      "figures": [
+        "Fig. A.10.1 — Location of Warning Tactile Blocks and Non-Skid Nosing Materials at Stairs",
+        "Fig. A.10.2 — Stair Nosing"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for preferred stair nosing, tactile warning blocks, and stair-safety questions. For Q89, this must be question-side only after a verified crop/image is supplied.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -4578,10 +4935,21 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 handrail reference",
+      "figures": [
+        "Fig. A.5.1 — Handrail Detail for Ramps",
+        "Fig. A.5.2 — Cross Section of Accessible Ramp",
+        "Fig. A.5.3 — Handrail Profiles"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for handrail height, profile, and extension questions.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -4629,10 +4997,21 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 handrail reference",
+      "figures": [
+        "Fig. A.5.1 — Handrail Detail for Ramps",
+        "Fig. A.5.2 — Cross Section of Accessible Ramp",
+        "Fig. A.5.3 — Handrail Profiles"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for handrail height, profile, and extension questions.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -4680,10 +5059,19 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 escalator / passenger conveyance reference",
+      "figures": [
+        "Escalators and Passenger Conveyances section"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for escalator speed/angle/level-step/tactile-strip questions.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -4918,10 +5306,20 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 accessible parking reference",
+      "figures": [
+        "Table A.6.1 — Accessible Parking Slot Requirement",
+        "Fig. A.6.1 — Plan of Accessible Parking Slot"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for accessible parking distance/location, slot size, and walkway width between parked cars.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -4975,10 +5373,20 @@
       }
     ],
     "sourceBackedVisual": {
-      "title": "Legit-source visual check",
-      "main": "No generated diagram shown.",
-      "detail": "Use the official/source reference links after answering. Add an official plate/figure image only after it is verified from the source.",
-      "basis": "Philippine source-backed mode"
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "sourceFigure": {
+      "title": "BP 344 accessible parking reference",
+      "figures": [
+        "Table A.6.1 — Accessible Parking Slot Requirement",
+        "Fig. A.6.1 — Plan of Accessible Parking Slot"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for accessible parking distance/location, slot size, and walkway width between parked cars.",
+      "mode": "legit-source-reference"
     }
   },
   {
@@ -5010,7 +5418,29 @@
     "keyMemory": "Accessible parking front-end walkway clear width = 1.20 m. (National Council on Disability Affairs)",
     "explanation": "Basahin natin ang full question:\n\"For parking areas of PWD, a walkway between the front ends of parked cars shall have a minimum clear width of ____?\"\nChoices:\na. 1.10 m\nb. 1.20 m\nc. 1.30 m\nd. 1.40 m\nCorrect answer: b. 1.20 m.\nUulitin ko: ang tamang sagot ay 1.20 meters.\nIto ay very clear sa old and current accessibility references: a walkway with a minimum clear width of 1200 mm shall be provided between the front ends of parked cars for accessible parking. (National Council on Disability Affairs)\nBakit ito ang tama?\nKeyword dito: between the front ends of parked cars.\nHindi ito parking slot width mismo.\nHindi ito aisle width.\nSpecific walkway strip ito, and the exact minimum is 1.20 m. (National Council on Disability Affairs)\nBakit mali ang ibang choices?\n1.10 m — too narrow.\n1.30 m at 1.40 m — puwedeng acceptable in actual design, pero hindi iyan ang minimum codal value being asked.\nAgain, board exam wants the minimum, not \"mas okay siguro.\" (National Council on Disability Affairs)\nElimination method\nIto ang board strategy:\n• Parking slot dimension ba ang tanong? Hindi.\n• Walkway clear width ba? Oo.\n• Then recall the classic accessible number: 1.20 m.\nCommon trap sa board exam\nPinagpapalit ang:\n• slot width\n• walkway width\n• aisle width\nMagkaibang items iyan.\nAno ang dapat mong tandaan dito?\nAccessible parking front-end walkway clear width = 1.20 m. (National Council on Disability Affairs)\n________________________________________",
     "type": "multiple_choice",
-    "acceptedAnswers": []
+    "acceptedAnswers": [],
+    "sourceFigure": {
+      "title": "BP 344 accessible parking reference",
+      "figures": [
+        "Table A.6.1 — Accessible Parking Slot Requirement",
+        "Fig. A.6.1 — Plan of Accessible Parking Slot"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use for accessible parking distance/location, slot size, and walkway width between parked cars.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "BP 344 legit-source figure match",
+      "main": "Use the official BP 344 figure/source matched to this question.",
+      "detail": "No generated diagram is used. The official source opens after answering."
+    },
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      }
+    ]
   },
   {
     "uid": "BL-102",
