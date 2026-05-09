@@ -4,39 +4,43 @@
   "basis_priority": [
     "PD 1096 / National Building Code of the Philippines",
     "Revised IRR of PD 1096",
-    "BP 344",
+    "BP 344, current/revised Philippine accessibility context first when flagged by the notes",
     "Fire Code of the Philippines / RA 9514 and IRR",
     "Referral codes under Philippine practice",
     "UAP documents / local professional practice",
     "ALE-accepted Philippine context"
   ],
+  "counts": {
+    "total_cards": 126,
+    "question_side_generated_diagrams": 3,
+    "answer_side_standard_diagrams": 85,
+    "current_standard_warning_cards": 12
+  },
   "question_image": [
     "Q47 Corner Lot diagram",
     "Q48 End Through Lot diagram",
     "Q89 Preferred stair detail for disabled"
   ],
-  "answer_diagram": [
-    "Q18 fire extinguisher",
-    "Q19-Q29 BP 344 walkways/dropped curb/curb cut-out/tactile/turning/headroom",
+  "answer_diagram_ranges": [
+    "Q18 fire extinguisher / Class C concept",
+    "Q19-Q29 BP 344 accessibility details",
     "Q33-Q38 BP 220 roads/alley/pathwalk/RROW",
-    "Q40-Q41 firewall/property line",
-    "Q42-Q46 rowhouse/lot/floor area/frontage",
-    "Q49-Q57 setbacks/courts/PWD toilet/grab bar/lavatory/seating",
-    "Q59-Q69 NBCP room/openings/egress/occupant load/fire exits",
+    "Q40-Q52 firewall/lot/rowhouse/setbacks/courts",
+    "Q53-Q58 PWD toilet/grab bar/lavatory/seating/aged design",
+    "Q59-Q69 NBCP room/opening/egress/occupant load",
     "Q72-Q74 elevator accessibility",
-    "Q78-Q101 doors/knobs/switches/hallway/stairs/tactile/handrail/escalator/signage/parking",
-    "Q103-Q109 fire escape/emergency lighting/pipe colors/standpipe/fire lane",
+    "Q78-Q101 doors/stairs/tactile/parking/signage",
+    "Q103-Q109 Fire Code / fire escape / standpipe / fire lane",
     "Q124 waterway/river easement"
   ],
   "concept_only": [
-    "Q1-Q17 legal year/scope/permit/classification memory",
+    "Q1-Q17 legal year/scope/permit/classification memory unless visual added by standard diagram",
     "Q30-Q32 percentage/distance/table memory",
-    "Q58 general design conditions for aged",
     "Q70-Q71 transport PWD seat counts",
     "Q75-Q77 location/function terms",
     "Q102 combustible liquid flash point",
     "Q110-Q123 agencies/CLUP/zoning/LGU/legal responsibility",
     "Q125-Q126 ECC/Antique definitions"
   ],
-  "rule": "Figure identification = question image; dimensions/layouts = answer diagram; legal dates/agencies/definitions = concept only."
+  "rule": "Figure identification = question-side generated diagram; dimensions/layouts = answer-side standard diagram; legal dates/agencies/definitions = concept only."
 }
