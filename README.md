@@ -82,3 +82,11 @@ v6 autosave / review / analytics update:
 - Added answer change tracking: improved / hurt / neutral.
 - Added backup tools: export JSON, import JSON, clear all exam data.
 - Still no hints, explanations, key memory, correct answer, or answer-related labels before submit.
+
+
+v7 visual leak fix:
+- Removed pre-submit Search cue text from visual questions.
+- Removed pre-submit image search / Wikimedia buttons when the card only has an image query.
+- Before submit, only direct embedded question images can display.
+- If no safe embedded image exists, the exam shows a generic image-needed message without revealing the query/answer.
+- After submit, visual references may still appear in review mode.
