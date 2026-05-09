@@ -1,0 +1,42 @@
+Q1: microclimate topography vegetation diagram
+Q2: Amihan northeast monsoon Philippines wind map
+Q3: residential zoning public private spaces diagram
+Q4: deciduous trees solar shading house diagram
+Q5: high ceiling passive ventilation tropical house
+Q6: west sun service core tropical house diagram
+Q7: cross ventilation bedroom diagram
+Q8: horizontal sun shading device north south facade
+Q9: tropical passive design natural ventilation
+Q10: tropical architecture veranda breezeway transitional space
+Q11: east west service core tropical building
+Q12: tropical climate humidity heat gain
+Q13: sun path diagram azimuth altitude
+Q14: sun path diagram solar altitude
+Q15: shadow length solar altitude diagram
+Q16: morning sun east shadow west diagram
+Q17: Ken Yeang bioclimatic skyscraper
+Q18: bioclimatic skyscraper greenery facade
+Q19: vertical fins east west facade
+Q20: horizontal louvers north south facade
+Q21: LEED green building certification
+Q22: distribution transformer energy efficiency
+Q23: World Economic Forum Agile Cities
+Q24: solar heat gain coefficient window diagram
+Q25: solar panels south orientation northern hemisphere
+Q26: solar panel tilt angle latitude
+Q27: overall thermal transfer value building envelope
+Q28: green architecture sustainable design
+Q29: green building performance certification
+Q30: Philippine Green Building Code BERDE LEED
+Q31: BERDE green building Philippines
+Q32: LEED USGBC
+Q33: BREEAM green building
+Q34: EDGE green building IFC
+Q35: Philippines green building GREENE
+Q36: DOE energy conserving design buildings Philippines
+Q37: overall thermal transfer value
+Q38: solar heat gain coefficient window
+Q39: passive cooling tropical architecture
+Q40: Amihan northeast monsoon Philippines
+Q41: Habagat southwest monsoon Philippines
+Q42: bioclimatic design climate analysis

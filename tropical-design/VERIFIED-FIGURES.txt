@@ -1,0 +1,7 @@
+Q2: Verified with original PDF Page 2 plan figure. Answer remains B. Image: assets/q2-q4-plan-figure.png
+Q3: Verified with original PDF Page 2 plan figure. Answer remains B. Image: assets/q2-q4-plan-figure.png
+Q4: Verified with original PDF Page 2 plan figure. Answer remains B. Image: assets/q2-q4-plan-figure.png
+Q13: Verified with original PDF Page 3 sun-path diagram. Answer remains B: 210°. Image: assets/q13-q14-sunpath-only.png
+Q14: Verified with original PDF Page 3 sun-path diagram. Answer remains C: 45°. Image: assets/q13-q14-sunpath-only.png
+Q15: Verified with original PDF Page 3 obelisk/shadow figure. Answer remains A: 8 meters. Image: assets/q15-q16-shadow-figure.png
+Q16: Verified with original PDF Page 3 obelisk/shadow figure. Answer remains C: S 90° W. Image: assets/q15-q16-shadow-figure.png
