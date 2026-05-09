@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>ALE Professional Practice Reviewer</title>
+<style>
+:root{
+  --bg:#fff7ed; --panel:#fffaf1; --ink:#1f2937; --muted:#6b7280; --line:#eadcc7;
+  --accent:#8a5a24; --accent2:#b7791f; --good:#15803d; --bad:#b91c1c; --soft:#f7ead8;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:radial-gradient(circle at top left,#fff 0,#fff7ed 44%,#f3e4ce 100%);color:var(--ink)}
+header{position:sticky;top:0;background:rgba(255,247,237,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:5}
+.wrap{max-width:1080px;margin:0 auto;padding:18px}
+.top{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+h1{font-size:clamp(1.35rem,3vw,2.35rem);letter-spacing:-.04em;margin:0}
+.badge{font-weight:800;color:var(--accent);background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 12px}
+.controls{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:10px;margin-top:14px}
+input,select,button{font:inherit}
+input,select{width:100%;border:1px solid var(--line);border-radius:14px;padding:12px;background:#fff;color:var(--ink)}
+button{border:0;border-radius:14px;padding:12px 14px;font-weight:900;cursor:pointer}
+.btn{background:var(--accent);color:#fff;box-shadow:0 12px 25px rgba(138,90,36,.18)}
+.btn2{background:#fff;color:var(--accent);border:1px solid var(--line)}
+main.wrap{padding-top:22px}
+.card{background:rgba(255,250,241,.96);border:1px solid var(--line);border-radius:26px;box-shadow:0 22px 60px rgba(54,35,10,.10);padding:clamp(18px,4vw,30px)}
+.meta{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;color:var(--muted);font-weight:700;margin-bottom:16px}
+.q{font-size:clamp(1.2rem,3vw,1.9rem);line-height:1.25;font-weight:900;letter-spacing:-.025em;margin:10px 0 18px}
+.choices{display:grid;gap:10px;margin:14px 0}
+.choice{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px;cursor:pointer;transition:.15s transform,.15s border-color,.15s background}
+.choice:hover{transform:translateY(-1px);border-color:#d6b98e}
+.letter{flex:0 0 auto;width:30px;height:30px;border-radius:999px;display:grid;place-items:center;background:var(--soft);font-weight:900;color:var(--accent)}
+.choice.correct{border-color:rgba(21,128,61,.55);background:#f0fdf4}
+.choice.wrong{border-color:rgba(185,28,28,.45);background:#fef2f2}
+.choice.correct .letter{background:#dcfce7;color:var(--good)}
+.choice.wrong .letter{background:#fee2e2;color:var(--bad)}
+.answerPanel{display:none;margin-top:18px;border-top:1px solid var(--line);padding-top:18px}
+.answerPanel.show{display:block}
+.answer{font-size:1.1rem;font-weight:950;color:var(--good);margin-bottom:12px}
+.memory{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px;margin:14px 0}
+.memory b{color:var(--accent)}
+.expl{white-space:pre-wrap;line-height:1.72;font-size:1rem;background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px;max-height:none}
+.nav{display:flex;gap:10px;justify-content:space-between;flex-wrap:wrap;margin-top:18px}
+.progressbar{height:10px;background:#eadcc7;border-radius:999px;overflow:hidden;margin-top:14px}
+.progressbar span{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));width:0%}
+.small{color:var(--muted);font-size:.92rem;line-height:1.5}
+.footer{color:var(--muted);text-align:center;padding:20px}
+@media(max-width:740px){.controls{grid-template-columns:1fr}.nav button{flex:1 1 45%}.card{border-radius:22px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <h1>ALE Professional Practice</h1>
+        <div class="small">Text-only reviewer. Audio-ready Taglish explanations. Includes RA 9266 section map with deeper audio-ready explanations. No images.</div>
+      </div>
+      <div class="badge" id="countBadge">Loading…</div>
+    </div>
+    <div class="controls">
+      <input id="search" placeholder="Search question / explanation / keyword…"/>
+      <select id="mode">
+        <option value="all">All cards</option>
+        <option value="unseen">Unseen</option>
+        <option value="missed">Missed</option>
+        <option value="flagged">Flagged</option>
+      </select>
+      <select id="jump"></select>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="card" id="card">
+    <div class="meta">
+      <span id="qid">Q—</span>
+      <span id="category">ALE Professional Practice</span>
+      <span id="status">Not answered</span>
+    </div>
+    <div class="progressbar"><span id="bar"></span></div>
+    <div class="q" id="question">Loading cards…</div>
+    <div class="choices" id="choices"></div>
+    <div class="nav">
+      <button class="btn2" id="prevBtn">← Previous</button>
+      <button class="btn2" id="flagBtn">☆ Flag</button>
+      <button class="btn" id="showBtn">Show answer</button>
+      <button class="btn2" id="nextBtn">Next →</button>
+    </div>
+    <div class="answerPanel" id="answerPanel">
+      <div class="answer" id="answer"></div>
+      <div class="memory" id="memory"></div>
+      <div class="expl" id="explanation"></div>
+    </div>
+  </section>
+</main>
+<div class="footer">Professional Practice v3: 212 cards. RA 9266 section explanations improved. Images disabled for this subject.</div>
+<script>
+let cards=[], filtered=[], idx=0;
+const storeKey="ale_pro_practice_progress_v1";
+const progress=JSON.parse(localStorage.getItem(storeKey)||"{}");
+function save(){localStorage.setItem(storeKey,JSON.stringify(progress));}
+function esc(s){return String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m]));}
+function cardNum(c){return parseInt((c.displayId||"0").replace(/\D/g,""))||0}
+function isAnswered(c){return progress[c.uid]?.answered}
+function isMissed(c){return progress[c.uid]?.missed}
+function isFlagged(c){return progress[c.uid]?.flagged}
+function applyFilter(){
+  const q=document.getElementById("search").value.trim().toLowerCase();
+  const mode=document.getElementById("mode").value;
+  filtered=cards.filter(c=>{
+    const hay=[c.displayId,c.question,c.answer,c.keyMemory,c.explanation].join(" ").toLowerCase();
+    if(q && !hay.includes(q)) return false;
+    if(mode==="unseen" && isAnswered(c)) return false;
+    if(mode==="missed" && !isMissed(c)) return false;
+    if(mode==="flagged" && !isFlagged(c)) return false;
+    return true;
+  });
+  if(!filtered.length){idx=0; renderEmpty(); return;}
+  if(idx>=filtered.length) idx=0;
+  render();
+}
+function renderEmpty(){
+  document.getElementById("qid").textContent="No cards";
+  document.getElementById("question").textContent="No matching cards.";
+  document.getElementById("choices").innerHTML="";
+  document.getElementById("answerPanel").classList.remove("show");
+  document.getElementById("countBadge").textContent=`0 / ${cards.length}`;
+  document.getElementById("bar").style.width="0%";
+}
+function render(){
+  const c=filtered[idx];
+  document.getElementById("qid").textContent=c.displayId;
+  document.getElementById("category").textContent=c.category||"ALE Professional Practice";
+  document.getElementById("question").textContent=c.question;
+  document.getElementById("status").textContent=isAnswered(c) ? (isMissed(c)?"Missed before":"Answered") : "Not answered";
+  document.getElementById("countBadge").textContent=`${idx+1} / ${filtered.length} cards`;
+  document.getElementById("bar").style.width=`${((idx+1)/filtered.length)*100}%`;
+  document.getElementById("answerPanel").classList.remove("show");
+  document.getElementById("answer").textContent=c.answer||"";
+  document.getElementById("memory").innerHTML=c.keyMemory?`<b>Memory cue:</b> ${esc(c.keyMemory)}`:"<b>Memory cue:</b> Review the explanation.";
+  document.getElementById("explanation").textContent=c.explanation||"";
+  document.getElementById("flagBtn").textContent=isFlagged(c)?"★ Flagged":"☆ Flag";
+  const choices=document.getElementById("choices");
+  choices.innerHTML="";
+  if(c.choices && c.choices.length){
+    c.choices.forEach(ch=>{
+      const div=document.createElement("div");
+      div.className="choice";
+      div.innerHTML=`<span class="letter">${esc(ch.letter.toUpperCase())}</span><span>${esc(ch.text)}</span>`;
+      div.onclick=()=>{
+        const ok=ch.letter===c.correctLetter;
+        progress[c.uid]=progress[c.uid]||{};
+        progress[c.uid].answered=true;
+        if(!ok) progress[c.uid].missed=true;
+        save();
+        [...choices.children].forEach(el=>el.style.pointerEvents="none");
+        [...choices.children].forEach((el,i)=>{
+          const letter=c.choices[i].letter;
+          if(letter===c.correctLetter) el.classList.add("correct");
+          else if(letter===ch.letter) el.classList.add("wrong");
+        });
+        document.getElementById("answerPanel").classList.add("show");
+        document.getElementById("status").textContent=ok?"Correct":"Review this";
+      };
+      choices.appendChild(div);
+    });
+  } else {
+    choices.innerHTML=`<div class="small">Identification / computation / no visible choices. Tap “Show answer” after thinking through it.</div>`;
+  }
+}
+function showAnswer(){
+  const c=filtered[idx]; if(!c) return;
+  progress[c.uid]=progress[c.uid]||{}; progress[c.uid].answered=true; save();
+  document.getElementById("answerPanel").classList.add("show");
+  document.getElementById("status").textContent="Answered";
+  const choiceEls=[...document.getElementById("choices").children];
+  if(c.choices?.length){
+    choiceEls.forEach((el,i)=>{ if(c.choices[i].letter===c.correctLetter) el.classList.add("correct"); });
+  }
+}
+document.getElementById("prevBtn").onclick=()=>{if(filtered.length){idx=(idx-1+filtered.length)%filtered.length;render();}};
+document.getElementById("nextBtn").onclick=()=>{if(filtered.length){idx=(idx+1)%filtered.length;render();}};
+document.getElementById("showBtn").onclick=showAnswer;
+document.getElementById("flagBtn").onclick=()=>{const c=filtered[idx]; if(!c)return; progress[c.uid]=progress[c.uid]||{}; progress[c.uid].flagged=!progress[c.uid].flagged; save(); render();};
+document.getElementById("search").oninput=()=>{idx=0;applyFilter();};
+document.getElementById("mode").onchange=()=>{idx=0;applyFilter();};
+document.getElementById("jump").onchange=e=>{const n=parseInt(e.target.value); const pos=filtered.findIndex(c=>cardNum(c)===n); if(pos>=0){idx=pos;render();} else {const allPos=cards.findIndex(c=>cardNum(c)===n); if(allPos>=0){document.getElementById("mode").value="all";filtered=cards;idx=allPos;render();}}};
+fetch("cards.json",{cache:"no-store"}).then(r=>r.json()).then(data=>{
+  cards=data.sort((a,b)=>cardNum(a)-cardNum(b));
+  const jump=document.getElementById("jump");
+  jump.innerHTML=cards.map(c=>`<option value="${cardNum(c)}">${esc(c.displayId)} — ${esc(c.question).slice(0,80)}</option>`).join("");
+  filtered=cards; applyFilter();
+}).catch(err=>{
+  document.getElementById("question").textContent="Cards not found. Make sure cards.json is uploaded in this same professional-practice folder.";
+  console.error(err);
+});
+document.addEventListener("keydown",e=>{
+  if(e.key==="ArrowRight") document.getElementById("nextBtn").click();
+  if(e.key==="ArrowLeft") document.getElementById("prevBtn").click();
+  if(e.key===" ") {e.preventDefault(); showAnswer();}
+});
+</script>
+</body>
+</html>
