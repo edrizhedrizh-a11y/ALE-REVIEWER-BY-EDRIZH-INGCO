@@ -23,6 +23,31 @@ h1{margin:0 0 6px;font-size:30px;font-weight:900;letter-spacing:.02em} h2{margin
 .floatBtns{display:none;position:fixed;right:14px;bottom:14px;z-index:20;flex-direction:column;gap:8px} body.layout-compact .floatBtns{display:flex} .floatBtns button{box-shadow:0 8px 20px rgba(0,0,0,.16)}
 .results{display:none;padding:22px} .scoreBox{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:14px 0} .stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px} .stat b{display:block;font-size:22px;margin-top:6px} .pass{color:var(--green)} .fail{color:var(--red)} table{width:100%;border-collapse:collapse;font-size:13px;margin-top:10px} th,td{border-bottom:1px solid var(--line);padding:9px;text-align:left;vertical-align:top} th{font-size:12px;color:#667085;text-transform:uppercase;letter-spacing:.04em}
 .reviewItem{border:1px solid var(--line);background:#fff;border-radius:16px;padding:14px;margin:10px 0} .reviewItem h3{margin:0 0 8px;font-size:16px} .explain{white-space:pre-wrap;color:#263853;line-height:1.45}
+
+/* Test Booklet Markup Mode */
+.markupArea{position:relative;border-radius:18px}
+.markupCanvas{position:absolute;inset:0;width:100%;height:100%;z-index:9;pointer-events:none;border-radius:18px}
+.markupArea.drawing .markupCanvas{pointer-events:auto;touch-action:none}
+.markupArea.notes-hidden .markupCanvas{display:none}
+.markupToolbar{margin:16px 0;padding:14px;border:1px dashed #d5c8b6;border-radius:18px;background:#fffaf0}
+.toolRow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+.toolBtn{border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px 12px;font-weight:900;cursor:pointer;min-height:44px}
+.toolBtn.active{background:#061a38;color:#fff;border-color:#061a38}
+.toolHint{font-size:12px;color:#667085;line-height:1.35;margin-top:8px}
+.scratchBox{display:none;margin-top:12px}
+.scratchBox.open{display:block}
+.scratchBox textarea{width:100%;min-height:110px;border:1px solid var(--line);border-radius:14px;padding:12px;font:inherit;line-height:1.45;resize:vertical;background:#fff}
+.booklet.fullscreenBooklet{position:fixed;inset:10px;z-index:60;overflow:auto;max-width:none;background:var(--card);padding:24px}
+body.markupFullscreen{overflow:hidden}
+body.markupFullscreen .sheet,body.markupFullscreen .hero,body.markupFullscreen #setup,body.markupFullscreen .floatBtns{display:none!important}
+.reviewCanvasBox{margin:10px 0;border:1px solid var(--line);background:#fff;border-radius:16px;padding:10px}
+.reviewCanvasBox canvas{width:100%;max-height:360px;border-radius:12px;border:1px solid var(--line);background:#fffdf8}
+.reviewNoteText{white-space:pre-wrap;background:#fffaf0;border:1px solid var(--line);border-radius:12px;padding:10px;margin-top:8px;color:#263853}
+@media(max-width:860px){
+  .markupToolbar{display:block}
+  .toolRow .toolBtn{min-height:42px;padding:9px 10px}
+}
+
 @media(max-width:860px){body{padding:14px}.hero{padding:20px}h1{font-size:24px}.setupGrid,.scoreBox{grid-template-columns:1fr}.question{font-size:17px}}
 </style>
 </head>
@@ -49,10 +74,11 @@ h1{margin:0 0 6px;font-size:30px;font-weight:900;letter-spacing:.02em} h2{margin
   <div class="examTop"><div><strong id="progressText"></strong><div class="mini" id="sourceText"></div></div><div class="timer" id="timer">--:--</div></div>
   <div class="examLayout">
     <main class="booklet">
-      <div class="qMeta"><span class="pill" id="qid"></span><span class="pill" id="qcat"></span><span class="pill" id="markPill">No mark</span></div>
+      <div class="markupArea" id="markupArea"><div class="qMeta"><span class="pill" id="qid"></span><span class="pill" id="qcat"></span><span class="pill" id="markPill">No mark</span></div>
       <p class="question" id="questionText"></p>
       <div class="visualBox" id="visualBox"></div>
-      <div class="choices" id="choicesBox"></div>
+      <div class="choices" id="choicesBox"></div><canvas class="markupCanvas" id="markupCanvas"></canvas></div>
+      <div class="markupToolbar"><strong>Test Booklet Markup Mode</strong><div class="toolRow"><button class="toolBtn active" data-tool="navigate" onclick="setMarkupTool(\'navigate\')">Navigate</button><button class="toolBtn" data-tool="pencil" onclick="setMarkupTool(\'pencil\')">Pencil</button><button class="toolBtn" data-tool="highlighter" onclick="setMarkupTool(\'highlighter\')">Highlighter</button><button class="toolBtn" data-tool="eraser" onclick="setMarkupTool(\'eraser\')">Eraser</button><button class="toolBtn" onclick="undoLastStroke()">Undo Last Stroke</button><button class="toolBtn" onclick="clearQuestionNotes()">Clear Notes for This Question</button><button class="toolBtn" id="hideShowNotesBtn" onclick="toggleNotesVisible()">Hide Notes</button><button class="toolBtn" id="fullscreenBtn" onclick="toggleFullscreenBooklet()">Fullscreen Question</button><button class="toolBtn" onclick="toggleScratchPad()">Open Scratch Pad</button></div><div class="toolHint" id="markupStatus">Navigate Mode: scroll/tap normally.</div><div class="scratchBox" id="scratchBox"><textarea id="scratchText" placeholder="Typed scratch notes fallback for phone or keyboard use..." oninput="saveTypedScratch()"></textarea></div></div>
       <div class="markPanel"><strong>Confidence mark — separate from your A/B/C/D answer</strong><div class="markBtns" id="markBtns"></div></div>
       <div class="navBtns"><button class="btn" id="prevBtn">Previous</button><button class="btn" id="nextBtn">Next</button><button class="btn" id="prevMatchBtn" style="display:none">Previous Matching</button><button class="btn" id="nextMatchBtn" style="display:none">Next Matching</button><button class="btn danger" id="submitBtn">Submit Exam</button></div>
     </main>
@@ -129,12 +155,274 @@ async function loadCards(){loadedWarnings=[];const chunks=await Promise.all(CONF
 function setupOptions(){$('countSelect').innerHTML=CONFIG.options.map(o=>`<option value="${o.items}">${o.items} items — ${o.label}</option>`).join('')} function calcLimit(items,mode){if(mode==='none')return 0;let s=items*CONFIG.paceMinutes*60;if(mode==='pressure')s*=.8;if(mode==='sprint')s*=.5;return Math.round(s)}
 function prepQuestion(c){const choices=c.choices.map(ch=>({text:ch.text,correct:ch.text.trim()===c.correctText.trim()}));if(!choices.some(ch=>ch.correct))choices.push({text:c.correctText,correct:true});const randomized=shuffle(choices);return{...c,randomizedChoices:randomized,correctIndex:randomized.findIndex(ch=>ch.correct)}}
 function directImageCandidate(value){if(!value)return'';const s=String(value).trim();if(/^(https?:\/\/|data:image\/|assets\/|\.\/assets\/|\.\.\/)/i.test(s)&&/\.(png|jpe?g|webp|gif|svg)(\?.*)?$/i.test(s))return s;return''} function getArrayField(card,name){const v=card[name];if(Array.isArray(v))return v.filter(Boolean).map(String);if(typeof v==='string'&&v.trim())return[v.trim()];return[]} function safeVisualQueries(card){const q=[];['questionImageQuery','imageQuery','questionImageQueries','questionImageLayoutQueries','visualQuery'].forEach(k=>q.push(...getArrayField(card,k)));if(card.visual&&typeof card.visual==='string')q.push(card.visual);return[...new Set(q.filter(x=>x&&!/answer|correct/i.test(x)))]} function getQuestionVisual(card){for(const v of [card.questionImage,card.image,card.visualUrl,card.visual]){const hit=directImageCandidate(v);if(hit)return{type:'image',url:hit,note:'Question visual shown for identification. Answer labels are hidden until submit.'}}const q=safeVisualQueries(card)[0];return q?{type:'query',query:q,note:'No direct image stored. Use source-backed visual buttons; answer remains hidden.'}:null} function imageSearchUrl(q){return'https://www.google.com/search?tbm=isch&q='+encodeURIComponent(q)} function wikiSearchUrl(q){return'https://commons.wikimedia.org/w/index.php?search='+encodeURIComponent(q)+'&title=Special:MediaSearch&type=image'} function renderSafeVisual(card){const box=$('visualBox');const v=getQuestionVisual(card);if(!v){box.className='visualBox';box.innerHTML='';return}box.className='visualBox show';if(v.type==='image')box.innerHTML=`<img src="${escapeHtml(v.url)}" alt="Question visual"><p class="visualNote">${escapeHtml(v.note)}</p>`;else box.innerHTML=`<p class="visualNote"><strong>Visual item:</strong> This card needs an identification/reference image. No answer is revealed here.</p><div class="visualBtns"><a class="visualLink" href="${imageSearchUrl(v.query)}" target="_blank" rel="noopener">Open image search</a><a class="visualLink" href="${wikiSearchUrl(v.query)}" target="_blank" rel="noopener">Open Wikimedia Commons</a></div><p class="visualNote">Search cue: ${escapeHtml(v.query)}</p>`} function answerVisualHtml(card){for(const v of [card.answerImage,card.questionImage,card.image,card.visualUrl,card.visual]){const hit=directImageCandidate(v);if(hit)return`<div class="visualBox show"><img src="${escapeHtml(hit)}" alt="Review visual"><p class="visualNote">Review visual shown after submit.</p></div>`}const q=safeVisualQueries(card)[0];return q?`<div class="visualBox show"><p class="visualNote"><strong>Review visual reference:</strong> ${escapeHtml(q)}</p><div class="visualBtns"><a class="visualLink" href="${imageSearchUrl(q)}" target="_blank" rel="noopener">Open image search</a><a class="visualLink" href="${wikiSearchUrl(q)}" target="_blank" rel="noopener">Open Wikimedia Commons</a></div></div>`:''}
-async function startExam(){applyLayout();$('startBtn').disabled=true;$('warning').style.display='none';await loadCards();if(!allCards.length){$('warning').style.display='block';$('warning').textContent='No cards available yet. Check folders and cards.json.';$('startBtn').disabled=false;return}const count=Number($('countSelect').value);exam=[];if(pendingRetakeIds?.length){exam=buildExamFromIds(pendingRetakeIds,count)||[];if(!exam.length){alert('Saved IDs unavailable. Starting new random exam.');pendingRetakeIds=null}}if(!exam.length)exam=shuffle(allCards).slice(0,Math.min(count,allCards.length)).map(prepQuestion);answers=Array(exam.length).fill(null);marks=Array(exam.length).fill('');current=0;submitted=false;activeFilter='all';timeLimit=calcLimit(exam.length,$('modeSelect').value);startedAt=Date.now();saveCurrentAttempt(pendingRetakeIds?'retake_started':'started',{retake:!!pendingRetakeIds});$('setup').style.display='none';$('results').style.display='none';$('examShell').style.display='block';renderQuestion();tick();clearInterval(timerInt);if(timeLimit)timerInt=setInterval(tick,1000);else $('timer').textContent='No timer';$('startBtn').disabled=false}
+
+// ===== Test Booklet Markup Mode =====
+const ANNOTATION_KEY = 'aleMockExamAnnotationsV1';
+let currentAttemptId = '';
+let markupTool = 'navigate';
+let notesVisible = true;
+let currentStroke = null;
+let isPointerDown = false;
+let scratchOpen = false;
+
+function newAttemptId(){
+  return String(CONFIG.shortTitle||'exam').replace(/\W+/g,'_') + '-' + Date.now() + '-' + Math.random().toString(36).slice(2);
+}
+function readAnnotationStore(){
+  try { return JSON.parse(localStorage.getItem(ANNOTATION_KEY) || '{}'); } catch(e){ return {}; }
+}
+function writeAnnotationStore(store){
+  try { localStorage.setItem(ANNOTATION_KEY, JSON.stringify(store)); } catch(e){}
+}
+function annotationQuestionId(index=current){
+  const q = exam[index];
+  return q ? cardKey(q) : 'unknown';
+}
+function getAttemptNotes(){
+  const store = readAnnotationStore();
+  if(!currentAttemptId) currentAttemptId = newAttemptId();
+  if(!store[currentAttemptId]) store[currentAttemptId] = {};
+  return {store, attempt: store[currentAttemptId]};
+}
+function getQuestionNotes(index=current){
+  const qid = annotationQuestionId(index);
+  const {store, attempt} = getAttemptNotes();
+  if(!attempt[qid]) attempt[qid] = {strokes:[], typed:''};
+  writeAnnotationStore(store);
+  return attempt[qid];
+}
+function saveQuestionNotes(index=current, data){
+  const qid = annotationQuestionId(index);
+  const store = readAnnotationStore();
+  if(!store[currentAttemptId]) store[currentAttemptId] = {};
+  store[currentAttemptId][qid] = data;
+  writeAnnotationStore(store);
+}
+function getCanvasParts(){
+  return {
+    area: document.getElementById('markupArea'),
+    canvas: document.getElementById('markupCanvas'),
+    ctx: document.getElementById('markupCanvas') ? document.getElementById('markupCanvas').getContext('2d') : null
+  };
+}
+function resizeMarkupCanvas(){
+  const {area, canvas, ctx} = getCanvasParts();
+  if(!area || !canvas || !ctx) return;
+  const rect = area.getBoundingClientRect();
+  const dpr = window.devicePixelRatio || 1;
+  const w = Math.max(1, Math.round(rect.width));
+  const h = Math.max(1, Math.round(rect.height));
+  if(canvas.width !== Math.round(w*dpr) || canvas.height !== Math.round(h*dpr)){
+    canvas.width = Math.round(w*dpr);
+    canvas.height = Math.round(h*dpr);
+    canvas.style.width = w + 'px';
+    canvas.style.height = h + 'px';
+  }
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  redrawMarkup();
+}
+function strokeStyle(stroke, ctx){
+  if(stroke.tool === 'highlighter'){
+    ctx.globalCompositeOperation = 'source-over';
+    ctx.globalAlpha = 0.32;
+    ctx.strokeStyle = '#f4c542';
+    ctx.lineWidth = stroke.width || 14;
+  } else if(stroke.tool === 'eraser'){
+    ctx.globalCompositeOperation = 'destination-out';
+    ctx.globalAlpha = 1;
+    ctx.strokeStyle = 'rgba(0,0,0,1)';
+    ctx.lineWidth = stroke.width || 24;
+  } else {
+    ctx.globalCompositeOperation = 'source-over';
+    ctx.globalAlpha = 1;
+    ctx.strokeStyle = '#1f2937';
+    ctx.lineWidth = stroke.width || 2.2;
+  }
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+}
+function drawStroke(ctx, stroke, w, h){
+  const pts = stroke.points || [];
+  if(!pts.length) return;
+  strokeStyle(stroke, ctx);
+  ctx.beginPath();
+  pts.forEach((p,i)=>{
+    const x = p.x * w, y = p.y * h;
+    if(i===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+  });
+  ctx.stroke();
+  ctx.globalAlpha = 1;
+  ctx.globalCompositeOperation = 'source-over';
+}
+function redrawMarkup(){
+  const {area, canvas, ctx} = getCanvasParts();
+  if(!area || !canvas || !ctx) return;
+  const rect = area.getBoundingClientRect();
+  ctx.clearRect(0,0,rect.width,rect.height);
+  if(!notesVisible) return;
+  const data = getQuestionNotes(current);
+  (data.strokes || []).forEach(stroke => drawStroke(ctx, stroke, rect.width, rect.height));
+}
+function setMarkupTool(tool){
+  markupTool = tool;
+  const {area} = getCanvasParts();
+  if(area){
+    area.classList.toggle('drawing', tool !== 'navigate');
+    area.classList.toggle('notes-hidden', !notesVisible);
+  }
+  document.querySelectorAll('[data-tool]').forEach(btn => btn.classList.toggle('active', btn.dataset.tool === tool));
+  const status = document.getElementById('markupStatus');
+  if(status){
+    const label = tool === 'navigate' ? 'Navigate Mode: scroll/tap normally.' :
+      tool === 'pencil' ? 'Pencil Mode: write thin marks with Apple Pencil/stylus.' :
+      tool === 'highlighter' ? 'Highlighter Mode: underline/highlight keywords.' :
+      'Eraser Mode: draw over marks to erase strokes.';
+    status.textContent = label;
+  }
+}
+function pointerToNorm(evt){
+  const {area} = getCanvasParts();
+  const rect = area.getBoundingClientRect();
+  return {
+    x: Math.min(1, Math.max(0, (evt.clientX - rect.left) / Math.max(1, rect.width))),
+    y: Math.min(1, Math.max(0, (evt.clientY - rect.top) / Math.max(1, rect.height)))
+  };
+}
+function startStroke(evt){
+  if(markupTool === 'navigate') return;
+  evt.preventDefault();
+  isPointerDown = true;
+  const width = markupTool === 'highlighter' ? 14 : (markupTool === 'eraser' ? 28 : 2.2);
+  currentStroke = {tool: markupTool, width, points:[pointerToNorm(evt)]};
+  try { evt.currentTarget.setPointerCapture(evt.pointerId); } catch(e){}
+}
+function moveStroke(evt){
+  if(!isPointerDown || !currentStroke) return;
+  evt.preventDefault();
+  currentStroke.points.push(pointerToNorm(evt));
+  redrawMarkup();
+  const {area, ctx} = getCanvasParts();
+  if(area && ctx){
+    const rect = area.getBoundingClientRect();
+    drawStroke(ctx, currentStroke, rect.width, rect.height);
+  }
+}
+function endStroke(evt){
+  if(!isPointerDown || !currentStroke) return;
+  evt.preventDefault();
+  isPointerDown = false;
+  const data = getQuestionNotes(current);
+  data.strokes = data.strokes || [];
+  data.strokes.push(currentStroke);
+  saveQuestionNotes(current, data);
+  currentStroke = null;
+  redrawMarkup();
+}
+function undoLastStroke(){
+  const data = getQuestionNotes(current);
+  data.strokes = data.strokes || [];
+  data.strokes.pop();
+  saveQuestionNotes(current, data);
+  redrawMarkup();
+}
+function clearQuestionNotes(){
+  if(!confirm('Clear all Apple Pencil / scratch notes for this question?')) return;
+  const data = getQuestionNotes(current);
+  data.strokes = [];
+  data.typed = '';
+  saveQuestionNotes(current, data);
+  const ta = document.getElementById('scratchText');
+  if(ta) ta.value = '';
+  redrawMarkup();
+}
+function toggleNotesVisible(){
+  notesVisible = !notesVisible;
+  const {area} = getCanvasParts();
+  if(area) area.classList.toggle('notes-hidden', !notesVisible);
+  const btn = document.getElementById('hideShowNotesBtn');
+  if(btn) btn.textContent = notesVisible ? 'Hide Notes' : 'Show Notes';
+  redrawMarkup();
+}
+function toggleScratchPad(){
+  scratchOpen = !scratchOpen;
+  const box = document.getElementById('scratchBox');
+  if(box) box.classList.toggle('open', scratchOpen);
+}
+function saveTypedScratch(){
+  const ta = document.getElementById('scratchText');
+  const data = getQuestionNotes(current);
+  data.typed = ta ? ta.value : '';
+  saveQuestionNotes(current, data);
+}
+function loadTypedScratch(){
+  const ta = document.getElementById('scratchText');
+  if(ta) ta.value = getQuestionNotes(current).typed || '';
+}
+function toggleFullscreenBooklet(){
+  const booklet = document.querySelector('.booklet');
+  const on = !document.body.classList.contains('markupFullscreen');
+  document.body.classList.toggle('markupFullscreen', on);
+  if(booklet) booklet.classList.toggle('fullscreenBooklet', on);
+  const btn = document.getElementById('fullscreenBtn');
+  if(btn) btn.textContent = on ? 'Exit Fullscreen Question' : 'Fullscreen Question';
+  setTimeout(resizeMarkupCanvas, 120);
+}
+function setupMarkupCanvas(){
+  const {canvas} = getCanvasParts();
+  if(!canvas) return;
+  canvas.onpointerdown = startStroke;
+  canvas.onpointermove = moveStroke;
+  canvas.onpointerup = endStroke;
+  canvas.onpointercancel = endStroke;
+  loadTypedScratch();
+  setMarkupTool(markupTool || 'navigate');
+  setTimeout(resizeMarkupCanvas, 80);
+}
+function annotationReviewHtml(q){
+  if(!currentAttemptId) return '';
+  const store = readAnnotationStore();
+  const qid = cardKey(q);
+  const data = store[currentAttemptId] && store[currentAttemptId][qid];
+  if(!data || (!(data.strokes||[]).length && !data.typed)) return '';
+  const note = data.typed ? `<div class="reviewNoteText"><strong>Typed scratch notes:</strong>\n${escapeHtml(data.typed)}</div>` : '';
+  return `<div class="reviewCanvasBox"><strong>Test Booklet Markup Notes</strong><canvas class="reviewCanvas" data-qid="${escapeHtml(qid)}"></canvas>${note}</div>`;
+}
+function drawReviewCanvases(){
+  if(!currentAttemptId) return;
+  const store = readAnnotationStore();
+  const attempt = store[currentAttemptId] || {};
+  document.querySelectorAll('.reviewCanvas').forEach(canvas=>{
+    const data = attempt[canvas.dataset.qid];
+    if(!data || !(data.strokes||[]).length){
+      canvas.style.display='none';
+      return;
+    }
+    const rectW = canvas.parentElement ? canvas.parentElement.clientWidth - 24 : 600;
+    const w = Math.max(300, rectW), h = 260, dpr = window.devicePixelRatio || 1;
+    canvas.width = Math.round(w*dpr); canvas.height = Math.round(h*dpr);
+    canvas.style.width = w + 'px'; canvas.style.height = h + 'px';
+    const ctx = canvas.getContext('2d'); ctx.setTransform(dpr,0,0,dpr,0,0);
+    ctx.clearRect(0,0,w,h);
+    (data.strokes||[]).forEach(stroke=>drawStroke(ctx, stroke, w, h));
+  });
+}
+function clearAttemptNotes(){
+  if(!currentAttemptId) return;
+  if(!confirm('Clear all Test Booklet Markup notes for this exam attempt?')) return;
+  const store = readAnnotationStore();
+  delete store[currentAttemptId];
+  writeAnnotationStore(store);
+  document.querySelectorAll('.reviewCanvasBox').forEach(el=>el.remove());
+  alert('Notes cleared for this attempt.');
+}
+window.addEventListener('resize', ()=> setTimeout(resizeMarkupCanvas, 100));
+
+async function startExam(){applyLayout();$('startBtn').disabled=true;$('warning').style.display='none';await loadCards();if(!allCards.length){$('warning').style.display='block';$('warning').textContent='No cards available yet. Check folders and cards.json.';$('startBtn').disabled=false;return}const count=Number($('countSelect').value);exam=[];if(pendingRetakeIds?.length){exam=buildExamFromIds(pendingRetakeIds,count)||[];if(!exam.length){alert('Saved IDs unavailable. Starting new random exam.');pendingRetakeIds=null}}if(!exam.length)exam=shuffle(allCards).slice(0,Math.min(count,allCards.length)).map(prepQuestion);answers=Array(exam.length).fill(null);marks=Array(exam.length).fill('');current=0;submitted=false;activeFilter='all';currentAttemptId=newAttemptId();timeLimit=calcLimit(exam.length,$('modeSelect').value);startedAt=Date.now();saveCurrentAttempt(pendingRetakeIds?'retake_started':'started',{retake:!!pendingRetakeIds});$('setup').style.display='none';$('results').style.display='none';$('examShell').style.display='block';renderQuestion();tick();clearInterval(timerInt);if(timeLimit)timerInt=setInterval(tick,1000);else $('timer').textContent='No timer';$('startBtn').disabled=false}
 function tick(){if(!timeLimit){$('timer').textContent='No timer';return}const left=timeLimit-Math.floor((Date.now()-startedAt)/1000);$('timer').textContent=fmtTime(left);if(left<=0&&!submitted)submitExam(true)}
 function counts(){const c={answered:0,unanswered:0,sure:0,notSure:0,guess:0,noIdea:0,marked:0};for(let i=0;i<exam.length;i++){if(answers[i]==null)c.unanswered++;else c.answered++;if(marks[i]){c.marked++;c[marks[i]]++}}return c}
 function markLabel(m){return m?MARKS[m].sym+' '+MARKS[m].label:'No mark'} function statusFor(i){return {answered:answers[i]!=null,mark:marks[i]||'',current:i===current}}
 function setMark(m){marks[current]=m;renderQuestion()}
-function renderQuestion(){const q=exam[current];if(!q)return;$('progressText').textContent=`Question ${current+1} of ${exam.length}`;$('sourceText').textContent=`Source: ${q.sourceName}`;$('qid').textContent=q.displayId;$('qcat').textContent=q.category;$('markPill').textContent=markLabel(marks[current]);$('questionText').textContent=q.question;renderSafeVisual(q);$('choicesBox').innerHTML=q.randomizedChoices.map((ch,i)=>`<label class="choice ${answers[current]===i?'selected':''}"><input type="radio" name="choice" ${answers[current]===i?'checked':''} data-index="${i}"><span><strong>${String.fromCharCode(65+i)}.</strong> ${escapeHtml(ch.text)}</span></label>`).join('');document.querySelectorAll('input[name=choice]').forEach(inp=>inp.onchange=()=>{answers[current]=Number(inp.dataset.index);renderQuestion()});$('markBtns').innerHTML=Object.entries(MARKS).map(([k,v])=>`<button class="markBtn ${marks[current]===k?'active':''}" onclick="setMark('${k}')">${v.sym} ${v.label}</button>`).join('')+`<button class="markBtn ${!marks[current]?'active':''}" onclick="setMark('')">Clear Mark</button>`;$('prevBtn').disabled=current===0;$('nextBtn').disabled=current===exam.length-1;renderSheet()}
+function renderQuestion(){const q=exam[current];if(!q)return;$('progressText').textContent=`Question ${current+1} of ${exam.length}`;$('sourceText').textContent=`Source: ${q.sourceName}`;$('qid').textContent=q.displayId;$('qcat').textContent=q.category;$('markPill').textContent=markLabel(marks[current]);$('questionText').textContent=q.question;renderSafeVisual(q);setTimeout(setupMarkupCanvas, 0);$('choicesBox').innerHTML=q.randomizedChoices.map((ch,i)=>`<label class="choice ${answers[current]===i?'selected':''}"><input type="radio" name="choice" ${answers[current]===i?'checked':''} data-index="${i}"><span><strong>${String.fromCharCode(65+i)}.</strong> ${escapeHtml(ch.text)}</span></label>`).join('');document.querySelectorAll('input[name=choice]').forEach(inp=>inp.onchange=()=>{answers[current]=Number(inp.dataset.index);renderQuestion()});$('markBtns').innerHTML=Object.entries(MARKS).map(([k,v])=>`<button class="markBtn ${marks[current]===k?'active':''}" onclick="setMark('${k}')">${v.sym} ${v.label}</button>`).join('')+`<button class="markBtn ${!marks[current]?'active':''}" onclick="setMark('')">Clear Mark</button>`;$('prevBtn').disabled=current===0;$('nextBtn').disabled=current===exam.length-1;renderSheet()}
 function matchesFilter(i,filter=activeFilter){if(filter==='all')return true;if(filter==='unanswered')return answers[i]==null;if(filter==='answered')return answers[i]!=null;if(filter==='marked')return !!marks[i];return marks[i]===filter}
 function visibleIndexes(){return exam.map((_,i)=>i).filter(i=>matchesFilter(i))} function jumpToFirst(filter){activeFilter=filter;const v=visibleIndexes();if(v.length)current=v[0];renderQuestion();if(document.body.classList.contains('layout-compact'))$('answerSheet').classList.add('open')} function nextMatching(dir){const v=visibleIndexes();if(!v.length)return;let pos=v.indexOf(current);if(pos<0)pos=dir>0?-1:0;pos=(pos+dir+v.length)%v.length;current=v[pos];renderQuestion()}
 function renderSheet(){const c=counts();const visible=visibleIndexes();$('prevMatchBtn').style.display=activeFilter==='all'?'none':'inline-block';$('nextMatchBtn').style.display=activeFilter==='all'?'none':'inline-block';$('answerSheet').innerHTML=`<div class="sheetHead"><h2>Answer Sheet</h2><button class="btn" onclick="$('answerSheet').classList.remove('open')">Close</button></div><div class="mini">Answered: ${c.answered} · Blank: ${c.unanswered} · Marked: ${c.marked}</div><div class="sheetControls"><select onchange="activeFilter=this.value;renderSheet()"><option value="all" ${activeFilter==='all'?'selected':''}>All</option><option value="unanswered" ${activeFilter==='unanswered'?'selected':''}>Unanswered</option><option value="answered" ${activeFilter==='answered'?'selected':''}>Answered</option><option value="marked" ${activeFilter==='marked'?'selected':''}>Marked</option><option value="sure" ${activeFilter==='sure'?'selected':''}>Sure</option><option value="notSure" ${activeFilter==='notSure'?'selected':''}>Not Sure</option><option value="guess" ${activeFilter==='guess'?'selected':''}>Guess</option><option value="noIdea" ${activeFilter==='noIdea'?'selected':''}>No Idea</option></select><div class="quickBtns"><button class="btn" onclick="jumpToFirst('unanswered')">Review Unanswered</button><button class="btn" onclick="jumpToFirst('notSure')">Review Not Sure</button><button class="btn" onclick="jumpToFirst('guess')">Review Guess</button><button class="btn" onclick="jumpToFirst('noIdea')">Review No Idea</button><button class="btn" onclick="jumpToFirst('marked')">Review All Marked</button><button class="btn" onclick="activeFilter='all';renderSheet()">All</button></div></div><div class="itemGrid">${visible.map(i=>rowHtml(i)).join('')||'<p class="mini">No matching questions.</p>'}</div>`}
@@ -143,10 +431,10 @@ $('prevBtn').onclick=()=>{if(current>0){current--;renderQuestion()}};$('nextBtn'
 function breakdown(){const map={};exam.forEach((q,i)=>{const k=q.category||q.sourceName||'Unknown';if(!map[k])map[k]={total:0,correct:0};map[k].total++;if(answers[i]!=null&&q.randomizedChoices[answers[i]]?.correct)map[k].correct++});return map}
 function confidenceBreakdown(){const out={sure:{total:0,correct:0},notSure:{total:0,correct:0},guess:{total:0,correct:0},noIdea:{total:0,correct:0},unmarked:{total:0,correct:0}};exam.forEach((q,i)=>{const k=marks[i]||'unmarked';out[k].total++;if(answers[i]!=null&&q.randomizedChoices[answers[i]]?.correct)out[k].correct++});return out}
 function confirmSummary(){const c=counts();const remain=timeLimit?fmtTime(timeLimit-Math.floor((Date.now()-startedAt)/1000)):'No timer';return `Submit final exam?\n\nAnswered: ${c.answered}\nUnanswered: ${c.unanswered}\nSure: ${c.sure}\nNot Sure: ${c.notSure}\nGuess: ${c.guess}\nNo Idea: ${c.noIdea}\nTime remaining: ${remain}`}
-function submitExam(auto){if(submitted)return;if(!auto&&!confirm(confirmSummary()))return;submitted=true;clearInterval(timerInt);const used=Math.floor((Date.now()-startedAt)/1000);const correct=exam.reduce((n,q,i)=>n+(answers[i]!=null&&q.randomizedChoices[answers[i]]?.correct?1:0),0);const pct=exam.length?correct/exam.length*100:0,pass=pct>=75;const c=counts(),bd=breakdown(),cb=confidenceBreakdown();const weakest=Object.entries(bd).sort((a,b)=>(a[1].correct/a[1].total)-(b[1].correct/b[1].total))[0];saveCurrentAttempt('submitted',{score:`${correct}/${exam.length}`,percentage:pct,passFail:pass?'PASS':'FAIL',timeUsedSeconds:used,subjectBreakdown:bd,confidenceBreakdown:cb,marks,answers,unanswered:c.unanswered,marked:c.marked});saveHistory({date:new Date().toLocaleString(),examType:CONFIG.shortTitle,itemCount:exam.length,score:`${correct}/${exam.length}`,percentage:pct,passFail:pass?'PASS':'FAIL',timeUsedSeconds:used,subjectBreakdown:bd,confidenceBreakdown:cb,questionIds:exam.map(cardKey),unanswered:c.unanswered,marked:c.marked});$('examShell').style.display='none';const wrongs=exam.map((q,i)=>({q,i})).filter(x=>answers[x.i]===null||!x.q.randomizedChoices[answers[x.i]]?.correct);const marked=exam.map((q,i)=>({q,i})).filter(x=>marks[x.i]);$('results').style.display='block';$('results').innerHTML=`<h2>Results — ${CONFIG.shortTitle}</h2><div class="scoreBox"><div class="stat">Raw score<b>${correct}/${exam.length}</b></div><div class="stat">Percentage<b>${pct.toFixed(1)}%</b></div><div class="stat">Status<b class="${pass?'pass':'fail'}">${pass?'PASS':'FAIL'}</b></div><div class="stat">Time used<b>${fmtTime(used)}</b></div><div class="stat">Unanswered<b>${c.unanswered}</b></div><div class="stat">Marked<b>${c.marked}</b></div><div class="stat">Weakest subject<b>${weakest?escapeHtml(weakest[0]):'—'}</b></div><div class="stat">Passing mark<b>75%</b></div></div><div class="topActions"><button class="btn primary" onclick="startNewRandomExam()">Start New Random Exam</button><button class="btn" onclick="retakeSameExam()">Retake Same Exam</button><button class="btn" onclick="document.getElementById('wrongReview').scrollIntoView({behavior:'smooth'})">Review Wrong Answers</button><a class="btn" href="../">Mock Exam Dashboard</a></div><h3>Performance by Confidence Mark</h3>${confTable(cb)}<h3>Subject Breakdown</h3>${subjectTable(bd)}<h3>Marked Questions</h3>${marked.length?marked.map(({q,i})=>smallReview(q,i,false)).join(''):'<p>No marked questions.</p>'}<h3 id="wrongReview">Wrong and Unanswered Review</h3>${wrongs.length?wrongs.map(({q,i})=>smallReview(q,i,true)).join(''):'<p>No wrong answers.</p>'}`;window.scrollTo(0,0)}
+function submitExam(auto){if(submitted)return;if(!auto&&!confirm(confirmSummary()))return;submitted=true;clearInterval(timerInt);const used=Math.floor((Date.now()-startedAt)/1000);const correct=exam.reduce((n,q,i)=>n+(answers[i]!=null&&q.randomizedChoices[answers[i]]?.correct?1:0),0);const pct=exam.length?correct/exam.length*100:0,pass=pct>=75;const c=counts(),bd=breakdown(),cb=confidenceBreakdown();const weakest=Object.entries(bd).sort((a,b)=>(a[1].correct/a[1].total)-(b[1].correct/b[1].total))[0];saveCurrentAttempt('submitted',{score:`${correct}/${exam.length}`,percentage:pct,passFail:pass?'PASS':'FAIL',timeUsedSeconds:used,subjectBreakdown:bd,confidenceBreakdown:cb,marks,answers,unanswered:c.unanswered,marked:c.marked});saveHistory({date:new Date().toLocaleString(),examType:CONFIG.shortTitle,itemCount:exam.length,score:`${correct}/${exam.length}`,percentage:pct,passFail:pass?'PASS':'FAIL',timeUsedSeconds:used,subjectBreakdown:bd,confidenceBreakdown:cb,questionIds:exam.map(cardKey),unanswered:c.unanswered,marked:c.marked});$('examShell').style.display='none';const wrongs=exam.map((q,i)=>({q,i})).filter(x=>answers[x.i]===null||!x.q.randomizedChoices[answers[x.i]]?.correct);const marked=exam.map((q,i)=>({q,i})).filter(x=>marks[x.i]);$('results').style.display='block';$('results').innerHTML=`<h2>Results — ${CONFIG.shortTitle}</h2><div class="scoreBox"><div class="stat">Raw score<b>${correct}/${exam.length}</b></div><div class="stat">Percentage<b>${pct.toFixed(1)}%</b></div><div class="stat">Status<b class="${pass?'pass':'fail'}">${pass?'PASS':'FAIL'}</b></div><div class="stat">Time used<b>${fmtTime(used)}</b></div><div class="stat">Unanswered<b>${c.unanswered}</b></div><div class="stat">Marked<b>${c.marked}</b></div><div class="stat">Weakest subject<b>${weakest?escapeHtml(weakest[0]):'—'}</b></div><div class="stat">Passing mark<b>75%</b></div></div><div class="topActions"><button class="btn primary" onclick="startNewRandomExam()">Start New Random Exam</button><button class="btn" onclick="retakeSameExam()">Retake Same Exam</button><button class="btn" onclick="document.getElementById('wrongReview').scrollIntoView({behavior:'smooth'})">Review Wrong Answers</button><button class="btn danger" onclick="clearAttemptNotes()">Clear Notes After Review</button><a class="btn" href="../">Mock Exam Dashboard</a></div><h3>Performance by Confidence Mark</h3>${confTable(cb)}<h3>Subject Breakdown</h3>${subjectTable(bd)}<h3>Marked Questions</h3>${marked.length?marked.map(({q,i})=>smallReview(q,i,false)).join(''):'<p>No marked questions.</p>'}<h3 id="wrongReview">Wrong and Unanswered Review</h3>${wrongs.length?wrongs.map(({q,i})=>smallReview(q,i,true)).join(''):'<p>No wrong answers.</p>'}`;setTimeout(drawReviewCanvases, 120);window.scrollTo(0,0)}
 function confTable(cb){return`<table><thead><tr><th>Mark</th><th>Correct</th><th>Total</th><th>%</th></tr></thead><tbody>${Object.entries(cb).map(([k,v])=>`<tr><td>${k==='unmarked'?'Unmarked':MARKS[k].sym+' '+MARKS[k].label}</td><td>${v.correct}</td><td>${v.total}</td><td>${v.total?(v.correct/v.total*100).toFixed(1):'0.0'}%</td></tr>`).join('')}</tbody></table>`}
 function subjectTable(bd){return`<table><thead><tr><th>Subject</th><th>Correct</th><th>Total</th><th>%</th></tr></thead><tbody>${Object.entries(bd).map(([k,v])=>`<tr><td>${escapeHtml(k)}</td><td>${v.correct}</td><td>${v.total}</td><td>${(v.correct/v.total*100).toFixed(1)}%</td></tr>`).join('')}</tbody></table>`}
-function smallReview(q,i,showExplain){const ua=answers[i]===null?'Unanswered':q.randomizedChoices[answers[i]]?.text;const ca=q.randomizedChoices[q.correctIndex]?.text||q.correctText;return`<div class="reviewItem"><h3>Q${i+1} · ${escapeHtml(q.category)} · ${escapeHtml(markLabel(marks[i]))}</h3><p><strong>Question:</strong> ${escapeHtml(q.question)}</p>${answerVisualHtml(q)}<p><strong>Your answer:</strong> ${escapeHtml(ua)}</p><p><strong>Correct answer:</strong> ${escapeHtml(ca)}</p><p><strong>Key memory:</strong> ${escapeHtml(q.keyMemory||'—')}</p><div class="explain"><strong>Explanation:</strong>\n${escapeHtml(q.explanation||'—')}</div></div>`}
+function smallReview(q,i,showExplain){const ua=answers[i]===null?'Unanswered':q.randomizedChoices[answers[i]]?.text;const ca=q.randomizedChoices[q.correctIndex]?.text||q.correctText;return`<div class="reviewItem"><h3>Q${i+1} · ${escapeHtml(q.category)} · ${escapeHtml(markLabel(marks[i]))}</h3><p><strong>Question:</strong> ${escapeHtml(q.question)}</p>${answerVisualHtml(q)}${annotationReviewHtml(q)}<p><strong>Your answer:</strong> ${escapeHtml(ua)}</p><p><strong>Correct answer:</strong> ${escapeHtml(ca)}</p><p><strong>Key memory:</strong> ${escapeHtml(q.keyMemory||'—')}</p><div class="explain"><strong>Explanation:</strong>\n${escapeHtml(q.explanation||'—')}</div></div>`}
 function renderHistory(){const rows=readHistory().filter(r=>r.examType===CONFIG.shortTitle).reverse();$('historyBox').innerHTML=rows.length?`<table><thead><tr><th>Date</th><th>Items</th><th>Score</th><th>%</th><th>Status</th><th>Time</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${r.date}</td><td>${r.itemCount}</td><td>${r.score}</td><td>${Number(r.percentage).toFixed(1)}%</td><td>${r.passFail}</td><td>${fmtTime(r.timeUsedSeconds)}</td></tr>`).join('')}</tbody></table>`:'<p class="mini">No history for this exam yet.</p>'}
 $('startBtn').onclick=startExam;$('historyBtn').onclick=renderHistory;setupOptions();applyLayout();
 </script>

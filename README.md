@@ -59,3 +59,14 @@ v4 PRC layout/confidence update:
 - Submit confirmation now shows answered/unanswered/confidence summary/time remaining.
 - Results include performance breakdown by confidence mark.
 - Day 2 / ADSP shows Design Problem pending note.
+
+
+v5 Test Booklet Markup Mode:
+- Added Apple Pencil / stylus annotation layer per question.
+- Tools: Navigate, Pencil, Highlighter, Eraser.
+- Buttons: Clear Notes for This Question, Hide/Show Notes, Undo Last Stroke, Fullscreen Question, Open Scratch Pad.
+- Notes are saved as lightweight vector strokes in localStorage by examAttemptId and questionId.
+- Typed scratch notes are included as a phone/keyboard fallback.
+- Notes persist when leaving and returning to a question.
+- Notes remain visible after submit in review mode.
+- Added Clear Notes After Review option.
