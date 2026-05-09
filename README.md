@@ -29,3 +29,33 @@ Mock Exam notes:
 - Randomizes questions and choices.
 - Saves exam history in localStorage.
 - Skips missing subject sources and shows a warning.
+
+
+v2 visual update:
+- Mock Exam now shows safe question-side visuals before submit.
+- Direct question images are displayed.
+- If a card has only a visual query, buttons are shown for image search / Wikimedia Commons.
+- Answer-side visual, explanation, key memory, and correct answer still stay hidden until submit.
+- Review pages show visual references after submit.
+
+
+v3 randomization/retake update:
+- Default Start Exam always generates a new random question set.
+- Each attempt stores selected question IDs in localStorage.
+- After submit: Start New Random Exam, Retake Same Exam, Review Wrong Answers.
+- Retake Same Exam reuses the exact saved question IDs from the last attempt.
+- Full ALE segments also save exact question IDs and support Retake Same Segment.
+- Exam 3 / Day 2 shows a Design Problem pending note.
+
+
+v4 PRC layout/confidence update:
+- Added PRC Split View mode for iPad/tablet/laptop/desktop.
+- Added Compact Mobile mode for phones.
+- Added layout toggle: Auto, PRC Split View, Compact Mobile.
+- Added sticky/collapsible answer sheet with A/B/C/D bubbles.
+- Added confidence marks independent from answer: Sure, Not Sure, Guess, No Idea, Clear Mark.
+- Added answer sheet filters and quick review buttons.
+- Added Next Matching / Previous Matching in review filter mode.
+- Submit confirmation now shows answered/unanswered/confidence summary/time remaining.
+- Results include performance breakdown by confidence mark.
+- Day 2 / ADSP shows Design Problem pending note.
