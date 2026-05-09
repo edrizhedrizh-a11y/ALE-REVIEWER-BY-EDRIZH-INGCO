@@ -43,7 +43,7 @@
     "Q125-Q126 ECC/Antique definitions"
   ],
   "rule": "Use official/source figures only. BP 344 items are mapped to official NCDA 2024 Revised IRR figure names. No generated diagrams.",
-  "mode": "bp344-official-source-figure-mapping-v3",
+  "mode": "building-laws-v4-expanded-additions",
   "official_sources": [
     {
       "label": "NCDA — 2024 Revised IRR of BP 344",
@@ -214,5 +214,16 @@
   "lot_figure_needs_user_upload": [
     "Q47",
     "Q48"
+  ],
+  "v4_added_cards": 70,
+  "v4_new_range": "Q127-Q196",
+  "v4_topics_added": [
+    "BP 344 figure/source-backed questions",
+    "Fire Code egress/occupancy/fire protection questions",
+    "NBCP permit-process/certificate questions",
+    "Zoning/CLUP/locational-clearance questions",
+    "BP 220 vs PD 957 comparison questions",
+    "UAP / RA 9266 professional-practice responsibility questions",
+    "Figure-based source-required questions"
   ]
 }

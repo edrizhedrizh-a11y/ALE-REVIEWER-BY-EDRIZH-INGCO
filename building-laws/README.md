@@ -18,3 +18,25 @@ This version keeps generated diagrams removed and maps BP 344 cards to official 
 
 ## Important
 The NCDA web source exposes figure names and official text, not reusable standalone image files. This package therefore does not embed fake images. To embed actual figure images, upload verified crops/pages from the official PDF or reviewer source.
+
+
+## V4 Additions
+
+Added 70 new cards appended after the original Building Laws set.
+
+New range: Q127 to Q196
+
+Topics added:
+- More BP 344 figure/source-backed questions
+- Fire Code egress / occupancy / fire protection
+- NBCP permit-process and certificate questions
+- Zoning / CLUP / locational-clearance sequence
+- BP 220 vs PD 957 comparison traps
+- RA 9266 / UAP professional practice responsibility
+- Figure-based questions requiring verified source images
+
+Visual rule remains strict:
+- No generated diagrams
+- No random images
+- BP 344 visuals are mapped to NCDA official figure/source names
+- Lot/RROW/setback/firewall figures are marked as source-image-needed until the verified figure crop is uploaded

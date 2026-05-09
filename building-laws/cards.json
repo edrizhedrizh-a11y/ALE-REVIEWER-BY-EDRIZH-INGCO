@@ -6306,5 +6306,3426 @@
     "explanation": "Basahin muna natin ang full question:\n\"It refers to a cultural property found locally which is one hundred (100) years in age, more or less; the production of which has ceased.\"\nChoices:\na. Cultural Heritage\nb. Antique\nc. Cultural Markers\nd. Historical shrines\nCorrect answer: b. Antique.\nUulitin ko: ang tamang sagot ay Antique.\nIto, direct definition question ito. At maganda ito kasi hindi ito hula-hula. Sa RA 10066 or National Cultural Heritage Act, the law defines \"Antique\" as a cultural property found locally which is one hundred years in age, more or less, and the production of which has ceased. Exact phrase iyan ng batas. (Lawphil)\nBakit ito ang tama?\nPansinin mo ang clue words:\n• cultural property found locally\n• 100 years in age, more or less\n• production has ceased\nKapag ganyan ang wording, hindi ito general \"heritage\" lang. Hindi rin marker o shrine.\nIyan ay very specific legal definition ng Antique. (Lawphil)\nBakit mali ang ibang choices?\na. Cultural Heritage — masyado itong broad.\nAng cultural heritage ay umbrella concept. Maraming klase ng cultural properties ang sakop niyan. Pero ang tanong humihingi ng specific term with a very exact legal definition. Kaya masyadong malawak si Cultural Heritage para maging tama. (Lawphil)\nc. Cultural Markers — mali ito kasi marker ito, not the object/property itself.\nAng cultural marker is usually a plaque or official marker placed to identify significance. Hindi iyan ang tawag sa 100-year-old locally found cultural property na hindi na ginagawa. (Lawphil)\nd. Historical shrines — mali rin kasi shrine is a specific historical site/place classification.\nHindi iyan object-definition question. Ang tanong ay tumutukoy sa isang class of cultural property, not a shrine. (Lawphil)\nElimination method\nIto ang iniisip mo dapat habang nagsasagot:\nStep 1: Hanapin kung broad ba o specific ang tanong.\nDito, sobrang specific ng description.\nStep 2: Tanggalin ang broad umbrella term.\nSo alisin mo agad si Cultural Heritage.\nStep 3: Tanggalin ang choices na site/marker type, not property-definition type.\nSo tanggal si Cultural Markers at Historical shrines.\nStep 4: Tingnan ang natira.\nAntique na lang ang eksaktong legal term na tumutugma sa lahat ng clue.\nIto ang iniisip mo dapat habang nagsasagot\nSabihin mo sa isip mo:\n\"Specific legal definition ito. Hindi ito category in general. Hindi ito place. Hindi ito marker. Object/property term ito.\"\nKapag ganoon ang mindset mo, mabilis mong makukuha ang Antique.\nCommon trap sa board exam\nAng trap dito ay pipiliin mo ang Cultural Heritage dahil parang mas sosyal o mas formal pakinggan.\nPero board exam logic is not about the nicest-sounding term.\nIt is about the exact statutory definition.\nPhilippine basis\nRA 10066, National Cultural Heritage Act, defines Antique as a cultural property found locally which is one hundred years in age, more or less, and the production of which has ceased. (Lawphil)\nAno ang dapat mong tandaan dito?\nKapag ang clue ay 100 years old, locally found cultural property, no longer in production, ang sagot mo agad ay Antique.\nTapos na tayo sa buong visible set. Congrats — natapos natin hanggang dulo.",
     "type": "multiple_choice",
     "acceptedAnswers": []
+  },
+  {
+    "uid": "BL-127",
+    "id": "BL-127",
+    "displayId": "Q127",
+    "category": "ALE Building Laws",
+    "question": "Under BP 344, what is the minimum clear width of an accessible ramp?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "900 mm"
+      },
+      {
+        "letter": "b",
+        "text": "1000 mm"
+      },
+      {
+        "letter": "c",
+        "text": "1200 mm"
+      },
+      {
+        "letter": "d",
+        "text": "1500 mm"
+      }
+    ],
+    "correctLetter": "c",
+    "answer": "C. 1200 mm",
+    "keyMemory": "Accessible ramp clear width = 1200 mm.",
+    "explanation": "Accessible ramps under BP 344 require a minimum clear width of 1200 mm. This is a core dimension to separate from door width and corridor width.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP344-ramps",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      }
+    ],
+    "sourceFigure": {
+      "title": "Accessible ramp source figure",
+      "figures": [
+        "Fig. A.1.1 — Plan of Ramp 3000 mm Wide or More"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use official ramp figure/source only.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-127",
+    "id": "BL-127",
+    "displayId": "Q127",
+    "category": "ALE Building Laws",
+    "question": "Under BP 344, the usual accessible ramp gradient should not be steeper than?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "1:8"
+      },
+      {
+        "letter": "b",
+        "text": "1:10"
+      },
+      {
+        "letter": "c",
+        "text": "1:12"
+      },
+      {
+        "letter": "d",
+        "text": "1:20"
+      }
+    ],
+    "correctLetter": "d",
+    "answer": "D. 1:20",
+    "keyMemory": "BP 344 ramp gradient = not steeper than 1:20.",
+    "explanation": "The 2024 BP 344 accessibility text gives the accessible ramp gradient as not steeper than 1:20, with special cases governed by the ramp-length table.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP344-ramps",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      }
+    ],
+    "sourceFigure": {
+      "title": "Accessible ramp slope table",
+      "figures": [
+        "Table A.1.1 — Accessible Ramps"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use official slope/landing table.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-127",
+    "id": "BL-127",
+    "displayId": "Q127",
+    "category": "ALE Building Laws",
+    "question": "For an accessible ramp longer than 10.50 m, what minimum intermediate landing length is required under BP 344?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "1200 mm"
+      },
+      {
+        "letter": "b",
+        "text": "1500 mm"
+      },
+      {
+        "letter": "c",
+        "text": "1800 mm"
+      },
+      {
+        "letter": "d",
+        "text": "2400 mm"
+      }
+    ],
+    "correctLetter": "c",
+    "answer": "C. 1800 mm",
+    "keyMemory": "Long ramp >10.50 m → intermediate landing 1800 mm.",
+    "explanation": "BP 344 requires intermediate landings with minimum length of 1800 mm for accessible ramps with total length longer than 10.50 m.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP344-ramps",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      }
+    ],
+    "sourceFigure": {
+      "title": "Accessible ramp landing source figure",
+      "figures": [
+        "Table A.1.1 — Accessible Ramps",
+        "Fig. A.1.1 — Plan of Ramp"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use official ramp/landing source.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-127",
+    "id": "BL-127",
+    "displayId": "Q127",
+    "category": "ALE Building Laws",
+    "question": "Under BP 344, handrails on accessible ramps and stairs are installed at what heights?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "600 mm and 800 mm"
+      },
+      {
+        "letter": "b",
+        "text": "700 mm and 900 mm"
+      },
+      {
+        "letter": "c",
+        "text": "750 mm and 1000 mm"
+      },
+      {
+        "letter": "d",
+        "text": "900 mm only"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. 700 mm and 900 mm",
+    "keyMemory": "BP 344 handrails = 700 mm + 900 mm.",
+    "explanation": "BP 344 uses paired handrail heights: 700 mm and 900 mm above ramps and stairs. Do not confuse this with 1100 mm guardrail height.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP344-handrail",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      }
+    ],
+    "sourceFigure": {
+      "title": "BP 344 handrail source figures",
+      "figures": [
+        "Fig. A.5.1 — Handrail Detail for Ramps",
+        "Fig. A.5.2 — Cross Section of Accessible Ramp",
+        "Fig. A.5.3 — Handrail Profiles"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use official handrail figures.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-127",
+    "id": "BL-127",
+    "displayId": "Q127",
+    "category": "ALE Building Laws",
+    "question": "Under BP 344, how long should the horizontal handrail extension be at the start and end of ramps and stairs?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "150 mm"
+      },
+      {
+        "letter": "b",
+        "text": "200 mm"
+      },
+      {
+        "letter": "c",
+        "text": "250 mm"
+      },
+      {
+        "letter": "d",
+        "text": "300 mm"
+      }
+    ],
+    "correctLetter": "d",
+    "answer": "D. 300 mm",
+    "keyMemory": "Handrail extension = 300 mm.",
+    "explanation": "The required handrail extension is 300 mm at the start and end of ramps and stairs. This is one of the most common BP 344 board-review details.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP344-handrail",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      }
+    ],
+    "sourceFigure": {
+      "title": "Handrail extension source figure",
+      "figures": [
+        "Fig. A.5.1 / A.5.2 / A.5.3 handrail details"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use official handrail figure/source.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-127",
+    "id": "BL-127",
+    "displayId": "Q127",
+    "category": "ALE Building Laws",
+    "question": "Under BP 344, what is the minimum clear width of corridors?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "900 mm"
+      },
+      {
+        "letter": "b",
+        "text": "1200 mm"
+      },
+      {
+        "letter": "c",
+        "text": "1500 mm"
+      },
+      {
+        "letter": "d",
+        "text": "1800 mm"
+      }
+    ],
+    "correctLetter": "c",
+    "answer": "C. 1500 mm",
+    "keyMemory": "BP 344 corridor clear width = 1500 mm.",
+    "explanation": "BP 344 requires corridors to have minimum clear width of 1500 mm, allowing a wheelchair user and a person without disabilities to pass.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP344-corridors",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      }
+    ],
+    "sourceFigure": {
+      "title": "Corridor and turnabout source figure",
+      "figures": [
+        "Fig. C.5.1 — Turnabout Spaces at Corridors"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use official corridor/turnabout figure.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-127",
+    "id": "BL-127",
+    "displayId": "Q127",
+    "category": "ALE Building Laws",
+    "question": "Under BP 344, what minimum size is required for wheelchair turnabout spaces in corridors?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "1200 mm x 1200 mm"
+      },
+      {
+        "letter": "b",
+        "text": "1500 mm x 1500 mm"
+      },
+      {
+        "letter": "c",
+        "text": "1800 mm x 1800 mm"
+      },
+      {
+        "letter": "d",
+        "text": "2000 mm x 2000 mm"
+      }
+    ],
+    "correctLetter": "c",
+    "answer": "C. 1800 mm x 1800 mm",
+    "keyMemory": "Turnabout space = 1800 x 1800 mm.",
+    "explanation": "The current BP 344 corridor rule uses 1800 mm x 1800 mm for wheelchair turnabout spaces.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP344-corridors",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      }
+    ],
+    "sourceFigure": {
+      "title": "Turnabout source figure",
+      "figures": [
+        "Fig. C.5.1 — Turnabout Spaces at Corridors"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use official turnabout figure.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-127",
+    "id": "BL-127",
+    "displayId": "Q127",
+    "category": "ALE Building Laws",
+    "question": "Under BP 344, turnabout spaces in corridors should be spaced at a maximum of how many millimeters?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "6000 mm"
+      },
+      {
+        "letter": "b",
+        "text": "9000 mm"
+      },
+      {
+        "letter": "c",
+        "text": "12000 mm"
+      },
+      {
+        "letter": "d",
+        "text": "15000 mm"
+      }
+    ],
+    "correctLetter": "c",
+    "answer": "C. 12000 mm",
+    "keyMemory": "Turnabout spacing max = 12000 mm.",
+    "explanation": "BP 344 states that turnabout spaces shall be spaced at a maximum of 12000 mm.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP344-corridors",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      }
+    ],
+    "sourceFigure": {
+      "title": "Corridor turnabout source figure",
+      "figures": [
+        "Fig. C.5.1 — Turnabout Spaces at Corridors"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use official corridor figure.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-127",
+    "id": "BL-127",
+    "displayId": "Q127",
+    "category": "ALE Building Laws",
+    "question": "Under BP 344, all doors should have a minimum clear width of?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "800 mm"
+      },
+      {
+        "letter": "b",
+        "text": "850 mm"
+      },
+      {
+        "letter": "c",
+        "text": "900 mm"
+      },
+      {
+        "letter": "d",
+        "text": "1000 mm"
+      }
+    ],
+    "correctLetter": "c",
+    "answer": "C. 900 mm",
+    "keyMemory": "BP 344 door clear width = 900 mm.",
+    "explanation": "Current BP 344 sets the minimum door clear width at 900 mm. This updates many older reviewer memories of 800 mm.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP344-doors",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      }
+    ],
+    "sourceFigure": {
+      "title": "BP 344 door source figures",
+      "figures": [
+        "Fig. C.1.1 — Plan of Sliding Door",
+        "Fig. C.1.2 — Plan of Swing Door",
+        "Fig. C.2.1 — Door Accessories"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use official door/accessories figures.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-127",
+    "id": "BL-127",
+    "displayId": "Q127",
+    "category": "ALE Building Laws",
+    "question": "Where should manual switches be located relative to the latch side of the door under BP 344?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "100 mm on center"
+      },
+      {
+        "letter": "b",
+        "text": "150 mm on center"
+      },
+      {
+        "letter": "c",
+        "text": "200 mm on center"
+      },
+      {
+        "letter": "d",
+        "text": "300 mm on center"
+      }
+    ],
+    "correctLetter": "c",
+    "answer": "C. 200 mm on center",
+    "keyMemory": "Switches: 900–1200 mm high, 200 mm from latch side.",
+    "explanation": "Manual switches must be located 200 mm on center from the latch side of the door, aside from the 900–1200 mm height range.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP344-switches",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      }
+    ],
+    "sourceFigure": {
+      "title": "Switch location source figure",
+      "figures": [
+        "Fig. C.4.1 — Location of Switches"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use official switch-location figure.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-127",
+    "id": "BL-127",
+    "displayId": "Q127",
+    "category": "ALE Building Laws",
+    "question": "What minimum area is required for accessible toilet cubicles under the current BP 344 revised IRR?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "1500 mm x 1500 mm"
+      },
+      {
+        "letter": "b",
+        "text": "1700 mm x 1800 mm"
+      },
+      {
+        "letter": "c",
+        "text": "1800 mm x 1800 mm"
+      },
+      {
+        "letter": "d",
+        "text": "2000 mm x 2000 mm"
+      }
+    ],
+    "correctLetter": "c",
+    "answer": "C. 1800 mm x 1800 mm",
+    "keyMemory": "Current BP 344 accessible toilet = 1800 x 1800 mm.",
+    "explanation": "Current BP 344 requires accessible toilet cubicles to have a minimum area of 1800 mm x 1800 mm. This avoids the older 1700 x 1800 trap.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP344-toilets",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      }
+    ],
+    "sourceFigure": {
+      "title": "Accessible toilet source section",
+      "figures": [
+        "Section C.6 — Toilets and Baths"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use official accessible toilet figure/section.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-127",
+    "id": "BL-127",
+    "displayId": "Q127",
+    "category": "ALE Building Laws",
+    "question": "Under BP 344, grab bars at the water closet are installed how high relative to the toilet seat?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "150 mm above the seat"
+      },
+      {
+        "letter": "b",
+        "text": "200 mm above the seat"
+      },
+      {
+        "letter": "c",
+        "text": "300 mm above the seat"
+      },
+      {
+        "letter": "d",
+        "text": "450 mm above the floor"
+      }
+    ],
+    "correctLetter": "c",
+    "answer": "C. 300 mm above the seat",
+    "keyMemory": "Grab bar = 300 mm above top of toilet seat.",
+    "explanation": "The current rule describes grab bar height relative to the toilet seat: 300 mm from the top of the toilet seat to the top of the grab bars.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP344-toilets",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      }
+    ],
+    "sourceFigure": {
+      "title": "Accessible toilet grab-bar source",
+      "figures": [
+        "Section C.6 — Toilets and Baths",
+        "L-type and flip-up grab bar provisions"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use official toilet/grab-bar provisions.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-127",
+    "id": "BL-127",
+    "displayId": "Q127",
+    "category": "ALE Building Laws",
+    "question": "Under BP 344, the centerline of the water closet should be installed how far from the finished face of the sidewall?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "350 mm"
+      },
+      {
+        "letter": "b",
+        "text": "400 mm"
+      },
+      {
+        "letter": "c",
+        "text": "450 mm"
+      },
+      {
+        "letter": "d",
+        "text": "500 mm"
+      }
+    ],
+    "correctLetter": "c",
+    "answer": "C. 450 mm",
+    "keyMemory": "WC centerline = 450 mm from sidewall.",
+    "explanation": "The current BP 344 toilet provision states that water closets shall be installed 450 mm from the finished face of the sidewall to the centerline of the water closet.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP344-toilets",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      }
+    ],
+    "sourceFigure": {
+      "title": "Water closet source reference",
+      "figures": [
+        "Section C.6 — Toilets and Baths"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use official toilet section.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-127",
+    "id": "BL-127",
+    "displayId": "Q127",
+    "category": "ALE Building Laws",
+    "question": "What minimum turning space must be provided outside accessible water closet cubicles under BP 344?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "1200 mm x 1200 mm"
+      },
+      {
+        "letter": "b",
+        "text": "1500 mm x 1500 mm"
+      },
+      {
+        "letter": "c",
+        "text": "1800 mm x 1800 mm"
+      },
+      {
+        "letter": "d",
+        "text": "2000 mm x 1800 mm"
+      }
+    ],
+    "correctLetter": "c",
+    "answer": "C. 1800 mm x 1800 mm",
+    "keyMemory": "Outside WC cubicle turning space = 1800 x 1800 mm.",
+    "explanation": "BP 344 requires a turning space of 1800 x 1800 mm outside water closet cubicles for wheelchair users.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP344-toilets",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      }
+    ],
+    "sourceFigure": {
+      "title": "Accessible toilet turning space source",
+      "figures": [
+        "Section C.6 — Toilets and Baths"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use official toilet section.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-127",
+    "id": "BL-127",
+    "displayId": "Q127",
+    "category": "ALE Building Laws",
+    "question": "Under BP 344, accessible toilet emergency call buttons should be located at what height range?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "200 mm to 400 mm"
+      },
+      {
+        "letter": "b",
+        "text": "400 mm to 600 mm"
+      },
+      {
+        "letter": "c",
+        "text": "700 mm to 900 mm"
+      },
+      {
+        "letter": "d",
+        "text": "900 mm to 1200 mm"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. 400 mm to 600 mm",
+    "keyMemory": "Emergency call button = 400–600 mm AFF.",
+    "explanation": "The accessible toilet emergency call button should be located at a height between 400 mm and 600 mm from the finished floor.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP344-toilets",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      }
+    ],
+    "sourceFigure": {
+      "title": "Accessible toilet alarm/call source",
+      "figures": [
+        "Section C.6 — Toilets and Baths — emergency call button"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use official toilet/alarm section.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-127",
+    "id": "BL-127",
+    "displayId": "Q127",
+    "category": "ALE Building Laws",
+    "question": "Under BP 344, what minimum clear dimension is required for accessible elevator cars?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "1200 mm depth x 1200 mm width"
+      },
+      {
+        "letter": "b",
+        "text": "1400 mm depth x 1200 mm width"
+      },
+      {
+        "letter": "c",
+        "text": "1400 mm depth x 1400 mm width"
+      },
+      {
+        "letter": "d",
+        "text": "1800 mm depth x 1800 mm width"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. 1400 mm depth x 1200 mm width",
+    "keyMemory": "Elevator car = 1400 D x 1200 W; door opening ≥900 mm.",
+    "explanation": "Accessible elevator cars require 1400 mm minimum clear depth and 1200 mm minimum clear width, plus a door opening not less than 900 mm.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP344-elevators",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      }
+    ],
+    "sourceFigure": {
+      "title": "Accessible elevator source figure",
+      "figures": [
+        "Fig. C.8.2 — Plan of Accessible Elevator"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use official elevator plan figure.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-127",
+    "id": "BL-127",
+    "displayId": "Q127",
+    "category": "ALE Building Laws",
+    "question": "What minimum diameter is required for elevator call buttons under BP 344?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "10 mm"
+      },
+      {
+        "letter": "b",
+        "text": "15 mm"
+      },
+      {
+        "letter": "c",
+        "text": "20 mm"
+      },
+      {
+        "letter": "d",
+        "text": "25 mm"
+      }
+    ],
+    "correctLetter": "c",
+    "answer": "C. 20 mm",
+    "keyMemory": "Elevator call button diameter = min 20 mm.",
+    "explanation": "BP 344 states that elevator control panel button sizes shall have a minimum diameter of 20 mm.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP344-elevators",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      }
+    ],
+    "sourceFigure": {
+      "title": "Elevator call button source figure",
+      "figures": [
+        "Fig. C.8.5 — Size of Elevator Call Buttons"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use official elevator controls figure.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-127",
+    "id": "BL-127",
+    "displayId": "Q127",
+    "category": "ALE Building Laws",
+    "question": "Under BP 344, warning tactile blocks at stairs should have what depth?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "150 mm"
+      },
+      {
+        "letter": "b",
+        "text": "300 mm"
+      },
+      {
+        "letter": "c",
+        "text": "450 mm"
+      },
+      {
+        "letter": "d",
+        "text": "600 mm"
+      }
+    ],
+    "correctLetter": "d",
+    "answer": "D. 600 mm",
+    "keyMemory": "Tactile warning block depth = 600 mm; setback = 300 mm.",
+    "explanation": "Warning tactile blocks at stairs have a depth of 600 mm and are installed 300 mm before hazardous areas or intended stops.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP344-stairs-tactile",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      }
+    ],
+    "sourceFigure": {
+      "title": "Stair tactile warning source figure",
+      "figures": [
+        "Fig. A.10.1 — Location of Warning Tactile Blocks and Non-Skid Nosing Materials at Stairs"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use official tactile/stair figure.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-127",
+    "id": "BL-127",
+    "displayId": "Q127",
+    "category": "ALE Building Laws",
+    "question": "Under BP 344, accessible parking slots should be located where?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "At the farthest available corner"
+      },
+      {
+        "letter": "b",
+        "text": "Nearest to accessible main entrances"
+      },
+      {
+        "letter": "c",
+        "text": "Beside loading docks only"
+      },
+      {
+        "letter": "d",
+        "text": "Only near fire exits"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. Nearest to accessible main entrances",
+    "keyMemory": "Accessible parking location = nearest accessible main entrance.",
+    "explanation": "Accessible parking slots should be located nearest to accessible main entrances. Do not rely on an old fixed-distance-only rule when the current source uses the nearest-accessible-entrance principle.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP344-parking",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      }
+    ],
+    "sourceFigure": {
+      "title": "Accessible parking source figure",
+      "figures": [
+        "Table A.6.1 — Accessible Parking Slot Requirement",
+        "Fig. A.6.1 — Plan of Accessible Parking Slot"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use official accessible parking figure/table.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-127",
+    "id": "BL-127",
+    "displayId": "Q127",
+    "category": "ALE Building Laws",
+    "question": "Under BP 344, what is the minimum size of an accessible parking slot?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "2500 mm x 5000 mm"
+      },
+      {
+        "letter": "b",
+        "text": "3000 mm x 5000 mm"
+      },
+      {
+        "letter": "c",
+        "text": "3500 mm x 5000 mm"
+      },
+      {
+        "letter": "d",
+        "text": "4000 mm x 5000 mm"
+      }
+    ],
+    "correctLetter": "d",
+    "answer": "D. 4000 mm x 5000 mm",
+    "keyMemory": "Accessible parking = 4000 x 5000 mm.",
+    "explanation": "Accessible parking slots must have minimum width of 4000 mm and length of 5000 mm. The added width allows wheelchair transfer and passage.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP344-parking",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      }
+    ],
+    "sourceFigure": {
+      "title": "Accessible parking slot source figure",
+      "figures": [
+        "Fig. A.6.1 — Plan of Accessible Parking Slot"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use official parking-slot figure.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-147",
+    "id": "BL-147",
+    "displayId": "Q147",
+    "category": "ALE Building Laws",
+    "question": "Under RA 9514, which agency administers and enforces the Fire Code?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "DPWH"
+      },
+      {
+        "letter": "b",
+        "text": "BFP"
+      },
+      {
+        "letter": "c",
+        "text": "DHSUD"
+      },
+      {
+        "letter": "d",
+        "text": "PRC"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. BFP",
+    "keyMemory": "Fire Code enforcement = BFP.",
+    "explanation": "The Revised Fire Code is administered and enforced by the Bureau of Fire Protection under the law.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "FireCode",
+    "visualSourceRefs": [
+      {
+        "label": "LawPhil — RA 9514 Fire Code",
+        "url": "https://lawphil.net/statutes/repacts/ra2008/ra_9514_2008.html"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-147",
+    "id": "BL-147",
+    "displayId": "Q147",
+    "category": "ALE Building Laws",
+    "question": "Under RA 9514, what is a Fire Alarm?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "A structural wall against fire"
+      },
+      {
+        "letter": "b",
+        "text": "A signal warning occupants of fire danger"
+      },
+      {
+        "letter": "c",
+        "text": "A water supply pipe for fire hoses"
+      },
+      {
+        "letter": "d",
+        "text": "A parking lane for fire trucks"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. A signal warning occupants of fire danger",
+    "keyMemory": "Fire alarm = visual/audible warning signal.",
+    "explanation": "RA 9514 defines a fire alarm as a visual or audible signal warning occupants and firefighting elements of fire danger so they can act.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "FireCode",
+    "visualSourceRefs": [
+      {
+        "label": "LawPhil — RA 9514 Fire Code",
+        "url": "https://lawphil.net/statutes/repacts/ra2008/ra_9514_2008.html"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-147",
+    "id": "BL-147",
+    "displayId": "Q147",
+    "category": "ALE Building Laws",
+    "question": "Under RA 9514, what is a Fire Door?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Any door leading outside"
+      },
+      {
+        "letter": "b",
+        "text": "A fire resistive door for openings in fire separation walls or partitions"
+      },
+      {
+        "letter": "c",
+        "text": "A roll-up door in a garage"
+      },
+      {
+        "letter": "d",
+        "text": "A door with panic hardware only"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. A fire resistive door for openings in fire separation walls or partitions",
+    "keyMemory": "Fire door = fire-resistive opening protection.",
+    "explanation": "A Fire Door is defined as a fire-resistive door prescribed for openings in fire separation walls or partitions.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "FireCode",
+    "visualSourceRefs": [
+      {
+        "label": "LawPhil — RA 9514 Fire Code",
+        "url": "https://lawphil.net/statutes/repacts/ra2008/ra_9514_2008.html"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-147",
+    "id": "BL-147",
+    "displayId": "Q147",
+    "category": "ALE Building Laws",
+    "question": "Under RA 9514, what is a Fire Lane?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "A passage for pedestrians only"
+      },
+      {
+        "letter": "b",
+        "text": "A portion of a roadway/publicway kept open for firefighting units"
+      },
+      {
+        "letter": "c",
+        "text": "A driveway used only by residents"
+      },
+      {
+        "letter": "d",
+        "text": "An interior corridor"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. A portion of a roadway/publicway kept open for firefighting units",
+    "keyMemory": "Fire lane = kept open for firefighting access.",
+    "explanation": "A fire lane is a roadway or public way kept open and unobstructed for firefighting units.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "FireCode",
+    "visualSourceRefs": [
+      {
+        "label": "LawPhil — RA 9514 Fire Code",
+        "url": "https://lawphil.net/statutes/repacts/ra2008/ra_9514_2008.html"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-147",
+    "id": "BL-147",
+    "displayId": "Q147",
+    "category": "ALE Building Laws",
+    "question": "Under RA 9514, what is a Standpipe System?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "A warning light system"
+      },
+      {
+        "letter": "b",
+        "text": "A vertical pipe system where fire hoses can attach on each floor"
+      },
+      {
+        "letter": "c",
+        "text": "A smoke extraction fan"
+      },
+      {
+        "letter": "d",
+        "text": "A portable extinguisher cabinet"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. A vertical pipe system where fire hoses can attach on each floor",
+    "keyMemory": "Standpipe = vertical fire-hose connection system.",
+    "explanation": "RA 9514 defines a standpipe system as vertical pipes in a building where fire hoses can be attached on each floor and supplied with water.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "FireCode",
+    "visualSourceRefs": [
+      {
+        "label": "LawPhil — RA 9514 Fire Code",
+        "url": "https://lawphil.net/statutes/repacts/ra2008/ra_9514_2008.html"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-147",
+    "id": "BL-147",
+    "displayId": "Q147",
+    "category": "ALE Building Laws",
+    "question": "Under RA 9514, what is a Sprinkler System?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "A handheld fire pump"
+      },
+      {
+        "letter": "b",
+        "text": "An integrated pipe network that automatically discharges water when activated by fire heat/products"
+      },
+      {
+        "letter": "c",
+        "text": "A dry chemical extinguisher"
+      },
+      {
+        "letter": "d",
+        "text": "A smoke detector only"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. An integrated pipe network that automatically discharges water when activated by fire heat/products",
+    "keyMemory": "Sprinkler = automatic water discharge pipe network.",
+    "explanation": "A sprinkler system is an integrated hydraulically designed piping network with outlets that automatically discharge water when activated by fire heat or combustion products.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "FireCode",
+    "visualSourceRefs": [
+      {
+        "label": "LawPhil — RA 9514 Fire Code",
+        "url": "https://lawphil.net/statutes/repacts/ra2008/ra_9514_2008.html"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-147",
+    "id": "BL-147",
+    "displayId": "Q147",
+    "category": "ALE Building Laws",
+    "question": "What does RA 9514 mean by Occupancy?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "The owner of the building"
+      },
+      {
+        "letter": "b",
+        "text": "The purpose for which a building or part is used or intended to be used"
+      },
+      {
+        "letter": "c",
+        "text": "The number of parking slots"
+      },
+      {
+        "letter": "d",
+        "text": "The yearly inspection schedule"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. The purpose for which a building or part is used or intended to be used",
+    "keyMemory": "Occupancy = use/purpose of building.",
+    "explanation": "The Fire Code defines occupancy by the purpose for which a building or portion is used or intended to be used.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "FireCode",
+    "visualSourceRefs": [
+      {
+        "label": "LawPhil — RA 9514 Fire Code",
+        "url": "https://lawphil.net/statutes/repacts/ra2008/ra_9514_2008.html"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-147",
+    "id": "BL-147",
+    "displayId": "Q147",
+    "category": "ALE Building Laws",
+    "question": "What is the Fire Code definition of a Public Assembly Building?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Any building with 10 or more people"
+      },
+      {
+        "letter": "b",
+        "text": "Any building where 50 or more people congregate, gather, or assemble"
+      },
+      {
+        "letter": "c",
+        "text": "Any building with sprinklers"
+      },
+      {
+        "letter": "d",
+        "text": "Any government building"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. Any building where 50 or more people congregate, gather, or assemble",
+    "keyMemory": "Public assembly threshold = 50 people.",
+    "explanation": "RA 9514 defines a Public Assembly Building as any building or structure where 50 or more people congregate, gather, or assemble for any purpose.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "FireCode",
+    "visualSourceRefs": [
+      {
+        "label": "LawPhil — RA 9514 Fire Code",
+        "url": "https://lawphil.net/statutes/repacts/ra2008/ra_9514_2008.html"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-147",
+    "id": "BL-147",
+    "displayId": "Q147",
+    "category": "ALE Building Laws",
+    "question": "Which document is required before an occupancy permit, business permit, or permit to operate may be issued under RA 9514?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "ECC"
+      },
+      {
+        "letter": "b",
+        "text": "FSIC"
+      },
+      {
+        "letter": "c",
+        "text": "Zoning Clearance"
+      },
+      {
+        "letter": "d",
+        "text": "PTR"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. FSIC",
+    "keyMemory": "Before occupancy/business permit: FSIC.",
+    "explanation": "The Fire Code states that no occupancy permit, business permit, or permit to operate shall be issued without securing a Fire Safety Inspection Certificate from BFP.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "FireCode",
+    "visualSourceRefs": [
+      {
+        "label": "LawPhil — RA 9514 Fire Code",
+        "url": "https://lawphil.net/statutes/repacts/ra2008/ra_9514_2008.html"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-147",
+    "id": "BL-147",
+    "displayId": "Q147",
+    "category": "ALE Building Laws",
+    "question": "Under RA 9514, what is Flash Point?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "The maximum temperature of a sprinkler head"
+      },
+      {
+        "letter": "b",
+        "text": "The minimum temperature at which vapor forms an ignitable mixture with air"
+      },
+      {
+        "letter": "c",
+        "text": "The rating of a fire door"
+      },
+      {
+        "letter": "d",
+        "text": "The brightness of emergency lighting"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. The minimum temperature at which vapor forms an ignitable mixture with air",
+    "keyMemory": "Flash point = minimum vapor ignition-mixture temperature.",
+    "explanation": "Flash Point is the minimum temperature at which a material gives off vapor in sufficient concentration to form an ignitable mixture with air.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "FireCode",
+    "visualSourceRefs": [
+      {
+        "label": "LawPhil — RA 9514 Fire Code",
+        "url": "https://lawphil.net/statutes/repacts/ra2008/ra_9514_2008.html"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-147",
+    "id": "BL-147",
+    "displayId": "Q147",
+    "category": "ALE Building Laws",
+    "question": "What is a Horizontal Exit under RA 9514?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "A stair going down to the street"
+      },
+      {
+        "letter": "b",
+        "text": "A passageway from one building to another or through/around a wall at approximately the same floor level"
+      },
+      {
+        "letter": "c",
+        "text": "A ladder on the exterior wall"
+      },
+      {
+        "letter": "d",
+        "text": "A window used for rescue"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. A passageway from one building to another or through/around a wall at approximately the same floor level",
+    "keyMemory": "Horizontal exit = same-level protected passage.",
+    "explanation": "The Fire Code defines a horizontal exit as a passageway from one building to another or through/around a wall in approximately the same floor level.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "FireCode",
+    "visualSourceRefs": [
+      {
+        "label": "LawPhil — RA 9514 Fire Code",
+        "url": "https://lawphil.net/statutes/repacts/ra2008/ra_9514_2008.html"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-147",
+    "id": "BL-147",
+    "displayId": "Q147",
+    "category": "ALE Building Laws",
+    "question": "Under RA 9514, what is a Fire Trap?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "A fire extinguisher box"
+      },
+      {
+        "letter": "b",
+        "text": "A building unsafe in case of fire because it burns easily or lacks adequate exits/fire escapes"
+      },
+      {
+        "letter": "c",
+        "text": "A type of fire alarm"
+      },
+      {
+        "letter": "d",
+        "text": "A smoke damper"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. A building unsafe in case of fire because it burns easily or lacks adequate exits/fire escapes",
+    "keyMemory": "Fire trap = unsafe due to combustibility or inadequate exits.",
+    "explanation": "RA 9514 defines a fire trap as a building unsafe in case of fire because it will burn easily or because it lacks adequate exits or fire escapes.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "FireCode",
+    "visualSourceRefs": [
+      {
+        "label": "LawPhil — RA 9514 Fire Code",
+        "url": "https://lawphil.net/statutes/repacts/ra2008/ra_9514_2008.html"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-159",
+    "id": "BL-159",
+    "displayId": "Q159",
+    "category": "ALE Building Laws",
+    "question": "Under PD 1096/NBCP practice, what permit authorizes construction, alteration, repair, conversion, use, occupancy, movement, demolition, or addition of a building or structure?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Ancillary Permit"
+      },
+      {
+        "letter": "b",
+        "text": "Building Permit"
+      },
+      {
+        "letter": "c",
+        "text": "Zoning Clearance"
+      },
+      {
+        "letter": "d",
+        "text": "Certificate of Occupancy"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. Building Permit",
+    "keyMemory": "Main construction authorization = Building Permit.",
+    "explanation": "A Building Permit is the primary authorization to undertake building work. Ancillary and accessory permits are supplementary and tied to the main building permit.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "NBCP-permits",
+    "visualSourceRefs": [
+      {
+        "label": "DPWH — PD 1096 / NBCP references",
+        "url": "https://www.dpwh.gov.ph/dpwh/references/laws_codes_orders/PD1096"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-159",
+    "id": "BL-159",
+    "displayId": "Q159",
+    "category": "ALE Building Laws",
+    "question": "Which is supplementary to the Building Permit and covers technical disciplines like architectural, civil/structural, electrical, mechanical, plumbing, sanitary, and electronics work?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Ancillary Permit"
+      },
+      {
+        "letter": "b",
+        "text": "Fire Safety Inspection Certificate"
+      },
+      {
+        "letter": "c",
+        "text": "ECC"
+      },
+      {
+        "letter": "d",
+        "text": "PTR"
+      }
+    ],
+    "correctLetter": "a",
+    "answer": "A. Ancillary Permit",
+    "keyMemory": "Ancillary permits = technical discipline permits supplementary to building permit.",
+    "explanation": "Ancillary permits are supplementary permits attached to the Building Permit and signed/sealed by the corresponding professionals.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "NBCP-permits",
+    "visualSourceRefs": [
+      {
+        "label": "DPWH — PD 1096 / NBCP references",
+        "url": "https://www.dpwh.gov.ph/dpwh/references/laws_codes_orders/PD1096"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-159",
+    "id": "BL-159",
+    "displayId": "Q159",
+    "category": "ALE Building Laws",
+    "question": "Which permit is most directly required when an existing building or structure is to be demolished?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Demolition Permit"
+      },
+      {
+        "letter": "b",
+        "text": "Occupancy Permit"
+      },
+      {
+        "letter": "c",
+        "text": "Locational Clearance"
+      },
+      {
+        "letter": "d",
+        "text": "Fire Safety Evaluation Clearance"
+      }
+    ],
+    "correctLetter": "a",
+    "answer": "A. Demolition Permit",
+    "keyMemory": "Demolition work → Demolition Permit.",
+    "explanation": "Demolition is a separate regulated building operation and requires the proper permit before work proceeds.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "NBCP-permits",
+    "visualSourceRefs": [
+      {
+        "label": "DPWH — PD 1096 / NBCP references",
+        "url": "https://www.dpwh.gov.ph/dpwh/references/laws_codes_orders/PD1096"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-159",
+    "id": "BL-159",
+    "displayId": "Q159",
+    "category": "ALE Building Laws",
+    "question": "After construction is completed, which certificate authorizes the building to be used or occupied?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Building Permit"
+      },
+      {
+        "letter": "b",
+        "text": "Certificate of Occupancy"
+      },
+      {
+        "letter": "c",
+        "text": "Excavation Permit"
+      },
+      {
+        "letter": "d",
+        "text": "Lot Owner's Consent"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. Certificate of Occupancy",
+    "keyMemory": "Use after completion = Certificate of Occupancy.",
+    "explanation": "After completion, the issue is no longer permission to build but permission to use/occupy; that is the role of the Certificate of Occupancy.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "NBCP-permits",
+    "visualSourceRefs": [
+      {
+        "label": "DPWH — PD 1096 / NBCP references",
+        "url": "https://www.dpwh.gov.ph/dpwh/references/laws_codes_orders/PD1096"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-159",
+    "id": "BL-159",
+    "displayId": "Q159",
+    "category": "ALE Building Laws",
+    "question": "Who is the official charged with issuing building permits and enforcing the NBCP in the local jurisdiction?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Building Official"
+      },
+      {
+        "letter": "b",
+        "text": "Barangay Captain"
+      },
+      {
+        "letter": "c",
+        "text": "Subdivision Developer"
+      },
+      {
+        "letter": "d",
+        "text": "PRC Board of Architecture"
+      }
+    ],
+    "correctLetter": "a",
+    "answer": "A. Building Official",
+    "keyMemory": "NBCP local code authority = Building Official.",
+    "explanation": "The Building Official is the authority in charge of building permit administration and enforcement of building-code requirements in the locality.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "NBCP-administration",
+    "visualSourceRefs": [
+      {
+        "label": "DPWH — PD 1096 / NBCP references",
+        "url": "https://www.dpwh.gov.ph/dpwh/references/laws_codes_orders/PD1096"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-159",
+    "id": "BL-159",
+    "displayId": "Q159",
+    "category": "ALE Building Laws",
+    "question": "Which term refers to a change in the use or occupancy of a building?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Repair"
+      },
+      {
+        "letter": "b",
+        "text": "Renovation"
+      },
+      {
+        "letter": "c",
+        "text": "Conversion"
+      },
+      {
+        "letter": "d",
+        "text": "Addition"
+      }
+    ],
+    "correctLetter": "c",
+    "answer": "C. Conversion",
+    "keyMemory": "Change of use/occupancy = Conversion.",
+    "explanation": "Conversion is the change in use or occupancy. Do not confuse it with repair, renovation, or addition.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "NBCP-definitions",
+    "visualSourceRefs": [
+      {
+        "label": "DPWH — PD 1096 / NBCP references",
+        "url": "https://www.dpwh.gov.ph/dpwh/references/laws_codes_orders/PD1096"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-159",
+    "id": "BL-159",
+    "displayId": "Q159",
+    "category": "ALE Building Laws",
+    "question": "Which term best describes work intended to restore a damaged building component to sound condition?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Repair"
+      },
+      {
+        "letter": "b",
+        "text": "Addition"
+      },
+      {
+        "letter": "c",
+        "text": "Conversion"
+      },
+      {
+        "letter": "d",
+        "text": "Demolition"
+      }
+    ],
+    "correctLetter": "a",
+    "answer": "A. Repair",
+    "keyMemory": "Restore damage = Repair.",
+    "explanation": "Repair is restoration of a damaged or deteriorated component; renovation improves value/utility/aesthetics; addition increases area or volume.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "NBCP-definitions",
+    "visualSourceRefs": [
+      {
+        "label": "DPWH — PD 1096 / NBCP references",
+        "url": "https://www.dpwh.gov.ph/dpwh/references/laws_codes_orders/PD1096"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-159",
+    "id": "BL-159",
+    "displayId": "Q159",
+    "category": "ALE Building Laws",
+    "question": "Which term best describes increasing the floor area, height, or volume of an existing building?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Alteration"
+      },
+      {
+        "letter": "b",
+        "text": "Addition"
+      },
+      {
+        "letter": "c",
+        "text": "Repair"
+      },
+      {
+        "letter": "d",
+        "text": "Conversion"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. Addition",
+    "keyMemory": "Increase building size = Addition.",
+    "explanation": "Addition means adding area, height, volume, or extension to an existing building. It is not merely changing use or repairing damage.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "NBCP-definitions",
+    "visualSourceRefs": [
+      {
+        "label": "DPWH — PD 1096 / NBCP references",
+        "url": "https://www.dpwh.gov.ph/dpwh/references/laws_codes_orders/PD1096"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-159",
+    "id": "BL-159",
+    "displayId": "Q159",
+    "category": "ALE Building Laws",
+    "question": "Which NBCP classification topic groups buildings according to use or occupancy?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Rule III Permits"
+      },
+      {
+        "letter": "b",
+        "text": "Rule VII Classification and General Requirements by Use or Occupancy"
+      },
+      {
+        "letter": "c",
+        "text": "Rule IX Sanitation"
+      },
+      {
+        "letter": "d",
+        "text": "Rule XX Signs"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. Rule VII Classification and General Requirements by Use or Occupancy",
+    "keyMemory": "NBCP use classification = Rule VII.",
+    "explanation": "Rule VII is where NBCP use/occupancy classification logic belongs. This is a good comparison topic with Fire Code occupancy.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "NBCP-classification",
+    "visualSourceRefs": [
+      {
+        "label": "DPWH — PD 1096 / NBCP references",
+        "url": "https://www.dpwh.gov.ph/dpwh/references/laws_codes_orders/PD1096"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-159",
+    "id": "BL-159",
+    "displayId": "Q159",
+    "category": "ALE Building Laws",
+    "question": "Which item is usually checked before building permit processing to confirm whether a project conforms to land-use or zoning regulations?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Certificate of Occupancy"
+      },
+      {
+        "letter": "b",
+        "text": "Locational/Zoning Clearance"
+      },
+      {
+        "letter": "c",
+        "text": "Service Agreement"
+      },
+      {
+        "letter": "d",
+        "text": "As-built plans only"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. Locational/Zoning Clearance",
+    "keyMemory": "Before building permit: zoning/locational clearance.",
+    "explanation": "Before detailed permit evaluation, the project location and intended use should be checked against zoning and land-use controls through locational/zoning clearance.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "Zoning-CLUP",
+    "visualSourceRefs": [
+      {
+        "label": "DHSUD / local zoning practice reference",
+        "url": "https://dhsud.gov.ph/"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-169",
+    "id": "BL-169",
+    "displayId": "Q169",
+    "category": "ALE Building Laws",
+    "question": "What planning document guides long-term land use and zoning decisions of a city or municipality?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "CLUP"
+      },
+      {
+        "letter": "b",
+        "text": "FSIC"
+      },
+      {
+        "letter": "c",
+        "text": "ECC"
+      },
+      {
+        "letter": "d",
+        "text": "PTR"
+      }
+    ],
+    "correctLetter": "a",
+    "answer": "A. CLUP",
+    "keyMemory": "CLUP = land-use planning backbone.",
+    "explanation": "The Comprehensive Land Use Plan guides the physical and land-use development direction of the LGU and supports zoning decisions.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "Zoning-CLUP",
+    "visualSourceRefs": [
+      {
+        "label": "DHSUD — land use / housing agency",
+        "url": "https://dhsud.gov.ph/"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-169",
+    "id": "BL-169",
+    "displayId": "Q169",
+    "category": "ALE Building Laws",
+    "question": "Which ordinance translates the CLUP into enforceable land-use zones and regulations?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Zoning Ordinance"
+      },
+      {
+        "letter": "b",
+        "text": "Fire Code"
+      },
+      {
+        "letter": "c",
+        "text": "Architecture Act"
+      },
+      {
+        "letter": "d",
+        "text": "Building Permit Form"
+      }
+    ],
+    "correctLetter": "a",
+    "answer": "A. Zoning Ordinance",
+    "keyMemory": "CLUP plans; Zoning Ordinance regulates.",
+    "explanation": "The zoning ordinance is the enforceable regulatory instrument that implements the land-use plan into zone classifications and restrictions.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "Zoning-CLUP",
+    "visualSourceRefs": [
+      {
+        "label": "DHSUD — land use / housing agency",
+        "url": "https://dhsud.gov.ph/"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-169",
+    "id": "BL-169",
+    "displayId": "Q169",
+    "category": "ALE Building Laws",
+    "question": "A proposed commercial building is located in a residential-only zone. Which document/problem is most directly involved before building permit processing?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Locational/Zoning Clearance"
+      },
+      {
+        "letter": "b",
+        "text": "Certificate of Occupancy"
+      },
+      {
+        "letter": "c",
+        "text": "Demolition Permit"
+      },
+      {
+        "letter": "d",
+        "text": "Professional Tax Receipt"
+      }
+    ],
+    "correctLetter": "a",
+    "answer": "A. Locational/Zoning Clearance",
+    "keyMemory": "Use-zone conformity → Locational/Zoning Clearance.",
+    "explanation": "The issue is whether the proposed use is allowed in the zone. Locational/Zoning Clearance addresses conformity with the zoning ordinance.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "Zoning-CLUP",
+    "visualSourceRefs": [
+      {
+        "label": "DHSUD — land use / housing agency",
+        "url": "https://dhsud.gov.ph/"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-169",
+    "id": "BL-169",
+    "displayId": "Q169",
+    "category": "ALE Building Laws",
+    "question": "Who normally issues the locational or zoning clearance at local-government level?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Local zoning/planning office or authorized LGU office"
+      },
+      {
+        "letter": "b",
+        "text": "BFP only"
+      },
+      {
+        "letter": "c",
+        "text": "PRC only"
+      },
+      {
+        "letter": "d",
+        "text": "DENR only"
+      }
+    ],
+    "correctLetter": "a",
+    "answer": "A. Local zoning/planning office or authorized LGU office",
+    "keyMemory": "Zoning clearance = local land-use office function.",
+    "explanation": "Locational/zoning clearance is a local land-use conformity document, typically handled through the LGU planning/zoning process.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "Zoning-CLUP",
+    "visualSourceRefs": [
+      {
+        "label": "DHSUD — land use / housing agency",
+        "url": "https://dhsud.gov.ph/"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-169",
+    "id": "BL-169",
+    "displayId": "Q169",
+    "category": "ALE Building Laws",
+    "question": "In board-review logic, which comes first in the permitting sequence?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Certificate of Occupancy"
+      },
+      {
+        "letter": "b",
+        "text": "Locational/Zoning Clearance"
+      },
+      {
+        "letter": "c",
+        "text": "Final inspection"
+      },
+      {
+        "letter": "d",
+        "text": "Business permit renewal"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. Locational/Zoning Clearance",
+    "keyMemory": "Sequence: zoning/locational first, building permit next, occupancy after completion.",
+    "explanation": "Before construction documents are processed for building permit, the project should first show land-use/zoning conformity.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "Zoning-CLUP",
+    "visualSourceRefs": [
+      {
+        "label": "DHSUD — land use / housing agency",
+        "url": "https://dhsud.gov.ph/"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-174",
+    "id": "BL-174",
+    "displayId": "Q174",
+    "category": "ALE Building Laws",
+    "question": "Which law governs economic and socialized housing standards?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "PD 957"
+      },
+      {
+        "letter": "b",
+        "text": "BP 220"
+      },
+      {
+        "letter": "c",
+        "text": "RA 9266"
+      },
+      {
+        "letter": "d",
+        "text": "RA 9514"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. BP 220",
+    "keyMemory": "Economic/socialized housing = BP 220.",
+    "explanation": "BP 220 is the framework for economic and socialized housing standards, while PD 957 is the broader subdivision and condominium buyers' protection framework.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP220-PD957",
+    "visualSourceRefs": [
+      {
+        "label": "LawPhil — Revised Rules for BP 220",
+        "url": "https://lawphil.net/statutes/repacts/ra2008/irr_bp220_2008.html"
+      },
+      {
+        "label": "LawPhil — PD 957",
+        "url": "https://lawphil.net/statutes/presdecs/pd1976/pd_957_1976.html"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-174",
+    "id": "BL-174",
+    "displayId": "Q174",
+    "category": "ALE Building Laws",
+    "question": "Which law is commonly associated with open market subdivision and condominium projects?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "BP 220"
+      },
+      {
+        "letter": "b",
+        "text": "PD 957"
+      },
+      {
+        "letter": "c",
+        "text": "RA 9514"
+      },
+      {
+        "letter": "d",
+        "text": "BP 344"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. PD 957",
+    "keyMemory": "Open market subdivision/condo context = PD 957.",
+    "explanation": "PD 957 covers subdivision and condominium projects and protects buyers; BP 220 is the economic/socialized housing standard.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP220-PD957",
+    "visualSourceRefs": [
+      {
+        "label": "LawPhil — Revised Rules for BP 220",
+        "url": "https://lawphil.net/statutes/repacts/ra2008/irr_bp220_2008.html"
+      },
+      {
+        "label": "LawPhil — PD 957",
+        "url": "https://lawphil.net/statutes/presdecs/pd1976/pd_957_1976.html"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-174",
+    "id": "BL-174",
+    "displayId": "Q174",
+    "category": "ALE Building Laws",
+    "question": "Under BP 220, a minor road has a minimum right-of-way of?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "3.00 m"
+      },
+      {
+        "letter": "b",
+        "text": "6.50 m"
+      },
+      {
+        "letter": "c",
+        "text": "8.00 m"
+      },
+      {
+        "letter": "d",
+        "text": "10.00 m"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. 6.50 m",
+    "keyMemory": "BP 220 minor road ROW = 6.50 m.",
+    "explanation": "BP 220 reviewer tables use 6.50 m as the minimum right-of-way for a minor road.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP220-PD957",
+    "visualSourceRefs": [
+      {
+        "label": "LawPhil — Revised Rules for BP 220",
+        "url": "https://lawphil.net/statutes/repacts/ra2008/irr_bp220_2008.html"
+      },
+      {
+        "label": "LawPhil — PD 957",
+        "url": "https://lawphil.net/statutes/presdecs/pd1976/pd_957_1976.html"
+      }
+    ],
+    "sourceFigure": {
+      "title": "BP 220 road hierarchy source",
+      "figures": [
+        "Road hierarchy / minor road table"
+      ],
+      "sourceLabel": "LawPhil — Revised Rules for BP 220",
+      "sourceUrl": "https://lawphil.net/statutes/repacts/ra2008/irr_bp220_2008.html",
+      "note": "Use official BP 220 road standard source.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-174",
+    "id": "BL-174",
+    "displayId": "Q174",
+    "category": "ALE Building Laws",
+    "question": "Under BP 220, what is the width and use of a pathwalk?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "2.0 m, emergency vehicles"
+      },
+      {
+        "letter": "b",
+        "text": "3.0 m, pedestrian access for socialized housing"
+      },
+      {
+        "letter": "c",
+        "text": "6.5 m, minor road"
+      },
+      {
+        "letter": "d",
+        "text": "10.0 m, interconnecting road"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. 3.0 m, pedestrian access for socialized housing",
+    "keyMemory": "Pathwalk = 3.0 m pedestrian access.",
+    "explanation": "A pathwalk is a 3.0 m wide pedestrian access for socialized housing projects and has a maximum length limit in the standard.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP220-PD957",
+    "visualSourceRefs": [
+      {
+        "label": "LawPhil — Revised Rules for BP 220",
+        "url": "https://lawphil.net/statutes/repacts/ra2008/irr_bp220_2008.html"
+      },
+      {
+        "label": "LawPhil — PD 957",
+        "url": "https://lawphil.net/statutes/presdecs/pd1976/pd_957_1976.html"
+      }
+    ],
+    "sourceFigure": {
+      "title": "BP 220 pathwalk source",
+      "figures": [
+        "Pathwalk provision"
+      ],
+      "sourceLabel": "LawPhil — Revised Rules for BP 220",
+      "sourceUrl": "https://lawphil.net/statutes/repacts/ra2008/irr_bp220_2008.html",
+      "note": "Use official BP 220 pathwalk source.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-174",
+    "id": "BL-174",
+    "displayId": "Q174",
+    "category": "ALE Building Laws",
+    "question": "Under BP 220, an alley is best described as?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "A 2.0 m public way to break a block and serve pedestrians/emergency purposes"
+      },
+      {
+        "letter": "b",
+        "text": "A 3.0 m private driveway"
+      },
+      {
+        "letter": "c",
+        "text": "A 6.5 m minor road"
+      },
+      {
+        "letter": "d",
+        "text": "A 10.0 m collector road"
+      }
+    ],
+    "correctLetter": "a",
+    "answer": "A. A 2.0 m public way to break a block and serve pedestrians/emergency purposes",
+    "keyMemory": "Alley = 2.0 m public way; Pathwalk = 3.0 m pedestrian access.",
+    "explanation": "The revised BP 220 standard describes an alley as 2.0 m wide, intended to break a block and serve pedestrian and emergency purposes.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP220-PD957",
+    "visualSourceRefs": [
+      {
+        "label": "LawPhil — Revised Rules for BP 220",
+        "url": "https://lawphil.net/statutes/repacts/ra2008/irr_bp220_2008.html"
+      },
+      {
+        "label": "LawPhil — PD 957",
+        "url": "https://lawphil.net/statutes/presdecs/pd1976/pd_957_1976.html"
+      }
+    ],
+    "sourceFigure": {
+      "title": "BP 220 alley source",
+      "figures": [
+        "Alley provision"
+      ],
+      "sourceLabel": "LawPhil — Revised Rules for BP 220",
+      "sourceUrl": "https://lawphil.net/statutes/repacts/ra2008/irr_bp220_2008.html",
+      "note": "Use official BP 220 alley source.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-174",
+    "id": "BL-174",
+    "displayId": "Q174",
+    "category": "ALE Building Laws",
+    "question": "Which is the correct BP 220 pair for minimum floor area?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Economic 18 sqm; Socialized 22 sqm"
+      },
+      {
+        "letter": "b",
+        "text": "Economic 22 sqm; Socialized 18 sqm"
+      },
+      {
+        "letter": "c",
+        "text": "Open market 36 sqm; Medium cost 22 sqm"
+      },
+      {
+        "letter": "d",
+        "text": "Open market 42 sqm; Socialized 64 sqm"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. Economic 22 sqm; Socialized 18 sqm",
+    "keyMemory": "BP 220 floor area pair: Economic 22, Socialized 18.",
+    "explanation": "For BP 220 review logic, remember the floor-area pair: economic housing 22 sqm and socialized housing 18 sqm.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP220-PD957",
+    "visualSourceRefs": [
+      {
+        "label": "LawPhil — Revised Rules for BP 220",
+        "url": "https://lawphil.net/statutes/repacts/ra2008/irr_bp220_2008.html"
+      },
+      {
+        "label": "LawPhil — PD 957",
+        "url": "https://lawphil.net/statutes/presdecs/pd1976/pd_957_1976.html"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-174",
+    "id": "BL-174",
+    "displayId": "Q174",
+    "category": "ALE Building Laws",
+    "question": "Which is the correct PD 957 family condominium floor-area pair?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Open market 36 sqm; Medium cost 22 sqm"
+      },
+      {
+        "letter": "b",
+        "text": "Open market 22 sqm; Medium cost 36 sqm"
+      },
+      {
+        "letter": "c",
+        "text": "Economic 22 sqm; Socialized 18 sqm"
+      },
+      {
+        "letter": "d",
+        "text": "Open market 18 sqm; Medium cost 22 sqm"
+      }
+    ],
+    "correctLetter": "a",
+    "answer": "A. Open market 36 sqm; Medium cost 22 sqm",
+    "keyMemory": "PD 957 condo pair: Open market 36, Medium cost 22.",
+    "explanation": "For PD 957 condominium review items, open market family condominium units are commonly tested at 36 sqm while medium-cost condominium units are 22 sqm.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP220-PD957",
+    "visualSourceRefs": [
+      {
+        "label": "LawPhil — Revised Rules for BP 220",
+        "url": "https://lawphil.net/statutes/repacts/ra2008/irr_bp220_2008.html"
+      },
+      {
+        "label": "LawPhil — PD 957",
+        "url": "https://lawphil.net/statutes/presdecs/pd1976/pd_957_1976.html"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-174",
+    "id": "BL-174",
+    "displayId": "Q174",
+    "category": "ALE Building Laws",
+    "question": "Under BP 220, which statement about saleable and non-saleable areas is best?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "There is always a fixed saleable/non-saleable ratio"
+      },
+      {
+        "letter": "b",
+        "text": "There is no fixed ratio, but non-saleable areas must meet open-space, circulation, community-facility, and parks/playground requirements"
+      },
+      {
+        "letter": "c",
+        "text": "All roads are saleable"
+      },
+      {
+        "letter": "d",
+        "text": "Parks/playgrounds may be sold as lots"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. There is no fixed ratio, but non-saleable areas must meet open-space, circulation, community-facility, and parks/playground requirements",
+    "keyMemory": "BP 220: no fixed ratio, but minimum non-saleable requirements apply.",
+    "explanation": "BP 220 does not rely on a fixed saleable/non-saleable ratio; the non-saleable areas must satisfy minimum requirements for open spaces, circulation, community facilities, and parks/playgrounds.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "BP220-PD957",
+    "visualSourceRefs": [
+      {
+        "label": "LawPhil — Revised Rules for BP 220",
+        "url": "https://lawphil.net/statutes/repacts/ra2008/irr_bp220_2008.html"
+      },
+      {
+        "label": "LawPhil — PD 957",
+        "url": "https://lawphil.net/statutes/presdecs/pd1976/pd_957_1976.html"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-182",
+    "id": "BL-182",
+    "displayId": "Q182",
+    "category": "ALE Building Laws",
+    "question": "Under RA 9266, who is directly and professionally responsible for the total design of the project and assumes civil liability for signed/sealed documents?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Architect-of-record"
+      },
+      {
+        "letter": "b",
+        "text": "Contractor"
+      },
+      {
+        "letter": "c",
+        "text": "Building Official"
+      },
+      {
+        "letter": "d",
+        "text": "Owner"
+      }
+    ],
+    "correctLetter": "a",
+    "answer": "A. Architect-of-record",
+    "keyMemory": "Total design + signed/sealed docs = Architect-of-record.",
+    "explanation": "RA 9266 defines the architect-of-record as the registered and licensed architect directly and professionally responsible for the total design of the project and civil liability for signed/sealed documents.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "UAP-Professional-Practice",
+    "visualSourceRefs": [
+      {
+        "label": "LawPhil — RA 9266 Architecture Act",
+        "url": "https://lawphil.net/statutes/repacts/ra2004/ra_9266_2004.html"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-182",
+    "id": "BL-182",
+    "displayId": "Q182",
+    "category": "ALE Building Laws",
+    "question": "Under RA 9266, who is directly and professionally responsible and liable for construction supervision?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Architect-in-charge of construction"
+      },
+      {
+        "letter": "b",
+        "text": "Architect-of-record"
+      },
+      {
+        "letter": "c",
+        "text": "Consulting Architect only"
+      },
+      {
+        "letter": "d",
+        "text": "Draftsperson"
+      }
+    ],
+    "correctLetter": "a",
+    "answer": "A. Architect-in-charge of construction",
+    "keyMemory": "Construction supervision responsibility = Architect-in-charge of construction.",
+    "explanation": "The Architecture-in-charge of construction is the architect responsible and liable for construction supervision of the project.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "UAP-Professional-Practice",
+    "visualSourceRefs": [
+      {
+        "label": "LawPhil — RA 9266 Architecture Act",
+        "url": "https://lawphil.net/statutes/repacts/ra2004/ra_9266_2004.html"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-182",
+    "id": "BL-182",
+    "displayId": "Q182",
+    "category": "ALE Building Laws",
+    "question": "Under RA 9266, what document should architectural plans and specifications bear?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Seal and signature only of a registered and licensed architect"
+      },
+      {
+        "letter": "b",
+        "text": "Signature of the contractor only"
+      },
+      {
+        "letter": "c",
+        "text": "Barangay certification only"
+      },
+      {
+        "letter": "d",
+        "text": "Developer's logo only"
+      }
+    ],
+    "correctLetter": "a",
+    "answer": "A. Seal and signature only of a registered and licensed architect",
+    "keyMemory": "Architectural documents = architect's seal and signature.",
+    "explanation": "RA 9266 requires architectural plans, designs, specifications, drawings, and documents relative to construction to bear the seal and signature of the registered and licensed architect.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "UAP-Professional-Practice",
+    "visualSourceRefs": [
+      {
+        "label": "LawPhil — RA 9266 Architecture Act",
+        "url": "https://lawphil.net/statutes/repacts/ra2004/ra_9266_2004.html"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-182",
+    "id": "BL-182",
+    "displayId": "Q182",
+    "category": "ALE Building Laws",
+    "question": "Under RA 9266, what is the nature of architectural drawings and specifications prepared by the architect?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Ordinary public records anyone may copy"
+      },
+      {
+        "letter": "b",
+        "text": "Instruments of service and intellectual property of the architect"
+      },
+      {
+        "letter": "c",
+        "text": "Property only of the contractor"
+      },
+      {
+        "letter": "d",
+        "text": "Not protected documents"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. Instruments of service and intellectual property of the architect",
+    "keyMemory": "Architectural drawings/specs = instruments of service / IP.",
+    "explanation": "RA 9266 treats drawings and specifications signed/sealed by the architect as instruments of service and intellectual property documents of the architect.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "UAP-Professional-Practice",
+    "visualSourceRefs": [
+      {
+        "label": "LawPhil — RA 9266 Architecture Act",
+        "url": "https://lawphil.net/statutes/repacts/ra2004/ra_9266_2004.html"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-182",
+    "id": "BL-182",
+    "displayId": "Q182",
+    "category": "ALE Building Laws",
+    "question": "Under RA 9266, what must a foreign architect secure before practicing architecture in the Philippines for covered projects?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Barangay clearance only"
+      },
+      {
+        "letter": "b",
+        "text": "Special/temporary permit from the Board subject to PRC approval"
+      },
+      {
+        "letter": "c",
+        "text": "Student permit"
+      },
+      {
+        "letter": "d",
+        "text": "Business name registration only"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. Special/temporary permit from the Board subject to PRC approval",
+    "keyMemory": "Foreign architect practice = special/temporary permit.",
+    "explanation": "Foreign nationals performing architectural services in the Philippines must secure a special/temporary permit under the conditions set by RA 9266.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "UAP-Professional-Practice",
+    "visualSourceRefs": [
+      {
+        "label": "LawPhil — RA 9266 Architecture Act",
+        "url": "https://lawphil.net/statutes/repacts/ra2004/ra_9266_2004.html"
+      }
+    ],
+    "sourceBackedVisual": {
+      "title": "Official/source reference",
+      "main": "This card is source-backed.",
+      "detail": "Use the official/source link after answering. Add image only if it is a verified source crop."
+    }
+  },
+  {
+    "uid": "BL-187",
+    "id": "BL-187",
+    "displayId": "Q187",
+    "category": "ALE Building Laws",
+    "question": "In a figure, which RROW part carries vehicles?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Sidewalk"
+      },
+      {
+        "letter": "b",
+        "text": "Carriageway"
+      },
+      {
+        "letter": "c",
+        "text": "Yard"
+      },
+      {
+        "letter": "d",
+        "text": "Easement"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. Carriageway",
+    "keyMemory": "RROW vehicle part = Carriageway.",
+    "explanation": "In road-section questions, the carriageway is the vehicle-travel portion. Sidewalk is pedestrian space; yard is not part of the RROW cross-section.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "Figure-Based",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      },
+      {
+        "label": "LawPhil — Revised Rules for BP 220",
+        "url": "https://lawphil.net/statutes/repacts/ra2008/irr_bp220_2008.html"
+      },
+      {
+        "label": "DPWH — PD 1096 / NBCP references",
+        "url": "https://www.dpwh.gov.ph/dpwh/references/laws_codes_orders/PD1096"
+      }
+    ],
+    "sourceFigure": {
+      "title": "Verified RROW figure needed",
+      "figures": [
+        "Use an official/reviewer RROW cross-section figure"
+      ],
+      "sourceLabel": "Verified source image required",
+      "sourceUrl": "",
+      "note": "No generated RROW diagram is embedded. Use an official/reviewer source crop.",
+      "mode": "needs-user-source-image"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-187",
+    "id": "BL-187",
+    "displayId": "Q187",
+    "category": "ALE Building Laws",
+    "question": "In a figure, which term refers to the open space between the building line and the lot line?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Setback/Yard"
+      },
+      {
+        "letter": "b",
+        "text": "Carriageway"
+      },
+      {
+        "letter": "c",
+        "text": "Corridor"
+      },
+      {
+        "letter": "d",
+        "text": "Fire lane"
+      }
+    ],
+    "correctLetter": "a",
+    "answer": "A. Setback/Yard",
+    "keyMemory": "Building-to-lot-line open space = setback/yard.",
+    "explanation": "A setback or yard is the required open space between the building and lot line. Do not confuse it with street/RROW parts.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "Figure-Based",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      },
+      {
+        "label": "LawPhil — Revised Rules for BP 220",
+        "url": "https://lawphil.net/statutes/repacts/ra2008/irr_bp220_2008.html"
+      },
+      {
+        "label": "DPWH — PD 1096 / NBCP references",
+        "url": "https://www.dpwh.gov.ph/dpwh/references/laws_codes_orders/PD1096"
+      }
+    ],
+    "sourceFigure": {
+      "title": "Verified setback/court figure needed",
+      "figures": [
+        "Use NBCP / reviewer lot-setback figure"
+      ],
+      "sourceLabel": "Verified source image required",
+      "sourceUrl": "",
+      "note": "No generated figure is embedded.",
+      "mode": "needs-user-source-image"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-187",
+    "id": "BL-187",
+    "displayId": "Q187",
+    "category": "ALE Building Laws",
+    "question": "In a figure, which lot type has frontage on two opposite streets?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Inside Lot"
+      },
+      {
+        "letter": "b",
+        "text": "Corner Lot"
+      },
+      {
+        "letter": "c",
+        "text": "Through Lot"
+      },
+      {
+        "letter": "d",
+        "text": "Flag Lot"
+      }
+    ],
+    "correctLetter": "c",
+    "answer": "C. Through Lot",
+    "keyMemory": "Two opposite street frontages = Through Lot.",
+    "explanation": "A through lot fronts on two opposite streets. Corner lots are at intersecting streets, not opposite sides.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "Figure-Based",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      },
+      {
+        "label": "LawPhil — Revised Rules for BP 220",
+        "url": "https://lawphil.net/statutes/repacts/ra2008/irr_bp220_2008.html"
+      },
+      {
+        "label": "DPWH — PD 1096 / NBCP references",
+        "url": "https://www.dpwh.gov.ph/dpwh/references/laws_codes_orders/PD1096"
+      }
+    ],
+    "sourceFigure": {
+      "title": "Verified lot-type figure needed",
+      "figures": [
+        "Use official/reviewer lot-type figure"
+      ],
+      "sourceLabel": "Verified source image required",
+      "sourceUrl": "",
+      "note": "Lot-type image must come from your reviewer/source crop; no generated lot diagram.",
+      "mode": "needs-user-source-image"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-187",
+    "id": "BL-187",
+    "displayId": "Q187",
+    "category": "ALE Building Laws",
+    "question": "In a figure, which lot type is located at the intersection of two streets?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Inside Lot"
+      },
+      {
+        "letter": "b",
+        "text": "Corner Lot"
+      },
+      {
+        "letter": "c",
+        "text": "Through Lot"
+      },
+      {
+        "letter": "d",
+        "text": "Interior Lot"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. Corner Lot",
+    "keyMemory": "Street intersection = Corner Lot.",
+    "explanation": "A corner lot is situated at the intersection of two streets. This is one of the most common figure-identification cards.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "Figure-Based",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      },
+      {
+        "label": "LawPhil — Revised Rules for BP 220",
+        "url": "https://lawphil.net/statutes/repacts/ra2008/irr_bp220_2008.html"
+      },
+      {
+        "label": "DPWH — PD 1096 / NBCP references",
+        "url": "https://www.dpwh.gov.ph/dpwh/references/laws_codes_orders/PD1096"
+      }
+    ],
+    "sourceFigure": {
+      "title": "Verified corner lot figure needed",
+      "figures": [
+        "Use original reviewer/source figure"
+      ],
+      "sourceLabel": "Verified source image required",
+      "sourceUrl": "",
+      "note": "Needs actual source image for question side.",
+      "mode": "needs-user-source-image"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-187",
+    "id": "BL-187",
+    "displayId": "Q187",
+    "category": "ALE Building Laws",
+    "question": "In a building-law figure, which wall is required when a dwelling abuts a property line?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Fence Wall"
+      },
+      {
+        "letter": "b",
+        "text": "Fire Wall"
+      },
+      {
+        "letter": "c",
+        "text": "Curtain Wall"
+      },
+      {
+        "letter": "d",
+        "text": "Retaining Wall"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. Fire Wall",
+    "keyMemory": "Abuts property line → Fire Wall.",
+    "explanation": "When the building abuts the property line, the required protective wall in board-review logic is a firewall.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "Figure-Based",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      },
+      {
+        "label": "LawPhil — Revised Rules for BP 220",
+        "url": "https://lawphil.net/statutes/repacts/ra2008/irr_bp220_2008.html"
+      },
+      {
+        "label": "DPWH — PD 1096 / NBCP references",
+        "url": "https://www.dpwh.gov.ph/dpwh/references/laws_codes_orders/PD1096"
+      }
+    ],
+    "sourceFigure": {
+      "title": "Verified firewall figure needed",
+      "figures": [
+        "Use BP 220/NBCP reviewer firewall at property line figure"
+      ],
+      "sourceLabel": "Verified source image required",
+      "sourceUrl": "",
+      "note": "No generated firewall diagram.",
+      "mode": "needs-user-source-image"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-187",
+    "id": "BL-187",
+    "displayId": "Q187",
+    "category": "ALE Building Laws",
+    "question": "In a BP 344 ramp figure, which part provides a level pause between ramp runs?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Landing"
+      },
+      {
+        "letter": "b",
+        "text": "Threshold"
+      },
+      {
+        "letter": "c",
+        "text": "Nosing"
+      },
+      {
+        "letter": "d",
+        "text": "Carriageway"
+      }
+    ],
+    "correctLetter": "a",
+    "answer": "A. Landing",
+    "keyMemory": "Ramp pause/level area = Landing.",
+    "explanation": "The landing is the level area at the top/bottom or between ramp runs. Use the official ramp figure/table for visual review.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "Figure-Based-BP344",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      }
+    ],
+    "sourceFigure": {
+      "title": "BP 344 ramp parts source figure",
+      "figures": [
+        "Fig. A.1.1 — Plan of Ramp",
+        "Table A.1.1 — Accessible Ramps"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use official ramp figure.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-187",
+    "id": "BL-187",
+    "displayId": "Q187",
+    "category": "ALE Building Laws",
+    "question": "In a BP 344 curb-ramp figure, which element connects the sidewalk level to the roadway level?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Curb ramp / dropped sidewalk"
+      },
+      {
+        "letter": "b",
+        "text": "Turnabout space"
+      },
+      {
+        "letter": "c",
+        "text": "Elevator lobby"
+      },
+      {
+        "letter": "d",
+        "text": "Handrail extension"
+      }
+    ],
+    "correctLetter": "a",
+    "answer": "A. Curb ramp / dropped sidewalk",
+    "keyMemory": "Sidewalk-to-road transition = curb ramp/dropped sidewalk.",
+    "explanation": "Curb ramps and dropped sidewalks manage level changes between pedestrian route and roadway/crossing level.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "Figure-Based-BP344",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      }
+    ],
+    "sourceFigure": {
+      "title": "BP 344 curb ramp source figure",
+      "figures": [
+        "Fig. B.2.1 — Plan of Curb Ramp",
+        "Fig. B.2.2 — Cross Section of Curb Ramp"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use official curb-ramp figures.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-187",
+    "id": "BL-187",
+    "displayId": "Q187",
+    "category": "ALE Building Laws",
+    "question": "In a BP 344 stair figure, where are warning tactile blocks placed?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "At the center of the tread only"
+      },
+      {
+        "letter": "b",
+        "text": "300 mm before hazardous areas or intended stops such as top and bottom of stairs"
+      },
+      {
+        "letter": "c",
+        "text": "Only on the handrail"
+      },
+      {
+        "letter": "d",
+        "text": "Only at the street curb"
+      }
+    ],
+    "correctLetter": "b",
+    "answer": "B. 300 mm before hazardous areas or intended stops such as top and bottom of stairs",
+    "keyMemory": "Tactile warning: 600 mm deep, 300 mm before hazard.",
+    "explanation": "The official BP 344 stair/tactile figure places warning tactile blocks before hazardous areas or intended stops, with a 600 mm depth.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "Figure-Based-BP344",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      }
+    ],
+    "sourceFigure": {
+      "title": "BP 344 stair tactile source figure",
+      "figures": [
+        "Fig. A.10.1 — Location of Warning Tactile Blocks and Non-Skid Nosing Materials at Stairs"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use official stair/tactile figure.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-187",
+    "id": "BL-187",
+    "displayId": "Q187",
+    "category": "ALE Building Laws",
+    "question": "In a BP 344 accessible parking figure, what extra space is provided to allow wheelchair transfer?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Access aisle / additional width"
+      },
+      {
+        "letter": "b",
+        "text": "Fire wall"
+      },
+      {
+        "letter": "c",
+        "text": "Balcony"
+      },
+      {
+        "letter": "d",
+        "text": "Pipe chase"
+      }
+    ],
+    "correctLetter": "a",
+    "answer": "A. Access aisle / additional width",
+    "keyMemory": "Accessible parking needs transfer/access aisle space.",
+    "explanation": "The accessible parking slot is wider than an ordinary slot to allow transfer from vehicle to wheelchair and wheelchair passage.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "Figure-Based-BP344",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      }
+    ],
+    "sourceFigure": {
+      "title": "BP 344 accessible parking source figure",
+      "figures": [
+        "Fig. A.6.1 — Plan of Accessible Parking Slot"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use official accessible parking figure.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
+  },
+  {
+    "uid": "BL-187",
+    "id": "BL-187",
+    "displayId": "Q187",
+    "category": "ALE Building Laws",
+    "question": "In a BP 344 accessible toilet figure, which fixture is the main transfer target for wheelchair users?",
+    "choices": [
+      {
+        "letter": "a",
+        "text": "Water closet"
+      },
+      {
+        "letter": "b",
+        "text": "Mirror only"
+      },
+      {
+        "letter": "c",
+        "text": "Soap dispenser only"
+      },
+      {
+        "letter": "d",
+        "text": "Exhaust fan"
+      }
+    ],
+    "correctLetter": "a",
+    "answer": "A. Water closet",
+    "keyMemory": "Accessible toilet layout centers on WC transfer.",
+    "explanation": "Accessible toilet layouts are organized around wheelchair transfer to the water closet, supported by grab bars and clear turning/transfer spaces.",
+    "type": "multiple_choice",
+    "acceptedAnswers": [],
+    "addonTopic": "Figure-Based-BP344",
+    "visualSourceRefs": [
+      {
+        "label": "NCDA — 2024 Revised IRR of BP 344",
+        "url": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      }
+    ],
+    "sourceFigure": {
+      "title": "BP 344 accessible toilet source section",
+      "figures": [
+        "Section C.6 — Toilets and Baths"
+      ],
+      "sourceLabel": "NCDA — 2024 Revised IRR of BP 344",
+      "sourceUrl": "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+      "note": "Use official accessible toilet source/figure crop when available.",
+      "mode": "legit-source-reference"
+    },
+    "sourceBackedVisual": {
+      "title": "Legit-source visual required",
+      "main": "Use the matched official/source figure only.",
+      "detail": "No generated diagram or random image is embedded. Open/crop the official source figure if you want an actual image."
+    }
   }
 ]
