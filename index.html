@@ -6,314 +6,115 @@
   <title>ALE Reviewer by Edrizh Ingco</title>
   <style>
     :root {
-      --bg:#f3f0ea;
-      --card:#fffdf8;
-      --ink:#061a38;
-      --muted:#667085;
-      --line:#ded6c9;
-      --green:#006b35;
-      --inactive:#8a929e;
-      --chip:#eee7dc;
+      --bg:#f3f0ea; --card:#fffdf8; --ink:#061a38; --muted:#667085;
+      --line:#ded6c9; --green:#006b35; --gold:#9a6a1d; --chip:#eee7dc;
       --shadow:0 10px 26px rgba(30,25,16,.07);
     }
     * { box-sizing:border-box; }
     body {
-      margin:0;
-      background:var(--bg);
-      color:var(--ink);
-      font-family: ui-rounded, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin:0; background:var(--bg); color:var(--ink);
+      font-family:ui-rounded,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
       padding:24px 26px 48px;
     }
     .hero {
-      max-width:880px;
-      background:var(--card);
-      border:1px solid var(--line);
-      border-radius:24px;
-      padding:28px 36px 30px;
-      box-shadow:var(--shadow);
+      max-width:920px; background:var(--card); border:1px solid var(--line);
+      border-radius:24px; padding:28px 36px 30px; box-shadow:var(--shadow);
     }
-    h1 {
-      margin:0 0 6px;
-      font-size:38px;
-      line-height:1.12;
-      letter-spacing:.08em;
-      font-weight:900;
-    }
-    .subtitle {
-      margin:0;
-      color:#33435d;
-      font-size:13px;
-      letter-spacing:.02em;
-    }
+    h1 { margin:0 0 6px; font-size:38px; line-height:1.12; letter-spacing:.08em; font-weight:900; }
+    .subtitle { margin:0; color:#33435d; font-size:13px; letter-spacing:.02em; }
     .grid {
-      max-width:880px;
-      display:grid;
-      grid-template-columns:repeat(4, minmax(0, 1fr));
-      gap:12px;
-      margin-top:18px;
+      max-width:920px; display:grid; grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:12px; margin-top:18px;
     }
     .card {
-      min-height:118px;
-      display:block;
-      text-decoration:none;
-      color:var(--ink);
-      background:var(--card);
-      border:1px solid var(--line);
-      border-radius:18px;
-      padding:16px 16px 18px;
-      box-shadow:var(--shadow);
+      min-height:118px; display:block; text-decoration:none; color:var(--ink);
+      background:var(--card); border:1px solid var(--line); border-radius:18px;
+      padding:16px 16px 18px; box-shadow:var(--shadow);
       transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;
-      cursor:pointer;
     }
-    .card:hover {
-      transform:translateY(-1px);
-      box-shadow:0 14px 30px rgba(30,25,16,.10);
-      border-color:#cfc5b5;
-    }
+    .card:hover { transform:translateY(-1px); box-shadow:0 14px 30px rgba(30,25,16,.10); border-color:#cfc5b5; }
+    .card.accent { border-color:#d9bc77; background:linear-gradient(180deg,#fffaf0,#fffdf8); }
     .num {
-      display:grid;
-      place-items:center;
-      width:30px;
-      height:30px;
-      border-radius:999px;
-      background:var(--chip);
-      color:#9a8f7c;
-      font-size:13px;
-      font-weight:900;
-      margin-bottom:20px;
+      display:grid; place-items:center; width:30px; height:30px; border-radius:999px;
+      background:var(--chip); color:#9a8f7c; font-size:13px; font-weight:900; margin-bottom:20px;
     }
-    h2 {
-      margin:0 0 8px;
-      font-size:16px;
-      line-height:1.22;
-      font-weight:900;
-      letter-spacing:-.01em;
-    }
-    .status {
-      margin:0;
-      color:var(--green);
-      font-size:14px;
-      font-weight:900;
-    }
-    .status.pending {
-      color:var(--inactive);
-    }
-    .note {
-      max-width:880px;
-      margin:16px 6px 0;
-      font-size:13px;
-      color:#263853;
-    }
-    .toast {
-      position:fixed;
-      left:50%;
-      bottom:18px;
-      transform:translateX(-50%);
-      background:#111827;
-      color:#fff;
-      border-radius:999px;
-      padding:10px 14px;
-      font-size:13px;
-      font-weight:700;
-      opacity:0;
-      pointer-events:none;
-      transition:opacity .18s ease, transform .18s ease;
-      box-shadow:0 10px 30px rgba(0,0,0,.18);
-    }
-    .toast.show {
-      opacity:1;
-      transform:translateX(-50%) translateY(-4px);
-    }
-    @media (max-width:920px) {
-      .grid { grid-template-columns:repeat(3, minmax(0, 1fr)); }
-    }
-    @media (max-width:680px) {
-      body { padding:16px; }
-      .hero { padding:24px; }
-      h1 { font-size:28px; }
-      .grid { grid-template-columns:repeat(2, minmax(0, 1fr)); }
-    }
-    @media (max-width:460px) {
-      .grid { grid-template-columns:1fr; }
-    }
+    .card.accent .num { background:#f5dfad; color:#7a520f; }
+    h2 { margin:0 0 8px; font-size:16px; line-height:1.22; font-weight:900; letter-spacing:-.01em; }
+    .status { margin:0; color:var(--green); font-size:14px; font-weight:900; }
+    .card.accent .status { color:var(--gold); }
+    .note { max-width:920px; margin:16px 6px 0; font-size:13px; color:#263853; }
+    @media(max-width:920px) { .grid { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+    @media(max-width:680px) { body { padding:16px; } .hero { padding:24px; } h1 { font-size:28px; } .grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+    @media(max-width:460px) { .grid { grid-template-columns:1fr; } }
   </style>
 </head>
 <body>
   <header class="hero">
     <h1>ALE Reviewer by Edrizh Ingco</h1>
-    <p class="subtitle">Dashboard v5 — clean subject list; removed duplicate/extra cards.</p>
+    <p class="subtitle">Main flashcard reviewer dashboard. Mock Exam has its own separate dashboard.</p>
   </header>
-
   <main class="grid" id="grid"></main>
-
-  <p class="note">
-    Tip: folder names are case-sensitive on GitHub Pages. Each subject folder must contain an <strong>index.html</strong> file.
-  </p>
-
-  <div class="toast" id="toast">Checking folder…</div>
-
+  <p class="note">Tip: folder names are case-sensitive on GitHub Pages. Each subject folder must contain an <strong>index.html</strong> file.</p>
   <script>
     const SUBJECTS = [
   {
     "title": "History",
-    "aliases": [
-      "history"
-    ]
+    "path": "history/"
   },
   {
     "title": "Theory",
-    "aliases": [
-      "theory"
-    ]
+    "path": "theory/"
   },
   {
     "title": "Planning",
-    "aliases": [
-      "planning"
-    ]
+    "path": "planning/"
   },
   {
     "title": "Tropical Design and Green Architecture",
-    "aliases": [
-      "tropical-design",
-      "tropical_design",
-      "tropical"
-    ]
+    "path": "tropical-design-and-green-architecture/"
   },
   {
     "title": "Building Laws",
-    "aliases": [
-      "building-laws",
-      "building_laws"
-    ]
+    "path": "building-laws/"
   },
   {
     "title": "ADSP Rule 7 & 8",
-    "aliases": [
-      "adsp-rule-7-8",
-      "adsp",
-      "adsp-rule-7-and-8"
-    ]
+    "path": "adsp-rule-7-8/"
   },
   {
     "title": "Building Construction",
-    "aliases": [
-      "building-construction",
-      "building_construction",
-      "Building Construction"
-    ]
+    "path": "building-construction/"
   },
   {
     "title": "Building Materials",
-    "aliases": [
-      "building-materials",
-      "building_materials",
-      "Building Materials"
-    ]
+    "path": "building-materials/"
   },
   {
     "title": "Building Utilities",
-    "aliases": [
-      "building-utilities",
-      "building_utilities",
-      "Building Utilities"
-    ]
+    "path": "building-utilities/"
   },
   {
     "title": "Structural Concepts",
-    "aliases": [
-      "structural-concepts",
-      "structural_concepts",
-      "Structural Concepts"
-    ]
+    "path": "structural-concepts/"
   },
   {
     "title": "Professional Practice",
-    "aliases": [
-      "professional-practice",
-      "professional_practice",
-      "Professional Practice"
-    ]
+    "path": "professional-practice/"
+  },
+  {
+    "title": "Mock Exam",
+    "path": "mock-exam/",
+    "accent": true
   }
 ];
-
     const grid = document.getElementById("grid");
-    const toast = document.getElementById("toast");
-
-    function showToast(message) {
-      toast.textContent = message;
-      toast.classList.add("show");
-      clearTimeout(showToast._t);
-      showToast._t = setTimeout(() => toast.classList.remove("show"), 1600);
-    }
-
-    function folderUrl(alias) {
-      return alias.replace(/^\/+|\/+$/g, "") + "/";
-    }
-
-    async function exists(alias) {
-      const url = folderUrl(alias) + "index.html?v=" + Date.now();
-      try {
-        const res = await fetch(url, { method: "HEAD", cache: "no-store" });
-        if (res.ok) return true;
-        const getRes = await fetch(url, { method: "GET", cache: "no-store" });
-        return getRes.ok;
-      } catch (e) {
-        return false;
-      }
-    }
-
-    async function openSubject(subject) {
-      showToast("Checking " + subject.title + "…");
-      for (const alias of subject.aliases) {
-        if (await exists(alias)) {
-          window.location.href = folderUrl(alias);
-          return;
-        }
-      }
-      showToast("Folder not found yet: " + subject.aliases[0] + "/");
-    }
-
-    function render() {
-      grid.innerHTML = "";
-      SUBJECTS.forEach((subject, index) => {
-        const card = document.createElement("a");
-        card.className = "card";
-        card.href = folderUrl(subject.aliases[0]);
-        card.innerHTML = `
-          <span class="num">${index + 1}</span>
-          <h2>${subject.title}</h2>
-          <p class="status" data-status>Open reviewer</p>
-        `;
-        card.addEventListener("click", (event) => {
-          event.preventDefault();
-          openSubject(subject);
-        });
-        grid.appendChild(card);
-      });
-    }
-
-    async function markAvailability() {
-      const cards = Array.from(document.querySelectorAll(".card"));
-      for (let i = 0; i < SUBJECTS.length; i++) {
-        const subject = SUBJECTS[i];
-        const status = cards[i].querySelector("[data-status]");
-        let ok = false;
-        for (const alias of subject.aliases) {
-          if (await exists(alias)) {
-            ok = true;
-            break;
-          }
-        }
-        if (!ok) {
-          status.textContent = "Open when folder exists";
-          status.classList.add("pending");
-        }
-      }
-    }
-
-    render();
-    markAvailability();
+    SUBJECTS.forEach((s, i) => {
+      const a = document.createElement("a");
+      a.className = "card" + (s.accent ? " accent" : "");
+      a.href = s.path;
+      a.innerHTML = `<span class="num">${i+1}</span><h2>${s.title}</h2><p class="status">Open reviewer</p>`;
+      grid.appendChild(a);
+    });
   </script>
 </body>
 </html>

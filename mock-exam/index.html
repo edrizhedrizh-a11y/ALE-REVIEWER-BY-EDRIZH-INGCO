@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ALE Mock Exam</title>
+<style>
+:root{--bg:#f3f0ea;--card:#fffdf8;--ink:#061a38;--muted:#667085;--line:#ded6c9;--green:#006b35;--gold:#9a6a1d;--danger:#9b1c1c;--chip:#eee7dc;--shadow:0 10px 26px rgba(30,25,16,.07)}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:ui-rounded,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding:24px 26px 48px}
+.hero{max-width:980px;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:28px 36px;box-shadow:var(--shadow)}
+h1{margin:0 0 6px;font-size:36px;letter-spacing:.04em;font-weight:900} .subtitle{margin:0;color:#33435d;font-size:14px;line-height:1.45}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px} a.btn,button.btn{border:1px solid var(--line);background:#fffaf0;color:var(--ink);border-radius:999px;padding:10px 14px;text-decoration:none;font-weight:900;cursor:pointer}
+.grid{max-width:980px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}
+.card{display:block;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px;min-height:150px;box-shadow:var(--shadow)}
+.card:hover{transform:translateY(-1px);box-shadow:0 14px 30px rgba(30,25,16,.10)} .label{display:inline-block;background:#f5dfad;color:#7a520f;border-radius:999px;padding:6px 10px;font-size:12px;font-weight:900;margin-bottom:14px}
+h2{margin:0 0 8px;font-size:20px} p{margin:0;color:#45546e;line-height:1.45} .meta{margin-top:12px;color:var(--green);font-weight:900}
+.panel{max-width:980px;margin-top:18px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:var(--shadow);display:none}
+table{width:100%;border-collapse:collapse;font-size:13px} th,td{border-bottom:1px solid var(--line);padding:10px;text-align:left;vertical-align:top} th{font-size:12px;color:#667085;text-transform:uppercase;letter-spacing:.04em}
+.empty{color:#667085;padding:12px 0} @media(max-width:720px){body{padding:16px}.hero{padding:22px}h1{font-size:28px}.grid{grid-template-columns:1fr}table{font-size:12px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <h1>ALE Mock Exam</h1>
+  <p class="subtitle">Mock Exam Mode only. No answer reveal, explanations, key memory, or answer-label images before submit.</p>
+  <div class="actions">
+    <a class="btn" href="../">← Back to Main Reviewer</a>
+    <button class="btn" id="historyBtn">View Exam History</button>
+    <button class="btn" id="clearBtn">Clear Exam History</button>
+  </div>
+</header>
+<main class="grid" id="grid"></main>
+<section class="panel" id="historyPanel">
+  <h2>Exam History</h2>
+  <div id="historyContent"></div>
+</section>
+<script>
+const CARDS = [
+  {
+    "title": "Exam 1",
+    "subtitle": "History, Theory, Planning & Architectural Practice",
+    "meta": "100 items · 5 hours · 30%",
+    "path": "exam-1/"
+  },
+  {
+    "title": "Exam 2",
+    "subtitle": "Utilities, Structural Conceptualization, Building Materials & Technology",
+    "meta": "150 items · 5 hours · 30%",
+    "path": "exam-2/"
+  },
+  {
+    "title": "Exam 3",
+    "subtitle": "ADSP / Architectural Design and Site Planning",
+    "meta": "200 items · 10 hours · 40%",
+    "path": "exam-3/"
+  },
+  {
+    "title": "Full ALE Simulation",
+    "subtitle": "2-day official ALE pacing",
+    "meta": "450 items · 20 hours · weighted scoring",
+    "path": "full-ale/"
+  }
+];
+const grid=document.getElementById('grid');
+CARDS.forEach((c,i)=>{
+  const a=document.createElement('a'); a.className='card'; a.href=c.path;
+  a.innerHTML=`<span class="label">Mock Exam ${i+1}</span><h2>${c.title}</h2><p>${c.subtitle}</p><p class="meta">${c.meta}</p>`;
+  grid.appendChild(a);
+});
+const key='aleMockExamHistory';
+function readHistory(){try{return JSON.parse(localStorage.getItem(key)||'[]')}catch(e){return[]}}
+function fmt(sec){sec=Number(sec)||0;const h=Math.floor(sec/3600),m=Math.floor((sec%3600)/60),s=sec%60;return (h?h+'h ':'')+(m?m+'m ':'')+s+'s'}
+function renderHistory(){
+  const panel=document.getElementById('historyPanel'), box=document.getElementById('historyContent'); panel.style.display='block';
+  const rows=readHistory().reverse();
+  if(!rows.length){box.innerHTML='<p class="empty">No exam history yet.</p>';return}
+  box.innerHTML=`<table><thead><tr><th>Date</th><th>Exam</th><th>Items</th><th>Score</th><th>%</th><th>Status</th><th>Time</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${r.date||''}</td><td>${r.examType||''}</td><td>${r.itemCount||''}</td><td>${r.score||''}</td><td>${Number(r.percentage||0).toFixed(1)}%</td><td>${r.passFail||''}</td><td>${fmt(r.timeUsedSeconds)}</td></tr>`).join('')}</tbody></table>`;
+}
+document.getElementById('historyBtn').onclick=renderHistory;
+document.getElementById('clearBtn').onclick=()=>{if(confirm('Clear all mock exam history?')){localStorage.removeItem(key);renderHistory();}};
+</script>
+</body>
+</html>
