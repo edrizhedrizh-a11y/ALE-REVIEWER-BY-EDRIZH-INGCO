@@ -70,3 +70,38 @@ Q97: riparian easement diagram
 Q99: protected area Philippines map
 Q100: environmental compliance certificate Philippines
 Q101: environmental impact statement diagram
+Q103: CLUP Philippine land use map
+Q104: comprehensive land use plan map Philippines
+Q105: zoning ordinance land use map
+Q106: CLUP zoning ordinance diagram
+Q107: CLUP sectoral plans diagram
+Q110: city planning office CLUP
+Q111: Sangguniang Panlungsod session
+Q113: DHSUD comprehensive land use plan
+Q114: DHSUD Philippines logo
+Q115: Republic Act 11201 DHSUD
+Q118: National Housing Authority Philippines
+Q119: Pag-IBIG Fund HDMF housing
+Q120: Social Housing Finance Corporation Philippines
+Q121: Community Mortgage Program Philippines
+Q122: National Home Mortgage Finance Corporation
+Q124: DHSUD HLURB transition
+Q125: PD 957 subdivision condominium buyers protective decree
+Q126: BP 220 economic socialized housing
+Q127: RA 7279 Urban Development Housing Act
+Q128: socialized housing Philippines
+Q129: socialized housing Philippines
+Q130: locational clearance zoning Philippines
+Q133: Fire Safety Inspection Certificate Philippines
+Q134: fire lane access road
+Q135: fire apparatus access road
+Q141: zoning land use classification
+Q142: floor area ratio density zoning
+Q143: egress life safety building code
+Q146: easement right of way diagram
+Q147: SHFC Community Mortgage Program
+Q148: secondary mortgage market Philippines
+Q149: National Housing Authority housing project Philippines
+Q150: community mortgage program informal settlers
+Q151: DHSUD Philippines
+Q153: zoning ordinance city map
