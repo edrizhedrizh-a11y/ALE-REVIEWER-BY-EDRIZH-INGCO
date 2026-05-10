@@ -90,3 +90,10 @@ v7 visual leak fix:
 - Before submit, only direct embedded question images can display.
 - If no safe embedded image exists, the exam shows a generic image-needed message without revealing the query/answer.
 - After submit, visual references may still appear in review mode.
+
+
+v8 missing-visual identify protection:
+- Visual-identification cards with only imageQuery/questionImageQuery but no direct embedded image are skipped in Mock Exam.
+- This prevents blank “Identify” items from appearing during the board-exam simulation.
+- To include those cards, add a direct `questionImage` or `image` field, preferably a local asset path like `assets/HIST-540.jpg`.
+- Search cues and search buttons remain hidden before submit.
