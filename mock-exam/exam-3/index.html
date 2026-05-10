@@ -184,12 +184,28 @@ function isVisualIdentifyQuestion(card){
   const q = qRaw.toLowerCase();
   const hasVisualQuery = safeVisualQueries(card).length > 0;
   const visualMode = String(card.visualMode || '').toLowerCase();
-  const veryShortIdentify = /^(identify|identify\.|identify:|identify the|what is shown|name this|which item is shown)/i.test(qRaw);
-  const genericQuestion = q.length <= 55 && /(identify|shown|name this|what is this)/i.test(q);
-  return hasVisualQuery && (visualMode === 'question' || veryShortIdentify || genericQuestion);
+
+  // Strict board-exam protection:
+  // Any generic Identify question without a direct image is unsafe in Mock Exam.
+  // Examples:
+  // - "Identify"
+  // - "Identify the pattern?"
+  // - "Identify the valve"
+  // - "What is shown?"
+  // - "Name this architectural feature"
+  const startsAsIdentify =
+    /^(identify|identify\.|identify:|identify the|identify this|what is shown|what is this|name this|which item is shown|which pattern is shown)/i.test(qRaw);
+
+  const genericIdentify =
+    q.length <= 90 && /(identify|what is shown|what is this|name this|shown|pattern)/i.test(q);
+
+  return visualMode === 'question' || hasVisualQuery || startsAsIdentify || genericIdentify;
 }
 function hasDirectEmbeddedQuestionImage(card){
-  return !!directImageCandidate(card.questionImage) || !!directImageCandidate(card.image) || !!directImageCandidate(card.visualUrl) || !!directImageCandidate(card.visual);
+  return !!directImageCandidate(card.questionImage) ||
+         !!directImageCandidate(card.image) ||
+         !!directImageCandidate(card.visualUrl) ||
+         !!directImageCandidate(card.visual);
 }
 function filterMissingVisualIdentifyCards(cards){
   const kept = [];
@@ -202,10 +218,11 @@ function filterMissingVisualIdentifyCards(cards){
     }
   });
   if(skipped){
-    loadedWarnings.push(skipped + ' visual-identification card(s) skipped because no embedded/direct image is available. Add questionImage/image assets to include them.');
+    loadedWarnings.push(skipped + ' identify/visual card(s) skipped because no embedded/direct image is available. Add questionImage/image assets to include them.');
   }
   return kept;
 }
+
 
 async function loadCards(){loadedWarnings=[];const chunks=await Promise.all(CONFIG.sources.map(async src=>{try{const res=await fetch(src.path+'?v='+Date.now(),{cache:'no-store'});if(!res.ok)throw new Error(res.status);return normalize(await res.json(),src.name)}catch(e){loadedWarnings.push(src.name);return[]}}));allCards=filterMissingVisualIdentifyCards(chunks.flat());if(loadedWarnings.length){$('warning').style.display='block';$('warning').textContent='Some subject sources are not available yet: '+loadedWarnings.join(', ')}return allCards}
 function setupOptions(){$('countSelect').innerHTML=CONFIG.options.map(o=>`<option value="${o.items}">${o.items} items — ${o.label}</option>`).join('')} function calcLimit(items,mode){if(mode==='none')return 0;let s=items*CONFIG.paceMinutes*60;if(mode==='pressure')s*=.8;if(mode==='sprint')s*=.5;return Math.round(s)}

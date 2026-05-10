@@ -97,3 +97,10 @@ v8 missing-visual identify protection:
 - This prevents blank “Identify” items from appearing during the board-exam simulation.
 - To include those cards, add a direct `questionImage` or `image` field, preferably a local asset path like `assets/HIST-540.jpg`.
 - Search cues and search buttons remain hidden before submit.
+
+
+v9 stricter identify protection:
+- Any generic question starting with “Identify...” is skipped if it has no direct embedded image.
+- This works even if the card has no imageQuery/questionImageQuery.
+- Fixes cases like “Identify the pattern?” with choices but no visual.
+- To include it in Mock Exam, add a direct `questionImage` or `image` field with a neutral filename.
