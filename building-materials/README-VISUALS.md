@@ -38,3 +38,16 @@ Upload/replace:
 building-materials/
 ```
 
+
+
+## v3.1 fix
+
+Identify cards that do not have a local embedded `questionImage` are now hidden from the active reviewer.
+
+This prevents impossible Identify questions from appearing without an image.
+
+When the image is ready:
+1. Save it in `building-materials/assets/`, e.g. `BM-107.jpg`
+2. Set the card field: `"questionImage": "assets/BM-107.jpg"`
+3. Remove or set `"skipUntilImageEmbedded": false`
+

@@ -6158,7 +6158,7 @@
     ],
     "answerImageAlt": "Explanation visual reference",
     "answerImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only if no preview loads.",
-    "visualAuditStatus": "PERSONAL_STUDY_IMAGE_READY",
+    "visualAuditStatus": "SKIPPED_UNTIL_LOCAL_IMAGE",
     "visualAuditNote": "Use close-up product photo of the metal turnbuckle only.",
     "needsMarketPhoto": true,
     "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only.",
@@ -6168,7 +6168,9 @@
       "https://khmtools.com.ph/products/mega-turnbuckle",
       "https://khmtools.com.ph/products/megatools-turnbuckle"
     ],
-    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset."
+    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset.",
+    "skipUntilImageEmbedded": true,
+    "skipReason": "Identify card requires an embedded local image before review/exam display."
   },
   {
     "uid": "BM-108",
@@ -10810,7 +10812,7 @@
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "visualAuditStatus": "PERSONAL_STUDY_IMAGE_READY",
+    "visualAuditStatus": "SKIPPED_UNTIL_LOCAL_IMAGE",
     "visualAuditNote": "Use actual casement/window lock hardware product photo.",
     "needsMarketPhoto": true,
     "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only.",
@@ -10820,7 +10822,9 @@
       "https://www.rejuvenation.com/products/casement-window-lock/",
       "https://www.reflectwindow.com/products/window-security-sash-lock-low-profile"
     ],
-    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset."
+    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset.",
+    "skipUntilImageEmbedded": true,
+    "skipReason": "Identify card requires an embedded local image before review/exam display."
   },
   {
     "uid": "BM-219",
@@ -10855,7 +10859,7 @@
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "visualAuditStatus": "PERSONAL_STUDY_IMAGE_READY",
+    "visualAuditStatus": "SKIPPED_UNTIL_LOCAL_IMAGE",
     "visualAuditNote": "Use actual sliding door lock product photo.",
     "needsMarketPhoto": true,
     "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only.",
@@ -10865,7 +10869,9 @@
       "https://gmfhardware.ph/products/sliding-lock-265m",
       "https://www.homedepot.com/p/Prime-Line-Sliding-Door-Lock-3-11-16-in-Steel-Mortise-Style-E-2014/100174543"
     ],
-    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset."
+    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset.",
+    "skipUntilImageEmbedded": true,
+    "skipReason": "Identify card requires an embedded local image before review/exam display."
   },
   {
     "uid": "BM-220",
@@ -10900,7 +10906,7 @@
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "visualAuditStatus": "PERSONAL_STUDY_IMAGE_READY",
+    "visualAuditStatus": "SKIPPED_UNTIL_LOCAL_IMAGE",
     "visualAuditNote": "Use flush bolt product photo, not surface barrel bolt.",
     "needsMarketPhoto": true,
     "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only.",
@@ -10910,7 +10916,9 @@
       "https://mucheln.co.uk/products/brushed-brass-flush-door-bolt-128mm",
       "https://www.grainger.com/product/KABA-ILCO-Door-Bolt-Flush-Bolt-20VF07"
     ],
-    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset."
+    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset.",
+    "skipUntilImageEmbedded": true,
+    "skipReason": "Identify card requires an embedded local image before review/exam display."
   },
   {
     "uid": "BM-221",
@@ -11053,7 +11061,7 @@
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "visualAuditStatus": "PERSONAL_STUDY_IMAGE_READY",
+    "visualAuditStatus": "SKIPPED_UNTIL_LOCAL_IMAGE",
     "visualAuditNote": "Use actual butterfly hinge product photo.",
     "needsMarketPhoto": true,
     "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only.",
@@ -11063,7 +11071,9 @@
       "https://www.monsoonhardware.com/butterfly-hinge-m21003-product/",
       "https://www.houseofantiquehardware.com/butterfly-hinges"
     ],
-    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset."
+    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset.",
+    "skipUntilImageEmbedded": true,
+    "skipReason": "Identify card requires an embedded local image before review/exam display."
   },
   {
     "uid": "BM-225",
@@ -11314,7 +11324,7 @@
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "visualAuditStatus": "PERSONAL_STUDY_IMAGE_READY",
+    "visualAuditStatus": "SKIPPED_UNTIL_LOCAL_IMAGE",
     "visualAuditNote": "Use orange/yellow rebar safety cap product photo.",
     "needsMarketPhoto": true,
     "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only.",
@@ -11324,7 +11334,9 @@
       "https://www.lowes.com/pd/Blue-Hawk-3-to-7-Plastic-Rebar-Safety-Cap/4067490",
       "https://surebuilt-usa.com/products/rebar-safety-cap/"
     ],
-    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset."
+    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset.",
+    "skipUntilImageEmbedded": true,
+    "skipReason": "Identify card requires an embedded local image before review/exam display."
   },
   {
     "uid": "BM-232",
@@ -11647,7 +11659,7 @@
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "visualAuditStatus": "PERSONAL_STUDY_IMAGE_READY",
+    "visualAuditStatus": "SKIPPED_UNTIL_LOCAL_IMAGE",
     "visualAuditNote": "Use modern rim lock hardware product photo.",
     "needsMarketPhoto": true,
     "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only.",
@@ -11657,7 +11669,9 @@
       "https://gmfhardware.ph/products/rim-lock",
       "https://www.abhardware.co.uk/products/pewter-polished-brass-olde-victorian-rim-lock"
     ],
-    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset."
+    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset.",
+    "skipUntilImageEmbedded": true,
+    "skipReason": "Identify card requires an embedded local image before review/exam display."
   },
   {
     "uid": "BM-241",
@@ -11872,7 +11886,7 @@
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "visualAuditStatus": "PERSONAL_STUDY_IMAGE_READY",
+    "visualAuditStatus": "SKIPPED_UNTIL_LOCAL_IMAGE",
     "visualAuditNote": "Use actual hasp and staple product photo.",
     "needsMarketPhoto": true,
     "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only.",
@@ -11882,7 +11896,9 @@
       "https://khmtools.com.ph/products/wadfow-wan21-hasp-and-staple",
       "https://www.screwfix.com/c/security-ironmongery/hasps-staples/cat840806"
     ],
-    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset."
+    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset.",
+    "skipUntilImageEmbedded": true,
+    "skipReason": "Identify card requires an embedded local image before review/exam display."
   },
   {
     "uid": "BM-247",
@@ -11917,7 +11933,7 @@
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "visualAuditStatus": "PERSONAL_STUDY_IMAGE_READY",
+    "visualAuditStatus": "SKIPPED_UNTIL_LOCAL_IMAGE",
     "visualAuditNote": "Use actual lever lock / mortice lock product photo.",
     "needsMarketPhoto": true,
     "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only.",
@@ -11927,7 +11943,9 @@
       "https://www.uniononline.co.uk/en/products/mortice-locks/deadlocks/2100-5-lever-deadlock",
       "https://commons.wikimedia.org/wiki/File:Lever_Lock_and_Key.jpg"
     ],
-    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset."
+    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset.",
+    "skipUntilImageEmbedded": true,
+    "skipReason": "Identify card requires an embedded local image before review/exam display."
   },
   {
     "uid": "BM-248",
@@ -11962,7 +11980,7 @@
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "visualAuditStatus": "PERSONAL_STUDY_IMAGE_READY",
+    "visualAuditStatus": "SKIPPED_UNTIL_LOCAL_IMAGE",
     "visualAuditNote": "Use actual lid stay/support hardware product photo.",
     "needsMarketPhoto": true,
     "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only.",
@@ -11972,7 +11990,9 @@
       "https://www.hafele.com/us/en/product/lid-stay-door-restraint/P-00870534/",
       "https://www.rockler.com/soft-down-lid-support"
     ],
-    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset."
+    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset.",
+    "skipUntilImageEmbedded": true,
+    "skipReason": "Identify card requires an embedded local image before review/exam display."
   },
   {
     "uid": "BM-249",
@@ -12429,7 +12449,7 @@
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "visualAuditStatus": "PERSONAL_STUDY_IMAGE_READY",
+    "visualAuditStatus": "SKIPPED_UNTIL_LOCAL_IMAGE",
     "visualAuditNote": "Use stainless steel glass spider fitting product photo.",
     "needsMarketPhoto": true,
     "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only.",
@@ -12439,7 +12459,9 @@
       "https://www.luju-ltd.com/en/product-632794/Spider-Fitting.html",
       "https://www.glasxperts.com/glass-spider-fitting/"
     ],
-    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset."
+    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset.",
+    "skipUntilImageEmbedded": true,
+    "skipReason": "Identify card requires an embedded local image before review/exam display."
   },
   {
     "uid": "BM-261",
@@ -12546,7 +12568,7 @@
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "visualAuditStatus": "PERSONAL_STUDY_IMAGE_READY",
+    "visualAuditStatus": "SKIPPED_UNTIL_LOCAL_IMAGE",
     "visualAuditNote": "Use standalone glass railing spigot product photo or spigot holding glass clearly.",
     "needsMarketPhoto": true,
     "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only.",
@@ -12556,7 +12578,9 @@
       "https://glasswarehouse.us/products/glass-railing-systems/glass-railing-spigots/dorado-round-baseplate-spigot/",
       "https://glassrailingstore.com/en-us/products/glass-railing-spigot"
     ],
-    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset."
+    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset.",
+    "skipUntilImageEmbedded": true,
+    "skipReason": "Identify card requires an embedded local image before review/exam display."
   },
   {
     "uid": "BM-264",
