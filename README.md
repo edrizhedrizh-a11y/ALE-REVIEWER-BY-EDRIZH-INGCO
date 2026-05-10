@@ -104,3 +104,11 @@ v9 stricter identify protection:
 - This works even if the card has no imageQuery/questionImageQuery.
 - Fixes cases like “Identify the pattern?” with choices but no visual.
 - To include it in Mock Exam, add a direct `questionImage` or `image` field with a neutral filename.
+
+
+v10 identify restore:
+- Restored Identify questions to the mock exam pool.
+- Missing-image Identify cards are no longer skipped.
+- If an Identify card has no embedded image, it shows a neutral no-image notice only.
+- Search cues, image queries, Wikimedia/search buttons, and answer clues remain hidden before submit.
+- Best long-term fix remains adding direct neutral `questionImage`/`image` assets to Identify cards.

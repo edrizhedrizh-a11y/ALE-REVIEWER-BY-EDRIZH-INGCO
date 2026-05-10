@@ -179,49 +179,14 @@ function retakeSameExam(){const last=readLastAttempt();if(!last?.questionIds?.le
 function startNewRandomExam(){pendingRetakeIds=null; $('setup').style.display='block'; $('results').style.display='none'; $('examShell').style.display='none'; startExam()}
 function choiceText(ch){return typeof ch==='string'?ch:(ch?.text??'')} function normalize(raw,sourceName){const arr=Array.isArray(raw)?raw:(Array.isArray(raw.cards)?raw.cards:[]);return arr.filter(c=>c&&c.question).map((c,idx)=>{const rawChoices=Array.isArray(c.choices)?c.choices:[];const cl=String(c.correctLetter||'').trim().toLowerCase();const normChoices=rawChoices.map((ch,i)=>({letter:String(ch.letter||String.fromCharCode(97+i)).toLowerCase(),text:choiceText(ch)})).filter(ch=>ch.text);let correctText=(normChoices.find(ch=>ch.letter===cl)||{}).text||'';if(!correctText&&c.answer)correctText=String(c.answer).replace(/^[A-Da-d]\s*[.)-]\s*/,'').trim();return{uid:c.uid||c.id||c.displayId||sourceName+'-'+idx,displayId:c.displayId||c.id||c.uid||('Q'+(idx+1)),category:c.category||sourceName,sourceName,question:String(c.question||'').trim(),choices:normChoices,correctText,correctLetter:cl,answer:c.answer||correctText,keyMemory:c.keyMemory||'',explanation:c.explanation||'',questionImage:c.questionImage||'',answerImage:c.answerImage||'',image:c.image||'',imageQuery:c.imageQuery||'',questionImageQuery:c.questionImageQuery||'',questionImageQueries:c.questionImageQueries||[],questionImageLayoutQueries:c.questionImageLayoutQueries||[],visual:c.visual||'',visualUrl:c.visualUrl||'',visualMode:c.visualMode||''}}).filter(c=>c.choices.length>=2&&c.correctText)}
 
-function isVisualIdentifyQuestion(card){
-  const qRaw = String(card.question || '').trim();
-  const q = qRaw.toLowerCase();
-  const hasVisualQuery = safeVisualQueries(card).length > 0;
-  const visualMode = String(card.visualMode || '').toLowerCase();
 
-  // Strict board-exam protection:
-  // Any generic Identify question without a direct image is unsafe in Mock Exam.
-  // Examples:
-  // - "Identify"
-  // - "Identify the pattern?"
-  // - "Identify the valve"
-  // - "What is shown?"
-  // - "Name this architectural feature"
-  const startsAsIdentify =
-    /^(identify|identify\.|identify:|identify the|identify this|what is shown|what is this|name this|which item is shown|which pattern is shown)/i.test(qRaw);
-
-  const genericIdentify =
-    q.length <= 90 && /(identify|what is shown|what is this|name this|shown|pattern)/i.test(q);
-
-  return visualMode === 'question' || hasVisualQuery || startsAsIdentify || genericIdentify;
-}
-function hasDirectEmbeddedQuestionImage(card){
-  return !!directImageCandidate(card.questionImage) ||
-         !!directImageCandidate(card.image) ||
-         !!directImageCandidate(card.visualUrl) ||
-         !!directImageCandidate(card.visual);
-}
+// v10 policy: keep Identify questions in the exam.
+// If an Identify card has no embedded image, show a neutral no-image notice only.
+// No search cue, no search button, no image query, no filename clue before submit.
 function filterMissingVisualIdentifyCards(cards){
-  const kept = [];
-  let skipped = 0;
-  cards.forEach(card => {
-    if(isVisualIdentifyQuestion(card) && !hasDirectEmbeddedQuestionImage(card)){
-      skipped++;
-    } else {
-      kept.push(card);
-    }
-  });
-  if(skipped){
-    loadedWarnings.push(skipped + ' identify/visual card(s) skipped because no embedded/direct image is available. Add questionImage/image assets to include them.');
-  }
-  return kept;
+  return cards;
 }
+
 
 
 async function loadCards(){loadedWarnings=[];const chunks=await Promise.all(CONFIG.sources.map(async src=>{try{const res=await fetch(src.path+'?v='+Date.now(),{cache:'no-store'});if(!res.ok)throw new Error(res.status);return normalize(await res.json(),src.name)}catch(e){loadedWarnings.push(src.name);return[]}}));allCards=filterMissingVisualIdentifyCards(chunks.flat());if(loadedWarnings.length){$('warning').style.display='block';$('warning').textContent='Some subject sources are not available yet: '+loadedWarnings.join(', ')}return allCards}
@@ -235,7 +200,7 @@ function directImageCandidate(value){if(!value)return'';const s=String(value).tr
   if(v.type==='image'){
     box.innerHTML=`<img src="${escapeHtml(v.url)}" alt="Question visual"><p class="visualNote">Question visual shown for identification. No answer labels, clues, explanations, or key memory are shown before submit.</p>`;
   }else{
-    box.innerHTML=`<p class="visualNote"><strong>Visual item:</strong> This question needs an image, but no safe embedded image is available in this card yet. No search cue is shown because it may reveal the answer. Add a direct questionImage/image URL or local asset to this card for true PRC-style visual identification.</p>`;
+    box.innerHTML=`<p class="visualNote"><strong>Visual item:</strong> This question is an Identify/visual item, but no embedded image is available in this card yet. No search cue, image query, or answer clue is shown before submit. Add a direct neutral questionImage/image asset later for full PRC-style visual identification.</p>`;
   }
 }
 function answerVisualHtml(card){for(const v of [card.answerImage,card.questionImage,card.image,card.visualUrl,card.visual]){const hit=directImageCandidate(v);if(hit)return`<div class="visualBox show"><img src="${escapeHtml(hit)}" alt="Review visual"><p class="visualNote">Review visual shown after submit.</p></div>`}const q=safeVisualQueries(card)[0];return q?`<div class="visualBox show"><p class="visualNote"><strong>Review visual reference:</strong> ${escapeHtml(q)}</p><div class="visualBtns"><a class="visualLink" href="${imageSearchUrl(q)}" target="_blank" rel="noopener">Open image search</a><a class="visualLink" href="${wikiSearchUrl(q)}" target="_blank" rel="noopener">Open Wikimedia Commons</a></div></div>`:''}
