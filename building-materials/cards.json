@@ -6145,24 +6145,12 @@
     "acceptedAnswers": [],
     "visualReviewNote": "Question visual is shown without name labels. The same image target is reused in the explanation for answer reinforcement.",
     "visualIntent": "material_identification",
-    "questionImageQuery": "turnbuckle hardware",
-    "questionImageQueries": [
-      "turnbuckle hardware",
-      "turnbuckle tension adjuster",
-      "turnbuckle cable"
-    ],
     "questionImageLayoutQueries": [
       "turnbuckle hardware",
       "turnbuckle tension adjuster",
       "turnbuckle cable"
     ],
     "aiImage": false,
-    "answerImageQuery": "turnbuckle hardware",
-    "answerImageQueries": [
-      "turnbuckle hardware",
-      "turnbuckle tension adjuster",
-      "turnbuckle cable"
-    ],
     "answerImageLayoutQueries": [
       "turnbuckle hardware",
       "turnbuckle tension adjuster",
@@ -6170,10 +6158,17 @@
     ],
     "answerImageAlt": "Explanation visual reference",
     "answerImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only if no preview loads.",
-    "visualAuditStatus": "NEEDS_HIGH_QUALITY_MARKET_PHOTO",
-    "visualAuditNote": "Do not use low-quality/weak reference image. Use clear real product/material market photo only.",
+    "visualAuditStatus": "PERSONAL_STUDY_IMAGE_READY",
+    "visualAuditNote": "Use close-up product photo of the metal turnbuckle only.",
     "needsMarketPhoto": true,
-    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only."
+    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only.",
+    "visualMode": "question",
+    "recommendedAssetFilename": "assets/BM-107.jpg",
+    "marketPhotoSourceCandidates": [
+      "https://khmtools.com.ph/products/mega-turnbuckle",
+      "https://khmtools.com.ph/products/megatools-turnbuckle"
+    ],
+    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset."
   },
   {
     "uid": "BM-108",
@@ -10815,10 +10810,17 @@
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "visualAuditStatus": "NEEDS_HIGH_QUALITY_MARKET_PHOTO",
-    "visualAuditNote": "Do not use low-quality/weak reference image. Use clear real product/material market photo only.",
+    "visualAuditStatus": "PERSONAL_STUDY_IMAGE_READY",
+    "visualAuditNote": "Use actual casement/window lock hardware product photo.",
     "needsMarketPhoto": true,
-    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only."
+    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only.",
+    "visualMode": "question",
+    "recommendedAssetFilename": "assets/BM-218.jpg",
+    "marketPhotoSourceCandidates": [
+      "https://www.rejuvenation.com/products/casement-window-lock/",
+      "https://www.reflectwindow.com/products/window-security-sash-lock-low-profile"
+    ],
+    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset."
   },
   {
     "uid": "BM-219",
@@ -10853,10 +10855,17 @@
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "visualAuditStatus": "NEEDS_HIGH_QUALITY_MARKET_PHOTO",
-    "visualAuditNote": "Do not use low-quality/weak reference image. Use clear real product/material market photo only.",
+    "visualAuditStatus": "PERSONAL_STUDY_IMAGE_READY",
+    "visualAuditNote": "Use actual sliding door lock product photo.",
     "needsMarketPhoto": true,
-    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only."
+    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only.",
+    "visualMode": "question",
+    "recommendedAssetFilename": "assets/BM-219.jpg",
+    "marketPhotoSourceCandidates": [
+      "https://gmfhardware.ph/products/sliding-lock-265m",
+      "https://www.homedepot.com/p/Prime-Line-Sliding-Door-Lock-3-11-16-in-Steel-Mortise-Style-E-2014/100174543"
+    ],
+    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset."
   },
   {
     "uid": "BM-220",
@@ -10891,10 +10900,17 @@
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "visualAuditStatus": "NEEDS_HIGH_QUALITY_MARKET_PHOTO",
-    "visualAuditNote": "Do not use low-quality/weak reference image. Use clear real product/material market photo only.",
+    "visualAuditStatus": "PERSONAL_STUDY_IMAGE_READY",
+    "visualAuditNote": "Use flush bolt product photo, not surface barrel bolt.",
     "needsMarketPhoto": true,
-    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only."
+    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only.",
+    "visualMode": "question",
+    "recommendedAssetFilename": "assets/BM-220.jpg",
+    "marketPhotoSourceCandidates": [
+      "https://mucheln.co.uk/products/brushed-brass-flush-door-bolt-128mm",
+      "https://www.grainger.com/product/KABA-ILCO-Door-Bolt-Flush-Bolt-20VF07"
+    ],
+    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset."
   },
   {
     "uid": "BM-221",
@@ -11037,10 +11053,17 @@
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "visualAuditStatus": "NEEDS_HIGH_QUALITY_MARKET_PHOTO",
-    "visualAuditNote": "Do not use low-quality/weak reference image. Use clear real product/material market photo only.",
+    "visualAuditStatus": "PERSONAL_STUDY_IMAGE_READY",
+    "visualAuditNote": "Use actual butterfly hinge product photo.",
     "needsMarketPhoto": true,
-    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only."
+    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only.",
+    "visualMode": "question",
+    "recommendedAssetFilename": "assets/BM-224.jpg",
+    "marketPhotoSourceCandidates": [
+      "https://www.monsoonhardware.com/butterfly-hinge-m21003-product/",
+      "https://www.houseofantiquehardware.com/butterfly-hinges"
+    ],
+    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset."
   },
   {
     "uid": "BM-225",
@@ -11291,10 +11314,17 @@
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "visualAuditStatus": "NEEDS_HIGH_QUALITY_MARKET_PHOTO",
-    "visualAuditNote": "Do not use low-quality/weak reference image. Use clear real product/material market photo only.",
+    "visualAuditStatus": "PERSONAL_STUDY_IMAGE_READY",
+    "visualAuditNote": "Use orange/yellow rebar safety cap product photo.",
     "needsMarketPhoto": true,
-    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only."
+    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only.",
+    "visualMode": "question",
+    "recommendedAssetFilename": "assets/BM-231.jpg",
+    "marketPhotoSourceCandidates": [
+      "https://www.lowes.com/pd/Blue-Hawk-3-to-7-Plastic-Rebar-Safety-Cap/4067490",
+      "https://surebuilt-usa.com/products/rebar-safety-cap/"
+    ],
+    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset."
   },
   {
     "uid": "BM-232",
@@ -11617,10 +11647,17 @@
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "visualAuditStatus": "NEEDS_HIGH_QUALITY_MARKET_PHOTO",
-    "visualAuditNote": "Do not use low-quality/weak reference image. Use clear real product/material market photo only.",
+    "visualAuditStatus": "PERSONAL_STUDY_IMAGE_READY",
+    "visualAuditNote": "Use modern rim lock hardware product photo.",
     "needsMarketPhoto": true,
-    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only."
+    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only.",
+    "visualMode": "question",
+    "recommendedAssetFilename": "assets/BM-240.jpg",
+    "marketPhotoSourceCandidates": [
+      "https://gmfhardware.ph/products/rim-lock",
+      "https://www.abhardware.co.uk/products/pewter-polished-brass-olde-victorian-rim-lock"
+    ],
+    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset."
   },
   {
     "uid": "BM-241",
@@ -11835,10 +11872,17 @@
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "visualAuditStatus": "NEEDS_HIGH_QUALITY_MARKET_PHOTO",
-    "visualAuditNote": "Do not use low-quality/weak reference image. Use clear real product/material market photo only.",
+    "visualAuditStatus": "PERSONAL_STUDY_IMAGE_READY",
+    "visualAuditNote": "Use actual hasp and staple product photo.",
     "needsMarketPhoto": true,
-    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only."
+    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only.",
+    "visualMode": "question",
+    "recommendedAssetFilename": "assets/BM-246.jpg",
+    "marketPhotoSourceCandidates": [
+      "https://khmtools.com.ph/products/wadfow-wan21-hasp-and-staple",
+      "https://www.screwfix.com/c/security-ironmongery/hasps-staples/cat840806"
+    ],
+    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset."
   },
   {
     "uid": "BM-247",
@@ -11873,10 +11917,17 @@
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "visualAuditStatus": "NEEDS_HIGH_QUALITY_MARKET_PHOTO",
-    "visualAuditNote": "Do not use low-quality/weak reference image. Use clear real product/material market photo only.",
+    "visualAuditStatus": "PERSONAL_STUDY_IMAGE_READY",
+    "visualAuditNote": "Use actual lever lock / mortice lock product photo.",
     "needsMarketPhoto": true,
-    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only."
+    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only.",
+    "visualMode": "question",
+    "recommendedAssetFilename": "assets/BM-247.jpg",
+    "marketPhotoSourceCandidates": [
+      "https://www.uniononline.co.uk/en/products/mortice-locks/deadlocks/2100-5-lever-deadlock",
+      "https://commons.wikimedia.org/wiki/File:Lever_Lock_and_Key.jpg"
+    ],
+    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset."
   },
   {
     "uid": "BM-248",
@@ -11911,10 +11962,17 @@
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "visualAuditStatus": "NEEDS_HIGH_QUALITY_MARKET_PHOTO",
-    "visualAuditNote": "Do not use low-quality/weak reference image. Use clear real product/material market photo only.",
+    "visualAuditStatus": "PERSONAL_STUDY_IMAGE_READY",
+    "visualAuditNote": "Use actual lid stay/support hardware product photo.",
     "needsMarketPhoto": true,
-    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only."
+    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only.",
+    "visualMode": "question",
+    "recommendedAssetFilename": "assets/BM-248.jpg",
+    "marketPhotoSourceCandidates": [
+      "https://www.hafele.com/us/en/product/lid-stay-door-restraint/P-00870534/",
+      "https://www.rockler.com/soft-down-lid-support"
+    ],
+    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset."
   },
   {
     "uid": "BM-249",
@@ -12371,10 +12429,17 @@
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "visualAuditStatus": "NEEDS_HIGH_QUALITY_MARKET_PHOTO",
-    "visualAuditNote": "Do not use low-quality/weak reference image. Use clear real product/material market photo only.",
+    "visualAuditStatus": "PERSONAL_STUDY_IMAGE_READY",
+    "visualAuditNote": "Use stainless steel glass spider fitting product photo.",
     "needsMarketPhoto": true,
-    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only."
+    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only.",
+    "visualMode": "question",
+    "recommendedAssetFilename": "assets/BM-260.jpg",
+    "marketPhotoSourceCandidates": [
+      "https://www.luju-ltd.com/en/product-632794/Spider-Fitting.html",
+      "https://www.glasxperts.com/glass-spider-fitting/"
+    ],
+    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset."
   },
   {
     "uid": "BM-261",
@@ -12481,10 +12546,17 @@
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "visualAuditStatus": "NEEDS_HIGH_QUALITY_MARKET_PHOTO",
-    "visualAuditNote": "Do not use low-quality/weak reference image. Use clear real product/material market photo only.",
+    "visualAuditStatus": "PERSONAL_STUDY_IMAGE_READY",
+    "visualAuditNote": "Use standalone glass railing spigot product photo or spigot holding glass clearly.",
     "needsMarketPhoto": true,
-    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only."
+    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only.",
+    "visualMode": "question",
+    "recommendedAssetFilename": "assets/BM-263.jpg",
+    "marketPhotoSourceCandidates": [
+      "https://glasswarehouse.us/products/glass-railing-systems/glass-railing-spigots/dorado-round-baseplate-spigot/",
+      "https://glassrailingstore.com/en-us/products/glass-railing-spigot"
+    ],
+    "personalStudyImageRule": "Use clean screenshot/crop of exact product/material; save as recommendedAssetFilename; then set questionImage to that local asset."
   },
   {
     "uid": "BM-264",
