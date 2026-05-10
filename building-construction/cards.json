@@ -7759,14 +7759,17 @@
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "columns construction system diagram photo",
     "answerImageQueries": [],
     "imageQuery": "",
     "imageQueries": [],
     "questionImageAlt": "",
     "answerImageAlt": "",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-124",
@@ -11214,7 +11217,7 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "answerImageQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "Miter joint fastener construction detail photo",
     "answerImageAlt": "",
     "answerImageCredit": "",
     "imageQuery": "",
@@ -11235,7 +11238,10 @@
     "questionImageLayoutQueries": [],
     "questionImageAlt": "",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-177",
@@ -11269,7 +11275,7 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "answerImageQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "Lap joint construction detail photo",
     "answerImageAlt": "",
     "answerImageCredit": "",
     "imageQuery": "",
@@ -11290,7 +11296,10 @@
     "questionImageLayoutQueries": [],
     "questionImageAlt": "",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "numeric_rule_computation"
+    "bcVisualCoachReason": "numeric_rule_computation",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-178",
@@ -11324,7 +11333,7 @@
     "questionImageAlt": "",
     "questionImageCredit": "",
     "answerImageQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "wedged through mortise and tenon construction detail photo",
     "answerImageAlt": "",
     "answerImageCredit": "",
     "imageQuery": "",
@@ -11342,7 +11351,10 @@
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageLayoutQueries": [],
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-179",
@@ -11431,7 +11443,7 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "answerImageQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "mortise and tenon construction detail photo",
     "answerImageAlt": "",
     "answerImageCredit": "",
     "imageQuery": "",
@@ -11452,7 +11464,10 @@
     "questionImageLayoutQueries": [],
     "questionImageAlt": "",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-181",
@@ -11790,7 +11805,7 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "answerImageQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "Biscuit joint construction detail photo",
     "answerImageAlt": "",
     "answerImageCredit": "",
     "imageQuery": "",
@@ -11811,7 +11826,10 @@
     "questionImageLayoutQueries": [],
     "questionImageAlt": "",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-187",
@@ -12834,7 +12852,7 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "answerImageQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "Column construction system diagram photo",
     "answerImageAlt": "",
     "answerImageCredit": "",
     "imageQuery": "",
@@ -12859,7 +12877,10 @@
     "questionImageLayoutQueries": [],
     "questionImageAlt": "",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-204",
@@ -13385,14 +13406,17 @@
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "One-way slab construction system diagram photo",
     "answerImageQueries": [],
     "imageQuery": "",
     "imageQueries": [],
     "questionImageAlt": "",
     "answerImageAlt": "",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "numeric_rule_computation"
+    "bcVisualCoachReason": "numeric_rule_computation",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-212",
@@ -13484,7 +13508,7 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "answerImageQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "Flat slab construction system diagram photo",
     "answerImageAlt": "",
     "answerImageCredit": "",
     "imageQuery": "",
@@ -13505,7 +13529,10 @@
     "questionImageLayoutQueries": [],
     "questionImageAlt": "",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-214",
@@ -14093,7 +14120,7 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "answerImageQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "Space frame construction system diagram photo",
     "answerImageAlt": "",
     "answerImageCredit": "",
     "imageQuery": "",
@@ -14114,7 +14141,10 @@
     "questionImageLayoutQueries": [],
     "questionImageAlt": "",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-224",
@@ -20135,7 +20165,7 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "answerImageQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "e. Space Frame Construction construction system diagram photo",
     "answerImageAlt": "",
     "answerImageCredit": "",
     "imageQuery": "",
@@ -20156,7 +20186,10 @@
     "questionImageLayoutQueries": [],
     "questionImageAlt": "",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-322",
@@ -22459,7 +22492,7 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "answerImageQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "Miter Saw construction tool photo",
     "answerImageAlt": "",
     "answerImageCredit": "",
     "imageQuery": "",
@@ -22481,7 +22514,10 @@
     "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Miter_saw.jpg?width=1000",
     "visualMode": "question",
     "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
-    "localAssetSuggestion": "assets/BCON-356.jpg"
+    "localAssetSuggestion": "assets/BCON-356.jpg",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-357",
@@ -22515,7 +22551,7 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "answerImageQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "chisel construction tool photo",
     "answerImageAlt": "",
     "answerImageCredit": "",
     "imageQuery": "",
@@ -22537,7 +22573,10 @@
     "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Framing-chisel.png?width=1000",
     "visualMode": "question",
     "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
-    "localAssetSuggestion": "assets/BCON-357.png"
+    "localAssetSuggestion": "assets/BCON-357.png",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-358",
@@ -22571,7 +22610,7 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "answerImageQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "Spade bit construction tool photo",
     "answerImageAlt": "",
     "answerImageCredit": "",
     "imageQuery": "",
@@ -22593,7 +22632,10 @@
     "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Spade_bits.JPG?width=1000",
     "visualMode": "question",
     "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
-    "localAssetSuggestion": "assets/BCON-358.jpg"
+    "localAssetSuggestion": "assets/BCON-358.jpg",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-359",
@@ -22926,7 +22968,7 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "answerImageQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "bush hammer construction tool photo",
     "answerImageAlt": "",
     "answerImageCredit": "",
     "imageQuery": "",
@@ -22948,7 +22990,10 @@
     "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Bush_Hammer_Modern.jpg?width=1000",
     "visualMode": "question",
     "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH6.csv.",
-    "localAssetSuggestion": "assets/BCON-364.jpg"
+    "localAssetSuggestion": "assets/BCON-364.jpg",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-365",
@@ -23165,7 +23210,7 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "answerImageQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "Jigsaw construction tool photo",
     "answerImageAlt": "",
     "answerImageCredit": "",
     "imageQuery": "",
@@ -23187,7 +23232,10 @@
     "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Skil_jigsaw.jpg?width=1000",
     "visualMode": "question",
     "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
-    "localAssetSuggestion": "assets/BCON-368.jpg"
+    "localAssetSuggestion": "assets/BCON-368.jpg",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-369",
@@ -23221,7 +23269,7 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "answerImageQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "Vibratory Rammer construction tool photo",
     "answerImageAlt": "",
     "answerImageCredit": "",
     "imageQuery": "",
@@ -23243,7 +23291,10 @@
     "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Building%20Fairs%20Brno%202011%20(030).jpg?width=1000",
     "visualMode": "question",
     "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH4.csv.",
-    "localAssetSuggestion": "assets/BCON-369.jpg"
+    "localAssetSuggestion": "assets/BCON-369.jpg",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-370",
@@ -23396,7 +23447,7 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "answerImageQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "concrete spacer construction visual reference",
     "answerImageAlt": "",
     "answerImageCredit": "",
     "imageQuery": "",
@@ -23418,7 +23469,10 @@
     "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Concrete%20spacer.jpg?width=1000",
     "visualMode": "question",
     "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH4.csv.",
-    "localAssetSuggestion": "assets/BCON-372.jpg"
+    "localAssetSuggestion": "assets/BCON-372.jpg",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-373",
@@ -23452,7 +23506,7 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "answerImageQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "chisel construction tool photo",
     "answerImageAlt": "",
     "answerImageCredit": "",
     "imageQuery": "",
@@ -23474,7 +23528,10 @@
     "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Framing-chisel.png?width=1000",
     "visualMode": "question",
     "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH4.csv.",
-    "localAssetSuggestion": "assets/BCON-373.png"
+    "localAssetSuggestion": "assets/BCON-373.png",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-374",
@@ -23620,7 +23677,7 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "answerImageQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "Power Trowel construction tool photo",
     "answerImageAlt": "",
     "answerImageCredit": "",
     "imageQuery": "",
@@ -23642,7 +23699,10 @@
     "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Power_trowel_01.jpg?width=1000",
     "visualMode": "question",
     "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
-    "localAssetSuggestion": "assets/BCON-376.jpg"
+    "localAssetSuggestion": "assets/BCON-376.jpg",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-377",
@@ -23743,7 +23803,7 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "answerImageQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "Auger Bit construction tool photo",
     "answerImageAlt": "",
     "answerImageCredit": "",
     "imageQuery": "",
@@ -23765,7 +23825,10 @@
     "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Auger_drill_bit.png?width=1000",
     "visualMode": "question",
     "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
-    "localAssetSuggestion": "assets/BCON-378.png"
+    "localAssetSuggestion": "assets/BCON-378.png",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-379",
@@ -23799,7 +23862,7 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "answerImageQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "Jack Base construction equipment photo",
     "answerImageAlt": "",
     "answerImageCredit": "",
     "imageQuery": "",
@@ -23821,7 +23884,10 @@
     "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Screw_jack_structual_drawing.png?width=1000",
     "visualMode": "question",
     "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH5.csv.",
-    "localAssetSuggestion": "assets/BCON-379.png"
+    "localAssetSuggestion": "assets/BCON-379.png",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-380",
@@ -23926,7 +23992,7 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "answerImageQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "Bubbledeck construction system diagram photo",
     "answerImageAlt": "",
     "answerImageCredit": "",
     "imageQuery": "",
@@ -23948,7 +24014,10 @@
     "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/BubbleDeck_SemiPrecastPanel.jpg?width=1000",
     "visualMode": "question",
     "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH5.csv.",
-    "localAssetSuggestion": "assets/BCON-381.jpg"
+    "localAssetSuggestion": "assets/BCON-381.jpg",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-382",
@@ -24049,7 +24118,7 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "answerImageQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "Waffle Slab construction system diagram photo",
     "answerImageAlt": "",
     "answerImageCredit": "",
     "imageQuery": "",
@@ -24071,7 +24140,10 @@
     "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Waffle_slab_section.jpg?width=1000",
     "visualMode": "question",
     "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
-    "localAssetSuggestion": "assets/BCON-383.jpg"
+    "localAssetSuggestion": "assets/BCON-383.jpg",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-384",
@@ -24217,7 +24289,7 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "answerImageQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "Bench Drill construction tool photo",
     "answerImageAlt": "",
     "answerImageCredit": "",
     "imageQuery": "",
@@ -24239,7 +24311,10 @@
     "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Drillpress.jpg?width=1000",
     "visualMode": "question",
     "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
-    "localAssetSuggestion": "assets/BCON-386.jpg"
+    "localAssetSuggestion": "assets/BCON-386.jpg",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-387",
@@ -24329,7 +24404,7 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "answerImageQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "Diagrid construction system diagram photo",
     "answerImageAlt": "",
     "answerImageCredit": "",
     "imageQuery": "",
@@ -24351,7 +24426,10 @@
     "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/30-St-Mary-Axe.jpg?width=1000",
     "visualMode": "question",
     "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH4.csv.",
-    "localAssetSuggestion": "assets/BCON-388.jpg"
+    "localAssetSuggestion": "assets/BCON-388.jpg",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-389",
@@ -24385,7 +24463,7 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "answerImageQueries": [],
-    "answerImageQuery": "",
+    "answerImageQuery": "Belt Sander construction tool photo",
     "answerImageAlt": "",
     "answerImageCredit": "",
     "imageQuery": "",
@@ -24407,7 +24485,10 @@
     "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Belt_sander_bosch.jpg?width=1000",
     "visualMode": "question",
     "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
-    "localAssetSuggestion": "assets/BCON-389.jpg"
+    "localAssetSuggestion": "assets/BCON-389.jpg",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the construction tool/detail/system is easier to understand visually."
   },
   {
     "uid": "BC-390",
