@@ -7748,7 +7748,6 @@
     "explanation": "Ulit: sa choices na ito, ang best answer ay Water Closet Cubicle.\nDito gusto kong maging honest: sa actual practice, several toilet-related areas can benefit from exhaust ventilation, especially shower areas for moisture and water closet areas for odor control. Pero kung one best answer lang ang hahanapin sa reviewer logic, pinaka-intended dito ang Water Closet Cubicle dahil iyon ang pinaka-directly associated with odor removal in enclosed toilet spaces.\nBakit ito ang tama?\nAng exhaust fan is commonly associated with enclosed toilet areas to remove:\n• odor\n• stale air\n• humidity\n• contaminants\nSa listed options, ang water closet cubicle ang pinaka-direct at pinaka-classic na space na inaasahang i-exhaust.\nBakit mali ang ibang choices?\nb. Urinal Area — puwede rin sa actual design, pero less \"single best answer\" than WC cubicle in reviewer logic.\nc. Shower Area — moisture control yes, but the most classic exhaust-fan answer in sanitary spaces is still enclosed WC area.\nd. Lavatory Area — not the most direct answer.\ne. Hand Spray — fixture ito, hindi area.\nElimination method\nGanito ka dapat mag-isip:\n• Hanapin ang pinaka-odorous and enclosed sanitation space\n• Huwag pumili ng fixture\n• Huwag pumili ng less critical area if there is a stronger odor-control candidate\nCommon trap sa board exam\nAng trap dito ay shower area, kasi iniisip mo agad moisture. Tama naman ang concern, pero reviewer-type question ito, at ang mas classic answer ay WC cubicle.\nAno ang dapat mong tandaan dito?\nSa toilet-area questions, exhaust fan is most strongly associated with the water closet cubicle.\n________________________________________",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "question",
     "visualIntent": "concept_visual",
     "visualReviewNote": "Concept visual only; no remote image needed.",
     "answerConceptVisual": {
@@ -7756,15 +7755,7 @@
       "main": "A. Water Closet Cubicle",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Light_switch.jpg?width=1000",
-    "questionImageAlt": "Question visual for identification.",
-    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
-    "visualSourceType": "source-backed-remote",
-    "visualSourceRefs": [
-      "https://commons.wikimedia.org/wiki/File:Light_switch.jpg"
-    ],
-    "localAssetSuggestion": "assets/UTIL-179.jpg"
+    }
   },
   {
     "uid": "UTIL-180",
@@ -8046,7 +8037,6 @@
     "explanation": "Ulit: ang best answer dito ay Eyeball Light with Halogen Bulb.\nDito accent lighting ang logic. Ang key phrase ay highlight the menu board.\nBakit ito ang tama?\nAng eyeball light is adjustable/directional, kaya maganda siya for aiming light toward a vertical feature like a menu board.\nAng halogen bulb also gives crisp accent lighting and good color rendering in classic reviewer logic.\nBakit hindi spot light with metal halide?\nPuwede rin sana sa ibang display situations, pero for a smaller interior retail application like a milk tea shop menu board, the more practical and reviewer-friendly interior accent answer is eyeball light with halogen bulb.\nBakit mali ang ibang choices?\na. Track Light with HPS lamp — HPS has poor color rendering; not ideal for interior menu-board highlighting.\nb. Pendant Light with Mercury Vapor Lamp — wrong mood and wrong lamp logic for menu-board accent.\nd. Downlight with LED Bulb — too general; not as targeted for highlighting a board.\ne. Spot light with Metal Halide Bulb — strong contender, but more likely overkill versus the classic small-shop accent answer.\nElimination method\nGanito ang tamang isip:\n• Targeted accent ba ang kailangan? Oo.\n• So alisin ang broad general lighting like downlight.\n• Alisin ang poor-color-rendering or wrong-use lamps like HPS and mercury vapor.\n• Between remaining directional accent choices, piliin ang mas maliit-shop interior solution: eyeball light with halogen bulb.\nCommon trap sa board exam\nAng trap dito ay spot light with metal halide bulb, kasi accent din iyon.\nPero sa maliit na interior menu-board highlighting, the more classic reviewer answer is eyeball light with halogen.\nAno ang dapat mong tandaan dito?\nFor small interior display/menu highlight, adjustable accent light ang sagot — dito, Eyeball Light with Halogen Bulb.\n________________________________________\nYung huling item sa ibaba tungkol sa refrigerator at power panel ay putol ang tanong sa upload, so hindi pa siya fully visible. Hindi muna natin siya sasagutin para hindi tayo manghula lampas sa nakikita sa page. Sige, tuloy tayo.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "question",
     "visualIntent": "concept_visual",
     "visualReviewNote": "Concept visual only; no remote image needed.",
     "answerConceptVisual": {
@@ -8054,15 +8044,7 @@
       "main": "C. Eyeball Light with Halogen Bulb",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    },
-    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Ceiling_air_diffuser.jpg?width=1000",
-    "questionImageAlt": "Question visual for identification.",
-    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
-    "visualSourceType": "source-backed-remote",
-    "visualSourceRefs": [
-      "https://commons.wikimedia.org/wiki/File:Ceiling_air_diffuser.jpg"
-    ],
-    "localAssetSuggestion": "assets/UTIL-185.jpg"
+    }
   },
   {
     "uid": "UTIL-186",
@@ -10253,7 +10235,7 @@
       "T handle torque wrench plumbing"
     ],
     "questionImageAlt": "Question visual for identification.",
-    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH5.csv.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH6.csv.",
     "answerImageQuery": "no hub torque wrench",
     "answerImageQueries": [
       "no hub torque wrench",
@@ -10268,10 +10250,10 @@
     "answerImageAlt": "Explanation visual reference: No-hub torque wrench",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
     "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
-    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Torque_wrench.jpg?width=1000",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Click-torque-wrench.jpg?width=1000",
     "visualSourceType": "source-backed-remote",
     "visualSourceRefs": [
-      "https://commons.wikimedia.org/wiki/File:Torque_wrench.jpg"
+      "https://commons.wikimedia.org/wiki/File:Click-torque-wrench.jpg"
     ],
     "localAssetSuggestion": "assets/UTIL-237.jpg"
   },

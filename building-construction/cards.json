@@ -22682,7 +22682,6 @@
     "answer": "a. Bored Pile",
     "keyMemory": "Sa reviewer logic, bored pile is often the most expensive pile option.",
     "explanation": "Correct answer: a. Bored Pile\nUlit: ang tamang sagot ay Bored Pile.\nBakit bored pile?\nSa general construction cost logic, bored piles tend to be among the more expensive foundation pile systems because of specialized drilling equipment, slurry/casing possibilities, spoil removal, and more controlled construction process.\nBakit hindi sheet pile?\nSheet piles are retaining/excavation support systems; ibang function at hindi ito ang most likely answer sa pile-cost comparison item.\nBakit hindi driven or hammered pile?\nGenerally more production-based and often less costly per unit than bored piling in many ordinary situations.\nElimination method\nKapag tinanong ang most expensive and choices include bored pile, malakas lagi iyon dahil mas specialized ang process.\nAno ang dapat mong tandaan dito?\nSa reviewer logic, bored pile is often the most expensive pile option.",
-    "image": "",
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "answerImageQueries": [
@@ -22699,10 +22698,6 @@
     ],
     "imageAlt": "BC answer visual: Bored pile construction",
     "imageCredit": "Strict exact-title online thumbnail if available; otherwise safe fallback label.",
-    "visualSourceRefs": [
-      "https://commons.wikimedia.org/wiki/File:Handsaw.jpg"
-    ],
-    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: visual is used only when the question benefits from seeing a physical component, process, tool, joint, bond, detail, or construction form. Labels/clues stay hidden before answering.",
     "questionImageQuery": "Bored pile construction",
@@ -22714,13 +22709,8 @@
       "Bored pile construction",
       "Drilled shaft foundation"
     ],
-    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "keep_question_visual_if_needed",
-    "bcVisualCoachReason": "visual_construction_term",
-    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Handsaw.jpg?width=1000",
-    "visualMode": "question",
-    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
-    "localAssetSuggestion": "assets/BCON-360.jpg"
+    "bcVisualCoachReason": "visual_construction_term"
   },
   {
     "uid": "BC-361",
@@ -22750,7 +22740,6 @@
     "answer": "a. Bored Pile",
     "keyMemory": "Auger = boring/drilling, therefore bored pile.",
     "explanation": "Correct answer: a. Bored Pile\nUlit: ang tamang sagot ay Bored Pile.\nBakit bored pile?\nAn auger is a drilling tool. Bored piles are constructed by drilling/boring into the ground, so auger use is directly associated with bored piles.\nBakit hindi sheet pile or driven pile?\nThose are typically driven into the ground, not drilled with auger.\nBakit hindi caisson pile?\nCaissons have different sinking/excavation methods; the clean reviewer match for auger is still bored pile.\nElimination method\nKeyword:\n•\tauger\n•\tboring/drilling\nThat points directly to bored pile.\nAno ang dapat mong tandaan dito?\nAuger = boring/drilling, therefore bored pile.",
-    "image": "",
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "answerImageQueries": [
@@ -22767,10 +22756,6 @@
     ],
     "imageAlt": "BC answer visual: Auger bored pile",
     "imageCredit": "Strict exact-title online thumbnail if available; otherwise safe fallback label.",
-    "visualSourceRefs": [
-      "https://commons.wikimedia.org/wiki/File:Brick_trowel.jpg"
-    ],
-    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: visual is used only when the question benefits from seeing a physical component, process, tool, joint, bond, detail, or construction form. Labels/clues stay hidden before answering.",
     "questionImageQuery": "Auger bored pile",
@@ -22782,13 +22767,8 @@
       "Auger bored pile",
       "Bored pile drilling auger"
     ],
-    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "keep_question_visual_if_needed",
-    "bcVisualCoachReason": "visual_construction_term",
-    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Brick_trowel.jpg?width=1000",
-    "visualMode": "question",
-    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
-    "localAssetSuggestion": "assets/BCON-361.jpg"
+    "bcVisualCoachReason": "visual_construction_term"
   },
   {
     "uid": "BC-362",
@@ -22954,7 +22934,7 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      "https://commons.wikimedia.org/wiki/File:Plumb-bob.jpg"
+      "https://commons.wikimedia.org/wiki/File:Bush_Hammer_Modern.jpg"
     ],
     "visualSourceType": "source-backed-remote",
     "aiImage": false,
@@ -22965,9 +22945,9 @@
     "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
     "bcVisualCoachReason": "default_no_visual",
-    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Plumb-bob.jpg?width=1000",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Bush_Hammer_Modern.jpg?width=1000",
     "visualMode": "question",
-    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH6.csv.",
     "localAssetSuggestion": "assets/BCON-364.jpg"
   },
   {
@@ -23536,7 +23516,7 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      "https://commons.wikimedia.org/wiki/File:Hifit-hammer.jpg"
+      "https://commons.wikimedia.org/wiki/File:Jackhammer.jpg"
     ],
     "visualSourceType": "source-backed-remote",
     "aiImage": false,
@@ -23547,9 +23527,9 @@
     "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
     "bcVisualCoachReason": "default_no_visual",
-    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Hifit-hammer.jpg?width=1000",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Jackhammer.jpg?width=1000",
     "visualMode": "question",
-    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH4.csv.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH6.csv.",
     "localAssetSuggestion": "assets/BCON-374.jpg"
   },
   {
