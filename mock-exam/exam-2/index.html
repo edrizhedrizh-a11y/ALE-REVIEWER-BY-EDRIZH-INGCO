@@ -53,6 +53,17 @@ body.markupFullscreen .sheet,body.markupFullscreen .hero,body.markupFullscreen #
 .bankList{display:grid;gap:10px;margin-top:10px}
 .bankCard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px}
 
+
+.fullReviewControls{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;padding:12px;border:1px solid var(--line);border-radius:16px;background:#fffaf0}
+.reviewItem.correctReview{border-left:6px solid #1f8f4d}
+.reviewItem.wrongReview{border-left:6px solid #b42318}
+.reviewItem.blankReview{border-left:6px solid #9a6700}
+.reviewTag{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 10px;margin:3px;font-size:12px;font-weight:800;color:#344054}
+.reviewTag.correct{color:#137333}.reviewTag.wrong{color:#b42318}.reviewTag.blank{color:#9a6700}
+.choiceAudit{display:grid;gap:6px;margin:10px 0}.choiceAudit div{border:1px solid var(--line);border-radius:12px;padding:8px 10px;background:#fff}
+.choiceAudit .chosen{outline:2px solid #6ea8fe}.choiceAudit .correctChoice{background:#f0fff7;border-color:#b7dfc8}
+.reviewSearch{min-height:42px;border:1px solid var(--line);border-radius:999px;padding:8px 12px;min-width:240px;font:inherit}
+
 @media(max-width:860px){
   .markupToolbar{display:block}
   .toolRow .toolBtn{min-height:42px;padding:9px 10px}
@@ -67,6 +78,17 @@ body.markupFullscreen .sheet,body.markupFullscreen .hero,body.markupFullscreen #
 .fileInput{max-width:260px}
 .bankList{display:grid;gap:10px;margin-top:10px}
 .bankCard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px}
+
+
+.fullReviewControls{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;padding:12px;border:1px solid var(--line);border-radius:16px;background:#fffaf0}
+.reviewItem.correctReview{border-left:6px solid #1f8f4d}
+.reviewItem.wrongReview{border-left:6px solid #b42318}
+.reviewItem.blankReview{border-left:6px solid #9a6700}
+.reviewTag{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 10px;margin:3px;font-size:12px;font-weight:800;color:#344054}
+.reviewTag.correct{color:#137333}.reviewTag.wrong{color:#b42318}.reviewTag.blank{color:#9a6700}
+.choiceAudit{display:grid;gap:6px;margin:10px 0}.choiceAudit div{border:1px solid var(--line);border-radius:12px;padding:8px 10px;background:#fff}
+.choiceAudit .chosen{outline:2px solid #6ea8fe}.choiceAudit .correctChoice{background:#f0fff7;border-color:#b7dfc8}
+.reviewSearch{min-height:42px;border:1px solid var(--line);border-radius:999px;padding:8px 12px;min-width:240px;font:inherit}
 
 @media(max-width:860px){body{padding:14px}.hero{padding:20px}h1{font-size:24px}.setupGrid,.scoreBox{grid-template-columns:1fr}.question{font-size:17px}}
 </style>
@@ -91,7 +113,7 @@ body.markupFullscreen .sheet,body.markupFullscreen .hero,body.markupFullscreen #
   <div id="historyBox"></div>
 </section>
 <section class="examShell" id="examShell">
-  <div class="examTop"><div><strong id="progressText"></strong><div class="mini" id="sourceText"></div><div class="mini" id="quotaText"></div><div class="paceBox" id="paceBox">Pacing: waiting to start.</div></div><div class="timer" id="timer">--:--</div></div>
+  <div class="examTop"><div><strong id="progressText"></strong><div class="mini" id="sourceText"></div><div class="paceBox" id="paceBox">Pacing: waiting to start.</div></div><div class="timer" id="timer">--:--</div></div>
   <div class="examLayout">
     <main class="booklet">
       <div class="markupArea" id="markupArea"><div class="qMeta"><span class="pill" id="qid"></span><span class="pill" id="qcat"></span><span class="pill" id="markPill">No mark</span></div>
@@ -174,15 +196,33 @@ function retakeSameExam(){const last=readLastAttempt();if(!last?.questionIds?.le
 function startNewRandomExam(){pendingRetakeIds=null; $('setup').style.display='block'; $('results').style.display='none'; $('examShell').style.display='none'; startExam()}
 function choiceText(ch){return typeof ch==='string'?ch:(ch?.text??'')} function normalize(raw,sourceName){const arr=Array.isArray(raw)?raw:(Array.isArray(raw.cards)?raw.cards:[]);return arr.filter(c=>c&&c.question).map((c,idx)=>{const rawChoices=Array.isArray(c.choices)?c.choices:[];const cl=String(c.correctLetter||'').trim().toLowerCase();const normChoices=rawChoices.map((ch,i)=>({letter:String(ch.letter||String.fromCharCode(97+i)).toLowerCase(),text:choiceText(ch)})).filter(ch=>ch.text);let correctText=(normChoices.find(ch=>ch.letter===cl)||{}).text||'';if(!correctText&&c.answer)correctText=String(c.answer).replace(/^[A-Da-d]\s*[.)-]\s*/,'').trim();return{uid:c.uid||c.id||c.displayId||sourceName+'-'+idx,displayId:c.displayId||c.id||c.uid||('Q'+(idx+1)),category:c.category||sourceName,sourceName,question:String(c.question||'').trim(),choices:normChoices,correctText,correctLetter:cl,answer:c.answer||correctText,keyMemory:c.keyMemory||'',explanation:c.explanation||'',questionImage:c.questionImage||'',answerImage:c.answerImage||'',image:c.image||'',imageQuery:c.imageQuery||'',questionImageQuery:c.questionImageQuery||'',questionImageQueries:c.questionImageQueries||[],questionImageLayoutQueries:c.questionImageLayoutQueries||[],visual:c.visual||'',visualUrl:c.visualUrl||'',visualMode:c.visualMode||''}}).filter(c=>c.choices.length>=2&&c.correctText)}
 
-
-// v10 policy: keep Identify questions in the exam.
-// If an Identify card has no embedded image, show a neutral no-image notice only.
-// No search cue, no search button, no image query, no filename clue before submit.
-function filterMissingVisualIdentifyCards(cards){
-  return cards;
+function isVisualIdentifyQuestion(card){
+  const qRaw = String(card.question || '').trim();
+  const q = qRaw.toLowerCase();
+  const hasVisualQuery = safeVisualQueries(card).length > 0;
+  const visualMode = String(card.visualMode || '').toLowerCase();
+  const veryShortIdentify = /^(identify|identify\.|identify:|identify the|what is shown|name this|which item is shown)/i.test(qRaw);
+  const genericQuestion = q.length <= 55 && /(identify|shown|name this|what is this)/i.test(q);
+  return hasVisualQuery && (visualMode === 'question' || veryShortIdentify || genericQuestion);
 }
-
-
+function hasDirectEmbeddedQuestionImage(card){
+  return !!directImageCandidate(card.questionImage) || !!directImageCandidate(card.image) || !!directImageCandidate(card.visualUrl) || !!directImageCandidate(card.visual);
+}
+function filterMissingVisualIdentifyCards(cards){
+  const kept = [];
+  let skipped = 0;
+  cards.forEach(card => {
+    if(isVisualIdentifyQuestion(card) && !hasDirectEmbeddedQuestionImage(card)){
+      skipped++;
+    } else {
+      kept.push(card);
+    }
+  });
+  if(skipped){
+    loadedWarnings.push(skipped + ' visual-identification card(s) skipped because no embedded/direct image is available. Add questionImage/image assets to include them.');
+  }
+  return kept;
+}
 
 async function loadCards(){loadedWarnings=[];const chunks=await Promise.all(CONFIG.sources.map(async src=>{try{const res=await fetch(src.path+'?v='+Date.now(),{cache:'no-store'});if(!res.ok)throw new Error(res.status);return normalize(await res.json(),src.name)}catch(e){loadedWarnings.push(src.name);return[]}}));allCards=filterMissingVisualIdentifyCards(chunks.flat());if(loadedWarnings.length){$('warning').style.display='block';$('warning').textContent='Some subject sources are not available yet: '+loadedWarnings.join(', ')}return allCards}
 function setupOptions(){$('countSelect').innerHTML=CONFIG.options.map(o=>`<option value="${o.items}">${o.items} items — ${o.label}</option>`).join('')} function calcLimit(items,mode){if(mode==='none')return 0;let s=items*CONFIG.paceMinutes*60;if(mode==='pressure')s*=.8;if(mode==='sprint')s*=.5;return Math.round(s)}
@@ -195,11 +235,56 @@ function directImageCandidate(value){if(!value)return'';const s=String(value).tr
   if(v.type==='image'){
     box.innerHTML=`<img src="${escapeHtml(v.url)}" alt="Question visual"><p class="visualNote">Question visual shown for identification. No answer labels, clues, explanations, or key memory are shown before submit.</p>`;
   }else{
-    box.innerHTML=`<p class="visualNote"><strong>Visual item:</strong> This question is an Identify/visual item, but no embedded image is available in this card yet. No search cue, image query, or answer clue is shown before submit. Add a direct neutral questionImage/image asset later for full PRC-style visual identification.</p>`;
+    box.innerHTML=`<p class="visualNote"><strong>Visual item:</strong> This question needs an image, but no safe embedded image is available in this card yet. No search cue is shown because it may reveal the answer. Add a direct questionImage/image URL or local asset to this card for true PRC-style visual identification.</p>`;
   }
 }
 function answerVisualHtml(card){for(const v of [card.answerImage,card.questionImage,card.image,card.visualUrl,card.visual]){const hit=directImageCandidate(v);if(hit)return`<div class="visualBox show"><img src="${escapeHtml(hit)}" alt="Review visual"><p class="visualNote">Review visual shown after submit.</p></div>`}const q=safeVisualQueries(card)[0];return q?`<div class="visualBox show"><p class="visualNote"><strong>Review visual reference:</strong> ${escapeHtml(q)}</p><div class="visualBtns"><a class="visualLink" href="${imageSearchUrl(q)}" target="_blank" rel="noopener">Open image search</a><a class="visualLink" href="${wikiSearchUrl(q)}" target="_blank" rel="noopener">Open Wikimedia Commons</a></div></div>`:''}
 
+
+
+// ===== v9 full exam review =====
+let fullReviewFilter='all';
+function qReviewStatus(i){const q=exam[i]; if(answers[i]==null)return 'blank'; return q.randomizedChoices[answers[i]]?.correct?'correct':'wrong'}
+function qReviewLabel(s){return s==='correct'?'Correct':(s==='wrong'?'Wrong':'Unanswered')}
+function qReviewClass(s){return s==='correct'?'correctReview':(s==='wrong'?'wrongReview':'blankReview')}
+function renderChoiceAudit(q,i){
+  return `<div class="choiceAudit">`+q.randomizedChoices.map((ch,idx)=>{
+    const letter=String.fromCharCode(65+idx), chosen=answers[i]===idx, corr=!!ch.correct;
+    return `<div class="${chosen?'chosen ':''}${corr?'correctChoice':''}"><strong>${letter}. ${escapeHtml(ch.text)}</strong> ${chosen?'<span class="reviewTag">Your final answer</span>':''} ${corr?'<span class="reviewTag correct">Correct answer</span>':''}</div>`;
+  }).join('')+`</div>`;
+}
+function fullReviewItem(q,i){
+  const st=qReviewStatus(i);
+  const user=answers[i]==null?'Unanswered':String.fromCharCode(65+answers[i])+'. '+(q.randomizedChoices[answers[i]]?.text||'');
+  const ci=(q.correctIndex!=null?q.correctIndex:q.randomizedChoices.findIndex(ch=>ch.correct));
+  const corr=ci>=0?String.fromCharCode(65+ci)+'. '+(q.randomizedChoices[ci]?.text||q.correctText||q.answer||''):(q.correctText||q.answer||'');
+  const orig=(typeof originalAnswers!=='undefined'&&originalAnswers&&originalAnswers[i]!=null)?String.fromCharCode(65+originalAnswers[i])+'. '+(q.randomizedChoices[originalAnswers[i]]?.text||''):'No change / first answer not tracked';
+  const changed=(typeof originalAnswers!=='undefined'&&originalAnswers&&originalAnswers[i]!=null&&answers[i]!=null&&originalAnswers[i]!==answers[i]);
+  const mark=marks[i]?markLabels[marks[i]]:'No mark';
+  return `<div class="reviewItem ${qReviewClass(st)}" data-status="${st}" data-mark="${escapeHtml(marks[i]||'')}" data-qtext="${escapeHtml((q.question||'')+' '+(q.category||''))}">
+    <span class="reviewTag ${st}">${qReviewLabel(st)}</span><span class="reviewTag">Q${i+1}</span><span class="reviewTag">${escapeHtml(q.category||'Uncategorized')}</span><span class="reviewTag">${escapeHtml(mark)}</span>${changed?'<span class="reviewTag">Answer changed</span>':''}
+    <h3>${escapeHtml(q.question||'')}</h3>${answerVisualHtml(q)}${annotationReviewHtml(q)}${renderChoiceAudit(q,i)}
+    <p><strong>Your final answer:</strong> ${escapeHtml(user)}</p><p><strong>Correct answer:</strong> ${escapeHtml(corr)}</p><p><strong>Original answer:</strong> ${escapeHtml(orig)}</p>
+    ${q.explanation?`<p><strong>Explanation:</strong> ${escapeHtml(q.explanation)}</p>`:''}${q.keyMemory?`<p><strong>Key memory:</strong> ${escapeHtml(q.keyMemory)}</p>`:''}
+  </div>`;
+}
+function renderFullExamReview(){
+  const box=document.getElementById('fullReview'); if(!box)return;
+  const counts=exam.reduce((a,q,i)=>{a[qReviewStatus(i)]++; if(marks[i])a.marked++; return a},{correct:0,wrong:0,blank:0,marked:0});
+  box.innerHTML=`<h2>Full Exam Review / Counter-check</h2><p class="mini">Lahat ng questions nandito: tama, mali, unanswered, at marked.</p>
+  <div class="fullReviewControls"><button class="btn primary" onclick="setFullReviewFilter('all')">All ${exam.length}</button><button class="btn" onclick="setFullReviewFilter('correct')">Correct ${counts.correct}</button><button class="btn" onclick="setFullReviewFilter('wrong')">Wrong ${counts.wrong}</button><button class="btn" onclick="setFullReviewFilter('blank')">Unanswered ${counts.blank}</button><button class="btn" onclick="setFullReviewFilter('marked')">Marked ${counts.marked}</button><input class="reviewSearch" id="reviewSearch" placeholder="Search question/category..." oninput="applyFullReviewFilter()"></div>
+  <div id="fullReviewList">${exam.map((q,i)=>fullReviewItem(q,i)).join('')}</div>`;
+  applyFullReviewFilter(); setTimeout(drawReviewCanvases,120);
+}
+function setFullReviewFilter(f){fullReviewFilter=f;applyFullReviewFilter();document.getElementById('fullReview')?.scrollIntoView({behavior:'smooth'})}
+function applyFullReviewFilter(){
+  const query=(document.getElementById('reviewSearch')?.value||'').toLowerCase().trim();
+  document.querySelectorAll('#fullReviewList .reviewItem').forEach(el=>{
+    const st=el.dataset.status, marked=!!el.dataset.mark, text=(el.dataset.qtext||'').toLowerCase();
+    let show=fullReviewFilter==='all'||st===fullReviewFilter||(fullReviewFilter==='marked'&&marked);
+    if(query&&!text.includes(query))show=false; el.style.display=show?'':'none';
+  });
+}
 
 // ===== v6 autosave / resume / mistake bank / backup =====
 const PROGRESS_KEY = 'aleMockActiveProgress_' + String(CONFIG.shortTitle||'exam').replace(/\W+/g,'_');
@@ -690,102 +775,12 @@ function clearAttemptNotes(){
 }
 window.addEventListener('resize', ()=> setTimeout(resizeMarkupCanvas, 100));
 
-
-// ===== v11 subject-balanced randomizer =====
-function examQuotaPlan(total){
-  const sourceNames = CONFIG.sources.map(s => s.name);
-  const plans = {
-    'Exam 1': {
-      'History': 15,
-      'Theory': 25,
-      'Planning': 20,
-      'Professional Practice': 15,
-      'Building Laws': 15,
-      'Tropical Design and Green Architecture': 10
-    },
-    'Exam 2': {
-      'Building Utilities': 30,
-      'Structural Concepts': 35,
-      'Building Materials': 45,
-      'Building Construction': 40
-    },
-    'Exam 3': {
-      'ADSP Rule 7 & 8': 80,
-      'Planning': 40,
-      'Building Laws': 30,
-      'Tropical Design and Green Architecture': 25,
-      'Structural Concepts': 25
-    }
-  };
-  const base = plans[CONFIG.shortTitle] || {};
-  if(!Object.keys(base).length){
-    const even = Math.floor(total / Math.max(1, sourceNames.length));
-    const out = {};
-    sourceNames.forEach((n,i)=>out[n]=even + (i < total % sourceNames.length ? 1 : 0));
-    return out;
-  }
-  const officialTotal = Object.values(base).reduce((a,b)=>a+b,0) || total;
-  const scaled = {};
-  let used = 0;
-  const names = sourceNames.filter(n => base[n] != null);
-  names.forEach((name, idx) => {
-    if(idx === names.length - 1){
-      scaled[name] = Math.max(0, total - used);
-    } else {
-      const val = Math.round((base[name] / officialTotal) * total);
-      scaled[name] = val;
-      used += val;
-    }
-  });
-  sourceNames.forEach(n=>{ if(scaled[n] == null) scaled[n] = 0; });
-  return scaled;
-}
-function sampleByQuota(cards, total){
-  const quota = examQuotaPlan(total);
-  const bySource = {};
-  cards.forEach(c => {
-    const k = c.sourceName || c.category || 'Unknown';
-    if(!bySource[k]) bySource[k] = [];
-    bySource[k].push(c);
-  });
-  Object.keys(bySource).forEach(k => bySource[k] = shuffle(bySource[k]));
-  const selected = [];
-  const used = new Set();
-  const shortages = [];
-  Object.entries(quota).forEach(([name, need]) => {
-    const pool = bySource[name] || [];
-    const take = Math.min(need, pool.length);
-    for(let i=0;i<take;i++){
-      selected.push(pool[i]);
-      used.add(cardKey(pool[i]));
-    }
-    if(take < need){
-      shortages.push(`${name}: needed ${need}, available ${take}`);
-    }
-  });
-  if(selected.length < total){
-    const remaining = shuffle(cards.filter(c => !used.has(cardKey(c))));
-    const need = total - selected.length;
-    selected.push(...remaining.slice(0, need));
-  }
-  const finalSet = shuffle(selected).slice(0, total);
-  window.__lastQuotaReport = {quota, shortages, selectedCount: finalSet.length};
-  return finalSet;
-}
-function quotaReportText(){
-  const r = window.__lastQuotaReport;
-  if(!r) return '';
-  const q = Object.entries(r.quota).map(([k,v]) => `${k}: ${v}`).join(' · ');
-  const s = r.shortages && r.shortages.length ? ` Fallback used because some sources were short: ${r.shortages.join('; ')}.` : '';
-  return `Subject quota target — ${q}.${s}`;
-}
-
-async function startExam(){applyLayout();$('startBtn').disabled=true;$('warning').style.display='none';await loadCards();if(!allCards.length){$('warning').style.display='block';$('warning').textContent='No cards available yet. Check folders/cards.json, or add embedded images for visual-identification cards.';$('startBtn').disabled=false;return}const count=Number($('countSelect').value);exam=[];if(pendingRetakeIds?.length){exam=buildExamFromIds(pendingRetakeIds,count)||[];if(!exam.length){alert('Saved IDs unavailable. Starting new random exam.');pendingRetakeIds=null}}if(!exam.length)exam=sampleByQuota(allCards, Math.min(count, allCards.length)).map(prepQuestion);answers=Array(exam.length).fill(null);originalAnswers=Array(exam.length).fill(null);marks=Array(exam.length).fill('');current=0;submitted=false;activeFilter='all';currentAttemptId=newAttemptId();timeLimit=calcLimit(exam.length,$('modeSelect').value);startedAt=Date.now();saveCurrentAttempt(pendingRetakeIds?'retake_started':'started',{retake:!!pendingRetakeIds});$('setup').style.display='none';$('results').style.display='none';$('examShell').style.display='block';renderQuestion();tick();clearInterval(timerInt);if(timeLimit)timerInt=setInterval(tick,1000);else $('timer').textContent='No timer';beginAutosave();$('startBtn').disabled=false}
+async function startExam(){applyLayout();$('startBtn').disabled=true;$('warning').style.display='none';await loadCards();if(!allCards.length){$('warning').style.display='block';$('warning').textContent='No cards available yet. Check folders/cards.json, or add embedded images for visual-identification cards.';$('startBtn').disabled=false;return}const count=Number($('countSelect').value);exam=[];if(pendingRetakeIds?.length){exam=buildExamFromIds(pendingRetakeIds,count)||[];if(!exam.length){alert('Saved IDs unavailable. Starting new random exam.');pendingRetakeIds=null}}if(!exam.length)exam=shuffle(allCards).slice(0,Math.min(count,allCards.length)).map(prepQuestion);answers=Array(exam.length).fill(null);originalAnswers=Array(exam.length).fill(null);marks=Array(exam.length).fill('');current=0;submitted=false;activeFilter='all';currentAttemptId=newAttemptId();timeLimit=calcLimit(exam.length,$('modeSelect').value);startedAt=Date.now();saveCurrentAttempt(pendingRetakeIds?'retake_started':'started',{retake:!!pendingRetakeIds});$('setup').style.display='none';$('results').style.display='none';$('examShell').style.display='block';renderQuestion();tick();clearInterval(timerInt);if(timeLimit)timerInt=setInterval(tick,1000);else $('timer').textContent='No timer';beginAutosave();$('startBtn').disabled=false}
 function tick(){if(!timeLimit){$('timer').textContent='No timer';return}const left=timeLimit-Math.floor((Date.now()-startedAt)/1000);$('timer').textContent=fmtTime(left);updatePacing(); if(left<=0&&!submitted)submitExam(true)}
 function counts(){const c={answered:0,unanswered:0,sure:0,notSure:0,guess:0,noIdea:0,marked:0};for(let i=0;i<exam.length;i++){if(answers[i]==null)c.unanswered++;else c.answered++;if(marks[i]){c.marked++;c[marks[i]]++}}return c}
 function markLabel(m){return m?MARKS[m].sym+' '+MARKS[m].label:'No mark'} function statusFor(i){return {answered:answers[i]!=null,mark:marks[i]||'',current:i===current}}
 function setMark(m){marks[current]=m;saveActiveProgress();renderQuestion()}
-function renderQuestion(){const q=exam[current];if(!q)return;$('progressText').textContent=`Question ${current+1} of ${exam.length}`;$('sourceText').textContent=`Source: ${q.sourceName}`; if($('quotaText')) $('quotaText').textContent=quotaReportText(); if($('quotaText')) $('quotaText').textContent=quotaReportText();$('qid').textContent=q.displayId;$('qcat').textContent=q.category;$('markPill').textContent=markLabel(marks[current]);$('questionText').textContent=q.question;renderSafeVisual(q);setTimeout(setupMarkupCanvas, 0);$('choicesBox').innerHTML=q.randomizedChoices.map((ch,i)=>`<label class="choice ${answers[current]===i?'selected':''}"><input type="radio" name="choice" ${answers[current]===i?'checked':''} data-index="${i}"><span><strong>${String.fromCharCode(65+i)}.</strong> ${escapeHtml(ch.text)}</span></label>`).join('');document.querySelectorAll('input[name=choice]').forEach(inp=>inp.onchange=()=>{if(originalAnswers[current]===null) originalAnswers[current]=Number(inp.dataset.index); answers[current]=Number(inp.dataset.index); saveActiveProgress(); renderQuestion()});$('markBtns').innerHTML=Object.entries(MARKS).map(([k,v])=>`<button class="markBtn ${marks[current]===k?'active':''}" onclick="setMark('${k}')">${v.sym} ${v.label}</button>`).join('')+`<button class="markBtn ${!marks[current]?'active':''}" onclick="setMark('')">Clear Mark</button>`;$('prevBtn').disabled=current===0;$('nextBtn').disabled=current===exam.length-1;renderSheet();updatePacing();addSecondPassButtons()}
+function renderQuestion(){const q=exam[current];if(!q)return;$('progressText').textContent=`Question ${current+1} of ${exam.length}`;$('sourceText').textContent=`Source: ${q.sourceName}`;$('qid').textContent=q.displayId;$('qcat').textContent=q.category;$('markPill').textContent=markLabel(marks[current]);$('questionText').textContent=q.question;renderSafeVisual(q);setTimeout(setupMarkupCanvas, 0);$('choicesBox').innerHTML=q.randomizedChoices.map((ch,i)=>`<label class="choice ${answers[current]===i?'selected':''}"><input type="radio" name="choice" ${answers[current]===i?'checked':''} data-index="${i}"><span><strong>${String.fromCharCode(65+i)}.</strong> ${escapeHtml(ch.text)}</span></label>`).join('');document.querySelectorAll('input[name=choice]').forEach(inp=>inp.onchange=()=>{if(originalAnswers[current]===null) originalAnswers[current]=Number(inp.dataset.index); answers[current]=Number(inp.dataset.index); saveActiveProgress(); renderQuestion()});$('markBtns').innerHTML=Object.entries(MARKS).map(([k,v])=>`<button class="markBtn ${marks[current]===k?'active':''}" onclick="setMark('${k}')">${v.sym} ${v.label}</button>`).join('')+`<button class="markBtn ${!marks[current]?'active':''}" onclick="setMark('')">Clear Mark</button>`;$('prevBtn').disabled=current===0;$('nextBtn').disabled=current===exam.length-1;renderSheet();updatePacing();addSecondPassButtons()}
 function matchesFilter(i,filter=activeFilter){if(filter==='all')return true;if(filter==='unanswered')return answers[i]==null;if(filter==='answered')return answers[i]!=null;if(filter==='marked')return !!marks[i];return marks[i]===filter}
 function visibleIndexes(){return exam.map((_,i)=>i).filter(i=>matchesFilter(i))} function jumpToFirst(filter){activeFilter=filter;const v=visibleIndexes();if(v.length)current=v[0];renderQuestion();if(document.body.classList.contains('layout-compact'))$('answerSheet').classList.add('open')} function nextMatching(dir){const v=visibleIndexes();if(!v.length)return;let pos=v.indexOf(current);if(pos<0)pos=dir>0?-1:0;pos=(pos+dir+v.length)%v.length;current=v[pos];renderQuestion()}
 function renderSheet(){const c=counts();const visible=visibleIndexes();$('prevMatchBtn').style.display=activeFilter==='all'?'none':'inline-block';$('nextMatchBtn').style.display=activeFilter==='all'?'none':'inline-block';$('answerSheet').innerHTML=`<div class="sheetHead"><h2>Answer Sheet</h2><button class="btn" onclick="$('answerSheet').classList.remove('open')">Close</button></div><div class="mini">Answered: ${c.answered} · Blank: ${c.unanswered} · Marked: ${c.marked}</div><div class="sheetControls"><select onchange="activeFilter=this.value;renderSheet();updatePacing();addSecondPassButtons()"><option value="all" ${activeFilter==='all'?'selected':''}>All</option><option value="unanswered" ${activeFilter==='unanswered'?'selected':''}>Unanswered</option><option value="answered" ${activeFilter==='answered'?'selected':''}>Answered</option><option value="marked" ${activeFilter==='marked'?'selected':''}>Marked</option><option value="sure" ${activeFilter==='sure'?'selected':''}>Sure</option><option value="notSure" ${activeFilter==='notSure'?'selected':''}>Not Sure</option><option value="guess" ${activeFilter==='guess'?'selected':''}>Guess</option><option value="noIdea" ${activeFilter==='noIdea'?'selected':''}>No Idea</option></select><div class="quickBtns"><button class="btn" onclick="jumpToFirst('unanswered')">Review Unanswered</button><button class="btn" onclick="jumpToFirst('notSure')">Review Not Sure</button><button class="btn" onclick="jumpToFirst('guess')">Review Guess</button><button class="btn" onclick="jumpToFirst('noIdea')">Review No Idea</button><button class="btn" onclick="jumpToFirst('marked')">Review All Marked</button><button class="btn" onclick="activeFilter='all';renderSheet();updatePacing();addSecondPassButtons()">All</button></div></div><div class="itemGrid">${visible.map(i=>rowHtml(i)).join('')||'<p class="mini">No matching questions.</p>'}</div>`}
@@ -794,7 +789,7 @@ $('prevBtn').onclick=()=>{if(current>0){current--;renderQuestion()}};$('nextBtn'
 function breakdown(){const map={};exam.forEach((q,i)=>{const k=q.category||q.sourceName||'Unknown';if(!map[k])map[k]={total:0,correct:0};map[k].total++;if(answers[i]!=null&&q.randomizedChoices[answers[i]]?.correct)map[k].correct++});return map}
 function confidenceBreakdown(){const out={sure:{total:0,correct:0},notSure:{total:0,correct:0},guess:{total:0,correct:0},noIdea:{total:0,correct:0},unmarked:{total:0,correct:0}};exam.forEach((q,i)=>{const k=marks[i]||'unmarked';out[k].total++;if(answers[i]!=null&&q.randomizedChoices[answers[i]]?.correct)out[k].correct++});return out}
 function confirmSummary(){const c=counts();const remain=timeLimit?fmtTime(timeLimit-Math.floor((Date.now()-startedAt)/1000)):'No timer';return `Submit final exam?\n\nAnswered: ${c.answered}\nUnanswered: ${c.unanswered}\nSure: ${c.sure}\nNot Sure: ${c.notSure}\nGuess: ${c.guess}\nNo Idea: ${c.noIdea}\nTime remaining: ${remain}`}
-function submitExam(auto){if(submitted)return;if(!auto&&!confirm(confirmSummary()))return;submitted=true;clearInterval(timerInt);const used=Math.floor((Date.now()-startedAt)/1000);const correct=exam.reduce((n,q,i)=>n+(answers[i]!=null&&q.randomizedChoices[answers[i]]?.correct?1:0),0);const pct=exam.length?correct/exam.length*100:0,pass=pct>=75;const c=counts(),bd=breakdown(),cb=confidenceBreakdown(),ac=answerChangeStats();const weakest=Object.entries(bd).sort((a,b)=>(a[1].correct/a[1].total)-(b[1].correct/b[1].total))[0];stopAutosave();saveMistakesToBank();clearActiveProgress();saveCurrentAttempt('submitted',{score:`${correct}/${exam.length}`,percentage:pct,passFail:pass?'PASS':'FAIL',timeUsedSeconds:used,subjectBreakdown:bd,confidenceBreakdown:cb,marks,answers,unanswered:c.unanswered,marked:c.marked});saveHistory({date:new Date().toLocaleString(),examType:CONFIG.shortTitle,itemCount:exam.length,score:`${correct}/${exam.length}`,percentage:pct,passFail:pass?'PASS':'FAIL',timeUsedSeconds:used,subjectBreakdown:bd,confidenceBreakdown:cb,questionIds:exam.map(cardKey),unanswered:c.unanswered,marked:c.marked});$('examShell').style.display='none';const wrongs=exam.map((q,i)=>({q,i})).filter(x=>answers[x.i]===null||!x.q.randomizedChoices[answers[x.i]]?.correct);const marked=exam.map((q,i)=>({q,i})).filter(x=>marks[x.i]);$('results').style.display='block';$('results').innerHTML=`<h2>Results — ${CONFIG.shortTitle}</h2><div class="scoreBox"><div class="stat">Raw score<b>${correct}/${exam.length}</b></div><div class="stat">Percentage<b>${pct.toFixed(1)}%</b></div><div class="stat">Status<b class="${pass?'pass':'fail'}">${pass?'PASS':'FAIL'}</b></div><div class="stat">Time used<b>${fmtTime(used)}</b></div><div class="stat">Unanswered<b>${c.unanswered}</b></div><div class="stat">Marked<b>${c.marked}</b></div><div class="stat">Weakest subject<b>${weakest?escapeHtml(weakest[0]):'—'}</b></div><div class="stat">Passing mark<b>75%</b></div><div class="stat">Answer changes<b>${ac.total}</b><span class="mini">Improved ${ac.improved} · Hurt ${ac.hurt} · Neutral ${ac.neutral}</span></div></div><div class="topActions"><button class="btn primary" onclick="startNewRandomExam()">Start New Random Exam</button><button class="btn" onclick="retakeSameExam()">Retake Same Exam</button><button class="btn" onclick="document.getElementById('wrongReview').scrollIntoView({behavior:'smooth'})">Review Wrong Answers</button><button class="btn danger" onclick="clearAttemptNotes()">Clear Notes After Review</button><a class="btn" href="../">Mock Exam Dashboard</a></div><h3>Performance by Confidence Mark</h3>${confTable(cb)}<h3>Subject Breakdown</h3>${subjectTable(bd)}<h3>Marked Questions</h3>${marked.length?marked.map(({q,i})=>smallReview(q,i,false)).join(''):'<p>No marked questions.</p>'}<h3 id="wrongReview">Wrong and Unanswered Review</h3>${wrongs.length?wrongs.map(({q,i})=>smallReview(q,i,true)).join(''):'<p>No wrong answers.</p>'}`;setTimeout(drawReviewCanvases, 120);window.scrollTo(0,0)}
+function submitExam(auto){if(submitted)return;if(!auto&&!confirm(confirmSummary()))return;submitted=true;clearInterval(timerInt);const used=Math.floor((Date.now()-startedAt)/1000);const correct=exam.reduce((n,q,i)=>n+(answers[i]!=null&&q.randomizedChoices[answers[i]]?.correct?1:0),0);const pct=exam.length?correct/exam.length*100:0,pass=pct>=75;const c=counts(),bd=breakdown(),cb=confidenceBreakdown(),ac=answerChangeStats();const weakest=Object.entries(bd).sort((a,b)=>(a[1].correct/a[1].total)-(b[1].correct/b[1].total))[0];stopAutosave();saveMistakesToBank();clearActiveProgress();saveCurrentAttempt('submitted',{score:`${correct}/${exam.length}`,percentage:pct,passFail:pass?'PASS':'FAIL',timeUsedSeconds:used,subjectBreakdown:bd,confidenceBreakdown:cb,marks,answers,unanswered:c.unanswered,marked:c.marked});saveHistory({date:new Date().toLocaleString(),examType:CONFIG.shortTitle,itemCount:exam.length,score:`${correct}/${exam.length}`,percentage:pct,passFail:pass?'PASS':'FAIL',timeUsedSeconds:used,subjectBreakdown:bd,confidenceBreakdown:cb,questionIds:exam.map(cardKey),unanswered:c.unanswered,marked:c.marked});$('examShell').style.display='none';const wrongs=exam.map((q,i)=>({q,i})).filter(x=>answers[x.i]===null||!x.q.randomizedChoices[answers[x.i]]?.correct);const marked=exam.map((q,i)=>({q,i})).filter(x=>marks[x.i]);$('results').style.display='block';$('results').innerHTML=`<h2>Results — ${CONFIG.shortTitle}</h2><div class="scoreBox"><div class="stat">Raw score<b>${correct}/${exam.length}</b></div><div class="stat">Percentage<b>${pct.toFixed(1)}%</b></div><div class="stat">Status<b class="${pass?'pass':'fail'}">${pass?'PASS':'FAIL'}</b></div><div class="stat">Time used<b>${fmtTime(used)}</b></div><div class="stat">Unanswered<b>${c.unanswered}</b></div><div class="stat">Marked<b>${c.marked}</b></div><div class="stat">Weakest subject<b>${weakest?escapeHtml(weakest[0]):'—'}</b></div><div class="stat">Passing mark<b>75%</b></div><div class="stat">Answer changes<b>${ac.total}</b><span class="mini">Improved ${ac.improved} · Hurt ${ac.hurt} · Neutral ${ac.neutral}</span></div></div><div class="topActions"><button class="btn primary" onclick="startNewRandomExam()">Start New Random Exam</button><button class="btn" onclick="retakeSameExam()">Retake Same Exam</button><button class="btn" onclick="document.getElementById('wrongReview').scrollIntoView({behavior:'smooth'})">Review Wrong Answers</button><button class="btn primary" onclick="document.getElementById('fullReview').scrollIntoView({behavior:'smooth'})">Review Full Exam</button><button class="btn danger" onclick="clearAttemptNotes()">Clear Notes After Review</button><a class="btn" href="../">Mock Exam Dashboard</a></div><h3>Performance by Confidence Mark</h3>${confTable(cb)}<h3>Subject Breakdown</h3>${subjectTable(bd)}<h3>Marked Questions</h3>${marked.length?marked.map(({q,i})=>smallReview(q,i,false)).join(''):'<p>No marked questions.</p>'}<h3 id="wrongReview">Wrong and Unanswered Review</h3>${wrongs.length?wrongs.map(({q,i})=>smallReview(q,i,true)).join(''):'<p>No wrong answers.</p>'}<div id="fullReview"></div>`;renderFullExamReview();setTimeout(drawReviewCanvases, 120);window.scrollTo(0,0)}
 function confTable(cb){return`<table><thead><tr><th>Mark</th><th>Correct</th><th>Total</th><th>%</th></tr></thead><tbody>${Object.entries(cb).map(([k,v])=>`<tr><td>${k==='unmarked'?'Unmarked':MARKS[k].sym+' '+MARKS[k].label}</td><td>${v.correct}</td><td>${v.total}</td><td>${v.total?(v.correct/v.total*100).toFixed(1):'0.0'}%</td></tr>`).join('')}</tbody></table>`}
 function subjectTable(bd){return`<table><thead><tr><th>Subject</th><th>Correct</th><th>Total</th><th>%</th></tr></thead><tbody>${Object.entries(bd).map(([k,v])=>`<tr><td>${escapeHtml(k)}</td><td>${v.correct}</td><td>${v.total}</td><td>${(v.correct/v.total*100).toFixed(1)}%</td></tr>`).join('')}</tbody></table>`}
 function smallReview(q,i,showExplain){const ua=answers[i]===null?'Unanswered':q.randomizedChoices[answers[i]]?.text;const ca=q.randomizedChoices[q.correctIndex]?.text||q.correctText;return`<div class="reviewItem"><h3>Q${i+1} · ${escapeHtml(q.category)} · ${escapeHtml(markLabel(marks[i]))}</h3><p><strong>Question:</strong> ${escapeHtml(q.question)}</p>${answerVisualHtml(q)}${annotationReviewHtml(q)}<p><strong>Your answer:</strong> ${escapeHtml(ua)}</p><p><strong>Correct answer:</strong> ${escapeHtml(ca)}</p><p><strong>Key memory:</strong> ${escapeHtml(q.keyMemory||'—')}</p><div class="explain"><strong>Explanation:</strong>\n${escapeHtml(q.explanation||'—')}</div></div>`}
