@@ -3915,8 +3915,8 @@
       "Internal concrete vibrator"
     ],
     "questionImageQuery": "Concrete vibrator",
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit shown after exam review only.",
     "answerImageQueries": [
       "Concrete vibrator",
       "Internal concrete vibrator"
@@ -3945,7 +3945,13 @@
       "Internal concrete vibrator"
     ],
     "bcVisualCoachDecision": "keep_question_visual_if_needed",
-    "bcVisualCoachReason": "override_keep_review_visual"
+    "bcVisualCoachReason": "override_keep_review_visual",
+    "questionImage": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Concretevibrator.jpg",
+    "visualMode": "question",
+    "visualAssetSourcePage": "https://commons.wikimedia.org/wiki/File:Concretevibrator.jpg",
+    "visualAssetLicense": "Public domain",
+    "visualAssetAuthor": "Neelix at English Wikipedia",
+    "visualAssetAdminLabel": "Concrete vibrator"
   },
   {
     "uid": "BC-065",
@@ -6507,9 +6513,16 @@
       "Concrete masonry unit",
       "Concrete block"
     ],
-    "questionImageAlt": "Question visual reference",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "keep_question_visual_if_needed",
-    "bcVisualCoachReason": "override_keep_review_visual"
+    "bcVisualCoachReason": "override_keep_review_visual",
+    "questionImage": "https://upload.wikimedia.org/wikipedia/commons/6/68/Concrete_masonry_units.jpg",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit shown after exam review only.",
+    "visualAssetSourcePage": "https://commons.wikimedia.org/wiki/File:Concrete_masonry_units.jpg",
+    "visualAssetLicense": "CC BY-SA 2.0",
+    "visualAssetAuthor": "USACE Afghanistan Engineer District-South",
+    "visualAssetAdminLabel": "Concrete masonry unit"
   },
   {
     "uid": "BC-105",
@@ -6844,9 +6857,16 @@
       "Efflorescence masonry",
       "Efflorescence brick"
     ],
-    "questionImageAlt": "Question visual reference",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "keep_question_visual_if_needed",
-    "bcVisualCoachReason": "override_keep_review_visual"
+    "bcVisualCoachReason": "override_keep_review_visual",
+    "questionImage": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Masonry_Efflorescence.jpg",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit shown after exam review only.",
+    "visualAssetSourcePage": "https://commons.wikimedia.org/wiki/File:Masonry_Efflorescence.jpg",
+    "visualAssetLicense": "Wikimedia Commons license shown on file page",
+    "visualAssetAuthor": "WJohnson",
+    "visualAssetAdminLabel": "Efflorescence"
   },
   {
     "uid": "BC-110",
@@ -7352,9 +7372,16 @@
     "questionImageLayoutQueries": [
       "Flemish bond brickwork"
     ],
-    "questionImageAlt": "Question visual reference",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "keep_question_visual_if_needed",
-    "bcVisualCoachReason": "override_keep_review_visual"
+    "bcVisualCoachReason": "override_keep_review_visual",
+    "questionImage": "https://upload.wikimedia.org/wikipedia/commons/6/62/Brickwork_in_Flemish_Bond.jpg",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit shown after exam review only.",
+    "visualAssetSourcePage": "https://commons.wikimedia.org/wiki/File:Brickwork_in_Flemish_Bond.jpg",
+    "visualAssetLicense": "CC BY-SA 4.0",
+    "visualAssetAuthor": "Stephencdickson",
+    "visualAssetAdminLabel": "Flemish bond"
   },
   {
     "uid": "BC-118",
@@ -7398,9 +7425,16 @@
     "questionImageLayoutQueries": [
       "Flemish bond brickwork"
     ],
-    "questionImageAlt": "Question visual reference",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "keep_question_visual_if_needed",
-    "bcVisualCoachReason": "override_keep_review_visual"
+    "bcVisualCoachReason": "override_keep_review_visual",
+    "questionImage": "https://upload.wikimedia.org/wikipedia/commons/6/62/Brickwork_in_Flemish_Bond.jpg",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit shown after exam review only.",
+    "visualAssetSourcePage": "https://commons.wikimedia.org/wiki/File:Brickwork_in_Flemish_Bond.jpg",
+    "visualAssetLicense": "CC BY-SA 4.0",
+    "visualAssetAuthor": "Stephencdickson",
+    "visualAssetAdminLabel": "Flemish bond"
   },
   {
     "uid": "BC-119",
@@ -7461,9 +7495,16 @@
     "questionImageLayoutQueries": [
       "Flemish bond brickwork"
     ],
-    "questionImageAlt": "Question visual reference",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "keep_question_visual_if_needed",
-    "bcVisualCoachReason": "override_keep_review_visual"
+    "bcVisualCoachReason": "override_keep_review_visual",
+    "questionImage": "https://upload.wikimedia.org/wikipedia/commons/6/62/Brickwork_in_Flemish_Bond.jpg",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit shown after exam review only.",
+    "visualAssetSourcePage": "https://commons.wikimedia.org/wiki/File:Brickwork_in_Flemish_Bond.jpg",
+    "visualAssetLicense": "CC BY-SA 4.0",
+    "visualAssetAuthor": "Stephencdickson",
+    "visualAssetAdminLabel": "Flemish bond"
   },
   {
     "uid": "BC-120",
@@ -7500,8 +7541,8 @@
       "Flemish bond brickwork"
     ],
     "questionImageQuery": "Flemish bond brickwork",
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Image reference via Wikimedia/Commons search fallback; topic sources below.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit shown after exam review only.",
     "answerImageQueries": [
       "Flemish bond brickwork"
     ],
@@ -7527,7 +7568,13 @@
       "Flemish bond brickwork"
     ],
     "bcVisualCoachDecision": "keep_question_visual_if_needed",
-    "bcVisualCoachReason": "override_keep_review_visual"
+    "bcVisualCoachReason": "override_keep_review_visual",
+    "questionImage": "https://upload.wikimedia.org/wikipedia/commons/6/62/Brickwork_in_Flemish_Bond.jpg",
+    "visualMode": "question",
+    "visualAssetSourcePage": "https://commons.wikimedia.org/wiki/File:Brickwork_in_Flemish_Bond.jpg",
+    "visualAssetLicense": "CC BY-SA 4.0",
+    "visualAssetAuthor": "Stephencdickson",
+    "visualAssetAdminLabel": "Flemish bond"
   },
   {
     "uid": "BC-121",
@@ -8165,9 +8212,16 @@
     "questionImageLayoutQueries": [
       "Hip roof"
     ],
-    "questionImageAlt": "Question visual reference",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "keep_question_visual_if_needed",
-    "bcVisualCoachReason": "visual_term_plus_identification"
+    "bcVisualCoachReason": "visual_term_plus_identification",
+    "questionImage": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Roof_Hipped.png",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit shown after exam review only.",
+    "visualAssetSourcePage": "https://commons.wikimedia.org/wiki/File:Roof_Hipped.png",
+    "visualAssetLicense": "CC0",
+    "visualAssetAuthor": "User:Mxdanger",
+    "visualAssetAdminLabel": "Hip roof"
   },
   {
     "uid": "BC-131",
@@ -8228,9 +8282,16 @@
     "questionImageLayoutQueries": [
       "Gambrel roof"
     ],
-    "questionImageAlt": "Question visual reference",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "keep_question_visual_if_needed",
-    "bcVisualCoachReason": "visual_term_plus_identification"
+    "bcVisualCoachReason": "visual_term_plus_identification",
+    "questionImage": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Roof_Gambrel.png",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit shown after exam review only.",
+    "visualAssetSourcePage": "https://commons.wikimedia.org/wiki/File:Roof_Gambrel.png",
+    "visualAssetLicense": "CC0",
+    "visualAssetAuthor": "User:Mxdanger",
+    "visualAssetAdminLabel": "Gambrel roof"
   },
   {
     "uid": "BC-132",
@@ -9034,10 +9095,17 @@
       "corrugated GI roofing overlap",
       "corrugated metal roofing overlap"
     ],
-    "questionImageAlt": "Question visual reference",
+    "questionImageAlt": "Question visual for identification.",
     "answerImageAlt": "Answer visual reference",
     "bcVisualCoachDecision": "keep_question_visual_if_needed",
-    "bcVisualCoachReason": "visual_construction_term"
+    "bcVisualCoachReason": "visual_construction_term",
+    "questionImage": "https://upload.wikimedia.org/wikipedia/commons/d/da/Corrugated_metal_roof.jpg",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit shown after exam review only.",
+    "visualAssetSourcePage": "https://commons.wikimedia.org/wiki/File:Corrugated_metal_roof.jpg",
+    "visualAssetLicense": "Wikimedia Commons license shown on file page",
+    "visualAssetAuthor": "ralmonline alm",
+    "visualAssetAdminLabel": "Corrugated metal roof"
   },
   {
     "uid": "BC-144",
@@ -9439,8 +9507,8 @@
       "Single lock seam metal roof"
     ],
     "questionImageQuery": "Single lock standing seam",
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Image reference via Wikimedia/Commons search fallback; topic sources below.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
     "answerImageQueries": [
       "Single lock standing seam",
       "Single lock seam metal roof"
@@ -9456,12 +9524,9 @@
     "imageAlt": "BC answer visual: Single lock seam metal roof",
     "imageCredit": "Image reference via Wikimedia/Commons search fallback; topic sources below.",
     "visualSourceRefs": [
-      {
-        "label": "OSHA — Roofing Safety",
-        "url": "https://www.osha.gov/roofing"
-      }
+      "https://commons.wikimedia.org/wiki/File:Standing_seam_metal_roof.jpg"
     ],
-    "visualSourceType": "verified_source_mode",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: visual is used only when the question benefits from seeing a physical component, process, tool, joint, bond, detail, or construction form. Labels/clues stay hidden before answering.",
     "questionImageLayoutQueries": [
@@ -9469,7 +9534,10 @@
       "Single lock seam metal roof"
     ],
     "bcVisualCoachDecision": "keep_question_visual_if_needed",
-    "bcVisualCoachReason": "visual_term_plus_identification"
+    "bcVisualCoachReason": "visual_term_plus_identification",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Standing_seam_metal_roof.jpg?width=1000",
+    "visualMode": "question",
+    "localAssetSuggestion": "assets/BCON-150.jpg"
   },
   {
     "uid": "BC-151",
@@ -9508,8 +9576,8 @@
       "Snap-on batten seam metal roof"
     ],
     "questionImageQuery": "Snap-on batten seam with clip",
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Image reference via Wikimedia/Commons search fallback; topic sources below.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
     "answerImageQueries": [
       "Snap-on batten seam with clip",
       "Batten seam metal roof clip",
@@ -9527,12 +9595,9 @@
     "imageAlt": "BC answer visual: Snap-on batten seam metal roof",
     "imageCredit": "Image reference via Wikimedia/Commons search fallback; topic sources below.",
     "visualSourceRefs": [
-      {
-        "label": "OSHA — Roofing Safety",
-        "url": "https://www.osha.gov/roofing"
-      }
+      "https://commons.wikimedia.org/wiki/File:Standing_seam_roof.jpg"
     ],
-    "visualSourceType": "verified_source_mode",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: visual is used only when the question benefits from seeing a physical component, process, tool, joint, bond, detail, or construction form. Labels/clues stay hidden before answering.",
     "questionImageLayoutQueries": [
@@ -9541,7 +9606,10 @@
       "Snap-on batten seam metal roof"
     ],
     "bcVisualCoachDecision": "keep_question_visual_if_needed",
-    "bcVisualCoachReason": "visual_term_plus_identification"
+    "bcVisualCoachReason": "visual_term_plus_identification",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Standing_seam_roof.jpg?width=1000",
+    "visualMode": "question",
+    "localAssetSuggestion": "assets/BCON-151.jpg"
   },
   {
     "uid": "BC-152",
@@ -9579,8 +9647,8 @@
       "T seam metal roof"
     ],
     "questionImageQuery": "Tee seam metal roof",
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Image reference via Wikimedia/Commons search fallback; topic sources below.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
     "answerImageQueries": [
       "Tee seam metal roof",
       "T seam metal roof"
@@ -9596,12 +9664,9 @@
     "imageAlt": "BC answer visual: Tee seam metal roof",
     "imageCredit": "Image reference via Wikimedia/Commons search fallback; topic sources below.",
     "visualSourceRefs": [
-      {
-        "label": "OSHA — Roofing Safety",
-        "url": "https://www.osha.gov/roofing"
-      }
+      "https://commons.wikimedia.org/wiki/File:Standing_seam_metal_roof_1.jpg"
     ],
-    "visualSourceType": "verified_source_mode",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: visual is used only when the question benefits from seeing a physical component, process, tool, joint, bond, detail, or construction form. Labels/clues stay hidden before answering.",
     "questionImageLayoutQueries": [
@@ -9609,7 +9674,10 @@
       "T seam metal roof"
     ],
     "bcVisualCoachDecision": "keep_question_visual_if_needed",
-    "bcVisualCoachReason": "visual_term_plus_identification"
+    "bcVisualCoachReason": "visual_term_plus_identification",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Standing_seam_metal_roof_1.jpg?width=1000",
+    "visualMode": "question",
+    "localAssetSuggestion": "assets/BCON-152.jpg"
   },
   {
     "uid": "BC-153",
@@ -9657,12 +9725,9 @@
     "imageAlt": "BC answer visual: Lap seam sheet metal",
     "imageCredit": "Image reference via Wikimedia/Commons search fallback; topic sources below.",
     "visualSourceRefs": [
-      {
-        "label": "AISC — Steel Construction Resources",
-        "url": "https://www.aisc.org/education/continuingeducation/education-archives/"
-      }
+      "https://commons.wikimedia.org/wiki/File:Wooden_Roof_Shingles.JPG"
     ],
-    "visualSourceType": "verified_source_mode",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: visual is used only when the question benefits from seeing a physical component, process, tool, joint, bond, detail, or construction form. Labels/clues stay hidden before answering.",
     "questionImageQuery": "Lap seam sheet metal",
@@ -9674,9 +9739,13 @@
       "Lap seam sheet metal",
       "Sheet metal lap seam"
     ],
-    "questionImageAlt": "Question visual reference",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "keep_question_visual_if_needed",
-    "bcVisualCoachReason": "visual_term_plus_identification"
+    "bcVisualCoachReason": "visual_term_plus_identification",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Wooden_Roof_Shingles.JPG?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
+    "localAssetSuggestion": "assets/BCON-153.jpg"
   },
   {
     "uid": "BC-154",
@@ -9724,12 +9793,9 @@
     "imageAlt": "BC answer visual: Tek screw roofing",
     "imageCredit": "Image reference via Wikimedia/Commons search fallback; topic sources below.",
     "visualSourceRefs": [
-      {
-        "label": "AISC — Steel Construction Resources",
-        "url": "https://www.aisc.org/education/continuingeducation/education-archives/"
-      }
+      "https://commons.wikimedia.org/wiki/File:Slate_Roof_(6062242121).jpg"
     ],
-    "visualSourceType": "verified_source_mode",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: visual is used only when the question benefits from seeing a physical component, process, tool, joint, bond, detail, or construction form. Labels/clues stay hidden before answering.",
     "questionImageQuery": "Tek screw roofing",
@@ -9741,9 +9807,17 @@
       "Tek screw roofing",
       "Self drilling screw metal roofing"
     ],
-    "questionImageAlt": "Question visual reference",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "keep_question_visual_if_needed",
-    "bcVisualCoachReason": "visual_construction_term"
+    "bcVisualCoachReason": "visual_construction_term",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Slate_Roof_(6062242121).jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
+    "visualAssetSourcePage": "https://commons.wikimedia.org/wiki/File:Corrugated_metal_roof_fasteners.jpg",
+    "visualAssetLicense": "CC0",
+    "visualAssetAuthor": "Wikideas1",
+    "visualAssetAdminLabel": "Corrugated metal roof fasteners",
+    "localAssetSuggestion": "assets/BCON-154.jpg"
   },
   {
     "uid": "BC-155",
@@ -9808,9 +9882,16 @@
       "Tek screw roofing",
       "Self drilling screw metal roofing"
     ],
-    "questionImageAlt": "Question visual reference",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "keep_question_visual_if_needed",
-    "bcVisualCoachReason": "visual_term_plus_identification"
+    "bcVisualCoachReason": "visual_term_plus_identification",
+    "questionImage": "https://upload.wikimedia.org/wikipedia/commons/3/31/Corrugated_metal_roof_fasteners.jpg",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit shown after exam review only.",
+    "visualAssetSourcePage": "https://commons.wikimedia.org/wiki/File:Corrugated_metal_roof_fasteners.jpg",
+    "visualAssetLicense": "CC0",
+    "visualAssetAuthor": "Wikideas1",
+    "visualAssetAdminLabel": "Corrugated metal roof fasteners"
   },
   {
     "uid": "BC-156",
@@ -9854,8 +9935,8 @@
       "Long span roof"
     ],
     "questionImageQuery": "Space frame",
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Image reference layout via Wikimedia/Commons search fallback; topic sources below.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit shown after exam review only.",
     "answerImageLayoutQueries": [
       "Space frame",
       "Light steel structure"
@@ -9886,7 +9967,13 @@
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: visual is used only when the question benefits from seeing a physical component, process, tool, joint, bond, detail, or construction form. Labels/clues stay hidden before answering.",
     "bcVisualCoachDecision": "keep_question_visual_if_needed",
-    "bcVisualCoachReason": "visual_construction_term"
+    "bcVisualCoachReason": "visual_construction_term",
+    "questionImage": "https://upload.wikimedia.org/wikipedia/commons/a/ad/SpaceFrame02.png",
+    "visualMode": "question",
+    "visualAssetSourcePage": "https://commons.wikimedia.org/wiki/File:SpaceFrame02.png",
+    "visualAssetLicense": "CC BY-SA 1.0",
+    "visualAssetAuthor": "Andrew Dunn",
+    "visualAssetAdminLabel": "Space frame"
   },
   {
     "uid": "BC-157",
@@ -22267,20 +22354,21 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      {
-        "label": "USDA Forest Products Laboratory — Wood Handbook",
-        "url": "https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf"
-      }
+      "https://commons.wikimedia.org/wiki/File:Mauerwerk_-_Werksteinmauerwerk.jpg"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Mauerwerk_-_Werksteinmauerwerk.jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
+    "localAssetSuggestion": "assets/BCON-354.jpg"
   },
   {
     "uid": "BC-355",
@@ -22322,20 +22410,21 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      {
-        "label": "OSHA — Construction",
-        "url": "https://www.osha.gov/construction"
-      }
+      "https://commons.wikimedia.org/wiki/File:Brick_wall_close-up_view.jpg"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Brick_wall_close-up_view.jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
+    "localAssetSuggestion": "assets/BCON-355.jpg"
   },
   {
     "uid": "BC-356",
@@ -22377,20 +22466,21 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      {
-        "label": "USDA Forest Products Laboratory — Wood Handbook",
-        "url": "https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf"
-      }
+      "https://commons.wikimedia.org/wiki/File:Miter_saw.jpg"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Miter_saw.jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
+    "localAssetSuggestion": "assets/BCON-356.jpg"
   },
   {
     "uid": "BC-357",
@@ -22432,20 +22522,21 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      {
-        "label": "USDA Forest Products Laboratory — Wood Handbook",
-        "url": "https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf"
-      }
+      "https://commons.wikimedia.org/wiki/File:Framing-chisel.png"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Framing-chisel.png?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
+    "localAssetSuggestion": "assets/BCON-357.png"
   },
   {
     "uid": "BC-358",
@@ -22487,20 +22578,21 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      {
-        "label": "USDA Forest Products Laboratory — Wood Handbook",
-        "url": "https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf"
-      }
+      "https://commons.wikimedia.org/wiki/File:Spade_bits.JPG"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Spade_bits.JPG?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
+    "localAssetSuggestion": "assets/BCON-358.jpg"
   },
   {
     "uid": "BC-359",
@@ -22539,8 +22631,10 @@
       "detail": "The reviewer uses sinsil for chisel-like struck tool.",
       "formula": ""
     },
-    "visualSourceRefs": [],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Claw-hammer.jpg"
+    ],
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
@@ -22550,10 +22644,14 @@
     "answerImageQueries": [],
     "imageQuery": "",
     "imageQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "answerImageAlt": "",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Claw-hammer.jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
+    "localAssetSuggestion": "assets/BCON-359.jpg"
   },
   {
     "uid": "BC-360",
@@ -22601,16 +22699,9 @@
     "imageAlt": "BC answer visual: Bored pile construction",
     "imageCredit": "Strict exact-title online thumbnail if available; otherwise safe fallback label.",
     "visualSourceRefs": [
-      {
-        "label": "FHWA — Geotechnical Engineering",
-        "url": "https://www.fhwa.dot.gov/engineering/geotech/"
-      },
-      {
-        "label": "Portland Cement Association — Cement and Concrete",
-        "url": "https://www.cement.org/cement-concrete/applications-of-cement/"
-      }
+      "https://commons.wikimedia.org/wiki/File:Handsaw.jpg"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: visual is used only when the question benefits from seeing a physical component, process, tool, joint, bond, detail, or construction form. Labels/clues stay hidden before answering.",
     "questionImageQuery": "Bored pile construction",
@@ -22622,9 +22713,13 @@
       "Bored pile construction",
       "Drilled shaft foundation"
     ],
-    "questionImageAlt": "Question visual reference",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "keep_question_visual_if_needed",
-    "bcVisualCoachReason": "visual_construction_term"
+    "bcVisualCoachReason": "visual_construction_term",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Handsaw.jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
+    "localAssetSuggestion": "assets/BCON-360.jpg"
   },
   {
     "uid": "BC-361",
@@ -22672,12 +22767,9 @@
     "imageAlt": "BC answer visual: Auger bored pile",
     "imageCredit": "Strict exact-title online thumbnail if available; otherwise safe fallback label.",
     "visualSourceRefs": [
-      {
-        "label": "FHWA — Geotechnical Engineering",
-        "url": "https://www.fhwa.dot.gov/engineering/geotech/"
-      }
+      "https://commons.wikimedia.org/wiki/File:Brick_trowel.jpg"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: visual is used only when the question benefits from seeing a physical component, process, tool, joint, bond, detail, or construction form. Labels/clues stay hidden before answering.",
     "questionImageQuery": "Auger bored pile",
@@ -22689,9 +22781,13 @@
       "Auger bored pile",
       "Bored pile drilling auger"
     ],
-    "questionImageAlt": "Question visual reference",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "keep_question_visual_if_needed",
-    "bcVisualCoachReason": "visual_construction_term"
+    "bcVisualCoachReason": "visual_construction_term",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Brick_trowel.jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
+    "localAssetSuggestion": "assets/BCON-361.jpg"
   },
   {
     "uid": "BC-362",
@@ -22733,20 +22829,21 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      {
-        "label": "USDA Forest Products Laboratory — Wood Handbook",
-        "url": "https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf"
-      }
+      "https://commons.wikimedia.org/wiki/File:Spirit_level.jpg"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Spirit_level.jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
+    "localAssetSuggestion": "assets/BCON-362.jpg"
   },
   {
     "uid": "BC-363",
@@ -22794,12 +22891,9 @@
     "imageAlt": "BC answer visual: Hole saw",
     "imageCredit": "Strict exact-title online thumbnail if available; otherwise safe fallback label.",
     "visualSourceRefs": [
-      {
-        "label": "USDA Forest Products Laboratory — Wood Handbook",
-        "url": "https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf"
-      }
+      "https://commons.wikimedia.org/wiki/File:7_piece_Hole_Saw_(51883934902).jpg"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: visual is used only when the question benefits from seeing a physical component, process, tool, joint, bond, detail, or construction form. Labels/clues stay hidden before answering.",
     "questionImageQuery": "Hole saw",
@@ -22811,9 +22905,13 @@
       "Hole saw",
       "Door knob hole saw"
     ],
-    "questionImageAlt": "Question visual reference",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "keep_question_visual_if_needed",
-    "bcVisualCoachReason": "visual_term_plus_identification"
+    "bcVisualCoachReason": "visual_term_plus_identification",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/7%20piece%20Hole%20Saw%20(51883934902).jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
+    "localAssetSuggestion": "assets/BCON-363.jpg"
   },
   {
     "uid": "BC-364",
@@ -22855,20 +22953,21 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      {
-        "label": "Portland Cement Association — Cement and Concrete",
-        "url": "https://www.cement.org/cement-concrete/applications-of-cement/"
-      }
+      "https://commons.wikimedia.org/wiki/File:Plumb-bob.jpg"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Plumb-bob.jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
+    "localAssetSuggestion": "assets/BCON-364.jpg"
   },
   {
     "uid": "BC-365",
@@ -22910,20 +23009,21 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      {
-        "label": "USDA Forest Products Laboratory — Wood Handbook",
-        "url": "https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf"
-      }
+      "https://commons.wikimedia.org/wiki/File:Circular_saw.jpg"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Circular_saw.jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
+    "localAssetSuggestion": "assets/BCON-365.jpg"
   },
   {
     "uid": "BC-366",
@@ -22965,20 +23065,21 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      {
-        "label": "USDA Forest Products Laboratory — Wood Handbook",
-        "url": "https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf"
-      }
+      "https://commons.wikimedia.org/wiki/File:Concrete_masonry_unit.jpg"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Concrete_masonry_unit.jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
+    "localAssetSuggestion": "assets/BCON-366.jpg"
   },
   {
     "uid": "BC-367",
@@ -23018,16 +23119,9 @@
       "formula": ""
     },
     "visualSourceRefs": [
-      {
-        "label": "Gypsum Association — Technical Resources",
-        "url": "https://gypsum.org/technical/"
-      },
-      {
-        "label": "AISC — Steel Construction Resources",
-        "url": "https://www.aisc.org/education/continuingeducation/education-archives/"
-      }
+      "https://commons.wikimedia.org/wiki/File:Drywall.jpg"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: visual is used only when the question benefits from seeing a physical component, process, tool, joint, bond, detail, or construction form. Labels/clues stay hidden before answering.",
     "questionImageQuery": "ceiling joist hanger metal inserts",
@@ -23049,10 +23143,14 @@
       "ceiling joist hanger metal inserts",
       "joist hanger metal insert"
     ],
-    "questionImageAlt": "Question visual reference",
+    "questionImageAlt": "Question visual for identification.",
     "answerImageAlt": "Answer visual reference",
     "bcVisualCoachDecision": "keep_question_visual_if_needed",
-    "bcVisualCoachReason": "visual_construction_term"
+    "bcVisualCoachReason": "visual_construction_term",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Drywall.jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
+    "localAssetSuggestion": "assets/BCON-367.jpg"
   },
   {
     "uid": "BC-368",
@@ -23094,20 +23192,21 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      {
-        "label": "USDA Forest Products Laboratory — Wood Handbook",
-        "url": "https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf"
-      }
+      "https://commons.wikimedia.org/wiki/File:Skil_jigsaw.jpg"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Skil_jigsaw.jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
+    "localAssetSuggestion": "assets/BCON-368.jpg"
   },
   {
     "uid": "BC-369",
@@ -23554,20 +23653,21 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      {
-        "label": "Portland Cement Association — Cement and Concrete",
-        "url": "https://www.cement.org/cement-concrete/applications-of-cement/"
-      }
+      "https://commons.wikimedia.org/wiki/File:Power_trowel_01.jpg"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Power_trowel_01.jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
+    "localAssetSuggestion": "assets/BCON-376.jpg"
   },
   {
     "uid": "BC-377",
@@ -23676,20 +23776,21 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      {
-        "label": "USDA Forest Products Laboratory — Wood Handbook",
-        "url": "https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf"
-      }
+      "https://commons.wikimedia.org/wiki/File:Auger_drill_bit.png"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Auger_drill_bit.png?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
+    "localAssetSuggestion": "assets/BCON-378.png"
   },
   {
     "uid": "BC-379",
@@ -23979,20 +24080,21 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      {
-        "label": "Portland Cement Association — Cement and Concrete",
-        "url": "https://www.cement.org/cement-concrete/applications-of-cement/"
-      }
+      "https://commons.wikimedia.org/wiki/File:Waffle_slab_section.jpg"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Waffle_slab_section.jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
+    "localAssetSuggestion": "assets/BCON-383.jpg"
   },
   {
     "uid": "BC-384",
@@ -24147,16 +24249,22 @@
     "imageQueries": [],
     "imageAlt": "",
     "imageCredit": "",
-    "visualSourceRefs": [],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Drillpress.jpg"
+    ],
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Drillpress.jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
+    "localAssetSuggestion": "assets/BCON-386.jpg"
   },
   {
     "uid": "BC-387",
@@ -24308,20 +24416,21 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      {
-        "label": "USDA Forest Products Laboratory — Wood Handbook",
-        "url": "https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf"
-      }
+      "https://commons.wikimedia.org/wiki/File:Belt_sander_bosch.jpg"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Belt_sander_bosch.jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
+    "localAssetSuggestion": "assets/BCON-389.jpg"
   },
   {
     "uid": "BC-390",

@@ -1380,8 +1380,8 @@
       "wafer butterfly valve",
       "flanged butterfly valve HVAC"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit shown after exam review only.",
     "answerImageQuery": "butterfly valve chiller",
     "answerImageQueries": [
       "butterfly valve chiller",
@@ -1395,7 +1395,12 @@
     ],
     "answerImageAlt": "Explanation visual reference: Butterfly valve",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://upload.wikimedia.org/wikipedia/commons/8/84/Butterfly_Valve.jpg",
+    "visualAssetSourcePage": "https://commons.wikimedia.org/wiki/File:Butterfly_Valve.jpg",
+    "visualAssetLicense": "CC BY-SA 3.0",
+    "visualAssetAuthor": "Mo7amedsalim",
+    "visualAssetAdminLabel": "Butterfly valve"
   },
   {
     "uid": "UTIL-035",
@@ -5575,8 +5580,8 @@
       "electronic ballast lighting",
       "rectangular fluorescent ballast"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit shown after exam review only.",
     "answerImageQuery": "fluorescent lamp ballast",
     "answerImageQueries": [
       "fluorescent lamp ballast",
@@ -5590,7 +5595,12 @@
     ],
     "answerImageAlt": "Explanation visual reference: Ballast",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://upload.wikimedia.org/wikipedia/commons/d/d6/40W_electronic_fluorescent_lamp_ballast.JPG",
+    "visualAssetSourcePage": "https://commons.wikimedia.org/wiki/File:40W_electronic_fluorescent_lamp_ballast.JPG",
+    "visualAssetLicense": "CC BY-SA 3.0",
+    "visualAssetAuthor": "Dmitry G",
+    "visualAssetAdminLabel": "Fluorescent ballast"
   },
   {
     "uid": "UTIL-138",
@@ -5796,8 +5806,8 @@
       "DisplayPort cable connector",
       "DisplayPort port"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit shown after exam review only.",
     "answerImageQuery": "DisplayPort connector",
     "answerImageQueries": [
       "DisplayPort connector",
@@ -5811,7 +5821,12 @@
     ],
     "answerImageAlt": "Explanation visual reference: DisplayPort connector",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://upload.wikimedia.org/wikipedia/commons/c/c8/DisplayPort_%28connector%29.PNG",
+    "visualAssetSourcePage": "https://commons.wikimedia.org/wiki/File:DisplayPort_(connector).PNG",
+    "visualAssetLicense": "Wikimedia Commons license shown on file page",
+    "visualAssetAuthor": "Tosaka",
+    "visualAssetAdminLabel": "DisplayPort connector"
   },
   {
     "uid": "UTIL-143",
@@ -5856,8 +5871,8 @@
       "Ethernet RJ45 plug",
       "RJ45 network jack"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit shown after exam review only.",
     "answerImageQuery": "RJ45 connector",
     "answerImageQueries": [
       "RJ45 connector",
@@ -5871,7 +5886,12 @@
     ],
     "answerImageAlt": "Explanation visual reference: RJ45 connector",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://upload.wikimedia.org/wikipedia/commons/8/85/Rj45.png",
+    "visualAssetSourcePage": "https://commons.wikimedia.org/wiki/File:Rj45.png",
+    "visualAssetLicense": "Wikimedia Commons license shown on file page",
+    "visualAssetAuthor": "Wikimedia Commons contributor shown on file page",
+    "visualAssetAdminLabel": "RJ45 connector"
   },
   {
     "uid": "UTIL-144",
@@ -6548,8 +6568,8 @@
       "urinal flush valve",
       "commercial flushometer valve"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
     "answerImageQuery": "toilet flush valve",
     "answerImageQueries": [
       "toilet flush valve",
@@ -6563,7 +6583,13 @@
     ],
     "answerImageAlt": "Explanation visual reference: Flush valve",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Toilet%20valve%20(2010233506).jpg?width=1000",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Toilet_valve_(2010233506).jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-160.jpg"
   },
   {
     "uid": "UTIL-161",
@@ -6682,8 +6708,8 @@
       "fluorescent lamp starter",
       "cylindrical fluorescent starter"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
     "answerImageQuery": "fluorescent starter",
     "answerImageQueries": [
       "fluorescent starter",
@@ -6697,7 +6723,13 @@
     ],
     "answerImageAlt": "Explanation visual reference: Fluorescent starter",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Starter_Of_Fluorescent_Lamp.JPG?width=1000",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Starter_Of_Fluorescent_Lamp.JPG"
+    ],
+    "localAssetSuggestion": "assets/UTIL-163.jpg"
   },
   {
     "uid": "UTIL-164",
@@ -6742,8 +6774,8 @@
       "fluorescent lamp starter",
       "cylindrical fluorescent starter"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
     "answerImageQuery": "fluorescent starter",
     "answerImageQueries": [
       "fluorescent starter",
@@ -6757,7 +6789,13 @@
     ],
     "answerImageAlt": "Explanation visual reference: Fluorescent starter",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Starter_Of_Fluorescent_Lamp.JPG?width=1000",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Starter_Of_Fluorescent_Lamp.JPG"
+    ],
+    "localAssetSuggestion": "assets/UTIL-164.jpg"
   },
   {
     "uid": "UTIL-165",
@@ -6862,8 +6900,8 @@
       "HPS lamp",
       "tubular sodium lamp"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit shown after exam review only.",
     "answerImageQuery": "high pressure sodium lamp",
     "answerImageQueries": [
       "high pressure sodium lamp",
@@ -6877,7 +6915,12 @@
     ],
     "answerImageAlt": "Explanation visual reference: High pressure sodium lamp",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://upload.wikimedia.org/wikipedia/commons/6/67/High_Pressure_Sodium_Lamp.jpg",
+    "visualAssetSourcePage": "https://commons.wikimedia.org/wiki/File:High_Pressure_Sodium_Lamp.jpg",
+    "visualAssetLicense": "CC BY 3.0",
+    "visualAssetAuthor": "Bidgee",
+    "visualAssetAdminLabel": "High pressure sodium lamp"
   },
   {
     "uid": "UTIL-167",
@@ -6922,8 +6965,8 @@
       "bidet spray hose",
       "handheld bidet sprayer"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
     "answerImageQuery": "toilet handheld spray",
     "answerImageQueries": [
       "toilet handheld spray",
@@ -6937,7 +6980,13 @@
     ],
     "answerImageAlt": "Explanation visual reference: Toilet handheld spray",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Hand_Bidet_Shower.jpg?width=1000",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Hand_Bidet_Shower.jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-167.jpg"
   },
   {
     "uid": "UTIL-168",
@@ -7046,8 +7095,8 @@
       "whirlybird roof vent",
       "turbine roof vent"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit shown after exam review only.",
     "answerImageQuery": "roof turbine ventilator",
     "answerImageQueries": [
       "roof turbine ventilator",
@@ -7061,7 +7110,12 @@
     ],
     "answerImageAlt": "Explanation visual reference: Roof turbine ventilator",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Roof_Turbine_Ventilator.jpg",
+    "visualAssetSourcePage": "https://commons.wikimedia.org/wiki/File:Roof_Turbine_Ventilator.jpg",
+    "visualAssetLicense": "CC BY-SA 4.0",
+    "visualAssetAuthor": "Saud",
+    "visualAssetAdminLabel": "Roof turbine ventilator"
   },
   {
     "uid": "UTIL-170",
@@ -7166,8 +7220,8 @@
       "DVI cable connector",
       "DVI port"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit shown after exam review only.",
     "answerImageQuery": "DVI connector",
     "answerImageQueries": [
       "DVI connector",
@@ -7181,7 +7235,12 @@
     ],
     "answerImageAlt": "Explanation visual reference: DVI connector",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://upload.wikimedia.org/wikipedia/commons/d/d5/DVI_Connector.jpg",
+    "visualAssetSourcePage": "https://commons.wikimedia.org/wiki/File:DVI_Connector.jpg",
+    "visualAssetLicense": "Wikimedia Commons license shown on file page",
+    "visualAssetAuthor": "Wikimedia Commons contributor shown on file page",
+    "visualAssetAdminLabel": "DVI connector"
   },
   {
     "uid": "UTIL-172",
@@ -7286,8 +7345,8 @@
       "pipe clevis hanger",
       "adjustable clevis hanger"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
     "answerImageQuery": "clevis hanger pipe support",
     "answerImageQueries": [
       "clevis hanger pipe support",
@@ -7301,7 +7360,13 @@
     ],
     "answerImageAlt": "Explanation visual reference: Clevis hanger",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Clevis_Hanger.jpg?width=1000",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Clevis_Hanger.jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-173.jpg"
   },
   {
     "uid": "UTIL-174",
@@ -7346,8 +7411,8 @@
       "HVAC expansion valve",
       "refrigeration expansion valve capillary bulb"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
     "answerImageQuery": "thermostatic expansion valve",
     "answerImageQueries": [
       "thermostatic expansion valve",
@@ -7361,7 +7426,13 @@
     ],
     "answerImageAlt": "Explanation visual reference: Expansion valve",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Thermostatic_Expansion_Valve_PHT.jpg?width=1000",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Thermostatic_Expansion_Valve_PHT.jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-174.jpg"
   },
   {
     "uid": "UTIL-175",
@@ -7406,8 +7477,8 @@
       "digital thermostat HVAC",
       "programmable thermostat"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
     "answerImageQuery": "wall thermostat",
     "answerImageQueries": [
       "wall thermostat",
@@ -7421,7 +7492,13 @@
     ],
     "answerImageAlt": "Explanation visual reference: Thermostat",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Digital_thermostat_wall.JPG?width=1000",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Digital_thermostat_wall.JPG"
+    ],
+    "localAssetSuggestion": "assets/UTIL-175.jpg"
   },
   {
     "uid": "UTIL-176",
@@ -7466,8 +7543,8 @@
       "constant current LED driver",
       "rectangular LED driver"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
     "answerImageQuery": "LED driver power supply",
     "answerImageQueries": [
       "LED driver power supply",
@@ -7481,7 +7558,13 @@
     ],
     "answerImageAlt": "Explanation visual reference: LED driver",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/LED_driver.JPG?width=1000",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:LED_driver.JPG"
+    ],
+    "localAssetSuggestion": "assets/UTIL-176.jpg"
   },
   {
     "uid": "UTIL-177",
@@ -7526,8 +7609,8 @@
       "electrical fuse cartridge",
       "cylindrical fuse"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
     "answerImageQuery": "cartridge fuse",
     "answerImageQueries": [
       "cartridge fuse",
@@ -7541,7 +7624,13 @@
     ],
     "answerImageAlt": "Explanation visual reference: Fuse",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Cartridge_Fuse.svg?width=1000",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Cartridge_Fuse.svg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-177.svg"
   },
   {
     "uid": "UTIL-178",
@@ -7577,9 +7666,17 @@
     "explanation": "Ulit: ang best answer dito ay Enough Exhaust Fan.\nDito, practical building-utilities logic ang gamitin mo. Sa samgyupsal restaurant, ang major issue ay:\n• smoke\n• grease-laden vapor\n• heat\n• oil particles\nKapag hindi maayos ang exhaust, kumakapit ang greasy vapor sa surfaces, including floors, kaya nagiging madulas.\nBakit ito ang tama?\nAng exhaust system ang pinaka-direct utility solution para alisin ang:\n• usok\n• mantika sa hangin\n• cooking vapor\n• odor and heat buildup\nSo kung ang target mo ay minimize the cause of slippery conditions, hindi lang remedy, ang sagot ay Enough Exhaust Fan.\nBakit mali ang ibang choices?\na. Enough Aircon — comfort ang tinutulungan nito, hindi grease removal.\nc. Enough Lighting — visibility lang ang naibibigay nito, hindi niya inaalis ang cause ng slippery floor.\nd. Enough Cleaners — maintenance solution ito, hindi building-utilities solution.\ne. Enough Service Crew — manpower solution ito, hindi environmental-control solution.\nElimination method\nIto ang iniisip mo dapat:\n• Ang tanong ba ay tungkol sa root cause control o operational response?\n• Since building utilities reviewer ito, hanapin mo ang mechanical/environmental control answer.\n• Doon papasok ang Exhaust Fan.\nCommon trap sa board exam\nAng trap dito ay Enough Cleaners, kasi practical naman talaga iyon sa totoong buhay.\nPero tandaan:\nboard exam often wants the design/system answer, not the staffing answer.\nAno ang dapat mong tandaan dito?\nSa greasy, smoky food spaces, proper exhaust ang pinaka-importanteng first-line design solution.\n________________________________________",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "none",
+    "visualMode": "question",
     "visualIntent": "no_visual",
-    "visualReviewNote": "No visual assigned to avoid irrelevant image links."
+    "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Circuit_breaker.jpg?width=1000",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Circuit_breaker.jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-178.jpg"
   },
   {
     "uid": "UTIL-179",
@@ -7615,7 +7712,7 @@
     "explanation": "Ulit: sa choices na ito, ang best answer ay Water Closet Cubicle.\nDito gusto kong maging honest: sa actual practice, several toilet-related areas can benefit from exhaust ventilation, especially shower areas for moisture and water closet areas for odor control. Pero kung one best answer lang ang hahanapin sa reviewer logic, pinaka-intended dito ang Water Closet Cubicle dahil iyon ang pinaka-directly associated with odor removal in enclosed toilet spaces.\nBakit ito ang tama?\nAng exhaust fan is commonly associated with enclosed toilet areas to remove:\n• odor\n• stale air\n• humidity\n• contaminants\nSa listed options, ang water closet cubicle ang pinaka-direct at pinaka-classic na space na inaasahang i-exhaust.\nBakit mali ang ibang choices?\nb. Urinal Area — puwede rin sa actual design, pero less \"single best answer\" than WC cubicle in reviewer logic.\nc. Shower Area — moisture control yes, but the most classic exhaust-fan answer in sanitary spaces is still enclosed WC area.\nd. Lavatory Area — not the most direct answer.\ne. Hand Spray — fixture ito, hindi area.\nElimination method\nGanito ka dapat mag-isip:\n• Hanapin ang pinaka-odorous and enclosed sanitation space\n• Huwag pumili ng fixture\n• Huwag pumili ng less critical area if there is a stronger odor-control candidate\nCommon trap sa board exam\nAng trap dito ay shower area, kasi iniisip mo agad moisture. Tama naman ang concern, pero reviewer-type question ito, at ang mas classic answer ay WC cubicle.\nAno ang dapat mong tandaan dito?\nSa toilet-area questions, exhaust fan is most strongly associated with the water closet cubicle.\n________________________________________",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "none",
+    "visualMode": "question",
     "visualIntent": "concept_visual",
     "visualReviewNote": "Concept visual only; no remote image needed.",
     "answerConceptVisual": {
@@ -7623,7 +7720,15 @@
       "main": "A. Water Closet Cubicle",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    }
+    },
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Light_switch.jpg?width=1000",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Light_switch.jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-179.jpg"
   },
   {
     "uid": "UTIL-180",
@@ -7655,9 +7760,17 @@
     "explanation": "Ulit: ang tamang sagot ay Upper End.\nIto ay typical escalator planning/reviewer item.\nBakit ito ang tama?\nSa usual escalator arrangement, the drive machinery or motor room is commonly located at the upper end. Iyon ang pinaka-usual reference sa escalator planning logic.\nBakit mali ang ibang choices?\na. Lower End — possible in some configurations, pero not the usual reviewer answer.\nb. Mid End — awkward at hindi standard term.\nc. Middle — hindi ito ang common arrangement.\nElimination method\nKapag escalator machinery ang tanong:\n• isipin mo kung saan commonly nasa drive end\n• reviewer memory usually says upper end\nCommon trap sa board exam\nAng trap dito ay lower end, kasi may ibang system components din doon.\nPero kapag \"usual location\" ang wording, upper end ang tandaan.\nAno ang dapat mong tandaan dito?\nSa reviewer logic, usual escalator motor room location = upper end.\n________________________________________",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "none",
+    "visualMode": "question",
     "visualIntent": "no_visual",
-    "visualReviewNote": "No visual assigned to avoid irrelevant image links."
+    "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/NEMA_5-15_Outlet.jpg?width=1000",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:NEMA_5-15_Outlet.jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-180.jpg"
   },
   {
     "uid": "UTIL-181",
@@ -7689,7 +7802,7 @@
     "explanation": "Ulit: ang tamang sagot ay 400 mm.\nDito, mukhang ang word na \"width\" sa item ay ginagamit in the sense of the typical step tread dimension/depth sa reviewer context.\nBakit ito ang tama?\nSa escalator step geometry, ang typical tread/run dimension na nire-review sa ganitong item is 400 mm.\nSa choices, iyan ang pinaka-standard reviewer answer.\nBakit mali ang ibang choices?\n250 mm, 300 mm, at 350 mm — masyadong mababa para sa usual escalator tread dimension being referred to in this kind of item.\nElimination method\nKapag escalator tread ang tanong at choices are 250 to 400:\n• huwag isipin ang ordinary stair tread agad\n• remember escalator step geometry is more generous\n• so the largest standard-looking dimension, 400 mm, is the strongest answer\nCommon trap sa board exam\nAng trap dito ay 300 mm, dahil sanay ka sa stair-tread numbers.\nPero tandaan:\nescalator step dimensions are not ordinary stair proportions.\nAno ang dapat mong tandaan dito?\nSa reviewer logic, typical escalator tread dimension = 400 mm.\n________________________________________",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "none",
+    "visualMode": "question",
     "visualIntent": "concept_visual",
     "visualReviewNote": "Concept visual only; no remote image needed.",
     "answerConceptVisual": {
@@ -7697,7 +7810,15 @@
       "main": "D. 400 mm",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    }
+    },
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/GFCI_receptacle.jpg?width=1000",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:GFCI_receptacle.jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-181.jpg"
   },
   {
     "uid": "UTIL-182",
@@ -7733,9 +7854,17 @@
     "explanation": "Ulit: ang best answer dito ay Safety Deflector.\nIto iyong brush-like safety feature along the escalator skirt intended to help keep shoes, clothing, or objects away from the moving side/skirt interface.\nBakit ito ang tama?\nSa reviewer logic, the brush along the skirting functions as a safety deflector.\nAng pinakamahalagang clue ay:\n• nasa skirting siya\n• brush siya\n• safety-related ang purpose niya\nBakit mali ang ibang choices?\na. Shoe Polisher — joke-like distractor lang ito.\nb. Dirt Remover — too generic.\nd. Brush Buffer — tunog descriptive lang, not the most technical answer.\ne. Safety Interceptor — less standard at mas mahina compared to deflector.\nElimination method\nKapag ang object ay:\n• nasa escalator side/skirt\n• brush form\n• safety purpose\nthen hanapin ang choice with safety + directional/protective function.\nThat is Safety Deflector.\nCommon trap sa board exam\nAng trap dito ay Safety Interceptor, kasi parang technical din pakinggan.\nPero the brush is more about deflecting away, not \"intercepting\" in the usual wording.\nAno ang dapat mong tandaan dito?\nBrush along escalator skirt = Safety Deflector sa reviewer logic.\n________________________________________",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "none",
+    "visualMode": "question",
     "visualIntent": "no_visual",
-    "visualReviewNote": "No visual assigned to avoid irrelevant image links."
+    "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Smoke_detector.jpg?width=1000",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Smoke_detector.jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-182.jpg"
   },
   {
     "uid": "UTIL-183",
@@ -7767,7 +7896,7 @@
     "explanation": "Ulit: ang tamang sagot ay UPS.\nNapaka-importanteng keyword dito ang avoid power interruption.\nBakit ito ang tama?\nAng UPS or Uninterruptible Power Supply gives immediate backup power with virtually no interruption.\nSa hospital operations, lalo na sa critical procedures, iyon ang kailangan mo.\nBakit mali ang ibang choices?\na. AVR — stabilizes voltage, but does not maintain power during outage.\nc. ATS — automatic transfer switch transfers to backup source, but there can still be transfer time; hindi ito ang pinaka-direct no-interruption answer.\nd. Router — unrelated.\nElimination method\nIto ang pair na dapat mong tandaan:\n• UPS = no-interruption backup\n• ATS = transfer mechanism\n• AVR = voltage stabilizer\nCommon trap sa board exam\nAng trap dito ay ATS, kasi backup-power related din siya.\nPero ang tanong ay avoid interruption, so ang mas exact answer ay UPS.\nAno ang dapat mong tandaan dito?\nCritical no-break power = UPS.\n________________________________________",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "after_answer",
+    "visualMode": "question",
     "visualIntent": "equipment_visual_reinforcement",
     "answerImageQuery": "uninterruptible power supply",
     "answerImageQueries": [
@@ -7780,7 +7909,15 @@
     ],
     "answerImageAlt": "Explanation visual reference: UPS",
     "answerImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only.",
-    "visualReviewNote": "Visual shown after answering only."
+    "visualReviewNote": "Visual shown after answering only.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Fire_sprinkler_head.jpg?width=1000",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Fire_sprinkler_head.jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-183.jpg"
   },
   {
     "uid": "UTIL-184",
@@ -7816,7 +7953,7 @@
     "explanation": "Ulit: ang tamang sagot ay Flood Light.\nIto straightforward sports-lighting logic ito.\nBakit ito ang tama?\nAng basketball court needs:\n• wide-area illumination\n• broad beam spread\n• relatively even light across playing surface\nIyan ang trabaho ng flood light.\nBakit mali ang ibang choices?\na. Task Light — localized work lighting ito.\nb. Spot Light — narrow beam, pang-accent.\nc. Cove light — indirect decorative lighting.\ne. Ground light — landscape/accent application, not main sports illumination.\nElimination method\nKapag malaking open area ang subject, hanapin ang wide-beam lighting system.\nThat is Flood Light.\nCommon trap sa board exam\nAng trap dito ay spot light dahil sports area at baka isipin mo kailangang maliwanag.\nPero tandaan:\nspot = focused beam\nflood = wide area coverage\nAno ang dapat mong tandaan dito?\nLarge sports playing area = Flood Light.\n________________________________________",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "after_answer",
+    "visualMode": "question",
     "visualIntent": "equipment_visual_reinforcement",
     "answerImageQuery": "flood light wide beam",
     "answerImageQueries": [
@@ -7829,7 +7966,15 @@
     ],
     "answerImageAlt": "Explanation visual reference: Flood Light",
     "answerImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only.",
-    "visualReviewNote": "Visual shown after answering only."
+    "visualReviewNote": "Visual shown after answering only.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Fire_alarm_pull_station.jpg?width=1000",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Fire_alarm_pull_station.jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-184.jpg"
   },
   {
     "uid": "UTIL-185",
@@ -7865,7 +8010,7 @@
     "explanation": "Ulit: ang best answer dito ay Eyeball Light with Halogen Bulb.\nDito accent lighting ang logic. Ang key phrase ay highlight the menu board.\nBakit ito ang tama?\nAng eyeball light is adjustable/directional, kaya maganda siya for aiming light toward a vertical feature like a menu board.\nAng halogen bulb also gives crisp accent lighting and good color rendering in classic reviewer logic.\nBakit hindi spot light with metal halide?\nPuwede rin sana sa ibang display situations, pero for a smaller interior retail application like a milk tea shop menu board, the more practical and reviewer-friendly interior accent answer is eyeball light with halogen bulb.\nBakit mali ang ibang choices?\na. Track Light with HPS lamp — HPS has poor color rendering; not ideal for interior menu-board highlighting.\nb. Pendant Light with Mercury Vapor Lamp — wrong mood and wrong lamp logic for menu-board accent.\nd. Downlight with LED Bulb — too general; not as targeted for highlighting a board.\ne. Spot light with Metal Halide Bulb — strong contender, but more likely overkill versus the classic small-shop accent answer.\nElimination method\nGanito ang tamang isip:\n• Targeted accent ba ang kailangan? Oo.\n• So alisin ang broad general lighting like downlight.\n• Alisin ang poor-color-rendering or wrong-use lamps like HPS and mercury vapor.\n• Between remaining directional accent choices, piliin ang mas maliit-shop interior solution: eyeball light with halogen bulb.\nCommon trap sa board exam\nAng trap dito ay spot light with metal halide bulb, kasi accent din iyon.\nPero sa maliit na interior menu-board highlighting, the more classic reviewer answer is eyeball light with halogen.\nAno ang dapat mong tandaan dito?\nFor small interior display/menu highlight, adjustable accent light ang sagot — dito, Eyeball Light with Halogen Bulb.\n________________________________________\nYung huling item sa ibaba tungkol sa refrigerator at power panel ay putol ang tanong sa upload, so hindi pa siya fully visible. Hindi muna natin siya sasagutin para hindi tayo manghula lampas sa nakikita sa page. Sige, tuloy tayo.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "none",
+    "visualMode": "question",
     "visualIntent": "concept_visual",
     "visualReviewNote": "Concept visual only; no remote image needed.",
     "answerConceptVisual": {
@@ -7873,7 +8018,15 @@
       "main": "C. Eyeball Light with Halogen Bulb",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    }
+    },
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Ceiling_air_diffuser.jpg?width=1000",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Ceiling_air_diffuser.jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-185.jpg"
   },
   {
     "uid": "UTIL-186",
@@ -7905,9 +8058,17 @@
     "explanation": "Ulit: ang tamang sagot ay Circuit no. 11.\nIto, practical electrical planning logic ito. Refrigerators are commonly treated as loads that are best placed on their own dedicated circuit, or at the very least not mixed with already occupied convenience-outlet circuits when you still have spare circuits available. Since No. 11 and 12 are spare, and No. 10 is already serving the existing refrigerator, the cleanest and safest reviewer answer is Circuit no. 11. (Parker Electric)\nBakit mali ang iba? Circuit 8 is already a convenience-outlet circuit, so hindi iyan ang ideal place for another refrigerator. Any of 1–7 mas lalong hindi, kasi loaded convenience-outlet circuits na ang mga iyon. Circuit 10 is tempting, pero dalawang refrigerator sa iisang existing ref circuit is poor practice if may spare ka naman. Sa ALE logic, kapag may spare dedicated circuit, doon mo ilalagay ang added appliance. (Parker Electric)\nAno ang dapat mong tandaan dito?\nKapag may major appliance at may spare circuit, huwag mo isiksik sa convenience outlets. Gamitin ang spare dedicated circuit.\n________________________________________",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "none",
+    "visualMode": "question",
     "visualIntent": "no_visual",
-    "visualReviewNote": "No visual assigned to avoid irrelevant image links."
+    "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Floor_drain.jpg?width=1000",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Floor_drain.jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-186.jpg"
   },
   {
     "uid": "UTIL-187",
@@ -7939,7 +8100,7 @@
     "explanation": "Ulit: ang tamang sagot, as intended, ay GFRC — pero malinaw na typo ito for GFCI.\nDito, obvious na ang intended answer ng item ay GFCI kahit ang naka-print ay GFRC. Kitchens and toilets are wet areas, and the protective device specifically used there to reduce shock hazard is the Ground-Fault Circuit Interrupter. Multiple electrical-safety sources, including Philippine-oriented reviewer materials and OSHA-style descriptions, consistently identify GFCI as the right protection for wet locations. (Scribd)\nBakit mali ang iba? NEMA/MEMA is not the protective device being asked. Circuit breaker is too general; it protects against overcurrent, not specifically ground-fault shock in wet areas. UPS is backup power equipment. Kaya kahit mali ang printing ng choice, the only defensible intended answer is GFCI/GFRC as printed. (Studocu)\nAno ang dapat mong tandaan dito?\nKapag kitchen o toilet ang tanong, isipin mo agad GFCI. Kung typo ang choice, sundan mo ang intended protective device.\n________________________________________",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "none",
+    "visualMode": "question",
     "visualIntent": "concept_visual",
     "visualReviewNote": "Concept visual only; no remote image needed.",
     "answerConceptVisual": {
@@ -7947,7 +8108,15 @@
       "main": "D. GFRC",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    }
+    },
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/P-trap.jpg?width=1000",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH3.csv.",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:P-trap.jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-187.jpg"
   },
   {
     "uid": "UTIL-188",
@@ -9451,8 +9620,8 @@
       "round ceiling downlight",
       "LED recessed downlight"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
     "answerImageQuery": "recessed downlight",
     "answerImageQueries": [
       "recessed downlight",
@@ -9466,7 +9635,13 @@
     ],
     "answerImageAlt": "Explanation visual reference: Downlight",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Downlight.jpg?width=1000",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Downlight.jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-225.jpg"
   },
   {
     "uid": "UTIL-226",
@@ -10483,8 +10658,8 @@
       "network patch cable RJ45",
       "UTP patch cable"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH2.csv.",
     "answerImageQuery": "Ethernet patch cable",
     "answerImageQueries": [
       "Ethernet patch cable",
@@ -10498,7 +10673,13 @@
     ],
     "answerImageAlt": "Explanation visual reference: Patch cable",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/EthernetCableGreen2.jpg?width=1000",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:EthernetCableGreen2.jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-247.jpg"
   },
   {
     "uid": "UTIL-248",

@@ -112,3 +112,16 @@ v10 identify restore:
 - If an Identify card has no embedded image, it shows a neutral no-image notice only.
 - Search cues, image queries, Wikimedia/search buttons, and answer clues remain hidden before submit.
 - Best long-term fix remains adding direct neutral `questionImage`/`image` assets to Identify cards.
+
+
+v11 subject-balanced quota update:
+- Exam pages no longer use pure pooled random only.
+- Every Start Exam still generates a new random set, but now samples by subject quota first.
+- Exam 1 official 100-item quota target:
+  History 15, Theory 25, Planning 20, Professional Practice 15, Building Laws 15, Tropical 10.
+- Exam 2 official 150-item quota target:
+  Building Utilities 30, Structural Concepts 35, Building Materials 45, Building Construction 40.
+- Exam 3 official 200-item quota target:
+  ADSP 80, Planning 40, Building Laws 30, Tropical 25, Structural Concepts 25.
+- Shorter item-count modes scale the same proportions.
+- If a source has fewer cards than its quota, remaining slots are filled from available cards and a quota warning appears.
