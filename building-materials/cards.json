@@ -6144,7 +6144,7 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualMode": "question",
-    "visualSourceType": "source-backed-remote",
+    "visualSourceType": "open-license-real-photo",
     "visualReviewNote": "Question visual is shown without name labels. The same image target is reused in the explanation for answer reinforcement.",
     "visualIntent": "material_identification",
     "questionImageQuery": "turnbuckle hardware",
@@ -6158,8 +6158,8 @@
       "turnbuckle tension adjuster",
       "turnbuckle cable"
     ],
-    "questionImageAlt": "Question visual for identification.",
-    "questionImageCredit": "Source-backed visual. Credit/source listed in IMAGE-CREDITS-BM-BATCH1.csv.",
+    "questionImageAlt": "Real photo for identification.",
+    "questionImageCredit": "Source-backed open-license real photo. See IMAGE-CREDITS-BM-BATCH2.csv.",
     "aiImage": false,
     "answerImageQuery": "turnbuckle hardware",
     "answerImageQueries": [
@@ -6178,7 +6178,9 @@
     "visualSourceRefs": [
       "https://commons.wikimedia.org/wiki/File:Turnbuckles.jpg"
     ],
-    "localAssetSuggestion": "assets/BM-107.jpg"
+    "localAssetSuggestion": "assets/BM-107.jpg",
+    "visualAuditStatus": "REAL_PHOTO_OK",
+    "visualAuditNote": "Actual turnbuckles, real photo."
   },
   {
     "uid": "BM-108",
@@ -10818,17 +10820,19 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualMode": "question",
-    "visualSourceType": "source-backed-remote",
+    "visualSourceType": "open-license-real-photo",
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
     "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Window%20lock.jpg?width=1000",
-    "questionImageAlt": "Question visual for identification.",
-    "questionImageCredit": "Source-backed visual. Credit/source listed in IMAGE-CREDITS-BM-BATCH1.csv.",
+    "questionImageAlt": "Real photo for identification.",
+    "questionImageCredit": "Source-backed open-license real photo. See IMAGE-CREDITS-BM-BATCH2.csv.",
     "visualSourceRefs": [
       "https://commons.wikimedia.org/wiki/File:Window_lock.jpg"
     ],
-    "localAssetSuggestion": "assets/BM-218.jpg"
+    "localAssetSuggestion": "assets/BM-218.jpg",
+    "visualAuditStatus": "REAL_PHOTO_OK",
+    "visualAuditNote": "Actual window lock photo. Marked acceptable; can be replaced later with exact casement lock if own photo available."
   },
   {
     "uid": "BM-219",
@@ -10861,17 +10865,19 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualMode": "question",
-    "visualSourceType": "source-backed-remote",
+    "visualSourceType": "open-license-real-photo",
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
     "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Sliding%20door%20lock%20and%20handle%20in%20B%20Shed,%20Fremantle.jpg?width=1000",
-    "questionImageAlt": "Question visual for identification.",
-    "questionImageCredit": "Source-backed visual. Credit/source listed in IMAGE-CREDITS-BM-BATCH1.csv.",
+    "questionImageAlt": "Real photo for identification.",
+    "questionImageCredit": "Source-backed open-license real photo. See IMAGE-CREDITS-BM-BATCH2.csv.",
     "visualSourceRefs": [
       "https://commons.wikimedia.org/wiki/File:Sliding_door_lock_and_handle_in_B_Shed,_Fremantle.jpg"
     ],
-    "localAssetSuggestion": "assets/BM-219.jpg"
+    "localAssetSuggestion": "assets/BM-219.jpg",
+    "visualAuditStatus": "REAL_PHOTO_OK",
+    "visualAuditNote": "Actual sliding door lock/hasp hardware photo."
   },
   {
     "uid": "BM-220",
@@ -10903,18 +10909,14 @@
     "explanation": "Correct answer: b. Flush bolt\nUlitin natin: Flush bolt.\nIto, image-identification item ito. Ang nasa picture ay iyong mahaba at makitid na recessed bolt hardware na ini-install flush sa edge o face ng door leaf, usually sa inactive leaf ng double door.\nBakit ito ang tama?\nAng flush bolt ay:\n•\tpahabang hardware\n•\trecessed or mounted flush sa pinto\n•\tginagamit para i-lock ang inactive leaf ng double door sa taas at/o baba\nIyong itsura sa image, hindi siya round-body barrel bolt na surface mounted lang. Mas mukhang built-in or recessed long plate hardware siya, kaya flush bolt ang tamang sagot.\nBakit mali ang ibang choices?\n•\ta. Barrel bolt – ito ang common trap.\nAng barrel bolt ay mas obvious na sliding surface bolt lang. Karaniwan mas simple at hindi ganito ka-flush/recessed ang itsura.\n•\tc. Toggle bolt – pang-hollow wall anchorage ito, hindi door hardware\n•\td. Shoulder bolt – bolt/fastener category ito, hindi lock hardware\nElimination method\nIto ang iniisip mo:\n1.\tDoor hardware ba ito or bolt fastener?\nDoor hardware.\n2.\tRecessed elongated plate ba ang itsura?\nOo.\n3.\tToggle at shoulder bolt tanggal agad dahil maling family.\n4.\tBetween barrel bolt and flush bolt, kung mukhang recessed/flush-mounted, sagot ay flush bolt.\nCommon trap\nPinaka-trap si barrel bolt dahil pareho silang locking bolt.\nPero tandaan:\n•\tbarrel bolt = usually surface-mounted\n•\tflush bolt = usually recessed / flush in the door\nAno ang dapat mong tandaan dito?\nKapag ang locking hardware ay mahaba at recessed sa pinto, strongest answer is flush bolt.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "question",
-    "visualSourceType": "source-backed-remote",
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Door%20bolt%20(43713043734).jpg?width=1000",
-    "questionImageAlt": "Question visual for identification.",
-    "questionImageCredit": "Source-backed visual. Credit/source listed in IMAGE-CREDITS-BM-BATCH1.csv.",
-    "visualSourceRefs": [
-      "https://commons.wikimedia.org/wiki/File:Door_bolt_(43713043734).jpg"
-    ],
-    "localAssetSuggestion": "assets/BM-220.jpg"
+    "visualAuditStatus": "NEEDS_OWN_PHOTO",
+    "visualAuditNote": "Flush bolt needs exact market/product photo. Generic door bolt is not exact enough.",
+    "needsOwnPhoto": true,
+    "marketPhotoNeeded": true,
+    "safePhotoRule": "Use own photo or permissioned/open-license exact product photo only."
   },
   {
     "uid": "BM-221",
@@ -11054,18 +11056,14 @@
     "explanation": "Correct answer: d. Butterfly hinge\nUlitin natin: Butterfly hinge.\nIyong image shows a decorative hinge with wing-like plates on both sides. Very visual ito.\nBakit ito ang tama?\nAng butterfly hinge ay decorative hinge na ang leaves niya ay parang pakpak ng butterfly. Iyong image ganoon mismo ang silhouette.\nBakit mali ang ibang choices?\n•\ta. Counter flap hinge – ibang application-specific hinge ito\n•\tb. Butt hinge – simple rectangular leaves lang usually, hindi decorative winged shape\n•\tc. Barrel hinge – cylindrical concealed-ish hinge form ito, not winged plate\nElimination method\nIto ang iniisip mo:\n1.\tDecorative wing-like ba ang plates? Oo.\n2.\tSo tanggal ang butt at barrel\n3.\tAng pinaka-visual match ay butterfly hinge\nCommon trap\nAng trap dito ay butt hinge dahil hinge pa rin naman at may dalawang leaves.\nPero huwag mong i-ignore ang shape ng leaves.\nAno ang dapat mong tandaan dito?\nKapag decorative hinge na mukhang pakpak, sagot ay butterfly hinge.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "question",
-    "visualSourceType": "source-backed-remote",
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/-%20Hinge%20-.jpg?width=1000",
-    "questionImageAlt": "Question visual for identification.",
-    "questionImageCredit": "Source-backed visual. Credit/source listed in IMAGE-CREDITS-BM-BATCH1.csv.",
-    "visualSourceRefs": [
-      "https://commons.wikimedia.org/wiki/File:-_Hinge_-.jpg"
-    ],
-    "localAssetSuggestion": "assets/BM-224.jpg"
+    "visualAuditStatus": "NEEDS_OWN_PHOTO",
+    "visualAuditNote": "Butterfly hinge needs exact market/product photo. Generic hinge is not acceptable.",
+    "needsOwnPhoto": true,
+    "marketPhotoNeeded": true,
+    "safePhotoRule": "Use own photo or permissioned/open-license exact product photo only."
   },
   {
     "uid": "BM-225",
@@ -11314,17 +11312,19 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualMode": "question",
-    "visualSourceType": "source-backed-remote",
+    "visualSourceType": "open-license-real-photo",
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
     "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/A%20perennial%20border%20of%20Rebar%20Safety%20Caps%20-%20geograph.org.uk%20-%204562850.jpg?width=1000",
-    "questionImageAlt": "Question visual for identification.",
-    "questionImageCredit": "Source-backed visual. Credit/source listed in IMAGE-CREDITS-BM-BATCH1.csv.",
+    "questionImageAlt": "Real photo for identification.",
+    "questionImageCredit": "Source-backed open-license real photo. See IMAGE-CREDITS-BM-BATCH2.csv.",
     "visualSourceRefs": [
       "https://commons.wikimedia.org/wiki/File:A_perennial_border_of_Rebar_Safety_Caps_-_geograph.org.uk_-_4562850.jpg"
     ],
-    "localAssetSuggestion": "assets/BM-231.jpg"
+    "localAssetSuggestion": "assets/BM-231.jpg",
+    "visualAuditStatus": "REAL_PHOTO_OK",
+    "visualAuditNote": "Actual rebar safety caps, real photo."
   },
   {
     "uid": "BM-232",
@@ -11645,17 +11645,19 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualMode": "question",
-    "visualSourceType": "source-backed-remote",
+    "visualSourceType": "open-license-real-photo",
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
     "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Rim%20lock.jpg?width=1000",
-    "questionImageAlt": "Question visual for identification.",
-    "questionImageCredit": "Source-backed visual. Credit/source listed in IMAGE-CREDITS-BM-BATCH1.csv.",
+    "questionImageAlt": "Real photo for identification.",
+    "questionImageCredit": "Source-backed open-license real photo. See IMAGE-CREDITS-BM-BATCH2.csv.",
     "visualSourceRefs": [
       "https://commons.wikimedia.org/wiki/File:Rim_lock.jpg"
     ],
-    "localAssetSuggestion": "assets/BM-240.jpg"
+    "localAssetSuggestion": "assets/BM-240.jpg",
+    "visualAuditStatus": "REAL_PHOTO_OK",
+    "visualAuditNote": "Actual rim lock / door lock hardware photo."
   },
   {
     "uid": "BM-241",
@@ -11868,17 +11870,19 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualMode": "question",
-    "visualSourceType": "source-backed-remote",
+    "visualSourceType": "open-license-real-photo",
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Post%20medieval%20hasp%20with%20staple%20(FindID%20227214).jpg?width=1000",
-    "questionImageAlt": "Question visual for identification.",
-    "questionImageCredit": "Source-backed visual. Credit/source listed in IMAGE-CREDITS-BM-BATCH1.csv.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Shed,%20outside%20storage,%20old%20wooden%20door,%20hasp,%20hook,%20code%20padlock,%20red%20paint,%20(utebod,%20skjul,%20uthus,%20d%C3%B8r,%20r%C3%B8d%20vegg,%20hengel%C3%A5s,%20haspe,%20d%C3%B8rkrok)%20T%C3%B8nsberg,%20Norway%202019-08-28%20IMG%200373.jpg?width=1000",
+    "questionImageAlt": "Real photo for identification.",
+    "questionImageCredit": "Source-backed open-license real photo. See IMAGE-CREDITS-BM-BATCH2.csv.",
     "visualSourceRefs": [
-      "https://commons.wikimedia.org/wiki/File:Post_medieval_hasp_with_staple_(FindID_227214).jpg"
+      "https://commons.wikimedia.org/wiki/File:Shed,_outside_storage,_old_wooden_door,_hasp,_hook,_code_padlock,_red_paint,_(utebod,_skjul,_uthus,_d%C3%B8r,_r%C3%B8d_vegg,_hengel%C3%A5s,_haspe,_d%C3%B8rkrok)_T%C3%B8nsberg,_Norway_2019-08-28_IMG_0373.jpg"
     ],
-    "localAssetSuggestion": "assets/BM-246.jpg"
+    "localAssetSuggestion": "assets/BM-246.jpg",
+    "visualAuditStatus": "REAL_PHOTO_OK",
+    "visualAuditNote": "Replaced archaeological object with real door hasp/staple-style hardware photo."
   },
   {
     "uid": "BM-247",
@@ -11911,17 +11915,19 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualMode": "question",
-    "visualSourceType": "source-backed-remote",
+    "visualSourceType": "open-license-real-photo",
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Doorlock-with-bolts-and-key.jpg?width=1000",
-    "questionImageAlt": "Question visual for identification.",
-    "questionImageCredit": "Source-backed visual. Credit/source listed in IMAGE-CREDITS-BM-BATCH1.csv.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Lever%20Lock%20and%20Key.jpg?width=1000",
+    "questionImageAlt": "Real photo for identification.",
+    "questionImageCredit": "Source-backed open-license real photo. See IMAGE-CREDITS-BM-BATCH2.csv.",
     "visualSourceRefs": [
-      "https://commons.wikimedia.org/wiki/File:Doorlock-with-bolts-and-key.jpg"
+      "https://commons.wikimedia.org/wiki/File:Lever_Lock_and_Key.jpg"
     ],
-    "localAssetSuggestion": "assets/BM-247.jpg"
+    "localAssetSuggestion": "assets/BM-247.jpg",
+    "visualAuditStatus": "REAL_PHOTO_OK",
+    "visualAuditNote": "Replaced generic doorlock image with actual lever lock and key photo."
   },
   {
     "uid": "BM-248",
@@ -11954,17 +11960,19 @@
     "type": "multiple_choice",
     "acceptedAnswers": [],
     "visualMode": "question",
-    "visualSourceType": "source-backed-remote",
+    "visualSourceType": "open-license-real-photo",
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
     "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Toybox-supports.jpg?width=1000",
-    "questionImageAlt": "Question visual for identification.",
-    "questionImageCredit": "Source-backed visual. Credit/source listed in IMAGE-CREDITS-BM-BATCH1.csv.",
+    "questionImageAlt": "Real photo for identification.",
+    "questionImageCredit": "Source-backed open-license real photo. See IMAGE-CREDITS-BM-BATCH2.csv.",
     "visualSourceRefs": [
       "https://commons.wikimedia.org/wiki/File:Toybox-supports.jpg"
     ],
-    "localAssetSuggestion": "assets/BM-248.jpg"
+    "localAssetSuggestion": "assets/BM-248.jpg",
+    "visualAuditStatus": "REAL_PHOTO_OK",
+    "visualAuditNote": "Actual lid stay/support hardware photo."
   },
   {
     "uid": "BM-249",
@@ -12418,18 +12426,14 @@
     "explanation": "Correct answer: d. glass spider\nUlitin natin: glass spider.\nBase sa image, mukhang point-supported glass fitting na may projecting arm/support connection. Hindi ito simpleng patch fitting lang at hindi rin glass fin panel.\nBakit ito ang tama?\nAng glass spider is a fitting used in spider glazing / point-supported glass systems. Karaniwan ang itsura niya ay may:\n•\tarm/s\n•\tpoint support\n•\tbolted connection to glass\nIyong image, mas mukhang point-support hardware kaysa edge patch lang.\nBakit mali ang ibang choices?\n•\ta. glass patch – patch fittings are usually more compact clamping blocks/plates\n•\tb. glass fin – glass panel fin/support ito mismo, hindi fitting\n•\tc. glass routed – hindi ito ang tamang hardware/object name\n•\td. glass spider – strongest visual match\nElimination method\nIto ang iniisip mo:\n1.\tFitting ba ito or glass panel mismo?\nFitting.\n2.\tPoint-supported arm-like ba ang dating?\nOo.\n3.\tSo answer is glass spider\nCommon trap\nAng trap dito ay glass patch, dahil fitting din naman iyon.\nPero patch fitting is more clamp-like, samantalang itong image ay mas spider support ang dating.\nAno ang dapat mong tandaan dito?\nKapag ang glass fitting ay point-supported with spider-like arm connection, ang sagot ay glass spider.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "question",
-    "visualSourceType": "source-backed-remote",
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Sliding%20Door%20Lock%20-%20DPLA%20-%200fe139ef6705fc426aa8e556d2b4dca6%20(page%202).jpg?width=1000",
-    "questionImageAlt": "Question visual for identification.",
-    "questionImageCredit": "Source-backed visual. Credit/source listed in IMAGE-CREDITS-BM-BATCH1.csv.",
-    "visualSourceRefs": [
-      "https://commons.wikimedia.org/wiki/File:Sliding_Door_Lock_-_DPLA_-_0fe139ef6705fc426aa8e556d2b4dca6_(page_2).jpg"
-    ],
-    "localAssetSuggestion": "assets/BM-260.jpg"
+    "visualAuditStatus": "NEEDS_OWN_PHOTO",
+    "visualAuditNote": "Glass spider fitting needs exact market/product photo. No safe open-license exact photo confirmed.",
+    "needsOwnPhoto": true,
+    "marketPhotoNeeded": true,
+    "safePhotoRule": "Use own photo or permissioned/open-license exact product photo only."
   },
   {
     "uid": "BM-261",
@@ -12533,18 +12537,14 @@
     "explanation": "Correct answer: c. glass railing spigot\nUlitin natin: glass railing spigot.\nIto, image-identification item ito. Ang nasa picture ay mukhang vertical floor-mounted metal support na ginagamit para hawakan ang frameless glass railing panel mula sa ibaba.\nBakit ito ang tama?\nAng glass railing spigot ay:\n•\tnaka-mount sa floor o slab\n•\ttumatayo nang patayo\n•\thumahawak sa bottom edge ng glass panel\n•\tcommon sa frameless glass railings\nIyong image, hindi siya mukhang patch fitting for a door, at hindi rin maliit na clip lang.\nBakit mali ang ibang choices?\n•\ta. glass patch – patch fitting usually mas clamp-like at kadalasang ginagamit sa frameless glass doors\n•\tb. glass railing clamp – clamp usually side-gripping or more bracket-like\n•\td. glass clip – mas maliit at generic ito, hindi ito ang tall base-mounted support\nElimination method\nIto ang iniisip mo:\n1.\tFloor-mounted ba ang hardware? Oo.\n2.\tPang-railing glass ba ang form? Oo.\n3.\tSo hanapin ang specific term for bottom support of glass railing: spigot\nCommon trap\nAng trap dito ay glass patch kasi pareho silang glass fitting.\nPero tandaan:\n•\tpatch = pang-clamp/connect\n•\tspigot = bottom support, usually floor-mounted\nAno ang dapat mong tandaan dito?\nKapag ang image ay patayong floor-mounted support for frameless glass railing, ang sagot ay glass railing spigot.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "question",
-    "visualSourceType": "source-backed-remote",
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/DOOR%20STOPPER,T%20BOLTS.PNG?width=1000",
-    "questionImageAlt": "Question visual for identification.",
-    "questionImageCredit": "Source-backed visual. Credit/source listed in IMAGE-CREDITS-BM-BATCH1.csv.",
-    "visualSourceRefs": [
-      "https://commons.wikimedia.org/wiki/File:DOOR_STOPPER,T_BOLTS.PNG"
-    ],
-    "localAssetSuggestion": "assets/BM-263.png"
+    "visualAuditStatus": "NEEDS_OWN_PHOTO",
+    "visualAuditNote": "Glass railing spigot needs exact market/product photo. No safe open-license exact photo confirmed.",
+    "needsOwnPhoto": true,
+    "marketPhotoNeeded": true,
+    "safePhotoRule": "Use own photo or permissioned/open-license exact product photo only."
   },
   {
     "uid": "BM-264",
