@@ -224,7 +224,11 @@
       "main": "A. Water Outlet",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    }
+    },
+    "answerImageQuery": "Water Outlet building utilities component photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the utility component/device is easier to understand visually."
   },
   {
     "uid": "UTIL-007",
@@ -2428,7 +2432,8 @@
       "main": "C. devices will only operate at a limited distance from an access point",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    }
+    },
+    "visualAuditNote": "Answer is a sentence/abstract WLAN disadvantage, not a visual object."
   },
   {
     "uid": "UTIL-060",
@@ -2621,7 +2626,11 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "no_visual",
-    "visualReviewNote": "No visual assigned to avoid irrelevant image links."
+    "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
+    "answerImageQuery": "Exhaust Fan HVAC component photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the utility component/device is easier to understand visually."
   },
   {
     "uid": "UTIL-065",
@@ -3579,7 +3588,11 @@
       "main": "A. Wire",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    }
+    },
+    "answerImageQuery": "Wire electrical device photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the utility component/device is easier to understand visually."
   },
   {
     "uid": "UTIL-089",
@@ -3881,7 +3894,11 @@
       "main": "D. Halogen",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    }
+    },
+    "answerImageQuery": "Halogen electrical device photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the utility component/device is easier to understand visually."
   },
   {
     "uid": "UTIL-096",
@@ -4522,7 +4539,11 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "no_visual",
-    "visualReviewNote": "No visual assigned to avoid irrelevant image links."
+    "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
+    "answerImageQuery": "drum trap plumbing fixture photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the utility component/device is easier to understand visually."
   },
   {
     "uid": "UTIL-112",
@@ -4566,7 +4587,11 @@
       "main": "D. Water Closet",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    }
+    },
+    "answerImageQuery": "Water Closet plumbing fixture photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the utility component/device is easier to understand visually."
   },
   {
     "uid": "UTIL-113",
@@ -5144,7 +5169,11 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "no_visual",
-    "visualReviewNote": "No visual assigned to avoid irrelevant image links."
+    "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
+    "answerImageQuery": "Ethernet cable RJ45 connector photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "Refined visual query for clearer utility component/device reference after answer."
   },
   {
     "uid": "UTIL-128",
@@ -5178,7 +5207,11 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "no_visual",
-    "visualReviewNote": "No visual assigned to avoid irrelevant image links."
+    "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
+    "answerImageQuery": "Router building utility device photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the utility component/device is easier to understand visually."
   },
   {
     "uid": "UTIL-129",
@@ -5286,7 +5319,11 @@
       "main": "A. Reverse Trap",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    }
+    },
+    "answerImageQuery": "Reverse Trap plumbing fixture photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the utility component/device is easier to understand visually."
   },
   {
     "uid": "UTIL-132",
@@ -6314,7 +6351,11 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "no_visual",
-    "visualReviewNote": "No visual assigned to avoid irrelevant image links."
+    "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
+    "answerImageQuery": "electrical conductor wire cable photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "Refined visual query for clearer utility component/device reference after answer."
   },
   {
     "uid": "UTIL-154",
@@ -6501,7 +6542,11 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "no_visual",
-    "visualReviewNote": "No visual assigned to avoid irrelevant image links."
+    "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
+    "answerImageQuery": "Fiber Optic Cable electrical device photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the utility component/device is easier to understand visually."
   },
   {
     "uid": "UTIL-159",
@@ -7712,7 +7757,11 @@
     "visualSourceRefs": [
       "https://commons.wikimedia.org/wiki/File:Circuit_breaker.jpg"
     ],
-    "localAssetSuggestion": "assets/UTIL-178.jpg"
+    "localAssetSuggestion": "assets/UTIL-178.jpg",
+    "answerImageQuery": "Exhaust Fan HVAC component photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "Refined visual query for clearer utility component/device reference after answer."
   },
   {
     "uid": "UTIL-179",
@@ -7755,7 +7804,11 @@
       "main": "A. Water Closet Cubicle",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    }
+    },
+    "answerImageQuery": "Water Closet Cubicle plumbing fixture photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the utility component/device is easier to understand visually."
   },
   {
     "uid": "UTIL-180",
@@ -8044,7 +8097,11 @@
       "main": "C. Eyeball Light with Halogen Bulb",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    }
+    },
+    "answerImageQuery": "Eyeball Light with Halogen Bulb electrical device photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the utility component/device is easier to understand visually."
   },
   {
     "uid": "UTIL-186",
@@ -8254,7 +8311,11 @@
       "main": "A. Dimmer Switch",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    }
+    },
+    "answerImageQuery": "Dimmer Switch electrical device photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the utility component/device is easier to understand visually."
   },
   {
     "uid": "UTIL-191",
@@ -8396,7 +8457,11 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "no_visual",
-    "visualReviewNote": "No visual assigned to avoid irrelevant image links."
+    "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
+    "answerImageQuery": "Running Trap plumbing fixture photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the utility component/device is easier to understand visually."
   },
   {
     "uid": "UTIL-195",
@@ -8436,7 +8501,11 @@
       "main": "C. Flush Meter Valve",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    }
+    },
+    "answerImageQuery": "Flushometer valve plumbing fixture photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "Refined visual query for clearer utility component/device reference after answer."
   },
   {
     "uid": "UTIL-196",
@@ -8737,7 +8806,11 @@
       "main": "C. IMC",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    }
+    },
+    "answerImageQuery": "Intermediate metal conduit IMC electrical conduit photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "Refined visual query for clearer utility component/device reference after answer."
   },
   {
     "uid": "UTIL-204",
@@ -10061,7 +10134,11 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "no_visual",
-    "visualReviewNote": "No visual assigned to avoid irrelevant image links."
+    "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
+    "answerImageQuery": "Gate Valve plumbing fixture photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the utility component/device is easier to understand visually."
   },
   {
     "uid": "UTIL-234",
@@ -10568,7 +10645,11 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "no_visual",
-    "visualReviewNote": "No visual assigned to avoid irrelevant image links."
+    "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
+    "answerImageQuery": "Fire Sprinkler building utility device photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the utility component/device is easier to understand visually."
   },
   {
     "uid": "UTIL-245",
@@ -10785,7 +10866,11 @@
       "main": "C. Globe Valve",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    }
+    },
+    "answerImageQuery": "Globe Valve plumbing fixture photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the utility component/device is easier to understand visually."
   },
   {
     "uid": "UTIL-249",
@@ -10819,7 +10904,11 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "no_visual",
-    "visualReviewNote": "No visual assigned to avoid irrelevant image links."
+    "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
+    "answerImageQuery": "Cistern building utilities component photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the utility component/device is easier to understand visually."
   },
   {
     "uid": "UTIL-250",
@@ -11141,7 +11230,11 @@
       "main": "B. EMT",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    }
+    },
+    "answerImageQuery": "EMT building utilities component photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the utility component/device is easier to understand visually."
   },
   {
     "uid": "UTIL-258",
@@ -11708,7 +11801,11 @@
       "main": "B. Fire Alarm",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    }
+    },
+    "answerImageQuery": "Fire Alarm building utility device photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the utility component/device is easier to understand visually."
   },
   {
     "uid": "UTIL-272",
@@ -11928,7 +12025,11 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "no_visual",
-    "visualReviewNote": "No visual assigned to avoid irrelevant image links."
+    "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
+    "answerImageQuery": "Bidet plumbing fixture photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the utility component/device is easier to understand visually."
   },
   {
     "uid": "UTIL-277",
@@ -12128,7 +12229,11 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "no_visual",
-    "visualReviewNote": "No visual assigned to avoid irrelevant image links."
+    "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
+    "answerImageQuery": "Foot Valve plumbing fixture photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the utility component/device is easier to understand visually."
   },
   {
     "uid": "UTIL-282",
@@ -12280,7 +12385,11 @@
     "acceptedAnswers": [],
     "visualMode": "none",
     "visualIntent": "no_visual",
-    "visualReviewNote": "No visual assigned to avoid irrelevant image links."
+    "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
+    "answerImageQuery": "Bottle Trap plumbing fixture photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the utility component/device is easier to understand visually."
   },
   {
     "uid": "UTIL-286",
@@ -12440,7 +12549,11 @@
       "main": "E. Chiller",
       "detail": "Memorize the exact ALE/reviewer value or term.",
       "formula": ""
-    }
+    },
+    "answerImageQuery": "Chiller HVAC component photo",
+    "answerVisualMode": "explanation",
+    "visualAuditStatus": "EXPLANATION_VISUAL_HELPFUL",
+    "visualAuditNote": "After answer, show visual reference because the utility component/device is easier to understand visually."
   },
   {
     "uid": "UTIL-290",

@@ -1,0 +1,7 @@
+action,displayId,answer,oldAnswerImageQuery,newAnswerImageQuery,reason
+removed,Q59,devices will only operate at a limited distance from an access point,devices will only operate at a limited distance from an access point building utilities component photo,,"Answer is a sentence/abstract WLAN disadvantage, not a visual object."
+fixed,Q127,Ethernet,Ethernet building utilities component photo,Ethernet cable RJ45 connector photo,clearer object-specific query
+fixed,Q153,Conductors,Conductors HVAC component photo,electrical conductor wire cable photo,clearer object-specific query
+fixed,Q178,Enough Exhaust Fan,Enough Exhaust Fan HVAC component photo,Exhaust Fan HVAC component photo,clearer object-specific query
+fixed,Q195,Flush Meter Valve,Flush Meter Valve plumbing fixture photo,Flushometer valve plumbing fixture photo,clearer object-specific query
+fixed,Q203,IMC,IMC building utilities component photo,Intermediate metal conduit IMC electrical conduit photo,clearer object-specific query

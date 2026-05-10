@@ -1,0 +1,113 @@
+displayId,answer,answerImageQuery
+Q5,Water hammer arrester,water hammer arrester plumbing
+Q6,Water Outlet,Water Outlet building utilities component photo
+Q11,waste plug,sink waste plug
+Q12,Warning pipe,warning pipe overflow pipe cistern
+Q13,Privy,outhouse privy
+Q14,waste-disposal unit,kitchen waste disposal unit
+Q15,Drain pit,seepage pit septic tank
+Q16,Building sewer,building sewer pipe
+Q17,Stack,plumbing stack pipe diagram
+Q18,Vent Stack,plumbing stack pipe diagram
+Q19,Vent cap,plumbing vent cap
+Q28,Junction box,electrical junction box symbol
+Q29,Cable tray,cable tray electrical installation
+Q30,Conduit,electrical conduit
+Q31,Rigid Steel Conduit,electrical conduit
+Q32,Panelboard,electrical panelboard
+Q34,Butterfly valve,butterfly valve chiller
+Q35,Ceiling,ceiling cassette air conditioner
+Q37,Ventilator,ventilator building ventilation device
+Q38,Ventilating jack,ventilating jack roof vent
+Q57,private automatic branch exchange,PABX telephone system
+Q58,building management system,building management system dashboard
+Q61,Upright,upright fire sprinkler
+Q64,Exhaust Fan,Exhaust Fan HVAC component photo
+Q66,4,RJ45 connector
+Q84,Damper,HVAC duct damper
+Q86,UPS,uninterruptible power supply
+Q87,Flood Light,flood light wide beam
+Q88,Wire,Wire electrical device photo
+Q89,LED STRIP,LED strip cove lighting
+Q90,inverter,power inverter DC to AC
+Q95,Halogen,Halogen electrical device photo
+Q104,Sill Cock,sillcock outdoor faucet
+Q111,drum trap,drum trap plumbing fixture photo
+Q112,Water Closet,Water Closet plumbing fixture photo
+Q116,Scupper Drain,scupper drain roof
+Q119,Escutcheon,plumbing escutcheon plate
+Q121,Busbar,electrical busbar
+Q122,Distribution Board,distribution board electrical
+Q127,Ethernet,Ethernet cable RJ45 connector photo
+Q128,Router,Router building utility device photo
+Q131,Reverse Trap,Reverse Trap plumbing fixture photo
+Q132,Copper Pipe,copper refrigerant piping
+Q133,Hand Spray,toilet handheld spray
+Q134,Smoke Detector,ionization smoke detector
+Q135,Running Trap,running trap plumbing
+Q136,Audio System,ceiling speaker round grille
+Q137,Ballast,fluorescent lamp ballast
+Q141,Downlight,recessed downlight
+Q142,Display Port,DisplayPort connector
+Q143,RJ45,RJ45 connector
+Q144,Structured Cabling System,network patch panel
+Q147,Raceway,electrical raceway
+Q148,Uninterruptible Power Supply,uninterruptible power supply
+Q149,Surge Protector,surge protector power strip
+Q153,Conductors,electrical conductor wire cable photo
+Q154,Busbar,electrical busbar
+Q158,Fiber Optic Cable,Fiber Optic Cable electrical device photo
+Q160,Flush Valve,toilet flush valve
+Q163,Starter,fluorescent starter
+Q164,Starter,fluorescent starter
+Q165,HID,HID lamp
+Q166,HPS,high pressure sodium lamp
+Q167,Toilet Handheld Spray,toilet handheld spray
+Q168,Disc Faucet,single lever disc faucet
+Q169,Ventilator,roof turbine ventilator
+Q170,Lamp Holder,lamp holder socket
+Q171,DVI,DVI connector
+Q172,BULLET,bullet CCTV camera
+Q173,Clevis Hanger,clevis hanger pipe support
+Q174,Expansion Valve,thermostatic expansion valve
+Q175,Thermostat,wall thermostat
+Q176,LED Driver,LED driver power supply
+Q177,Fuse,cartridge fuse
+Q178,Enough Exhaust Fan,Exhaust Fan HVAC component photo
+Q179,Water Closet Cubicle,Water Closet Cubicle plumbing fixture photo
+Q183,UPS,uninterruptible power supply
+Q184,Flood Light,flood light wide beam
+Q185,Eyeball Light with Halogen Bulb,Eyeball Light with Halogen Bulb electrical device photo
+Q190,Dimmer Switch,Dimmer Switch electrical device photo
+Q194,Running Trap,Running Trap plumbing fixture photo
+Q195,Flush Meter Valve,Flushometer valve plumbing fixture photo
+Q196,Provide Ceiling Clouds,ceiling cassette air conditioner
+Q203,IMC,Intermediate metal conduit IMC electrical conduit photo
+Q214,Electro Fusion Weld,electrofusion coupling HDPE
+Q223,Halogen Light,halogen reflector lamp
+Q224,Photoelectric Switch,photoelectric switch sensor
+Q225,Downlight,recessed downlight
+Q226,PAR LED,PAR LED stage light
+Q231,Solatube,Solatube tubular skylight
+Q232,Sky Light,roof skylight
+Q233,Gate Valve,Gate Valve plumbing fixture photo
+Q234,Pipe Flashing,pipe flashing roof
+Q237,Torque Wrench,no hub torque wrench
+Q239,Roof Exhaust Vent,roof exhaust vent
+Q240,Vent Cap,vent cap pipe
+Q243,Roof,roof exhaust vent
+Q244,Fire Sprinkler,Fire Sprinkler building utility device photo
+Q245,Damper,HVAC damper blades
+Q246,Upright,upright fire sprinkler
+Q247,Patch Cable,Ethernet patch cable
+Q248,Globe Valve,Globe Valve plumbing fixture photo
+Q249,Cistern,Cistern building utilities component photo
+Q257,EMT,EMT building utilities component photo
+Q266,Fire Detection and Alarm System,fire detection and alarm system control panel
+Q271,Fire Alarm,Fire Alarm building utility device photo
+Q275,Solar Water Heater,solar water heater roof
+Q276,Bidet,Bidet plumbing fixture photo
+Q281,Foot Valve,Foot Valve plumbing fixture photo
+Q285,Bottle Trap,Bottle Trap plumbing fixture photo
+Q289,Chiller,Chiller HVAC component photo
+Q292,High Bay Lighting,high bay lighting warehouse
