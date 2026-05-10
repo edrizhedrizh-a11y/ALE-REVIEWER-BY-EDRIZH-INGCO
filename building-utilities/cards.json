@@ -1106,8 +1106,8 @@
       "octagon junction box electrical",
       "square junction box electrical"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH5.csv.",
     "answerImageQuery": "electrical junction box symbol",
     "answerImageQueries": [
       "electrical junction box symbol",
@@ -1121,7 +1121,13 @@
     ],
     "answerImageAlt": "Explanation visual reference: Junction box symbol",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Junction_box.jpg?width=1000",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Junction_box.jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-028.jpg"
   },
   {
     "uid": "UTIL-029",
@@ -5460,8 +5466,8 @@
       "horizontal running trap plumbing",
       "plumbing running trap"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH5.csv.",
     "answerImageQuery": "running trap plumbing",
     "answerImageQueries": [
       "running trap plumbing",
@@ -5475,7 +5481,13 @@
     ],
     "answerImageAlt": "Explanation visual reference: Running trap",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Plumbing_trap.jpg?width=1000",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Plumbing_trap.jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-135.jpg"
   },
   {
     "uid": "UTIL-136",
@@ -6840,8 +6852,8 @@
       "high intensity discharge lamp",
       "metal halide HID lamp"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH5.csv.",
     "answerImageQuery": "HID lamp",
     "answerImageQueries": [
       "HID lamp",
@@ -6855,7 +6867,13 @@
     ],
     "answerImageAlt": "Explanation visual reference: HID lamp",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/High_Pressure_Sodium_Lamp.jpg?width=1000",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:High_Pressure_Sodium_Lamp.jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-165.jpg"
   },
   {
     "uid": "UTIL-166",
@@ -7035,8 +7053,8 @@
       "ceramic disc faucet",
       "modern single handle faucet"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH5.csv.",
     "answerImageQuery": "single lever disc faucet",
     "answerImageQueries": [
       "single lever disc faucet",
@@ -7050,7 +7068,13 @@
     ],
     "answerImageAlt": "Explanation visual reference: Disc faucet",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Faucet.jpg?width=1000",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Faucet.jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-168.jpg"
   },
   {
     "uid": "UTIL-169",
@@ -7160,8 +7184,8 @@
       "E27 lamp holder",
       "light bulb socket holder"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH5.csv.",
     "answerImageQuery": "lamp holder socket",
     "answerImageQueries": [
       "lamp holder socket",
@@ -7175,7 +7199,13 @@
     ],
     "answerImageAlt": "Explanation visual reference: Lamp holder",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Lamp_socket.jpg?width=1000",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Lamp_socket.jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-170.jpg"
   },
   {
     "uid": "UTIL-171",
@@ -7285,8 +7315,8 @@
       "bullet security camera",
       "wall mounted bullet camera"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH5.csv.",
     "answerImageQuery": "bullet CCTV camera",
     "answerImageQueries": [
       "bullet CCTV camera",
@@ -7300,7 +7330,13 @@
     ],
     "answerImageAlt": "Explanation visual reference: Bullet CCTV camera",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/CCTV_camera_(4632603680).jpg?width=1000",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:CCTV_camera_(4632603680).jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-172.jpg"
   },
   {
     "uid": "UTIL-173",
@@ -9500,8 +9536,8 @@
       "MR16 halogen lamp",
       "halogen light bulb reflector"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH5.csv.",
     "answerImageQuery": "halogen reflector lamp",
     "answerImageQueries": [
       "halogen reflector lamp",
@@ -9515,7 +9551,13 @@
     ],
     "answerImageAlt": "Explanation visual reference: Halogen reflector lamp",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Halogen_lamps.JPG?width=1000",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Halogen_lamps.JPG"
+    ],
+    "localAssetSuggestion": "assets/UTIL-223.jpg"
   },
   {
     "uid": "UTIL-224",
@@ -9560,8 +9602,8 @@
       "photocell light sensor switch",
       "photoelectric control switch"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH5.csv.",
     "answerImageQuery": "photoelectric switch sensor",
     "answerImageQueries": [
       "photoelectric switch sensor",
@@ -9575,7 +9617,13 @@
     ],
     "answerImageAlt": "Explanation visual reference: Photoelectric switch",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Photoelectric_sensor.jpg?width=1000",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Photoelectric_sensor.jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-224.jpg"
   },
   {
     "uid": "UTIL-225",
@@ -9686,8 +9734,8 @@
       "LED PAR can light",
       "stage PAR LED fixture"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH5.csv.",
     "answerImageQuery": "PAR LED stage light",
     "answerImageQueries": [
       "PAR LED stage light",
@@ -9701,7 +9749,13 @@
     ],
     "answerImageAlt": "Explanation visual reference: PAR LED stage light",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/LED_par.JPG?width=1000",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:LED_par.JPG"
+    ],
+    "localAssetSuggestion": "assets/UTIL-226.jpg"
   },
   {
     "uid": "UTIL-227",
@@ -9910,8 +9964,8 @@
       "tubular daylighting device roof",
       "solar tube skylight roof"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH5.csv.",
     "answerImageQuery": "Solatube tubular skylight",
     "answerImageQueries": [
       "Solatube tubular skylight",
@@ -9925,7 +9979,13 @@
     ],
     "answerImageAlt": "Explanation visual reference: Solatube tubular skylight",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Tubular_daylighting_device.jpg?width=1000",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Tubular_daylighting_device.jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-231.jpg"
   },
   {
     "uid": "UTIL-232",
@@ -10192,8 +10252,8 @@
       "hubless coupling torque wrench",
       "T handle torque wrench plumbing"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH5.csv.",
     "answerImageQuery": "no hub torque wrench",
     "answerImageQueries": [
       "no hub torque wrench",
@@ -10207,7 +10267,13 @@
     ],
     "answerImageAlt": "Explanation visual reference: No-hub torque wrench",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Torque_wrench.jpg?width=1000",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Torque_wrench.jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-237.jpg"
   },
   {
     "uid": "UTIL-238",
@@ -10286,8 +10352,8 @@
       "roof exhaust ventilator",
       "roof mounted exhaust vent"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH5.csv.",
     "answerImageQuery": "roof exhaust vent",
     "answerImageQueries": [
       "roof exhaust vent",
@@ -10301,7 +10367,13 @@
     ],
     "answerImageAlt": "Explanation visual reference: Roof exhaust vent",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Gravity_Roof_Vent.jpg?width=1000",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Gravity_Roof_Vent.jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-239.jpg"
   },
   {
     "uid": "UTIL-240",
@@ -10346,8 +10418,8 @@
       "plumbing vent cap",
       "roof vent pipe cap"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH5.csv.",
     "answerImageQuery": "vent cap pipe",
     "answerImageQueries": [
       "vent cap pipe",
@@ -10361,7 +10433,13 @@
     ],
     "answerImageAlt": "Explanation visual reference: Vent cap",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Ventilation_cap_on_roof.jpg?width=1000",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Ventilation_cap_on_roof.jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-240.jpg"
   },
   {
     "uid": "UTIL-241",
@@ -10553,8 +10631,8 @@
       "duct damper actuator",
       "air duct damper"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH5.csv.",
     "answerImageQuery": "HVAC damper blades",
     "answerImageQueries": [
       "HVAC damper blades",
@@ -10568,7 +10646,13 @@
     ],
     "answerImageAlt": "Explanation visual reference: Damper",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Air_damper.JPG?width=1000",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Air_damper.JPG"
+    ],
+    "localAssetSuggestion": "assets/UTIL-245.jpg"
   },
   {
     "uid": "UTIL-246",
@@ -11807,8 +11891,8 @@
       "solar water heater with tank",
       "roof mounted solar water heater"
     ],
-    "questionImageAlt": "Question visual reference",
-    "questionImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only. Labels are hidden before answering.",
+    "questionImageAlt": "Question visual for identification.",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH5.csv.",
     "answerImageQuery": "solar water heater roof",
     "answerImageQueries": [
       "solar water heater roof",
@@ -11822,7 +11906,13 @@
     ],
     "answerImageAlt": "Explanation visual reference: Solar water heater",
     "answerImageCredit": "Same visual target reused after answering for reinforcement.",
-    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target."
+    "visualReviewNote": "Question image is unlabeled; answer/explanation repeats the visual target.",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Solar_water_heater.jpg?width=1000",
+    "visualSourceType": "source-backed-remote",
+    "visualSourceRefs": [
+      "https://commons.wikimedia.org/wiki/File:Solar_water_heater.jpg"
+    ],
+    "localAssetSuggestion": "assets/UTIL-275.jpg"
   },
   {
     "uid": "UTIL-276",

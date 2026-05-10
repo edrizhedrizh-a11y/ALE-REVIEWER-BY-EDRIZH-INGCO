@@ -8473,12 +8473,9 @@
     "imageAlt": "BC answer visual: Valley jack rafter",
     "imageCredit": "Image reference via Wikimedia/Commons search fallback; topic sources below.",
     "visualSourceRefs": [
-      {
-        "label": "USDA Forest Products Laboratory — Wood Handbook",
-        "url": "https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf"
-      }
+      "https://commons.wikimedia.org/wiki/File:Hip_jack_and_common_rafter.jpg"
     ],
-    "visualSourceType": "verified_source_mode",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: visual is used only when the question benefits from seeing a physical component, process, tool, joint, bond, detail, or construction form. Labels/clues stay hidden before answering.",
     "questionImageQuery": "Valley jack rafter",
@@ -8490,9 +8487,13 @@
       "Valley jack rafter",
       "Roof framing valley jack rafter"
     ],
-    "questionImageAlt": "Question visual reference",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "keep_question_visual_if_needed",
-    "bcVisualCoachReason": "visual_term_plus_identification"
+    "bcVisualCoachReason": "visual_term_plus_identification",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Hip_jack_and_common_rafter.jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH5.csv.",
+    "localAssetSuggestion": "assets/BCON-134.jpg"
   },
   {
     "uid": "BC-135",
@@ -23248,20 +23249,21 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      {
-        "label": "FHWA — Geotechnical Engineering",
-        "url": "https://www.fhwa.dot.gov/engineering/geotech/"
-      }
+      "https://commons.wikimedia.org/wiki/File:Building_Fairs_Brno_2011_(030).jpg"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Building%20Fairs%20Brno%202011%20(030).jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH4.csv.",
+    "localAssetSuggestion": "assets/BCON-369.jpg"
   },
   {
     "uid": "BC-370",
@@ -23307,16 +23309,9 @@
     "imageAlt": "BC answer visual: Derrick crane",
     "imageCredit": "Strict exact-title online thumbnail if available; otherwise safe fallback label.",
     "visualSourceRefs": [
-      {
-        "label": "OSHA — Construction",
-        "url": "https://www.osha.gov/construction"
-      },
-      {
-        "label": "AISC — Steel Construction Resources",
-        "url": "https://www.aisc.org/education/continuingeducation/education-archives/"
-      }
+      "https://commons.wikimedia.org/wiki/File:Derrick_crane_-_ch.jpg"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: visual is used only when the question benefits from seeing a physical component, process, tool, joint, bond, detail, or construction form. Labels/clues stay hidden before answering.",
     "questionImageQuery": "Derrick crane",
@@ -23326,9 +23321,13 @@
     "questionImageLayoutQueries": [
       "Derrick crane"
     ],
-    "questionImageAlt": "Question visual reference",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "keep_question_visual_if_needed",
-    "bcVisualCoachReason": "visual_term_plus_identification"
+    "bcVisualCoachReason": "visual_term_plus_identification",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Derrick%20crane%20-%20ch.jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH4.csv.",
+    "localAssetSuggestion": "assets/BCON-370.jpg"
   },
   {
     "uid": "BC-371",
@@ -23425,24 +23424,21 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      {
-        "label": "CRSI — Reinforced Concrete Terminology",
-        "url": "https://www.crsi.org/reinforcing-basics/reinforced-concrete-terminology/"
-      },
-      {
-        "label": "Portland Cement Association — Cement and Concrete",
-        "url": "https://www.cement.org/cement-concrete/applications-of-cement/"
-      }
+      "https://commons.wikimedia.org/wiki/File:Concrete_spacer.jpg"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Concrete%20spacer.jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH4.csv.",
+    "localAssetSuggestion": "assets/BCON-372.jpg"
   },
   {
     "uid": "BC-373",
@@ -23484,20 +23480,21 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      {
-        "label": "USDA Forest Products Laboratory — Wood Handbook",
-        "url": "https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf"
-      }
+      "https://commons.wikimedia.org/wiki/File:Framing-chisel.png"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Framing-chisel.png?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH4.csv.",
+    "localAssetSuggestion": "assets/BCON-373.png"
   },
   {
     "uid": "BC-374",
@@ -23539,20 +23536,21 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      {
-        "label": "Portland Cement Association — Cement and Concrete",
-        "url": "https://www.cement.org/cement-concrete/applications-of-cement/"
-      }
+      "https://commons.wikimedia.org/wiki/File:Hifit-hammer.jpg"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Hifit-hammer.jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH4.csv.",
+    "localAssetSuggestion": "assets/BCON-374.jpg"
   },
   {
     "uid": "BC-375",
@@ -23594,24 +23592,21 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      {
-        "label": "AISC — Steel Construction Resources",
-        "url": "https://www.aisc.org/education/continuingeducation/education-archives/"
-      },
-      {
-        "label": "USDA Forest Products Laboratory — Wood Handbook",
-        "url": "https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf"
-      }
+      "https://commons.wikimedia.org/wiki/File:Lap_joint.png"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Lap%20joint.png?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH4.csv.",
+    "localAssetSuggestion": "assets/BCON-375.png"
   },
   {
     "uid": "BC-376",
@@ -23832,20 +23827,21 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      {
-        "label": "OSHA — Construction",
-        "url": "https://www.osha.gov/construction"
-      }
+      "https://commons.wikimedia.org/wiki/File:Screw_jack_structual_drawing.png"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Screw_jack_structual_drawing.png?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH5.csv.",
+    "localAssetSuggestion": "assets/BCON-379.png"
   },
   {
     "uid": "BC-380",
@@ -23958,20 +23954,21 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      {
-        "label": "Portland Cement Association — Cement and Concrete",
-        "url": "https://www.cement.org/cement-concrete/applications-of-cement/"
-      }
+      "https://commons.wikimedia.org/wiki/File:BubbleDeck_SemiPrecastPanel.jpg"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/BubbleDeck_SemiPrecastPanel.jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH5.csv.",
+    "localAssetSuggestion": "assets/BCON-381.jpg"
   },
   {
     "uid": "BC-382",
@@ -24136,24 +24133,21 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      {
-        "label": "FHWA — Geotechnical Engineering",
-        "url": "https://www.fhwa.dot.gov/engineering/geotech/"
-      },
-      {
-        "label": "Portland Cement Association — Cement and Concrete",
-        "url": "https://www.cement.org/cement-concrete/applications-of-cement/"
-      }
+      "https://commons.wikimedia.org/wiki/File:Buttressed_retaining_wall,_Wakefield_Road,_Lightcliffe,_Hipperholme_-_geograph.org.uk_-_187849.jpg"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Buttressed%20retaining%20wall,%20Wakefield%20Road,%20Lightcliffe,%20Hipperholme%20-%20geograph.org.uk%20-%20187849.jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH4.csv.",
+    "localAssetSuggestion": "assets/BCON-384.jpg"
   },
   {
     "uid": "BC-385",
@@ -24195,20 +24189,21 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      {
-        "label": "AISC — Steel Construction Resources",
-        "url": "https://www.aisc.org/education/continuingeducation/education-archives/"
-      }
+      "https://commons.wikimedia.org/wiki/File:Steel_Lintel_beam.jpg"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Steel_Lintel_beam.jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH5.csv.",
+    "localAssetSuggestion": "assets/BCON-385.jpg"
   },
   {
     "uid": "BC-386",
@@ -24306,20 +24301,21 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      {
-        "label": "Gypsum Association — Technical Resources",
-        "url": "https://gypsum.org/technical/"
-      }
+      "https://commons.wikimedia.org/wiki/File:Osb4_eps_sip_panel_falszerkezet.jpg"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Osb4_eps_sip_panel_falszerkezet.jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH5.csv.",
+    "localAssetSuggestion": "assets/BCON-387.jpg"
   },
   {
     "uid": "BC-388",
@@ -24361,20 +24357,21 @@
     "imageAlt": "",
     "imageCredit": "",
     "visualSourceRefs": [
-      {
-        "label": "AISC — Steel Construction Resources",
-        "url": "https://www.aisc.org/education/continuingeducation/education-archives/"
-      }
+      "https://commons.wikimedia.org/wiki/File:30-St-Mary-Axe.jpg"
     ],
-    "visualSourceType": "strict_exact_title_with_failsafe",
+    "visualSourceType": "source-backed-remote",
     "aiImage": false,
     "visualReviewNote": "Building Construction review-coach mode: no question image needed for this item; kept text/concept review only to avoid visual clues and remote-image failures.",
     "questionImageQuery": "",
     "questionImageQueries": [],
     "questionImageLayoutQueries": [],
-    "questionImageAlt": "",
+    "questionImageAlt": "Question visual for identification.",
     "bcVisualCoachDecision": "no_question_visual_needed",
-    "bcVisualCoachReason": "default_no_visual"
+    "bcVisualCoachReason": "default_no_visual",
+    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/30-St-Mary-Axe.jpg?width=1000",
+    "visualMode": "question",
+    "questionImageCredit": "Source-backed Wikimedia Commons visual. Credit/source shown after review or in IMAGE-CREDITS-BATCH4.csv.",
+    "localAssetSuggestion": "assets/BCON-388.jpg"
   },
   {
     "uid": "BC-389",
