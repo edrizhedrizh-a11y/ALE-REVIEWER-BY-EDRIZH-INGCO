@@ -6143,8 +6143,6 @@
     "explanation": "Correct answer: b. turnbuckle\nUlitin natin: turnbuckle.\nKahit medyo grainy ang image, identifiable pa rin siya.\nBakit ito ang tama?\nAng turnbuckle ay iyong fitting na may:\n•\tcentral body\n•\tthreaded ends\n•\tginagamit para i-adjust ang tension ng rods, wires, or cables\nSa larawan, makikita mo ang adjustable central body at iba't ibang end fittings. Iyan ang classic form ng turnbuckle.\nBakit mali ang ibang choices?\n•\ta. sagrod – ang sag rod ay usually simpleng rod used in roof framing/bracing, hindi itong adjustable fitting body\n•\tc. eye bolt – single bolt lang ito na may eye sa dulo, hindi whole adjustable assembly\n•\td. weighing hook – hindi ito ang tamang hardware identity\nElimination method\nIto ang iniisip mo:\n1.\tHanapin sa image kung may central adjustable body\n2.\tKapag meron, malamang turnbuckle\n3.\tEye bolt is single-piece hardware lang\n4.\tSag rod is rod, not this adjustable connector assembly\nCommon trap\nAng trap dito ay eye bolt kapag nakita mo lang iyong loop/eye portion.\nPero huwag kang tumingin sa isang dulo lang. Tingnan mo ang buong assembly.\nAno ang dapat mong tandaan dito?\nKapag may adjustable tensioning body sa gitna, ang sagot ay turnbuckle.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "question",
-    "visualSourceType": "open-license-real-photo",
     "visualReviewNote": "Question visual is shown without name labels. The same image target is reused in the explanation for answer reinforcement.",
     "visualIntent": "material_identification",
     "questionImageQuery": "turnbuckle hardware",
@@ -6158,8 +6156,6 @@
       "turnbuckle tension adjuster",
       "turnbuckle cable"
     ],
-    "questionImageAlt": "Real photo for identification.",
-    "questionImageCredit": "Source-backed open-license real photo. See IMAGE-CREDITS-BM-BATCH2.csv.",
     "aiImage": false,
     "answerImageQuery": "turnbuckle hardware",
     "answerImageQueries": [
@@ -6174,13 +6170,10 @@
     ],
     "answerImageAlt": "Explanation visual reference",
     "answerImageCredit": "Wikipedia/Wikimedia Commons first; Google Images fallback only if no preview loads.",
-    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Turnbuckles.jpg?width=1000",
-    "visualSourceRefs": [
-      "https://commons.wikimedia.org/wiki/File:Turnbuckles.jpg"
-    ],
-    "localAssetSuggestion": "assets/BM-107.jpg",
-    "visualAuditStatus": "REAL_PHOTO_OK",
-    "visualAuditNote": "Actual turnbuckles, real photo."
+    "visualAuditStatus": "NEEDS_HIGH_QUALITY_MARKET_PHOTO",
+    "visualAuditNote": "Do not use low-quality/weak reference image. Use clear real product/material market photo only.",
+    "needsMarketPhoto": true,
+    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only."
   },
   {
     "uid": "BM-108",
@@ -10819,20 +10812,13 @@
     "explanation": "Correct answer: a. Casement window lock\nUlitin natin: Casement window lock.\nBase sa image, ang hardware shown looks like window locking handles/locking pieces, not a hinge and not a long espagnolette assembly.\nBakit ito ang tama?\nThe picture shows small metal operating/locking pieces used for a window sash.\nHindi ito mukhang:\n•\thinge leaves with knuckles\n•\tsecurity slide bolt\n•\tlong rod-type espagnolette mechanism\nSo the strongest answer is casement window lock.\nBakit mali ang ibang choices?\n•\tb. Security bolt – usually bolt-style sliding security piece ang itsura\n•\tc. Window hinge – hinge would show leaf-and-pin configuration\n•\td. Espagnolet lock – usually associated with rod/rod-locking system, not the simple handle/lock image shown\nElimination method\nIto ang iniisip mo:\n1.\tHinge ba ang itsura?\nHindi.\n2.\tRod-type multi-point lock ba?\nHindi rin.\n3.\tSliding bolt ba?\nHindi.\n4.\tNatitira ang casement window lock\nCommon trap\nPinaka-trap dito ang espagnolet lock dahil lock hardware din iyon.\nPero the image is much simpler and shorter than the usual espagnolette mechanism.\nAno ang dapat mong tandaan dito?\nSa image na ito, the strongest identification is casement window lock.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "question",
-    "visualSourceType": "open-license-real-photo",
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Window%20lock.jpg?width=1000",
-    "questionImageAlt": "Real photo for identification.",
-    "questionImageCredit": "Source-backed open-license real photo. See IMAGE-CREDITS-BM-BATCH2.csv.",
-    "visualSourceRefs": [
-      "https://commons.wikimedia.org/wiki/File:Window_lock.jpg"
-    ],
-    "localAssetSuggestion": "assets/BM-218.jpg",
-    "visualAuditStatus": "REAL_PHOTO_OK",
-    "visualAuditNote": "Actual window lock photo. Marked acceptable; can be replaced later with exact casement lock if own photo available."
+    "visualAuditStatus": "NEEDS_HIGH_QUALITY_MARKET_PHOTO",
+    "visualAuditNote": "Do not use low-quality/weak reference image. Use clear real product/material market photo only.",
+    "needsMarketPhoto": true,
+    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only."
   },
   {
     "uid": "BM-219",
@@ -10864,20 +10850,13 @@
     "explanation": "Correct answer: a. Sliding door lock\nUlitin natin: Sliding door lock.\nIto, iyong image shows two recessed pull plates plus a central locking piece. Iyan ang typical look ng sliding door lock set, not just simple finger pulls.\nBakit ito ang tama?\nAng sliding door lock often includes:\n•\trecessed pulls on both sides\n•\tcentral latch/lock component\nKung finger pulls lang iyan, mas simple sana at walang separate locking element.\nBakit mali ang ibang choices?\n•\tb. Finger pulls – ito ang common trap.\nRecessed pull shape oo, pero kulang ito sa lock element.\n•\tc. Flush bolt – ginagamit sa inactive leaf ng double door, hindi ito ang image\n•\td. Pull hatch – hindi ito standard answer sa image na ito\nElimination method\nIto ang iniisip mo:\n1.\tRecessed hardware ba siya? Oo.\n2.\tMay lock/latch component ba? Oo.\n3.\tSo hindi lang siya simpleng finger pull\n4.\tTherefore: sliding door lock\nCommon trap\nPinaka-trap dito ang finger pulls dahil kahawig ng recessed hardware shape.\nPero tandaan:\n•\tfinger pull = pull only\n•\tsliding door lock = recessed pull plus locking function\nAno ang dapat mong tandaan dito?\nKapag recessed pulls ang image with locking component, the answer is sliding door lock.\n\nSige, tuloy tayo sa Page 27.\nContinue lang ang numbering, so magsisimula tayo sa Question 220.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "question",
-    "visualSourceType": "open-license-real-photo",
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Sliding%20door%20lock%20and%20handle%20in%20B%20Shed,%20Fremantle.jpg?width=1000",
-    "questionImageAlt": "Real photo for identification.",
-    "questionImageCredit": "Source-backed open-license real photo. See IMAGE-CREDITS-BM-BATCH2.csv.",
-    "visualSourceRefs": [
-      "https://commons.wikimedia.org/wiki/File:Sliding_door_lock_and_handle_in_B_Shed,_Fremantle.jpg"
-    ],
-    "localAssetSuggestion": "assets/BM-219.jpg",
-    "visualAuditStatus": "REAL_PHOTO_OK",
-    "visualAuditNote": "Actual sliding door lock/hasp hardware photo."
+    "visualAuditStatus": "NEEDS_HIGH_QUALITY_MARKET_PHOTO",
+    "visualAuditNote": "Do not use low-quality/weak reference image. Use clear real product/material market photo only.",
+    "needsMarketPhoto": true,
+    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only."
   },
   {
     "uid": "BM-220",
@@ -10912,11 +10891,10 @@
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "visualAuditStatus": "NEEDS_OWN_PHOTO",
-    "visualAuditNote": "Flush bolt needs exact market/product photo. Generic door bolt is not exact enough.",
-    "needsOwnPhoto": true,
-    "marketPhotoNeeded": true,
-    "safePhotoRule": "Use own photo or permissioned/open-license exact product photo only."
+    "visualAuditStatus": "NEEDS_HIGH_QUALITY_MARKET_PHOTO",
+    "visualAuditNote": "Do not use low-quality/weak reference image. Use clear real product/material market photo only.",
+    "needsMarketPhoto": true,
+    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only."
   },
   {
     "uid": "BM-221",
@@ -11059,11 +11037,10 @@
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "visualAuditStatus": "NEEDS_OWN_PHOTO",
-    "visualAuditNote": "Butterfly hinge needs exact market/product photo. Generic hinge is not acceptable.",
-    "needsOwnPhoto": true,
-    "marketPhotoNeeded": true,
-    "safePhotoRule": "Use own photo or permissioned/open-license exact product photo only."
+    "visualAuditStatus": "NEEDS_HIGH_QUALITY_MARKET_PHOTO",
+    "visualAuditNote": "Do not use low-quality/weak reference image. Use clear real product/material market photo only.",
+    "needsMarketPhoto": true,
+    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only."
   },
   {
     "uid": "BM-225",
@@ -11311,20 +11288,13 @@
     "explanation": "Correct answer: a. Rebar Cap\nUlitin natin: rebar cap.\nIyong image shows a protective cap-like piece na inilalagay sa nakausling rebar.\nBakit ito ang tama?\nAng rebar cap ay ginagamit para:\n•\ttakpan ang exposed rebar ends\n•\tmabawasan ang risk ng injury\n•\tmagbigay ng visible protection sa protruding rebars\nIyong shape sa picture ay cap-like, hindi chair, hindi anchor, at hindi ledge support.\nBakit mali ang ibang choices?\n•\tb. Ledge Support – support hardware ito, not protective cap\n•\tc. Screw Anchor – anchorage hardware ito, ibang function at shape\n•\td. Chair – ginagamit sa rebar support elevation, not cap on rebar tip\nElimination method\nIto ang iniisip mo:\n1.\tMukha ba itong support bracket or protective cap?\nProtective cap.\n2.\tChair? usually may stand/elevation form\n3.\tScrew anchor? more fastening hardware\n4.\tSo answer: rebar cap\nCommon trap\nAng trap dito ay chair dahil parehong may kinalaman sa rebars.\nPero tandaan:\n•\tchair = support under rebars\n•\trebar cap = cover on exposed rebar end\nAno ang dapat mong tandaan dito?\nKapag ang image ay protective cap for protruding rebar, ang sagot ay rebar cap.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "question",
-    "visualSourceType": "open-license-real-photo",
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/A%20perennial%20border%20of%20Rebar%20Safety%20Caps%20-%20geograph.org.uk%20-%204562850.jpg?width=1000",
-    "questionImageAlt": "Real photo for identification.",
-    "questionImageCredit": "Source-backed open-license real photo. See IMAGE-CREDITS-BM-BATCH2.csv.",
-    "visualSourceRefs": [
-      "https://commons.wikimedia.org/wiki/File:A_perennial_border_of_Rebar_Safety_Caps_-_geograph.org.uk_-_4562850.jpg"
-    ],
-    "localAssetSuggestion": "assets/BM-231.jpg",
-    "visualAuditStatus": "REAL_PHOTO_OK",
-    "visualAuditNote": "Actual rebar safety caps, real photo."
+    "visualAuditStatus": "NEEDS_HIGH_QUALITY_MARKET_PHOTO",
+    "visualAuditNote": "Do not use low-quality/weak reference image. Use clear real product/material market photo only.",
+    "needsMarketPhoto": true,
+    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only."
   },
   {
     "uid": "BM-232",
@@ -11644,20 +11614,13 @@
     "explanation": "Correct answer: b. Rimlock\nUlitin natin: Rimlock.\nIto, image-identification ito. Ang nasa picture ay mukhang surface-mounted lock case na may separate strike and trim piece. Hindi siya pahabang flush bolt, hindi rin simpleng latch bolt lang.\nBakit ito ang tama?\nAng rim lock ay:\n•\tnaka-mount sa face ng door\n•\tmay visible lock case/body\n•\tclassic old-style surface lock\nIyong image, mukhang buong lock body na naka-surface mount, kaya rimlock ang strongest answer.\nBakit mali ang ibang choices?\n•\ta. Deadbolt – usually mas direct na deadbolt mechanism ang itsura, hindi ganitong surface lock case\n•\tc. Flushbolt – pahabang recessed bolt ito, usually para sa inactive leaf ng double doors\n•\td. Latch bolt – component lang ito ng lockset, hindi buong hardware assembly\nElimination method\nIto ang iniisip mo:\n1.\tBuong lock body ba ang image?\nOo.\n2.\tSurface mounted ba ang dating?\nOo.\n3.\tSo hindi flushbolt at hindi latch bolt\n4.\tBetween deadbolt and rimlock, mas classic surface lock case ang rimlock\nCommon trap\nAng trap dito ay deadbolt dahil lock din naman siya.\nPero tandaan:\nkapag buong visible surface-mounted lock box/case ang image, malakas ang rim lock.\nAno ang dapat mong tandaan dito?\nKapag ang image ay surface-mounted lock body, ang sagot ay rimlock.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "question",
-    "visualSourceType": "open-license-real-photo",
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Rim%20lock.jpg?width=1000",
-    "questionImageAlt": "Real photo for identification.",
-    "questionImageCredit": "Source-backed open-license real photo. See IMAGE-CREDITS-BM-BATCH2.csv.",
-    "visualSourceRefs": [
-      "https://commons.wikimedia.org/wiki/File:Rim_lock.jpg"
-    ],
-    "localAssetSuggestion": "assets/BM-240.jpg",
-    "visualAuditStatus": "REAL_PHOTO_OK",
-    "visualAuditNote": "Actual rim lock / door lock hardware photo."
+    "visualAuditStatus": "NEEDS_HIGH_QUALITY_MARKET_PHOTO",
+    "visualAuditNote": "Do not use low-quality/weak reference image. Use clear real product/material market photo only.",
+    "needsMarketPhoto": true,
+    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only."
   },
   {
     "uid": "BM-241",
@@ -11869,20 +11832,13 @@
     "explanation": "Correct answer: b. hasp and staple\nUlitin natin: hasp and staple.\nIyong image shows a hinged metal clasp/strap with a receiving staple for a padlock. Classic ito.\nBakit ito ang tama?\nAng hasp and staple assembly ay:\n•\tmay flap or strap\n•\tmay staple/loop receiver\n•\tginagamit with padlock\nIyong image, hindi siya mismong padlock lang. Hardware siya para sa padlock attachment.\nBakit mali ang ibang choices?\n•\ta. Padlock – wala naman sa image ang actual padlock body bilang main object\n•\tc. lock latch – too vague and not the proper term\n•\td. flip lock – ibang simple locking device ang dating nito\nElimination method\nIto ang iniisip mo:\n1.\tMay hinged strap ba?\nOo.\n2.\tDesigned ba para lagyan ng padlock?\nOo.\n3.\tSo answer is hasp and staple\nCommon trap\nAng trap dito ay padlock, dahil iniisip ng examinee na dahil pang-padlock, iyon na ang sagot.\nPero ang tanong ay image identification ng mounting hardware, hindi ng padlock itself.\nAno ang dapat mong tandaan dito?\nKapag may hinged strap + staple for padlock, ang sagot ay hasp and staple.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "question",
-    "visualSourceType": "open-license-real-photo",
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Shed,%20outside%20storage,%20old%20wooden%20door,%20hasp,%20hook,%20code%20padlock,%20red%20paint,%20(utebod,%20skjul,%20uthus,%20d%C3%B8r,%20r%C3%B8d%20vegg,%20hengel%C3%A5s,%20haspe,%20d%C3%B8rkrok)%20T%C3%B8nsberg,%20Norway%202019-08-28%20IMG%200373.jpg?width=1000",
-    "questionImageAlt": "Real photo for identification.",
-    "questionImageCredit": "Source-backed open-license real photo. See IMAGE-CREDITS-BM-BATCH2.csv.",
-    "visualSourceRefs": [
-      "https://commons.wikimedia.org/wiki/File:Shed,_outside_storage,_old_wooden_door,_hasp,_hook,_code_padlock,_red_paint,_(utebod,_skjul,_uthus,_d%C3%B8r,_r%C3%B8d_vegg,_hengel%C3%A5s,_haspe,_d%C3%B8rkrok)_T%C3%B8nsberg,_Norway_2019-08-28_IMG_0373.jpg"
-    ],
-    "localAssetSuggestion": "assets/BM-246.jpg",
-    "visualAuditStatus": "REAL_PHOTO_OK",
-    "visualAuditNote": "Replaced archaeological object with real door hasp/staple-style hardware photo."
+    "visualAuditStatus": "NEEDS_HIGH_QUALITY_MARKET_PHOTO",
+    "visualAuditNote": "Do not use low-quality/weak reference image. Use clear real product/material market photo only.",
+    "needsMarketPhoto": true,
+    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only."
   },
   {
     "uid": "BM-247",
@@ -11914,20 +11870,13 @@
     "explanation": "Correct answer: b. Lever Lock\nUlitin natin: lever lock.\nIyong image shows a lockset with a lever handle, kaya the strongest answer is lever lock.\nBakit ito ang tama?\nAng pinaka-obvious clue ay iyong lever-type handle attached sa locking assembly.\nHindi ito generic rim lock image, at hindi rin standard term ang “assemble lock.”\nBakit mali ang ibang choices?\n•\ta. Rim lock – surface lock case usually ang mas identifiable image niyan, not this lever-handle setup\n•\tc. Unit Lock – factory lockset assembly term ito, but the image is more directly identified by the lever\n•\td. Assemble Lock – weak/nonstandard choice\nElimination method\nIto ang iniisip mo:\n1.\tAnong pinaka-obvious object sa image?\nLever handle\n2.\tKapag may exact choice matching the visible defining feature, piliin mo iyon\n3.\tSo answer: lever lock\nCommon trap\nAng trap dito ay unit lock, lalo na kung iniisip mo assembled lockset siya.\nPero image-identification-wise, the visible defining clue is the lever.\nAno ang dapat mong tandaan dito?\nKapag ang lock image ay clearly lever-operated, strongest answer is lever lock.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "question",
-    "visualSourceType": "open-license-real-photo",
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Lever%20Lock%20and%20Key.jpg?width=1000",
-    "questionImageAlt": "Real photo for identification.",
-    "questionImageCredit": "Source-backed open-license real photo. See IMAGE-CREDITS-BM-BATCH2.csv.",
-    "visualSourceRefs": [
-      "https://commons.wikimedia.org/wiki/File:Lever_Lock_and_Key.jpg"
-    ],
-    "localAssetSuggestion": "assets/BM-247.jpg",
-    "visualAuditStatus": "REAL_PHOTO_OK",
-    "visualAuditNote": "Replaced generic doorlock image with actual lever lock and key photo."
+    "visualAuditStatus": "NEEDS_HIGH_QUALITY_MARKET_PHOTO",
+    "visualAuditNote": "Do not use low-quality/weak reference image. Use clear real product/material market photo only.",
+    "needsMarketPhoto": true,
+    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only."
   },
   {
     "uid": "BM-248",
@@ -11959,20 +11908,13 @@
     "explanation": "Correct answer: b. Lid Stay\nUlitin natin: lid stay.\nIyong image shows a slender stay/support hardware used to hold a lid or flap in position.\nBakit ito ang tama?\nAng lid stay ay support hardware for:\n•\tcabinet lids\n•\tflap doors\n•\ttop-hinged covers\n•\tfold-up panels\nIyong image is long and slender, not the bulky body of a door closer.\nBakit mali ang ibang choices?\n•\ta. Door closer – mas bulky hydraulic/mechanical body iyon, hindi ganitong slim stay\n•\tc. Plunger – ibang hardware form ito\n•\td. Door Operator – mas complex opening device/system ito\nElimination method\nIto ang iniisip mo:\n1.\tSlim support arm ba ang image?\nOo.\n2.\tPang-door leaf closer body ba?\nHindi.\n3.\tSo answer: lid stay\nCommon trap\nAng trap dito ay door closer, lalo na kung basta mahaba ang hardware at hindi mo tiningnan ang form.\nPero the silhouette is much more like a stay/support arm.\nAno ang dapat mong tandaan dito?\nKapag ang image ay slim support arm for lids or flaps, ang sagot ay lid stay.\n\nSige, tuloy tayo sa Page 32.\nContinue lang ang numbering, so magsisimula tayo sa Question 249.\nSa page na ito, glass materials ang topic, at ang mga complete visible questions ay anim. Isa-isahin natin.",
     "type": "multiple_choice",
     "acceptedAnswers": [],
-    "visualMode": "question",
-    "visualSourceType": "open-license-real-photo",
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "questionImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Toybox-supports.jpg?width=1000",
-    "questionImageAlt": "Real photo for identification.",
-    "questionImageCredit": "Source-backed open-license real photo. See IMAGE-CREDITS-BM-BATCH2.csv.",
-    "visualSourceRefs": [
-      "https://commons.wikimedia.org/wiki/File:Toybox-supports.jpg"
-    ],
-    "localAssetSuggestion": "assets/BM-248.jpg",
-    "visualAuditStatus": "REAL_PHOTO_OK",
-    "visualAuditNote": "Actual lid stay/support hardware photo."
+    "visualAuditStatus": "NEEDS_HIGH_QUALITY_MARKET_PHOTO",
+    "visualAuditNote": "Do not use low-quality/weak reference image. Use clear real product/material market photo only.",
+    "needsMarketPhoto": true,
+    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only."
   },
   {
     "uid": "BM-249",
@@ -12429,11 +12371,10 @@
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "visualAuditStatus": "NEEDS_OWN_PHOTO",
-    "visualAuditNote": "Glass spider fitting needs exact market/product photo. No safe open-license exact photo confirmed.",
-    "needsOwnPhoto": true,
-    "marketPhotoNeeded": true,
-    "safePhotoRule": "Use own photo or permissioned/open-license exact product photo only."
+    "visualAuditStatus": "NEEDS_HIGH_QUALITY_MARKET_PHOTO",
+    "visualAuditNote": "Do not use low-quality/weak reference image. Use clear real product/material market photo only.",
+    "needsMarketPhoto": true,
+    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only."
   },
   {
     "uid": "BM-261",
@@ -12540,11 +12481,10 @@
     "visualReviewNote": "No visual assigned to avoid irrelevant image links.",
     "visualIntent": "no_visual",
     "aiImage": false,
-    "visualAuditStatus": "NEEDS_OWN_PHOTO",
-    "visualAuditNote": "Glass railing spigot needs exact market/product photo. No safe open-license exact photo confirmed.",
-    "needsOwnPhoto": true,
-    "marketPhotoNeeded": true,
-    "safePhotoRule": "Use own photo or permissioned/open-license exact product photo only."
+    "visualAuditStatus": "NEEDS_HIGH_QUALITY_MARKET_PHOTO",
+    "visualAuditNote": "Do not use low-quality/weak reference image. Use clear real product/material market photo only.",
+    "needsMarketPhoto": true,
+    "safePhotoRule": "Use own photo, permissioned product photo, or verified high-quality open-license real photo only."
   },
   {
     "uid": "BM-264",
