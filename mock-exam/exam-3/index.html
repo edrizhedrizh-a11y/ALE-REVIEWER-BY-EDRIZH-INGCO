@@ -66,8 +66,8 @@ body.markupFullscreen .sheet,body.markupFullscreen .hero,body.markupFullscreen #
 
 
 .sameSetBox{margin-top:12px;border:1px dashed var(--line);border-radius:16px;background:#f8fff9;padding:14px}
-.sameSetGrid{display:grid;grid-template-columns:1fr 1fr 1.2fr;gap:10px;align-items:end}
-.codeBox{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}
+.sameSetGrid{display:grid;grid-template-columns:.8fr 1.1fr 1.2fr;gap:10px;align-items:end}
+.codeBox{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}.sameSetBox input,.sameSetBox select{min-height:44px;width:100%;font:inherit}
 .codeText{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#061a38;color:#fff;border-radius:12px;padding:10px 12px;font-weight:1000;letter-spacing:.04em}
 .sameSetNote{font-size:12px;color:#40506a;line-height:1.4;margin-top:8px}
 @media(max-width:860px){.sameSetGrid{grid-template-columns:1fr}}
@@ -100,8 +100,8 @@ body.markupFullscreen .sheet,body.markupFullscreen .hero,body.markupFullscreen #
 
 
 .sameSetBox{margin-top:12px;border:1px dashed var(--line);border-radius:16px;background:#f8fff9;padding:14px}
-.sameSetGrid{display:grid;grid-template-columns:1fr 1fr 1.2fr;gap:10px;align-items:end}
-.codeBox{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}
+.sameSetGrid{display:grid;grid-template-columns:.8fr 1.1fr 1.2fr;gap:10px;align-items:end}
+.codeBox{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}.sameSetBox input,.sameSetBox select{min-height:44px;width:100%;font:inherit}
 .codeText{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#061a38;color:#fff;border-radius:12px;padding:10px 12px;font-weight:1000;letter-spacing:.04em}
 .sameSetNote{font-size:12px;color:#40506a;line-height:1.4;margin-top:8px}
 @media(max-width:860px){.sameSetGrid{grid-template-columns:1fr}}
@@ -127,15 +127,15 @@ body.markupFullscreen .sheet,body.markupFullscreen .hero,body.markupFullscreen #
   <strong>Class Same Set Exam Code</strong>
   <div class="sameSetGrid">
     <label>Exam version
-      <select id="sameSetVersion"></select>
+      <select id="sameSetVersion"><option value="A01">A01</option><option value="A02">A02</option><option value="A03">A03</option><option value="A04">A04</option><option value="A05">A05</option><option value="A06">A06</option><option value="A07">A07</option><option value="A08">A08</option><option value="A09">A09</option><option value="A10">A10</option><option value="A11">A11</option><option value="A12">A12</option><option value="A13">A13</option><option value="A14">A14</option><option value="A15">A15</option><option value="A16">A16</option><option value="A17">A17</option><option value="A18">A18</option><option value="A19">A19</option><option value="A20">A20</option><option value="A21">A21</option><option value="A22">A22</option><option value="A23">A23</option><option value="A24">A24</option><option value="A25">A25</option><option value="A26">A26</option><option value="A27">A27</option><option value="A28">A28</option><option value="A29">A29</option><option value="A30">A30</option><option value="A31">A31</option><option value="A32">A32</option><option value="A33">A33</option><option value="A34">A34</option><option value="A35">A35</option><option value="A36">A36</option><option value="A37">A37</option><option value="A38">A38</option><option value="A39">A39</option><option value="A40">A40</option><option value="A41">A41</option><option value="A42">A42</option><option value="A43">A43</option><option value="A44">A44</option><option value="A45">A45</option><option value="A46">A46</option><option value="A47">A47</option><option value="A48">A48</option><option value="A49">A49</option><option value="A50">A50</option></select>
     </label>
     <label>Enter / share code
-      <input id="sameSetCodeInput" type="text" value="" placeholder="EX1-100-A01">
+      <input id="sameSetCodeInput" type="text" value="EX3-010-A01" placeholder="EX3-200-A01">
     </label>
     <div>
       <span class="mini">Generated code</span>
       <div class="codeBox">
-        <span class="codeText" id="sameSetGeneratedCode">---</span>
+        <span class="codeText" id="sameSetGeneratedCode">EX3-010-A01</span>
         <button class="btn" type="button" onclick="copySameSetCode()">Copy Code</button>
       </div>
     </div>
@@ -953,6 +953,46 @@ function subjectTable(bd){return`<table><thead><tr><th>Subject</th><th>Correct</
 function smallReview(q,i,showExplain){const ua=answers[i]===null?'Unanswered':q.randomizedChoices[answers[i]]?.text;const ca=q.randomizedChoices[q.correctIndex]?.text||q.correctText;return`<div class="reviewItem"><h3>Q${i+1} · ${escapeHtml(q.category)} · ${escapeHtml(markLabel(marks[i]))}</h3><p><strong>Question:</strong> ${escapeHtml(q.question)}</p>${answerVisualHtml(q)}${annotationReviewHtml(q)}<p><strong>Your answer:</strong> ${escapeHtml(ua)}</p><p><strong>Correct answer:</strong> ${escapeHtml(ca)}</p><p><strong>Key memory:</strong> ${escapeHtml(q.keyMemory||'—')}</p><div class="explain"><strong>Explanation:</strong>\n${escapeHtml(q.explanation||'—')}</div></div>`}
 function renderHistory(){const rows=readHistory().filter(r=>r.examType===CONFIG.shortTitle).reverse();$('historyBox').innerHTML=rows.length?`<table><thead><tr><th>Date</th><th>Items</th><th>Score</th><th>%</th><th>Status</th><th>Time</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${r.date}</td><td>${r.itemCount}</td><td>${r.score}</td><td>${Number(r.percentage).toFixed(1)}%</td><td>${r.passFail}</td><td>${fmtTime(r.timeUsedSeconds)}</td></tr>`).join('')}</tbody></table>`:'<p class="mini">No history for this exam yet.</p>'}
 $('startBtn').onclick=function(){sameSetMode=false;activeSameSetCode='';startExam();};$('historyBtn').onclick=renderHistory;setupOptions();applyLayout();renderResumeBox();
+
+// ===== v11 Same Set UI hard fix =====
+function initializeSameSetControls(){
+  const version = document.getElementById('sameSetVersion');
+  const codeInput = document.getElementById('sameSetCodeInput');
+  const count = document.getElementById('countSelect');
+  const generated = document.getElementById('sameSetGeneratedCode');
+
+  if(!version || !codeInput || !count || !generated) return;
+
+  if(!version.options || version.options.length < 50){
+    let html = '';
+    for(let i=1;i<=50;i++){
+      const v = 'A' + String(i).padStart(2,'0');
+      html += `<option value="${v}">${v}</option>`;
+    }
+    version.innerHTML = html;
+  }
+
+  const refresh = () => {
+    if(typeof updateSameSetCode === 'function'){
+      codeInput.dataset.userEdited = '';
+      updateSameSetCode();
+    }else{
+      const prefix = (typeof sameSetExamPrefix === 'function') ? sameSetExamPrefix() : 'EX';
+      const c = String(Number(count.value || 0)).padStart(3,'0');
+      generated.textContent = `${prefix}-${c}-${version.value || 'A01'}`;
+      codeInput.value = generated.textContent;
+    }
+  };
+
+  version.addEventListener('change', refresh);
+  count.addEventListener('change', refresh);
+  codeInput.addEventListener('input', function(){ this.dataset.userEdited='1'; });
+
+  refresh();
+}
+setTimeout(initializeSameSetControls, 0);
+setTimeout(initializeSameSetControls, 250);
+
 </script>
 </body>
 </html>
