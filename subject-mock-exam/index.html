@@ -1,741 +1,863 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ALE Subject / Range Mock Exam</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Subject / Range Mock Exam</title>
 <style>
-:root{
-  --bg:#f4f0e8;--card:#fffdf8;--line:#ded6c8;--text:#061426;--muted:#667085;
-  --green:#064d2d;--red:#9b1c1c;--gold:#b9892f;--blue:#061a38;
-}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);font-family:ui-rounded,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);padding:18px}
-.wrap{max-width:1180px;margin:0 auto}
-.hero,.panel,.booklet,.sheet,.results{background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:0 8px 24px rgba(0,0,0,.045)}
-.hero,.panel,.results{padding:22px 26px;margin-bottom:14px}
-.booklet,.sheet{padding:18px}
-h1{margin:10px 0 6px;font-size:28px;letter-spacing:.04em}
-h2{margin:0 0 10px}
-.mini{color:var(--muted);font-size:13px;line-height:1.45}
-.optionsGrid{display:grid;grid-template-columns:1.2fr .7fr .7fr 1fr 1.3fr;gap:12px;align-items:end}
-label{font-weight:900;font-size:14px}
-select,input{width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;background:#fff;font:inherit;min-height:46px}
-.btn{border:1px solid var(--line);border-radius:999px;background:#fff;padding:11px 15px;font-weight:900;cursor:pointer;text-decoration:none;color:var(--text);display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px}
-.btn.primary{background:var(--green);color:#fff;border-color:var(--green)}
-.btn.danger{color:var(--red)}
-.topActions,.navBtns,.reviewControls{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-.warning{margin-top:12px;padding:12px;border:1px solid #ead39a;background:#fff7df;border-radius:14px}
-.examShell{display:none}
-.examTop{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:12px;flex-wrap:wrap}
-.examLayout{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:14px;align-items:start}
-.qMeta{display:flex;gap:8px;flex-wrap:wrap}
-.pill,.subjectBadge{display:inline-flex;border-radius:999px;background:#eee8dc;padding:8px 12px;font-weight:900;font-size:13px;margin:2px}
-.subjectBadge.good{background:#f0fff7;color:#064d2d}.subjectBadge.warn{background:#fff4df;color:#7a520f}
-.question{font-size:25px;font-weight:1000;line-height:1.35;margin:18px 0}
-.visualBox{margin:12px 0;border:1px solid var(--line);border-radius:16px;background:#fff;padding:12px;display:none}
-.visualBox.show{display:block}
-.visualBox img{max-width:100%;border-radius:12px;display:block}
-.choices{display:grid;gap:10px}
-.choice{display:flex;gap:12px;align-items:center;border:1px solid var(--line);border-radius:16px;padding:16px;background:#fff;min-height:62px;font-weight:900;line-height:1.35;cursor:pointer}
-.choice input{width:24px;height:24px;flex:0 0 auto}
-.choice.selected{outline:3px solid var(--blue)}
-.sheet{position:sticky;top:12px;max-height:calc(100vh - 24px);overflow:auto}
-.sheetRow{display:grid;grid-template-columns:52px repeat(4,1fr);gap:8px;align-items:center;margin:8px 0;border:1px solid var(--line);border-radius:14px;padding:8px;background:#fff}
-.sheetRow.current{outline:3px solid var(--blue)}
-.bubble{border:1px solid var(--line);border-radius:999px;padding:8px;text-align:center;font-weight:1000;background:#fff;cursor:pointer}
-.bubble.on{background:var(--blue);color:#fff}
-.progressBar{height:10px;background:#eee8dc;border-radius:99px;overflow:hidden;margin:10px 0}
-.progressFill{height:100%;background:var(--green);width:0%}
-.scoreBox{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
-.stat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px}
-.stat b{display:block;font-size:24px}
-.reviewItem{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;margin:10px 0}
-.correctChoice{background:#f0fff7;border-color:#b7dfc8}
-.chosen{outline:2px solid #6ea8fe}
-.search{min-height:44px;border:1px solid var(--line);border-radius:999px;padding:10px 14px;min-width:260px}
+:root{--bg:#f3f0ea;--card:#fffdf8;--ink:#061a38;--muted:#667085;--line:#ded6c9;--green:#006b35;--gold:#9a6a1d;--red:#9b1c1c;--blue:#1f4f82;--chip:#eee7dc;--shadow:0 10px 26px rgba(30,25,16,.07)}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:ui-rounded,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding:18px 20px 44px}
+.wrap{max-width:1220px;margin:0 auto} .hero,.panel,.booklet,.sheet,.results{background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow)} .hero{padding:22px 26px;margin-bottom:14px}
+h1{margin:0 0 6px;font-size:30px;font-weight:900;letter-spacing:.02em} h2{margin:0 0 10px} .subtitle{margin:0;color:#40506a;line-height:1.45} .mini{font-size:13px;color:#667085;line-height:1.35}
+.btn{border:1px solid var(--line);background:#fffaf0;color:var(--ink);border-radius:999px;padding:10px 14px;font-weight:900;cursor:pointer;text-decoration:none;min-height:42px} .btn.primary{background:#0c3924;color:white;border-color:#0c3924} .btn.danger{background:#fff5f5;color:var(--red)} .btn:disabled{opacity:.5;cursor:not-allowed}
+.topActions,.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center} .topActions{margin-top:14px} .panel{padding:18px;margin-bottom:14px} .setupGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px} label{font-weight:900} select,input{width:100%;padding:12px;border-radius:14px;border:1px solid var(--line);background:#fff;font:inherit}
+.warning{margin-top:12px;color:#7a520f;background:#fff7df;border:1px solid #ead39a;border-radius:14px;padding:12px;display:none}
+.examShell{display:none} .examTop{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:12px;flex-wrap:wrap} .timer{font-weight:1000;font-size:22px;color:var(--red)}
+.examLayout{display:grid;gap:14px;align-items:start} body.layout-split .examLayout{grid-template-columns:minmax(0,1fr) 360px} body.layout-compact .examLayout{grid-template-columns:1fr}
+.booklet{padding:22px} .sheet{padding:16px} body.layout-split .sheet{position:sticky;top:12px;max-height:calc(100vh - 24px);overflow:auto} body.layout-compact .sheet{display:none} body.layout-compact .sheet.open{display:block}
+.qMeta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px} .pill{background:var(--chip);border-radius:999px;padding:6px 10px;font-size:12px;font-weight:900;color:#5c6470}
+.question{font-size:20px;line-height:1.5;font-weight:850;margin:0 0 18px;white-space:pre-wrap} .visualBox{display:none;margin:0 0 18px;border:1px solid var(--line);background:#fff;border-radius:18px;padding:12px} .visualBox.show{display:block} .visualBox img{display:block;max-width:100%;max-height:420px;margin:0 auto;border-radius:14px;border:1px solid var(--line);object-fit:contain;background:#f7f3eb} .visualNote{font-size:12px;color:#667085;margin:8px 4px 0;line-height:1.35} .visualBtns{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px} .visualLink{display:inline-block;border:1px solid var(--line);background:#fffaf0;color:var(--ink);border-radius:999px;padding:8px 10px;text-decoration:none;font-size:12px;font-weight:900}
+.choices{display:grid;gap:10px} .choice{display:flex;gap:12px;align-items:flex-start;border:1px solid var(--line);border-radius:18px;background:#fff;padding:14px;cursor:pointer;min-height:58px} .choice input{margin-top:5px;transform:scale(1.25)} .choice.selected{border-color:#9a6a1d;background:#fff8e7}
+.markPanel{margin:16px 0;padding:14px;border:1px dashed #d5c8b6;border-radius:18px;background:#fffaf0} .markBtns{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px} .markBtn{border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px 12px;font-weight:900;cursor:pointer;min-height:44px} .markBtn.active{background:#061a38;color:white;border-color:#061a38}
+.navBtns{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px} .sheetHead{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:10px} .sheetControls{display:grid;gap:8px;margin-bottom:10px} .quickBtns{display:flex;flex-wrap:wrap;gap:7px} .quickBtns button{font-size:12px;padding:8px 9px;min-height:36px}
+.itemGrid{display:grid;gap:7px} .ansRow{display:grid;grid-template-columns:38px 1fr 32px;gap:7px;align-items:center;border:1px solid var(--line);background:#fff;border-radius:14px;padding:8px;cursor:pointer} .ansRow.current{outline:3px solid #061a38} .ansRow.blank{border-color:#e0b0b0} .ansRow.marked{background:#fff8e7} .num{font-weight:1000;text-align:center} .bubbles{display:grid;grid-template-columns:repeat(4,1fr);gap:4px} .bubble{height:30px;min-width:30px;border:1px solid #cfc5b5;border-radius:999px;display:grid;place-items:center;font-size:12px;font-weight:1000;background:#fff} .bubble.sel{background:#0c3924;color:white;border-color:#0c3924} .markSym{font-size:18px;text-align:center}
+.floatBtns{display:none;position:fixed;right:14px;bottom:14px;z-index:20;flex-direction:column;gap:8px} body.layout-compact .floatBtns{display:flex} .floatBtns button{box-shadow:0 8px 20px rgba(0,0,0,.16)}
+.results{display:none;padding:22px} .scoreBox{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:14px 0} .stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px} .stat b{display:block;font-size:22px;margin-top:6px} .pass{color:var(--green)} .fail{color:var(--red)} table{width:100%;border-collapse:collapse;font-size:13px;margin-top:10px} th,td{border-bottom:1px solid var(--line);padding:9px;text-align:left;vertical-align:top} th{font-size:12px;color:#667085;text-transform:uppercase;letter-spacing:.04em}
+.reviewItem{border:1px solid var(--line);background:#fff;border-radius:16px;padding:14px;margin:10px 0} .reviewItem h3{margin:0 0 8px;font-size:16px} .explain{white-space:pre-wrap;color:#263853;line-height:1.45}
+
+/* Test Booklet Markup Mode */
+.markupArea{position:relative;border-radius:18px}
+.markupCanvas{position:absolute;inset:0;width:100%;height:100%;z-index:9;pointer-events:none;border-radius:18px}
+.markupArea.drawing .markupCanvas{pointer-events:auto;touch-action:none}
+.markupArea.notes-hidden .markupCanvas{display:none}
+.markupToolbar{margin:16px 0;padding:14px;border:1px dashed #d5c8b6;border-radius:18px;background:#fffaf0}
+.toolRow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+.toolBtn{border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px 12px;font-weight:900;cursor:pointer;min-height:44px}
+.toolBtn.active{background:#061a38;color:#fff;border-color:#061a38}
+.toolHint{font-size:12px;color:#667085;line-height:1.35;margin-top:8px}
+.scratchBox{display:none;margin-top:12px}
+.scratchBox.open{display:block}
+.scratchBox textarea{width:100%;min-height:110px;border:1px solid var(--line);border-radius:14px;padding:12px;font:inherit;line-height:1.45;resize:vertical;background:#fff}
+.booklet.fullscreenBooklet{position:fixed;inset:10px;z-index:60;overflow:auto;max-width:none;background:var(--card);padding:24px}
+body.markupFullscreen{overflow:hidden}
+body.markupFullscreen .sheet,body.markupFullscreen .hero,body.markupFullscreen #setup,body.markupFullscreen .floatBtns{display:none!important}
+.reviewCanvasBox{margin:10px 0;border:1px solid var(--line);background:#fff;border-radius:16px;padding:10px}
+.reviewCanvasBox canvas{width:100%;max-height:360px;border-radius:12px;border:1px solid var(--line);background:#fffdf8}
+.reviewNoteText{white-space:pre-wrap;background:#fffaf0;border:1px solid var(--line);border-radius:12px;padding:10px;margin-top:8px;color:#263853}
+
+.paceBox{font-size:13px;color:#40506a;background:#fffaf0;border:1px solid var(--line);border-radius:14px;padding:9px 12px;margin-top:8px}
+.paceBox.behind{color:#9b1c1c;background:#fff5f5;border-color:#e0b0b0}
+.paceBox.ahead{color:#006b35;background:#f0fff7;border-color:#b7dfc8}
+.resumeBox{display:none;margin-top:12px;background:#f0fff7;border:1px solid #b7dfc8;border-radius:14px;padding:12px;color:#0c3924}
+.dataTools{margin-top:12px;border-top:1px dashed var(--line);padding-top:12px}
+.fileInput{max-width:260px}
+.bankList{display:grid;gap:10px;margin-top:10px}
+.bankCard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px}
+
+
+.fullReviewControls{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;padding:12px;border:1px solid var(--line);border-radius:16px;background:#fffaf0}
+.reviewItem.correctReview{border-left:6px solid #1f8f4d}
+.reviewItem.wrongReview{border-left:6px solid #b42318}
+.reviewItem.blankReview{border-left:6px solid #9a6700}
+.reviewTag{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 10px;margin:3px;font-size:12px;font-weight:800;color:#344054}
+.reviewTag.correct{color:#137333}.reviewTag.wrong{color:#b42318}.reviewTag.blank{color:#9a6700}
+.choiceAudit{display:grid;gap:6px;margin:10px 0}.choiceAudit div{border:1px solid var(--line);border-radius:12px;padding:8px 10px;background:#fff}
+.choiceAudit .chosen{outline:2px solid #6ea8fe}.choiceAudit .correctChoice{background:#f0fff7;border-color:#b7dfc8}
+.reviewSearch{min-height:42px;border:1px solid var(--line);border-radius:999px;padding:8px 12px;min-width:240px;font:inherit}
+
+
+.masteryBox{margin-top:12px;padding:12px;border:1px solid var(--line);border-radius:16px;background:#fffaf0}
 .masteryGood{color:#137333}.masteryMid{color:#9a6700}.masteryLow{color:#b42318}
-.masteryBox{margin:12px 0;padding:12px;border:1px solid var(--line);border-radius:16px;background:#fffaf0}
-@media(max-width:900px){
-  .optionsGrid{grid-template-columns:1fr 1fr}
-  .examLayout{grid-template-columns:1fr}
-  .sheet{position:static;max-height:none}
-  .scoreBox{grid-template-columns:1fr 1fr}
+.subjectBadge{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;padding:7px 10px;background:#fff;font-size:12px;font-weight:900;color:#344054;margin:3px}
+
+
+.codeBox{margin-top:10px;padding:12px;border:1px solid var(--line);border-radius:16px;background:#f7fbff;color:#243b61;line-height:1.45}
+.codeStrong{font-weight:1000;color:#061a38}
+
+@media(max-width:860px){
+  .markupToolbar{display:block}
+  .toolRow .toolBtn{min-height:42px;padding:9px 10px}
 }
-@media(max-width:520px){
-  body{padding:10px}
-  .hero,.panel,.booklet,.sheet,.results{border-radius:16px;padding:14px}
-  .optionsGrid,.scoreBox{grid-template-columns:1fr}
-  .question{font-size:21px}
-  .sheetRow{grid-template-columns:44px repeat(4,1fr);gap:5px}
-  .bubble{padding:7px}
-}
+
+
+.paceBox{font-size:13px;color:#40506a;background:#fffaf0;border:1px solid var(--line);border-radius:14px;padding:9px 12px;margin-top:8px}
+.paceBox.behind{color:#9b1c1c;background:#fff5f5;border-color:#e0b0b0}
+.paceBox.ahead{color:#006b35;background:#f0fff7;border-color:#b7dfc8}
+.resumeBox{display:none;margin-top:12px;background:#f0fff7;border:1px solid #b7dfc8;border-radius:14px;padding:12px;color:#0c3924}
+.dataTools{margin-top:12px;border-top:1px dashed var(--line);padding-top:12px}
+.fileInput{max-width:260px}
+.bankList{display:grid;gap:10px;margin-top:10px}
+.bankCard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px}
+
+
+.fullReviewControls{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;padding:12px;border:1px solid var(--line);border-radius:16px;background:#fffaf0}
+.reviewItem.correctReview{border-left:6px solid #1f8f4d}
+.reviewItem.wrongReview{border-left:6px solid #b42318}
+.reviewItem.blankReview{border-left:6px solid #9a6700}
+.reviewTag{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 10px;margin:3px;font-size:12px;font-weight:800;color:#344054}
+.reviewTag.correct{color:#137333}.reviewTag.wrong{color:#b42318}.reviewTag.blank{color:#9a6700}
+.choiceAudit{display:grid;gap:6px;margin:10px 0}.choiceAudit div{border:1px solid var(--line);border-radius:12px;padding:8px 10px;background:#fff}
+.choiceAudit .chosen{outline:2px solid #6ea8fe}.choiceAudit .correctChoice{background:#f0fff7;border-color:#b7dfc8}
+.reviewSearch{min-height:42px;border:1px solid var(--line);border-radius:999px;padding:8px 12px;min-width:240px;font:inherit}
+
+@media(max-width:860px){body{padding:14px}.hero{padding:20px}h1{font-size:24px}.setupGrid,.scoreBox{grid-template-columns:1fr}.question{font-size:17px}}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <section class="hero">
-    <a class="btn" href="../index.html">← Main Reviewer</a>
-    <h1>Subject / Range Mock Exam</h1>
-    <p class="mini">Range Only Mode: pili ka ng subject at Q range. Auto-detect ang max Q ng subject. May Board-valid / Complete review mode. Walang item count. Walang timer.</p>
-  </section>
-
-  <section class="panel" id="setup">
-    <div class="optionsGrid">
-      <label>Subject
-        <select id="subjectSelect"></select>
-      </label>
-      <label>Range start
-        <input id="rangeStart" type="number" min="1" value="1">
-      </label>
-      <label>Range end
-        <input id="rangeEnd" type="number" min="1" value="999">
-      </label>
-      <label>Order
-        <select id="orderMode">
-          <option value="random">Random from range</option>
-          <option value="sequential">Sequential from range</option>
-        </select>
-      </label>
-      <label>Visual cards
-        <select id="visualModeSelect">
-          <option value="board">Board-valid: skip missing-image identify</option>
-          <option value="complete">Complete review: include all 600 cards</option>
-        </select>
-      </label>
-    </div>
-    <div class="warning" id="rangeInfo">Loading cards...</div>
-    <div class="topActions">
-      <button class="btn primary" id="startBtn" type="button">Start Range Mock Exam</button>
-      <button class="btn" id="setFullBtn" type="button">Use Full Subject Range</button>
-      <button class="btn" id="resumeBtn" type="button" style="display:none">Resume Last Range Exam</button>
-      <button class="btn danger" id="discardBtn" type="button" style="display:none">Discard Last Range Exam</button>
-      <button class="btn danger" id="clearBtn" type="button">Clear Subject Exam Data</button>
-    </div>
-    <p class="mini">Choices are shuffled every attempt. Choices stay within the same question only.</p>
-  </section>
-
-  <section class="examShell" id="examShell">
-    <div class="examTop">
-      <div>
-        <strong id="progressText"></strong>
-        <div class="mini" id="sourceText"></div>
-        <div class="progressBar"><div class="progressFill" id="progressFill"></div></div>
-        <div class="mini" id="statusText"></div>
-      </div>
-      <button class="btn danger" id="submitBtnTop" type="button">Submit Exam</button>
-    </div>
-
-    <div class="examLayout">
-      <main class="booklet">
-        <div class="qMeta">
-          <span class="pill" id="qid"></span>
-          <span class="pill" id="qcat"></span>
-        </div>
-        <div class="question" id="questionText"></div>
-        <div class="visualBox" id="visualBox"></div>
-        <div class="choices" id="choicesBox"></div>
-        <div class="navBtns">
-          <button class="btn" id="prevBtn" type="button">Previous</button>
-          <button class="btn" id="nextBtn" type="button">Next</button>
-          <button class="btn" id="nextBlankBtn" type="button">Next Unanswered</button>
-          <button class="btn danger" id="submitBtn" type="button">Submit Exam</button>
-        </div>
-      </main>
-
-      <aside class="sheet">
-        <h2>Answer Sheet</h2>
-        <div class="mini" id="sheetStats"></div>
-        <div id="answerSheet"></div>
-      </aside>
-    </div>
-  </section>
-
-  <section class="results" id="results" style="display:none"></section>
+<header class="hero">
+  <h1>Subject / Range Mock Exam</h1>
+  <p class="subtitle">Separate folder mode · choose one subject and Q range based on what you have already studied</p>
+  <div class="topActions"><a class="btn" href="../index.html">← Main Reviewer</a></div>
+</header>
+<section class="panel" id="setup">
+  <div class="setupGrid">
+<div><label for="subjectSelect">Subject</label><select id="subjectSelect"></select></div>
+    <div><label for="rangeStart">Range start</label><input id="rangeStart" type="number" min="1" value="1"></div>
+    <div><label for="rangeEnd">Range end</label><input id="rangeEnd" type="number" min="1" value="300"></div>
+    <div><label for="orderMode">Order</label><select id="orderMode"><option value="random">Random from range</option><option value="sequential">Sequential from range</option></select></div>
+    <div><label for="examCodeInput">Same Exam Code</label><input id="examCodeInput" type="text" value="" placeholder="Example: UTIL300-A"></div>
+    <div><label for="groupMode">Group Mode</label><select id="groupMode"><option value="same">Same A01 for everyone</option><option value="personal">Personal random per device</option></select></div>
+    <div><label for="countSelect">Item count</label><select id="countSelect"></select></div>
+    <div><label for="modeSelect">Timer mode</label><select id="modeSelect"><option value="board">Board Mode — official pace</option><option value="pressure">Pressure Mode — 20% faster</option><option value="sprint">Sprint Mode — 50% faster</option><option value="none">No Timer Mode</option></select></div>
+    <div><label for="layoutSelect">Layout</label><select id="layoutSelect"><option value="auto">Auto layout</option><option value="split">PRC Split View</option><option value="compact">Compact Mobile</option></select></div>
+  </div>
+  <div id="examCodePreview"></div>
+  <div class="warning" id="rangeInfo" style="display:block">Select subject and Q range.</div>
+  <div class="topActions"><button class="btn primary" id="startBtn">Start Subject Mock Exam</button><button class="btn" id="historyBtn">View Exam History</button><button class="btn" onclick="showMistakeBank()">Mistake Bank</button></div><div class="resumeBox" id="resumeBox"></div><div class="dataTools"><strong>Backup / Data</strong><div class="topActions"><button class="btn" onclick="exportAllExamData()">Export Backup JSON</button><label class="btn">Import Backup JSON <input class="fileInput" type="file" accept="application/json" style="display:none" onchange="importExamBackup(this)"></label><button class="btn danger" onclick="clearAllExamData()">Clear All Exam Data</button></div></div>
+  <p class="mini">Group mode: use the same Subject + Range + Item count + Order + Same Exam Code so everyone gets the same A01, A02, A03.</p>
+  <div class="warning" id="warning"></div>
+  
+  <div id="historyBox"></div>
+</section>
+<section class="examShell" id="examShell">
+  <div class="examTop"><div><strong id="progressText"></strong><div class="mini" id="sourceText"></div><div class="paceBox" id="paceBox">Pacing: waiting to start.</div></div><div class="timer" id="timer">--:--</div></div>
+  <div class="examLayout">
+    <main class="booklet">
+      <div class="markupArea" id="markupArea"><div class="qMeta"><span class="pill" id="qid"></span><span class="pill" id="qcat"></span><span class="pill" id="markPill">No mark</span></div>
+      <p class="question" id="questionText"></p>
+      <div class="visualBox" id="visualBox"></div>
+      <div class="choices" id="choicesBox"></div><canvas class="markupCanvas" id="markupCanvas"></canvas></div>
+      <div class="markupToolbar"><strong>Test Booklet Markup Mode</strong><div class="toolRow"><button class="toolBtn active" data-tool="navigate" onclick="setMarkupTool(\'navigate\')">Navigate</button><button class="toolBtn" data-tool="pencil" onclick="setMarkupTool(\'pencil\')">Pencil</button><button class="toolBtn" data-tool="highlighter" onclick="setMarkupTool(\'highlighter\')">Highlighter</button><button class="toolBtn" data-tool="eraser" onclick="setMarkupTool(\'eraser\')">Eraser</button><button class="toolBtn" onclick="undoLastStroke()">Undo Last Stroke</button><button class="toolBtn" onclick="clearQuestionNotes()">Clear Notes for This Question</button><button class="toolBtn" id="hideShowNotesBtn" onclick="toggleNotesVisible()">Hide Notes</button><button class="toolBtn" id="fullscreenBtn" onclick="toggleFullscreenBooklet()">Fullscreen Question</button><button class="toolBtn" onclick="toggleScratchPad()">Open Scratch Pad</button></div><div class="toolHint" id="markupStatus">Navigate Mode: scroll/tap normally.</div><div class="scratchBox" id="scratchBox"><textarea id="scratchText" placeholder="Typed scratch notes fallback for phone or keyboard use..." oninput="saveTypedScratch()"></textarea></div></div>
+      <div class="markPanel"><strong>Confidence mark — separate from your A/B/C/D answer</strong><div class="markBtns" id="markBtns"></div></div>
+      <div class="navBtns"><button class="btn" id="prevBtn">Previous</button><button class="btn" id="nextBtn">Next</button><button class="btn" id="prevMatchBtn" style="display:none">Previous Matching</button><button class="btn" id="nextMatchBtn" style="display:none">Next Matching</button><button class="btn danger" id="submitBtn">Submit Exam</button></div><div class="navBtns" id="secondPassBtns"></div>
+    </main>
+    <aside class="sheet" id="answerSheet"></aside>
+  </div>
+</section>
+<section class="results" id="results"></section>
+<div class="floatBtns"><button class="btn primary" id="floatSheet">Answer Sheet</button><button class="btn" id="floatMarks">Review Marks</button></div>
 </div>
-
 <script>
-const CONFIG = {
-  sources: [
-    {name:'History', path:'../history/cards.json'},
-    {name:'Theory', path:'../theory/cards.json'},
-    {name:'Planning', path:'../planning/cards.json'},
-    {name:'Tropical Design and Green Architecture', path:'../tropical-design-and-green-architecture/cards.json'},
-    {name:'Structural Concepts', path:'../structural-concepts/cards.json'},
-    {name:'Building Materials', path:'../building-materials/cards.json'},
-    {name:'Building Construction', path:'../building-construction/cards.json'},
-    {name:'Building Utilities', path:'../building-utilities/cards.json'},
-    {name:'Building Laws', path:'../building-laws/cards.json'},
-    {name:'Professional Practice', path:'../professional-practice/cards.json'},
-    {name:'ADSP Rule 7 & 8', path:'../adsp-rule-7-8/cards.json'}
+// v7 visual leak fix: no image search query / search clue is shown before submit.
+
+const CONFIG={
+  "shortTitle":"Subject Range",
+  "title":"Subject / Range Mock Exam",
+  "officialItems":100,
+  "officialTimeLabel":"custom",
+  "paceMinutes":2,
+  "weightLabel":"Practice",
+  "sources":[
+    {"name":"History","path":"../history/cards.json"},
+    {"name":"Theory","path":"../theory/cards.json"},
+    {"name":"Planning","path":"../planning/cards.json"},
+    {"name":"Tropical Design and Green Architecture","path":"../tropical-design-and-green-architecture/cards.json"},
+    {"name":"Structural Concepts","path":"../structural-concepts/cards.json"},
+    {"name":"Building Materials","path":"../building-materials/cards.json"},
+    {"name":"Building Construction","path":"../building-construction/cards.json"},
+    {"name":"Building Utilities","path":"../building-utilities/cards.json"},
+    {"name":"Building Laws","path":"../building-laws/cards.json"},
+    {"name":"Professional Practice","path":"../professional-practice/cards.json"},
+    {"name":"ADSP Rule 7 & 8","path":"../adsp-rule-7-8/cards.json"}
+  ],
+  "options":[
+    {"items":10,"label":"quick check"},
+    {"items":25,"label":"mini mock"},
+    {"items":50,"label":"half drill"},
+    {"items":75,"label":"long drill"},
+    {"items":100,"label":"full subject set"},
+    {"items":150,"label":"extended"},
+    {"items":200,"label":"deep range"},
+    {"items":300,"label":"all range if available"}
   ]
-};
+}; const HISTORY_KEY='aleMockExamHistory';
+let allCards=[], exam=[], answers=[], marks=[], current=0, startedAt=0, timeLimit=0, timerInt=null, submitted=false, loadedWarnings=[], pendingRetakeIds=null, activeFilter='all';
+const MARKS={sure:{label:'Sure',sym:'✅'},notSure:{label:'Not Sure',sym:'⚑'},guess:{label:'Guess',sym:'❓'},noIdea:{label:'No Idea',sym:'🚫'}};
+const $=id=>document.getElementById(id);
+function escapeHtml(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
+function shuffle(arr){const a=arr.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function fmtTime(sec){if(!isFinite(sec)||sec<0)sec=0;sec=Math.floor(sec);const h=Math.floor(sec/3600),m=Math.floor((sec%3600)/60),s=sec%60;return(h?String(h).padStart(2,'0')+':':'')+String(m).padStart(2,'0')+':'+String(s).padStart(2,'0')}
+function applyLayout(){const v=$('layoutSelect')?.value||'auto';const compact= v==='compact' || (v==='auto' && window.innerWidth<861);document.body.classList.toggle('layout-compact',compact);document.body.classList.toggle('layout-split',!compact)} window.addEventListener('resize',applyLayout);
+function readHistory(){try{return JSON.parse(localStorage.getItem(HISTORY_KEY)||'[]')}catch(e){return[]}} function saveHistory(row){const rows=readHistory();rows.push(row);localStorage.setItem(HISTORY_KEY,JSON.stringify(rows.slice(-80)))}
+function attemptStorageKey(){return 'aleMockLastAttempt_'+String(CONFIG.shortTitle||'exam').replace(/\W+/g,'_')} function cardKey(card){return String(card.sourceName||card.category||'Unknown')+'::'+String(card.uid||card.displayId||card.question).slice(0,180)}
+function saveCurrentAttempt(status,extra){try{const data=Object.assign({attemptId:Date.now()+'-'+Math.random().toString(36).slice(2),date:new Date().toLocaleString(),status:status||'started',examType:CONFIG.shortTitle,itemCount:exam.length,timerMode:$('modeSelect')?.value||'',questionIds:exam.map(cardKey)},extra||{});localStorage.setItem(attemptStorageKey(),JSON.stringify(data));return data}catch(e){return null}}
+function readLastAttempt(){try{return JSON.parse(localStorage.getItem(attemptStorageKey())||'null')}catch(e){return null}} function buildExamFromIds(ids,fallbackCount){const map=new Map(allCards.map(c=>[cardKey(c),c]));const picked=(ids||[]).map(id=>map.get(id)).filter(Boolean);if(!picked.length)return null;return picked.slice(0,fallbackCount||picked.length).map(prepQuestion)}
+function retakeSameExam(){const last=readLastAttempt();if(!last?.questionIds?.length){alert('No saved exam attempt found yet.');return} pendingRetakeIds=last.questionIds.slice(); $('setup').style.display='block'; $('results').style.display='none'; $('examShell').style.display='none'; startExam()}
+function startNewRandomExam(){pendingRetakeIds=null; $('setup').style.display='block'; $('results').style.display='none'; $('examShell').style.display='none'; startExam()}
+function choiceText(ch){return typeof ch==='string'?ch:(ch?.text??'')} function normalize(raw,sourceName){const arr=Array.isArray(raw)?raw:(Array.isArray(raw.cards)?raw.cards:[]);return arr.filter(c=>c&&c.question).map((c,idx)=>{const rawChoices=Array.isArray(c.choices)?c.choices:[];const cl=String(c.correctLetter||'').trim().toLowerCase();const normChoices=rawChoices.map((ch,i)=>({letter:String(ch.letter||String.fromCharCode(97+i)).toLowerCase(),text:choiceText(ch)})).filter(ch=>ch.text);let correctText=(normChoices.find(ch=>ch.letter===cl)||{}).text||'';if(!correctText&&c.answer)correctText=String(c.answer).replace(/^[A-Da-d]\s*[.)-]\s*/,'').trim();return{uid:c.uid||c.id||c.displayId||sourceName+'-'+idx,displayId:c.displayId||c.id||c.uid||('Q'+(idx+1)),category:c.category||sourceName,sourceName,question:String(c.question||'').trim(),choices:normChoices,correctText,correctLetter:cl,answer:c.answer||correctText,keyMemory:c.keyMemory||'',explanation:c.explanation||'',questionImage:c.questionImage||'',answerImage:c.answerImage||'',image:c.image||'',imageQuery:c.imageQuery||'',questionImageQuery:c.questionImageQuery||'',questionImageQueries:c.questionImageQueries||[],questionImageLayoutQueries:c.questionImageLayoutQueries||[],visual:c.visual||'',visualUrl:c.visualUrl||'',visualMode:c.visualMode||''}}).filter(c=>c.choices.length>=2&&c.correctText)}
 
-const SAVE_KEY = 'aleSubjectRangeExamV4';
-let allCards = [];
-let allCardsRaw = [];
-let loadedWarnings = [];
-let exam = [];
-let answers = [];
-let current = 0;
-let attemptMeta = null;
-let autosaveInt = null;
-let userEditedRangeEnd = false;
-
-const $ = (id) => document.getElementById(id);
-
-function esc(s){
-  return String(s ?? '').replace(/[&<>"']/g, (m) => ({
-    '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#039;'
-  }[m]));
+function isVisualIdentifyQuestion(card){
+  const qRaw = String(card.question || '').trim();
+  const q = qRaw.toLowerCase();
+  const hasVisualQuery = safeVisualQueries(card).length > 0;
+  const visualMode = String(card.visualMode || '').toLowerCase();
+  const veryShortIdentify = /^(identify|identify\.|identify:|identify the|what is shown|name this|which item is shown)/i.test(qRaw);
+  const genericQuestion = q.length <= 55 && /(identify|shown|name this|what is this)/i.test(q);
+  return hasVisualQuery && (visualMode === 'question' || veryShortIdentify || genericQuestion);
+}
+function hasDirectEmbeddedQuestionImage(card){
+  return !!directImageCandidate(card.questionImage) || !!directImageCandidate(card.image) || !!directImageCandidate(card.visualUrl) || !!directImageCandidate(card.visual);
+}
+function filterMissingVisualIdentifyCards(cards){
+  const kept = [];
+  let skipped = 0;
+  cards.forEach(card => {
+    if(isVisualIdentifyQuestion(card) && !hasDirectEmbeddedQuestionImage(card)){
+      skipped++;
+    } else {
+      kept.push(card);
+    }
+  });
+  if(skipped){
+    loadedWarnings.push(skipped + ' visual-identification card(s) skipped because no embedded/direct image is available. Add questionImage/image assets to include them.');
+  }
+  return kept;
 }
 
-function shuffle(arr){
-  const a = [...arr];
-  for(let i=a.length-1;i>0;i--){
-    const j = Math.floor(Math.random()*(i+1));
-    [a[i],a[j]] = [a[j],a[i]];
-  }
-  return a;
-}
-
-function populateSubjects(){
-  $('subjectSelect').innerHTML = CONFIG.sources
-    .map(s => `<option value="${esc(s.name)}">${esc(s.name)}</option>`)
-    .join('');
-}
-
-function normalizeCard(card, index, sourceName){
-  let choices = [];
-  if(Array.isArray(card.choices)){
-    choices = card.choices.map((x) => {
-      if(typeof x === 'string') return x;
-      return x.text || x.answer || x.label || '';
-    }).filter(Boolean);
-  }
-  if(!choices.length && Array.isArray(card.options)){
-    choices = card.options.filter(Boolean);
-  }
-
-  let correctText = '';
-  const letter = String(card.correctLetter || card.correct || '').trim().toLowerCase();
-  if(['a','b','c','d'].includes(letter)){
-    correctText = choices[letter.charCodeAt(0)-97] || '';
+async function loadCards(){loadedWarnings=[];const chunks=await Promise.all(CONFIG.sources.map(async src=>{try{const res=await fetch(src.path+'?v='+Date.now(),{cache:'no-store'});if(!res.ok)throw new Error(res.status);return normalize(await res.json(),src.name)}catch(e){loadedWarnings.push(src.name);return[]}}));allCards=filterMissingVisualIdentifyCards(chunks.flat());if(loadedWarnings.length){$('warning').style.display='block';$('warning').textContent='Some subject sources are not available yet: '+loadedWarnings.join(', ')}return allCards}
+function setupOptions(){const sel=$('countSelect');if(!sel)return;const pool=(typeof subjectRangePool==='function'&&allCards.length)?subjectRangePool():[];const max=pool.length||Math.max(...CONFIG.options.map(o=>o.items));let opts=CONFIG.options.filter(o=>o.items<=max);if(max&&!opts.some(o=>o.items===max))opts.push({items:max,label:'all available in range'});opts=opts.sort((a,b)=>a.items-b.items);sel.innerHTML=opts.map(o=>`<option value="${o.items}">${o.items} items — ${o.label}</option>`).join('')} function calcLimit(items,mode){if(mode==='none')return 0;let s=items*CONFIG.paceMinutes*60;if(mode==='pressure')s*=.8;if(mode==='sprint')s*=.5;return Math.round(s)}
+function prepQuestion(c){const choices=c.choices.map(ch=>({text:ch.text,correct:ch.text.trim()===c.correctText.trim()}));if(!choices.some(ch=>ch.correct))choices.push({text:c.correctText,correct:true});const randomized=(shouldUseSameExamCode()?seededShuffle(choices,fixedSeedText('choices-'+cardKey(c))):shuffle(choices));return{...c,randomizedChoices:randomized,correctIndex:randomized.findIndex(ch=>ch.correct)}}
+function directImageCandidate(value){if(!value)return'';const s=String(value).trim();if(/^(https?:\/\/|data:image\/|assets\/|\.\/assets\/|\.\.\/)/i.test(s)&&/\.(png|jpe?g|webp|gif|svg)(\?.*)?$/i.test(s))return s;return''} function getArrayField(card,name){const v=card[name];if(Array.isArray(v))return v.filter(Boolean).map(String);if(typeof v==='string'&&v.trim())return[v.trim()];return[]} function safeVisualQueries(card){const q=[];['questionImageQuery','imageQuery','questionImageQueries','questionImageLayoutQueries','visualQuery'].forEach(k=>q.push(...getArrayField(card,k)));if(card.visual&&typeof card.visual==='string')q.push(card.visual);return[...new Set(q.filter(x=>x&&!/answer|correct/i.test(x)))]} function getQuestionVisual(card){for(const v of [card.questionImage,card.image,card.visualUrl,card.visual]){const hit=directImageCandidate(v);if(hit)return{type:'image',url:hit,note:'Question visual shown for identification. Answer labels are hidden until submit.'}}const q=safeVisualQueries(card)[0];return q?{type:'query',query:q,note:'No safe embedded image is available before submit.'}:null} function imageSearchUrl(q){return'https://www.google.com/search?tbm=isch&q='+encodeURIComponent(q)} function wikiSearchUrl(q){return'https://commons.wikimedia.org/w/index.php?search='+encodeURIComponent(q)+'&title=Special:MediaSearch&type=image'} function renderSafeVisual(card){
+  const box=$('visualBox');
+  const v=getQuestionVisual(card);
+  if(!v){box.className='visualBox';box.innerHTML='';return}
+  box.className='visualBox show';
+  if(v.type==='image'){
+    box.innerHTML=`<img src="${escapeHtml(v.url)}" alt="Question visual"><p class="visualNote">Question visual shown for identification. No answer labels, clues, explanations, or key memory are shown before submit.</p>`;
   }else{
-    correctText = String(card.correctText || card.correctAnswer || card.answer || '').replace(/^[A-D]\.\s*/i,'').trim();
+    box.innerHTML=`<p class="visualNote"><strong>Visual item:</strong> This question needs an image, but no safe embedded image is available in this card yet. No search cue is shown because it may reveal the answer. Add a direct questionImage/image URL or local asset to this card for true PRC-style visual identification.</p>`;
   }
-
-  if(!correctText && card.answer){
-    correctText = String(card.answer).replace(/^[A-D]\.\s*/i,'').trim();
-  }
-
-  return {
-    ...card,
-    sourceName,
-    displayId: card.displayId || card.id || card.uid || ('Q'+(index+1)),
-    category: card.category || sourceName,
-    question: card.question || '',
-    choices: choices.slice(0,4),
-    correctText,
-    explanation: card.explanation || '',
-    keyMemory: card.keyMemory || '',
-    questionImage: card.questionImage || '',
-    image: card.image || '',
-    visualUrl: card.visualUrl || '',
-    _sourceIndex: index + 1
-  };
 }
+function answerVisualHtml(card){for(const v of [card.answerImage,card.questionImage,card.image,card.visualUrl,card.visual]){const hit=directImageCandidate(v);if(hit)return`<div class="visualBox show"><img src="${escapeHtml(hit)}" alt="Review visual"><p class="visualNote">Review visual shown after submit.</p></div>`}const q=safeVisualQueries(card)[0];return q?`<div class="visualBox show"><p class="visualNote"><strong>Review visual reference:</strong> ${escapeHtml(q)}</p><div class="visualBtns"><a class="visualLink" href="${imageSearchUrl(q)}" target="_blank" rel="noopener">Open image search</a><a class="visualLink" href="${wikiSearchUrl(q)}" target="_blank" rel="noopener">Open Wikimedia Commons</a></div></div>`:''}
 
+
+
+
+
+// ===== v2 Same Exam Code / Fixed Seed Mode =====
+function hashStringToSeed(str){let h=2166136261>>>0;for(let i=0;i<str.length;i++){h^=str.charCodeAt(i);h=Math.imul(h,16777619)}return h>>>0}
+function seededRandomFactory(seed){let t=seed>>>0;return function(){t+=0x6D2B79F5;let r=Math.imul(t^(t>>>15),1|t);r^=r+Math.imul(r^(r>>>7),61|r);return((r^(r>>>14))>>>0)/4294967296}}
+function seededShuffle(arr,seedText){const a=arr.slice();const rand=seededRandomFactory(hashStringToSeed(seedText));for(let i=a.length-1;i>0;i--){const j=Math.floor(rand()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function cleanExamCode(){const el=$('examCodeInput');return el?String(el.value||'').trim().toUpperCase():''}
+function shouldUseSameExamCode(){const m=$('groupMode')?$('groupMode').value:'same';return m==='same'}
+function fixedSeedText(extra=''){const subj=(typeof selectedSubjectName==='function'?selectedSubjectName():CONFIG.shortTitle);const r=(typeof getRangeSettings==='function'?getRangeSettings():{start:1,end:999,order:'random'});const count=$('countSelect')?$('countSelect').value:'';const code=cleanExamCode()||`${subj}-Q${r.start}-${r.end}-${count}`;return `${CONFIG.shortTitle}|${subj}|${r.start}|${r.end}|${count}|${r.order}|${code}|${extra}`}
+function updateExamCodePreview(){const info=$('examCodePreview');if(!info)return;const code=cleanExamCode();if(shouldUseSameExamCode()){info.innerHTML=`<div class="codeBox"><span class="codeStrong">Group same-exam mode ON.</span> Share this exact code: <span class="codeStrong">${escapeHtml(code||'(auto-code from subject/range/items)')}</span>. Same subject + range + item count + order + code = same A01 for everyone.</div>`}else{info.innerHTML=`<div class="codeBox"><span class="codeStrong">Personal random mode ON.</span> A01 can be different per device.</div>`}}
+
+// ===== Standalone Subject / Range Mock Exam =====
 function displayNumber(card, fallbackIndex){
   const raw = String(card.displayId || card.id || card.uid || '').trim();
-  const match = raw.match(/(\d+)/);
-  if(match) return Number(match[1]);
-  return card._sourceIndex || fallbackIndex + 1;
+  const m = raw.match(/(\d+)/);
+  return m ? Number(m[1]) : (fallbackIndex + 1);
 }
-
-function hasDirectImage(card){
-  return !!(card.questionImage || card.image || card.visualUrl);
+function selectedSubjectName(){
+  return $('subjectSelect') ? $('subjectSelect').value : '';
 }
-
-function isMissingVisualIdentify(card){
-  const q = String(card.question || '').trim().toLowerCase();
-  const hasQuery = !!(
-    card.questionImageQuery ||
-    card.imageQuery ||
-    (Array.isArray(card.questionImageQueries) && card.questionImageQueries.length)
-  );
-  return hasQuery && !hasDirectImage(card) && (q === 'identify' || q === 'identify.' || q.length <= 60);
+function populateSubjectSelect(){
+  const sel=$('subjectSelect'); if(!sel) return;
+  sel.innerHTML=CONFIG.sources.map(s=>`<option value="${escapeHtml(s.name)}">${escapeHtml(s.name)}</option>`).join('');
 }
-
-async function loadCards(){
-  loadedWarnings = [];
-  const chunks = [];
-
-  await Promise.all(CONFIG.sources.map(async (src) => {
-    try{
-      const response = await fetch(src.path, {cache:'no-store'});
-      if(!response.ok) throw new Error(String(response.status));
-      let data = await response.json();
-      if(!Array.isArray(data)) data = data.cards || [];
-      chunks.push(...data.map((card, index) => normalizeCard(card, index, src.name)));
-    }catch(error){
-      loadedWarnings.push('Could not load ' + src.name + ' cards.json');
-    }
-  }));
-
-  allCardsRaw = chunks;
-  allCards = chunks;
-
-  setFullSubjectRange(true);
-  updateRangeInfo();
-  renderResumeButtons();
+function getRangeSettings(){
+  const start=Math.max(1,Number($('rangeStart')?.value||1));
+  const end=Math.max(start,Number($('rangeEnd')?.value||start));
+  const order=$('orderMode')?$('orderMode').value:'random';
+  return {start,end,order};
 }
-
-function selectedSubject(){
-  return $('subjectSelect').value;
-}
-
-function subjectRawCards(){
-  const subject = selectedSubject();
-  return allCardsRaw.filter(card => card.sourceName === subject);
-}
-
-function subjectUsableCards(){
-  const subject = selectedSubject();
-  const includeAll = $('visualModeSelect') && $('visualModeSelect').value === 'complete';
-  return allCards.filter(card => card.sourceName === subject && (includeAll || !isMissingVisualIdentify(card)));
-}
-
-function subjectMinMax(){
-  const cards = subjectRawCards();
-  if(!cards.length) return {min:1, max:1, totalRaw:0, totalUsable:0, skipped:0};
-
-  const nums = cards.map((card, index) => displayNumber(card, index)).filter(Number.isFinite);
-  const min = Math.min(...nums);
-  const max = Math.max(...nums);
-  const boardUsable = cards.filter(card => !isMissingVisualIdentify(card));
-
-  return {
-    min,
-    max,
-    totalRaw: cards.length,
-    totalUsable: boardUsable.length,
-    skipped: cards.length - boardUsable.length
-  };
-}
-
-function setFullSubjectRange(force=false){
-  const stats = subjectMinMax();
-  $('rangeStart').value = stats.min || 1;
-  $('rangeEnd').value = stats.max || 1;
-  userEditedRangeEnd = false;
-  updateRangeInfo();
-}
-
-function rangeValues(){
-  const stats = subjectMinMax();
-  const start = Math.max(1, Number($('rangeStart').value || stats.min || 1));
-  const end = Math.max(start, Number($('rangeEnd').value || stats.max || start));
-  return {start, end};
-}
-
 function subjectRangePool(){
-  const subject = selectedSubject();
-  const {start, end} = rangeValues();
-  const includeAll = $('visualModeSelect') && $('visualModeSelect').value === 'complete';
-
-  return allCards
-    .filter((card, index) => {
-      const number = displayNumber(card, index);
-      const visualOK = includeAll || !isMissingVisualIdentify(card);
-      return card.sourceName === subject && visualOK && number >= start && number <= end;
-    })
-    .sort((a,b) => displayNumber(a,0) - displayNumber(b,0));
-}
-
-function updateRangeInfo(){
-  const stats = subjectMinMax();
-  const pool = subjectRangePool();
-  const {start, end} = rangeValues();
-  const order = $('orderMode').value === 'random' ? 'Question order: random' : 'Question order: sequential';
-  const completeMode = $('visualModeSelect') && $('visualModeSelect').value === 'complete';
-  const modeLabel = completeMode ? 'Complete review: includes missing-image identify cards' : 'Board-valid: skips missing-image identify cards';
-
-  $('rangeInfo').innerHTML =
-    `<span class="subjectBadge good">${esc(selectedSubject())}</span>` +
-    `<span class="subjectBadge">Subject total: ${stats.totalRaw}</span>` +
-    `<span class="subjectBadge">Subject max Q: ${stats.max}</span>` +
-    `<span class="subjectBadge">Selected range: Q${start}–Q${end}</span>` +
-    `<span class="subjectBadge good">${pool.length} questions in selected range</span>` +
-    `<span class="subjectBadge">${order}</span>` +
-    `<span class="subjectBadge">No timer</span>` +
-    `<span class="subjectBadge">Choices shuffled</span>` +
-    `<span class="subjectBadge ${completeMode?'warn':'good'}">${modeLabel}</span>` +
-    (stats.skipped ? `<span class="subjectBadge warn">${stats.skipped} missing-image identify in subject</span>` : '') +
-    `<br>` +
-    (pool.length ? `Exam will use all ${pool.length} questions allowed by this mode and range.` : 'No cards in this selected subject/range.') +
-    (completeMode ? '<br><strong>Note:</strong> Some identify questions may show without image. Use this only for complete counter-check/review, not board-valid simulation.' : '') +
-    (loadedWarnings.length ? '<br>' + loadedWarnings.map(esc).join('<br>') : '');
-}
-
-function prepareQuestion(card){
-  let rawChoices = card.choices.map(text => ({
-    text,
-    correct: String(text).trim() === String(card.correctText).trim()
-  }));
-
-  if(!rawChoices.some(choice => choice.correct) && card.correctText){
-    rawChoices.push({text: card.correctText, correct: true});
-  }
-
-  rawChoices = rawChoices.filter(choice => choice.text).slice(0,4);
-
-  if(!rawChoices.some(choice => choice.correct) && rawChoices.length){
-    rawChoices[0].correct = true;
-  }
-
-  const randomizedChoices = shuffle(rawChoices);
-  return {
-    ...card,
-    randomizedChoices,
-    correctIndex: randomizedChoices.findIndex(choice => choice.correct)
-  };
-}
-
-function startExam(){
-  let pool = subjectRangePool();
-
-  if(!pool.length){
-    alert('No usable questions in this subject/range.');
-    return;
-  }
-
-  pool = $('orderMode').value === 'random' ? shuffle(pool) : pool;
-  exam = pool.map(prepareQuestion);
-  answers = Array(exam.length).fill(null);
-  current = 0;
-
-  const {start, end} = rangeValues();
-  attemptMeta = {
-    subject: selectedSubject(),
-    start,
-    end,
-    order: $('orderMode').value,
-    visualMode: $('visualModeSelect').value,
-    startedAt: Date.now(),
-    preparedExam: exam
-  };
-
-  $('setup').style.display = 'none';
-  $('results').style.display = 'none';
-  $('examShell').style.display = 'block';
-
-  renderQuestion();
-  beginAutosave();
-}
-
-function saveProgress(){
-  if(!exam.length || !attemptMeta) return;
-  localStorage.setItem(SAVE_KEY, JSON.stringify({
-    attemptMeta,
-    answers,
-    current,
-    savedAt: Date.now()
-  }));
-}
-
-function beginAutosave(){
-  clearInterval(autosaveInt);
-  autosaveInt = setInterval(saveProgress, 3000);
-  saveProgress();
-}
-
-function renderResumeButtons(){
-  try{
-    const saved = JSON.parse(localStorage.getItem(SAVE_KEY) || 'null');
-    const show = !!(saved && saved.attemptMeta && Array.isArray(saved.attemptMeta.preparedExam) && saved.attemptMeta.preparedExam.length);
-    $('resumeBtn').style.display = show ? 'inline-flex' : 'none';
-    $('discardBtn').style.display = show ? 'inline-flex' : 'none';
-  }catch(e){}
-}
-
-function resumeExam(){
-  const saved = JSON.parse(localStorage.getItem(SAVE_KEY) || 'null');
-  if(!saved || !saved.attemptMeta || !Array.isArray(saved.attemptMeta.preparedExam)){
-    alert('No saved range exam.');
-    return;
-  }
-
-  attemptMeta = saved.attemptMeta;
-  exam = saved.attemptMeta.preparedExam;
-  answers = Array(exam.length).fill(null);
-  (saved.answers || []).forEach((value, index) => {
-    if(index < answers.length) answers[index] = value;
+  const subj=selectedSubjectName();
+  const {start,end}=getRangeSettings();
+  let pool=allCards.filter((c,idx)=>{
+    const source=String(c.sourceName||'');
+    const cat=String(c.category||'');
+    const sourceOK=!subj || source===subj || cat===subj || cat.toLowerCase().includes(subj.toLowerCase());
+    const n=displayNumber(c,idx);
+    return sourceOK && n>=start && n<=end;
   });
-  current = Math.min(saved.current || 0, exam.length - 1);
-
-  $('setup').style.display = 'none';
-  $('results').style.display = 'none';
-  $('examShell').style.display = 'block';
-
-  renderQuestion();
-  beginAutosave();
+  pool.sort((a,b)=>displayNumber(a,0)-displayNumber(b,0));
+  return pool;
+}
+function updateRangeInfo(){
+  const info=$('rangeInfo'); if(!info || !allCards.length){updateExamCodePreview(); return;}
+  const pool=subjectRangePool();
+  const {start,end,order}=getRangeSettings();
+  const skipped=loadedWarnings.filter(w=>String(w).includes('visual-identification')).join(' ');
+  info.innerHTML=`<span class="subjectBadge">${escapeHtml(selectedSubjectName())}</span><span class="subjectBadge">Q${start}–Q${end}</span><span class="subjectBadge">${pool.length} available</span><span class="subjectBadge">${order==='random'?'Random':'Sequential'}</span><br>${pool.length?'Ready. Choose item count and start exam.':'No questions in this selected range yet.'} ${skipped?escapeHtml(skipped):''}`;
+  setupOptions();updateExamCodePreview();
+}
+function setupSubjectRangeEvents(){
+  ['subjectSelect','rangeStart','rangeEnd','orderMode','examCodeInput','groupMode'].forEach(id=>{
+    const el=$(id); if(el){el.onchange=updateRangeInfo; el.oninput=updateRangeInfo;}
+  });
+}
+function masteryMessage(pct){
+  if(pct>=85)return `<div class="masteryBox masteryGood"><strong>Subject readiness:</strong> Strong. Kaya mo na itong range, pero review pa rin ng wrong, marked, at not sure.</div>`;
+  if(pct>=75)return `<div class="masteryBox masteryMid"><strong>Subject readiness:</strong> Passing range. Kaya na, pero kailangan i-secure ang weak topics.</div>`;
+  if(pct>=60)return `<div class="masteryBox masteryMid"><strong>Subject readiness:</strong> Almost there. Balikan ang concepts na mali, Guess, No Idea, at Not Sure.</div>`;
+  return `<div class="masteryBox masteryLow"><strong>Subject readiness:</strong> Hindi pa safe. Ulitin muna ang range bago mag full mock exam.</div>`;
 }
 
-function discardSaved(){
-  if(confirm('Discard saved Subject Range Exam?')){
-    localStorage.removeItem(SAVE_KEY);
-    renderResumeButtons();
-  }
+// ===== v9 full exam review =====
+let fullReviewFilter='all';
+function qReviewStatus(i){const q=exam[i]; if(answers[i]==null)return 'blank'; return q.randomizedChoices[answers[i]]?.correct?'correct':'wrong'}
+function qReviewLabel(s){return s==='correct'?'Correct':(s==='wrong'?'Wrong':'Unanswered')}
+function qReviewClass(s){return s==='correct'?'correctReview':(s==='wrong'?'wrongReview':'blankReview')}
+function renderChoiceAudit(q,i){
+  return `<div class="choiceAudit">`+q.randomizedChoices.map((ch,idx)=>{
+    const letter=String.fromCharCode(65+idx), chosen=answers[i]===idx, corr=!!ch.correct;
+    return `<div class="${chosen?'chosen ':''}${corr?'correctChoice':''}"><strong>${letter}. ${escapeHtml(ch.text)}</strong> ${chosen?'<span class="reviewTag">Your final answer</span>':''} ${corr?'<span class="reviewTag correct">Correct answer</span>':''}</div>`;
+  }).join('')+`</div>`;
 }
-
-function clearAllData(){
-  if(confirm('Clear all Subject Range Exam saved data?')){
-    localStorage.removeItem(SAVE_KEY);
-    renderResumeButtons();
-  }
-}
-
-function renderQuestion(){
-  const question = exam[current];
-
-  $('progressText').textContent = `Question ${current+1} of ${exam.length}`;
-  $('sourceText').textContent = `${attemptMeta.subject} · Q${attemptMeta.start}–Q${attemptMeta.end} · ${attemptMeta.visualMode==='complete'?'Complete review':'Board-valid'} · No timer`;
-  $('qid').textContent = question.displayId;
-  $('qcat').textContent = question.category;
-  $('questionText').textContent = question.question;
-
-  renderVisual(question);
-
-  $('choicesBox').innerHTML = question.randomizedChoices.map((choice, index) => {
-    const checked = answers[current] === index ? 'checked' : '';
-    const selected = answers[current] === index ? 'selected' : '';
-    const letter = String.fromCharCode(65 + index);
-    return `<label class="choice ${selected}">
-      <input type="radio" name="answer" ${checked} onchange="chooseAnswer(${index})">
-      <span>${letter}. ${esc(choice.text)}</span>
-    </label>`;
-  }).join('');
-
-  renderSheet();
-  saveProgress();
-}
-
-function renderVisual(question){
-  const box = $('visualBox');
-  const url = question.questionImage || question.image || question.visualUrl || '';
-  if(url){
-    box.className = 'visualBox show';
-    box.innerHTML = `<img src="${esc(url)}" alt="Question visual">`;
-    return;
-  }
-
-  if(isMissingVisualIdentify(question)){
-    box.className = 'visualBox show';
-    box.innerHTML = `<strong>Image missing for this identify card.</strong><br><span class="mini">Included because Complete Range Review Mode is on. This item is not board-valid until an actual image is added.</span>`;
-    return;
-  }
-
-  box.className = 'visualBox';
-  box.innerHTML = '';
-}
-
-function chooseAnswer(index){
-  answers[current] = index;
-  renderQuestion();
-}
-
-function renderSheet(){
-  const answered = answers.filter(value => value !== null).length;
-  const percent = exam.length ? (answered / exam.length) * 100 : 0;
-  $('progressFill').style.width = percent + '%';
-  $('statusText').textContent = `Answered ${answered}/${exam.length}. Blank ${exam.length - answered}.`;
-  $('sheetStats').textContent = `Answered ${answered}/${exam.length}`;
-
-  $('answerSheet').innerHTML = exam.map((question, index) => {
-    const rowClass = index === current ? 'sheetRow current' : 'sheetRow';
-    const bubbles = [0,1,2,3].map(choiceIndex => {
-      const on = answers[index] === choiceIndex ? 'on' : '';
-      const letter = String.fromCharCode(65 + choiceIndex);
-      return `<button class="bubble ${on}" type="button" onclick="answers[${index}]=${choiceIndex};current=${index};renderQuestion()">${letter}</button>`;
-    }).join('');
-
-    return `<div class="${rowClass}"><strong>${index+1}</strong>${bubbles}</div>`;
-  }).join('');
-}
-
-function goNextUnanswered(){
-  const after = answers.findIndex((answer, index) => answer === null && index > current);
-  const first = answers.findIndex(answer => answer === null);
-
-  if(after >= 0) current = after;
-  else if(first >= 0) current = first;
-  else{
-    alert('No unanswered questions.');
-    return;
-  }
-
-  renderQuestion();
-}
-
-function submitExam(){
-  const blank = answers.filter(answer => answer === null).length;
-  if(blank && !confirm(`You still have ${blank} unanswered questions. Submit anyway?`)){
-    return;
-  }
-
-  clearInterval(autosaveInt);
-  saveProgress();
-
-  const correct = exam.reduce((sum, question, index) => {
-    return sum + (answers[index] !== null && question.randomizedChoices[answers[index]]?.correct ? 1 : 0);
-  }, 0);
-
-  const percent = exam.length ? (correct / exam.length) * 100 : 0;
-
-  $('examShell').style.display = 'none';
-  $('results').style.display = 'block';
-
-  $('results').innerHTML = `
-    <h2>Results</h2>
-    <div class="scoreBox">
-      <div class="stat">Raw score<b>${correct}/${exam.length}</b></div>
-      <div class="stat">Percentage<b>${percent.toFixed(1)}%</b></div>
-      <div class="stat">Subject<b>${esc(attemptMeta.subject)}</b></div>
-      <div class="stat">Range<b>Q${attemptMeta.start}–Q${attemptMeta.end}</b></div>
-    </div>
-    ${masteryMessage(percent)}
-    <div class="topActions">
-      <button class="btn primary" type="button" onclick="newExam()">New Range Exam</button>
-      <button class="btn" type="button" onclick="document.getElementById('fullReview').scrollIntoView({behavior:'smooth'})">Review Full Exam</button>
-    </div>
-    <div id="fullReview">
-      <h2>Full Exam Review</h2>
-      <div class="reviewControls">
-        <button class="btn primary" type="button" onclick="filterReview('all')">All</button>
-        <button class="btn" type="button" onclick="filterReview('correct')">Correct</button>
-        <button class="btn" type="button" onclick="filterReview('wrong')">Wrong</button>
-        <button class="btn" type="button" onclick="filterReview('blank')">Unanswered</button>
-        <input class="search" id="reviewSearch" placeholder="Search question/category..." oninput="applyReviewFilter()">
-      </div>
-      <div id="reviewList">${exam.map((question,index) => reviewItem(question,index)).join('')}</div>
-    </div>
-  `;
-
-  window.scrollTo(0,0);
-}
-
-let reviewFilter = 'all';
-
-function masteryMessage(percent){
-  if(percent >= 85) return `<div class="masteryBox masteryGood"><strong>Readiness:</strong> Strong. Kaya mo na itong range, pero i-review pa rin ang mali at hula.</div>`;
-  if(percent >= 75) return `<div class="masteryBox masteryMid"><strong>Readiness:</strong> Passing. Kaya na, pero kailangan pa i-secure weak items.</div>`;
-  if(percent >= 60) return `<div class="masteryBox masteryMid"><strong>Readiness:</strong> Almost there. Ulitin pa ang range after review.</div>`;
-  return `<div class="masteryBox masteryLow"><strong>Readiness:</strong> Hindi pa safe. Balikan muna ang notes/cards bago ulitin.</div>`;
-}
-
-function reviewStatus(index){
-  if(answers[index] === null) return 'blank';
-  return exam[index].randomizedChoices[answers[index]]?.correct ? 'correct' : 'wrong';
-}
-
-function reviewItem(question, index){
-  const status = reviewStatus(index);
-  const userAnswer = answers[index] === null
-    ? 'Unanswered'
-    : `${String.fromCharCode(65+answers[index])}. ${question.randomizedChoices[answers[index]].text}`;
-
-  const correctIndex = question.correctIndex;
-  const correctAnswer = correctIndex >= 0
-    ? `${String.fromCharCode(65+correctIndex)}. ${question.randomizedChoices[correctIndex].text}`
-    : question.correctText;
-
-  const choicesHtml = question.randomizedChoices.map((choice, choiceIndex) => {
-    const classes = [
-      choiceIndex === correctIndex ? 'correctChoice' : '',
-      choiceIndex === answers[index] ? 'chosen' : ''
-    ].join(' ');
-    const markers = [
-      choiceIndex === correctIndex ? '✓ Correct' : '',
-      choiceIndex === answers[index] ? 'Your answer' : ''
-    ].filter(Boolean).join(' · ');
-
-    return `<p class="${classes}">
-      <strong>${String.fromCharCode(65+choiceIndex)}. ${esc(choice.text)}</strong>
-      ${markers ? `<span class="mini"> — ${esc(markers)}</span>` : ''}
-    </p>`;
-  }).join('');
-
-  return `<div class="reviewItem" data-status="${status}" data-text="${esc((question.question || '') + ' ' + (question.category || ''))}">
-    <h3>Q${index+1} · ${esc(question.displayId)} · ${esc(question.category)}</h3>
-    <p><strong>${esc(question.question)}</strong></p>
-    ${choicesHtml}
-    <p><strong>Your answer:</strong> ${esc(userAnswer)}</p>
-    <p><strong>Correct answer:</strong> ${esc(correctAnswer)}</p>
-    ${question.explanation ? `<p><strong>Explanation:</strong> ${esc(question.explanation)}</p>` : ''}
-    ${question.keyMemory ? `<p><strong>Key memory:</strong> ${esc(question.keyMemory)}</p>` : ''}
+function fullReviewItem(q,i){
+  const st=qReviewStatus(i);
+  const user=answers[i]==null?'Unanswered':String.fromCharCode(65+answers[i])+'. '+(q.randomizedChoices[answers[i]]?.text||'');
+  const ci=(q.correctIndex!=null?q.correctIndex:q.randomizedChoices.findIndex(ch=>ch.correct));
+  const corr=ci>=0?String.fromCharCode(65+ci)+'. '+(q.randomizedChoices[ci]?.text||q.correctText||q.answer||''):(q.correctText||q.answer||'');
+  const orig=(typeof originalAnswers!=='undefined'&&originalAnswers&&originalAnswers[i]!=null)?String.fromCharCode(65+originalAnswers[i])+'. '+(q.randomizedChoices[originalAnswers[i]]?.text||''):'No change / first answer not tracked';
+  const changed=(typeof originalAnswers!=='undefined'&&originalAnswers&&originalAnswers[i]!=null&&answers[i]!=null&&originalAnswers[i]!==answers[i]);
+  const mark=marks[i]?markLabels[marks[i]]:'No mark';
+  return `<div class="reviewItem ${qReviewClass(st)}" data-status="${st}" data-mark="${escapeHtml(marks[i]||'')}" data-qtext="${escapeHtml((q.question||'')+' '+(q.category||''))}">
+    <span class="reviewTag ${st}">${qReviewLabel(st)}</span><span class="reviewTag">Q${i+1}</span><span class="reviewTag">${escapeHtml(q.category||'Uncategorized')}</span><span class="reviewTag">${escapeHtml(mark)}</span>${changed?'<span class="reviewTag">Answer changed</span>':''}
+    <h3>${escapeHtml(q.question||'')}</h3>${answerVisualHtml(q)}${annotationReviewHtml(q)}${renderChoiceAudit(q,i)}
+    <p><strong>Your final answer:</strong> ${escapeHtml(user)}</p><p><strong>Correct answer:</strong> ${escapeHtml(corr)}</p><p><strong>Original answer:</strong> ${escapeHtml(orig)}</p>
+    ${q.explanation?`<p><strong>Explanation:</strong> ${escapeHtml(q.explanation)}</p>`:''}${q.keyMemory?`<p><strong>Key memory:</strong> ${escapeHtml(q.keyMemory)}</p>`:''}
   </div>`;
 }
-
-function filterReview(filter){
-  reviewFilter = filter;
-  applyReviewFilter();
+function renderFullExamReview(){
+  const box=document.getElementById('fullReview'); if(!box)return;
+  const counts=exam.reduce((a,q,i)=>{a[qReviewStatus(i)]++; if(marks[i])a.marked++; return a},{correct:0,wrong:0,blank:0,marked:0});
+  box.innerHTML=`<h2>Full Exam Review / Counter-check</h2><p class="mini">Lahat ng questions nandito: tama, mali, unanswered, at marked.</p>
+  <div class="fullReviewControls"><button class="btn primary" onclick="setFullReviewFilter('all')">All ${exam.length}</button><button class="btn" onclick="setFullReviewFilter('correct')">Correct ${counts.correct}</button><button class="btn" onclick="setFullReviewFilter('wrong')">Wrong ${counts.wrong}</button><button class="btn" onclick="setFullReviewFilter('blank')">Unanswered ${counts.blank}</button><button class="btn" onclick="setFullReviewFilter('marked')">Marked ${counts.marked}</button><input class="reviewSearch" id="reviewSearch" placeholder="Search question/category..." oninput="applyFullReviewFilter()"></div>
+  <div id="fullReviewList">${exam.map((q,i)=>fullReviewItem(q,i)).join('')}</div>`;
+  applyFullReviewFilter(); setTimeout(drawReviewCanvases,120);
+}
+function setFullReviewFilter(f){fullReviewFilter=f;applyFullReviewFilter();document.getElementById('fullReview')?.scrollIntoView({behavior:'smooth'})}
+function applyFullReviewFilter(){
+  const query=(document.getElementById('reviewSearch')?.value||'').toLowerCase().trim();
+  document.querySelectorAll('#fullReviewList .reviewItem').forEach(el=>{
+    const st=el.dataset.status, marked=!!el.dataset.mark, text=(el.dataset.qtext||'').toLowerCase();
+    let show=fullReviewFilter==='all'||st===fullReviewFilter||(fullReviewFilter==='marked'&&marked);
+    if(query&&!text.includes(query))show=false; el.style.display=show?'':'none';
+  });
 }
 
-function applyReviewFilter(){
-  const query = ($('reviewSearch')?.value || '').toLowerCase().trim();
-  document.querySelectorAll('#reviewList .reviewItem').forEach(item => {
-    const status = item.dataset.status;
-    const text = (item.dataset.text || '').toLowerCase();
-    let show = reviewFilter === 'all' || reviewFilter === status;
-    if(query && !text.includes(query)) show = false;
-    item.style.display = show ? '' : 'none';
+// ===== v6 autosave / resume / mistake bank / backup =====
+const PROGRESS_KEY = 'aleSubjectMockActiveProgress_' + String(CONFIG.shortTitle||'exam').replace(/\W+/g,'_');
+const MISTAKE_BANK_KEY = 'aleMockMistakeBankV1';
+let autosaveInt = null;
+let originalAnswers = [];
+
+function answerKeyAt(index){
+  return answers[index] == null ? null : String(exam[index].randomizedChoices[answers[index]]?.text || '');
+}
+function saveActiveProgress(){
+  if(!exam.length || submitted) return;
+  const elapsed = Math.floor((Date.now()-startedAt)/1000);
+  const data = {
+    attemptId: currentAttemptId,
+    examType: CONFIG.shortTitle,
+    savedAt: Date.now(),
+    date: new Date().toLocaleString(),
+    questionIds: exam.map(cardKey),
+    answers,
+    originalAnswers,
+    marks,
+    current,
+    elapsedSeconds: elapsed,
+    timeLimit,
+    timerMode: $('modeSelect') ? $('modeSelect').value : '',
+    itemCount: exam.length,
+    layout: $('layoutSelect') ? $('layoutSelect').value : 'auto'
+  };
+  try{ localStorage.setItem(PROGRESS_KEY, JSON.stringify(data)); }catch(e){}
+}
+function readActiveProgress(){
+  try{ return JSON.parse(localStorage.getItem(PROGRESS_KEY)||'null'); }catch(e){ return null; }
+}
+function clearActiveProgress(){
+  localStorage.removeItem(PROGRESS_KEY);
+  renderResumeBox();
+}
+function renderResumeBox(){
+  const box = document.getElementById('resumeBox');
+  if(!box) return;
+  const p = readActiveProgress();
+  if(!p || !p.questionIds || !p.questionIds.length){
+    box.style.display = 'none';
+    box.innerHTML = '';
+    return;
+  }
+  box.style.display = 'block';
+  box.innerHTML = `<strong>Saved exam found:</strong> ${escapeHtml(p.examType||CONFIG.shortTitle)} · ${p.itemCount||p.questionIds.length} items · saved ${escapeHtml(p.date||'')}<div class="topActions"><button class="btn primary" onclick="resumeLastExam()">Resume Last Exam</button><button class="btn danger" onclick="discardLastExam()">Discard Last Exam</button></div>`;
+}
+async function resumeLastExam(){
+  const saved = readActiveProgress();
+  if(!saved){ alert('No saved exam to resume.'); return; }
+  await loadCards();
+  const rebuilt = buildExamFromIds(saved.questionIds, saved.itemCount || saved.questionIds.length);
+  if(!rebuilt || !rebuilt.length){ alert('Saved questions are no longer available.'); return; }
+  currentAttemptId = saved.attemptId || newAttemptId();
+  exam = rebuilt;
+  answers = Array(exam.length).fill(null);
+  (saved.answers||[]).forEach((v,i)=>{ if(i<answers.length) answers[i]=v; });
+  originalAnswers = Array(exam.length).fill(null);
+  (saved.originalAnswers||[]).forEach((v,i)=>{ if(i<originalAnswers.length) originalAnswers[i]=v; });
+  marks = Array(exam.length).fill('');
+  (saved.marks||[]).forEach((v,i)=>{ if(i<marks.length) marks[i]=v||''; });
+  current = Math.min(saved.current||0, exam.length-1);
+  submitted = false;
+  activeFilter = 'all';
+  timeLimit = saved.timeLimit || calcLimit(exam.length, saved.timerMode || 'board');
+  const elapsedThen = saved.elapsedSeconds || 0;
+  const extraElapsed = Math.floor((Date.now()-(saved.savedAt||Date.now()))/1000);
+  const totalElapsed = timeLimit ? elapsedThen + extraElapsed : elapsedThen;
+  startedAt = Date.now() - totalElapsed*1000;
+  if($('layoutSelect') && saved.layout) $('layoutSelect').value = saved.layout;
+  applyLayout();
+  $('setup').style.display='none'; $('results').style.display='none'; $('examShell').style.display='block';
+  renderQuestion(); tick(); clearInterval(timerInt); if(timeLimit) timerInt=setInterval(tick,1000); else $('timer').textContent='No timer';
+  clearInterval(autosaveInt); autosaveInt=setInterval(saveActiveProgress,5000);
+}
+function discardLastExam(){
+  if(!confirm('Discard the saved active exam? This will not delete submitted history.')) return;
+  clearActiveProgress();
+}
+function beginAutosave(){
+  clearInterval(autosaveInt);
+  autosaveInt = setInterval(saveActiveProgress, 5000);
+}
+function stopAutosave(){
+  clearInterval(autosaveInt);
+  autosaveInt = null;
+}
+function updatePacing(){
+  const box = document.getElementById('paceBox');
+  if(!box || !exam.length) return;
+  if(!timeLimit){
+    box.className = 'paceBox';
+    box.textContent = 'Pacing: No timer mode.';
+    return;
+  }
+  const elapsed = Math.max(0, Math.floor((Date.now()-startedAt)/1000));
+  const expected = Math.min(exam.length, Math.floor(elapsed / (CONFIG.paceMinutes*60)) + 1);
+  const answered = answers.filter(a=>a!=null).length;
+  const diff = answered - expected;
+  box.className = 'paceBox ' + (diff < -2 ? 'behind' : diff > 2 ? 'ahead' : '');
+  const label = diff < -2 ? 'Behind pace' : diff > 2 ? 'Ahead of pace' : 'On pace';
+  box.textContent = `Pacing: ${label}. Answered ${answered}/${exam.length}. Expected around item ${expected}.`;
+}
+function goNextStatus(filter){
+  activeFilter = filter;
+  const v = visibleIndexes();
+  if(!v.length){ alert('No matching questions.'); return; }
+  const after = v.find(i => i > current);
+  current = after !== undefined ? after : v[0];
+  renderQuestion();
+}
+function addSecondPassButtons(){
+  const host = document.getElementById('secondPassBtns');
+  if(!host) return;
+  host.innerHTML = `<button class="btn" onclick="goNextStatus('unanswered')">Go to Next Unanswered</button><button class="btn" onclick="goNextStatus('notSure')">Go to Next Not Sure</button><button class="btn" onclick="goNextStatus('guess')">Go to Next Guess</button><button class="btn" onclick="goNextStatus('noIdea')">Go to Next No Idea</button><button class="btn" onclick="goNextStatus('marked')">Review All Marked</button>`;
+}
+function readMistakeBank(){
+  try{ return JSON.parse(localStorage.getItem(MISTAKE_BANK_KEY)||'[]'); }catch(e){ return []; }
+}
+function writeMistakeBank(items){
+  try{ localStorage.setItem(MISTAKE_BANK_KEY, JSON.stringify(items.slice(-600))); }catch(e){}
+}
+function saveMistakesToBank(){
+  const bank = readMistakeBank();
+  exam.forEach((q,i)=>{
+    const ok = answers[i]!=null && q.randomizedChoices[answers[i]]?.correct;
+    if(!ok){
+      bank.push({
+        date:new Date().toLocaleString(),
+        examType:CONFIG.shortTitle,
+        questionId:cardKey(q),
+        uid:q.uid, displayId:q.displayId, category:q.category, sourceName:q.sourceName,
+        question:q.question,
+        choices:q.randomizedChoices.map(ch=>ch.text),
+        correctText:q.randomizedChoices[q.correctIndex]?.text || q.correctText,
+        userAnswer: answers[i]==null ? 'Unanswered' : q.randomizedChoices[answers[i]]?.text,
+        mark: marks[i] || '',
+        keyMemory:q.keyMemory || '',
+        explanation:q.explanation || ''
+      });
+    }
   });
+  writeMistakeBank(bank);
+}
+function showMistakeBank(){
+  const bank = readMistakeBank().reverse();
+  const box = document.getElementById('historyBox');
+  if(!box) return;
+  if(!bank.length){ box.innerHTML='<p class="mini">Mistake Bank is empty.</p>'; return; }
+  box.innerHTML = `<h3>Mistake Bank</h3><div class="topActions"><button class="btn primary" onclick="startMistakeBankExam()">Retake Wrong Answers</button><button class="btn" onclick="startWeakTopicExam()">Weak Topic Exam</button></div><div class="bankList">${bank.slice(0,80).map(item=>`<div class="bankCard"><strong>${escapeHtml(item.category||'Unknown')}</strong><p>${escapeHtml(item.question)}</p><p class="mini">Your answer: ${escapeHtml(item.userAnswer)} · Correct: ${escapeHtml(item.correctText)}</p></div>`).join('')}</div>`;
+}
+function startMistakeBankExam(){
+  const bank = readMistakeBank();
+  if(!bank.length){ alert('Mistake Bank is empty.'); return; }
+  const sample = bank.slice(-Math.min(50, bank.length));
+  startFromBank(sample, 'Mistake Bank Retake');
+}
+function startWeakTopicExam(){
+  const bank = readMistakeBank();
+  if(!bank.length){ alert('Mistake Bank is empty.'); return; }
+  const counts = {};
+  bank.forEach(x=>counts[x.category||'Unknown']=(counts[x.category||'Unknown']||0)+1);
+  const weakest = Object.entries(counts).sort((a,b)=>b[1]-a[1])[0][0];
+  const sample = bank.filter(x=>(x.category||'Unknown')===weakest).slice(-50);
+  startFromBank(sample, 'Weak Topic Exam: '+weakest);
+}
+function startFromBank(items, label){
+  exam = items.map((x,idx)=>{
+    const choices = shuffle((x.choices&&x.choices.length?x.choices:[x.correctText]).map(t=>({text:t, correct:String(t).trim()===String(x.correctText).trim()})));
+    if(!choices.some(c=>c.correct)) choices.push({text:x.correctText, correct:true});
+    return {uid:x.uid||('bank-'+idx),displayId:x.displayId||('B'+(idx+1)),category:x.category||'Mistake Bank',sourceName:x.sourceName||label,question:x.question,choices:choices.map((c,i)=>({letter:String.fromCharCode(97+i),text:c.text})),randomizedChoices:choices,correctIndex:choices.findIndex(c=>c.correct),correctText:x.correctText,answer:x.correctText,keyMemory:x.keyMemory||'',explanation:x.explanation||''};
+  });
+  currentAttemptId = newAttemptId();
+  answers=Array(exam.length).fill(null); originalAnswers=Array(exam.length).fill(null); marks=Array(exam.length).fill(''); current=0; submitted=false; activeFilter='all';
+  timeLimit=0; startedAt=Date.now();
+  $('setup').style.display='none'; $('results').style.display='none'; $('examShell').style.display='block';
+  renderQuestion(); tick(); beginAutosave();
+}
+function answerChangeStats(){
+  let improved=0,hurt=0,neutral=0,total=0;
+  exam.forEach((q,i)=>{
+    if(originalAnswers[i] == null || answers[i] == null || originalAnswers[i] === answers[i]) return;
+    total++;
+    const oldOk = q.randomizedChoices[originalAnswers[i]]?.correct;
+    const newOk = q.randomizedChoices[answers[i]]?.correct;
+    if(!oldOk && newOk) improved++;
+    else if(oldOk && !newOk) hurt++;
+    else neutral++;
+  });
+  return {total, improved, hurt, neutral};
+}
+function exportAllExamData(){
+  const keys = Object.keys(localStorage).filter(k => k.startsWith('aleMock') || k.startsWith('aleFullAle'));
+  const data = {};
+  keys.forEach(k=>data[k]=localStorage.getItem(k));
+  const blob = new Blob([JSON.stringify({exportedAt:new Date().toISOString(),data}, null, 2)], {type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'ale-mock-exam-backup.json'; a.click();
+  setTimeout(()=>URL.revokeObjectURL(url), 1000);
+}
+function importExamBackup(input){
+  const file = input.files && input.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    try{
+      const parsed = JSON.parse(reader.result);
+      const data = parsed.data || parsed;
+      Object.entries(data).forEach(([k,v])=>{
+        if(k.startsWith('aleMock') || k.startsWith('aleFullAle')) localStorage.setItem(k, String(v));
+      });
+      alert('Backup imported. Refresh or open history/mistake bank to view.');
+      renderResumeBox();
+    }catch(e){ alert('Invalid backup JSON.'); }
+  };
+  reader.readAsText(file);
+}
+function clearAllExamData(){
+  if(!confirm('Clear ALL mock exam data: history, active exams, annotations, and mistake bank?')) return;
+  if(!confirm('This cannot be undone. Clear all exam data now?')) return;
+  Object.keys(localStorage).filter(k=>k.startsWith('aleMock') || k.startsWith('aleFullAle')).forEach(k=>localStorage.removeItem(k));
+  alert('All mock exam data cleared.');
+  renderResumeBox();
 }
 
-function newExam(){
-  localStorage.removeItem(SAVE_KEY);
-  location.reload();
+// ===== Test Booklet Markup Mode =====
+const ANNOTATION_KEY = 'aleMockExamAnnotationsV1';
+let currentAttemptId = '';
+let markupTool = 'navigate';
+let notesVisible = true;
+let currentStroke = null;
+let isPointerDown = false;
+let scratchOpen = false;
+
+function newAttemptId(){
+  return String(CONFIG.shortTitle||'exam').replace(/\W+/g,'_') + '-' + Date.now() + '-' + Math.random().toString(36).slice(2);
 }
-
-function init(){
-  populateSubjects();
-
-  $('subjectSelect').addEventListener('change', () => {
-    setFullSubjectRange(true);
-  });
-
-  $('rangeStart').addEventListener('input', updateRangeInfo);
-  $('rangeStart').addEventListener('change', updateRangeInfo);
-  $('rangeEnd').addEventListener('input', () => {
-    userEditedRangeEnd = true;
-    updateRangeInfo();
-  });
-  $('rangeEnd').addEventListener('change', updateRangeInfo);
-  $('orderMode').addEventListener('change', updateRangeInfo);
-  $('visualModeSelect').addEventListener('change', updateRangeInfo);
-
-  $('startBtn').addEventListener('click', startExam);
-  $('setFullBtn').addEventListener('click', () => setFullSubjectRange(true));
-  $('resumeBtn').addEventListener('click', resumeExam);
-  $('discardBtn').addEventListener('click', discardSaved);
-  $('clearBtn').addEventListener('click', clearAllData);
-  $('prevBtn').addEventListener('click', () => {
-    current = Math.max(0, current - 1);
-    renderQuestion();
-  });
-  $('nextBtn').addEventListener('click', () => {
-    current = Math.min(exam.length - 1, current + 1);
-    renderQuestion();
-  });
-  $('nextBlankBtn').addEventListener('click', goNextUnanswered);
-  $('submitBtn').addEventListener('click', submitExam);
-  $('submitBtnTop').addEventListener('click', submitExam);
-
-  loadCards();
+function readAnnotationStore(){
+  try { return JSON.parse(localStorage.getItem(ANNOTATION_KEY) || '{}'); } catch(e){ return {}; }
 }
+function writeAnnotationStore(store){
+  try { localStorage.setItem(ANNOTATION_KEY, JSON.stringify(store)); } catch(e){}
+}
+function annotationQuestionId(index=current){
+  const q = exam[index];
+  return q ? cardKey(q) : 'unknown';
+}
+function getAttemptNotes(){
+  const store = readAnnotationStore();
+  if(!currentAttemptId) currentAttemptId = newAttemptId();
+  if(!store[currentAttemptId]) store[currentAttemptId] = {};
+  return {store, attempt: store[currentAttemptId]};
+}
+function getQuestionNotes(index=current){
+  const qid = annotationQuestionId(index);
+  const {store, attempt} = getAttemptNotes();
+  if(!attempt[qid]) attempt[qid] = {strokes:[], typed:''};
+  writeAnnotationStore(store);
+  return attempt[qid];
+}
+function saveQuestionNotes(index=current, data){
+  const qid = annotationQuestionId(index);
+  const store = readAnnotationStore();
+  if(!store[currentAttemptId]) store[currentAttemptId] = {};
+  store[currentAttemptId][qid] = data;
+  writeAnnotationStore(store);
+}
+function getCanvasParts(){
+  return {
+    area: document.getElementById('markupArea'),
+    canvas: document.getElementById('markupCanvas'),
+    ctx: document.getElementById('markupCanvas') ? document.getElementById('markupCanvas').getContext('2d') : null
+  };
+}
+function resizeMarkupCanvas(){
+  const {area, canvas, ctx} = getCanvasParts();
+  if(!area || !canvas || !ctx) return;
+  const rect = area.getBoundingClientRect();
+  const dpr = window.devicePixelRatio || 1;
+  const w = Math.max(1, Math.round(rect.width));
+  const h = Math.max(1, Math.round(rect.height));
+  if(canvas.width !== Math.round(w*dpr) || canvas.height !== Math.round(h*dpr)){
+    canvas.width = Math.round(w*dpr);
+    canvas.height = Math.round(h*dpr);
+    canvas.style.width = w + 'px';
+    canvas.style.height = h + 'px';
+  }
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  redrawMarkup();
+}
+function strokeStyle(stroke, ctx){
+  if(stroke.tool === 'highlighter'){
+    ctx.globalCompositeOperation = 'source-over';
+    ctx.globalAlpha = 0.32;
+    ctx.strokeStyle = '#f4c542';
+    ctx.lineWidth = stroke.width || 14;
+  } else if(stroke.tool === 'eraser'){
+    ctx.globalCompositeOperation = 'destination-out';
+    ctx.globalAlpha = 1;
+    ctx.strokeStyle = 'rgba(0,0,0,1)';
+    ctx.lineWidth = stroke.width || 24;
+  } else {
+    ctx.globalCompositeOperation = 'source-over';
+    ctx.globalAlpha = 1;
+    ctx.strokeStyle = '#1f2937';
+    ctx.lineWidth = stroke.width || 2.2;
+  }
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+}
+function drawStroke(ctx, stroke, w, h){
+  const pts = stroke.points || [];
+  if(!pts.length) return;
+  strokeStyle(stroke, ctx);
+  ctx.beginPath();
+  pts.forEach((p,i)=>{
+    const x = p.x * w, y = p.y * h;
+    if(i===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+  });
+  ctx.stroke();
+  ctx.globalAlpha = 1;
+  ctx.globalCompositeOperation = 'source-over';
+}
+function redrawMarkup(){
+  const {area, canvas, ctx} = getCanvasParts();
+  if(!area || !canvas || !ctx) return;
+  const rect = area.getBoundingClientRect();
+  ctx.clearRect(0,0,rect.width,rect.height);
+  if(!notesVisible) return;
+  const data = getQuestionNotes(current);
+  (data.strokes || []).forEach(stroke => drawStroke(ctx, stroke, rect.width, rect.height));
+}
+function setMarkupTool(tool){
+  markupTool = tool;
+  const {area} = getCanvasParts();
+  if(area){
+    area.classList.toggle('drawing', tool !== 'navigate');
+    area.classList.toggle('notes-hidden', !notesVisible);
+  }
+  document.querySelectorAll('[data-tool]').forEach(btn => btn.classList.toggle('active', btn.dataset.tool === tool));
+  const status = document.getElementById('markupStatus');
+  if(status){
+    const label = tool === 'navigate' ? 'Navigate Mode: scroll/tap normally.' :
+      tool === 'pencil' ? 'Pencil Mode: write thin marks with Apple Pencil/stylus.' :
+      tool === 'highlighter' ? 'Highlighter Mode: underline/highlight keywords.' :
+      'Eraser Mode: draw over marks to erase strokes.';
+    status.textContent = label;
+  }
+}
+function pointerToNorm(evt){
+  const {area} = getCanvasParts();
+  const rect = area.getBoundingClientRect();
+  return {
+    x: Math.min(1, Math.max(0, (evt.clientX - rect.left) / Math.max(1, rect.width))),
+    y: Math.min(1, Math.max(0, (evt.clientY - rect.top) / Math.max(1, rect.height)))
+  };
+}
+function startStroke(evt){
+  if(markupTool === 'navigate') return;
+  evt.preventDefault();
+  isPointerDown = true;
+  const width = markupTool === 'highlighter' ? 14 : (markupTool === 'eraser' ? 28 : 2.2);
+  currentStroke = {tool: markupTool, width, points:[pointerToNorm(evt)]};
+  try { evt.currentTarget.setPointerCapture(evt.pointerId); } catch(e){}
+}
+function moveStroke(evt){
+  if(!isPointerDown || !currentStroke) return;
+  evt.preventDefault();
+  currentStroke.points.push(pointerToNorm(evt));
+  redrawMarkup();
+  const {area, ctx} = getCanvasParts();
+  if(area && ctx){
+    const rect = area.getBoundingClientRect();
+    drawStroke(ctx, currentStroke, rect.width, rect.height);
+  }
+}
+function endStroke(evt){
+  if(!isPointerDown || !currentStroke) return;
+  evt.preventDefault();
+  isPointerDown = false;
+  const data = getQuestionNotes(current);
+  data.strokes = data.strokes || [];
+  data.strokes.push(currentStroke);
+  saveQuestionNotes(current, data);
+  currentStroke = null;
+  redrawMarkup();
+}
+function undoLastStroke(){
+  const data = getQuestionNotes(current);
+  data.strokes = data.strokes || [];
+  data.strokes.pop();
+  saveQuestionNotes(current, data);
+  redrawMarkup();
+}
+function clearQuestionNotes(){
+  if(!confirm('Clear all Apple Pencil / scratch notes for this question?')) return;
+  const data = getQuestionNotes(current);
+  data.strokes = [];
+  data.typed = '';
+  saveQuestionNotes(current, data);
+  const ta = document.getElementById('scratchText');
+  if(ta) ta.value = '';
+  redrawMarkup();
+}
+function toggleNotesVisible(){
+  notesVisible = !notesVisible;
+  const {area} = getCanvasParts();
+  if(area) area.classList.toggle('notes-hidden', !notesVisible);
+  const btn = document.getElementById('hideShowNotesBtn');
+  if(btn) btn.textContent = notesVisible ? 'Hide Notes' : 'Show Notes';
+  redrawMarkup();
+}
+function toggleScratchPad(){
+  scratchOpen = !scratchOpen;
+  const box = document.getElementById('scratchBox');
+  if(box) box.classList.toggle('open', scratchOpen);
+}
+function saveTypedScratch(){
+  const ta = document.getElementById('scratchText');
+  const data = getQuestionNotes(current);
+  data.typed = ta ? ta.value : '';
+  saveQuestionNotes(current, data);
+}
+function loadTypedScratch(){
+  const ta = document.getElementById('scratchText');
+  if(ta) ta.value = getQuestionNotes(current).typed || '';
+}
+function toggleFullscreenBooklet(){
+  const booklet = document.querySelector('.booklet');
+  const on = !document.body.classList.contains('markupFullscreen');
+  document.body.classList.toggle('markupFullscreen', on);
+  if(booklet) booklet.classList.toggle('fullscreenBooklet', on);
+  const btn = document.getElementById('fullscreenBtn');
+  if(btn) btn.textContent = on ? 'Exit Fullscreen Question' : 'Fullscreen Question';
+  setTimeout(resizeMarkupCanvas, 120);
+}
+function setupMarkupCanvas(){
+  const {canvas} = getCanvasParts();
+  if(!canvas) return;
+  canvas.onpointerdown = startStroke;
+  canvas.onpointermove = moveStroke;
+  canvas.onpointerup = endStroke;
+  canvas.onpointercancel = endStroke;
+  loadTypedScratch();
+  setMarkupTool(markupTool || 'navigate');
+  setTimeout(resizeMarkupCanvas, 80);
+}
+function annotationReviewHtml(q){
+  if(!currentAttemptId) return '';
+  const store = readAnnotationStore();
+  const qid = cardKey(q);
+  const data = store[currentAttemptId] && store[currentAttemptId][qid];
+  if(!data || (!(data.strokes||[]).length && !data.typed)) return '';
+  const note = data.typed ? `<div class="reviewNoteText"><strong>Typed scratch notes:</strong>\n${escapeHtml(data.typed)}</div>` : '';
+  return `<div class="reviewCanvasBox"><strong>Test Booklet Markup Notes</strong><canvas class="reviewCanvas" data-qid="${escapeHtml(qid)}"></canvas>${note}</div>`;
+}
+function drawReviewCanvases(){
+  if(!currentAttemptId) return;
+  const store = readAnnotationStore();
+  const attempt = store[currentAttemptId] || {};
+  document.querySelectorAll('.reviewCanvas').forEach(canvas=>{
+    const data = attempt[canvas.dataset.qid];
+    if(!data || !(data.strokes||[]).length){
+      canvas.style.display='none';
+      return;
+    }
+    const rectW = canvas.parentElement ? canvas.parentElement.clientWidth - 24 : 600;
+    const w = Math.max(300, rectW), h = 260, dpr = window.devicePixelRatio || 1;
+    canvas.width = Math.round(w*dpr); canvas.height = Math.round(h*dpr);
+    canvas.style.width = w + 'px'; canvas.style.height = h + 'px';
+    const ctx = canvas.getContext('2d'); ctx.setTransform(dpr,0,0,dpr,0,0);
+    ctx.clearRect(0,0,w,h);
+    (data.strokes||[]).forEach(stroke=>drawStroke(ctx, stroke, w, h));
+  });
+}
+function clearAttemptNotes(){
+  if(!currentAttemptId) return;
+  if(!confirm('Clear all Test Booklet Markup notes for this exam attempt?')) return;
+  const store = readAnnotationStore();
+  delete store[currentAttemptId];
+  writeAnnotationStore(store);
+  document.querySelectorAll('.reviewCanvasBox').forEach(el=>el.remove());
+  alert('Notes cleared for this attempt.');
+}
+window.addEventListener('resize', ()=> setTimeout(resizeMarkupCanvas, 100));
 
-init();
+async function startExam(){applyLayout();$('startBtn').disabled=true;$('warning').style.display='none';await loadCards();if(!allCards.length){$('warning').style.display='block';$('warning').textContent='No cards available yet. Check folders/cards.json, or add embedded images for visual-identification cards.';$('startBtn').disabled=false;return}const count=Number($('countSelect').value);exam=[];let rangePool=subjectRangePool();const rangeSettings=getRangeSettings();if(!rangePool.length){alert('No questions available in this subject/range. Try a wider range or add cards/images.');$('startBtn').disabled=false;return}if(pendingRetakeIds?.length){exam=buildExamFromIds(pendingRetakeIds,count)||[];if(!exam.length){alert('Saved IDs unavailable. Starting new subject/range exam.');pendingRetakeIds=null}}if(!exam.length){rangePool=rangeSettings.order==='random'?(shouldUseSameExamCode()?seededShuffle(rangePool,fixedSeedText('questions')):shuffle(rangePool)):rangePool;exam=rangePool.slice(0,Math.min(count,rangePool.length)).map(prepQuestion);}answers=Array(exam.length).fill(null);originalAnswers=Array(exam.length).fill(null);marks=Array(exam.length).fill('');current=0;submitted=false;activeFilter='all';currentAttemptId=newAttemptId();timeLimit=calcLimit(exam.length,$('modeSelect').value);startedAt=Date.now();saveCurrentAttempt(pendingRetakeIds?'retake_started':'started',{retake:!!pendingRetakeIds});$('setup').style.display='none';$('results').style.display='none';$('examShell').style.display='block';renderQuestion();tick();clearInterval(timerInt);if(timeLimit)timerInt=setInterval(tick,1000);else $('timer').textContent='No timer';beginAutosave();$('startBtn').disabled=false}
+function tick(){if(!timeLimit){$('timer').textContent='No timer';return}const left=timeLimit-Math.floor((Date.now()-startedAt)/1000);$('timer').textContent=fmtTime(left);updatePacing(); if(left<=0&&!submitted)submitExam(true)}
+function counts(){const c={answered:0,unanswered:0,sure:0,notSure:0,guess:0,noIdea:0,marked:0};for(let i=0;i<exam.length;i++){if(answers[i]==null)c.unanswered++;else c.answered++;if(marks[i]){c.marked++;c[marks[i]]++}}return c}
+function markLabel(m){return m?MARKS[m].sym+' '+MARKS[m].label:'No mark'} function statusFor(i){return {answered:answers[i]!=null,mark:marks[i]||'',current:i===current}}
+function setMark(m){marks[current]=m;saveActiveProgress();renderQuestion()}
+function renderQuestion(){const q=exam[current];if(!q)return;$('progressText').textContent=`Question ${current+1} of ${exam.length}`;$('sourceText').textContent=`Source: ${q.sourceName}`;$('qid').textContent=q.displayId;$('qcat').textContent=q.category;$('markPill').textContent=markLabel(marks[current]);$('questionText').textContent=q.question;renderSafeVisual(q);setTimeout(setupMarkupCanvas, 0);$('choicesBox').innerHTML=q.randomizedChoices.map((ch,i)=>`<label class="choice ${answers[current]===i?'selected':''}"><input type="radio" name="choice" ${answers[current]===i?'checked':''} data-index="${i}"><span><strong>${String.fromCharCode(65+i)}.</strong> ${escapeHtml(ch.text)}</span></label>`).join('');document.querySelectorAll('input[name=choice]').forEach(inp=>inp.onchange=()=>{if(originalAnswers[current]===null) originalAnswers[current]=Number(inp.dataset.index); answers[current]=Number(inp.dataset.index); saveActiveProgress(); renderQuestion()});$('markBtns').innerHTML=Object.entries(MARKS).map(([k,v])=>`<button class="markBtn ${marks[current]===k?'active':''}" onclick="setMark('${k}')">${v.sym} ${v.label}</button>`).join('')+`<button class="markBtn ${!marks[current]?'active':''}" onclick="setMark('')">Clear Mark</button>`;$('prevBtn').disabled=current===0;$('nextBtn').disabled=current===exam.length-1;renderSheet();updatePacing();addSecondPassButtons()}
+function matchesFilter(i,filter=activeFilter){if(filter==='all')return true;if(filter==='unanswered')return answers[i]==null;if(filter==='answered')return answers[i]!=null;if(filter==='marked')return !!marks[i];return marks[i]===filter}
+function visibleIndexes(){return exam.map((_,i)=>i).filter(i=>matchesFilter(i))} function jumpToFirst(filter){activeFilter=filter;const v=visibleIndexes();if(v.length)current=v[0];renderQuestion();if(document.body.classList.contains('layout-compact'))$('answerSheet').classList.add('open')} function nextMatching(dir){const v=visibleIndexes();if(!v.length)return;let pos=v.indexOf(current);if(pos<0)pos=dir>0?-1:0;pos=(pos+dir+v.length)%v.length;current=v[pos];renderQuestion()}
+function renderSheet(){const c=counts();const visible=visibleIndexes();$('prevMatchBtn').style.display=activeFilter==='all'?'none':'inline-block';$('nextMatchBtn').style.display=activeFilter==='all'?'none':'inline-block';$('answerSheet').innerHTML=`<div class="sheetHead"><h2>Answer Sheet</h2><button class="btn" onclick="$('answerSheet').classList.remove('open')">Close</button></div><div class="mini">Answered: ${c.answered} · Blank: ${c.unanswered} · Marked: ${c.marked}</div><div class="sheetControls"><select onchange="activeFilter=this.value;renderSheet();updatePacing();addSecondPassButtons()"><option value="all" ${activeFilter==='all'?'selected':''}>All</option><option value="unanswered" ${activeFilter==='unanswered'?'selected':''}>Unanswered</option><option value="answered" ${activeFilter==='answered'?'selected':''}>Answered</option><option value="marked" ${activeFilter==='marked'?'selected':''}>Marked</option><option value="sure" ${activeFilter==='sure'?'selected':''}>Sure</option><option value="notSure" ${activeFilter==='notSure'?'selected':''}>Not Sure</option><option value="guess" ${activeFilter==='guess'?'selected':''}>Guess</option><option value="noIdea" ${activeFilter==='noIdea'?'selected':''}>No Idea</option></select><div class="quickBtns"><button class="btn" onclick="jumpToFirst('unanswered')">Review Unanswered</button><button class="btn" onclick="jumpToFirst('notSure')">Review Not Sure</button><button class="btn" onclick="jumpToFirst('guess')">Review Guess</button><button class="btn" onclick="jumpToFirst('noIdea')">Review No Idea</button><button class="btn" onclick="jumpToFirst('marked')">Review All Marked</button><button class="btn" onclick="activeFilter='all';renderSheet();updatePacing();addSecondPassButtons()">All</button></div></div><div class="itemGrid">${visible.map(i=>rowHtml(i)).join('')||'<p class="mini">No matching questions.</p>'}</div>`}
+function rowHtml(i){const a=answers[i];const m=marks[i];return`<div class="ansRow ${i===current?'current':''} ${a==null?'blank':'answered'} ${m?'marked':''}" onclick="current=${i};renderQuestion()"><div class="num">${i+1}</div><div class="bubbles">${[0,1,2,3].map(j=>`<span class="bubble ${a===j?'sel':''}">${String.fromCharCode(65+j)}</span>`).join('')}</div><div class="markSym">${m?MARKS[m].sym:''}</div></div>`}
+$('prevBtn').onclick=()=>{if(current>0){current--;renderQuestion()}};$('nextBtn').onclick=()=>{if(current<exam.length-1){current++;renderQuestion()}};$('prevMatchBtn').onclick=()=>nextMatching(-1);$('nextMatchBtn').onclick=()=>nextMatching(1);$('submitBtn').onclick=()=>submitExam(false);$('floatSheet').onclick=()=>{$('answerSheet').classList.toggle('open')};$('floatMarks').onclick=()=>{jumpToFirst('marked')};$('layoutSelect').onchange=applyLayout;
+function breakdown(){const map={};exam.forEach((q,i)=>{const k=q.category||q.sourceName||'Unknown';if(!map[k])map[k]={total:0,correct:0};map[k].total++;if(answers[i]!=null&&q.randomizedChoices[answers[i]]?.correct)map[k].correct++});return map}
+function confidenceBreakdown(){const out={sure:{total:0,correct:0},notSure:{total:0,correct:0},guess:{total:0,correct:0},noIdea:{total:0,correct:0},unmarked:{total:0,correct:0}};exam.forEach((q,i)=>{const k=marks[i]||'unmarked';out[k].total++;if(answers[i]!=null&&q.randomizedChoices[answers[i]]?.correct)out[k].correct++});return out}
+function confirmSummary(){const c=counts();const remain=timeLimit?fmtTime(timeLimit-Math.floor((Date.now()-startedAt)/1000)):'No timer';return `Submit final exam?\n\nAnswered: ${c.answered}\nUnanswered: ${c.unanswered}\nSure: ${c.sure}\nNot Sure: ${c.notSure}\nGuess: ${c.guess}\nNo Idea: ${c.noIdea}\nTime remaining: ${remain}`}
+function submitExam(auto){if(submitted)return;if(!auto&&!confirm(confirmSummary()))return;submitted=true;clearInterval(timerInt);const used=Math.floor((Date.now()-startedAt)/1000);const correct=exam.reduce((n,q,i)=>n+(answers[i]!=null&&q.randomizedChoices[answers[i]]?.correct?1:0),0);const pct=exam.length?correct/exam.length*100:0,pass=pct>=75;const c=counts(),bd=breakdown(),cb=confidenceBreakdown(),ac=answerChangeStats();const weakest=Object.entries(bd).sort((a,b)=>(a[1].correct/a[1].total)-(b[1].correct/b[1].total))[0];stopAutosave();saveMistakesToBank();clearActiveProgress();saveCurrentAttempt('submitted',{score:`${correct}/${exam.length}`,percentage:pct,passFail:pass?'PASS':'FAIL',timeUsedSeconds:used,subjectBreakdown:bd,confidenceBreakdown:cb,marks,answers,unanswered:c.unanswered,marked:c.marked});saveHistory({date:new Date().toLocaleString(),examType:CONFIG.shortTitle,itemCount:exam.length,score:`${correct}/${exam.length}`,percentage:pct,passFail:pass?'PASS':'FAIL',timeUsedSeconds:used,subjectBreakdown:bd,confidenceBreakdown:cb,questionIds:exam.map(cardKey),unanswered:c.unanswered,marked:c.marked});$('examShell').style.display='none';const wrongs=exam.map((q,i)=>({q,i})).filter(x=>answers[x.i]===null||!x.q.randomizedChoices[answers[x.i]]?.correct);const marked=exam.map((q,i)=>({q,i})).filter(x=>marks[x.i]);$('results').style.display='block';$('results').innerHTML=`<h2>Results — ${CONFIG.shortTitle}</h2><div class="scoreBox"><div class="stat">Raw score<b>${correct}/${exam.length}</b></div><div class="stat">Percentage<b>${pct.toFixed(1)}%</b></div><div class="stat">Status<b class="${pass?'pass':'fail'}">${pass?'PASS':'FAIL'}</b></div><div class="stat">Time used<b>${fmtTime(used)}</b></div><div class="stat">Unanswered<b>${c.unanswered}</b></div><div class="stat">Marked<b>${c.marked}</b></div><div class="stat">Weakest subject<b>${weakest?escapeHtml(weakest[0]):'—'}</b></div><div class="stat">Passing mark<b>75%</b></div><div class="stat">Answer changes<b>${ac.total}</b><span class="mini">Improved ${ac.improved} · Hurt ${ac.hurt} · Neutral ${ac.neutral}</span></div></div><div class="topActions"><button class="btn primary" onclick="startNewRandomExam()">Start New Random Exam</button><button class="btn" onclick="retakeSameExam()">Retake Same Exam</button><button class="btn" onclick="document.getElementById('wrongReview').scrollIntoView({behavior:'smooth'})">Review Wrong Answers</button><button class="btn primary" onclick="document.getElementById('fullReview').scrollIntoView({behavior:'smooth'})">Review Full Exam</button><button class="btn danger" onclick="clearAttemptNotes()">Clear Notes After Review</button><a class="btn" href="../">Mock Exam Dashboard</a></div><h3>Performance by Confidence Mark</h3>${confTable(cb)}<h3>Subject Breakdown</h3>${subjectTable(bd)}<h3>Marked Questions</h3>${marked.length?marked.map(({q,i})=>smallReview(q,i,false)).join(''):'<p>No marked questions.</p>'}<h3 id="wrongReview">Wrong and Unanswered Review</h3>${wrongs.length?wrongs.map(({q,i})=>smallReview(q,i,true)).join(''):'<p>No wrong answers.</p>'}<div id="fullReview"></div>`;renderFullExamReview();setTimeout(drawReviewCanvases, 120);window.scrollTo(0,0)}
+function confTable(cb){return`<table><thead><tr><th>Mark</th><th>Correct</th><th>Total</th><th>%</th></tr></thead><tbody>${Object.entries(cb).map(([k,v])=>`<tr><td>${k==='unmarked'?'Unmarked':MARKS[k].sym+' '+MARKS[k].label}</td><td>${v.correct}</td><td>${v.total}</td><td>${v.total?(v.correct/v.total*100).toFixed(1):'0.0'}%</td></tr>`).join('')}</tbody></table>`}
+function subjectTable(bd){return`<table><thead><tr><th>Subject</th><th>Correct</th><th>Total</th><th>%</th></tr></thead><tbody>${Object.entries(bd).map(([k,v])=>`<tr><td>${escapeHtml(k)}</td><td>${v.correct}</td><td>${v.total}</td><td>${(v.correct/v.total*100).toFixed(1)}%</td></tr>`).join('')}</tbody></table>`}
+function smallReview(q,i,showExplain){const ua=answers[i]===null?'Unanswered':q.randomizedChoices[answers[i]]?.text;const ca=q.randomizedChoices[q.correctIndex]?.text||q.correctText;return`<div class="reviewItem"><h3>Q${i+1} · ${escapeHtml(q.category)} · ${escapeHtml(markLabel(marks[i]))}</h3><p><strong>Question:</strong> ${escapeHtml(q.question)}</p>${answerVisualHtml(q)}${annotationReviewHtml(q)}<p><strong>Your answer:</strong> ${escapeHtml(ua)}</p><p><strong>Correct answer:</strong> ${escapeHtml(ca)}</p><p><strong>Key memory:</strong> ${escapeHtml(q.keyMemory||'—')}</p><div class="explain"><strong>Explanation:</strong>\n${escapeHtml(q.explanation||'—')}</div></div>`}
+function renderHistory(){const rows=readHistory().filter(r=>r.examType===CONFIG.shortTitle).reverse();$('historyBox').innerHTML=rows.length?`<table><thead><tr><th>Date</th><th>Items</th><th>Score</th><th>%</th><th>Status</th><th>Time</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${r.date}</td><td>${r.itemCount}</td><td>${r.score}</td><td>${Number(r.percentage).toFixed(1)}%</td><td>${r.passFail}</td><td>${fmtTime(r.timeUsedSeconds)}</td></tr>`).join('')}</tbody></table>`:'<p class="mini">No history for this exam yet.</p>'}
+$('startBtn').onclick=startExam;$('historyBtn').onclick=renderHistory;populateSubjectSelect();setupSubjectRangeEvents();setupOptions();applyLayout();renderResumeBox();setTimeout(updateRangeInfo,100);
 </script>
 </body>
 </html>
