@@ -115,7 +115,7 @@ body.markupFullscreen .sheet,body.markupFullscreen .hero,body.markupFullscreen #
     <div><label for="modeSelect">Timer mode</label><select id="modeSelect"><option value="board">Board Mode — official pace</option><option value="pressure">Pressure Mode — 20% faster</option><option value="sprint">Sprint Mode — 50% faster</option><option value="none">No Timer Mode</option></select></div>
     <div><label for="layoutSelect">Layout</label><select id="layoutSelect"><option value="auto">Auto layout</option><option value="split">PRC Split View</option><option value="compact">Compact Mobile</option></select></div>
   </div>
-  <div class="warning" id="rangeInfo" style="display:block">Select subject and Q range.</div>
+  <div class="warning" id="rangeInfo" style="display:block">Select subject and Q range. Item count will adjust to available cards in that subject/range.</div>
   <div class="topActions"><button class="btn primary" id="startBtn">Start Subject Mock Exam</button><button class="btn" id="historyBtn">View Exam History</button><button class="btn" onclick="showMistakeBank()">Mistake Bank</button></div><div class="resumeBox" id="resumeBox"></div><div class="dataTools"><strong>Backup / Data</strong><div class="topActions"><button class="btn" onclick="exportAllExamData()">Export Backup JSON</button><label class="btn">Import Backup JSON <input class="fileInput" type="file" accept="application/json" style="display:none" onchange="importExamBackup(this)"></label><button class="btn danger" onclick="clearAllExamData()">Clear All Exam Data</button></div></div>
   <p class="mini">Default: new random set every Start Exam. Fixed set only when you choose Retake Same Exam after submit.</p>
   <div class="warning" id="warning"></div>
@@ -218,7 +218,25 @@ function filterMissingVisualIdentifyCards(cards){
 }
 
 async function loadCards(){loadedWarnings=[];const chunks=await Promise.all(CONFIG.sources.map(async src=>{try{const res=await fetch(src.path+'?v='+Date.now(),{cache:'no-store'});if(!res.ok)throw new Error(res.status);return normalize(await res.json(),src.name)}catch(e){loadedWarnings.push(src.name);return[]}}));allCards=filterMissingVisualIdentifyCards(chunks.flat());if(loadedWarnings.length){$('warning').style.display='block';$('warning').textContent='Some subject sources are not available yet: '+loadedWarnings.join(', ')}return allCards}
-function setupOptions(){const sel=$('countSelect');if(!sel)return;const pool=(typeof subjectRangePool==='function'&&allCards.length)?subjectRangePool():[];const max=pool.length||Math.max(...CONFIG.options.map(o=>o.items));let opts=CONFIG.options.filter(o=>o.items<=max);if(max&&!opts.some(o=>o.items===max))opts.push({items:max,label:'all available in range'});opts=opts.sort((a,b)=>a.items-b.items);sel.innerHTML=opts.map(o=>`<option value="${o.items}">${o.items} items — ${o.label}</option>`).join('')} function calcLimit(items,mode){if(mode==='none')return 0;let s=items*CONFIG.paceMinutes*60;if(mode==='pressure')s*=.8;if(mode==='sprint')s*=.5;return Math.round(s)}
+function setupOptions(){
+  const sel=$('countSelect');
+  if(!sel) return;
+  let max=0;
+  try{
+    if(typeof subjectRangePool==='function' && allCards && allCards.length){
+      max=subjectRangePool().length;
+    }
+  }catch(e){ max=0; }
+  if(!max){
+    sel.innerHTML='<option value="0">0 available in this subject/range</option>';
+    return;
+  }
+  let opts=CONFIG.options.filter(n=>n<=max);
+  if(!opts.includes(max)) opts.push(max);
+  opts=[...new Set(opts)].sort((a,b)=>a-b);
+  sel.innerHTML=opts.map(n=>`<option value="${n}">${n} items${n===max?' — all available for this range':''}</option>`).join('');
+}
+function calcLimit(items,mode){if(mode==='none')return 0;let s=items*CONFIG.paceMinutes*60;if(mode==='pressure')s*=.8;if(mode==='sprint')s*=.5;return Math.round(s)}
 function prepQuestion(c){const choices=c.choices.map(ch=>({text:ch.text,correct:ch.text.trim()===c.correctText.trim()}));if(!choices.some(ch=>ch.correct))choices.push({text:c.correctText,correct:true});const randomized=shuffle(choices);return{...c,randomizedChoices:randomized,correctIndex:randomized.findIndex(ch=>ch.correct)}}
 function directImageCandidate(value){if(!value)return'';const s=String(value).trim();if(/^(https?:\/\/|data:image\/|assets\/|\.\/assets\/|\.\.\/)/i.test(s)&&/\.(png|jpe?g|webp|gif|svg)(\?.*)?$/i.test(s))return s;return''} function getArrayField(card,name){const v=card[name];if(Array.isArray(v))return v.filter(Boolean).map(String);if(typeof v==='string'&&v.trim())return[v.trim()];return[]} function safeVisualQueries(card){const q=[];['questionImageQuery','imageQuery','questionImageQueries','questionImageLayoutQueries','visualQuery'].forEach(k=>q.push(...getArrayField(card,k)));if(card.visual&&typeof card.visual==='string')q.push(card.visual);return[...new Set(q.filter(x=>x&&!/answer|correct/i.test(x)))]} function getQuestionVisual(card){for(const v of [card.questionImage,card.image,card.visualUrl,card.visual]){const hit=directImageCandidate(v);if(hit)return{type:'image',url:hit,note:'Question visual shown for identification. Answer labels are hidden until submit.'}}const q=safeVisualQueries(card)[0];return q?{type:'query',query:q,note:'No safe embedded image is available before submit.'}:null} function imageSearchUrl(q){return'https://www.google.com/search?tbm=isch&q='+encodeURIComponent(q)} function wikiSearchUrl(q){return'https://commons.wikimedia.org/w/index.php?search='+encodeURIComponent(q)+'&title=Special:MediaSearch&type=image'} function renderSafeVisual(card){
   const box=$('visualBox');
@@ -269,11 +287,12 @@ function subjectRangePool(){
   return pool;
 }
 function updateRangeInfo(){
-  const info=$('rangeInfo'); if(!info || !allCards.length) return;
+  const info=$('rangeInfo');
+  if(!info || !allCards.length) return;
   const pool=subjectRangePool();
   const {start,end,order}=getRangeSettings();
   const skipped=loadedWarnings.filter(w=>String(w).includes('visual-identification')).join(' ');
-  info.innerHTML=`<span class="subjectBadge">${escapeHtml(selectedSubjectName())}</span><span class="subjectBadge">Q${start}–Q${end}</span><span class="subjectBadge">${pool.length} available</span><span class="subjectBadge">${order==='random'?'Random':'Sequential'}</span><br>${pool.length?'Ready. Choose item count and start exam.':'No questions in this selected range yet.'} ${skipped?escapeHtml(skipped):''}`;
+  info.innerHTML=`<span class="subjectBadge">${escapeHtml(selectedSubjectName())}</span><span class="subjectBadge">Q${start}–Q${end}</span><span class="subjectBadge">${pool.length} available in this subject/range</span><span class="subjectBadge">${order==='random'?'Question order: random':'Question order: sequential'}</span><span class="subjectBadge">Choices: shuffled every attempt</span><br>${pool.length?'Ready. Item count is limited to the available questions only.':'No questions in this selected range yet.'} ${skipped?escapeHtml(skipped):''}`;
   setupOptions();
 }
 function setupSubjectRangeEvents(){
