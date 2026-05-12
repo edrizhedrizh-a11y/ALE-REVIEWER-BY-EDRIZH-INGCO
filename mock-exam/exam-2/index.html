@@ -71,6 +71,16 @@ body.markupFullscreen .sheet,body.markupFullscreen .hero,body.markupFullscreen #
 .seedPreview div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:7px 10px;font-size:13px}
 .lockedNotice{border:1px solid #b7dfc8;background:#f0fff7;color:#0c3924;border-radius:14px;padding:10px;margin-top:8px}
 
+
+.sameExamSetup{margin:12px 0;padding:14px;border:1px solid var(--line);border-radius:18px;background:#f7fbff}
+.sameExamSetup h3{margin:0 0 6px}
+.sameExamSetup input,.sameExamSetup select{width:100%;min-height:42px;border:1px solid var(--line);border-radius:12px;padding:9px 10px;background:#fff;font:inherit}
+.seedBox{margin-top:10px;padding:12px;border:1px solid var(--line);border-radius:16px;background:#f7fbff;color:#263853}
+.seedBox code{background:#fff;border:1px solid var(--line);border-radius:8px;padding:2px 6px}
+.seedPreview{margin-top:8px;display:grid;gap:6px}
+.seedPreview div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:7px 10px;font-size:13px}
+.lockedNotice{border:1px solid #b7dfc8;background:#f0fff7;color:#0c3924;border-radius:14px;padding:10px;margin-top:8px}
+
 @media(max-width:860px){
   .markupToolbar{display:block}
   .toolRow .toolBtn{min-height:42px;padding:9px 10px}
@@ -103,7 +113,7 @@ body.markupFullscreen .sheet,body.markupFullscreen .hero,body.markupFullscreen #
 <body>
 <div class="wrap">
 <header class="hero">
-  <div class="mini"><strong>v11 A01 Visible Mock Exam</strong></div><h1>Exam 2</h1>
+  <div class="mini"><strong>v12 Same A01 Visible Mock Exam</strong></div><h1>Exam 2</h1>
   <p class="subtitle">Utilities, Structural Conceptualization, Building Materials & Technology · Official: 150 items · 5 hours · Weight 30%</p>
   <div class="topActions"><a class="btn" href="../">← Mock Exam Dashboard</a><a class="btn" href="../../">Main Reviewer</a></div>
 </header>
@@ -113,6 +123,18 @@ body.markupFullscreen .sheet,body.markupFullscreen .hero,body.markupFullscreen #
     <div><label for="modeSelect">Timer mode</label><select id="modeSelect"><option value="board">Board Mode — official pace</option><option value="pressure">Pressure Mode — 20% faster</option><option value="sprint">Sprint Mode — 50% faster</option><option value="none">No Timer Mode</option></select></div>
     <div><label for="layoutSelect">Layout</label><select id="layoutSelect"><option value="auto">Auto layout</option><option value="split">PRC Split View</option><option value="compact">Compact Mobile</option></select></div>
   </div>
+
+  <div class="sameExamSetup" id="sameExamSetup">
+    <h3>Same A01 Group Mock Exam</h3>
+    <p class="mini">Para pareho ang A01 sa phone, PC, at ibang reviewers: same Item count + same Timer mode + same Exam Code + Group Mode.</p>
+    <div class="setupGrid">
+      <div><label for="examCodeInput">Same Exam Code</label><input id="examCodeInput" type="text" value="" placeholder="Example: EXAM1-GROUP-A"></div>
+      <div><label for="groupMode">Group Mode</label><select id="groupMode"><option value="same" selected>Same A01 for everyone</option><option value="personal">Personal random per device</option></select></div>
+    </div>
+    <div class="mini"><strong>A01–A05 Preview:</strong> compare this on phone and PC before Start Exam.</div>
+    <div id="sameExamPreview"><div class="seedBox"><strong>Loading A01 preview...</strong></div></div>
+  </div>
+
   <div class="topActions"><button class="btn primary" id="startBtn">Start New Random Exam</button><button class="btn" id="historyBtn">View Exam History</button><button class="btn" onclick="showMistakeBank()">Mistake Bank</button></div><div class="resumeBox" id="resumeBox"></div><div class="dataTools"><strong>Backup / Data</strong><div class="topActions"><button class="btn" onclick="exportAllExamData()">Export Backup JSON</button><label class="btn">Import Backup JSON <input class="fileInput" type="file" accept="application/json" style="display:none" onchange="importExamBackup(this)"></label><button class="btn danger" onclick="clearAllExamData()">Clear All Exam Data</button></div></div>
   <p class="mini">Default: new random set every Start Exam. Fixed set only when you choose Retake Same Exam after submit.</p>
   <div class="warning" id="warning"></div>
@@ -277,7 +299,32 @@ async function preloadCardsForPreview(){
   }
 }
 
-// ===== v11 A01 Visible Main Mock Exam: Same A01 / Fixed Seed Mode =====
+
+// ===== v12 Force Visible Same A01 Panel =====
+function ensureSameA01Panel(){
+  const setup=document.getElementById('setup');
+  if(!setup) return;
+  if(!document.getElementById('sameExamSetup')){
+    const holder=document.createElement('div');
+    holder.innerHTML=`<div class="sameExamSetup" id="sameExamSetup">
+      <h3>Same A01 Group Mock Exam</h3>
+      <p class="mini">Same Item count + Timer mode + Exam Code + Group Mode = same A01 sa phone at PC.</p>
+      <div class="setupGrid">
+        <div><label for="examCodeInput">Same Exam Code</label><input id="examCodeInput" type="text" value="" placeholder="Example: EXAM1-GROUP-A"></div>
+        <div><label for="groupMode">Group Mode</label><select id="groupMode"><option value="same" selected>Same A01 for everyone</option><option value="personal">Personal random per device</option></select></div>
+      </div>
+      <div class="mini"><strong>A01–A05 Preview:</strong> compare this on phone and PC before Start Exam.</div>
+      <div id="sameExamPreview"><div class="seedBox"><strong>Loading A01 preview...</strong></div></div>
+    </div>`;
+    const topActions=setup.querySelector('.topActions');
+    if(topActions) setup.insertBefore(holder.firstElementChild, topActions);
+    else setup.appendChild(holder.firstElementChild);
+  }
+  const bind=(id,ev)=>document.getElementById(id)?.addEventListener(ev,()=>{if(typeof updateSameExamPreview==='function')updateSameExamPreview();});
+  bind('examCodeInput','input'); bind('groupMode','change'); bind('countSelect','change'); bind('modeSelect','change');
+}
+
+// ===== v12 Same A01 Visible Main Mock Exam: Same A01 / Fixed Seed Mode =====
 function stableText(v){
   return String(v==null?'':v).trim().replace(/\s+/g,' ').toUpperCase();
 }
@@ -934,7 +981,7 @@ document.getElementById('examCodeInput')?.addEventListener('input',updateSameExa
 document.getElementById('groupMode')?.addEventListener('change',updateSameExamPreview);
 document.getElementById('countSelect')?.addEventListener('change',updateSameExamPreview);
 document.getElementById('modeSelect')?.addEventListener('change',updateSameExamPreview);
-setTimeout(preloadCardsForPreview,150);setupOptions();applyLayout();renderResumeBox();
+ensureSameA01Panel();setTimeout(preloadCardsForPreview,150);setupOptions();applyLayout();renderResumeBox();
 </script>
 </body>
 </html>
