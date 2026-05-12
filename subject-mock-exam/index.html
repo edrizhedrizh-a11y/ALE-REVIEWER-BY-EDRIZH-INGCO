@@ -31,6 +31,7 @@ select,input{width:100%;padding:12px;border:1px solid var(--line);border-radius:
 .examLayout{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:14px;align-items:start}
 .qMeta{display:flex;gap:8px;flex-wrap:wrap}
 .pill,.subjectBadge{display:inline-flex;border-radius:999px;background:#eee8dc;padding:8px 12px;font-weight:900;font-size:13px;margin:2px}
+.subjectBadge.good{background:#f0fff7;color:#064d2d}.subjectBadge.warn{background:#fff4df;color:#7a520f}
 .question{font-size:25px;font-weight:1000;line-height:1.35;margin:18px 0}
 .visualBox{margin:12px 0;border:1px solid var(--line);border-radius:16px;background:#fff;padding:12px;display:none}
 .visualBox.show{display:block}
@@ -76,7 +77,7 @@ select,input{width:100%;padding:12px;border:1px solid var(--line);border-radius:
   <section class="hero">
     <a class="btn" href="../index.html">← Main Reviewer</a>
     <h1>Subject / Range Mock Exam</h1>
-    <p class="mini">Range Only Mode: pili ka ng subject at Q range. Walang item count. Walang timer. Lahat ng available questions sa range ang lalabas.</p>
+    <p class="mini">Range Only Mode: pili ka ng subject at Q range. Auto-detect ang max Q ng subject. Walang item count. Walang timer.</p>
   </section>
 
   <section class="panel" id="setup">
@@ -88,7 +89,7 @@ select,input{width:100%;padding:12px;border:1px solid var(--line);border-radius:
         <input id="rangeStart" type="number" min="1" value="1">
       </label>
       <label>Range end
-        <input id="rangeEnd" type="number" min="1" value="300">
+        <input id="rangeEnd" type="number" min="1" value="999">
       </label>
       <label>Order
         <select id="orderMode">
@@ -100,6 +101,7 @@ select,input{width:100%;padding:12px;border:1px solid var(--line);border-radius:
     <div class="warning" id="rangeInfo">Loading cards...</div>
     <div class="topActions">
       <button class="btn primary" id="startBtn" type="button">Start Range Mock Exam</button>
+      <button class="btn" id="setFullBtn" type="button">Use Full Subject Range</button>
       <button class="btn" id="resumeBtn" type="button" style="display:none">Resume Last Range Exam</button>
       <button class="btn danger" id="discardBtn" type="button" style="display:none">Discard Last Range Exam</button>
       <button class="btn danger" id="clearBtn" type="button">Clear Subject Exam Data</button>
@@ -163,14 +165,16 @@ const CONFIG = {
   ]
 };
 
-const SAVE_KEY = 'aleSubjectRangeExamV3';
+const SAVE_KEY = 'aleSubjectRangeExamV4';
 let allCards = [];
+let allCardsRaw = [];
 let loadedWarnings = [];
 let exam = [];
 let answers = [];
 let current = 0;
 let attemptMeta = null;
 let autosaveInt = null;
+let userEditedRangeEnd = false;
 
 const $ = (id) => document.getElementById(id);
 
@@ -187,10 +191,6 @@ function shuffle(arr){
     [a[i],a[j]] = [a[j],a[i]];
   }
   return a;
-}
-
-function cardKey(card){
-  return String(card.uid || card.id || card.displayId || card.question || '');
 }
 
 function populateSubjects(){
@@ -235,14 +235,16 @@ function normalizeCard(card, index, sourceName){
     keyMemory: card.keyMemory || '',
     questionImage: card.questionImage || '',
     image: card.image || '',
-    visualUrl: card.visualUrl || ''
+    visualUrl: card.visualUrl || '',
+    _sourceIndex: index + 1
   };
 }
 
 function displayNumber(card, fallbackIndex){
   const raw = String(card.displayId || card.id || card.uid || '').trim();
   const match = raw.match(/(\d+)/);
-  return match ? Number(match[1]) : fallbackIndex + 1;
+  if(match) return Number(match[1]);
+  return card._sourceIndex || fallbackIndex + 1;
 }
 
 function hasDirectImage(card){
@@ -275,13 +277,10 @@ async function loadCards(){
     }
   }));
 
-  const before = chunks.length;
+  allCardsRaw = chunks;
   allCards = chunks.filter(card => !isMissingVisualIdentify(card));
-  const skipped = before - allCards.length;
-  if(skipped){
-    loadedWarnings.push(skipped + ' identify/visual card(s) without embedded image skipped.');
-  }
 
+  setFullSubjectRange(true);
   updateRangeInfo();
   renderResumeButtons();
 }
@@ -290,9 +289,46 @@ function selectedSubject(){
   return $('subjectSelect').value;
 }
 
+function subjectRawCards(){
+  const subject = selectedSubject();
+  return allCardsRaw.filter(card => card.sourceName === subject);
+}
+
+function subjectUsableCards(){
+  const subject = selectedSubject();
+  return allCards.filter(card => card.sourceName === subject);
+}
+
+function subjectMinMax(){
+  const cards = subjectRawCards();
+  if(!cards.length) return {min:1, max:1, totalRaw:0, totalUsable:0, skipped:0};
+
+  const nums = cards.map((card, index) => displayNumber(card, index)).filter(Number.isFinite);
+  const min = Math.min(...nums);
+  const max = Math.max(...nums);
+  const usable = subjectUsableCards();
+
+  return {
+    min,
+    max,
+    totalRaw: cards.length,
+    totalUsable: usable.length,
+    skipped: cards.length - usable.length
+  };
+}
+
+function setFullSubjectRange(force=false){
+  const stats = subjectMinMax();
+  $('rangeStart').value = stats.min || 1;
+  $('rangeEnd').value = stats.max || 1;
+  userEditedRangeEnd = false;
+  updateRangeInfo();
+}
+
 function rangeValues(){
-  const start = Math.max(1, Number($('rangeStart').value || 1));
-  const end = Math.max(start, Number($('rangeEnd').value || start));
+  const stats = subjectMinMax();
+  const start = Math.max(1, Number($('rangeStart').value || stats.min || 1));
+  const end = Math.max(start, Number($('rangeEnd').value || stats.max || start));
   return {start, end};
 }
 
@@ -309,19 +345,23 @@ function subjectRangePool(){
 }
 
 function updateRangeInfo(){
+  const stats = subjectMinMax();
   const pool = subjectRangePool();
   const {start, end} = rangeValues();
-  const count = pool.length;
   const order = $('orderMode').value === 'random' ? 'Question order: random' : 'Question order: sequential';
 
   $('rangeInfo').innerHTML =
-    `<span class="subjectBadge">${esc(selectedSubject())}</span>` +
-    `<span class="subjectBadge">Q${start}–Q${end}</span>` +
-    `<span class="subjectBadge">${count} available questions</span>` +
+    `<span class="subjectBadge good">${esc(selectedSubject())}</span>` +
+    `<span class="subjectBadge">Subject total: ${stats.totalRaw}</span>` +
+    `<span class="subjectBadge">Subject max Q: ${stats.max}</span>` +
+    `<span class="subjectBadge">Selected range: Q${start}–Q${end}</span>` +
+    `<span class="subjectBadge good">${pool.length} usable in selected range</span>` +
     `<span class="subjectBadge">${order}</span>` +
     `<span class="subjectBadge">No timer</span>` +
-    `<span class="subjectBadge">Choices shuffled</span><br>` +
-    (count ? `Exam will use all ${count} available questions in this range.` : 'No cards available in this selected subject/range.') +
+    `<span class="subjectBadge">Choices shuffled</span>` +
+    (stats.skipped ? `<span class="subjectBadge warn">${stats.skipped} image-missing identify skipped</span>` : '') +
+    `<br>` +
+    (pool.length ? `Exam will use all ${pool.length} usable questions in this selected range.` : 'No usable cards in this selected subject/range.') +
     (loadedWarnings.length ? '<br>' + loadedWarnings.map(esc).join('<br>') : '');
 }
 
@@ -353,7 +393,7 @@ function startExam(){
   let pool = subjectRangePool();
 
   if(!pool.length){
-    alert('No available questions in this subject/range.');
+    alert('No usable questions in this subject/range.');
     return;
   }
 
@@ -641,13 +681,21 @@ function newExam(){
 function init(){
   populateSubjects();
 
-  ['subjectSelect','rangeStart','rangeEnd','orderMode'].forEach(id => {
-    const element = $(id);
-    element.addEventListener('input', updateRangeInfo);
-    element.addEventListener('change', updateRangeInfo);
+  $('subjectSelect').addEventListener('change', () => {
+    setFullSubjectRange(true);
   });
 
+  $('rangeStart').addEventListener('input', updateRangeInfo);
+  $('rangeStart').addEventListener('change', updateRangeInfo);
+  $('rangeEnd').addEventListener('input', () => {
+    userEditedRangeEnd = true;
+    updateRangeInfo();
+  });
+  $('rangeEnd').addEventListener('change', updateRangeInfo);
+  $('orderMode').addEventListener('change', updateRangeInfo);
+
   $('startBtn').addEventListener('click', startExam);
+  $('setFullBtn').addEventListener('click', () => setFullSubjectRange(true));
   $('resumeBtn').addEventListener('click', resumeExam);
   $('discardBtn').addEventListener('click', discardSaved);
   $('clearBtn').addEventListener('click', clearAllData);
