@@ -18,7 +18,7 @@ body{margin:0;background:var(--bg);font-family:ui-rounded,system-ui,-apple-syste
 h1{margin:10px 0 6px;font-size:28px;letter-spacing:.04em}
 h2{margin:0 0 10px}
 .mini{color:var(--muted);font-size:13px;line-height:1.45}
-.optionsGrid{display:grid;grid-template-columns:1.2fr .7fr .7fr 1fr;gap:12px;align-items:end}
+.optionsGrid{display:grid;grid-template-columns:1.2fr .7fr .7fr 1fr 1.3fr;gap:12px;align-items:end}
 label{font-weight:900;font-size:14px}
 select,input{width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;background:#fff;font:inherit;min-height:46px}
 .btn{border:1px solid var(--line);border-radius:999px;background:#fff;padding:11px 15px;font-weight:900;cursor:pointer;text-decoration:none;color:var(--text);display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px}
@@ -77,7 +77,7 @@ select,input{width:100%;padding:12px;border:1px solid var(--line);border-radius:
   <section class="hero">
     <a class="btn" href="../index.html">← Main Reviewer</a>
     <h1>Subject / Range Mock Exam</h1>
-    <p class="mini">Range Only Mode: pili ka ng subject at Q range. Auto-detect ang max Q ng subject. Walang item count. Walang timer.</p>
+    <p class="mini">Range Only Mode: pili ka ng subject at Q range. Auto-detect ang max Q ng subject. May Board-valid / Complete review mode. Walang item count. Walang timer.</p>
   </section>
 
   <section class="panel" id="setup">
@@ -95,6 +95,12 @@ select,input{width:100%;padding:12px;border:1px solid var(--line);border-radius:
         <select id="orderMode">
           <option value="random">Random from range</option>
           <option value="sequential">Sequential from range</option>
+        </select>
+      </label>
+      <label>Visual cards
+        <select id="visualModeSelect">
+          <option value="board">Board-valid: skip missing-image identify</option>
+          <option value="complete">Complete review: include all 600 cards</option>
         </select>
       </label>
     </div>
@@ -278,7 +284,7 @@ async function loadCards(){
   }));
 
   allCardsRaw = chunks;
-  allCards = chunks.filter(card => !isMissingVisualIdentify(card));
+  allCards = chunks;
 
   setFullSubjectRange(true);
   updateRangeInfo();
@@ -296,7 +302,8 @@ function subjectRawCards(){
 
 function subjectUsableCards(){
   const subject = selectedSubject();
-  return allCards.filter(card => card.sourceName === subject);
+  const includeAll = $('visualModeSelect') && $('visualModeSelect').value === 'complete';
+  return allCards.filter(card => card.sourceName === subject && (includeAll || !isMissingVisualIdentify(card)));
 }
 
 function subjectMinMax(){
@@ -306,14 +313,14 @@ function subjectMinMax(){
   const nums = cards.map((card, index) => displayNumber(card, index)).filter(Number.isFinite);
   const min = Math.min(...nums);
   const max = Math.max(...nums);
-  const usable = subjectUsableCards();
+  const boardUsable = cards.filter(card => !isMissingVisualIdentify(card));
 
   return {
     min,
     max,
     totalRaw: cards.length,
-    totalUsable: usable.length,
-    skipped: cards.length - usable.length
+    totalUsable: boardUsable.length,
+    skipped: cards.length - boardUsable.length
   };
 }
 
@@ -335,11 +342,13 @@ function rangeValues(){
 function subjectRangePool(){
   const subject = selectedSubject();
   const {start, end} = rangeValues();
+  const includeAll = $('visualModeSelect') && $('visualModeSelect').value === 'complete';
 
   return allCards
     .filter((card, index) => {
       const number = displayNumber(card, index);
-      return card.sourceName === subject && number >= start && number <= end;
+      const visualOK = includeAll || !isMissingVisualIdentify(card);
+      return card.sourceName === subject && visualOK && number >= start && number <= end;
     })
     .sort((a,b) => displayNumber(a,0) - displayNumber(b,0));
 }
@@ -349,19 +358,23 @@ function updateRangeInfo(){
   const pool = subjectRangePool();
   const {start, end} = rangeValues();
   const order = $('orderMode').value === 'random' ? 'Question order: random' : 'Question order: sequential';
+  const completeMode = $('visualModeSelect') && $('visualModeSelect').value === 'complete';
+  const modeLabel = completeMode ? 'Complete review: includes missing-image identify cards' : 'Board-valid: skips missing-image identify cards';
 
   $('rangeInfo').innerHTML =
     `<span class="subjectBadge good">${esc(selectedSubject())}</span>` +
     `<span class="subjectBadge">Subject total: ${stats.totalRaw}</span>` +
     `<span class="subjectBadge">Subject max Q: ${stats.max}</span>` +
     `<span class="subjectBadge">Selected range: Q${start}–Q${end}</span>` +
-    `<span class="subjectBadge good">${pool.length} usable in selected range</span>` +
+    `<span class="subjectBadge good">${pool.length} questions in selected range</span>` +
     `<span class="subjectBadge">${order}</span>` +
     `<span class="subjectBadge">No timer</span>` +
     `<span class="subjectBadge">Choices shuffled</span>` +
-    (stats.skipped ? `<span class="subjectBadge warn">${stats.skipped} image-missing identify skipped</span>` : '') +
+    `<span class="subjectBadge ${completeMode?'warn':'good'}">${modeLabel}</span>` +
+    (stats.skipped ? `<span class="subjectBadge warn">${stats.skipped} missing-image identify in subject</span>` : '') +
     `<br>` +
-    (pool.length ? `Exam will use all ${pool.length} usable questions in this selected range.` : 'No usable cards in this selected subject/range.') +
+    (pool.length ? `Exam will use all ${pool.length} questions allowed by this mode and range.` : 'No cards in this selected subject/range.') +
+    (completeMode ? '<br><strong>Note:</strong> Some identify questions may show without image. Use this only for complete counter-check/review, not board-valid simulation.' : '') +
     (loadedWarnings.length ? '<br>' + loadedWarnings.map(esc).join('<br>') : '');
 }
 
@@ -408,6 +421,7 @@ function startExam(){
     start,
     end,
     order: $('orderMode').value,
+    visualMode: $('visualModeSelect').value,
     startedAt: Date.now(),
     preparedExam: exam
   };
@@ -486,7 +500,7 @@ function renderQuestion(){
   const question = exam[current];
 
   $('progressText').textContent = `Question ${current+1} of ${exam.length}`;
-  $('sourceText').textContent = `${attemptMeta.subject} · Q${attemptMeta.start}–Q${attemptMeta.end} · No timer`;
+  $('sourceText').textContent = `${attemptMeta.subject} · Q${attemptMeta.start}–Q${attemptMeta.end} · ${attemptMeta.visualMode==='complete'?'Complete review':'Board-valid'} · No timer`;
   $('qid').textContent = question.displayId;
   $('qcat').textContent = question.category;
   $('questionText').textContent = question.question;
@@ -510,14 +524,20 @@ function renderQuestion(){
 function renderVisual(question){
   const box = $('visualBox');
   const url = question.questionImage || question.image || question.visualUrl || '';
-  if(!url){
-    box.className = 'visualBox';
-    box.innerHTML = '';
+  if(url){
+    box.className = 'visualBox show';
+    box.innerHTML = `<img src="${esc(url)}" alt="Question visual">`;
     return;
   }
 
-  box.className = 'visualBox show';
-  box.innerHTML = `<img src="${esc(url)}" alt="Question visual">`;
+  if(isMissingVisualIdentify(question)){
+    box.className = 'visualBox show';
+    box.innerHTML = `<strong>Image missing for this identify card.</strong><br><span class="mini">Included because Complete Range Review Mode is on. This item is not board-valid until an actual image is added.</span>`;
+    return;
+  }
+
+  box.className = 'visualBox';
+  box.innerHTML = '';
 }
 
 function chooseAnswer(index){
@@ -693,6 +713,7 @@ function init(){
   });
   $('rangeEnd').addEventListener('change', updateRangeInfo);
   $('orderMode').addEventListener('change', updateRangeInfo);
+  $('visualModeSelect').addEventListener('change', updateRangeInfo);
 
   $('startBtn').addEventListener('click', startExam);
   $('setFullBtn').addEventListener('click', () => setFullSubjectRange(true));
