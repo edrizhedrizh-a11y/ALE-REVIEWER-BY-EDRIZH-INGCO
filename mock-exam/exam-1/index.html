@@ -65,12 +65,11 @@ body.markupFullscreen .sheet,body.markupFullscreen .hero,body.markupFullscreen #
 .reviewSearch{min-height:42px;border:1px solid var(--line);border-radius:999px;padding:8px 12px;min-width:240px;font:inherit}
 
 
-.sameSetBox{margin-top:12px;border:1px dashed var(--line);border-radius:16px;background:#f8fff9;padding:14px}
-.sameSetGrid{display:grid;grid-template-columns:.8fr 1.1fr 1.2fr;gap:10px;align-items:end}
-.codeBox{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}.sameSetBox input,.sameSetBox select{min-height:44px;width:100%;font:inherit}
-.codeText{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#061a38;color:#fff;border-radius:12px;padding:10px 12px;font-weight:1000;letter-spacing:.04em}
-.sameSetNote{font-size:12px;color:#40506a;line-height:1.4;margin-top:8px}
-@media(max-width:860px){.sameSetGrid{grid-template-columns:1fr}}
+.seedBox{margin-top:10px;padding:12px;border:1px solid var(--line);border-radius:16px;background:#f7fbff;color:#263853}
+.seedBox code{background:#fff;border:1px solid var(--line);border-radius:8px;padding:2px 6px}
+.seedPreview{margin-top:8px;display:grid;gap:6px}
+.seedPreview div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:7px 10px;font-size:13px}
+.lockedNotice{border:1px solid #b7dfc8;background:#f0fff7;color:#0c3924;border-radius:14px;padding:10px;margin-top:8px}
 
 @media(max-width:860px){
   .markupToolbar{display:block}
@@ -98,21 +97,13 @@ body.markupFullscreen .sheet,body.markupFullscreen .hero,body.markupFullscreen #
 .choiceAudit .chosen{outline:2px solid #6ea8fe}.choiceAudit .correctChoice{background:#f0fff7;border-color:#b7dfc8}
 .reviewSearch{min-height:42px;border:1px solid var(--line);border-radius:999px;padding:8px 12px;min-width:240px;font:inherit}
 
-
-.sameSetBox{margin-top:12px;border:1px dashed var(--line);border-radius:16px;background:#f8fff9;padding:14px}
-.sameSetGrid{display:grid;grid-template-columns:.8fr 1.1fr 1.2fr;gap:10px;align-items:end}
-.codeBox{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}.sameSetBox input,.sameSetBox select{min-height:44px;width:100%;font:inherit}
-.codeText{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#061a38;color:#fff;border-radius:12px;padding:10px 12px;font-weight:1000;letter-spacing:.04em}
-.sameSetNote{font-size:12px;color:#40506a;line-height:1.4;margin-top:8px}
-@media(max-width:860px){.sameSetGrid{grid-template-columns:1fr}}
-
 @media(max-width:860px){body{padding:14px}.hero{padding:20px}h1{font-size:24px}.setupGrid,.scoreBox{grid-template-columns:1fr}.question{font-size:17px}}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header class="hero">
-  <h1>Exam 1</h1>
+  <div class="mini"><strong>v10 Same A01 Mock Exam</strong></div><h1>Exam 1</h1>
   <p class="subtitle">History, Theory, Planning & Architectural Practice · Official: 100 items · 5 hours · Weight 30%</p>
   <div class="topActions"><a class="btn" href="../">← Mock Exam Dashboard</a><a class="btn" href="../../">Main Reviewer</a></div>
 </header>
@@ -122,33 +113,7 @@ body.markupFullscreen .sheet,body.markupFullscreen .hero,body.markupFullscreen #
     <div><label for="modeSelect">Timer mode</label><select id="modeSelect"><option value="board">Board Mode — official pace</option><option value="pressure">Pressure Mode — 20% faster</option><option value="sprint">Sprint Mode — 50% faster</option><option value="none">No Timer Mode</option></select></div>
     <div><label for="layoutSelect">Layout</label><select id="layoutSelect"><option value="auto">Auto layout</option><option value="split">PRC Split View</option><option value="compact">Compact Mobile</option></select></div>
   </div>
-  
-<div class="sameSetBox">
-  <strong>Class Same Set Exam Code</strong>
-  <div class="sameSetGrid">
-    <label>Exam version
-      <select id="sameSetVersion"><option value="A01">A01</option><option value="A02">A02</option><option value="A03">A03</option><option value="A04">A04</option><option value="A05">A05</option><option value="A06">A06</option><option value="A07">A07</option><option value="A08">A08</option><option value="A09">A09</option><option value="A10">A10</option><option value="A11">A11</option><option value="A12">A12</option><option value="A13">A13</option><option value="A14">A14</option><option value="A15">A15</option><option value="A16">A16</option><option value="A17">A17</option><option value="A18">A18</option><option value="A19">A19</option><option value="A20">A20</option><option value="A21">A21</option><option value="A22">A22</option><option value="A23">A23</option><option value="A24">A24</option><option value="A25">A25</option><option value="A26">A26</option><option value="A27">A27</option><option value="A28">A28</option><option value="A29">A29</option><option value="A30">A30</option><option value="A31">A31</option><option value="A32">A32</option><option value="A33">A33</option><option value="A34">A34</option><option value="A35">A35</option><option value="A36">A36</option><option value="A37">A37</option><option value="A38">A38</option><option value="A39">A39</option><option value="A40">A40</option><option value="A41">A41</option><option value="A42">A42</option><option value="A43">A43</option><option value="A44">A44</option><option value="A45">A45</option><option value="A46">A46</option><option value="A47">A47</option><option value="A48">A48</option><option value="A49">A49</option><option value="A50">A50</option></select>
-    </label>
-    <label>Enter / share code
-      <input id="sameSetCodeInput" type="text" value="EX1-010-A01" placeholder="EX1-100-A01">
-    </label>
-    <div>
-      <span class="mini">Generated code</span>
-      <div class="codeBox">
-        <span class="codeText" id="sameSetGeneratedCode">EX1-010-A01</span>
-        <button class="btn" type="button" onclick="copySameSetCode()">Copy Code</button>
-      </div>
-    </div>
-  </div>
-  <div class="topActions">
-    <button class="btn primary" type="button" onclick="startSameSetExam()">Start Same Set Exam</button>
-  </div>
-  <div class="sameSetNote">
-    Same code = same question set, same question order, and same choices order. Use A01–A50 for class combinations.
-  </div>
-</div>
-
-<div class="topActions"><button class="btn primary" id="startBtn">Start New Random Exam</button><button class="btn" id="historyBtn">View Exam History</button><button class="btn" onclick="showMistakeBank()">Mistake Bank</button></div><div class="resumeBox" id="resumeBox"></div><div class="dataTools"><strong>Backup / Data</strong><div class="topActions"><button class="btn" onclick="exportAllExamData()">Export Backup JSON</button><label class="btn">Import Backup JSON <input class="fileInput" type="file" accept="application/json" style="display:none" onchange="importExamBackup(this)"></label><button class="btn danger" onclick="clearAllExamData()">Clear All Exam Data</button></div></div>
+  <div class="topActions"><button class="btn primary" id="startBtn">Start New Random Exam</button><button class="btn" id="historyBtn">View Exam History</button><button class="btn" onclick="showMistakeBank()">Mistake Bank</button></div><div class="resumeBox" id="resumeBox"></div><div class="dataTools"><strong>Backup / Data</strong><div class="topActions"><button class="btn" onclick="exportAllExamData()">Export Backup JSON</button><label class="btn">Import Backup JSON <input class="fileInput" type="file" accept="application/json" style="display:none" onchange="importExamBackup(this)"></label><button class="btn danger" onclick="clearAllExamData()">Clear All Exam Data</button></div></div>
   <p class="mini">Default: new random set every Start Exam. Fixed set only when you choose Retake Same Exam after submit.</p>
   <div class="warning" id="warning"></div>
   
@@ -236,7 +201,7 @@ function fmtTime(sec){if(!isFinite(sec)||sec<0)sec=0;sec=Math.floor(sec);const h
 function applyLayout(){const v=$('layoutSelect')?.value||'auto';const compact= v==='compact' || (v==='auto' && window.innerWidth<861);document.body.classList.toggle('layout-compact',compact);document.body.classList.toggle('layout-split',!compact)} window.addEventListener('resize',applyLayout);
 function readHistory(){try{return JSON.parse(localStorage.getItem(HISTORY_KEY)||'[]')}catch(e){return[]}} function saveHistory(row){const rows=readHistory();rows.push(row);localStorage.setItem(HISTORY_KEY,JSON.stringify(rows.slice(-80)))}
 function attemptStorageKey(){return 'aleMockLastAttempt_'+String(CONFIG.shortTitle||'exam').replace(/\W+/g,'_')} function cardKey(card){return String(card.sourceName||card.category||'Unknown')+'::'+String(card.uid||card.displayId||card.question).slice(0,180)}
-function saveCurrentAttempt(status,extra){try{const data=Object.assign({attemptId:Date.now()+'-'+Math.random().toString(36).slice(2),date:new Date().toLocaleString(),sameSetCode:activeSameSetCode||'',status:status||'started',examType:CONFIG.shortTitle,sameSetCode:activeSameSetCode||'',itemCount:exam.length,timerMode:$('modeSelect')?.value||'',questionIds:exam.map(cardKey)},extra||{});localStorage.setItem(attemptStorageKey(),JSON.stringify(data));return data}catch(e){return null}}
+function saveCurrentAttempt(status,extra){try{const data=Object.assign({attemptId:Date.now()+'-'+Math.random().toString(36).slice(2),date:new Date().toLocaleString(),status:status||'started',examType:CONFIG.shortTitle,itemCount:exam.length,timerMode:$('modeSelect')?.value||'',questionIds:exam.map(cardKey)},extra||{});localStorage.setItem(attemptStorageKey(),JSON.stringify(data));return data}catch(e){return null}}
 function readLastAttempt(){try{return JSON.parse(localStorage.getItem(attemptStorageKey())||'null')}catch(e){return null}} function buildExamFromIds(ids,fallbackCount){const map=new Map(allCards.map(c=>[cardKey(c),c]));const picked=(ids||[]).map(id=>map.get(id)).filter(Boolean);if(!picked.length)return null;return picked.slice(0,fallbackCount||picked.length).map(prepQuestion)}
 function retakeSameExam(){const last=readLastAttempt();if(!last?.questionIds?.length){alert('No saved exam attempt found yet.');return} pendingRetakeIds=last.questionIds.slice(); $('setup').style.display='block'; $('results').style.display='none'; $('examShell').style.display='none'; startExam()}
 function startNewRandomExam(){pendingRetakeIds=null; $('setup').style.display='block'; $('results').style.display='none'; $('examShell').style.display='none'; startExam()}
@@ -272,7 +237,13 @@ function filterMissingVisualIdentifyCards(cards){
 
 async function loadCards(){loadedWarnings=[];const chunks=await Promise.all(CONFIG.sources.map(async src=>{try{const res=await fetch(src.path+'?v='+Date.now(),{cache:'no-store'});if(!res.ok)throw new Error(res.status);return normalize(await res.json(),src.name)}catch(e){loadedWarnings.push(src.name);return[]}}));allCards=filterMissingVisualIdentifyCards(chunks.flat());if(loadedWarnings.length){$('warning').style.display='block';$('warning').textContent='Some subject sources are not available yet: '+loadedWarnings.join(', ')}return allCards}
 function setupOptions(){$('countSelect').innerHTML=CONFIG.options.map(o=>`<option value="${o.items}">${o.items} items — ${o.label}</option>`).join('')} function calcLimit(items,mode){if(mode==='none')return 0;let s=items*CONFIG.paceMinutes*60;if(mode==='pressure')s*=.8;if(mode==='sprint')s*=.5;return Math.round(s)}
-function prepQuestion(c){const choices=c.choices.map(ch=>({text:ch.text,correct:ch.text.trim()===c.correctText.trim()}));if(!choices.some(ch=>ch.correct))choices.push({text:c.correctText,correct:true});const randomized=shuffle(choices);return{...c,randomizedChoices:randomized,correctIndex:randomized.findIndex(ch=>ch.correct)}}
+function prepQuestion(c){
+  let choices=c.choices.map(ch=>({text:ch.text,correct:ch.text.trim()===c.correctText.trim()}));
+  if(!choices.some(ch=>ch.correct))choices.push({text:c.correctText,correct:true});
+  choices=stableSortChoices(choices);
+  const randomized=sameA01Mode()?seededShuffle(choices,fixedSeedText('choices-'+stableCardKey(c,0))):shuffle(choices);
+  return{...c,randomizedChoices:randomized,correctIndex:randomized.findIndex(ch=>ch.correct)}
+}
 function directImageCandidate(value){if(!value)return'';const s=String(value).trim();if(/^(https?:\/\/|data:image\/|assets\/|\.\/assets\/|\.\.\/)/i.test(s)&&/\.(png|jpe?g|webp|gif|svg)(\?.*)?$/i.test(s))return s;return''} function getArrayField(card,name){const v=card[name];if(Array.isArray(v))return v.filter(Boolean).map(String);if(typeof v==='string'&&v.trim())return[v.trim()];return[]} function safeVisualQueries(card){const q=[];['questionImageQuery','imageQuery','questionImageQueries','questionImageLayoutQueries','visualQuery'].forEach(k=>q.push(...getArrayField(card,k)));if(card.visual&&typeof card.visual==='string')q.push(card.visual);return[...new Set(q.filter(x=>x&&!/answer|correct/i.test(x)))]} function getQuestionVisual(card){for(const v of [card.questionImage,card.image,card.visualUrl,card.visual]){const hit=directImageCandidate(v);if(hit)return{type:'image',url:hit,note:'Question visual shown for identification. Answer labels are hidden until submit.'}}const q=safeVisualQueries(card)[0];return q?{type:'query',query:q,note:'No safe embedded image is available before submit.'}:null} function imageSearchUrl(q){return'https://www.google.com/search?tbm=isch&q='+encodeURIComponent(q)} function wikiSearchUrl(q){return'https://commons.wikimedia.org/w/index.php?search='+encodeURIComponent(q)+'&title=Special:MediaSearch&type=image'} function renderSafeVisual(card){
   const box=$('visualBox');
   const v=getQuestionVisual(card);
@@ -289,114 +260,104 @@ function answerVisualHtml(card){for(const v of [card.answerImage,card.questionIm
 
 
 
-// ===== v10 Same Set Exam Code A01-A50 =====
-let sameSetMode = false;
-let activeSameSetCode = '';
-
-function seedStringToUint(str){
+// ===== v10 Main Mock Exam: Same A01 / Fixed Seed Mode =====
+function stableText(v){
+  return String(v==null?'':v).trim().replace(/\s+/g,' ').toUpperCase();
+}
+function stableQuestionNumber(card, fallbackIndex){
+  const raw = String(card.displayId || card.id || card.uid || '').trim();
+  const m = raw.match(/(\d+)/);
+  return m ? Number(m[1]) : (fallbackIndex + 1);
+}
+function stableCardKey(card, fallbackIndex=0){
+  const n = String(stableQuestionNumber(card, fallbackIndex)).padStart(5,'0');
+  return [
+    stableText(card.sourceName || ''),
+    stableText(card.category || ''),
+    n,
+    stableText(card.uid || ''),
+    stableText(card.id || ''),
+    stableText(card.displayId || ''),
+    stableText(card.question || '').slice(0,180)
+  ].join('|');
+}
+function stableChoiceKey(choice){
+  return stableText(choice && choice.text ? choice.text : choice);
+}
+function stableSortCards(cards){
+  return cards.slice().sort((a,b)=>stableCardKey(a,0).localeCompare(stableCardKey(b,0)));
+}
+function stableSortChoices(choices){
+  return choices.slice().sort((a,b)=>stableChoiceKey(a).localeCompare(stableChoiceKey(b)));
+}
+function hashStringToSeed(str){
   let h = 2166136261 >>> 0;
+  str = stableText(str);
   for(let i=0;i<str.length;i++){
     h ^= str.charCodeAt(i);
-    h = Math.imul(h, 16777619) >>> 0;
+    h = Math.imul(h, 16777619);
   }
   return h >>> 0;
 }
-function seededRng(seedText){
-  let a = seedStringToUint(seedText) || 123456789;
+function seededRandomFactory(seed){
+  let t = seed >>> 0;
   return function(){
-    a += 0x6D2B79F5;
-    let t = a;
-    t = Math.imul(t ^ (t >>> 15), t | 1);
-    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    t += 0x6D2B79F5;
+    let r = Math.imul(t ^ (t >>> 15), 1 | t);
+    r ^= r + Math.imul(r ^ (r >>> 7), 61 | r);
+    return ((r ^ (r >>> 14)) >>> 0) / 4294967296;
   };
 }
 function seededShuffle(arr, seedText){
-  const rng = seededRng(seedText);
-  const a = [...arr];
+  const a = arr.slice();
+  const rand = seededRandomFactory(hashStringToSeed(seedText));
   for(let i=a.length-1;i>0;i--){
-    const j = Math.floor(rng() * (i+1));
-    [a[i], a[j]] = [a[j], a[i]];
+    const j = Math.floor(rand()*(i+1));
+    [a[i],a[j]] = [a[j],a[i]];
   }
   return a;
 }
-function sameSetExamPrefix(){
-  const title = String(CONFIG.shortTitle || '').toLowerCase();
-  if(title.includes('exam 1')) return 'EX1';
-  if(title.includes('exam 2')) return 'EX2';
-  if(title.includes('exam 3')) return 'EX3';
-  return 'EX';
+function cleanExamCode(){
+  return stableText(document.getElementById('examCodeInput')?.value || '');
 }
-function padItems(n){return String(n).padStart(3,'0')}
-function versionOptionsHtml(){
-  let out = '';
-  for(let i=1;i<=50;i++){
-    const v = 'A' + String(i).padStart(2,'0');
-    out += `<option value="${v}">${v}</option>`;
+function sameA01Mode(){
+  return (document.getElementById('groupMode')?.value || 'same') === 'same';
+}
+function fixedSeedText(extra=''){
+  const count = stableText(document.getElementById('countSelect')?.value || '');
+  const mode = stableText(document.getElementById('modeSelect')?.value || '');
+  const code = cleanExamCode() || `${stableText(CONFIG.shortTitle)}-${count}`;
+  return `ALE-MOCK-EXAM-V10|${stableText(CONFIG.shortTitle)}|ITEMS${count}|MODE${mode}|CODE:${code}|${stableText(extra)}`;
+}
+function examFingerprint(){
+  return hashStringToSeed(fixedSeedText('questions')).toString(16).toUpperCase().padStart(8,'0');
+}
+function buildLockedMockPool(){
+  let pool = stableSortCards(allCards);
+  pool = sameA01Mode() ? seededShuffle(pool, fixedSeedText('questions')) : shuffle(pool);
+  return pool;
+}
+function updateSameExamPreview(){
+  const box = document.getElementById('sameExamPreview');
+  if(!box) return;
+  if(!allCards || !allCards.length){
+    box.innerHTML = sameA01Mode()
+      ? `<div class="lockedNotice"><strong>Same A01 mode ON.</strong> Cards will preview after loading.</div>`
+      : `<div class="seedBox"><strong>Personal random mode ON.</strong> A01 can be different per device.</div>`;
+    return;
   }
-  return out;
-}
-function currentSameSetCode(){
-  const count = Number($('countSelect')?.value || 0);
-  const version = $('sameSetVersion') ? $('sameSetVersion').value : 'A01';
-  return `${sameSetExamPrefix()}-${padItems(count)}-${version}`;
-}
-function updateSameSetCode(){
-  const code = currentSameSetCode();
-  const codeEl = $('sameSetGeneratedCode');
-  const inputEl = $('sameSetCodeInput');
-  if(codeEl) codeEl.textContent = code;
-  if(inputEl && !inputEl.dataset.userEdited) inputEl.value = code;
-}
-function parseSameSetCode(raw){
-  const code = String(raw || '').trim().toUpperCase();
-  const m = code.match(/^(EX[123])-(\d{3})-(A(?:0[1-9]|[1-4][0-9]|50))$/);
-  if(!m) return null;
-  return {prefix:m[1], count:Number(m[2]), version:m[3], code};
-}
-function applySameSetCodeFromInput(){
-  const parsed = parseSameSetCode($('sameSetCodeInput')?.value);
-  if(!parsed){
-    alert('Invalid same set code. Example: EX1-100-A01');
-    return false;
-  }
-  const expected = sameSetExamPrefix();
-  if(parsed.prefix !== expected){
-    alert(`This code is for ${parsed.prefix}, but this page is ${expected}.`);
-    return false;
-  }
-  const countSelect = $('countSelect');
-  if(countSelect){
-    const values = [...countSelect.options].map(o => Number(o.value));
-    if(!values.includes(parsed.count)){
-      alert(`Item count ${parsed.count} is not available on this exam page.`);
-      return false;
-    }
-    countSelect.value = String(parsed.count);
-  }
-  if($('sameSetVersion')) $('sameSetVersion').value = parsed.version;
-  updateSameSetCode();
-  return true;
-}
-function copySameSetCode(){
-  const code = currentSameSetCode();
-  if(navigator.clipboard && navigator.clipboard.writeText){
-    navigator.clipboard.writeText(code).then(()=>alert('Copied: '+code)).catch(()=>prompt('Copy exam code:', code));
-  }else{
-    prompt('Copy exam code:', code);
-  }
-}
-function startSameSetExam(){
-  if(!applySameSetCodeFromInput()) return;
-  sameSetMode = true;
-  activeSameSetCode = currentSameSetCode();
-  startExam();
-}
-function prepareQuestionWithSeed(q, seedText){
-  const prepared = prepareQuestion(q);
-  prepared.randomizedChoices = seededShuffle(prepared.randomizedChoices, seedText + '|CHOICES|' + cardKey(q));
-  prepared.correctIndex = prepared.randomizedChoices.findIndex(ch => ch.correct);
-  return prepared;
+  const count = Number(document.getElementById('countSelect')?.value || 0);
+  const pool = buildLockedMockPool();
+  const first = pool.slice(0, Math.min(5, count || 5));
+  const code = cleanExamCode() || 'AUTO-CODE';
+  const modeLabel = sameA01Mode() ? 'LOCKED GROUP MOCK EXAM' : 'PERSONAL RANDOM MOCK EXAM';
+  box.innerHTML = `<div class="seedBox">
+    <strong>${modeLabel}</strong><br>
+    Exam Code: <code>${escapeHtml(code)}</code><br>
+    Exam Fingerprint: <code>${examFingerprint()}</code><br>
+    <span class="mini">Phone at PC dapat pareho ang fingerprint at A01–A05 preview bago mag-start.</span>
+    <div class="seedPreview">${first.map((c,i)=>`<div><strong>A${String(i+1).padStart(2,'0')}</strong> = ${escapeHtml(c.sourceName||c.category||'')} · ${escapeHtml(c.displayId||c.id||c.uid||'')} · ${escapeHtml(String(c.question||'').slice(0,90))}</div>`).join('')}</div>
+  </div>`;
 }
 
 // ===== v9 full exam review =====
@@ -946,52 +907,17 @@ $('prevBtn').onclick=()=>{if(current>0){current--;renderQuestion()}};$('nextBtn'
 function breakdown(){const map={};exam.forEach((q,i)=>{const k=q.category||q.sourceName||'Unknown';if(!map[k])map[k]={total:0,correct:0};map[k].total++;if(answers[i]!=null&&q.randomizedChoices[answers[i]]?.correct)map[k].correct++});return map}
 function confidenceBreakdown(){const out={sure:{total:0,correct:0},notSure:{total:0,correct:0},guess:{total:0,correct:0},noIdea:{total:0,correct:0},unmarked:{total:0,correct:0}};exam.forEach((q,i)=>{const k=marks[i]||'unmarked';out[k].total++;if(answers[i]!=null&&q.randomizedChoices[answers[i]]?.correct)out[k].correct++});return out}
 function confirmSummary(){const c=counts();const remain=timeLimit?fmtTime(timeLimit-Math.floor((Date.now()-startedAt)/1000)):'No timer';return `Submit final exam?\n\nAnswered: ${c.answered}\nUnanswered: ${c.unanswered}\nSure: ${c.sure}\nNot Sure: ${c.notSure}\nGuess: ${c.guess}\nNo Idea: ${c.noIdea}\nTime remaining: ${remain}`}
-function submitExam(auto){if(submitted)return;if(!auto&&!confirm(confirmSummary()))return;submitted=true;clearInterval(timerInt);const used=Math.floor((Date.now()-startedAt)/1000);const correct=exam.reduce((n,q,i)=>n+(answers[i]!=null&&q.randomizedChoices[answers[i]]?.correct?1:0),0);const pct=exam.length?correct/exam.length*100:0,pass=pct>=75;const c=counts(),bd=breakdown(),cb=confidenceBreakdown(),ac=answerChangeStats();const weakest=Object.entries(bd).sort((a,b)=>(a[1].correct/a[1].total)-(b[1].correct/b[1].total))[0];stopAutosave();saveMistakesToBank();clearActiveProgress();saveCurrentAttempt('submitted',{score:`${correct}/${exam.length}`,percentage:pct,passFail:pass?'PASS':'FAIL',timeUsedSeconds:used,subjectBreakdown:bd,confidenceBreakdown:cb,marks,answers,unanswered:c.unanswered,marked:c.marked});saveHistory({date:new Date().toLocaleString(),examType:CONFIG.shortTitle,itemCount:exam.length,score:`${correct}/${exam.length}`,percentage:pct,passFail:pass?'PASS':'FAIL',timeUsedSeconds:used,subjectBreakdown:bd,confidenceBreakdown:cb,questionIds:exam.map(cardKey),unanswered:c.unanswered,marked:c.marked});$('examShell').style.display='none';const wrongs=exam.map((q,i)=>({q,i})).filter(x=>answers[x.i]===null||!x.q.randomizedChoices[answers[x.i]]?.correct);const marked=exam.map((q,i)=>({q,i})).filter(x=>marks[x.i]);$('results').style.display='block';$('results').innerHTML=`<h2>Results — ${CONFIG.shortTitle}</h2>${activeSameSetCode?`<p class="warning" style="display:block"><strong>Same Set Code:</strong> ${escapeHtml(activeSameSetCode)}</p>`:''}<div class="scoreBox"><div class="stat">Raw score<b>${correct}/${exam.length}</b></div><div class="stat">Percentage<b>${pct.toFixed(1)}%</b></div><div class="stat">Status<b class="${pass?'pass':'fail'}">${pass?'PASS':'FAIL'}</b></div><div class="stat">Time used<b>${fmtTime(used)}</b></div><div class="stat">Unanswered<b>${c.unanswered}</b></div><div class="stat">Marked<b>${c.marked}</b></div><div class="stat">Weakest subject<b>${weakest?escapeHtml(weakest[0]):'—'}</b></div><div class="stat">Passing mark<b>75%</b></div><div class="stat">Answer changes<b>${ac.total}</b><span class="mini">Improved ${ac.improved} · Hurt ${ac.hurt} · Neutral ${ac.neutral}</span></div></div><div class="topActions"><button class="btn primary" onclick="startNewRandomExam()">Start New Random Exam</button><button class="btn" onclick="retakeSameExam()">Retake Same Exam</button><button class="btn" onclick="document.getElementById('wrongReview').scrollIntoView({behavior:'smooth'})">Review Wrong Answers</button><button class="btn primary" onclick="document.getElementById('fullReview').scrollIntoView({behavior:'smooth'})">Review Full Exam</button><button class="btn danger" onclick="clearAttemptNotes()">Clear Notes After Review</button><a class="btn" href="../">Mock Exam Dashboard</a></div><h3>Performance by Confidence Mark</h3>${confTable(cb)}<h3>Subject Breakdown</h3>${subjectTable(bd)}<h3>Marked Questions</h3>${marked.length?marked.map(({q,i})=>smallReview(q,i,false)).join(''):'<p>No marked questions.</p>'}<h3 id="wrongReview">Wrong and Unanswered Review</h3>${wrongs.length?wrongs.map(({q,i})=>smallReview(q,i,true)).join(''):'<p>No wrong answers.</p>'}<div id="fullReview"></div>`;renderFullExamReview();setTimeout(drawReviewCanvases, 120);window.scrollTo(0,0)}
+function submitExam(auto){if(submitted)return;if(!auto&&!confirm(confirmSummary()))return;submitted=true;clearInterval(timerInt);const used=Math.floor((Date.now()-startedAt)/1000);const correct=exam.reduce((n,q,i)=>n+(answers[i]!=null&&q.randomizedChoices[answers[i]]?.correct?1:0),0);const pct=exam.length?correct/exam.length*100:0,pass=pct>=75;const c=counts(),bd=breakdown(),cb=confidenceBreakdown(),ac=answerChangeStats();const weakest=Object.entries(bd).sort((a,b)=>(a[1].correct/a[1].total)-(b[1].correct/b[1].total))[0];stopAutosave();saveMistakesToBank();clearActiveProgress();saveCurrentAttempt('submitted',{score:`${correct}/${exam.length}`,percentage:pct,passFail:pass?'PASS':'FAIL',timeUsedSeconds:used,subjectBreakdown:bd,confidenceBreakdown:cb,marks,answers,unanswered:c.unanswered,marked:c.marked});saveHistory({date:new Date().toLocaleString(),examType:CONFIG.shortTitle,itemCount:exam.length,score:`${correct}/${exam.length}`,percentage:pct,passFail:pass?'PASS':'FAIL',timeUsedSeconds:used,subjectBreakdown:bd,confidenceBreakdown:cb,questionIds:exam.map(cardKey),unanswered:c.unanswered,marked:c.marked});$('examShell').style.display='none';const wrongs=exam.map((q,i)=>({q,i})).filter(x=>answers[x.i]===null||!x.q.randomizedChoices[answers[x.i]]?.correct);const marked=exam.map((q,i)=>({q,i})).filter(x=>marks[x.i]);$('results').style.display='block';$('results').innerHTML=`<h2>Results — ${CONFIG.shortTitle}</h2><div class="scoreBox"><div class="stat">Raw score<b>${correct}/${exam.length}</b></div><div class="stat">Percentage<b>${pct.toFixed(1)}%</b></div><div class="stat">Status<b class="${pass?'pass':'fail'}">${pass?'PASS':'FAIL'}</b></div><div class="stat">Time used<b>${fmtTime(used)}</b></div><div class="stat">Unanswered<b>${c.unanswered}</b></div><div class="stat">Marked<b>${c.marked}</b></div><div class="stat">Weakest subject<b>${weakest?escapeHtml(weakest[0]):'—'}</b></div><div class="stat">Passing mark<b>75%</b></div><div class="stat">Answer changes<b>${ac.total}</b><span class="mini">Improved ${ac.improved} · Hurt ${ac.hurt} · Neutral ${ac.neutral}</span></div></div><div class="topActions"><button class="btn primary" onclick="startNewRandomExam()">Start New Random Exam</button><button class="btn" onclick="retakeSameExam()">Retake Same Exam</button><button class="btn" onclick="document.getElementById('wrongReview').scrollIntoView({behavior:'smooth'})">Review Wrong Answers</button><button class="btn primary" onclick="document.getElementById('fullReview').scrollIntoView({behavior:'smooth'})">Review Full Exam</button><button class="btn danger" onclick="clearAttemptNotes()">Clear Notes After Review</button><a class="btn" href="../">Mock Exam Dashboard</a></div><h3>Performance by Confidence Mark</h3>${confTable(cb)}<h3>Subject Breakdown</h3>${subjectTable(bd)}<h3>Marked Questions</h3>${marked.length?marked.map(({q,i})=>smallReview(q,i,false)).join(''):'<p>No marked questions.</p>'}<h3 id="wrongReview">Wrong and Unanswered Review</h3>${wrongs.length?wrongs.map(({q,i})=>smallReview(q,i,true)).join(''):'<p>No wrong answers.</p>'}<div id="fullReview"></div>`;renderFullExamReview();setTimeout(drawReviewCanvases, 120);window.scrollTo(0,0)}
 function confTable(cb){return`<table><thead><tr><th>Mark</th><th>Correct</th><th>Total</th><th>%</th></tr></thead><tbody>${Object.entries(cb).map(([k,v])=>`<tr><td>${k==='unmarked'?'Unmarked':MARKS[k].sym+' '+MARKS[k].label}</td><td>${v.correct}</td><td>${v.total}</td><td>${v.total?(v.correct/v.total*100).toFixed(1):'0.0'}%</td></tr>`).join('')}</tbody></table>`}
 function subjectTable(bd){return`<table><thead><tr><th>Subject</th><th>Correct</th><th>Total</th><th>%</th></tr></thead><tbody>${Object.entries(bd).map(([k,v])=>`<tr><td>${escapeHtml(k)}</td><td>${v.correct}</td><td>${v.total}</td><td>${(v.correct/v.total*100).toFixed(1)}%</td></tr>`).join('')}</tbody></table>`}
 function smallReview(q,i,showExplain){const ua=answers[i]===null?'Unanswered':q.randomizedChoices[answers[i]]?.text;const ca=q.randomizedChoices[q.correctIndex]?.text||q.correctText;return`<div class="reviewItem"><h3>Q${i+1} · ${escapeHtml(q.category)} · ${escapeHtml(markLabel(marks[i]))}</h3><p><strong>Question:</strong> ${escapeHtml(q.question)}</p>${answerVisualHtml(q)}${annotationReviewHtml(q)}<p><strong>Your answer:</strong> ${escapeHtml(ua)}</p><p><strong>Correct answer:</strong> ${escapeHtml(ca)}</p><p><strong>Key memory:</strong> ${escapeHtml(q.keyMemory||'—')}</p><div class="explain"><strong>Explanation:</strong>\n${escapeHtml(q.explanation||'—')}</div></div>`}
 function renderHistory(){const rows=readHistory().filter(r=>r.examType===CONFIG.shortTitle).reverse();$('historyBox').innerHTML=rows.length?`<table><thead><tr><th>Date</th><th>Items</th><th>Score</th><th>%</th><th>Status</th><th>Time</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${r.date}</td><td>${r.itemCount}</td><td>${r.score}</td><td>${Number(r.percentage).toFixed(1)}%</td><td>${r.passFail}</td><td>${fmtTime(r.timeUsedSeconds)}</td></tr>`).join('')}</tbody></table>`:'<p class="mini">No history for this exam yet.</p>'}
-$('startBtn').onclick=function(){sameSetMode=false;activeSameSetCode='';startExam();};$('historyBtn').onclick=renderHistory;setupOptions();applyLayout();renderResumeBox();
-
-// ===== v11 Same Set UI hard fix =====
-function initializeSameSetControls(){
-  const version = document.getElementById('sameSetVersion');
-  const codeInput = document.getElementById('sameSetCodeInput');
-  const count = document.getElementById('countSelect');
-  const generated = document.getElementById('sameSetGeneratedCode');
-
-  if(!version || !codeInput || !count || !generated) return;
-
-  if(!version.options || version.options.length < 50){
-    let html = '';
-    for(let i=1;i<=50;i++){
-      const v = 'A' + String(i).padStart(2,'0');
-      html += `<option value="${v}">${v}</option>`;
-    }
-    version.innerHTML = html;
-  }
-
-  const refresh = () => {
-    if(typeof updateSameSetCode === 'function'){
-      codeInput.dataset.userEdited = '';
-      updateSameSetCode();
-    }else{
-      const prefix = (typeof sameSetExamPrefix === 'function') ? sameSetExamPrefix() : 'EX';
-      const c = String(Number(count.value || 0)).padStart(3,'0');
-      generated.textContent = `${prefix}-${c}-${version.value || 'A01'}`;
-      codeInput.value = generated.textContent;
-    }
-  };
-
-  version.addEventListener('change', refresh);
-  count.addEventListener('change', refresh);
-  codeInput.addEventListener('input', function(){ this.dataset.userEdited='1'; });
-
-  refresh();
-}
-setTimeout(initializeSameSetControls, 0);
-setTimeout(initializeSameSetControls, 250);
-
+$('startBtn').onclick=startExam;$('historyBtn').onclick=renderHistory;
+document.getElementById('examCodeInput')?.addEventListener('input',updateSameExamPreview);
+document.getElementById('groupMode')?.addEventListener('change',updateSameExamPreview);
+document.getElementById('countSelect')?.addEventListener('change',updateSameExamPreview);
+document.getElementById('modeSelect')?.addEventListener('change',updateSameExamPreview);
+setTimeout(updateSameExamPreview,150);setupOptions();applyLayout();renderResumeBox();
 </script>
 </body>
 </html>
