@@ -26,7 +26,7 @@
   .stat b{font-size:22px}.stat span{display:block;color:var(--muted);font-size:12px}
   .card{display:grid;grid-template-columns:1.05fr .95fr;gap:18px;background:var(--card);border:1px solid var(--line);border-radius:28px;padding:18px;box-shadow:0 12px 28px rgba(64,44,20,.08)}
   .photo{position:relative;border-radius:22px;overflow:hidden;background:#e8dccb;min-height:430px;display:flex;align-items:center;justify-content:center}
-  .photo img{width:100%;height:100%;object-fit:contain;display:block;background:#e8dccb}
+  .photo img{width:100%;height:100%;object-fit:cover;display:block}
   .badge{position:absolute;top:12px;left:12px;background:rgba(0,0,0,.62);color:white;border-radius:999px;padding:8px 11px;font-size:13px}
   .credit{position:absolute;bottom:8px;right:10px;background:rgba(255,255,255,.82);border-radius:999px;padding:5px 9px;font-size:11px;color:#3d3126}
   .qtop{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:8px}
@@ -85,7 +85,7 @@
     <div class="stat"><b id="flagged">0</b><span>Marked</span></div>
   </div>
   <section class="card" id="mainCard">
-    <div class="photo"><span class="badge" id="badge">H001</span><img id="img" alt="Architecture image"><span class="credit">Manual images: images/H001.jpg etc.</span></div>
+    <div class="photo"><span class="badge" id="badge">H001</span><img id="img" alt="Architecture image"><span class="credit">Auto-loads from Wikipedia/Commons</span></div>
     <div>
       <div class="qtop"><span class="pill" id="idpill"></span><span class="pill" id="erapill"></span><span class="pill" id="counter"></span></div>
       <div class="promptBox">
@@ -239,22 +239,49 @@ const els = Object.fromEntries(['search','era','status','toggleHide','shuffle','
 let view=[...CARDS], idx=0, hideName=false, answered=false;
 const state = JSON.parse(localStorage.getItem('ale_history_review_state')||'{}');
 function save(){localStorage.setItem('ale_history_review_state',JSON.stringify(state));}
-function wikiUrl(title){return `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`}
+function cleanTitle(v){return String(v||'').replace(/\s+/g,' ').trim();}
+function svgFallback(card,msg='Image unavailable'){return 'data:image/svg+xml;utf8,'+encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650"><rect width="100%" height="100%" fill="#e8dccb"/><text x="50%" y="42%" text-anchor="middle" font-family="Arial" font-size="38" font-weight="700" fill="#6d5a45">${msg}</text><text x="50%" y="53%" text-anchor="middle" font-family="Arial" font-size="30" fill="#6d5a45">${card.answer}</text><text x="50%" y="61%" text-anchor="middle" font-family="Arial" font-size="18" fill="#8b735d">Check internet / refresh page</text></svg>`)}
+async function fetchJson(url){const r=await fetch(url,{cache:'force-cache'}); if(!r.ok) throw new Error('fetch failed'); return await r.json();}
+async function exactWikiThumb(title){
+  const key=cleanTitle(title); if(!key) return null;
+  const url='https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&redirects=1&prop=pageimages&piprop=thumbnail&pithumbsize=1200&titles='+encodeURIComponent(key);
+  const data=await fetchJson(url); const pages=data&&data.query&&data.query.pages?Object.values(data.query.pages):[];
+  for(const p of pages){ if(p&&p.thumbnail&&p.thumbnail.source) return p.thumbnail.source; }
+  return null;
+}
+async function summaryWikiThumb(title){
+  const key=cleanTitle(title); if(!key) return null;
+  const data=await fetchJson('https://en.wikipedia.org/api/rest_v1/page/summary/'+encodeURIComponent(key));
+  return data&&data.thumbnail&&data.thumbnail.source?data.thumbnail.source:null;
+}
+async function searchWikiThumb(query){
+  const key=cleanTitle(query); if(!key) return null;
+  const url='https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&generator=search&gsrsearch='+encodeURIComponent(key)+'&gsrlimit=5&prop=pageimages&piprop=thumbnail&pithumbsize=1200';
+  const data=await fetchJson(url); const pages=data&&data.query&&data.query.pages?Object.values(data.query.pages):[];
+  pages.sort((a,b)=>(a.index||999)-(b.index||999));
+  for(const p of pages){ if(p&&p.thumbnail&&p.thumbnail.source) return p.thumbnail.source; }
+  return null;
+}
+async function commonsThumb(query){
+  const key=cleanTitle(query); if(!key) return null;
+  const url='https://commons.wikimedia.org/w/api.php?action=query&format=json&origin=*&generator=search&gsrnamespace=6&gsrsearch='+encodeURIComponent(key)+'&gsrlimit=6&prop=imageinfo&iiprop=url&iiurlwidth=1200';
+  const data=await fetchJson(url); const pages=data&&data.query&&data.query.pages?Object.values(data.query.pages):[];
+  pages.sort((a,b)=>(a.index||999)-(b.index||999));
+  for(const p of pages){ const info=p&&p.imageinfo&&p.imageinfo[0]?p.imageinfo[0]:null; if(info&&(info.thumburl||info.url)) return info.thumburl||info.url; }
+  return null;
+}
+async function getBestImage(card){
+  const queries=[card.page, card.answer, card.answer+' architecture'];
+  const tries=[summaryWikiThumb, exactWikiThumb, searchWikiThumb, commonsThumb];
+  for(const q of queries){ for(const fn of tries){ try{const u=await fn(q); if(u) return u;}catch(e){} } }
+  return null;
+}
 async function loadImage(card){
-  els.img.alt = card.answer;
-  const exts = ['jpg','jpeg','png','webp'];
-  let i = 0;
-  function fallbackSvg(){
-    els.img.src = 'data:image/svg+xml;utf8,' + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850"><rect width="100%" height="100%" fill="#e8dccb"/><text x="50%" y="40%" text-anchor="middle" font-family="Arial" font-size="46" font-weight="700" fill="#6d5a45">Add image file</text><text x="50%" y="50%" text-anchor="middle" font-family="Arial" font-size="34" fill="#6d5a45">history-image-review/images/${card.id}.jpg</text><text x="50%" y="60%" text-anchor="middle" font-family="Arial" font-size="28" fill="#6d5a45">${card.answer}</text></svg>`);
-  }
-  function tryNext(){
-    if(i >= exts.length){ fallbackSvg(); return; }
-    const ext = exts[i++];
-    els.img.onerror = tryNext;
-    els.img.onload = () => { els.img.onerror = null; };
-    els.img.src = `images/${card.id}.${ext}?v=manual1`;
-  }
-  tryNext();
+  els.img.alt=card.answer;
+  els.img.onerror=()=>{els.img.onerror=null; els.img.src=svgFallback(card,'Image did not load');};
+  els.img.src=svgFallback(card,'Loading image…');
+  try{const url=await getBestImage(card); if(url){els.img.src=url;} else {els.img.src=svgFallback(card,'No image found');}}
+  catch(e){els.img.src=svgFallback(card,'Image needs internet');}
 }
 function makeClues(card){
   let text=(card.explain+' '+card.hook).replace(/Board clue:/gi,'Big clue:');
