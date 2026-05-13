@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>MST History 650</title>
+<style>
+:root{--bg:#f4efe7;--card:#fffdf8;--ink:#1f2937;--muted:#6b7280;--line:#ded6c9;--brand:#8b5a2b;--brand2:#b45309;--ok:#166534;--bad:#991b1b;--warn:#92400e;--soft:#f9f1e7;--shadow:0 18px 45px rgba(77,54,29,.12)}
+*{box-sizing:border-box} body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:linear-gradient(180deg,#f8f4ed,#eee7dc);color:var(--ink)}
+.app{max-width:1080px;margin:0 auto;padding:18px 16px 60px}.hero{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;padding:18px 0}.hgroup h1{margin:0;font-size:clamp(28px,5vw,48px);letter-spacing:-.04em;line-height:1}.hgroup p{margin:8px 0 0;color:var(--muted);font-weight:600}.topActions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.miniBtn,.btn{border:1px solid var(--line);background:#fffaf3;color:var(--ink);padding:10px 13px;border-radius:999px;text-decoration:none;font-weight:800;cursor:pointer}.miniBtn:hover,.btn:hover{border-color:#b58b65;background:#fff4e5}.panel{background:rgba(255,253,248,.92);border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);padding:18px;margin:12px 0}.stats{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.stat{background:#fffaf3;border:1px solid #e9dece;border-radius:16px;padding:10px;text-align:center}.stat b{font-size:18px;display:block}.stat span{font-size:11px;color:var(--muted);font-weight:800;text-transform:uppercase;letter-spacing:.06em}.controls{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;align-items:end}.field label{display:block;font-size:11px;color:var(--muted);font-weight:900;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}.field input,.field select{width:100%;padding:12px;border:1px solid var(--line);border-radius:14px;background:white;color:var(--ink);font-weight:700}.card{padding:26px;border-radius:26px}.badge{display:inline-flex;align-items:center;gap:8px;background:#efe2d0;border:1px solid #d8c7b4;border-radius:999px;padding:8px 12px;font-size:12px;font-weight:900;color:#4b2e13;letter-spacing:.06em;text-transform:uppercase}.q{font-size:clamp(25px,4vw,42px);line-height:1.14;letter-spacing:-.04em;margin:22px 0}.choices{display:grid;gap:12px}.choice{width:100%;text-align:left;border:1px solid var(--line);background:white;border-radius:16px;padding:14px 16px;font-size:17px;font-weight:800;display:flex;align-items:center;gap:12px;cursor:pointer}.choice .dot{width:28px;height:28px;border-radius:50%;background:#eee5d8;display:inline-flex;align-items:center;justify-content:center;flex:none;color:#6b4b28;font-size:13px}.choice:hover{border-color:#b58b65;background:#fff8ef}.choice.correct{border-color:#16a34a;background:#edfdf3}.choice.wrong{border-color:#dc2626;background:#fff1f1}.choice.locked{cursor:default}.answerBox{display:none;margin-top:18px}.answerBox.show{display:block}.result{padding:13px 16px;border-radius:16px;border:1px solid var(--line);background:#fffaf3;font-weight:900}.result.ok{color:var(--ok);border-color:#86efac;background:#f0fdf4}.result.bad{color:var(--bad);border-color:#fecaca;background:#fff1f2}.explain{margin-top:14px;border-top:1px dashed #d4c2ad;padding-top:14px;line-height:1.7;color:#374151;font-size:16px}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.markbar{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}.mark{border:1px solid var(--line);border-radius:14px;padding:12px;font-weight:900;background:white;cursor:pointer}.mark.active{outline:3px solid rgba(139,90,43,.22);border-color:#8b5a2b;background:#fff4e5}.reviewList{display:grid;gap:10px;max-height:420px;overflow:auto}.row{border:1px solid var(--line);background:#fffaf3;border-radius:16px;padding:12px;display:flex;justify-content:space-between;gap:10px;align-items:center}.row small{color:var(--muted);font-weight:800}.hidden{display:none!important}@media(max-width:760px){.hero{display:block}.topActions{justify-content:flex-start;margin-top:12px}.stats{grid-template-columns:repeat(2,1fr)}.controls{grid-template-columns:repeat(2,1fr)}.controls .wide{grid-column:span 2}.markbar{grid-template-columns:1fr}.card{padding:18px}.q{font-size:28px}}
+</style>
+</head>
+<body>
+<main class="app">
+<header class="hero"><div class="hgroup"><h1>MST History 650</h1><p>Separate folder. Stable IDs MST-H001 to MST-H650. Progress saved on this device only.</p></div><div class="topActions"><a class="miniBtn" href="../index.html">Dashboard</a><button id="resetBtn" class="miniBtn" type="button">Reset Progress</button></div></header>
+<section class="panel stats" aria-label="Stats"><div class="stat"><b id="totalCards">650</b><span>Cards</span></div><div class="stat"><b id="currentNo">1</b><span>Current</span></div><div class="stat"><b id="doneNo">0</b><span>Answered</span></div><div class="stat"><b id="correctNo">0</b><span>Correct</span></div><div class="stat"><b id="wrongNo">0</b><span>Wrong</span></div><div class="stat"><b id="markNo">0</b><span>Marked</span></div></section>
+<section class="panel controls"><div class="field"><label>Start ID</label><input id="startId" value="MST-H001"></div><div class="field"><label>End ID</label><input id="endId" value="MST-H650"></div><div class="field"><label>Mode</label><select id="mode"><option value="range">Range</option><option value="wrong">Wrong only</option><option value="marked">Marked only</option><option value="all">All 650</option></select></div><div class="field"><label>Order</label><select id="order"><option value="normal">Normal</option><option value="shuffle">Shuffle</option></select></div><div class="field wide"><button id="applyBtn" class="btn" type="button" style="width:100%">Apply / Start</button></div><div class="field wide"><button id="exportBtn" class="btn" type="button" style="width:100%">Export Results</button></div></section>
+<section class="panel card"><div><span id="idBadge" class="badge">Loading</span></div><h2 id="question" class="q">Loading cards...</h2><div id="choices" class="choices"></div><div id="answerBox" class="answerBox"><div id="result" class="result"></div><div id="explain" class="explain"></div></div><div class="markbar"><button class="mark" data-mark="sure">Sure na ako</button><button class="mark" data-mark="not_sure">Not sure</button><button class="mark" data-mark="dont_know">Hindi ko alam</button></div><div class="toolbar"><button id="prevBtn" class="btn">Previous</button><button id="showBtn" class="btn">Show Answer</button><button id="nextBtn" class="btn">Next</button><button id="searchBtn" class="btn">Open Image Search</button></div></section>
+<section class="panel"><h2 style="margin-top:0">Review List</h2><div id="reviewList" class="reviewList"></div></section>
+</main>
+<script src="mst-history-650.js"></script>
+<script>
+(function(){
+const raw = Array.isArray(window.MST_HISTORY_CARDS) ? window.MST_HISTORY_CARDS : [];
+const key='MST_HISTORY_650_PROGRESS_V1';
+let state = JSON.parse(localStorage.getItem(key)||'{"answers":{},"marks":{}}');
+let deck=[], idx=0, locked=false;
+const $=id=>document.getElementById(id);
+function save(){localStorage.setItem(key,JSON.stringify(state));}
+function num(id){const m=String(id||'').match(/(\d+)/);return m?parseInt(m[1],10):0;}
+function pad(n){return 'MST-H'+String(n).padStart(3,'0');}
+function choiceText(c){return typeof c==='string'?c:(c&&c.text)||String(c||'');}
+function answerText(card){return card.answer || (card.correctAnswer) || '';}
+function normalizeCard(c){return {...c, choices:(c.choices||[]).map(choiceText)};}
+const cards=raw.map(normalizeCard).filter(c=>c.id);
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function apply(){
+ let mode=$('mode').value;
+ let s=num($('startId').value)||1, e=num($('endId').value)||650;
+ let list=cards.slice();
+ if(mode==='range') list=list.filter(c=>num(c.id)>=s && num(c.id)<=e);
+ if(mode==='wrong') list=list.filter(c=>state.answers[c.id] && !state.answers[c.id].correct);
+ if(mode==='marked') list=list.filter(c=>state.marks[c.id]);
+ if(mode==='all') list=cards.slice();
+ if($('order').value==='shuffle') shuffle(list);
+ deck=list; idx=0; render();
+}
+function stats(){
+ $('totalCards').textContent=cards.length;
+ $('currentNo').textContent=deck.length?`${idx+1}/${deck.length}`:'0/0';
+ const ans=Object.values(state.answers); $('doneNo').textContent=ans.length; $('correctNo').textContent=ans.filter(a=>a.correct).length; $('wrongNo').textContent=ans.filter(a=>!a.correct).length; $('markNo').textContent=Object.keys(state.marks).length;
+}
+function renderReview(){
+ const box=$('reviewList'); box.innerHTML='';
+ const ids=new Set([...Object.keys(state.answers),...Object.keys(state.marks)]);
+ if(!ids.size){box.innerHTML='<p style="color:#6b7280;font-weight:700">Wala pang review items. Sagot ka muna or mark questions.</p>';return}
+ [...ids].sort((a,b)=>num(a)-num(b)).forEach(id=>{const c=cards.find(x=>x.id===id)||{};const a=state.answers[id];const mark=state.marks[id];const div=document.createElement('div');div.className='row';div.innerHTML=`<div><b>${id}</b> <small>${c.era||''}</small><br><small>${a? (a.correct?'Correct':'Wrong'):'Not answered'} ${mark?' • '+mark.replace('_',' '):''}</small></div><button class="miniBtn" data-jump="${id}">Open</button>`;box.appendChild(div)});
+ box.querySelectorAll('[data-jump]').forEach(b=>b.onclick=()=>{const id=b.dataset.jump; let found=deck.findIndex(c=>c.id===id); if(found<0){deck=[cards.find(c=>c.id===id)].filter(Boolean);found=0} idx=found; render(); window.scrollTo({top:0,behavior:'smooth'});});
+}
+function render(){stats(); renderReview(); locked=false; $('answerBox').classList.remove('show');
+ if(!deck.length){$('idBadge').textContent='No cards';$('question').textContent='Walang cards sa selected mode/range.';$('choices').innerHTML='';return}
+ const c=deck[idx]; const ans=state.answers[c.id]; const correct=answerText(c);
+ $('idBadge').textContent=`${c.id} • ${c.era||'History'}`; $('question').textContent=c.question||''; const box=$('choices'); box.innerHTML='';
+ (c.choices||[]).forEach((ch,i)=>{const btn=document.createElement('button');btn.className='choice';btn.innerHTML=`<span class="dot">${String.fromCharCode(65+i)}</span><span>${ch}</span>`;btn.onclick=()=>select(ch);box.appendChild(btn)});
+ updateMarks(); if(ans){showAnswer(ans.selected);} }
+function select(ch){ if(locked)return; const c=deck[idx], correct=answerText(c); const ok=String(ch).trim()===String(correct).trim(); state.answers[c.id]={selected:ch,correct:ok,answer:correct,at:new Date().toISOString()}; save(); showAnswer(ch); stats(); renderReview(); }
+function showAnswer(selected){locked=true; const c=deck[idx], correct=answerText(c); $('answerBox').classList.add('show'); const ok=selected && String(selected).trim()===String(correct).trim(); $('result').className='result '+(ok?'ok':(selected?'bad':'')); $('result').textContent= selected ? (ok?'Tama. ':'Mali. ') + 'Correct answer: '+correct : 'Correct answer: '+correct; $('explain').textContent=c.explanation||''; [...$('choices').children].forEach(btn=>{const txt=btn.innerText.replace(/^[A-D]\s*/, '').trim(); btn.classList.add('locked'); if(txt===correct) btn.classList.add('correct'); if(selected && txt===selected && txt!==correct) btn.classList.add('wrong');}); }
+function updateMarks(){const c=deck[idx]; document.querySelectorAll('.mark').forEach(b=>b.classList.toggle('active', state.marks[c.id]===b.dataset.mark));}
+document.querySelectorAll('.mark').forEach(b=>b.onclick=()=>{if(!deck.length)return;const id=deck[idx].id;if(state.marks[id]===b.dataset.mark) delete state.marks[id]; else state.marks[id]=b.dataset.mark; save(); updateMarks(); stats(); renderReview();});
+$('prevBtn').onclick=()=>{if(idx>0){idx--;render();}}; $('nextBtn').onclick=()=>{if(idx<deck.length-1){idx++;render();}}; $('showBtn').onclick=()=>{if(deck.length) showAnswer(null);}; $('applyBtn').onclick=apply;
+$('resetBtn').onclick=()=>{if(confirm('Reset MST History progress on this device?')){state={answers:{},marks:{}};save();render();}};
+$('searchBtn').onclick=()=>{if(!deck.length)return; const c=deck[idx]; const q=encodeURIComponent((c.answer||c.question||'')+' architecture'); window.open('https://www.google.com/search?tbm=isch&q='+q,'_blank');};
+$('exportBtn').onclick=()=>{const rows=[['id','era','question','selected','answer','correct','mark','at']]; cards.forEach(c=>{const a=state.answers[c.id]||{}; rows.push([c.id,c.era||'',c.question||'',a.selected||'',answerText(c),a.correct===undefined?'':a.correct,state.marks[c.id]||'',a.at||'']);}); const csv=rows.map(r=>r.map(v=>'"'+String(v).replaceAll('"','""')+'"').join(',')).join('\n'); const blob=new Blob([csv],{type:'text/csv'}); const url=URL.createObjectURL(blob); const a=document.createElement('a'); a.href=url; a.download='mst-history-650-results.csv'; a.click(); URL.revokeObjectURL(url);};
+apply();
+})();
+</script>
+</body></html>
