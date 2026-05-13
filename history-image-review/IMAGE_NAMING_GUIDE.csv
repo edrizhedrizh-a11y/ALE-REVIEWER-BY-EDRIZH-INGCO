@@ -1,0 +1,121 @@
+ID,Era,Answer,Image filename
+H001,Ancient Near East,Ziggurat of Ur,H001.jpg
+H002,Ancient Near East,Ishtar Gate,H002.jpg
+H003,Ancient Near East,Lamassu,H003.jpg
+H004,Egyptian,Pyramids of Giza,H004.jpg
+H005,Egyptian,Great Sphinx of Giza,H005.jpg
+H006,Egyptian,Step Pyramid of Djoser,H006.jpg
+H007,Egyptian,Temple of Karnak,H007.jpg
+H008,Egyptian,Abu Simbel,H008.jpg
+H009,Egyptian,Mortuary Temple of Hatshepsut,H009.jpg
+H010,Egyptian,Obelisk,H010.jpg
+H011,Greek,Parthenon,H011.jpg
+H012,Greek,Erechtheion,H012.jpg
+H013,Greek,Caryatids,H013.jpg
+H014,Greek,Temple of Athena Nike,H014.jpg
+H015,Greek,Theater of Epidaurus,H015.jpg
+H016,Greek,Altar of Zeus at Pergamon,H016.jpg
+H017,Greek,Doric Order,H017.jpg
+H018,Greek,Ionic Order,H018.jpg
+H019,Greek,Corinthian Order,H019.jpg
+H020,Roman,Colosseum,H020.jpg
+H021,Roman,Pantheon,H021.jpg
+H022,Roman,Roman Forum,H022.jpg
+H023,Roman,Arch of Constantine,H023.jpg
+H024,Roman,Trajan’s Column,H024.jpg
+H025,Roman,Pont du Gard,H025.jpg
+H026,Roman,Baths of Caracalla,H026.jpg
+H027,Roman,Maison Carrée,H027.jpg
+H028,Roman,Barrel Vault,H028.jpg
+H029,Roman,Groin Vault,H029.jpg
+H030,Early Christian,Old St. Peter’s Basilica,H030.jpg
+H031,Early Christian,Santa Sabina,H031.jpg
+H032,Early Christian / Byzantine,San Vitale,H032.jpg
+H033,Early Christian,Catacombs,H033.jpg
+H034,Byzantine,Hagia Sophia,H034.jpg
+H035,Byzantine,Pendentive,H035.jpg
+H036,Byzantine,St. Mark’s Basilica,H036.jpg
+H037,Islamic,Dome of the Rock,H037.jpg
+H038,Islamic,Great Mosque of Córdoba,H038.jpg
+H039,Islamic,Alhambra,H039.jpg
+H040,Islamic / Mughal,Taj Mahal,H040.jpg
+H041,Islamic / Ottoman,Sultan Ahmed Mosque,H041.jpg
+H042,Islamic,Minaret,H042.jpg
+H043,Islamic,Mihrab,H043.jpg
+H044,Islamic,Muqarnas,H044.jpg
+H045,Romanesque,Pisa Cathedral Complex,H045.jpg
+H046,Romanesque,Leaning Tower of Pisa,H046.jpg
+H047,Romanesque,Durham Cathedral,H047.jpg
+H048,Romanesque,Speyer Cathedral,H048.jpg
+H049,Romanesque,Santiago de Compostela Cathedral,H049.jpg
+H050,Gothic,Notre-Dame de Paris,H050.jpg
+H051,Gothic,Chartres Cathedral,H051.jpg
+H052,Gothic,Sainte-Chapelle,H052.jpg
+H053,Gothic,Milan Cathedral,H053.jpg
+H054,Gothic,Cologne Cathedral,H054.jpg
+H055,Gothic,Flying Buttress,H055.jpg
+H056,Gothic,Ribbed Vault,H056.jpg
+H057,Gothic,Rose Window,H057.jpg
+H058,Renaissance,Florence Cathedral Dome,H058.jpg
+H059,Renaissance,Pazzi Chapel,H059.jpg
+H060,Renaissance,Palazzo Medici Riccardi,H060.jpg
+H061,Renaissance,Tempietto,H061.jpg
+H062,Renaissance,St. Peter’s Basilica,H062.jpg
+H063,Renaissance,Villa Rotonda,H063.jpg
+H064,Baroque,St. Peter’s Square,H064.jpg
+H065,Baroque,Baldacchino of St. Peter’s,H065.jpg
+H066,Baroque,San Carlo alle Quattro Fontane,H066.jpg
+H067,Baroque,Palace of Versailles,H067.jpg
+H068,Baroque,Trevi Fountain,H068.jpg
+H069,Industrial,Crystal Palace,H069.jpg
+H070,Industrial,Eiffel Tower,H070.jpg
+H071,Art Nouveau,Hôtel Tassel,H071.jpg
+H072,Art Nouveau,Paris Métro Entrance,H072.jpg
+H073,Art Nouveau,Casa Batlló,H073.jpg
+H074,Art Nouveau,Casa Milà,H074.jpg
+H075,Art Nouveau,Sagrada Família,H075.jpg
+H076,Art Deco,Chrysler Building,H076.jpg
+H077,Art Deco,Empire State Building,H077.jpg
+H078,Modern,Bauhaus Dessau,H078.jpg
+H079,Modern,Villa Savoye,H079.jpg
+H080,Modern,Unité d’Habitation,H080.jpg
+H081,Modern,Ronchamp Chapel,H081.jpg
+H082,Modern,Fallingwater,H082.jpg
+H083,Modern,Robie House,H083.jpg
+H084,Modern,Guggenheim Museum New York,H084.jpg
+H085,Modern,Barcelona Pavilion,H085.jpg
+H086,Modern,Farnsworth House,H086.jpg
+H087,Modern,Seagram Building,H087.jpg
+H088,Modern,Schröder House,H088.jpg
+H089,Brutalism,Boston City Hall,H089.jpg
+H090,Brutalism,Habitat 67,H090.jpg
+H091,Postmodern,Vanna Venturi House,H091.jpg
+H092,Postmodern,AT&T Building / 550 Madison,H092.jpg
+H093,Contemporary,Guggenheim Museum Bilbao,H093.jpg
+H094,Contemporary,Walt Disney Concert Hall,H094.jpg
+H095,Contemporary,Heydar Aliyev Center,H095.jpg
+H096,Contemporary,CCTV Headquarters,H096.jpg
+H097,Contemporary,Centre Pompidou,H097.jpg
+H098,Chinese,Forbidden City,H098.jpg
+H099,Chinese,Temple of Heaven,H099.jpg
+H100,Chinese,Dougong Bracket,H100.jpg
+H101,Japanese,Ise Shrine,H101.jpg
+H102,Japanese,Horyu-ji,H102.jpg
+H103,Japanese,Kinkaku-ji / Golden Pavilion,H103.jpg
+H104,Indian / Buddhist,Great Stupa at Sanchi,H104.jpg
+H105,Indian / Buddhist,Chaitya Hall at Karli,H105.jpg
+H106,Indian / Hindu,Kailasa Temple, Ellora,H106.jpg
+H107,Indian / Hindu,Meenakshi Temple,H107.jpg
+H108,Southeast Asian,Angkor Wat,H108.jpg
+H109,Southeast Asian,Borobudur,H109.jpg
+H110,Philippine,Bahay Kubo,H110.jpg
+H111,Philippine,Bahay na Bato,H111.jpg
+H112,Philippine,Vigan / Calle Crisologo,H112.jpg
+H113,Philippine,San Agustin Church Manila,H113.jpg
+H114,Philippine,Paoay Church,H114.jpg
+H115,Philippine,Miagao Church,H115.jpg
+H116,Philippine,Santa Maria Church,H116.jpg
+H117,Philippine,San Sebastian Church,H117.jpg
+H118,Philippine,Manila Metropolitan Theater,H118.jpg
+H119,Philippine,Manila Central Post Office,H119.jpg
+H120,Philippine,Cultural Center of the Philippines,H120.jpg
