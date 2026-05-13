@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ALE History of Architecture — Image Review Cards with Choices</title>
+<style>
+  :root{
+    --bg:#f6f1e8; --card:#fffaf1; --ink:#2b2118; --muted:#756452; --accent:#8b5e34; --accent2:#1f5f5b; --line:#e6d8c5; --soft:#f1e3ce; --red:#9b2c2c;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#fbf7ef,var(--bg));color:var(--ink)}
+  header{position:sticky;top:0;z-index:10;background:rgba(255,250,241,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:14px 16px}
+  .wrap{max-width:1180px;margin:0 auto;padding:18px 14px 80px}
+  header .wrap{padding:0}
+  h1{margin:0;font-size:clamp(21px,3vw,35px);letter-spacing:-.035em}
+  .sub{margin:4px 0 0;color:var(--muted);font-size:14px;line-height:1.35}
+  .controls{display:grid;grid-template-columns:1fr 1fr 1fr auto auto;gap:10px;margin:14px 0}
+  input,select,button{border:1px solid var(--line);border-radius:14px;background:#fffaf1;color:var(--ink);padding:12px;font-size:15px}
+  button{cursor:pointer;font-weight:750;box-shadow:0 2px 0 rgba(0,0,0,.04)}
+  button.primary{background:var(--accent);color:white;border-color:var(--accent)}
+  button.teal{background:var(--accent2);color:white;border-color:var(--accent2)}
+  button.danger{background:var(--red);color:white;border-color:var(--red)}
+  .stats{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:12px 0 18px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:12px}
+  .stat b{font-size:22px}.stat span{display:block;color:var(--muted);font-size:12px}
+  .card{display:grid;grid-template-columns:1.05fr .95fr;gap:18px;background:var(--card);border:1px solid var(--line);border-radius:28px;padding:18px;box-shadow:0 12px 28px rgba(64,44,20,.08)}
+  .photo{position:relative;border-radius:22px;overflow:hidden;background:#e8dccb;min-height:430px;display:flex;align-items:center;justify-content:center}
+  .photo img{width:100%;height:100%;object-fit:cover;display:block}
+  .badge{position:absolute;top:12px;left:12px;background:rgba(0,0,0,.62);color:white;border-radius:999px;padding:8px 11px;font-size:13px}
+  .credit{position:absolute;bottom:8px;right:10px;background:rgba(255,255,255,.82);border-radius:999px;padding:5px 9px;font-size:11px;color:#3d3126}
+  .qtop{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:8px}
+  .pill{border:1px solid var(--line);border-radius:999px;padding:6px 9px;color:var(--muted);font-size:12px;background:#fff}
+  .name{font-size:clamp(28px,4vw,46px);line-height:1.02;margin:10px 0 8px;font-weight:950;letter-spacing:-.045em;color:var(--accent2)}
+  .era{font-size:16px;color:var(--muted);margin-bottom:14px}
+  .section{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px;margin:10px 0}
+  .section h2{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin:0 0 8px}
+  .section p{line-height:1.58;margin:0;font-size:17px}
+  .clues{display:grid;gap:8px;margin:8px 0 0}
+  .clue{display:flex;gap:8px;align-items:flex-start;background:#fffaf1;border:1px solid var(--line);border-radius:14px;padding:10px 11px;line-height:1.35}
+  .num{flex:0 0 auto;background:var(--accent2);color:white;border-radius:999px;width:24px;height:24px;text-align:center;line-height:24px;font-size:12px;font-weight:900}
+  .hook{background:var(--soft);border-left:5px solid var(--accent);padding:12px 13px;border-radius:14px;margin-top:10px;font-size:18px;font-weight:850;line-height:1.35}
+  .coach{font-size:15px;color:var(--muted);line-height:1.45;margin:10px 0 0}
+  .actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}
+  .actions button{padding:11px 13px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(52px,1fr));gap:7px;margin-top:16px}
+  .jump{padding:8px;border-radius:10px;font-size:12px;background:#fff}
+  .jump.done{background:#dff1e4}.jump.flag{background:#fff3c4}.jump.low{background:#ffe1e1}
+  .hiddenName .name span,.hiddenName .era{filter:blur(10px);user-select:none}
+  .hiddenName .name::after{content:'  (tap Reveal Name)';font-size:15px;color:var(--muted);filter:none}
+
+  .promptBox{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px;margin:10px 0}
+  .promptBox h2{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin:0 0 8px}
+  .promptBox p{font-size:18px;line-height:1.45;margin:0;color:var(--ink);font-weight:750}
+  .choices{display:grid;gap:9px;margin-top:12px}
+  .choiceBtn{text-align:left;background:#fffaf1;border:1px solid var(--line);border-radius:16px;padding:13px 14px;font-size:16px;font-weight:800;box-shadow:none}
+  .choiceBtn:hover{border-color:var(--accent);transform:translateY(-1px)}
+  .choiceBtn.correct{background:#dff1e4;border-color:#4c9a61}
+  .choiceBtn.wrong{background:#ffe1e1;border-color:#b74b4b}
+  .result{margin-top:10px;padding:11px 13px;border-radius:14px;font-weight:850;line-height:1.35;display:none}
+  .result.show{display:block}
+  .result.correct{background:#dff1e4;color:#245333}
+  .result.wrong{background:#ffe1e1;color:#7b2424}
+  .reviewDetails.locked{display:none}
+  .miniNote{font-size:14px;color:var(--muted);line-height:1.4;margin-top:8px}
+  @media(max-width:880px){.controls{grid-template-columns:1fr 1fr}.card{grid-template-columns:1fr}.photo{min-height:300px}.stats{grid-template-columns:repeat(2,1fr)}}
+  @media print{header,.controls,.actions,.grid{display:none}.wrap{max-width:none}.card{page-break-inside:avoid;margin-bottom:12px;box-shadow:none}.photo{min-height:260px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><h1>ALE History of Architecture — Image Review Cards</h1><p class="sub">Flow: tingnan muna ang image, pumili ng sagot, then lalabas ang name + visual characteristics + bakit madaling makilala. Review mode pa rin, hindi mock exam.</p></div></header>
+<main class="wrap">
+  <div class="controls">
+    <input id="search" placeholder="Search structure, era, clue…" />
+    <select id="era"><option value="all">All eras</option></select>
+    <select id="status"><option value="all">All status</option><option value="sure">Sure na ako</option><option value="unsure">Di sure</option><option value="unknown">Di ko alam</option><option value="flagged">Marked / Balikan</option></select>
+    <button class="teal" id="toggleHide">Hide name</button>
+    <button class="primary" id="shuffle">Shuffle</button>
+  </div>
+  <div class="stats">
+    <div class="stat"><b id="total">0</b><span>Total cards</span></div>
+    <div class="stat"><b id="sure">0</b><span>Sure</span></div>
+    <div class="stat"><b id="unsure">0</b><span>Di sure</span></div>
+    <div class="stat"><b id="unknown">0</b><span>Di ko alam</span></div>
+    <div class="stat"><b id="flagged">0</b><span>Marked</span></div>
+  </div>
+  <section class="card" id="mainCard">
+    <div class="photo"><span class="badge" id="badge">H001</span><img id="img" alt="Architecture image"><span class="credit">Images load from Wikipedia/Commons when online</span></div>
+    <div>
+      <div class="qtop"><span class="pill" id="idpill"></span><span class="pill" id="erapill"></span><span class="pill" id="counter"></span></div>
+      <div class="promptBox">
+        <h2>Identify first</h2>
+        <p>Alin dito ang structure / element sa picture?</p>
+        <div class="choices" id="choices"></div>
+        <div class="result" id="result"></div>
+        <div class="miniNote">Pag pumili ka, saka lalabas yung review notes. Pwede rin gamitin ang Reveal Review kapag gusto mong diretso review.</div>
+      </div>
+      <div id="reviewDetails" class="reviewDetails locked">
+        <div class="name"><span id="answer"></span></div>
+        <div class="era" id="eraText"></div>
+        <div class="section"><h2>Visual clues / Characteristics</h2><div class="clues" id="clues"></div></div>
+        <div class="section"><h2>Bakit ito iyon?</h2><p id="explain"></p></div>
+        <div class="hook" id="hook"></div>
+        <p class="coach">Coach tip: Tingnan mo muna yung silhouette, roof/dome/tower, façade, structural element, then memory hook. Goal natin: kapag nakita mo ulit yung picture, automatic na yung pangalan.</p>
+      </div>
+      <div class="actions">
+        <button id="prev">Prev</button><button id="next" class="primary">Next</button><button id="revealName" class="teal">Reveal Review</button>
+        <button id="markSure">Sure na ako</button><button id="markUnsure">Di sure</button><button class="danger" id="markUnknown">Di ko alam</button><button id="flag">Mark / Balikan</button>
+      </div>
+    </div>
+  </section>
+  <div class="grid" id="grid"></div>
+</main>
+<script>
+const RAW = [
+['H001','Ancient Near East','Ziggurat of Ur','Ziggurat of Ur','Stepped temple platform ito ng Mesopotamia. Board clue: parang layered pyramid pero hindi tomb; raised platform siya for temple worship.','Ziggurat = zig-zag/stepped temple mountain.'],
+['H002','Ancient Near East','Ishtar Gate','Ishtar Gate','Blue glazed brick gate ito ng Babylon. Kapag may blue tiles plus animal reliefs, isipin agad: Ishtar Gate.','Blue gate + Babylon = Ishtar Gate.'],
+['H003','Ancient Near East','Lamassu','Lamassu','Assyrian guardian figure ito, usually winged bull or lion with human head. Nilalagay sa palace gates as protective symbol.','Lamassu = malaking guardian sa gate.'],
+['H004','Egyptian','Pyramids of Giza','Giza pyramid complex','Ito ang royal tomb complex ng Old Kingdom Egypt. Kapag tatlong massive pyramids sa desert, Giza agad.','Giza = Khufu, Khafre, Menkaure.'],
+['H005','Egyptian','Great Sphinx of Giza','Great Sphinx of Giza','Lion body with human head. Guardian figure siya near the pyramid complex, strongly associated with Khafre.','Sphinx = lion body, human head.'],
+['H006','Egyptian','Step Pyramid of Djoser','Pyramid of Djoser','Earliest major stone pyramid form, designed by Imhotep. Board clue: stacked mastabas, hindi smooth pyramid.','Djoser = step pyramid = Imhotep.'],
+['H007','Egyptian','Temple of Karnak','Karnak Temple Complex','Huge Egyptian temple complex famous for its hypostyle hall. Kapag forest of massive columns, Karnak ang isipin.','Karnak = column forest.'],
+['H008','Egyptian','Abu Simbel','Abu Simbel','Rock-cut temple ni Ramses II with four giant seated statues sa façade. Very easy clue: apat na colossal figures.','Abu Simbel = apat na Ramses sa bato.'],
+['H009','Egyptian','Mortuary Temple of Hatshepsut','Mortuary Temple of Hatshepsut','Terraced temple na naka-backdrop sa cliff sa Deir el-Bahari. Linear terraces ang big clue.','Hatshepsut = terraces + cliff.'],
+['H010','Egyptian','Obelisk','Obelisk','Tall tapering stone monument with pointed pyramidion. Egyptian sun symbolism ang association.','Obelisk = tall stone needle.'],
+['H011','Greek','Parthenon','Parthenon','Doric temple sa Acropolis dedicated to Athena. Clue: balanced rectangular Greek temple with strong Doric columns.','Parthenon = Athena + Acropolis + Doric.'],
+['H012','Greek','Erechtheion','Erechtheion','Irregular Greek temple sa Acropolis, famous for the Porch of the Caryatids. Kapag female columns, Erechtheion.','Erechtheion = Caryatid porch.'],
+['H013','Greek','Caryatids','Caryatid','Female sculptural columns. Most famous board association: Erechtheion.','Caryatid = babae na column.'],
+['H014','Greek','Temple of Athena Nike','Temple of Athena Nike','Small Ionic temple on the Acropolis. Mas maliit siya kaysa Parthenon and uses Ionic character.','Athena Nike = small Ionic victory temple.'],
+['H015','Greek','Theater of Epidaurus','Epidaurus Ancient Theatre','Open-air Greek theater with semicircular seating, known for excellent acoustics.','Epidaurus = perfect Greek theater acoustics.'],
+['H016','Greek','Altar of Zeus at Pergamon','Pergamon Altar','Hellenistic altar known for dramatic sculptural frieze. Kapag monumental sculptural altar, Pergamon.','Pergamon = dramatic Hellenistic altar.'],
+['H017','Greek','Doric Order','Doric order','Plain capital, no base, heavier proportion. Pinaka-simple sa Greek orders.','Doric = simple and strong.'],
+['H018','Greek','Ionic Order','Ionic order','May scroll-like volutes sa capital, mas slender kaysa Doric.','Ionic = scroll capital.'],
+['H019','Greek','Corinthian Order','Corinthian order','Most decorative classical order, acanthus leaves ang major clue.','Corinthian = acanthus leaves.'],
+['H020','Roman','Colosseum','Colosseum','Oval Roman amphitheater with stacked arcades. Used for spectacles and gladiator events.','Colosseum = oval + many arches.'],
+['H021','Roman','Pantheon','Pantheon, Rome','Roman temple with portico, rotunda, coffered dome, and oculus. Kapag may oculus, Pantheon agad.','Pantheon = portico + dome + oculus.'],
+['H022','Roman','Roman Forum','Roman Forum','Civic and religious center of ancient Rome. Ruins of temples, basilicas, and public spaces.','Forum = Roman civic center.'],
+['H023','Roman','Arch of Constantine','Arch of Constantine','Large Roman triumphal arch near the Colosseum, with multiple openings and sculptural reliefs.','Constantine = triumphal arch near Colosseum.'],
+['H024','Roman','Trajan’s Column','Trajan\'s Column','Commemorative Roman column with spiral relief narrative around the shaft.','Trajan = spiral story column.'],
+['H025','Roman','Pont du Gard','Pont du Gard','Roman aqueduct bridge with stacked arches. Clue: engineering structure for water transport.','Pont du Gard = aqueduct arches.'],
+['H026','Roman','Baths of Caracalla','Baths of Caracalla','Massive Roman public bath complex or thermae. Huge vaulted ruins ang clue.','Caracalla = giant Roman baths.'],
+['H027','Roman','Maison Carrée','Maison carrée','Well-preserved Roman temple in Nîmes, with classical portico and pseudoperipteral effect.','Maison Carrée = Roman temple in France.'],
+['H028','Roman','Barrel Vault','Barrel vault','Continuous tunnel-like vault. Imagine arch na in-extend forward.','Barrel vault = tunnel arch.'],
+['H029','Roman','Groin Vault','Groin vault','Intersection of two barrel vaults. Usually creates cross-like lines sa ceiling.','Groin = crossed barrels.'],
+['H030','Early Christian','Old St. Peter’s Basilica','Old St. Peter\'s Basilica','Early Christian basilica plan with atrium, nave, aisles, transept, and apse.','Old St. Peter = basilica prototype.'],
+['H031','Early Christian','Santa Sabina','Santa Sabina','Simple Early Christian basilica with nave, aisles, clerestory, and plain exterior.','Santa Sabina = simple basilican church.'],
+['H032','Early Christian / Byzantine','San Vitale','Basilica of San Vitale','Centralized octagonal church in Ravenna, famous for Byzantine mosaics.','San Vitale = octagon + mosaics.'],
+['H033','Early Christian','Catacombs','Catacombs of Rome','Underground burial chambers used by early Christians.','Catacombs = underground Christian burials.'],
+['H034','Byzantine','Hagia Sophia','Hagia Sophia','Byzantine masterpiece in Istanbul with a huge dome on pendentives.','Hagia Sophia = dome on pendentives.'],
+['H035','Byzantine','Pendentive','Pendentive','Curved triangular transition that allows a circular dome to sit over a square bay.','Pendentive = square to dome.'],
+['H036','Byzantine','St. Mark’s Basilica','St Mark\'s Basilica','Byzantine-influenced Venetian church with multiple domes and rich decoration.','St. Mark = Venice + domes + mosaics.'],
+['H037','Islamic','Dome of the Rock','Dome of the Rock','Octagonal Islamic shrine in Jerusalem with a golden dome.','Dome of the Rock = gold dome + octagon.'],
+['H038','Islamic','Great Mosque of Córdoba','Mosque–Cathedral of Córdoba','Famous for red-and-white horseshoe arches and hypostyle hall.','Córdoba = striped horseshoe arches.'],
+['H039','Islamic','Alhambra','Alhambra','Nasrid palace in Granada with delicate stucco, courts, and muqarnas details.','Alhambra = Granada + muqarnas palace.'],
+['H040','Islamic / Mughal','Taj Mahal','Taj Mahal','White marble Mughal mausoleum with onion dome, minarets, and perfect symmetry.','Taj Mahal = white marble love mausoleum.'],
+['H041','Islamic / Ottoman','Sultan Ahmed Mosque','Sultan Ahmed Mosque','Blue Mosque in Istanbul, known for cascading domes and six minarets.','Blue Mosque = Istanbul + six minarets.'],
+['H042','Islamic','Minaret','Minaret','Tall tower associated with mosques and the call to prayer.','Minaret = mosque tower.'],
+['H043','Islamic','Mihrab','Mihrab','Prayer niche in the qibla wall indicating direction of Mecca.','Mihrab = niche to Mecca.'],
+['H044','Islamic','Muqarnas','Muqarnas','Honeycomb or stalactite-like ornamental vaulting. Common in Islamic architecture.','Muqarnas = honeycomb ceiling.'],
+['H045','Romanesque','Pisa Cathedral Complex','Piazza dei Miracoli','Italian Romanesque complex with cathedral, baptistery, and leaning campanile.','Pisa = cathedral + baptistery + leaning tower.'],
+['H046','Romanesque','Leaning Tower of Pisa','Leaning Tower of Pisa','Cylindrical leaning campanile or bell tower of Pisa.','Leaning Tower = Pisa campanile.'],
+['H047','Romanesque','Durham Cathedral','Durham Cathedral','Norman Romanesque cathedral with massive piers and early rib vaulting.','Durham = heavy Norman cathedral.'],
+['H048','Romanesque','Speyer Cathedral','Speyer Cathedral','Large German Romanesque imperial cathedral. Heavy masonry and round arches ang clue.','Speyer = German Romanesque.'],
+['H049','Romanesque','Santiago de Compostela Cathedral','Santiago de Compostela Cathedral','Major pilgrimage church associated with the Way of St. James.','Santiago = pilgrimage destination.'],
+['H050','Gothic','Notre-Dame de Paris','Notre-Dame de Paris','French Gothic cathedral with twin towers, rose windows, and flying buttresses.','Notre-Dame = twin towers + flying buttresses.'],
+['H051','Gothic','Chartres Cathedral','Chartres Cathedral','French Gothic cathedral known for stained glass and unequal towers.','Chartres = blue glass + unequal towers.'],
+['H052','Gothic','Sainte-Chapelle','Sainte-Chapelle','Gothic chapel famous for extremely tall stained-glass walls.','Sainte-Chapelle = jewel box glass chapel.'],
+['H053','Gothic','Milan Cathedral','Milan Cathedral','Italian Gothic cathedral with marble façade, many pinnacles, and elaborate roofline.','Milan = marble Gothic forest.'],
+['H054','Gothic','Cologne Cathedral','Cologne Cathedral','German Gothic cathedral with very tall twin spires.','Cologne = towering twin spires.'],
+['H055','Gothic','Flying Buttress','Flying buttress','External arched support used to resist lateral thrust and allow tall stained-glass walls.','Flying buttress = outside support.'],
+['H056','Gothic','Ribbed Vault','Rib vault','Vault with visible ribs, common in Gothic architecture.','Ribbed vault = Gothic ceiling skeleton.'],
+['H057','Gothic','Rose Window','Rose window','Circular stained-glass window, usually on Gothic church façades.','Rose window = circular Gothic glass.'],
+['H058','Renaissance','Florence Cathedral Dome','Florence Cathedral','Brunelleschi\'s famous dome over Santa Maria del Fiore in Florence.','Florence dome = Brunelleschi.'],
+['H059','Renaissance','Pazzi Chapel','Pazzi Chapel','Renaissance chapel by Brunelleschi, known for calm proportion and geometry.','Pazzi = quiet Renaissance proportion.'],
+['H060','Renaissance','Palazzo Medici Riccardi','Palazzo Medici Riccardi','Florentine Renaissance palace with rusticated lower floors.','Medici palace = rustication.'],
+['H061','Renaissance','Tempietto','Tempietto','Small circular High Renaissance temple by Bramante. Perfect centralized plan ang clue.','Tempietto = tiny perfect temple.'],
+['H062','Renaissance','St. Peter’s Basilica','St. Peter\'s Basilica','Major Renaissance/Baroque basilica in Rome with huge dome and grand façade.','St. Peter = Vatican super church.'],
+['H063','Renaissance','Villa Rotonda','Villa La Rotonda','Palladio\'s symmetrical villa with four classical porticoes.','Villa Rotonda = four fronts.'],
+['H064','Baroque','St. Peter’s Square','St. Peter\'s Square','Bernini\'s oval piazza with embracing colonnades.','St. Peter Square = Bernini arms.'],
+['H065','Baroque','Baldacchino of St. Peter’s','St. Peter\'s Baldachin','Baroque bronze canopy by Bernini with twisted Solomonic columns.','Baldacchino = twisted bronze canopy.'],
+['H066','Baroque','San Carlo alle Quattro Fontane','San Carlo alle Quattro Fontane','Borromini\'s small Baroque church with undulating façade and dynamic geometry.','San Carlo = wavy Borromini.'],
+['H067','Baroque','Palace of Versailles','Palace of Versailles','French Baroque palace of Louis XIV, famous for gardens and Hall of Mirrors.','Versailles = Louis XIV grandeur.'],
+['H068','Baroque','Trevi Fountain','Trevi Fountain','Dramatic Roman Baroque fountain with sculptural movement and theatrical composition.','Trevi = Baroque water theater.'],
+['H069','Industrial','Crystal Palace','The Crystal Palace','Iron-and-glass exhibition hall by Joseph Paxton; symbol of prefabrication and industrial materials.','Crystal Palace = glass + iron.'],
+['H070','Industrial','Eiffel Tower','Eiffel Tower','Iron lattice tower in Paris by Gustave Eiffel.','Eiffel = exposed iron tower.'],
+['H071','Art Nouveau','Hôtel Tassel','Hôtel Tassel','Victor Horta\'s Art Nouveau house with flowing ironwork and organic lines.','Hôtel Tassel = Horta whiplash lines.'],
+['H072','Art Nouveau','Paris Métro Entrance','Paris Métro entrances','Hector Guimard\'s Art Nouveau metro entrances with organic metal forms.','Paris Métro = Guimard green curves.'],
+['H073','Art Nouveau','Casa Batlló','Casa Batlló','Gaudí building in Barcelona with colorful organic façade and skeletal balconies.','Casa Batlló = dragon-like Gaudí façade.'],
+['H074','Art Nouveau','Casa Milà','Casa Milà','Gaudí\'s La Pedrera with wavy stone façade and sculptural roof chimneys.','Casa Milà = wavy stone.'],
+['H075','Art Nouveau','Sagrada Família','Sagrada Família','Gaudí\'s monumental basilica with organic sculptural towers in Barcelona.','Sagrada Família = Gaudí towers.'],
+['H076','Art Deco','Chrysler Building','Chrysler Building','Art Deco skyscraper in New York with metallic stepped crown and sunburst details.','Chrysler = shiny Art Deco crown.'],
+['H077','Art Deco','Empire State Building','Empire State Building','Art Deco skyscraper with setback massing and vertical emphasis.','Empire State = stepped Art Deco tower.'],
+['H078','Modern','Bauhaus Dessau','Bauhaus Dessau','Walter Gropius\' modern school building with glass curtain wall and functional forms.','Bauhaus = glass box school.'],
+['H079','Modern','Villa Savoye','Villa Savoye','Le Corbusier house showing pilotis, ribbon windows, roof garden, free plan, and free façade.','Villa Savoye = Five Points.'],
+['H080','Modern','Unité d’Habitation','Unité d\'Habitation','Le Corbusier\'s massive housing block in Marseille, often linked to béton brut and Brutalism.','Unité = concrete housing machine.'],
+['H081','Modern','Ronchamp Chapel','Notre-Dame du Haut','Le Corbusier\'s sculptural chapel with heavy walls and dramatic roof.','Ronchamp = sculptural chapel roof.'],
+['H082','Modern','Fallingwater','Fallingwater','Frank Lloyd Wright house over a waterfall with dramatic cantilevered terraces.','Fallingwater = house on waterfall.'],
+['H083','Modern','Robie House','Frederick C. Robie House','Prairie School house by Frank Lloyd Wright with long horizontal lines.','Robie = Prairie horizontal.'],
+['H084','Modern','Guggenheim Museum New York','Solomon R. Guggenheim Museum','Frank Lloyd Wright museum with spiral ramp and circular form.','Guggenheim NY = white spiral.'],
+['H085','Modern','Barcelona Pavilion','Barcelona Pavilion','Mies van der Rohe pavilion with free plan, thin roof slab, and rich materials.','Barcelona Pavilion = Mies minimal planes.'],
+['H086','Modern','Farnsworth House','Farnsworth House','Mies glass house raised on steel frame. Very minimal and transparent.','Farnsworth = glass box on stilts.'],
+['H087','Modern','Seagram Building','Seagram Building','Mies skyscraper in New York, classic International Style with bronze/glass character.','Seagram = Mies corporate tower.'],
+['H088','Modern','Schröder House','Rietveld Schröder House','De Stijl house with planes, primary colors, and flexible spatial ideas.','Schröder = De Stijl planes.'],
+['H089','Brutalism','Boston City Hall','Boston City Hall','Brutalist civic building with massive concrete forms.','Boston City Hall = bold concrete brutalism.'],
+['H090','Brutalism','Habitat 67','Habitat 67','Moshe Safdie modular housing project with stacked concrete units.','Habitat 67 = stacked boxes.'],
+['H091','Postmodern','Vanna Venturi House','Vanna Venturi House','Robert Venturi house with playful classical references and broken pediment idea.','Vanna Venturi = postmodern house front.'],
+['H092','Postmodern','AT&T Building / 550 Madison','550 Madison Avenue','Postmodern skyscraper by Philip Johnson with Chippendale-like top.','550 Madison = Chippendale top.'],
+['H093','Contemporary','Guggenheim Museum Bilbao','Guggenheim Museum Bilbao','Frank Gehry museum with titanium curves and sculptural form.','Bilbao = titanium Gehry curves.'],
+['H094','Contemporary','Walt Disney Concert Hall','Walt Disney Concert Hall','Frank Gehry concert hall with shiny flowing metal forms.','Disney Hall = Gehry metal sails.'],
+['H095','Contemporary','Heydar Aliyev Center','Heydar Aliyev Center','Zaha Hadid building with fluid white continuous surfaces.','Heydar = Zaha fluid white wave.'],
+['H096','Contemporary','CCTV Headquarters','CCTV Headquarters','OMA/Rem Koolhaas tower in Beijing with looped structural form.','CCTV = loop tower.'],
+['H097','Contemporary','Centre Pompidou','Centre Pompidou','High-tech building by Piano and Rogers with exposed structure and services outside.','Pompidou = inside-out building.'],
+['H098','Chinese','Forbidden City','Forbidden City','Chinese imperial palace complex in Beijing with axial planning, red walls, and yellow roofs.','Forbidden City = Beijing imperial axis.'],
+['H099','Chinese','Temple of Heaven','Temple of Heaven','Circular blue-roofed Chinese temple in Beijing used for imperial rituals.','Temple of Heaven = blue circular roof.'],
+['H100','Chinese','Dougong Bracket','Dougong','Interlocking wooden bracket system in traditional Chinese architecture.','Dougong = Chinese bracket puzzle.'],
+['H101','Japanese','Ise Shrine','Ise Grand Shrine','Shinto shrine with simple timber architecture, raised floor, and periodic rebuilding tradition.','Ise = pure timber Shinto shrine.'],
+['H102','Japanese','Horyu-ji','Hōryū-ji','Ancient Japanese Buddhist temple complex with wooden pagoda.','Horyu-ji = old wooden pagoda.'],
+['H103','Japanese','Kinkaku-ji / Golden Pavilion','Kinkaku-ji','Kyoto pavilion covered in gold leaf beside a pond.','Kinkaku-ji = Golden Pavilion.'],
+['H104','Indian / Buddhist','Great Stupa at Sanchi','Sanchi','Buddhist stupa with hemispherical dome and carved torana gateways.','Sanchi = stupa + torana.'],
+['H105','Indian / Buddhist','Chaitya Hall at Karli','Karla Caves','Rock-cut Buddhist prayer hall with barrel-vaulted interior.','Karli = rock-cut chaitya hall.'],
+['H106','Indian / Hindu','Kailasa Temple, Ellora','Kailasa temple, Ellora','Monolithic rock-cut Hindu temple carved from one rock.','Kailasa = carved downward from rock.'],
+['H107','Indian / Hindu','Meenakshi Temple','Meenakshi Temple','South Indian Dravidian temple known for colorful sculptural gopurams.','Meenakshi = colorful gopurams.'],
+['H108','Southeast Asian','Angkor Wat','Angkor Wat','Khmer temple mountain in Cambodia with towers, moat, and axial layout.','Angkor Wat = temple mountain + moat.'],
+['H109','Southeast Asian','Borobudur','Borobudur','Indonesian Buddhist monument with stepped terraces, stupas, and mandala symbolism.','Borobudur = stepped Buddhist mandala.'],
+['H110','Philippine','Bahay Kubo','Nipa hut','Philippine vernacular house, lightweight, raised floor, bamboo/nipa materials.','Bahay Kubo = raised native house.'],
+['H111','Philippine','Bahay na Bato','Bahay na bato','Spanish colonial Filipino house with stone lower floor, timber upper floor, and capiz windows.','Bahay na Bato = stone below, wood above.'],
+['H112','Philippine','Vigan / Calle Crisologo','Calle Crisologo','Heritage streetscape of bahay na bato houses in Vigan.','Vigan = bahay na bato street.'],
+['H113','Philippine','San Agustin Church Manila','San Agustin Church (Manila)','Historic stone church in Intramuros; major Spanish colonial church landmark.','San Agustin = Intramuros old stone church.'],
+['H114','Philippine','Paoay Church','Paoay Church','Earthquake Baroque church famous for massive side buttresses.','Paoay = giant side buttresses.'],
+['H115','Philippine','Miagao Church','Miagao Church','Fortress-like Baroque church in Iloilo with decorative local façade reliefs.','Miagao = ornate fortress façade.'],
+['H116','Philippine','Santa Maria Church','Santa Maria Church (Ilocos Sur)','UNESCO church set on a hill with defensive character.','Santa Maria = church on hill.'],
+['H117','Philippine','San Sebastian Church','San Sebastian Church (Manila)','Gothic Revival church in Manila known for prefabricated steel construction.','San Sebastian = steel Gothic church.'],
+['H118','Philippine','Manila Metropolitan Theater','Manila Metropolitan Theater','Art Deco theater by Juan Arellano with distinctive ornament and façade.','Metropolitan Theater = PH Art Deco.'],
+['H119','Philippine','Manila Central Post Office','Manila Central Post Office','Neoclassical civic building with giant columns near the Pasig River.','Post Office = neoclassical columns.'],
+['H120','Philippine','Cultural Center of the Philippines','Cultural Center of the Philippines Complex','Modernist monumental building associated with Leandro Locsin; floating volume effect.','CCP = Locsin floating mass.']
+];
+const CARDS = RAW.map(([id,era,answer,page,explain,hook])=>({id,era,answer,page,explain,hook}));
+const els = Object.fromEntries(['search','era','status','toggleHide','shuffle','total','sure','unsure','unknown','flagged','mainCard','badge','img','idpill','erapill','counter','choices','result','reviewDetails','answer','eraText','clues','explain','hook','prev','next','revealName','markSure','markUnsure','markUnknown','flag','grid'].map(id=>[id,document.getElementById(id)]));
+let view=[...CARDS], idx=0, hideName=false, answered=false;
+const state = JSON.parse(localStorage.getItem('ale_history_review_state')||'{}');
+function save(){localStorage.setItem('ale_history_review_state',JSON.stringify(state));}
+function wikiUrl(title){return `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`}
+async function loadImage(card){
+  els.img.alt=card.answer; els.img.src='';
+  try{const r=await fetch(wikiUrl(card.page)); const j=await r.json(); els.img.src=(j.thumbnail&&j.thumbnail.source)||''; if(els.img.src) els.img.src=els.img.src.replace(/\/\d+px-/,'/900px-'); else throw new Error('no image');}
+  catch(e){els.img.src='data:image/svg+xml;utf8,'+encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650"><rect width="100%" height="100%" fill="#e8dccb"/><text x="50%" y="45%" text-anchor="middle" font-family="Arial" font-size="42" fill="#6d5a45">Image needs internet</text><text x="50%" y="55%" text-anchor="middle" font-family="Arial" font-size="28" fill="#6d5a45">${card.answer}</text></svg>`)}
+}
+function makeClues(card){
+  let text=(card.explain+' '+card.hook).replace(/Board clue:/gi,'Big clue:');
+  let parts=text.split(/\.\s+/).map(x=>x.trim()).filter(Boolean);
+  let clues=[];
+  for(const p of parts){
+    if(/clue|kapag|known|famous|with|may |parang|tower|dome|arch|column|vault|façade|facade|buttress|roof|glass|stone|concrete|terrace|pyramid|stupa|gate|temple|church|mosque|palace|house/i.test(p)) clues.push(p.replace(/\.$/,''));
+  }
+  if(clues.length<3) clues=[...parts,...clues];
+  clues=[...new Set(clues)].slice(0,3);
+  while(clues.length<3) clues.push(card.hook.replace(/^Memory hook:\s*/i,''));
+  return clues;
+}
+
+function pickChoices(card){
+  const sameEra=CARDS.filter(x=>x.era===card.era && x.id!==card.id);
+  const pool=[...sameEra, ...CARDS.filter(x=>x.era!==card.era && x.id!==card.id)];
+  const shuffled=pool.map(x=>[Math.random(),x]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);
+  return [card, ...shuffled.slice(0,3)].map(x=>x.answer).map(x=>[Math.random(),x]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);
+}
+function showReview(isCorrect, chosen){
+  answered=true;
+  els.reviewDetails.classList.remove('locked');
+  els.result.className='result show '+(isCorrect?'correct':'wrong');
+  els.result.textContent=isCorrect ? 'Tama. Basahin ngayon yung clues para kumapit sa memory.' : `Hindi. Pinili mo: ${chosen}. Basahin yung visual clues para makita bakit iba ang sagot.`;
+  [...els.choices.children].forEach(btn=>{
+    btn.disabled=true;
+    if(btn.dataset.answer===view[idx].answer) btn.classList.add('correct');
+    else if(btn.dataset.answer===chosen) btn.classList.add('wrong');
+  });
+}
+function renderChoices(card){
+  els.choices.innerHTML='';
+  els.result.className='result';
+  els.result.textContent='';
+  pickChoices(card).forEach((choice,i)=>{
+    const b=document.createElement('button');
+    b.className='choiceBtn';
+    b.dataset.answer=choice;
+    b.textContent=String.fromCharCode(65+i)+'. '+choice;
+    b.onclick=()=>showReview(choice===card.answer, choice);
+    els.choices.appendChild(b);
+  });
+}
+function render(){
+  if(!view.length){els.answer.textContent='No cards match your filter.'; els.clues.innerHTML=''; return;}
+  if(idx>=view.length) idx=0; if(idx<0) idx=view.length-1;
+  const c=view[idx]; loadImage(c);
+  if(!answered) els.reviewDetails.classList.add('locked');
+  els.mainCard.classList.toggle('hiddenName', hideName);
+  els.toggleHide.textContent=hideName?'Show name':'Hide name';
+  els.badge.textContent=c.id; els.idpill.textContent=c.id; els.erapill.textContent=c.era; els.counter.textContent=`${idx+1} / ${view.length}`;
+  els.answer.textContent=c.answer; els.eraText.textContent=c.era; els.explain.textContent=c.explain; els.hook.textContent='Memory hook: '+c.hook;
+  els.clues.innerHTML=''; makeClues(c).forEach((clue,i)=>{const div=document.createElement('div'); div.className='clue'; div.innerHTML=`<span class="num">${i+1}</span><span>${clue}</span>`; els.clues.appendChild(div);});
+  renderChoices(c);
+  updateStats(); renderGrid();
+}
+function mark(status){ const c=view[idx]; state[c.id]=state[c.id]||{}; state[c.id].status=status; save(); updateStats(); renderGrid(); }
+function toggleFlag(){ const c=view[idx]; state[c.id]=state[c.id]||{}; state[c.id].flag=!state[c.id].flag; save(); updateStats(); renderGrid(); }
+function updateStats(){
+  els.total.textContent=CARDS.length; els.sure.textContent=CARDS.filter(c=>state[c.id]?.status==='sure').length; els.unsure.textContent=CARDS.filter(c=>state[c.id]?.status==='unsure').length; els.unknown.textContent=CARDS.filter(c=>state[c.id]?.status==='unknown').length; els.flagged.textContent=CARDS.filter(c=>state[c.id]?.flag).length;
+}
+function applyFilter(){
+  const q=els.search.value.toLowerCase(), era=els.era.value, st=els.status.value;
+  view=CARDS.filter(c=>{const s=state[c.id]||{}; const hit=(c.answer+' '+c.era+' '+c.explain+' '+c.hook).toLowerCase().includes(q); const eraHit=era==='all'||c.era===era; const stHit=st==='all'||(st==='flagged'?s.flag:s.status===st); return hit&&eraHit&&stHit;}); idx=0; answered=false; render();
+}
+function renderGrid(){
+  els.grid.innerHTML=''; view.forEach((c,i)=>{const b=document.createElement('button'); b.className='jump'; const s=state[c.id]||{}; if(s.status==='sure')b.classList.add('done'); if(s.status==='unknown')b.classList.add('low'); if(s.flag)b.classList.add('flag'); b.textContent=c.id.replace('H',''); b.onclick=()=>{idx=i;answered=false;render()}; els.grid.appendChild(b);});
+}
+[...new Set(CARDS.map(c=>c.era))].sort().forEach(e=>{const o=document.createElement('option'); o.value=e; o.textContent=e; els.era.appendChild(o);});
+els.search.oninput=applyFilter; els.era.onchange=applyFilter; els.status.onchange=applyFilter;
+els.toggleHide.onclick=()=>{hideName=!hideName; render();};
+els.revealName.onclick=()=>{hideName=false; answered=true; els.reviewDetails.classList.remove('locked'); render();};
+els.shuffle.onclick=()=>{view=view.map(x=>[Math.random(),x]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]); idx=0; answered=false; render();};
+els.prev.onclick=()=>{idx--;answered=false;render()}; els.next.onclick=()=>{idx++;answered=false;render()}; els.markSure.onclick=()=>mark('sure'); els.markUnsure.onclick=()=>mark('unsure'); els.markUnknown.onclick=()=>mark('unknown'); els.flag.onclick=toggleFlag;
+render();
+</script>
+</body>
+</html>
