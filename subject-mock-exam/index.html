@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Subject / Range Mock Exam</title>
 <style>
 :root{--bg:#f3f0ea;--card:#fffdf8;--ink:#061a38;--muted:#667085;--line:#ded6c9;--green:#006b35;--gold:#9a6a1d;--red:#9b1c1c;--blue:#1f4f82;--chip:#eee7dc;--shadow:0 10px 26px rgba(30,25,16,.07)}
@@ -69,10 +69,6 @@ body.markupFullscreen .sheet,body.markupFullscreen .hero,body.markupFullscreen #
 .masteryGood{color:#137333}.masteryMid{color:#9a6700}.masteryLow{color:#b42318}
 .subjectBadge{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;padding:7px 10px;background:#fff;font-size:12px;font-weight:900;color:#344054;margin:3px}
 
-
-.codeBox{margin-top:10px;padding:12px;border:1px solid var(--line);border-radius:16px;background:#f7fbff;color:#243b61;line-height:1.45}
-.codeStrong{font-weight:1000;color:#061a38}
-
 @media(max-width:860px){
   .markupToolbar{display:block}
   .toolRow .toolBtn{min-height:42px;padding:9px 10px}
@@ -100,56 +96,13 @@ body.markupFullscreen .sheet,body.markupFullscreen .hero,body.markupFullscreen #
 .reviewSearch{min-height:42px;border:1px solid var(--line);border-radius:999px;padding:8px 12px;min-width:240px;font:inherit}
 
 @media(max-width:860px){body{padding:14px}.hero{padding:20px}h1{font-size:24px}.setupGrid,.scoreBox{grid-template-columns:1fr}.question{font-size:17px}}
-
-
-/* ===== iPad + Phone Optimization Patch ===== */
-html{font-size:16px;-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-body{min-height:100svh;padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right));padding-bottom:max(44px,env(safe-area-inset-bottom));overscroll-behavior-y:contain}
-button,.btn,label.choice,.ansRow,.markBtn,.toolBtn,select,input{touch-action:manipulation;-webkit-tap-highlight-color:rgba(6,26,56,.10)}
-.btn,.markBtn,.toolBtn{font-size:14px;line-height:1.15}.choice span{line-height:1.45}.choice input{flex:0 0 auto}
-.examTop{position:sticky;top:0;z-index:15;background:rgba(243,240,234,.96);backdrop-filter:blur(10px);padding:8px 0;border-bottom:1px solid rgba(222,214,201,.72)}
-.timer{font-variant-numeric:tabular-nums;background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 12px}
-.booklet{scroll-margin-top:86px}.navBtns{position:sticky;bottom:0;z-index:14;background:rgba(255,253,248,.96);backdrop-filter:blur(10px);padding:10px 0 calc(10px + env(safe-area-inset-bottom));border-top:1px solid rgba(222,214,201,.78)}
-body.layout-split .examLayout{grid-template-columns:minmax(0,1fr) minmax(320px,360px)}
-body.layout-split .sheet{top:76px;max-height:calc(100svh - 88px)}
-.sheet{overscroll-behavior:contain}.sheet select{min-height:46px}.quickBtns button{flex:1 1 145px}.ansRow{min-height:54px}.bubble{height:34px;min-width:34px}
-.reviewItem,.stat,.bankCard{overflow-wrap:anywhere}.results{overflow-x:hidden}.results table{display:block;overflow-x:auto;white-space:nowrap}
-
-@media (min-width:861px) and (max-width:1180px){
-  .wrap{max-width:100%} body{padding:14px 14px 40px}.hero{padding:18px 20px}.panel{padding:16px}.booklet{padding:18px}.sheet{padding:12px}
-  h1{font-size:26px}.question{font-size:19px}.setupGrid{grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}.scoreBox{grid-template-columns:repeat(2,minmax(0,1fr))}
-}
-
-@media (max-width:860px){
-  body{padding:10px max(10px,env(safe-area-inset-right)) max(86px,env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left))}
-  .wrap{max-width:100%}.hero,.panel,.booklet,.results{border-radius:18px}.hero{padding:16px}.panel{padding:14px}.booklet{padding:14px}.results{padding:14px}
-  h1{font-size:22px;line-height:1.1}.subtitle{font-size:14px}.mini{font-size:12px}.timer{font-size:18px;padding:7px 10px}.examTop{align-items:flex-start}
-  .setupGrid{grid-template-columns:1fr;gap:10px} select,input{min-height:48px;font-size:16px}.topActions .btn,.dataTools .btn{flex:1 1 100%;justify-content:center;text-align:center}
-  .question{font-size:18px;line-height:1.55;margin-bottom:14px}.qMeta{gap:6px}.pill{font-size:11px;padding:6px 9px}
-  .choice{min-height:66px;padding:14px 12px;border-radius:16px}.choice input{transform:scale(1.35);margin-top:4px}.choices{gap:9px}
-  .markPanel,.markupToolbar{padding:12px;border-radius:16px}.markBtn,.toolBtn{flex:1 1 calc(50% - 8px);min-height:46px;padding:10px 9px}.toolRow{gap:7px}
-  .navBtns{gap:8px}.navBtns .btn{flex:1 1 calc(50% - 8px);min-height:48px;text-align:center}.navBtns #submitBtn{flex-basis:100%}
-  .visualBox img{max-height:48svh}.scratchBox textarea{min-height:140px;font-size:16px}
-  body.layout-compact .sheet.open{display:block;position:fixed;left:max(8px,env(safe-area-inset-left));right:max(8px,env(safe-area-inset-right));bottom:max(8px,env(safe-area-inset-bottom));top:76px;z-index:55;overflow:auto;border-radius:22px;padding:14px;box-shadow:0 24px 70px rgba(6,26,56,.28);animation:sheetUp .16s ease-out;background:var(--card)}
-  @keyframes sheetUp{from{transform:translateY(18px);opacity:.75}to{transform:translateY(0);opacity:1}}
-  .sheetHead{position:sticky;top:-14px;z-index:2;background:var(--card);padding:8px 0 10px;border-bottom:1px solid var(--line)}
-  .itemGrid{grid-template-columns:1fr}.ansRow{grid-template-columns:42px 1fr 34px;min-height:58px;padding:9px}.bubble{height:36px;min-width:36px;font-size:13px}
-  .floatBtns{right:max(12px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom));left:max(12px,env(safe-area-inset-left));display:flex!important;flex-direction:row}.floatBtns button{flex:1;min-height:50px}
-  .booklet.fullscreenBooklet{inset:max(6px,env(safe-area-inset-top)) max(6px,env(safe-area-inset-right)) max(6px,env(safe-area-inset-bottom)) max(6px,env(safe-area-inset-left));padding:14px;border-radius:18px}
-  .scoreBox{grid-template-columns:1fr 1fr;gap:8px}.stat{padding:11px}.stat b{font-size:18px}.reviewSearch{width:100%;min-width:0;border-radius:14px}.fullReviewControls .btn{flex:1 1 calc(50% - 8px)}
-}
-
-@media (max-width:420px){
-  .scoreBox{grid-template-columns:1fr}.question{font-size:17px}.markBtn,.toolBtn,.navBtns .btn,.fullReviewControls .btn{flex-basis:100%}.bubble{height:32px;min-width:32px}.ansRow{grid-template-columns:36px 1fr 30px}.hero{padding:14px}.booklet{padding:12px}
-}
-
 </style>
 </head>
 <body>
 <div class="wrap">
 <header class="hero">
   <h1>Subject / Range Mock Exam</h1>
-  <p class="subtitle">Separate folder mode · iPad/Phone optimized · choose one subject and Q range based on what you have already studied</p>
+  <p class="subtitle">Separate folder mode · choose one subject and Q range based on what you have already studied</p>
   <div class="topActions"><a class="btn" href="../index.html">← Main Reviewer</a></div>
 </header>
 <section class="panel" id="setup">
@@ -158,16 +111,13 @@ body.layout-split .sheet{top:76px;max-height:calc(100svh - 88px)}
     <div><label for="rangeStart">Range start</label><input id="rangeStart" type="number" min="1" value="1"></div>
     <div><label for="rangeEnd">Range end</label><input id="rangeEnd" type="number" min="1" value="300"></div>
     <div><label for="orderMode">Order</label><select id="orderMode"><option value="random">Random from range</option><option value="sequential">Sequential from range</option></select></div>
-    <div><label for="examCodeInput">Same Exam Code</label><input id="examCodeInput" type="text" value="" placeholder="Example: UTIL300-A"></div>
-    <div><label for="groupMode">Group Mode</label><select id="groupMode"><option value="same">Same A01 for everyone</option><option value="personal">Personal random per device</option></select></div>
     <div><label for="countSelect">Item count</label><select id="countSelect"></select></div>
     <div><label for="modeSelect">Timer mode</label><select id="modeSelect"><option value="board">Board Mode — official pace</option><option value="pressure">Pressure Mode — 20% faster</option><option value="sprint">Sprint Mode — 50% faster</option><option value="none">No Timer Mode</option></select></div>
     <div><label for="layoutSelect">Layout</label><select id="layoutSelect"><option value="auto">Auto layout</option><option value="split">PRC Split View</option><option value="compact">Compact Mobile</option></select></div>
   </div>
-  <div id="examCodePreview"></div>
   <div class="warning" id="rangeInfo" style="display:block">Select subject and Q range.</div>
   <div class="topActions"><button class="btn primary" id="startBtn">Start Subject Mock Exam</button><button class="btn" id="historyBtn">View Exam History</button><button class="btn" onclick="showMistakeBank()">Mistake Bank</button></div><div class="resumeBox" id="resumeBox"></div><div class="dataTools"><strong>Backup / Data</strong><div class="topActions"><button class="btn" onclick="exportAllExamData()">Export Backup JSON</button><label class="btn">Import Backup JSON <input class="fileInput" type="file" accept="application/json" style="display:none" onchange="importExamBackup(this)"></label><button class="btn danger" onclick="clearAllExamData()">Clear All Exam Data</button></div></div>
-  <p class="mini">Group mode: use the same Subject + Range + Item count + Order + Same Exam Code so everyone gets the same A01, A02, A03.</p>
+  <p class="mini">Default: new random set every Start Exam. Fixed set only when you choose Retake Same Exam after submit.</p>
   <div class="warning" id="warning"></div>
   
   <div id="historyBox"></div>
@@ -269,7 +219,7 @@ function filterMissingVisualIdentifyCards(cards){
 
 async function loadCards(){loadedWarnings=[];const chunks=await Promise.all(CONFIG.sources.map(async src=>{try{const res=await fetch(src.path+'?v='+Date.now(),{cache:'no-store'});if(!res.ok)throw new Error(res.status);return normalize(await res.json(),src.name)}catch(e){loadedWarnings.push(src.name);return[]}}));allCards=filterMissingVisualIdentifyCards(chunks.flat());if(loadedWarnings.length){$('warning').style.display='block';$('warning').textContent='Some subject sources are not available yet: '+loadedWarnings.join(', ')}return allCards}
 function setupOptions(){const sel=$('countSelect');if(!sel)return;const pool=(typeof subjectRangePool==='function'&&allCards.length)?subjectRangePool():[];const max=pool.length||Math.max(...CONFIG.options.map(o=>o.items));let opts=CONFIG.options.filter(o=>o.items<=max);if(max&&!opts.some(o=>o.items===max))opts.push({items:max,label:'all available in range'});opts=opts.sort((a,b)=>a.items-b.items);sel.innerHTML=opts.map(o=>`<option value="${o.items}">${o.items} items — ${o.label}</option>`).join('')} function calcLimit(items,mode){if(mode==='none')return 0;let s=items*CONFIG.paceMinutes*60;if(mode==='pressure')s*=.8;if(mode==='sprint')s*=.5;return Math.round(s)}
-function prepQuestion(c){const choices=c.choices.map(ch=>({text:ch.text,correct:ch.text.trim()===c.correctText.trim()}));if(!choices.some(ch=>ch.correct))choices.push({text:c.correctText,correct:true});const randomized=(shouldUseSameExamCode()?seededShuffle(choices,fixedSeedText('choices-'+cardKey(c))):shuffle(choices));return{...c,randomizedChoices:randomized,correctIndex:randomized.findIndex(ch=>ch.correct)}}
+function prepQuestion(c){const choices=c.choices.map(ch=>({text:ch.text,correct:ch.text.trim()===c.correctText.trim()}));if(!choices.some(ch=>ch.correct))choices.push({text:c.correctText,correct:true});const randomized=shuffle(choices);return{...c,randomizedChoices:randomized,correctIndex:randomized.findIndex(ch=>ch.correct)}}
 function directImageCandidate(value){if(!value)return'';const s=String(value).trim();if(/^(https?:\/\/|data:image\/|assets\/|\.\/assets\/|\.\.\/)/i.test(s)&&/\.(png|jpe?g|webp|gif|svg)(\?.*)?$/i.test(s))return s;return''} function getArrayField(card,name){const v=card[name];if(Array.isArray(v))return v.filter(Boolean).map(String);if(typeof v==='string'&&v.trim())return[v.trim()];return[]} function safeVisualQueries(card){const q=[];['questionImageQuery','imageQuery','questionImageQueries','questionImageLayoutQueries','visualQuery'].forEach(k=>q.push(...getArrayField(card,k)));if(card.visual&&typeof card.visual==='string')q.push(card.visual);return[...new Set(q.filter(x=>x&&!/answer|correct/i.test(x)))]} function getQuestionVisual(card){for(const v of [card.questionImage,card.image,card.visualUrl,card.visual]){const hit=directImageCandidate(v);if(hit)return{type:'image',url:hit,note:'Question visual shown for identification. Answer labels are hidden until submit.'}}const q=safeVisualQueries(card)[0];return q?{type:'query',query:q,note:'No safe embedded image is available before submit.'}:null} function imageSearchUrl(q){return'https://www.google.com/search?tbm=isch&q='+encodeURIComponent(q)} function wikiSearchUrl(q){return'https://commons.wikimedia.org/w/index.php?search='+encodeURIComponent(q)+'&title=Special:MediaSearch&type=image'} function renderSafeVisual(card){
   const box=$('visualBox');
   const v=getQuestionVisual(card);
@@ -285,16 +235,6 @@ function answerVisualHtml(card){for(const v of [card.answerImage,card.questionIm
 
 
 
-
-
-// ===== v2 Same Exam Code / Fixed Seed Mode =====
-function hashStringToSeed(str){let h=2166136261>>>0;for(let i=0;i<str.length;i++){h^=str.charCodeAt(i);h=Math.imul(h,16777619)}return h>>>0}
-function seededRandomFactory(seed){let t=seed>>>0;return function(){t+=0x6D2B79F5;let r=Math.imul(t^(t>>>15),1|t);r^=r+Math.imul(r^(r>>>7),61|r);return((r^(r>>>14))>>>0)/4294967296}}
-function seededShuffle(arr,seedText){const a=arr.slice();const rand=seededRandomFactory(hashStringToSeed(seedText));for(let i=a.length-1;i>0;i--){const j=Math.floor(rand()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
-function cleanExamCode(){const el=$('examCodeInput');return el?String(el.value||'').trim().toUpperCase():''}
-function shouldUseSameExamCode(){const m=$('groupMode')?$('groupMode').value:'same';return m==='same'}
-function fixedSeedText(extra=''){const subj=(typeof selectedSubjectName==='function'?selectedSubjectName():CONFIG.shortTitle);const r=(typeof getRangeSettings==='function'?getRangeSettings():{start:1,end:999,order:'random'});const count=$('countSelect')?$('countSelect').value:'';const code=cleanExamCode()||`${subj}-Q${r.start}-${r.end}-${count}`;return `${CONFIG.shortTitle}|${subj}|${r.start}|${r.end}|${count}|${r.order}|${code}|${extra}`}
-function updateExamCodePreview(){const info=$('examCodePreview');if(!info)return;const code=cleanExamCode();if(shouldUseSameExamCode()){info.innerHTML=`<div class="codeBox"><span class="codeStrong">Group same-exam mode ON.</span> Share this exact code: <span class="codeStrong">${escapeHtml(code||'(auto-code from subject/range/items)')}</span>. Same subject + range + item count + order + code = same A01 for everyone.</div>`}else{info.innerHTML=`<div class="codeBox"><span class="codeStrong">Personal random mode ON.</span> A01 can be different per device.</div>`}}
 
 // ===== Standalone Subject / Range Mock Exam =====
 function displayNumber(card, fallbackIndex){
@@ -329,15 +269,15 @@ function subjectRangePool(){
   return pool;
 }
 function updateRangeInfo(){
-  const info=$('rangeInfo'); if(!info || !allCards.length){updateExamCodePreview(); return;}
+  const info=$('rangeInfo'); if(!info || !allCards.length) return;
   const pool=subjectRangePool();
   const {start,end,order}=getRangeSettings();
   const skipped=loadedWarnings.filter(w=>String(w).includes('visual-identification')).join(' ');
   info.innerHTML=`<span class="subjectBadge">${escapeHtml(selectedSubjectName())}</span><span class="subjectBadge">Q${start}–Q${end}</span><span class="subjectBadge">${pool.length} available</span><span class="subjectBadge">${order==='random'?'Random':'Sequential'}</span><br>${pool.length?'Ready. Choose item count and start exam.':'No questions in this selected range yet.'} ${skipped?escapeHtml(skipped):''}`;
-  setupOptions();updateExamCodePreview();
+  setupOptions();
 }
 function setupSubjectRangeEvents(){
-  ['subjectSelect','rangeStart','rangeEnd','orderMode','examCodeInput','groupMode'].forEach(id=>{
+  ['subjectSelect','rangeStart','rangeEnd','orderMode'].forEach(id=>{
     const el=$(id); if(el){el.onchange=updateRangeInfo; el.oninput=updateRangeInfo;}
   });
 }
@@ -393,7 +333,7 @@ function applyFullReviewFilter(){
 }
 
 // ===== v6 autosave / resume / mistake bank / backup =====
-const PROGRESS_KEY = 'aleSubjectMockActiveProgress_' + String(CONFIG.shortTitle||'exam').replace(/\W+/g,'_');
+const PROGRESS_KEY = 'aleMockActiveProgress_' + String(CONFIG.shortTitle||'exam').replace(/\W+/g,'_');
 const MISTAKE_BANK_KEY = 'aleMockMistakeBankV1';
 let autosaveInt = null;
 let originalAnswers = [];
@@ -881,7 +821,7 @@ function clearAttemptNotes(){
 }
 window.addEventListener('resize', ()=> setTimeout(resizeMarkupCanvas, 100));
 
-async function startExam(){applyLayout();$('startBtn').disabled=true;$('warning').style.display='none';await loadCards();if(!allCards.length){$('warning').style.display='block';$('warning').textContent='No cards available yet. Check folders/cards.json, or add embedded images for visual-identification cards.';$('startBtn').disabled=false;return}const count=Number($('countSelect').value);exam=[];let rangePool=subjectRangePool();const rangeSettings=getRangeSettings();if(!rangePool.length){alert('No questions available in this subject/range. Try a wider range or add cards/images.');$('startBtn').disabled=false;return}if(pendingRetakeIds?.length){exam=buildExamFromIds(pendingRetakeIds,count)||[];if(!exam.length){alert('Saved IDs unavailable. Starting new subject/range exam.');pendingRetakeIds=null}}if(!exam.length){rangePool=rangeSettings.order==='random'?(shouldUseSameExamCode()?seededShuffle(rangePool,fixedSeedText('questions')):shuffle(rangePool)):rangePool;exam=rangePool.slice(0,Math.min(count,rangePool.length)).map(prepQuestion);}answers=Array(exam.length).fill(null);originalAnswers=Array(exam.length).fill(null);marks=Array(exam.length).fill('');current=0;submitted=false;activeFilter='all';currentAttemptId=newAttemptId();timeLimit=calcLimit(exam.length,$('modeSelect').value);startedAt=Date.now();saveCurrentAttempt(pendingRetakeIds?'retake_started':'started',{retake:!!pendingRetakeIds});$('setup').style.display='none';$('results').style.display='none';$('examShell').style.display='block';renderQuestion();tick();clearInterval(timerInt);if(timeLimit)timerInt=setInterval(tick,1000);else $('timer').textContent='No timer';beginAutosave();$('startBtn').disabled=false}
+async function startExam(){applyLayout();$('startBtn').disabled=true;$('warning').style.display='none';await loadCards();if(!allCards.length){$('warning').style.display='block';$('warning').textContent='No cards available yet. Check folders/cards.json, or add embedded images for visual-identification cards.';$('startBtn').disabled=false;return}const count=Number($('countSelect').value);exam=[];let rangePool=subjectRangePool();const rangeSettings=getRangeSettings();if(!rangePool.length){alert('No questions available in this subject/range. Try a wider range or add cards/images.');$('startBtn').disabled=false;return}if(pendingRetakeIds?.length){exam=buildExamFromIds(pendingRetakeIds,count)||[];if(!exam.length){alert('Saved IDs unavailable. Starting new subject/range exam.');pendingRetakeIds=null}}if(!exam.length){rangePool=rangeSettings.order==='random'?shuffle(rangePool):rangePool;exam=rangePool.slice(0,Math.min(count,rangePool.length)).map(prepQuestion);}answers=Array(exam.length).fill(null);originalAnswers=Array(exam.length).fill(null);marks=Array(exam.length).fill('');current=0;submitted=false;activeFilter='all';currentAttemptId=newAttemptId();timeLimit=calcLimit(exam.length,$('modeSelect').value);startedAt=Date.now();saveCurrentAttempt(pendingRetakeIds?'retake_started':'started',{retake:!!pendingRetakeIds});$('setup').style.display='none';$('results').style.display='none';$('examShell').style.display='block';renderQuestion();tick();clearInterval(timerInt);if(timeLimit)timerInt=setInterval(tick,1000);else $('timer').textContent='No timer';beginAutosave();$('startBtn').disabled=false}
 function tick(){if(!timeLimit){$('timer').textContent='No timer';return}const left=timeLimit-Math.floor((Date.now()-startedAt)/1000);$('timer').textContent=fmtTime(left);updatePacing(); if(left<=0&&!submitted)submitExam(true)}
 function counts(){const c={answered:0,unanswered:0,sure:0,notSure:0,guess:0,noIdea:0,marked:0};for(let i=0;i<exam.length;i++){if(answers[i]==null)c.unanswered++;else c.answered++;if(marks[i]){c.marked++;c[marks[i]]++}}return c}
 function markLabel(m){return m?MARKS[m].sym+' '+MARKS[m].label:'No mark'} function statusFor(i){return {answered:answers[i]!=null,mark:marks[i]||'',current:i===current}}
@@ -901,49 +841,6 @@ function subjectTable(bd){return`<table><thead><tr><th>Subject</th><th>Correct</
 function smallReview(q,i,showExplain){const ua=answers[i]===null?'Unanswered':q.randomizedChoices[answers[i]]?.text;const ca=q.randomizedChoices[q.correctIndex]?.text||q.correctText;return`<div class="reviewItem"><h3>Q${i+1} · ${escapeHtml(q.category)} · ${escapeHtml(markLabel(marks[i]))}</h3><p><strong>Question:</strong> ${escapeHtml(q.question)}</p>${answerVisualHtml(q)}${annotationReviewHtml(q)}<p><strong>Your answer:</strong> ${escapeHtml(ua)}</p><p><strong>Correct answer:</strong> ${escapeHtml(ca)}</p><p><strong>Key memory:</strong> ${escapeHtml(q.keyMemory||'—')}</p><div class="explain"><strong>Explanation:</strong>\n${escapeHtml(q.explanation||'—')}</div></div>`}
 function renderHistory(){const rows=readHistory().filter(r=>r.examType===CONFIG.shortTitle).reverse();$('historyBox').innerHTML=rows.length?`<table><thead><tr><th>Date</th><th>Items</th><th>Score</th><th>%</th><th>Status</th><th>Time</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${r.date}</td><td>${r.itemCount}</td><td>${r.score}</td><td>${Number(r.percentage).toFixed(1)}%</td><td>${r.passFail}</td><td>${fmtTime(r.timeUsedSeconds)}</td></tr>`).join('')}</tbody></table>`:'<p class="mini">No history for this exam yet.</p>'}
 $('startBtn').onclick=startExam;$('historyBtn').onclick=renderHistory;populateSubjectSelect();setupSubjectRangeEvents();setupOptions();applyLayout();renderResumeBox();setTimeout(updateRangeInfo,100);
-
-
-// ===== iPad + Phone Optimization Patch =====
-(function(){
-  const oldApplyLayout = window.applyLayout;
-  window.applyLayout = function(){
-    if(typeof oldApplyLayout === 'function') oldApplyLayout();
-    const sel = document.getElementById('layoutSelect');
-    const width = Math.min(window.innerWidth || 9999, screen.width || 9999);
-    const autoCompact = !sel || sel.value === 'auto' ? width < 900 : sel.value === 'compact';
-    document.body.classList.toggle('touch-optimized', true);
-    document.body.classList.toggle('layout-compact', autoCompact);
-    document.body.classList.toggle('layout-split', !autoCompact);
-  };
-
-  const oldRowHtml = window.rowHtml;
-  window.rowHtml = function(i){
-    const html = oldRowHtml ? oldRowHtml(i) : '';
-    return html.replace('onclick="current='+i+';renderQuestion()"', 'onclick="current='+i+';renderQuestion();if(document.body.classList.contains('layout-compact')) document.getElementById('answerSheet').classList.remove('open');window.scrollTo({top:document.getElementById('examShell').offsetTop,behavior:'smooth'});"');
-  };
-
-  const oldRenderQuestion = window.renderQuestion;
-  window.renderQuestion = function(){
-    if(typeof oldRenderQuestion === 'function') oldRenderQuestion();
-    const active = document.querySelector('.ansRow.current');
-    const sheet = document.getElementById('answerSheet');
-    if(active && sheet && document.body.classList.contains('layout-split')){
-      try{ active.scrollIntoView({block:'nearest',inline:'nearest'}); }catch(e){}
-    }
-  };
-
-  document.addEventListener('click', function(e){
-    const sheet = document.getElementById('answerSheet');
-    if(!sheet || !document.body.classList.contains('layout-compact') || !sheet.classList.contains('open')) return;
-    const isSheet = sheet.contains(e.target);
-    const isFloat = e.target.closest && e.target.closest('.floatBtns');
-    if(!isSheet && !isFloat) sheet.classList.remove('open');
-  }, true);
-
-  window.addEventListener('orientationchange', function(){ setTimeout(function(){ if(window.applyLayout) window.applyLayout(); if(window.resizeMarkupCanvas) window.resizeMarkupCanvas(); }, 240); });
-  setTimeout(function(){ if(window.applyLayout) window.applyLayout(); }, 0);
-})();
-
 </script>
 </body>
 </html>
