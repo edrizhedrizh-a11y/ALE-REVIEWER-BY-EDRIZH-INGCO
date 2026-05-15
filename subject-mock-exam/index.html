@@ -1,846 +1,587 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Subject / Range Mock Exam</title>
 <style>
-:root{--bg:#f3f0ea;--card:#fffdf8;--ink:#061a38;--muted:#667085;--line:#ded6c9;--green:#006b35;--gold:#9a6a1d;--red:#9b1c1c;--blue:#1f4f82;--chip:#eee7dc;--shadow:0 10px 26px rgba(30,25,16,.07)}
-*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:ui-rounded,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding:18px 20px 44px}
-.wrap{max-width:1220px;margin:0 auto} .hero,.panel,.booklet,.sheet,.results{background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow)} .hero{padding:22px 26px;margin-bottom:14px}
-h1{margin:0 0 6px;font-size:30px;font-weight:900;letter-spacing:.02em} h2{margin:0 0 10px} .subtitle{margin:0;color:#40506a;line-height:1.45} .mini{font-size:13px;color:#667085;line-height:1.35}
-.btn{border:1px solid var(--line);background:#fffaf0;color:var(--ink);border-radius:999px;padding:10px 14px;font-weight:900;cursor:pointer;text-decoration:none;min-height:42px} .btn.primary{background:#0c3924;color:white;border-color:#0c3924} .btn.danger{background:#fff5f5;color:var(--red)} .btn:disabled{opacity:.5;cursor:not-allowed}
-.topActions,.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center} .topActions{margin-top:14px} .panel{padding:18px;margin-bottom:14px} .setupGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px} label{font-weight:900} select,input{width:100%;padding:12px;border-radius:14px;border:1px solid var(--line);background:#fff;font:inherit}
-.warning{margin-top:12px;color:#7a520f;background:#fff7df;border:1px solid #ead39a;border-radius:14px;padding:12px;display:none}
-.examShell{display:none} .examTop{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:12px;flex-wrap:wrap} .timer{font-weight:1000;font-size:22px;color:var(--red)}
-.examLayout{display:grid;gap:14px;align-items:start} body.layout-split .examLayout{grid-template-columns:minmax(0,1fr) 360px} body.layout-compact .examLayout{grid-template-columns:1fr}
-.booklet{padding:22px} .sheet{padding:16px} body.layout-split .sheet{position:sticky;top:12px;max-height:calc(100vh - 24px);overflow:auto} body.layout-compact .sheet{display:none} body.layout-compact .sheet.open{display:block}
-.qMeta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px} .pill{background:var(--chip);border-radius:999px;padding:6px 10px;font-size:12px;font-weight:900;color:#5c6470}
-.question{font-size:20px;line-height:1.5;font-weight:850;margin:0 0 18px;white-space:pre-wrap} .visualBox{display:none;margin:0 0 18px;border:1px solid var(--line);background:#fff;border-radius:18px;padding:12px} .visualBox.show{display:block} .visualBox img{display:block;max-width:100%;max-height:420px;margin:0 auto;border-radius:14px;border:1px solid var(--line);object-fit:contain;background:#f7f3eb} .visualNote{font-size:12px;color:#667085;margin:8px 4px 0;line-height:1.35} .visualBtns{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px} .visualLink{display:inline-block;border:1px solid var(--line);background:#fffaf0;color:var(--ink);border-radius:999px;padding:8px 10px;text-decoration:none;font-size:12px;font-weight:900}
-.choices{display:grid;gap:10px} .choice{display:flex;gap:12px;align-items:flex-start;border:1px solid var(--line);border-radius:18px;background:#fff;padding:14px;cursor:pointer;min-height:58px} .choice input{margin-top:5px;transform:scale(1.25)} .choice.selected{border-color:#9a6a1d;background:#fff8e7}
-.markPanel{margin:16px 0;padding:14px;border:1px dashed #d5c8b6;border-radius:18px;background:#fffaf0} .markBtns{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px} .markBtn{border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px 12px;font-weight:900;cursor:pointer;min-height:44px} .markBtn.active{background:#061a38;color:white;border-color:#061a38}
-.navBtns{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px} .sheetHead{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:10px} .sheetControls{display:grid;gap:8px;margin-bottom:10px} .quickBtns{display:flex;flex-wrap:wrap;gap:7px} .quickBtns button{font-size:12px;padding:8px 9px;min-height:36px}
-.itemGrid{display:grid;gap:7px} .ansRow{display:grid;grid-template-columns:38px 1fr 32px;gap:7px;align-items:center;border:1px solid var(--line);background:#fff;border-radius:14px;padding:8px;cursor:pointer} .ansRow.current{outline:3px solid #061a38} .ansRow.blank{border-color:#e0b0b0} .ansRow.marked{background:#fff8e7} .num{font-weight:1000;text-align:center} .bubbles{display:grid;grid-template-columns:repeat(4,1fr);gap:4px} .bubble{height:30px;min-width:30px;border:1px solid #cfc5b5;border-radius:999px;display:grid;place-items:center;font-size:12px;font-weight:1000;background:#fff} .bubble.sel{background:#0c3924;color:white;border-color:#0c3924} .markSym{font-size:18px;text-align:center}
-.floatBtns{display:none;position:fixed;right:14px;bottom:14px;z-index:20;flex-direction:column;gap:8px} body.layout-compact .floatBtns{display:flex} .floatBtns button{box-shadow:0 8px 20px rgba(0,0,0,.16)}
-.results{display:none;padding:22px} .scoreBox{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:14px 0} .stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px} .stat b{display:block;font-size:22px;margin-top:6px} .pass{color:var(--green)} .fail{color:var(--red)} table{width:100%;border-collapse:collapse;font-size:13px;margin-top:10px} th,td{border-bottom:1px solid var(--line);padding:9px;text-align:left;vertical-align:top} th{font-size:12px;color:#667085;text-transform:uppercase;letter-spacing:.04em}
-.reviewItem{border:1px solid var(--line);background:#fff;border-radius:16px;padding:14px;margin:10px 0} .reviewItem h3{margin:0 0 8px;font-size:16px} .explain{white-space:pre-wrap;color:#263853;line-height:1.45}
-
-/* Test Booklet Markup Mode */
-.markupArea{position:relative;border-radius:18px}
-.markupCanvas{position:absolute;inset:0;width:100%;height:100%;z-index:9;pointer-events:none;border-radius:18px}
-.markupArea.drawing .markupCanvas{pointer-events:auto;touch-action:none}
-.markupArea.notes-hidden .markupCanvas{display:none}
-.markupToolbar{margin:16px 0;padding:14px;border:1px dashed #d5c8b6;border-radius:18px;background:#fffaf0}
-.toolRow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
-.toolBtn{border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px 12px;font-weight:900;cursor:pointer;min-height:44px}
-.toolBtn.active{background:#061a38;color:#fff;border-color:#061a38}
-.toolHint{font-size:12px;color:#667085;line-height:1.35;margin-top:8px}
-.scratchBox{display:none;margin-top:12px}
-.scratchBox.open{display:block}
-.scratchBox textarea{width:100%;min-height:110px;border:1px solid var(--line);border-radius:14px;padding:12px;font:inherit;line-height:1.45;resize:vertical;background:#fff}
-.booklet.fullscreenBooklet{position:fixed;inset:10px;z-index:60;overflow:auto;max-width:none;background:var(--card);padding:24px}
-body.markupFullscreen{overflow:hidden}
-body.markupFullscreen .sheet,body.markupFullscreen .hero,body.markupFullscreen #setup,body.markupFullscreen .floatBtns{display:none!important}
-.reviewCanvasBox{margin:10px 0;border:1px solid var(--line);background:#fff;border-radius:16px;padding:10px}
-.reviewCanvasBox canvas{width:100%;max-height:360px;border-radius:12px;border:1px solid var(--line);background:#fffdf8}
-.reviewNoteText{white-space:pre-wrap;background:#fffaf0;border:1px solid var(--line);border-radius:12px;padding:10px;margin-top:8px;color:#263853}
-
-.paceBox{font-size:13px;color:#40506a;background:#fffaf0;border:1px solid var(--line);border-radius:14px;padding:9px 12px;margin-top:8px}
-.paceBox.behind{color:#9b1c1c;background:#fff5f5;border-color:#e0b0b0}
-.paceBox.ahead{color:#006b35;background:#f0fff7;border-color:#b7dfc8}
-.resumeBox{display:none;margin-top:12px;background:#f0fff7;border:1px solid #b7dfc8;border-radius:14px;padding:12px;color:#0c3924}
-.dataTools{margin-top:12px;border-top:1px dashed var(--line);padding-top:12px}
-.fileInput{max-width:260px}
-.bankList{display:grid;gap:10px;margin-top:10px}
-.bankCard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px}
-
-
-.fullReviewControls{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;padding:12px;border:1px solid var(--line);border-radius:16px;background:#fffaf0}
-.reviewItem.correctReview{border-left:6px solid #1f8f4d}
-.reviewItem.wrongReview{border-left:6px solid #b42318}
-.reviewItem.blankReview{border-left:6px solid #9a6700}
-.reviewTag{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 10px;margin:3px;font-size:12px;font-weight:800;color:#344054}
-.reviewTag.correct{color:#137333}.reviewTag.wrong{color:#b42318}.reviewTag.blank{color:#9a6700}
-.choiceAudit{display:grid;gap:6px;margin:10px 0}.choiceAudit div{border:1px solid var(--line);border-radius:12px;padding:8px 10px;background:#fff}
-.choiceAudit .chosen{outline:2px solid #6ea8fe}.choiceAudit .correctChoice{background:#f0fff7;border-color:#b7dfc8}
-.reviewSearch{min-height:42px;border:1px solid var(--line);border-radius:999px;padding:8px 12px;min-width:240px;font:inherit}
-
-
-.masteryBox{margin-top:12px;padding:12px;border:1px solid var(--line);border-radius:16px;background:#fffaf0}
-.masteryGood{color:#137333}.masteryMid{color:#9a6700}.masteryLow{color:#b42318}
-.subjectBadge{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;padding:7px 10px;background:#fff;font-size:12px;font-weight:900;color:#344054;margin:3px}
-
-@media(max-width:860px){
-  .markupToolbar{display:block}
-  .toolRow .toolBtn{min-height:42px;padding:9px 10px}
+:root{
+  --bg:#f4f0e8; --card:#fffdf8; --panel:#fffaf1; --ink:#071a38; --muted:#667085;
+  --line:#ded6c9; --soft:#eee5d7; --accent:#8a5a24; --accentDark:#5f3b13;
+  --green:#0f7a3d; --red:#9b1c1c; --warn:#9a6700; --blue:#1f4f82;
+  --shadow:0 16px 34px rgba(35,25,12,.08);
 }
-
-
-.paceBox{font-size:13px;color:#40506a;background:#fffaf0;border:1px solid var(--line);border-radius:14px;padding:9px 12px;margin-top:8px}
-.paceBox.behind{color:#9b1c1c;background:#fff5f5;border-color:#e0b0b0}
-.paceBox.ahead{color:#006b35;background:#f0fff7;border-color:#b7dfc8}
-.resumeBox{display:none;margin-top:12px;background:#f0fff7;border:1px solid #b7dfc8;border-radius:14px;padding:12px;color:#0c3924}
-.dataTools{margin-top:12px;border-top:1px dashed var(--line);padding-top:12px}
-.fileInput{max-width:260px}
-.bankList{display:grid;gap:10px;margin-top:10px}
-.bankCard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px}
-
-
-.fullReviewControls{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;padding:12px;border:1px solid var(--line);border-radius:16px;background:#fffaf0}
-.reviewItem.correctReview{border-left:6px solid #1f8f4d}
-.reviewItem.wrongReview{border-left:6px solid #b42318}
-.reviewItem.blankReview{border-left:6px solid #9a6700}
-.reviewTag{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 10px;margin:3px;font-size:12px;font-weight:800;color:#344054}
-.reviewTag.correct{color:#137333}.reviewTag.wrong{color:#b42318}.reviewTag.blank{color:#9a6700}
-.choiceAudit{display:grid;gap:6px;margin:10px 0}.choiceAudit div{border:1px solid var(--line);border-radius:12px;padding:8px 10px;background:#fff}
-.choiceAudit .chosen{outline:2px solid #6ea8fe}.choiceAudit .correctChoice{background:#f0fff7;border-color:#b7dfc8}
-.reviewSearch{min-height:42px;border:1px solid var(--line);border-radius:999px;padding:8px 12px;min-width:240px;font:inherit}
-
-@media(max-width:860px){body{padding:14px}.hero{padding:20px}h1{font-size:24px}.setupGrid,.scoreBox{grid-template-columns:1fr}.question{font-size:17px}}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{height:100%;font-size:16px}
+body{
+  margin:0;min-height:100%;background:radial-gradient(circle at top left,rgba(138,90,36,.12),transparent 34%),var(--bg);
+  color:var(--ink);font-family:ui-rounded,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  padding:clamp(12px,2vw,22px);padding-bottom:calc(24px + env(safe-area-inset-bottom));
+}
+body.dark{--bg:#111827;--card:#1f2937;--panel:#273244;--ink:#f9fafb;--muted:#cbd5e1;--line:rgba(255,255,255,.15);--soft:#374151;--shadow:0 16px 38px rgba(0,0,0,.28)}
+.app{width:min(100%,1240px);margin:0 auto;display:grid;gap:14px}
+.hero,.setup,.booklet,.sheet,.results{background:rgba(255,253,248,.92);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow)}
+body.dark .hero,body.dark .setup,body.dark .booklet,body.dark .sheet,body.dark .results{background:rgba(31,41,55,.92)}
+.hero{padding:18px 20px;display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+h1{font-size:clamp(1.35rem,3.2vw,2.15rem);line-height:1.05;margin:0 0 6px;font-weight:950;letter-spacing:.01em}
+.subtitle{margin:0;color:#40506a;font-size:.93rem;line-height:1.35}
+body.dark .subtitle{color:var(--muted)}
+.btn,a.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:42px;border:1px solid var(--line);
+  border-radius:999px;background:#fffaf0;color:var(--ink);font:inherit;font-weight:900;text-decoration:none;
+  padding:10px 14px;cursor:pointer;touch-action:manipulation;white-space:nowrap
+}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.green{background:var(--green);border-color:var(--green);color:#fff}
+.btn.danger{background:#fff5f5;color:var(--red)}
+.btn.small{min-height:34px;padding:7px 10px;font-size:.82rem}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.topActions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.setup{padding:16px}
+.setupGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+label{display:grid;gap:6px;font-weight:900;font-size:.86rem;color:#344054}
+body.dark label{color:var(--muted)}
+select,input{width:100%;border:1px solid var(--line);border-radius:15px;background:var(--card);color:var(--ink);padding:12px;font:inherit;min-height:44px}
+.notice{margin-top:12px;border:1px solid #ead39a;background:#fff7df;color:#7a520f;border-radius:15px;padding:11px 12px;font-size:.9rem;line-height:1.35}
+body.dark .notice{background:#3b2c13;color:#ffe6a3}
+.examShell{display:none}
+.examTop{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;margin:4px 0 10px}
+.progressTitle{font-size:clamp(1.05rem,2.4vw,1.35rem);font-weight:950}
+.timer{font-size:clamp(1.35rem,3.3vw,2rem);font-weight:1000;color:var(--red);font-variant-numeric:tabular-nums}
+.pacing{margin-top:7px;display:inline-block;border:1px solid var(--line);background:#fffaf0;border-radius:14px;padding:8px 10px;color:#40506a;font-size:.88rem}
+.pacing.behind{background:#fff5f5;color:var(--red);border-color:#efc2c2}
+.pacing.ahead{background:#f0fff7;color:var(--green);border-color:#b7dfc8}
+.examLayout{display:grid;gap:14px;align-items:start}
+.examLayout.split{grid-template-columns:minmax(0,1fr) minmax(286px,340px)}
+.booklet{padding:clamp(14px,2vw,22px);min-width:0}
+.sheet{padding:14px;min-width:0}
+.examLayout.split .sheet{position:sticky;top:12px;max-height:calc(100svh - 24px);overflow:auto}
+.meta{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px}
+.pill{background:var(--soft);border:1px solid var(--line);border-radius:999px;padding:7px 10px;font-size:.82rem;font-weight:950;color:#4b5563}
+body.dark .pill{color:#e5e7eb}
+.question{font-size:clamp(1.08rem,2.2vw,1.55rem);line-height:1.35;font-weight:950;margin:0 0 14px;letter-spacing:-.015em;white-space:pre-wrap}
+.visualBox{display:none;margin:0 0 14px;border:1px solid var(--line);border-radius:18px;background:#fff;padding:10px}
+body.dark .visualBox{background:var(--panel)}
+.visualBox.show{display:block}
+.visualBox img{display:block;max-width:100%;max-height:420px;margin:0 auto;border-radius:14px;object-fit:contain}
+.choices{display:grid;gap:10px;margin-top:10px}
+.choice{
+  position:relative;display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;align-items:center;
+  min-height:62px;border:1px solid var(--line);border-radius:18px;background:var(--card);
+  padding:12px 14px;cursor:pointer;touch-action:manipulation
+}
+.choice:hover{border-color:rgba(138,90,36,.45)}
+.choice.selected{background:#fff7e6;border-color:var(--accent);box-shadow:inset 0 0 0 2px rgba(138,90,36,.2)}
+body.dark .choice.selected{background:#3b2c13}
+.choice input{position:absolute;opacity:0;pointer-events:none}
+.letterBubble{
+  width:34px;height:34px;border-radius:999px;border:2px solid #c7c0b5;background:#fff;display:grid;place-items:center;
+  font-weight:1000;font-size:.88rem;color:#344054;flex:0 0 auto
+}
+.choice.selected .letterBubble{background:var(--accent);border-color:var(--accent);color:#fff}
+.choiceText{min-width:0;font-size:clamp(.98rem,1.7vw,1.1rem);font-weight:850;line-height:1.25;overflow-wrap:anywhere;text-align:left}
+.markPanel,.markupPanel{margin-top:12px;border:1px dashed #d4c7b6;border-radius:18px;background:#fffaf0;padding:12px}
+body.dark .markPanel,body.dark .markupPanel{background:#233044}
+.toolRow,.markBtns,.navBtns,.quickReview{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.markBtn,.toolBtn{min-height:39px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);font:inherit;font-weight:900;padding:8px 11px;cursor:pointer}
+.markBtn.active,.toolBtn.active{background:var(--ink);border-color:var(--ink);color:#fff}
+.toolHint{margin-top:7px;color:var(--muted);font-size:.82rem}
+.markupArea{position:relative;border-radius:18px}
+.markupCanvas{position:absolute;inset:0;width:100%;height:100%;z-index:5;pointer-events:none;border-radius:18px}
+.markupArea.drawing .markupCanvas{pointer-events:auto;touch-action:none}
+.markupArea.notesHidden .markupCanvas{display:none}
+.scratchBox{display:none;margin-top:10px}
+.scratchBox.open{display:block}
+.scratchBox textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:14px;padding:10px;background:var(--card);color:var(--ink);font:inherit}
+.booklet.fullscreen{position:fixed;inset:10px;z-index:50;overflow:auto;padding:18px}
+body.fullscreenOn{overflow:hidden}
+.sheetHead{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:10px}
+.sheet h2{font-size:1.15rem;margin:0;font-weight:950}
+.sheetStats{color:var(--muted);font-size:.82rem;margin:0 0 8px}
+.sheetSelect{margin-bottom:9px}
+.itemGrid{display:grid;gap:7px}
+.ansRow{display:grid;grid-template-columns:34px minmax(0,1fr) 26px;gap:7px;align-items:center;border:1px solid #e1b8b8;border-radius:13px;background:var(--card);padding:8px;cursor:pointer}
+.ansRow.answered{border-color:var(--line)}
+.ansRow.current{outline:3px solid var(--ink);border-color:var(--ink)}
+.ansRow.marked{background:#fff7e6}
+.ansNum{text-align:center;font-weight:1000}
+.sheetBubbles{display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
+.sheetBubble{height:28px;min-width:28px;border:1px solid #cec4b7;border-radius:999px;background:#fff;font-size:.75rem;font-weight:1000;color:#071a38;cursor:pointer}
+.sheetBubble.sel{background:var(--green);border-color:var(--green);color:#fff}
+.markSym{text-align:center;font-size:1rem}
+.floatBtns{display:none;position:fixed;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:40;flex-direction:column;gap:8px}
+.floatBtns .btn{box-shadow:0 10px 26px rgba(0,0,0,.18)}
+.results{display:none;padding:18px}
+.statGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:13px}
+.stat b{display:block;font-size:1.35rem;margin-top:4px}
+.reviewControls{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0;border:1px solid var(--line);border-radius:16px;background:#fffaf0;padding:10px}
+.reviewSearch{min-height:42px;border:1px solid var(--line);border-radius:999px;padding:8px 12px;min-width:220px;font:inherit}
+.reviewItem{border:1px solid var(--line);border-radius:16px;background:var(--card);padding:14px;margin:10px 0}
+.reviewItem.correct{border-left:6px solid var(--green)}
+.reviewItem.wrong{border-left:6px solid var(--red)}
+.reviewItem.blank{border-left:6px solid var(--warn)}
+.reviewTag{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:6px 9px;margin:3px;background:#fff;font-weight:900;font-size:.78rem;color:#344054}
+.choiceAudit{display:grid;gap:6px;margin:10px 0}
+.choiceAudit div{border:1px solid var(--line);border-radius:12px;padding:8px 10px;background:#fff}
+.choiceAudit .chosen{outline:2px solid #60a5fa}
+.choiceAudit .correctChoice{background:#f0fff7;border-color:#b7dfc8}
+.fullscreenExit{display:none}
+body.fullscreenOn .fullscreenExit{display:inline-flex}
+body.fullscreenOn .hero,body.fullscreenOn .sheet,body.fullscreenOn .floatBtns{display:none!important}
+@media(max-width:1120px){
+  .examLayout.split{grid-template-columns:minmax(0,1fr) minmax(270px,310px)}
+  .setupGrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:920px){
+  body{padding:10px}
+  .hero{display:block;border-radius:18px}
+  .hero .topActions{margin-top:10px}
+  .setupGrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .examLayout,.examLayout.split{grid-template-columns:1fr}
+  .sheet{display:none}
+  body.sheetOpen .sheet{
+    display:block;position:fixed;z-index:45;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));
+    max-height:72svh;overflow:auto;border-radius:18px;box-shadow:0 24px 70px rgba(0,0,0,.25)
+  }
+  .floatBtns{display:flex}
+  .statGrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:560px){
+  .setupGrid{grid-template-columns:1fr}
+  .examTop{align-items:flex-start}
+  .timer{font-size:1.35rem}
+  .booklet{padding:12px;border-radius:18px}
+  .choice{grid-template-columns:38px minmax(0,1fr);gap:9px;min-height:58px;padding:10px}
+  .letterBubble{width:30px;height:30px;font-size:.8rem}
+  .choiceText{font-size:.96rem}
+  .toolRow,.markBtns,.navBtns,.quickReview{gap:6px}
+  .markBtn,.toolBtn,.btn{font-size:.86rem}
+  .statGrid{grid-template-columns:1fr}
+  .sheetBubble{height:26px;min-width:24px}
+}
 </style>
 </head>
 <body>
-<div class="wrap">
-<header class="hero">
-  <h1>Subject / Range Mock Exam</h1>
-  <p class="subtitle">Separate folder mode · choose one subject and Q range based on what you have already studied</p>
-  <div class="topActions"><a class="btn" href="../index.html">← Main Reviewer</a></div>
-</header>
-<section class="panel" id="setup">
-  <div class="setupGrid">
-<div><label for="subjectSelect">Subject</label><select id="subjectSelect"></select></div>
-    <div><label for="rangeStart">Range start</label><input id="rangeStart" type="number" min="1" value="1"></div>
-    <div><label for="rangeEnd">Range end</label><input id="rangeEnd" type="number" min="1" value="300"></div>
-    <div><label for="orderMode">Order</label><select id="orderMode"><option value="random">Random from range</option><option value="sequential">Sequential from range</option></select></div>
-    <div><label for="countSelect">Item count</label><select id="countSelect"></select></div>
-    <div><label for="modeSelect">Timer mode</label><select id="modeSelect"><option value="board">Board Mode — official pace</option><option value="pressure">Pressure Mode — 20% faster</option><option value="sprint">Sprint Mode — 50% faster</option><option value="none">No Timer Mode</option></select></div>
-    <div><label for="layoutSelect">Layout</label><select id="layoutSelect"><option value="auto">Auto layout</option><option value="split">PRC Split View</option><option value="compact">Compact Mobile</option></select></div>
-  </div>
-  <div class="warning" id="rangeInfo" style="display:block">Select subject and Q range.</div>
-  <div class="topActions"><button class="btn primary" id="startBtn">Start Subject Mock Exam</button><button class="btn" id="historyBtn">View Exam History</button><button class="btn" onclick="showMistakeBank()">Mistake Bank</button></div><div class="resumeBox" id="resumeBox"></div><div class="dataTools"><strong>Backup / Data</strong><div class="topActions"><button class="btn" onclick="exportAllExamData()">Export Backup JSON</button><label class="btn">Import Backup JSON <input class="fileInput" type="file" accept="application/json" style="display:none" onchange="importExamBackup(this)"></label><button class="btn danger" onclick="clearAllExamData()">Clear All Exam Data</button></div></div>
-  <p class="mini">Default: new random set every Start Exam. Fixed set only when you choose Retake Same Exam after submit.</p>
-  <div class="warning" id="warning"></div>
-  
-  <div id="historyBox"></div>
-</section>
-<section class="examShell" id="examShell">
-  <div class="examTop"><div><strong id="progressText"></strong><div class="mini" id="sourceText"></div><div class="paceBox" id="paceBox">Pacing: waiting to start.</div></div><div class="timer" id="timer">--:--</div></div>
-  <div class="examLayout">
-    <main class="booklet">
-      <div class="markupArea" id="markupArea"><div class="qMeta"><span class="pill" id="qid"></span><span class="pill" id="qcat"></span><span class="pill" id="markPill">No mark</span></div>
-      <p class="question" id="questionText"></p>
-      <div class="visualBox" id="visualBox"></div>
-      <div class="choices" id="choicesBox"></div><canvas class="markupCanvas" id="markupCanvas"></canvas></div>
-      <div class="markupToolbar"><strong>Test Booklet Markup Mode</strong><div class="toolRow"><button class="toolBtn active" data-tool="navigate" onclick="setMarkupTool(\'navigate\')">Navigate</button><button class="toolBtn" data-tool="pencil" onclick="setMarkupTool(\'pencil\')">Pencil</button><button class="toolBtn" data-tool="highlighter" onclick="setMarkupTool(\'highlighter\')">Highlighter</button><button class="toolBtn" data-tool="eraser" onclick="setMarkupTool(\'eraser\')">Eraser</button><button class="toolBtn" onclick="undoLastStroke()">Undo Last Stroke</button><button class="toolBtn" onclick="clearQuestionNotes()">Clear Notes for This Question</button><button class="toolBtn" id="hideShowNotesBtn" onclick="toggleNotesVisible()">Hide Notes</button><button class="toolBtn" id="fullscreenBtn" onclick="toggleFullscreenBooklet()">Fullscreen Question</button><button class="toolBtn" onclick="toggleScratchPad()">Open Scratch Pad</button></div><div class="toolHint" id="markupStatus">Navigate Mode: scroll/tap normally.</div><div class="scratchBox" id="scratchBox"><textarea id="scratchText" placeholder="Typed scratch notes fallback for phone or keyboard use..." oninput="saveTypedScratch()"></textarea></div></div>
-      <div class="markPanel"><strong>Confidence mark — separate from your A/B/C/D answer</strong><div class="markBtns" id="markBtns"></div></div>
-      <div class="navBtns"><button class="btn" id="prevBtn">Previous</button><button class="btn" id="nextBtn">Next</button><button class="btn" id="prevMatchBtn" style="display:none">Previous Matching</button><button class="btn" id="nextMatchBtn" style="display:none">Next Matching</button><button class="btn danger" id="submitBtn">Submit Exam</button></div><div class="navBtns" id="secondPassBtns"></div>
-    </main>
-    <aside class="sheet" id="answerSheet"></aside>
-  </div>
-</section>
-<section class="results" id="results"></section>
-<div class="floatBtns"><button class="btn primary" id="floatSheet">Answer Sheet</button><button class="btn" id="floatMarks">Review Marks</button></div>
-</div>
-<script>
-// v7 visual leak fix: no image search query / search clue is shown before submit.
+<div class="app">
+  <header class="hero">
+    <div>
+      <h1>Subject / Range Mock Exam</h1>
+      <p class="subtitle">Optimized for iPad, Apple Pencil, and phone. Choose one subject and Q range you already studied.</p>
+    </div>
+    <div class="topActions">
+      <a class="btn" href="../index.html">← Main Reviewer</a>
+      <button class="btn" id="darkBtn">Dark Mode</button>
+    </div>
+  </header>
 
-const CONFIG={
-  "shortTitle":"Subject Range",
-  "title":"Subject / Range Mock Exam",
-  "officialItems":100,
-  "officialTimeLabel":"custom",
-  "paceMinutes":2,
-  "weightLabel":"Practice",
-  "sources":[
-    {"name":"History","path":"../history/cards.json"},
-    {"name":"Theory","path":"../theory/cards.json"},
-    {"name":"Planning","path":"../planning/cards.json"},
-    {"name":"Tropical Design and Green Architecture","path":"../tropical-design-and-green-architecture/cards.json"},
-    {"name":"Structural Concepts","path":"../structural-concepts/cards.json"},
-    {"name":"Building Materials","path":"../building-materials/cards.json"},
-    {"name":"Building Construction","path":"../building-construction/cards.json"},
-    {"name":"Building Utilities","path":"../building-utilities/cards.json"},
-    {"name":"Building Laws","path":"../building-laws/cards.json"},
-    {"name":"Professional Practice","path":"../professional-practice/cards.json"},
-    {"name":"ADSP Rule 7 & 8","path":"../adsp-rule-7-8/cards.json"}
-  ],
-  "options":[
-    {"items":10,"label":"quick check"},
-    {"items":25,"label":"mini mock"},
-    {"items":50,"label":"half drill"},
-    {"items":75,"label":"long drill"},
-    {"items":100,"label":"full subject set"},
-    {"items":150,"label":"extended"},
-    {"items":200,"label":"deep range"},
-    {"items":300,"label":"all range if available"}
-  ]
-}; const HISTORY_KEY='aleMockExamHistory';
-let allCards=[], exam=[], answers=[], marks=[], current=0, startedAt=0, timeLimit=0, timerInt=null, submitted=false, loadedWarnings=[], pendingRetakeIds=null, activeFilter='all';
+  <section class="setup" id="setup">
+    <div class="setupGrid">
+      <label>Subject<select id="subjectSelect"></select></label>
+      <label>Range start<input id="rangeStart" type="number" min="1" value="1"></label>
+      <label>Range end<input id="rangeEnd" type="number" min="1" value="300"></label>
+      <label>Order<select id="orderMode"><option value="random">Random from range</option><option value="sequential">Sequential from range</option></select></label>
+      <label>Items<select id="countSelect"></select></label>
+      <label>Timer<select id="timerMode"><option value="board">Board pace</option><option value="pressure">Pressure, 20% faster</option><option value="sprint">Sprint, 50% faster</option><option value="none">No timer</option></select></label>
+      <label>Layout<select id="layoutMode"><option value="auto">Auto</option><option value="split">PRC Split View</option><option value="compact">Compact Mobile</option></select></label>
+    </div>
+    <div class="notice" id="rangeInfo">Loading subject cards...</div>
+    <div class="topActions" style="margin-top:12px">
+      <button class="btn primary" id="loadBtn">Load / Refresh Cards</button>
+      <button class="btn green" id="startBtn">Start New Random Exam</button>
+      <button class="btn" id="resumeBtn">Resume Last Exam</button>
+      <button class="btn danger" id="discardBtn">Discard Saved Exam</button>
+    </div>
+  </section>
+
+  <section class="examShell" id="examShell">
+    <div class="examTop">
+      <div>
+        <div class="progressTitle" id="progressText">Question 1</div>
+        <div class="subtitle" id="sourceText"></div>
+        <div class="pacing" id="pacingText">Pacing ready.</div>
+      </div>
+      <div class="timer" id="timer">--:--</div>
+    </div>
+
+    <div class="examLayout" id="examLayout">
+      <main class="booklet" id="booklet">
+        <div class="markupArea" id="markupArea">
+          <div class="meta">
+            <span class="pill" id="displayId">Q</span>
+            <span class="pill" id="category">Subject</span>
+            <span class="pill" id="markPill">No mark</span>
+          </div>
+          <p class="question" id="questionText"></p>
+          <div class="visualBox" id="visualBox"></div>
+          <div class="choices" id="choicesBox"></div>
+          <canvas class="markupCanvas" id="markupCanvas"></canvas>
+        </div>
+
+        <div class="markupPanel">
+          <strong>Test Booklet Markup Mode</strong>
+          <div class="toolRow" style="margin-top:8px">
+            <button class="toolBtn active" data-tool="navigate" onclick="setTool('navigate')">Navigate</button>
+            <button class="toolBtn" data-tool="pencil" onclick="setTool('pencil')">Pencil</button>
+            <button class="toolBtn" data-tool="highlighter" onclick="setTool('highlighter')">Highlighter</button>
+            <button class="toolBtn" data-tool="eraser" onclick="setTool('eraser')">Eraser</button>
+            <button class="toolBtn" onclick="undoStroke()">Undo</button>
+            <button class="toolBtn" onclick="toggleNotes()">Hide Notes</button>
+            <button class="toolBtn" onclick="toggleFullscreen()">Fullscreen Question</button>
+            <button class="toolBtn" onclick="toggleScratch()">Open Scratch Pad</button>
+            <button class="toolBtn" onclick="clearQuestionNotes()">Clear Notes</button>
+          </div>
+          <div class="toolHint" id="toolHint">Navigate Mode: scroll/tap normally.</div>
+          <div class="scratchBox" id="scratchBox"><textarea id="scratchText" placeholder="Typed scratch notes for phone/keyboard fallback..." oninput="saveScratch()"></textarea></div>
+        </div>
+
+        <div class="markPanel">
+          <strong>Confidence mark — separate from A/B/C/D answer</strong>
+          <div class="markBtns" style="margin-top:8px">
+            <button class="markBtn" onclick="setMark('sure')">✅ Sure</button>
+            <button class="markBtn" onclick="setMark('notSure')">⚑ Not Sure</button>
+            <button class="markBtn" onclick="setMark('guess')">❓ Guess</button>
+            <button class="markBtn" onclick="setMark('noIdea')">🚫 No Idea</button>
+            <button class="markBtn" onclick="setMark('')">Clear Mark</button>
+          </div>
+        </div>
+
+        <div class="navBtns" style="margin-top:12px">
+          <button class="btn" id="prevBtn">← Previous</button>
+          <button class="btn primary" id="nextBtn">Next →</button>
+          <button class="btn danger" id="submitBtn">Submit Exam</button>
+          <button class="btn fullscreenExit" onclick="toggleFullscreen()">Exit Fullscreen</button>
+        </div>
+        <div class="quickReview" style="margin-top:10px">
+          <button class="btn small" onclick="jumpNext('unanswered')">Next Unanswered</button>
+          <button class="btn small" onclick="jumpNext('notSure')">Next Not Sure</button>
+          <button class="btn small" onclick="jumpNext('guess')">Next Guess</button>
+          <button class="btn small" onclick="jumpNext('noIdea')">Next No Idea</button>
+          <button class="btn small" onclick="jumpNext('marked')">Review Marked</button>
+        </div>
+      </main>
+
+      <aside class="sheet" id="answerSheet"></aside>
+    </div>
+  </section>
+
+  <section class="results" id="results"></section>
+
+  <div class="floatBtns">
+    <button class="btn primary" onclick="toggleSheet()">Answer Sheet</button>
+    <button class="btn" onclick="jumpNext('marked')">Review Marks</button>
+  </div>
+</div>
+
+<script>
+const SUBJECTS=[
+  {name:'History',path:'../history/cards.json'},
+  {name:'Theory',path:'../theory/cards.json'},
+  {name:'Planning',path:'../planning/cards.json'},
+  {name:'Tropical Design and Green Architecture',path:'../tropical-design-and-green-architecture/cards.json'},
+  {name:'Building Laws',path:'../building-laws/cards.json'},
+  {name:'Building Construction',path:'../building-construction/cards.json'},
+  {name:'Building Materials',path:'../building-materials/cards.json'},
+  {name:'Building Utilities',path:'../building-utilities/cards.json'},
+  {name:'Structural Concepts',path:'../structural-concepts/cards.json'},
+  {name:'Professional Practice',path:'../professional-practice/cards.json'},
+  {name:'ADSP Rule 7 & 8',path:'../adsp-rule-7-8/cards.json'}
+];
+const ITEM_OPTIONS=[10,25,50,75,100,150,200,300];
 const MARKS={sure:{label:'Sure',sym:'✅'},notSure:{label:'Not Sure',sym:'⚑'},guess:{label:'Guess',sym:'❓'},noIdea:{label:'No Idea',sym:'🚫'}};
+const SAVE_KEY='aleSubjectMockV2Active';
+const HISTORY_KEY='aleSubjectMockV2History';
+const NOTES_KEY='aleSubjectMockV2Notes';
+let allCards=[], warnings=[], exam=[], answers=[], originalAnswers=[], marks=[], current=0, submitted=false, startedAt=0, timeLimit=0, timerInt=null, attemptId='';
+let reviewFilter='all', tool='navigate', notesVisible=true, drawing=false, currentStroke=null;
+
 const $=id=>document.getElementById(id);
 function escapeHtml(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
 function shuffle(arr){const a=arr.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 function fmtTime(sec){if(!isFinite(sec)||sec<0)sec=0;sec=Math.floor(sec);const h=Math.floor(sec/3600),m=Math.floor((sec%3600)/60),s=sec%60;return(h?String(h).padStart(2,'0')+':':'')+String(m).padStart(2,'0')+':'+String(s).padStart(2,'0')}
-function applyLayout(){const v=$('layoutSelect')?.value||'auto';const compact= v==='compact' || (v==='auto' && window.innerWidth<861);document.body.classList.toggle('layout-compact',compact);document.body.classList.toggle('layout-split',!compact)} window.addEventListener('resize',applyLayout);
-function readHistory(){try{return JSON.parse(localStorage.getItem(HISTORY_KEY)||'[]')}catch(e){return[]}} function saveHistory(row){const rows=readHistory();rows.push(row);localStorage.setItem(HISTORY_KEY,JSON.stringify(rows.slice(-80)))}
-function attemptStorageKey(){return 'aleMockLastAttempt_'+String(CONFIG.shortTitle||'exam').replace(/\W+/g,'_')} function cardKey(card){return String(card.sourceName||card.category||'Unknown')+'::'+String(card.uid||card.displayId||card.question).slice(0,180)}
-function saveCurrentAttempt(status,extra){try{const data=Object.assign({attemptId:Date.now()+'-'+Math.random().toString(36).slice(2),date:new Date().toLocaleString(),status:status||'started',examType:CONFIG.shortTitle,itemCount:exam.length,timerMode:$('modeSelect')?.value||'',questionIds:exam.map(cardKey)},extra||{});localStorage.setItem(attemptStorageKey(),JSON.stringify(data));return data}catch(e){return null}}
-function readLastAttempt(){try{return JSON.parse(localStorage.getItem(attemptStorageKey())||'null')}catch(e){return null}} function buildExamFromIds(ids,fallbackCount){const map=new Map(allCards.map(c=>[cardKey(c),c]));const picked=(ids||[]).map(id=>map.get(id)).filter(Boolean);if(!picked.length)return null;return picked.slice(0,fallbackCount||picked.length).map(prepQuestion)}
-function retakeSameExam(){const last=readLastAttempt();if(!last?.questionIds?.length){alert('No saved exam attempt found yet.');return} pendingRetakeIds=last.questionIds.slice(); $('setup').style.display='block'; $('results').style.display='none'; $('examShell').style.display='none'; startExam()}
-function startNewRandomExam(){pendingRetakeIds=null; $('setup').style.display='block'; $('results').style.display='none'; $('examShell').style.display='none'; startExam()}
-function choiceText(ch){return typeof ch==='string'?ch:(ch?.text??'')} function normalize(raw,sourceName){const arr=Array.isArray(raw)?raw:(Array.isArray(raw.cards)?raw.cards:[]);return arr.filter(c=>c&&c.question).map((c,idx)=>{const rawChoices=Array.isArray(c.choices)?c.choices:[];const cl=String(c.correctLetter||'').trim().toLowerCase();const normChoices=rawChoices.map((ch,i)=>({letter:String(ch.letter||String.fromCharCode(97+i)).toLowerCase(),text:choiceText(ch)})).filter(ch=>ch.text);let correctText=(normChoices.find(ch=>ch.letter===cl)||{}).text||'';if(!correctText&&c.answer)correctText=String(c.answer).replace(/^[A-Da-d]\s*[.)-]\s*/,'').trim();return{uid:c.uid||c.id||c.displayId||sourceName+'-'+idx,displayId:c.displayId||c.id||c.uid||('Q'+(idx+1)),category:c.category||sourceName,sourceName,question:String(c.question||'').trim(),choices:normChoices,correctText,correctLetter:cl,answer:c.answer||correctText,keyMemory:c.keyMemory||'',explanation:c.explanation||'',questionImage:c.questionImage||'',answerImage:c.answerImage||'',image:c.image||'',imageQuery:c.imageQuery||'',questionImageQuery:c.questionImageQuery||'',questionImageQueries:c.questionImageQueries||[],questionImageLayoutQueries:c.questionImageLayoutQueries||[],visual:c.visual||'',visualUrl:c.visualUrl||'',visualMode:c.visualMode||''}}).filter(c=>c.choices.length>=2&&c.correctText)}
-
-function isVisualIdentifyQuestion(card){
-  const qRaw = String(card.question || '').trim();
-  const q = qRaw.toLowerCase();
-  const hasVisualQuery = safeVisualQueries(card).length > 0;
-  const visualMode = String(card.visualMode || '').toLowerCase();
-  const veryShortIdentify = /^(identify|identify\.|identify:|identify the|what is shown|name this|which item is shown)/i.test(qRaw);
-  const genericQuestion = q.length <= 55 && /(identify|shown|name this|what is this)/i.test(q);
-  return hasVisualQuery && (visualMode === 'question' || veryShortIdentify || genericQuestion);
+function displayNumber(card,idx=0){const raw=String(card.displayId||card.id||card.uid||'');const m=raw.match(/(\d+)/);return m?Number(m[1]):idx+1}
+function directImage(v){const s=String(v||'').trim();return /^(https?:\/\/|data:image\/|assets\/|\.\/assets\/|\.\.\/)/i.test(s)&&/\.(png|jpe?g|webp|gif|svg)(\?.*)?$/i.test(s)?s:''}
+function hasImage(c){return !!(directImage(c.questionImage)||directImage(c.image)||directImage(c.visualUrl)||directImage(c.visual))}
+function visualQueries(c){const keys=['questionImageQuery','imageQuery','questionImageQueries','questionImageLayoutQueries','imageQueries'];let out=[];for(const k of keys){const v=c[k];if(Array.isArray(v))out.push(...v);else if(v)out.push(v)}return out.filter(Boolean).map(String)}
+function isMissingVisualIdentify(c){
+  const q=String(c.question||'').trim().toLowerCase();
+  const hasQ=visualQueries(c).length>0;
+  const identify=/^(identify|identify\.|identify:|what is shown|name this|which item is shown)/i.test(String(c.question||'').trim()) || (q.length<=25 && /identify|shown|name this|what is this/.test(q));
+  return hasQ && identify && !hasImage(c);
 }
-function hasDirectEmbeddedQuestionImage(card){
-  return !!directImageCandidate(card.questionImage) || !!directImageCandidate(card.image) || !!directImageCandidate(card.visualUrl) || !!directImageCandidate(card.visual);
-}
-function filterMissingVisualIdentifyCards(cards){
-  const kept = [];
-  let skipped = 0;
-  cards.forEach(card => {
-    if(isVisualIdentifyQuestion(card) && !hasDirectEmbeddedQuestionImage(card)){
-      skipped++;
-    } else {
-      kept.push(card);
+function choiceText(ch){return typeof ch==='string'?ch:(ch?.text??'')}
+function normalize(data,sourceName){
+  const arr=Array.isArray(data)?data:(Array.isArray(data.cards)?data.cards:[]);
+  const clean=[];
+  arr.forEach((c,idx)=>{
+    if(!c||!c.question) return;
+    const choices=(Array.isArray(c.choices)?c.choices:[]).map((ch,i)=>({letter:String(ch.letter||String.fromCharCode(97+i)).toLowerCase(),text:String(choiceText(ch)).trim()})).filter(x=>x.text);
+    if(choices.length<2) return;
+    const cl=String(c.correctLetter||'').trim().toLowerCase();
+    let correctText=(choices.find(ch=>ch.letter===cl)||{}).text||'';
+    if(!correctText && c.answer){
+      const a=String(c.answer).replace(/^[A-Da-d]\s*[.)-]\s*/,'').trim();
+      correctText=(choices.find(ch=>ch.text.trim()===a)||{}).text||a;
     }
+    if(!correctText) return;
+    const card={
+      uid:c.uid||c.id||c.displayId||sourceName+'-'+idx,
+      id:c.id||c.uid||c.displayId||sourceName+'-'+idx,
+      displayId:c.displayId||c.id||c.uid||('Q'+(idx+1)),
+      category:c.category||sourceName, sourceName,
+      question:String(c.question).trim(), choices, correctText,
+      answer:c.answer||correctText, keyMemory:c.keyMemory||'', explanation:c.explanation||'',
+      questionImage:c.questionImage||'', image:c.image||'', visualUrl:c.visualUrl||'', visual:c.visual||'',
+      imageQuery:c.imageQuery||'', imageQueries:c.imageQueries||[], questionImageQuery:c.questionImageQuery||'', questionImageQueries:c.questionImageQueries||[], questionImageLayoutQueries:c.questionImageLayoutQueries||[]
+    };
+    if(!isMissingVisualIdentify(card)) clean.push(card);
   });
-  if(skipped){
-    loadedWarnings.push(skipped + ' visual-identification card(s) skipped because no embedded/direct image is available. Add questionImage/image assets to include them.');
-  }
-  return kept;
+  return clean;
 }
-
-async function loadCards(){loadedWarnings=[];const chunks=await Promise.all(CONFIG.sources.map(async src=>{try{const res=await fetch(src.path+'?v='+Date.now(),{cache:'no-store'});if(!res.ok)throw new Error(res.status);return normalize(await res.json(),src.name)}catch(e){loadedWarnings.push(src.name);return[]}}));allCards=filterMissingVisualIdentifyCards(chunks.flat());if(loadedWarnings.length){$('warning').style.display='block';$('warning').textContent='Some subject sources are not available yet: '+loadedWarnings.join(', ')}return allCards}
-function setupOptions(){const sel=$('countSelect');if(!sel)return;const pool=(typeof subjectRangePool==='function'&&allCards.length)?subjectRangePool():[];const max=pool.length||Math.max(...CONFIG.options.map(o=>o.items));let opts=CONFIG.options.filter(o=>o.items<=max);if(max&&!opts.some(o=>o.items===max))opts.push({items:max,label:'all available in range'});opts=opts.sort((a,b)=>a.items-b.items);sel.innerHTML=opts.map(o=>`<option value="${o.items}">${o.items} items — ${o.label}</option>`).join('')} function calcLimit(items,mode){if(mode==='none')return 0;let s=items*CONFIG.paceMinutes*60;if(mode==='pressure')s*=.8;if(mode==='sprint')s*=.5;return Math.round(s)}
-function prepQuestion(c){const choices=c.choices.map(ch=>({text:ch.text,correct:ch.text.trim()===c.correctText.trim()}));if(!choices.some(ch=>ch.correct))choices.push({text:c.correctText,correct:true});const randomized=shuffle(choices);return{...c,randomizedChoices:randomized,correctIndex:randomized.findIndex(ch=>ch.correct)}}
-function directImageCandidate(value){if(!value)return'';const s=String(value).trim();if(/^(https?:\/\/|data:image\/|assets\/|\.\/assets\/|\.\.\/)/i.test(s)&&/\.(png|jpe?g|webp|gif|svg)(\?.*)?$/i.test(s))return s;return''} function getArrayField(card,name){const v=card[name];if(Array.isArray(v))return v.filter(Boolean).map(String);if(typeof v==='string'&&v.trim())return[v.trim()];return[]} function safeVisualQueries(card){const q=[];['questionImageQuery','imageQuery','questionImageQueries','questionImageLayoutQueries','visualQuery'].forEach(k=>q.push(...getArrayField(card,k)));if(card.visual&&typeof card.visual==='string')q.push(card.visual);return[...new Set(q.filter(x=>x&&!/answer|correct/i.test(x)))]} function getQuestionVisual(card){for(const v of [card.questionImage,card.image,card.visualUrl,card.visual]){const hit=directImageCandidate(v);if(hit)return{type:'image',url:hit,note:'Question visual shown for identification. Answer labels are hidden until submit.'}}const q=safeVisualQueries(card)[0];return q?{type:'query',query:q,note:'No safe embedded image is available before submit.'}:null} function imageSearchUrl(q){return'https://www.google.com/search?tbm=isch&q='+encodeURIComponent(q)} function wikiSearchUrl(q){return'https://commons.wikimedia.org/w/index.php?search='+encodeURIComponent(q)+'&title=Special:MediaSearch&type=image'} function renderSafeVisual(card){
-  const box=$('visualBox');
-  const v=getQuestionVisual(card);
-  if(!v){box.className='visualBox';box.innerHTML='';return}
-  box.className='visualBox show';
-  if(v.type==='image'){
-    box.innerHTML=`<img src="${escapeHtml(v.url)}" alt="Question visual"><p class="visualNote">Question visual shown for identification. No answer labels, clues, explanations, or key memory are shown before submit.</p>`;
-  }else{
-    box.innerHTML=`<p class="visualNote"><strong>Visual item:</strong> This question needs an image, but no safe embedded image is available in this card yet. No search cue is shown because it may reveal the answer. Add a direct questionImage/image URL or local asset to this card for true PRC-style visual identification.</p>`;
-  }
+function cardKey(c){return String(c.sourceName)+'::'+String(c.uid||c.displayId||c.question).slice(0,180)}
+function populateSubjects(){ $('subjectSelect').innerHTML=SUBJECTS.map(s=>`<option value="${escapeHtml(s.name)}">${escapeHtml(s.name)}</option>`).join('') }
+async function loadCards(){
+  warnings=[]; allCards=[];
+  const chunks=await Promise.all(SUBJECTS.map(async s=>{
+    try{const r=await fetch(s.path+'?v='+Date.now(),{cache:'no-store'}); if(!r.ok) throw new Error(r.status); return normalize(await r.json(),s.name)}
+    catch(e){warnings.push(s.name+' not available'); return []}
+  }));
+  allCards=chunks.flat();
+  updateRangeInfo();
+  return allCards;
 }
-function answerVisualHtml(card){for(const v of [card.answerImage,card.questionImage,card.image,card.visualUrl,card.visual]){const hit=directImageCandidate(v);if(hit)return`<div class="visualBox show"><img src="${escapeHtml(hit)}" alt="Review visual"><p class="visualNote">Review visual shown after submit.</p></div>`}const q=safeVisualQueries(card)[0];return q?`<div class="visualBox show"><p class="visualNote"><strong>Review visual reference:</strong> ${escapeHtml(q)}</p><div class="visualBtns"><a class="visualLink" href="${imageSearchUrl(q)}" target="_blank" rel="noopener">Open image search</a><a class="visualLink" href="${wikiSearchUrl(q)}" target="_blank" rel="noopener">Open Wikimedia Commons</a></div></div>`:''}
-
-
-
-
-// ===== Standalone Subject / Range Mock Exam =====
-function displayNumber(card, fallbackIndex){
-  const raw = String(card.displayId || card.id || card.uid || '').trim();
-  const m = raw.match(/(\d+)/);
-  return m ? Number(m[1]) : (fallbackIndex + 1);
-}
-function selectedSubjectName(){
-  return $('subjectSelect') ? $('subjectSelect').value : '';
-}
-function populateSubjectSelect(){
-  const sel=$('subjectSelect'); if(!sel) return;
-  sel.innerHTML=CONFIG.sources.map(s=>`<option value="${escapeHtml(s.name)}">${escapeHtml(s.name)}</option>`).join('');
-}
-function getRangeSettings(){
-  const start=Math.max(1,Number($('rangeStart')?.value||1));
-  const end=Math.max(start,Number($('rangeEnd')?.value||start));
-  const order=$('orderMode')?$('orderMode').value:'random';
-  return {start,end,order};
-}
-function subjectRangePool(){
-  const subj=selectedSubjectName();
-  const {start,end}=getRangeSettings();
-  let pool=allCards.filter((c,idx)=>{
-    const source=String(c.sourceName||'');
-    const cat=String(c.category||'');
-    const sourceOK=!subj || source===subj || cat===subj || cat.toLowerCase().includes(subj.toLowerCase());
+function rangeSettings(){const start=Math.max(1,Number($('rangeStart').value||1));const end=Math.max(start,Number($('rangeEnd').value||start));return{start,end,order:$('orderMode').value}}
+function subjectPool(){
+  const subj=$('subjectSelect').value; const {start,end}=rangeSettings();
+  return allCards.filter((c,idx)=>{
     const n=displayNumber(c,idx);
-    return sourceOK && n>=start && n<=end;
-  });
-  pool.sort((a,b)=>displayNumber(a,0)-displayNumber(b,0));
-  return pool;
+    const src=c.sourceName===subj || String(c.category||'').toLowerCase().includes(subj.toLowerCase());
+    return src && n>=start && n<=end;
+  }).sort((a,b)=>displayNumber(a)-displayNumber(b));
+}
+function setupItemOptions(){
+  const pool=subjectPool(); const max=pool.length||300;
+  let opts=ITEM_OPTIONS.filter(n=>n<=max);
+  if(pool.length && !opts.includes(pool.length)) opts.push(pool.length);
+  opts=[...new Set(opts)].sort((a,b)=>a-b);
+  $('countSelect').innerHTML=opts.map(n=>`<option value="${n}">${n} items</option>`).join('') || '<option value="0">No available items</option>';
 }
 function updateRangeInfo(){
-  const info=$('rangeInfo'); if(!info || !allCards.length) return;
-  const pool=subjectRangePool();
-  const {start,end,order}=getRangeSettings();
-  const skipped=loadedWarnings.filter(w=>String(w).includes('visual-identification')).join(' ');
-  info.innerHTML=`<span class="subjectBadge">${escapeHtml(selectedSubjectName())}</span><span class="subjectBadge">Q${start}–Q${end}</span><span class="subjectBadge">${pool.length} available</span><span class="subjectBadge">${order==='random'?'Random':'Sequential'}</span><br>${pool.length?'Ready. Choose item count and start exam.':'No questions in this selected range yet.'} ${skipped?escapeHtml(skipped):''}`;
-  setupOptions();
+  setupItemOptions();
+  const pool=subjectPool(); const {start,end,order}=rangeSettings();
+  const unavailable=warnings.length?`<br><span style="color:#9b1c1c">Note: ${escapeHtml(warnings.join(', '))}</span>`:'';
+  $('rangeInfo').innerHTML=`<strong>${escapeHtml($('subjectSelect').value)}</strong> · Q${start}–Q${end} · ${pool.length} available · ${order==='random'?'Random':'Sequential'} mode.${unavailable}<br>Missing-image identify questions are skipped so no blank visual item appears.`;
 }
-function setupSubjectRangeEvents(){
-  ['subjectSelect','rangeStart','rangeEnd','orderMode'].forEach(id=>{
-    const el=$(id); if(el){el.onchange=updateRangeInfo; el.oninput=updateRangeInfo;}
-  });
+function applyLayout(){
+  const mode=$('layoutMode').value;
+  const split= mode==='split' || (mode==='auto' && window.innerWidth>=921);
+  $('examLayout').classList.toggle('split',split);
 }
-function masteryMessage(pct){
-  if(pct>=85)return `<div class="masteryBox masteryGood"><strong>Subject readiness:</strong> Strong. Kaya mo na itong range, pero review pa rin ng wrong, marked, at not sure.</div>`;
-  if(pct>=75)return `<div class="masteryBox masteryMid"><strong>Subject readiness:</strong> Passing range. Kaya na, pero kailangan i-secure ang weak topics.</div>`;
-  if(pct>=60)return `<div class="masteryBox masteryMid"><strong>Subject readiness:</strong> Almost there. Balikan ang concepts na mali, Guess, No Idea, at Not Sure.</div>`;
-  return `<div class="masteryBox masteryLow"><strong>Subject readiness:</strong> Hindi pa safe. Ulitin muna ang range bago mag full mock exam.</div>`;
+function prepQuestion(c){
+  const choices=c.choices.map(ch=>({text:ch.text,correct:ch.text.trim()===c.correctText.trim()}));
+  if(!choices.some(ch=>ch.correct)) choices.push({text:c.correctText,correct:true});
+  const randomized=shuffle(choices);
+  return {...c,randomizedChoices:randomized,correctIndex:randomized.findIndex(ch=>ch.correct)};
 }
-
-// ===== v9 full exam review =====
-let fullReviewFilter='all';
-function qReviewStatus(i){const q=exam[i]; if(answers[i]==null)return 'blank'; return q.randomizedChoices[answers[i]]?.correct?'correct':'wrong'}
-function qReviewLabel(s){return s==='correct'?'Correct':(s==='wrong'?'Wrong':'Unanswered')}
-function qReviewClass(s){return s==='correct'?'correctReview':(s==='wrong'?'wrongReview':'blankReview')}
-function renderChoiceAudit(q,i){
-  return `<div class="choiceAudit">`+q.randomizedChoices.map((ch,idx)=>{
-    const letter=String.fromCharCode(65+idx), chosen=answers[i]===idx, corr=!!ch.correct;
-    return `<div class="${chosen?'chosen ':''}${corr?'correctChoice':''}"><strong>${letter}. ${escapeHtml(ch.text)}</strong> ${chosen?'<span class="reviewTag">Your final answer</span>':''} ${corr?'<span class="reviewTag correct">Correct answer</span>':''}</div>`;
-  }).join('')+`</div>`;
+function calcLimit(count){
+  const mode=$('timerMode').value;
+  if(mode==='none')return 0;
+  let pace=120; // subject mock default: 2 minutes/item
+  if(mode==='pressure') pace*=.8;
+  if(mode==='sprint') pace*=.5;
+  return Math.round(count*pace);
 }
-function fullReviewItem(q,i){
-  const st=qReviewStatus(i);
-  const user=answers[i]==null?'Unanswered':String.fromCharCode(65+answers[i])+'. '+(q.randomizedChoices[answers[i]]?.text||'');
-  const ci=(q.correctIndex!=null?q.correctIndex:q.randomizedChoices.findIndex(ch=>ch.correct));
-  const corr=ci>=0?String.fromCharCode(65+ci)+'. '+(q.randomizedChoices[ci]?.text||q.correctText||q.answer||''):(q.correctText||q.answer||'');
-  const orig=(typeof originalAnswers!=='undefined'&&originalAnswers&&originalAnswers[i]!=null)?String.fromCharCode(65+originalAnswers[i])+'. '+(q.randomizedChoices[originalAnswers[i]]?.text||''):'No change / first answer not tracked';
-  const changed=(typeof originalAnswers!=='undefined'&&originalAnswers&&originalAnswers[i]!=null&&answers[i]!=null&&originalAnswers[i]!==answers[i]);
-  const mark=marks[i]?markLabels[marks[i]]:'No mark';
-  return `<div class="reviewItem ${qReviewClass(st)}" data-status="${st}" data-mark="${escapeHtml(marks[i]||'')}" data-qtext="${escapeHtml((q.question||'')+' '+(q.category||''))}">
-    <span class="reviewTag ${st}">${qReviewLabel(st)}</span><span class="reviewTag">Q${i+1}</span><span class="reviewTag">${escapeHtml(q.category||'Uncategorized')}</span><span class="reviewTag">${escapeHtml(mark)}</span>${changed?'<span class="reviewTag">Answer changed</span>':''}
-    <h3>${escapeHtml(q.question||'')}</h3>${answerVisualHtml(q)}${annotationReviewHtml(q)}${renderChoiceAudit(q,i)}
-    <p><strong>Your final answer:</strong> ${escapeHtml(user)}</p><p><strong>Correct answer:</strong> ${escapeHtml(corr)}</p><p><strong>Original answer:</strong> ${escapeHtml(orig)}</p>
-    ${q.explanation?`<p><strong>Explanation:</strong> ${escapeHtml(q.explanation)}</p>`:''}${q.keyMemory?`<p><strong>Key memory:</strong> ${escapeHtml(q.keyMemory)}</p>`:''}
-  </div>`;
-}
-function renderFullExamReview(){
-  const box=document.getElementById('fullReview'); if(!box)return;
-  const counts=exam.reduce((a,q,i)=>{a[qReviewStatus(i)]++; if(marks[i])a.marked++; return a},{correct:0,wrong:0,blank:0,marked:0});
-  box.innerHTML=`<h2>Full Exam Review / Counter-check</h2><p class="mini">Lahat ng questions nandito: tama, mali, unanswered, at marked.</p>
-  <div class="fullReviewControls"><button class="btn primary" onclick="setFullReviewFilter('all')">All ${exam.length}</button><button class="btn" onclick="setFullReviewFilter('correct')">Correct ${counts.correct}</button><button class="btn" onclick="setFullReviewFilter('wrong')">Wrong ${counts.wrong}</button><button class="btn" onclick="setFullReviewFilter('blank')">Unanswered ${counts.blank}</button><button class="btn" onclick="setFullReviewFilter('marked')">Marked ${counts.marked}</button><input class="reviewSearch" id="reviewSearch" placeholder="Search question/category..." oninput="applyFullReviewFilter()"></div>
-  <div id="fullReviewList">${exam.map((q,i)=>fullReviewItem(q,i)).join('')}</div>`;
-  applyFullReviewFilter(); setTimeout(drawReviewCanvases,120);
-}
-function setFullReviewFilter(f){fullReviewFilter=f;applyFullReviewFilter();document.getElementById('fullReview')?.scrollIntoView({behavior:'smooth'})}
-function applyFullReviewFilter(){
-  const query=(document.getElementById('reviewSearch')?.value||'').toLowerCase().trim();
-  document.querySelectorAll('#fullReviewList .reviewItem').forEach(el=>{
-    const st=el.dataset.status, marked=!!el.dataset.mark, text=(el.dataset.qtext||'').toLowerCase();
-    let show=fullReviewFilter==='all'||st===fullReviewFilter||(fullReviewFilter==='marked'&&marked);
-    if(query&&!text.includes(query))show=false; el.style.display=show?'':'none';
-  });
-}
-
-// ===== v6 autosave / resume / mistake bank / backup =====
-const PROGRESS_KEY = 'aleMockActiveProgress_' + String(CONFIG.shortTitle||'exam').replace(/\W+/g,'_');
-const MISTAKE_BANK_KEY = 'aleMockMistakeBankV1';
-let autosaveInt = null;
-let originalAnswers = [];
-
-function answerKeyAt(index){
-  return answers[index] == null ? null : String(exam[index].randomizedChoices[answers[index]]?.text || '');
-}
-function saveActiveProgress(){
-  if(!exam.length || submitted) return;
-  const elapsed = Math.floor((Date.now()-startedAt)/1000);
-  const data = {
-    attemptId: currentAttemptId,
-    examType: CONFIG.shortTitle,
-    savedAt: Date.now(),
-    date: new Date().toLocaleString(),
-    questionIds: exam.map(cardKey),
-    answers,
-    originalAnswers,
-    marks,
-    current,
-    elapsedSeconds: elapsed,
-    timeLimit,
-    timerMode: $('modeSelect') ? $('modeSelect').value : '',
-    itemCount: exam.length,
-    layout: $('layoutSelect') ? $('layoutSelect').value : 'auto'
-  };
-  try{ localStorage.setItem(PROGRESS_KEY, JSON.stringify(data)); }catch(e){}
-}
-function readActiveProgress(){
-  try{ return JSON.parse(localStorage.getItem(PROGRESS_KEY)||'null'); }catch(e){ return null; }
-}
-function clearActiveProgress(){
-  localStorage.removeItem(PROGRESS_KEY);
-  renderResumeBox();
-}
-function renderResumeBox(){
-  const box = document.getElementById('resumeBox');
-  if(!box) return;
-  const p = readActiveProgress();
-  if(!p || !p.questionIds || !p.questionIds.length){
-    box.style.display = 'none';
-    box.innerHTML = '';
-    return;
+function startExam(fromSaved=false){
+  if(!allCards.length){alert('Load cards first.');return}
+  if(!fromSaved){
+    const pool=subjectPool(); const {order}=rangeSettings(); const count=Number($('countSelect').value);
+    if(!pool.length||!count){alert('No questions available in this subject/range.');return}
+    const selected=(order==='random'?shuffle(pool):pool).slice(0,Math.min(count,pool.length));
+    exam=selected.map(prepQuestion); answers=Array(exam.length).fill(null); originalAnswers=Array(exam.length).fill(null); marks=Array(exam.length).fill(''); current=0;
+    attemptId='subject-'+Date.now()+'-'+Math.random().toString(36).slice(2);
+    startedAt=Date.now(); timeLimit=calcLimit(exam.length);
   }
-  box.style.display = 'block';
-  box.innerHTML = `<strong>Saved exam found:</strong> ${escapeHtml(p.examType||CONFIG.shortTitle)} · ${p.itemCount||p.questionIds.length} items · saved ${escapeHtml(p.date||'')}<div class="topActions"><button class="btn primary" onclick="resumeLastExam()">Resume Last Exam</button><button class="btn danger" onclick="discardLastExam()">Discard Last Exam</button></div>`;
+  submitted=false;
+  $('setup').style.display='none'; $('examShell').style.display='block'; $('results').style.display='none';
+  applyLayout(); renderQuestion(); tick(); clearInterval(timerInt); if(timeLimit)timerInt=setInterval(tick,1000); else $('timer').textContent='No timer';
+  saveProgress();
 }
-async function resumeLastExam(){
-  const saved = readActiveProgress();
-  if(!saved){ alert('No saved exam to resume.'); return; }
-  await loadCards();
-  const rebuilt = buildExamFromIds(saved.questionIds, saved.itemCount || saved.questionIds.length);
-  if(!rebuilt || !rebuilt.length){ alert('Saved questions are no longer available.'); return; }
-  currentAttemptId = saved.attemptId || newAttemptId();
-  exam = rebuilt;
-  answers = Array(exam.length).fill(null);
-  (saved.answers||[]).forEach((v,i)=>{ if(i<answers.length) answers[i]=v; });
-  originalAnswers = Array(exam.length).fill(null);
-  (saved.originalAnswers||[]).forEach((v,i)=>{ if(i<originalAnswers.length) originalAnswers[i]=v; });
-  marks = Array(exam.length).fill('');
-  (saved.marks||[]).forEach((v,i)=>{ if(i<marks.length) marks[i]=v||''; });
-  current = Math.min(saved.current||0, exam.length-1);
-  submitted = false;
-  activeFilter = 'all';
-  timeLimit = saved.timeLimit || calcLimit(exam.length, saved.timerMode || 'board');
-  const elapsedThen = saved.elapsedSeconds || 0;
-  const extraElapsed = Math.floor((Date.now()-(saved.savedAt||Date.now()))/1000);
-  const totalElapsed = timeLimit ? elapsedThen + extraElapsed : elapsedThen;
-  startedAt = Date.now() - totalElapsed*1000;
-  if($('layoutSelect') && saved.layout) $('layoutSelect').value = saved.layout;
-  applyLayout();
-  $('setup').style.display='none'; $('results').style.display='none'; $('examShell').style.display='block';
-  renderQuestion(); tick(); clearInterval(timerInt); if(timeLimit) timerInt=setInterval(tick,1000); else $('timer').textContent='No timer';
-  clearInterval(autosaveInt); autosaveInt=setInterval(saveActiveProgress,5000);
-}
-function discardLastExam(){
-  if(!confirm('Discard the saved active exam? This will not delete submitted history.')) return;
-  clearActiveProgress();
-}
-function beginAutosave(){
-  clearInterval(autosaveInt);
-  autosaveInt = setInterval(saveActiveProgress, 5000);
-}
-function stopAutosave(){
-  clearInterval(autosaveInt);
-  autosaveInt = null;
+function tick(){
+  if(!timeLimit){$('timer').textContent='No timer';return}
+  const left=timeLimit-Math.floor((Date.now()-startedAt)/1000);
+  $('timer').textContent=fmtTime(left);
+  updatePacing();
+  if(left<=0 && !submitted) submitExam(true);
 }
 function updatePacing(){
-  const box = document.getElementById('paceBox');
-  if(!box || !exam.length) return;
-  if(!timeLimit){
-    box.className = 'paceBox';
-    box.textContent = 'Pacing: No timer mode.';
-    return;
-  }
-  const elapsed = Math.max(0, Math.floor((Date.now()-startedAt)/1000));
-  const expected = Math.min(exam.length, Math.floor(elapsed / (CONFIG.paceMinutes*60)) + 1);
-  const answered = answers.filter(a=>a!=null).length;
-  const diff = answered - expected;
-  box.className = 'paceBox ' + (diff < -2 ? 'behind' : diff > 2 ? 'ahead' : '');
-  const label = diff < -2 ? 'Behind pace' : diff > 2 ? 'Ahead of pace' : 'On pace';
-  box.textContent = `Pacing: ${label}. Answered ${answered}/${exam.length}. Expected around item ${expected}.`;
+  const box=$('pacingText'); if(!exam.length){box.textContent='Pacing ready.';return}
+  if(!timeLimit){box.textContent='Pacing: No timer.';box.className='pacing';return}
+  const elapsed=Math.max(0,Math.floor((Date.now()-startedAt)/1000));
+  const expected=Math.min(exam.length,Math.floor(elapsed/120)+1);
+  const answered=answers.filter(a=>a!==null).length;
+  const diff=answered-expected;
+  box.className='pacing '+(diff<-2?'behind':diff>2?'ahead':'');
+  box.textContent=`Pacing: ${diff<-2?'Behind pace':diff>2?'Ahead of pace':'On pace'}. Answered ${answered}/${exam.length}. Expected around item ${expected}.`;
 }
-function goNextStatus(filter){
-  activeFilter = filter;
-  const v = visibleIndexes();
-  if(!v.length){ alert('No matching questions.'); return; }
-  const after = v.find(i => i > current);
-  current = after !== undefined ? after : v[0];
-  renderQuestion();
+function markLabel(m){return m?MARKS[m].sym+' '+MARKS[m].label:'No mark'}
+function renderVisual(q){
+  const v=directImage(q.questionImage)||directImage(q.image)||directImage(q.visualUrl)||directImage(q.visual);
+  if(!v){$('visualBox').className='visualBox';$('visualBox').innerHTML='';return}
+  $('visualBox').className='visualBox show';
+  $('visualBox').innerHTML=`<img src="${escapeHtml(v)}" alt="Question visual">`;
 }
-function addSecondPassButtons(){
-  const host = document.getElementById('secondPassBtns');
-  if(!host) return;
-  host.innerHTML = `<button class="btn" onclick="goNextStatus('unanswered')">Go to Next Unanswered</button><button class="btn" onclick="goNextStatus('notSure')">Go to Next Not Sure</button><button class="btn" onclick="goNextStatus('guess')">Go to Next Guess</button><button class="btn" onclick="goNextStatus('noIdea')">Go to Next No Idea</button><button class="btn" onclick="goNextStatus('marked')">Review All Marked</button>`;
-}
-function readMistakeBank(){
-  try{ return JSON.parse(localStorage.getItem(MISTAKE_BANK_KEY)||'[]'); }catch(e){ return []; }
-}
-function writeMistakeBank(items){
-  try{ localStorage.setItem(MISTAKE_BANK_KEY, JSON.stringify(items.slice(-600))); }catch(e){}
-}
-function saveMistakesToBank(){
-  const bank = readMistakeBank();
-  exam.forEach((q,i)=>{
-    const ok = answers[i]!=null && q.randomizedChoices[answers[i]]?.correct;
-    if(!ok){
-      bank.push({
-        date:new Date().toLocaleString(),
-        examType:CONFIG.shortTitle,
-        questionId:cardKey(q),
-        uid:q.uid, displayId:q.displayId, category:q.category, sourceName:q.sourceName,
-        question:q.question,
-        choices:q.randomizedChoices.map(ch=>ch.text),
-        correctText:q.randomizedChoices[q.correctIndex]?.text || q.correctText,
-        userAnswer: answers[i]==null ? 'Unanswered' : q.randomizedChoices[answers[i]]?.text,
-        mark: marks[i] || '',
-        keyMemory:q.keyMemory || '',
-        explanation:q.explanation || ''
-      });
-    }
+function renderQuestion(){
+  if(!exam.length)return;
+  const q=exam[current];
+  $('progressText').textContent=`Question ${current+1} of ${exam.length}`;
+  $('sourceText').textContent=`Source: ${q.sourceName}`;
+  $('displayId').textContent=q.displayId;
+  $('category').textContent=q.category;
+  $('markPill').textContent=markLabel(marks[current]);
+  $('questionText').textContent=q.question;
+  renderVisual(q);
+  $('choicesBox').innerHTML=q.randomizedChoices.map((ch,i)=>{
+    const letter=String.fromCharCode(65+i);
+    return `<label class="choice ${answers[current]===i?'selected':''}">
+      <input type="radio" name="choice" data-i="${i}" ${answers[current]===i?'checked':''}>
+      <span class="letterBubble">${letter}</span>
+      <span class="choiceText">${letter}. ${escapeHtml(ch.text)}</span>
+    </label>`
+  }).join('');
+  document.querySelectorAll('input[name=choice]').forEach(inp=>{
+    inp.onchange=()=>{const val=Number(inp.dataset.i); if(originalAnswers[current]===null)originalAnswers[current]=val; answers[current]=val; saveProgress(); renderQuestion();}
   });
-  writeMistakeBank(bank);
+  document.querySelectorAll('.markBtn').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.markBtn').forEach(b=>{if(b.textContent.includes(MARKS[marks[current]]?.label||'zz'))b.classList.add('active')});
+  $('prevBtn').disabled=current===0; $('nextBtn').disabled=current===exam.length-1;
+  loadScratch(); resizeCanvas(); renderSheet(); updatePacing();
 }
-function showMistakeBank(){
-  const bank = readMistakeBank().reverse();
-  const box = document.getElementById('historyBox');
-  if(!box) return;
-  if(!bank.length){ box.innerHTML='<p class="mini">Mistake Bank is empty.</p>'; return; }
-  box.innerHTML = `<h3>Mistake Bank</h3><div class="topActions"><button class="btn primary" onclick="startMistakeBankExam()">Retake Wrong Answers</button><button class="btn" onclick="startWeakTopicExam()">Weak Topic Exam</button></div><div class="bankList">${bank.slice(0,80).map(item=>`<div class="bankCard"><strong>${escapeHtml(item.category||'Unknown')}</strong><p>${escapeHtml(item.question)}</p><p class="mini">Your answer: ${escapeHtml(item.userAnswer)} · Correct: ${escapeHtml(item.correctText)}</p></div>`).join('')}</div>`;
+function setMark(m){marks[current]=m;saveProgress();renderQuestion()}
+function chooseFromSheet(qIndex,choiceIndex){current=qIndex;if(originalAnswers[current]===null)originalAnswers[current]=choiceIndex;answers[current]=choiceIndex;saveProgress();renderQuestion()}
+function renderSheet(){
+  const answered=answers.filter(a=>a!==null).length, marked=marks.filter(Boolean).length;
+  const filter=$('sheetFilter')?.value||'all';
+  const match=(i)=>filter==='all'||(filter==='unanswered'&&answers[i]===null)||(filter==='answered'&&answers[i]!==null)||(filter==='marked'&&marks[i])||(marks[i]===filter);
+  $('answerSheet').innerHTML=`<div class="sheetHead"><h2>Answer Sheet</h2><button class="btn small" onclick="closeSheet()">Close</button></div>
+  <p class="sheetStats">Answered: ${answered} · Blank: ${exam.length-answered} · Marked: ${marked}</p>
+  <select class="sheetSelect" id="sheetFilter" onchange="renderSheet()">
+    ${['all','unanswered','answered','marked','sure','notSure','guess','noIdea'].map(f=>`<option value="${f}" ${filter===f?'selected':''}>${f==='notSure'?'Not Sure':f[0].toUpperCase()+f.slice(1)}</option>`).join('')}
+  </select>
+  <div class="quickReview" style="margin-bottom:9px">
+    <button class="btn small" onclick="jumpNext('unanswered')">Review Unanswered</button>
+    <button class="btn small" onclick="jumpNext('notSure')">Review Not Sure</button>
+    <button class="btn small" onclick="jumpNext('guess')">Review Guess</button>
+    <button class="btn small" onclick="jumpNext('noIdea')">Review No Idea</button>
+  </div>
+  <div class="itemGrid">${exam.map((q,i)=>match(i)?sheetRow(i):'').join('') || '<p class="sheetStats">No matching items.</p>'}</div>`;
 }
-function startMistakeBankExam(){
-  const bank = readMistakeBank();
-  if(!bank.length){ alert('Mistake Bank is empty.'); return; }
-  const sample = bank.slice(-Math.min(50, bank.length));
-  startFromBank(sample, 'Mistake Bank Retake');
+function sheetRow(i){
+  return `<div class="ansRow ${i===current?'current':''} ${answers[i]!==null?'answered':''} ${marks[i]?'marked':''}" onclick="current=${i};renderQuestion();closeSheet()">
+    <div class="ansNum">${i+1}</div>
+    <div class="sheetBubbles">${[0,1,2,3].map(j=>`<button class="sheetBubble ${answers[i]===j?'sel':''}" onclick="event.stopPropagation();chooseFromSheet(${i},${j})">${String.fromCharCode(65+j)}</button>`).join('')}</div>
+    <div class="markSym">${marks[i]?MARKS[marks[i]].sym:''}</div>
+  </div>`;
 }
-function startWeakTopicExam(){
-  const bank = readMistakeBank();
-  if(!bank.length){ alert('Mistake Bank is empty.'); return; }
-  const counts = {};
-  bank.forEach(x=>counts[x.category||'Unknown']=(counts[x.category||'Unknown']||0)+1);
-  const weakest = Object.entries(counts).sort((a,b)=>b[1]-a[1])[0][0];
-  const sample = bank.filter(x=>(x.category||'Unknown')===weakest).slice(-50);
-  startFromBank(sample, 'Weak Topic Exam: '+weakest);
+function toggleSheet(){document.body.classList.toggle('sheetOpen')}
+function closeSheet(){document.body.classList.remove('sheetOpen')}
+function jumpNext(type){
+  const matches=exam.map((_,i)=>i).filter(i=> type==='unanswered'?answers[i]===null:type==='marked'?!!marks[i]:marks[i]===type);
+  if(!matches.length){alert('No matching question.');return}
+  const next=matches.find(i=>i>current);
+  current=next!==undefined?next:matches[0]; renderQuestion(); closeSheet();
 }
-function startFromBank(items, label){
-  exam = items.map((x,idx)=>{
-    const choices = shuffle((x.choices&&x.choices.length?x.choices:[x.correctText]).map(t=>({text:t, correct:String(t).trim()===String(x.correctText).trim()})));
-    if(!choices.some(c=>c.correct)) choices.push({text:x.correctText, correct:true});
-    return {uid:x.uid||('bank-'+idx),displayId:x.displayId||('B'+(idx+1)),category:x.category||'Mistake Bank',sourceName:x.sourceName||label,question:x.question,choices:choices.map((c,i)=>({letter:String.fromCharCode(97+i),text:c.text})),randomizedChoices:choices,correctIndex:choices.findIndex(c=>c.correct),correctText:x.correctText,answer:x.correctText,keyMemory:x.keyMemory||'',explanation:x.explanation||''};
-  });
-  currentAttemptId = newAttemptId();
-  answers=Array(exam.length).fill(null); originalAnswers=Array(exam.length).fill(null); marks=Array(exam.length).fill(''); current=0; submitted=false; activeFilter='all';
-  timeLimit=0; startedAt=Date.now();
-  $('setup').style.display='none'; $('results').style.display='none'; $('examShell').style.display='block';
-  renderQuestion(); tick(); beginAutosave();
+function saveProgress(){
+  if(!exam.length||submitted)return;
+  localStorage.setItem(SAVE_KEY,JSON.stringify({attemptId,questionIds:exam.map(cardKey),answers,originalAnswers,marks,current,startedAt,timeLimit,subject:$('subjectSelect').value,rangeStart:$('rangeStart').value,rangeEnd:$('rangeEnd').value,order:$('orderMode').value,layout:$('layoutMode').value,timerMode:$('timerMode').value,savedAt:Date.now()}));
 }
-function answerChangeStats(){
-  let improved=0,hurt=0,neutral=0,total=0;
-  exam.forEach((q,i)=>{
-    if(originalAnswers[i] == null || answers[i] == null || originalAnswers[i] === answers[i]) return;
-    total++;
-    const oldOk = q.randomizedChoices[originalAnswers[i]]?.correct;
-    const newOk = q.randomizedChoices[answers[i]]?.correct;
-    if(!oldOk && newOk) improved++;
-    else if(oldOk && !newOk) hurt++;
-    else neutral++;
-  });
-  return {total, improved, hurt, neutral};
+function resumeExam(){
+  const raw=localStorage.getItem(SAVE_KEY); if(!raw){alert('No saved exam.');return}
+  const s=JSON.parse(raw); if(!allCards.length){alert('Load cards first, then resume.');return}
+  const map=new Map(allCards.map(c=>[cardKey(c),c]));
+  exam=s.questionIds.map(id=>map.get(id)).filter(Boolean).map(prepQuestion);
+  if(!exam.length){alert('Saved questions not available.');return}
+  attemptId=s.attemptId; answers=s.answers||Array(exam.length).fill(null); originalAnswers=s.originalAnswers||Array(exam.length).fill(null); marks=s.marks||Array(exam.length).fill('');
+  current=Math.min(s.current||0,exam.length-1); startedAt=s.startedAt||Date.now(); timeLimit=s.timeLimit||0;
+  if(s.subject)$('subjectSelect').value=s.subject; if(s.layout)$('layoutMode').value=s.layout;
+  startExam(true);
 }
-function exportAllExamData(){
-  const keys = Object.keys(localStorage).filter(k => k.startsWith('aleMock') || k.startsWith('aleFullAle'));
-  const data = {};
-  keys.forEach(k=>data[k]=localStorage.getItem(k));
-  const blob = new Blob([JSON.stringify({exportedAt:new Date().toISOString(),data}, null, 2)], {type:'application/json'});
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url; a.download = 'ale-mock-exam-backup.json'; a.click();
-  setTimeout(()=>URL.revokeObjectURL(url), 1000);
-}
-function importExamBackup(input){
-  const file = input.files && input.files[0];
-  if(!file) return;
-  const reader = new FileReader();
-  reader.onload = () => {
-    try{
-      const parsed = JSON.parse(reader.result);
-      const data = parsed.data || parsed;
-      Object.entries(data).forEach(([k,v])=>{
-        if(k.startsWith('aleMock') || k.startsWith('aleFullAle')) localStorage.setItem(k, String(v));
-      });
-      alert('Backup imported. Refresh or open history/mistake bank to view.');
-      renderResumeBox();
-    }catch(e){ alert('Invalid backup JSON.'); }
-  };
-  reader.readAsText(file);
-}
-function clearAllExamData(){
-  if(!confirm('Clear ALL mock exam data: history, active exams, annotations, and mistake bank?')) return;
-  if(!confirm('This cannot be undone. Clear all exam data now?')) return;
-  Object.keys(localStorage).filter(k=>k.startsWith('aleMock') || k.startsWith('aleFullAle')).forEach(k=>localStorage.removeItem(k));
-  alert('All mock exam data cleared.');
-  renderResumeBox();
-}
+function discardSaved(){if(confirm('Discard saved active subject mock exam?')){localStorage.removeItem(SAVE_KEY);alert('Saved exam discarded.')}}
 
-// ===== Test Booklet Markup Mode =====
-const ANNOTATION_KEY = 'aleMockExamAnnotationsV1';
-let currentAttemptId = '';
-let markupTool = 'navigate';
-let notesVisible = true;
-let currentStroke = null;
-let isPointerDown = false;
-let scratchOpen = false;
+// Markup
+function notesStore(){try{return JSON.parse(localStorage.getItem(NOTES_KEY)||'{}')}catch(e){return{}}}
+function saveNotesStore(o){localStorage.setItem(NOTES_KEY,JSON.stringify(o))}
+function noteKey(){return attemptId+'::'+cardKey(exam[current])}
+function currentNotes(){const s=notesStore();const k=noteKey();if(!s[k])s[k]={strokes:[],typed:''};saveNotesStore(s);return s[k]}
+function saveCurrentNotes(d){const s=notesStore();s[noteKey()]=d;saveNotesStore(s)}
+function canvasParts(){return{area:$('markupArea'),canvas:$('markupCanvas'),ctx:$('markupCanvas').getContext('2d')}}
+function resizeCanvas(){const {area,canvas,ctx}=canvasParts();const r=area.getBoundingClientRect(),dpr=devicePixelRatio||1;canvas.width=Math.max(1,Math.round(r.width*dpr));canvas.height=Math.max(1,Math.round(r.height*dpr));canvas.style.width=r.width+'px';canvas.style.height=r.height+'px';ctx.setTransform(dpr,0,0,dpr,0,0);redraw()}
+function drawStroke(ctx,st,w,h){if(!st.points?.length)return;ctx.save();ctx.lineCap='round';ctx.lineJoin='round';ctx.lineWidth=st.width||2;if(st.tool==='highlighter'){ctx.globalAlpha=.3;ctx.strokeStyle='#f4c542'}else if(st.tool==='eraser'){ctx.globalCompositeOperation='destination-out';ctx.strokeStyle='#000';ctx.lineWidth=st.width||24}else{ctx.strokeStyle='#1f2937'}ctx.beginPath();st.points.forEach((p,i)=>{const x=p.x*w,y=p.y*h;i?ctx.lineTo(x,y):ctx.moveTo(x,y)});ctx.stroke();ctx.restore()}
+function redraw(){const {area,ctx}=canvasParts();const r=area.getBoundingClientRect();ctx.clearRect(0,0,r.width,r.height);if(!notesVisible)return;(currentNotes().strokes||[]).forEach(st=>drawStroke(ctx,st,r.width,r.height))}
+function setTool(t){tool=t;$('markupArea').classList.toggle('drawing',tool!=='navigate');document.querySelectorAll('[data-tool]').forEach(b=>b.classList.toggle('active',b.dataset.tool===tool));$('toolHint').textContent=tool==='navigate'?'Navigate Mode: scroll/tap normally.':tool==='pencil'?'Pencil Mode: write with Apple Pencil/stylus.':tool==='highlighter'?'Highlighter Mode: underline/circle keywords.':'Eraser Mode: draw over marks to erase.'}
+function pNorm(e){const r=$('markupArea').getBoundingClientRect();return{x:Math.max(0,Math.min(1,(e.clientX-r.left)/r.width)),y:Math.max(0,Math.min(1,(e.clientY-r.top)/r.height))}}
+$('markupCanvas').addEventListener('pointerdown',e=>{if(tool==='navigate')return;e.preventDefault();drawing=true;currentStroke={tool,width:tool==='pencil'?2.2:tool==='highlighter'?14:28,points:[pNorm(e)]};try{e.target.setPointerCapture(e.pointerId)}catch(_){}})
+$('markupCanvas').addEventListener('pointermove',e=>{if(!drawing||!currentStroke)return;e.preventDefault();currentStroke.points.push(pNorm(e));redraw();const {area,ctx}=canvasParts();const r=area.getBoundingClientRect();drawStroke(ctx,currentStroke,r.width,r.height)})
+function endStroke(e){if(!drawing||!currentStroke)return;e.preventDefault();drawing=false;const d=currentNotes();d.strokes=d.strokes||[];d.strokes.push(currentStroke);saveCurrentNotes(d);currentStroke=null;redraw()}
+$('markupCanvas').addEventListener('pointerup',endStroke);$('markupCanvas').addEventListener('pointercancel',endStroke);
+function undoStroke(){const d=currentNotes();d.strokes=(d.strokes||[]);d.strokes.pop();saveCurrentNotes(d);redraw()}
+function toggleNotes(){notesVisible=!notesVisible;$('markupArea').classList.toggle('notesHidden',!notesVisible);redraw()}
+function clearQuestionNotes(){if(confirm('Clear notes for this question?')){saveCurrentNotes({strokes:[],typed:''});$('scratchText').value='';redraw()}}
+function toggleScratch(){$('scratchBox').classList.toggle('open')}
+function saveScratch(){const d=currentNotes();d.typed=$('scratchText').value;saveCurrentNotes(d)}
+function loadScratch(){$('scratchText').value=currentNotes().typed||''}
+function toggleFullscreen(){document.body.classList.toggle('fullscreenOn');$('booklet').classList.toggle('fullscreen');setTimeout(resizeCanvas,120)}
 
-function newAttemptId(){
-  return String(CONFIG.shortTitle||'exam').replace(/\W+/g,'_') + '-' + Date.now() + '-' + Math.random().toString(36).slice(2);
+// Results and review
+function submitSummary(){
+  const answered=answers.filter(a=>a!==null).length, c=counts();
+  const remain=timeLimit?fmtTime(timeLimit-Math.floor((Date.now()-startedAt)/1000)):'No timer';
+  return `Submit final exam?\n\nAnswered: ${answered}\nUnanswered: ${exam.length-answered}\nSure: ${c.sure}\nNot Sure: ${c.notSure}\nGuess: ${c.guess}\nNo Idea: ${c.noIdea}\nTime remaining: ${remain}`;
 }
-function readAnnotationStore(){
-  try { return JSON.parse(localStorage.getItem(ANNOTATION_KEY) || '{}'); } catch(e){ return {}; }
+function counts(){const o={sure:0,notSure:0,guess:0,noIdea:0,marked:0};marks.forEach(m=>{if(m){o[m]++;o.marked++}});return o}
+function submitExam(auto=false){
+  if(submitted)return;if(!auto&&!confirm(submitSummary()))return;
+  submitted=true;clearInterval(timerInt);localStorage.removeItem(SAVE_KEY);
+  const used=Math.floor((Date.now()-startedAt)/1000);
+  const correct=exam.reduce((n,q,i)=>n+(answers[i]!==null&&q.randomizedChoices[answers[i]]?.correct?1:0),0);
+  const pct=exam.length?correct/exam.length*100:0;
+  const history=JSON.parse(localStorage.getItem(HISTORY_KEY)||'[]');history.push({date:new Date().toLocaleString(),subject:$('subjectSelect').value,items:exam.length,score:`${correct}/${exam.length}`,pct,time:used});localStorage.setItem(HISTORY_KEY,JSON.stringify(history.slice(-80)));
+  $('examShell').style.display='none';$('results').style.display='block';
+  $('results').innerHTML=`<h2>Results</h2><div class="statGrid">
+    <div class="stat">Raw score<b>${correct}/${exam.length}</b></div><div class="stat">Percentage<b>${pct.toFixed(1)}%</b></div><div class="stat">Status<b style="color:${pct>=75?'var(--green)':'var(--red)'}">${pct>=75?'PASS':'FAIL'}</b></div><div class="stat">Time used<b>${fmtTime(used)}</b></div>
+  </div>${mastery(pct)}<div class="topActions" style="margin:14px 0"><button class="btn green" onclick="location.reload()">Start Another Subject Mock</button><button class="btn primary" onclick="setReviewFilter('all')">Review Full Exam</button><button class="btn" onclick="setReviewFilter('wrong')">Review Wrong</button><button class="btn" onclick="setReviewFilter('correct')">Review Correct</button></div><div id="fullReview"></div>`;
+  renderReview();window.scrollTo(0,0);
 }
-function writeAnnotationStore(store){
-  try { localStorage.setItem(ANNOTATION_KEY, JSON.stringify(store)); } catch(e){}
+function mastery(p){if(p>=85)return '<div class="notice"><strong>Readiness:</strong> Strong. Kaya na itong range, pero review pa rin ng wrong at marked.</div>';if(p>=75)return '<div class="notice"><strong>Readiness:</strong> Passing. Secure mo pa weak items.</div>';if(p>=60)return '<div class="notice"><strong>Readiness:</strong> Almost there. Ulitin pa itong range.</div>';return '<div class="notice"><strong>Readiness:</strong> Hindi pa safe. Balikan muna concepts bago full mock.</div>'}
+function qStatus(i){if(answers[i]===null)return'blank';return exam[i].randomizedChoices[answers[i]]?.correct?'correct':'wrong'}
+function setReviewFilter(f){reviewFilter=f;renderReview();$('fullReview').scrollIntoView({behavior:'smooth'})}
+function renderAudit(q,i){return `<div class="choiceAudit">${q.randomizedChoices.map((ch,j)=>`<div class="${answers[i]===j?'chosen':''} ${ch.correct?'correctChoice':''}"><strong>${String.fromCharCode(65+j)}. ${escapeHtml(ch.text)}</strong> ${answers[i]===j?'<span class="reviewTag">Your answer</span>':''} ${ch.correct?'<span class="reviewTag">Correct answer</span>':''}</div>`).join('')}</div>`}
+function renderReview(){
+  const counts={all:exam.length,correct:0,wrong:0,blank:0,marked:marks.filter(Boolean).length};exam.forEach((_,i)=>counts[qStatus(i)]++);
+  $('fullReview').innerHTML=`<h2>Full Exam Review / Counter-check</h2><div class="reviewControls">
+    ${['all','correct','wrong','blank','marked'].map(f=>`<button class="btn ${reviewFilter===f?'primary':''}" onclick="setReviewFilter('${f}')">${f==='blank'?'Unanswered':f[0].toUpperCase()+f.slice(1)} ${counts[f]}</button>`).join('')}
+    <input class="reviewSearch" id="reviewSearch" placeholder="Search question/category..." oninput="applyReviewFilter()">
+  </div><div id="reviewList">${exam.map((q,i)=>reviewItem(q,i)).join('')}</div>`;
+  applyReviewFilter();
 }
-function annotationQuestionId(index=current){
-  const q = exam[index];
-  return q ? cardKey(q) : 'unknown';
+function reviewItem(q,i){
+  const st=qStatus(i);const user=answers[i]===null?'Unanswered':String.fromCharCode(65+answers[i])+'. '+q.randomizedChoices[answers[i]].text;
+  const corr=String.fromCharCode(65+q.correctIndex)+'. '+q.randomizedChoices[q.correctIndex].text;
+  return `<div class="reviewItem ${st}" data-status="${st}" data-mark="${marks[i]||''}" data-text="${escapeHtml((q.question+' '+q.category).toLowerCase())}">
+    <span class="reviewTag">${st==='blank'?'Unanswered':st}</span><span class="reviewTag">Q${i+1}</span><span class="reviewTag">${escapeHtml(markLabel(marks[i]))}</span>
+    <h3>${escapeHtml(q.question)}</h3>${renderAudit(q,i)}
+    <p><strong>Your answer:</strong> ${escapeHtml(user)}</p><p><strong>Correct answer:</strong> ${escapeHtml(corr)}</p>
+    <p><strong>Key memory:</strong> ${escapeHtml(q.keyMemory||'—')}</p><p><strong>Explanation:</strong><br>${escapeHtml(q.explanation||'—')}</p>
+  </div>`;
 }
-function getAttemptNotes(){
-  const store = readAnnotationStore();
-  if(!currentAttemptId) currentAttemptId = newAttemptId();
-  if(!store[currentAttemptId]) store[currentAttemptId] = {};
-  return {store, attempt: store[currentAttemptId]};
-}
-function getQuestionNotes(index=current){
-  const qid = annotationQuestionId(index);
-  const {store, attempt} = getAttemptNotes();
-  if(!attempt[qid]) attempt[qid] = {strokes:[], typed:''};
-  writeAnnotationStore(store);
-  return attempt[qid];
-}
-function saveQuestionNotes(index=current, data){
-  const qid = annotationQuestionId(index);
-  const store = readAnnotationStore();
-  if(!store[currentAttemptId]) store[currentAttemptId] = {};
-  store[currentAttemptId][qid] = data;
-  writeAnnotationStore(store);
-}
-function getCanvasParts(){
-  return {
-    area: document.getElementById('markupArea'),
-    canvas: document.getElementById('markupCanvas'),
-    ctx: document.getElementById('markupCanvas') ? document.getElementById('markupCanvas').getContext('2d') : null
-  };
-}
-function resizeMarkupCanvas(){
-  const {area, canvas, ctx} = getCanvasParts();
-  if(!area || !canvas || !ctx) return;
-  const rect = area.getBoundingClientRect();
-  const dpr = window.devicePixelRatio || 1;
-  const w = Math.max(1, Math.round(rect.width));
-  const h = Math.max(1, Math.round(rect.height));
-  if(canvas.width !== Math.round(w*dpr) || canvas.height !== Math.round(h*dpr)){
-    canvas.width = Math.round(w*dpr);
-    canvas.height = Math.round(h*dpr);
-    canvas.style.width = w + 'px';
-    canvas.style.height = h + 'px';
-  }
-  ctx.setTransform(dpr,0,0,dpr,0,0);
-  redrawMarkup();
-}
-function strokeStyle(stroke, ctx){
-  if(stroke.tool === 'highlighter'){
-    ctx.globalCompositeOperation = 'source-over';
-    ctx.globalAlpha = 0.32;
-    ctx.strokeStyle = '#f4c542';
-    ctx.lineWidth = stroke.width || 14;
-  } else if(stroke.tool === 'eraser'){
-    ctx.globalCompositeOperation = 'destination-out';
-    ctx.globalAlpha = 1;
-    ctx.strokeStyle = 'rgba(0,0,0,1)';
-    ctx.lineWidth = stroke.width || 24;
-  } else {
-    ctx.globalCompositeOperation = 'source-over';
-    ctx.globalAlpha = 1;
-    ctx.strokeStyle = '#1f2937';
-    ctx.lineWidth = stroke.width || 2.2;
-  }
-  ctx.lineCap = 'round';
-  ctx.lineJoin = 'round';
-}
-function drawStroke(ctx, stroke, w, h){
-  const pts = stroke.points || [];
-  if(!pts.length) return;
-  strokeStyle(stroke, ctx);
-  ctx.beginPath();
-  pts.forEach((p,i)=>{
-    const x = p.x * w, y = p.y * h;
-    if(i===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
-  });
-  ctx.stroke();
-  ctx.globalAlpha = 1;
-  ctx.globalCompositeOperation = 'source-over';
-}
-function redrawMarkup(){
-  const {area, canvas, ctx} = getCanvasParts();
-  if(!area || !canvas || !ctx) return;
-  const rect = area.getBoundingClientRect();
-  ctx.clearRect(0,0,rect.width,rect.height);
-  if(!notesVisible) return;
-  const data = getQuestionNotes(current);
-  (data.strokes || []).forEach(stroke => drawStroke(ctx, stroke, rect.width, rect.height));
-}
-function setMarkupTool(tool){
-  markupTool = tool;
-  const {area} = getCanvasParts();
-  if(area){
-    area.classList.toggle('drawing', tool !== 'navigate');
-    area.classList.toggle('notes-hidden', !notesVisible);
-  }
-  document.querySelectorAll('[data-tool]').forEach(btn => btn.classList.toggle('active', btn.dataset.tool === tool));
-  const status = document.getElementById('markupStatus');
-  if(status){
-    const label = tool === 'navigate' ? 'Navigate Mode: scroll/tap normally.' :
-      tool === 'pencil' ? 'Pencil Mode: write thin marks with Apple Pencil/stylus.' :
-      tool === 'highlighter' ? 'Highlighter Mode: underline/highlight keywords.' :
-      'Eraser Mode: draw over marks to erase strokes.';
-    status.textContent = label;
-  }
-}
-function pointerToNorm(evt){
-  const {area} = getCanvasParts();
-  const rect = area.getBoundingClientRect();
-  return {
-    x: Math.min(1, Math.max(0, (evt.clientX - rect.left) / Math.max(1, rect.width))),
-    y: Math.min(1, Math.max(0, (evt.clientY - rect.top) / Math.max(1, rect.height)))
-  };
-}
-function startStroke(evt){
-  if(markupTool === 'navigate') return;
-  evt.preventDefault();
-  isPointerDown = true;
-  const width = markupTool === 'highlighter' ? 14 : (markupTool === 'eraser' ? 28 : 2.2);
-  currentStroke = {tool: markupTool, width, points:[pointerToNorm(evt)]};
-  try { evt.currentTarget.setPointerCapture(evt.pointerId); } catch(e){}
-}
-function moveStroke(evt){
-  if(!isPointerDown || !currentStroke) return;
-  evt.preventDefault();
-  currentStroke.points.push(pointerToNorm(evt));
-  redrawMarkup();
-  const {area, ctx} = getCanvasParts();
-  if(area && ctx){
-    const rect = area.getBoundingClientRect();
-    drawStroke(ctx, currentStroke, rect.width, rect.height);
-  }
-}
-function endStroke(evt){
-  if(!isPointerDown || !currentStroke) return;
-  evt.preventDefault();
-  isPointerDown = false;
-  const data = getQuestionNotes(current);
-  data.strokes = data.strokes || [];
-  data.strokes.push(currentStroke);
-  saveQuestionNotes(current, data);
-  currentStroke = null;
-  redrawMarkup();
-}
-function undoLastStroke(){
-  const data = getQuestionNotes(current);
-  data.strokes = data.strokes || [];
-  data.strokes.pop();
-  saveQuestionNotes(current, data);
-  redrawMarkup();
-}
-function clearQuestionNotes(){
-  if(!confirm('Clear all Apple Pencil / scratch notes for this question?')) return;
-  const data = getQuestionNotes(current);
-  data.strokes = [];
-  data.typed = '';
-  saveQuestionNotes(current, data);
-  const ta = document.getElementById('scratchText');
-  if(ta) ta.value = '';
-  redrawMarkup();
-}
-function toggleNotesVisible(){
-  notesVisible = !notesVisible;
-  const {area} = getCanvasParts();
-  if(area) area.classList.toggle('notes-hidden', !notesVisible);
-  const btn = document.getElementById('hideShowNotesBtn');
-  if(btn) btn.textContent = notesVisible ? 'Hide Notes' : 'Show Notes';
-  redrawMarkup();
-}
-function toggleScratchPad(){
-  scratchOpen = !scratchOpen;
-  const box = document.getElementById('scratchBox');
-  if(box) box.classList.toggle('open', scratchOpen);
-}
-function saveTypedScratch(){
-  const ta = document.getElementById('scratchText');
-  const data = getQuestionNotes(current);
-  data.typed = ta ? ta.value : '';
-  saveQuestionNotes(current, data);
-}
-function loadTypedScratch(){
-  const ta = document.getElementById('scratchText');
-  if(ta) ta.value = getQuestionNotes(current).typed || '';
-}
-function toggleFullscreenBooklet(){
-  const booklet = document.querySelector('.booklet');
-  const on = !document.body.classList.contains('markupFullscreen');
-  document.body.classList.toggle('markupFullscreen', on);
-  if(booklet) booklet.classList.toggle('fullscreenBooklet', on);
-  const btn = document.getElementById('fullscreenBtn');
-  if(btn) btn.textContent = on ? 'Exit Fullscreen Question' : 'Fullscreen Question';
-  setTimeout(resizeMarkupCanvas, 120);
-}
-function setupMarkupCanvas(){
-  const {canvas} = getCanvasParts();
-  if(!canvas) return;
-  canvas.onpointerdown = startStroke;
-  canvas.onpointermove = moveStroke;
-  canvas.onpointerup = endStroke;
-  canvas.onpointercancel = endStroke;
-  loadTypedScratch();
-  setMarkupTool(markupTool || 'navigate');
-  setTimeout(resizeMarkupCanvas, 80);
-}
-function annotationReviewHtml(q){
-  if(!currentAttemptId) return '';
-  const store = readAnnotationStore();
-  const qid = cardKey(q);
-  const data = store[currentAttemptId] && store[currentAttemptId][qid];
-  if(!data || (!(data.strokes||[]).length && !data.typed)) return '';
-  const note = data.typed ? `<div class="reviewNoteText"><strong>Typed scratch notes:</strong>\n${escapeHtml(data.typed)}</div>` : '';
-  return `<div class="reviewCanvasBox"><strong>Test Booklet Markup Notes</strong><canvas class="reviewCanvas" data-qid="${escapeHtml(qid)}"></canvas>${note}</div>`;
-}
-function drawReviewCanvases(){
-  if(!currentAttemptId) return;
-  const store = readAnnotationStore();
-  const attempt = store[currentAttemptId] || {};
-  document.querySelectorAll('.reviewCanvas').forEach(canvas=>{
-    const data = attempt[canvas.dataset.qid];
-    if(!data || !(data.strokes||[]).length){
-      canvas.style.display='none';
-      return;
-    }
-    const rectW = canvas.parentElement ? canvas.parentElement.clientWidth - 24 : 600;
-    const w = Math.max(300, rectW), h = 260, dpr = window.devicePixelRatio || 1;
-    canvas.width = Math.round(w*dpr); canvas.height = Math.round(h*dpr);
-    canvas.style.width = w + 'px'; canvas.style.height = h + 'px';
-    const ctx = canvas.getContext('2d'); ctx.setTransform(dpr,0,0,dpr,0,0);
-    ctx.clearRect(0,0,w,h);
-    (data.strokes||[]).forEach(stroke=>drawStroke(ctx, stroke, w, h));
-  });
-}
-function clearAttemptNotes(){
-  if(!currentAttemptId) return;
-  if(!confirm('Clear all Test Booklet Markup notes for this exam attempt?')) return;
-  const store = readAnnotationStore();
-  delete store[currentAttemptId];
-  writeAnnotationStore(store);
-  document.querySelectorAll('.reviewCanvasBox').forEach(el=>el.remove());
-  alert('Notes cleared for this attempt.');
-}
-window.addEventListener('resize', ()=> setTimeout(resizeMarkupCanvas, 100));
+function applyReviewFilter(){const q=($('reviewSearch')?.value||'').toLowerCase();document.querySelectorAll('#reviewList .reviewItem').forEach(el=>{let show=reviewFilter==='all'||el.dataset.status===reviewFilter||(reviewFilter==='marked'&&el.dataset.mark);if(q&&!el.dataset.text.includes(q))show=false;el.style.display=show?'':'none'})}
 
-async function startExam(){applyLayout();$('startBtn').disabled=true;$('warning').style.display='none';await loadCards();if(!allCards.length){$('warning').style.display='block';$('warning').textContent='No cards available yet. Check folders/cards.json, or add embedded images for visual-identification cards.';$('startBtn').disabled=false;return}const count=Number($('countSelect').value);exam=[];let rangePool=subjectRangePool();const rangeSettings=getRangeSettings();if(!rangePool.length){alert('No questions available in this subject/range. Try a wider range or add cards/images.');$('startBtn').disabled=false;return}if(pendingRetakeIds?.length){exam=buildExamFromIds(pendingRetakeIds,count)||[];if(!exam.length){alert('Saved IDs unavailable. Starting new subject/range exam.');pendingRetakeIds=null}}if(!exam.length){rangePool=rangeSettings.order==='random'?shuffle(rangePool):rangePool;exam=rangePool.slice(0,Math.min(count,rangePool.length)).map(prepQuestion);}answers=Array(exam.length).fill(null);originalAnswers=Array(exam.length).fill(null);marks=Array(exam.length).fill('');current=0;submitted=false;activeFilter='all';currentAttemptId=newAttemptId();timeLimit=calcLimit(exam.length,$('modeSelect').value);startedAt=Date.now();saveCurrentAttempt(pendingRetakeIds?'retake_started':'started',{retake:!!pendingRetakeIds});$('setup').style.display='none';$('results').style.display='none';$('examShell').style.display='block';renderQuestion();tick();clearInterval(timerInt);if(timeLimit)timerInt=setInterval(tick,1000);else $('timer').textContent='No timer';beginAutosave();$('startBtn').disabled=false}
-function tick(){if(!timeLimit){$('timer').textContent='No timer';return}const left=timeLimit-Math.floor((Date.now()-startedAt)/1000);$('timer').textContent=fmtTime(left);updatePacing(); if(left<=0&&!submitted)submitExam(true)}
-function counts(){const c={answered:0,unanswered:0,sure:0,notSure:0,guess:0,noIdea:0,marked:0};for(let i=0;i<exam.length;i++){if(answers[i]==null)c.unanswered++;else c.answered++;if(marks[i]){c.marked++;c[marks[i]]++}}return c}
-function markLabel(m){return m?MARKS[m].sym+' '+MARKS[m].label:'No mark'} function statusFor(i){return {answered:answers[i]!=null,mark:marks[i]||'',current:i===current}}
-function setMark(m){marks[current]=m;saveActiveProgress();renderQuestion()}
-function renderQuestion(){const q=exam[current];if(!q)return;$('progressText').textContent=`Question ${current+1} of ${exam.length}`;$('sourceText').textContent=`Source: ${q.sourceName}`;$('qid').textContent=q.displayId;$('qcat').textContent=q.category;$('markPill').textContent=markLabel(marks[current]);$('questionText').textContent=q.question;renderSafeVisual(q);setTimeout(setupMarkupCanvas, 0);$('choicesBox').innerHTML=q.randomizedChoices.map((ch,i)=>`<label class="choice ${answers[current]===i?'selected':''}"><input type="radio" name="choice" ${answers[current]===i?'checked':''} data-index="${i}"><span><strong>${String.fromCharCode(65+i)}.</strong> ${escapeHtml(ch.text)}</span></label>`).join('');document.querySelectorAll('input[name=choice]').forEach(inp=>inp.onchange=()=>{if(originalAnswers[current]===null) originalAnswers[current]=Number(inp.dataset.index); answers[current]=Number(inp.dataset.index); saveActiveProgress(); renderQuestion()});$('markBtns').innerHTML=Object.entries(MARKS).map(([k,v])=>`<button class="markBtn ${marks[current]===k?'active':''}" onclick="setMark('${k}')">${v.sym} ${v.label}</button>`).join('')+`<button class="markBtn ${!marks[current]?'active':''}" onclick="setMark('')">Clear Mark</button>`;$('prevBtn').disabled=current===0;$('nextBtn').disabled=current===exam.length-1;renderSheet();updatePacing();addSecondPassButtons()}
-function matchesFilter(i,filter=activeFilter){if(filter==='all')return true;if(filter==='unanswered')return answers[i]==null;if(filter==='answered')return answers[i]!=null;if(filter==='marked')return !!marks[i];return marks[i]===filter}
-function visibleIndexes(){return exam.map((_,i)=>i).filter(i=>matchesFilter(i))} function jumpToFirst(filter){activeFilter=filter;const v=visibleIndexes();if(v.length)current=v[0];renderQuestion();if(document.body.classList.contains('layout-compact'))$('answerSheet').classList.add('open')} function nextMatching(dir){const v=visibleIndexes();if(!v.length)return;let pos=v.indexOf(current);if(pos<0)pos=dir>0?-1:0;pos=(pos+dir+v.length)%v.length;current=v[pos];renderQuestion()}
-function renderSheet(){const c=counts();const visible=visibleIndexes();$('prevMatchBtn').style.display=activeFilter==='all'?'none':'inline-block';$('nextMatchBtn').style.display=activeFilter==='all'?'none':'inline-block';$('answerSheet').innerHTML=`<div class="sheetHead"><h2>Answer Sheet</h2><button class="btn" onclick="$('answerSheet').classList.remove('open')">Close</button></div><div class="mini">Answered: ${c.answered} · Blank: ${c.unanswered} · Marked: ${c.marked}</div><div class="sheetControls"><select onchange="activeFilter=this.value;renderSheet();updatePacing();addSecondPassButtons()"><option value="all" ${activeFilter==='all'?'selected':''}>All</option><option value="unanswered" ${activeFilter==='unanswered'?'selected':''}>Unanswered</option><option value="answered" ${activeFilter==='answered'?'selected':''}>Answered</option><option value="marked" ${activeFilter==='marked'?'selected':''}>Marked</option><option value="sure" ${activeFilter==='sure'?'selected':''}>Sure</option><option value="notSure" ${activeFilter==='notSure'?'selected':''}>Not Sure</option><option value="guess" ${activeFilter==='guess'?'selected':''}>Guess</option><option value="noIdea" ${activeFilter==='noIdea'?'selected':''}>No Idea</option></select><div class="quickBtns"><button class="btn" onclick="jumpToFirst('unanswered')">Review Unanswered</button><button class="btn" onclick="jumpToFirst('notSure')">Review Not Sure</button><button class="btn" onclick="jumpToFirst('guess')">Review Guess</button><button class="btn" onclick="jumpToFirst('noIdea')">Review No Idea</button><button class="btn" onclick="jumpToFirst('marked')">Review All Marked</button><button class="btn" onclick="activeFilter='all';renderSheet();updatePacing();addSecondPassButtons()">All</button></div></div><div class="itemGrid">${visible.map(i=>rowHtml(i)).join('')||'<p class="mini">No matching questions.</p>'}</div>`}
-function rowHtml(i){const a=answers[i];const m=marks[i];return`<div class="ansRow ${i===current?'current':''} ${a==null?'blank':'answered'} ${m?'marked':''}" onclick="current=${i};renderQuestion()"><div class="num">${i+1}</div><div class="bubbles">${[0,1,2,3].map(j=>`<span class="bubble ${a===j?'sel':''}">${String.fromCharCode(65+j)}</span>`).join('')}</div><div class="markSym">${m?MARKS[m].sym:''}</div></div>`}
-$('prevBtn').onclick=()=>{if(current>0){current--;renderQuestion()}};$('nextBtn').onclick=()=>{if(current<exam.length-1){current++;renderQuestion()}};$('prevMatchBtn').onclick=()=>nextMatching(-1);$('nextMatchBtn').onclick=()=>nextMatching(1);$('submitBtn').onclick=()=>submitExam(false);$('floatSheet').onclick=()=>{$('answerSheet').classList.toggle('open')};$('floatMarks').onclick=()=>{jumpToFirst('marked')};$('layoutSelect').onchange=applyLayout;
-function breakdown(){const map={};exam.forEach((q,i)=>{const k=q.category||q.sourceName||'Unknown';if(!map[k])map[k]={total:0,correct:0};map[k].total++;if(answers[i]!=null&&q.randomizedChoices[answers[i]]?.correct)map[k].correct++});return map}
-function confidenceBreakdown(){const out={sure:{total:0,correct:0},notSure:{total:0,correct:0},guess:{total:0,correct:0},noIdea:{total:0,correct:0},unmarked:{total:0,correct:0}};exam.forEach((q,i)=>{const k=marks[i]||'unmarked';out[k].total++;if(answers[i]!=null&&q.randomizedChoices[answers[i]]?.correct)out[k].correct++});return out}
-function confirmSummary(){const c=counts();const remain=timeLimit?fmtTime(timeLimit-Math.floor((Date.now()-startedAt)/1000)):'No timer';return `Submit final exam?\n\nAnswered: ${c.answered}\nUnanswered: ${c.unanswered}\nSure: ${c.sure}\nNot Sure: ${c.notSure}\nGuess: ${c.guess}\nNo Idea: ${c.noIdea}\nTime remaining: ${remain}`}
-function submitExam(auto){if(submitted)return;if(!auto&&!confirm(confirmSummary()))return;submitted=true;clearInterval(timerInt);const used=Math.floor((Date.now()-startedAt)/1000);const correct=exam.reduce((n,q,i)=>n+(answers[i]!=null&&q.randomizedChoices[answers[i]]?.correct?1:0),0);const pct=exam.length?correct/exam.length*100:0,pass=pct>=75;const c=counts(),bd=breakdown(),cb=confidenceBreakdown(),ac=answerChangeStats();const weakest=Object.entries(bd).sort((a,b)=>(a[1].correct/a[1].total)-(b[1].correct/b[1].total))[0];stopAutosave();saveMistakesToBank();clearActiveProgress();saveCurrentAttempt('submitted',{score:`${correct}/${exam.length}`,percentage:pct,passFail:pass?'PASS':'FAIL',timeUsedSeconds:used,subjectBreakdown:bd,confidenceBreakdown:cb,marks,answers,unanswered:c.unanswered,marked:c.marked});saveHistory({date:new Date().toLocaleString(),examType:CONFIG.shortTitle,itemCount:exam.length,score:`${correct}/${exam.length}`,percentage:pct,passFail:pass?'PASS':'FAIL',timeUsedSeconds:used,subjectBreakdown:bd,confidenceBreakdown:cb,questionIds:exam.map(cardKey),unanswered:c.unanswered,marked:c.marked});$('examShell').style.display='none';const wrongs=exam.map((q,i)=>({q,i})).filter(x=>answers[x.i]===null||!x.q.randomizedChoices[answers[x.i]]?.correct);const marked=exam.map((q,i)=>({q,i})).filter(x=>marks[x.i]);$('results').style.display='block';$('results').innerHTML=`<h2>Results — ${CONFIG.shortTitle}</h2><div class="scoreBox"><div class="stat">Raw score<b>${correct}/${exam.length}</b></div><div class="stat">Percentage<b>${pct.toFixed(1)}%</b></div><div class="stat">Status<b class="${pass?'pass':'fail'}">${pass?'PASS':'FAIL'}</b></div><div class="stat">Time used<b>${fmtTime(used)}</b></div><div class="stat">Unanswered<b>${c.unanswered}</b></div><div class="stat">Marked<b>${c.marked}</b></div><div class="stat">Weakest subject<b>${weakest?escapeHtml(weakest[0]):'—'}</b></div><div class="stat">Passing mark<b>75%</b></div><div class="stat">Answer changes<b>${ac.total}</b><span class="mini">Improved ${ac.improved} · Hurt ${ac.hurt} · Neutral ${ac.neutral}</span></div></div><div class="topActions"><button class="btn primary" onclick="startNewRandomExam()">Start New Random Exam</button><button class="btn" onclick="retakeSameExam()">Retake Same Exam</button><button class="btn" onclick="document.getElementById('wrongReview').scrollIntoView({behavior:'smooth'})">Review Wrong Answers</button><button class="btn primary" onclick="document.getElementById('fullReview').scrollIntoView({behavior:'smooth'})">Review Full Exam</button><button class="btn danger" onclick="clearAttemptNotes()">Clear Notes After Review</button><a class="btn" href="../">Mock Exam Dashboard</a></div><h3>Performance by Confidence Mark</h3>${confTable(cb)}<h3>Subject Breakdown</h3>${subjectTable(bd)}<h3>Marked Questions</h3>${marked.length?marked.map(({q,i})=>smallReview(q,i,false)).join(''):'<p>No marked questions.</p>'}<h3 id="wrongReview">Wrong and Unanswered Review</h3>${wrongs.length?wrongs.map(({q,i})=>smallReview(q,i,true)).join(''):'<p>No wrong answers.</p>'}<div id="fullReview"></div>`;renderFullExamReview();setTimeout(drawReviewCanvases, 120);window.scrollTo(0,0)}
-function confTable(cb){return`<table><thead><tr><th>Mark</th><th>Correct</th><th>Total</th><th>%</th></tr></thead><tbody>${Object.entries(cb).map(([k,v])=>`<tr><td>${k==='unmarked'?'Unmarked':MARKS[k].sym+' '+MARKS[k].label}</td><td>${v.correct}</td><td>${v.total}</td><td>${v.total?(v.correct/v.total*100).toFixed(1):'0.0'}%</td></tr>`).join('')}</tbody></table>`}
-function subjectTable(bd){return`<table><thead><tr><th>Subject</th><th>Correct</th><th>Total</th><th>%</th></tr></thead><tbody>${Object.entries(bd).map(([k,v])=>`<tr><td>${escapeHtml(k)}</td><td>${v.correct}</td><td>${v.total}</td><td>${(v.correct/v.total*100).toFixed(1)}%</td></tr>`).join('')}</tbody></table>`}
-function smallReview(q,i,showExplain){const ua=answers[i]===null?'Unanswered':q.randomizedChoices[answers[i]]?.text;const ca=q.randomizedChoices[q.correctIndex]?.text||q.correctText;return`<div class="reviewItem"><h3>Q${i+1} · ${escapeHtml(q.category)} · ${escapeHtml(markLabel(marks[i]))}</h3><p><strong>Question:</strong> ${escapeHtml(q.question)}</p>${answerVisualHtml(q)}${annotationReviewHtml(q)}<p><strong>Your answer:</strong> ${escapeHtml(ua)}</p><p><strong>Correct answer:</strong> ${escapeHtml(ca)}</p><p><strong>Key memory:</strong> ${escapeHtml(q.keyMemory||'—')}</p><div class="explain"><strong>Explanation:</strong>\n${escapeHtml(q.explanation||'—')}</div></div>`}
-function renderHistory(){const rows=readHistory().filter(r=>r.examType===CONFIG.shortTitle).reverse();$('historyBox').innerHTML=rows.length?`<table><thead><tr><th>Date</th><th>Items</th><th>Score</th><th>%</th><th>Status</th><th>Time</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${r.date}</td><td>${r.itemCount}</td><td>${r.score}</td><td>${Number(r.percentage).toFixed(1)}%</td><td>${r.passFail}</td><td>${fmtTime(r.timeUsedSeconds)}</td></tr>`).join('')}</tbody></table>`:'<p class="mini">No history for this exam yet.</p>'}
-$('startBtn').onclick=startExam;$('historyBtn').onclick=renderHistory;populateSubjectSelect();setupSubjectRangeEvents();setupOptions();applyLayout();renderResumeBox();setTimeout(updateRangeInfo,100);
+// events
+$('subjectSelect').addEventListener('change',updateRangeInfo);$('rangeStart').addEventListener('input',updateRangeInfo);$('rangeEnd').addEventListener('input',updateRangeInfo);$('orderMode').addEventListener('change',updateRangeInfo);$('layoutMode').addEventListener('change',applyLayout);
+$('loadBtn').onclick=loadCards;$('startBtn').onclick=()=>startExam(false);$('resumeBtn').onclick=resumeExam;$('discardBtn').onclick=discardSaved;
+$('prevBtn').onclick=()=>{if(current>0){current--;renderQuestion();saveProgress()}};$('nextBtn').onclick=()=>{if(current<exam.length-1){current++;renderQuestion();saveProgress()}};$('submitBtn').onclick=()=>submitExam(false);
+$('darkBtn').onclick=()=>document.body.classList.toggle('dark');
+window.addEventListener('resize',()=>{applyLayout();setTimeout(resizeCanvas,80)});
+populateSubjects();applyLayout();loadCards();
 </script>
 </body>
 </html>
